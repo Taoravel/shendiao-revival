@@ -1,0 +1,29 @@
+{
+  "status": "Owned predicate seam ready; shared integration and GUI have separate evidence",
+  "review_snapshot": "reviews/world-newbie-interaction-v2",
+  "sha256": {
+    "world_newbie.py": "68128b455a789c33adbceda460a923b796ee909e0f35c16a6742f9ed32e46df4",
+    "verify_world_newbie_interaction.py": "f1bb6a849eb9cc536cb40fa7a5fc8e38a49497cc1822529f4ef97788a5a8b89c",
+    "verify_world_newbie_interaction_policy.py": "6a1dc361fad893189fb46f151de95dcd73d0cc4c0eb6a3ebd0c320e0fd6ee1e8",
+    "verify_world_runtime_story_pins.py": "8b3f80cf10255e1904c91489bef11e288052a787cc438b48241bb2bdde748402",
+    "evidence/WORLD_NEWBIE_INTERACTION_HANDOFF.md": "ce860ed1b8c40efaf4cb89da32863e239cea06120296de5b51cb5ad9e1c38381",
+    "evidence/WORLD_RUNTIME_STORY_PINS_VERIFICATION.md": "f423742df320fc4696720da828167511ce34d6d1bdb5af6f48088b6664905e78"
+  },
+  "interface": {
+    "check_birth_site": "(route, catalog, maze, placements, *, state_byte, interaction_radius=None, max_visited, interaction_allowed=None)",
+    "validate_birth_sites": "(routes, catalog, grids, placements, *, state_byte, interaction_radius=None, max_visited, interaction_allowed=None)"
+  },
+  "goal_selection": "Exactly one: explicit legacy nonnegative integer radius, or trusted interaction_allowed(npc,(map_id,x,y))->strict bool; production passes frozen npc_interaction_rules.allows",
+  "coordinate_shape": "Full logical map position tuple of three ints, not an xy pair",
+  "policy": "design/npc-interaction-v2.json",
+  "controlled_groups": 6,
+  "frozen_policy_groups": 5,
+  "frozen_policy_creation_routes": 43,
+  "runtime_pin_groups": 6,
+  "runtime_pin_initial_private_checkpoint_fixture": true,
+  "review_standards_open": 0,
+  "review_spec_initial_p2_closed": true,
+  "review_spec_open": 0,
+  "shared_modified_by_world": false,
+  "native_gui_verified": false
+}

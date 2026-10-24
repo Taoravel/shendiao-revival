@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="ConvokeRecord">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.3425,0},{0.198333,0},{0.3425,275},{0.198333,410}}" />
+    <Window Type="TaharezLook/StaticImage" Name="ConvokeRecord/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,214},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,214},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.139637,0},{0,12},{0.917819,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="ConvokeRecord/Title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="江湖召集令" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="85" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.3,0},{0,1},{0.76729,0},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/RichEditbox" Name="ConvokeRecord/Edit">
+      <Property Name="LineSpace" Value="1" />
+      <Property Name="BlinkCaret" Value="True" />
+      <Property Name="MaxTextLength" Value="2147483647" />
+      <Property Name="UnifiedAreaRect" Value="{{0,19},{0.901551,0},{0.623134,10.8304},{0.90399,21.0001}}" />
+      <Property Name="BlinkCaretTimeout" Value="0.5" />
+      <Property Name="TextParsingEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="ConvokeRecord/Face">
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:MainControl image:EmoteHover" />
+      <Property Name="NormalImage" Value="set:MainControl image:EmoteNormal" />
+      <Property Name="PushedImage" Value="set:MainControl image:EmotePushed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,24},{0,24}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,24},{0,24}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0.588462,24.4731},{0.900698,0},{0.714335,13.858},{0.959235,0}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ConvokeRecord/Send">
+      <Property Name="Text" Value="发送" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0.714335,14.8577},{0.900698,0},{0.938111,-2.89555},{0.900698,24}}" />
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="ConvokeRecord/Top">
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,43},{0,256},{0,126}}" />
+      <Window Type="TaharezLook/RichEditbox" Name="ConvokeRecord/Info">
+        <Property Name="ReadOnly" Value="True" />
+        <Property Name="LineSpace" Value="1" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0205882,0},{0.05,0},{0.05,221},{0.05,73}}" />
+        <Property Name="BackGroundEnable" Value="False" />
+        <Property Name="BlinkCaretTimeout" Value="0.5" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="ConvokeRecord/Bot">
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,128},{0,256},{0.37037,215.484}}" />
+      <Window Type="TaharezLook/RichEditbox" Name="ConvokeRecord/Record">
+        <Property Name="LineSpace" Value="1" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0163866,0},{0.0288121,0},{0.05,222},{0.05,222.184}}" />
+        <Property Name="BackGroundEnable" Value="False" />
+        <Property Name="BlinkCaretTimeout" Value="0.5" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

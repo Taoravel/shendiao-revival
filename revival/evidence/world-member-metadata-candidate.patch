@@ -1,0 +1,300 @@
+--- base/world_owner.py
++++ final/world_owner.py
+@@ -183,6 +183,7 @@
+         self._departures = {}  # frozen handoff or finalized receipt, bounded together
+         self._mailbox = Queue(maxsize=mailbox_capacity)
+         self._generation=uuid4().hex
++        self._member_projection=None
+         # Only producer enqueue vs owner retirement share this per-map gate.
+         # Gameplay, I/O and other maps never execute under it.
+         self._submission_gate=Lock()
+@@ -336,6 +337,7 @@
+         return self._retire_recovered_transfer(expected,decision,view)
+ 
+     def _retire_recovered_transfer(self,expected,decision,view):
++        self._paired_members(view)
+         if (type(expected) is not MapTransferSnapshot or type(decision) is not TransferRecoveryDecision
+                 or type(decision.source) is not Location or type(decision.source.address) is not MapAddress
+                 or expected.address!=self.address or expected.owner_generation!=self._generation
+@@ -408,6 +410,7 @@
+         return self._join(location,view,appearance)
+ 
+     def _join(self, location, view, appearance):
++        self._paired_members(view)
+         # The role owner validates the login lease before issuing join. This map
+         # does not authenticate client-supplied role IDs or replace other leases.
+         if (self._retired or location.address != self.address or location.state != 'active'
+@@ -449,6 +452,7 @@
+         return self._leave(expected,view)
+ 
+     def _leave(self,expected,view):
++        self._paired_members(view)
+         current = self.location(expected.role_id)
+         presence=view.snapshot(expected.role_id) if view is not None else None
+         if current is None:
+@@ -531,12 +535,77 @@
+     def move(self, command, now_ms):
+         return self._move(command,now_ms,None)[0]
+ 
++    def member_projection(self,*,role_capacity):
++        """Install one metadata projection on this actual domain lifetime.
++
++        Construct before active membership/handoffs. Repeating the same startup
++        configuration is idempotent; replacing the projection is not supported.
++        """
++        if self._retired or type(role_capacity) is not int or role_capacity<1:
++            raise ValueError('Live owner and explicit member capacity required')
++        if self._member_projection is not None:
++            if self._member_projection.role_capacity!=role_capacity:
++                raise ValueError('Member projection capacity already fixed')
++            return self._member_projection
++        if self._roles or self._offers or self._incoming or self._departures or self._scene_deliveries:
++            raise ValueError('Member projection requires an empty owner')
++        from world_roles import RoleScene
++        projection=RoleScene.membership_only(self.address,self.catalog,role_capacity=role_capacity,
++            owner_generation=self._generation)
++        self._member_projection=projection
++        return projection
++
++    def _paired_members(self,view):
++        if self._member_projection is not None and view is not self._member_projection:
++            raise ValueError('Use this owner\'s paired member projection')
++
+     def _view(self,view):
+         # The projection is a subordinate of THIS map executor. Never pass a
+         # mutable projection belonging to a separate owner or worker thread.
+         from world_roles import RoleScene
+         if type(view) is not RoleScene or view.address!=self.address:
+             raise ValueError('Player projection must belong to the same map instance')
++        self._paired_members(view)
++        if view.metadata_only and view is not self._member_projection:
++            raise ValueError('Member projection belongs to a different owner lifetime')
++
++    def _role_presence(self,expected,view):
++        self._view(view)
++        if view is not self._member_projection:
++            raise ValueError('Domain-owned member projection required')
++        from world_roles import RolePresence
++        if type(expected) is not RolePresence or type(expected.location) is not Location:
++            raise ValueError('Captured player presence required')
++        location=expected.location
++        if (type(location.address) is not MapAddress
++                or any(type(v) is not int for v in (location.address.map_id,location.address.instance_id,
++                    location.address.partition_id,location.role_id,location.version,location.x,location.y))
++                or type(expected.owner_generation) is not str
++                or type(expected.revision) is not int or type(expected.membership_revision) is not int):
++            raise ValueError('Exact typed player membership required')
++        current=self.location(location.role_id)
++        if (location.address!=self.address or location.state!='active' or current!=location
++                or type(location.login_epoch) is not type(current.login_epoch)
++                or view.snapshot(location.role_id)!=expected):
++            raise ValueError('Stale or inactive player membership')
++        return expected
++
++    def role_binding(self,expected,view,connection_generation):
++        """Issue identity only from a captured, still-current active presence.
++
++        Run on this map executor; the role router authenticates the supplied
++        connection generation. This is not NPC permission or a send ACK.
++        """
++        from world_role_delivery import bind_role_view
++        return bind_role_view(self._role_presence(expected,view),connection_generation)
++
++    def fence_role_binding(self,expected,view):
++        """Revoke a captured member identity without changing its location.
++
++        Only the explicit membership-only projection supports this operation;
++        full AOI requires its own ordered delivery/rebuild lifecycle.
++        """
++        return view.fence_binding(self._role_presence(expected,view))
+ 
+     def move_with_view(self,command,now_ms,view):
+         """Return (MoveResult, RoleSceneChange|None) from one map command.
+@@ -550,6 +619,7 @@
+         return self._move(command,now_ms,view)
+ 
+     def _move(self, command, now_ms, view):
++        self._paired_members(view)
+         rejection = self._guard(command, now_ms)
+         if rejection:
+             return MoveResult(rejection=rejection),None
+@@ -703,6 +773,7 @@
+         return self._finalize(receipt,view)
+ 
+     def _finalize(self,receipt,view):
++        self._paired_members(view)
+         frozen = receipt.frozen
+         offer = frozen.reservation.offer
+         existing = self._departures.get(offer.transfer_id)
+@@ -738,6 +809,7 @@
+         return self._ready(expected,view,appearance)
+ 
+     def _ready(self,expected,view,appearance):
++        self._paired_members(view)
+         if self.location(expected.role_id) != expected or expected.state != 'loading':
+             raise ValueError('Stale scene-ready confirmation')
+         location = replace(expected, state='active', version=expected.version+1)
+@@ -769,6 +841,7 @@
+         return self._resume(cancellation,view)
+ 
+     def _resume(self,cancellation,view):
++        self._paired_members(view)
+         reservation = cancellation.reservation
+         offer = reservation.offer
+         existing = self._departures.get(offer.transfer_id)
+--- base/world_roles.py
++++ final/world_roles.py
+@@ -19,7 +19,7 @@
+     owner_generation: str
+     revision: int
+     location: Location
+-    appearance: RoleBasic
++    appearance: RoleBasic | None
+     membership_revision: int
+ 
+ 
+@@ -42,18 +42,41 @@
+ 
+ class RoleScene:
+     def __init__(self,address,catalog,*,radius,role_capacity,pair_capacity,batch_size):
++        self._initialize(address,catalog,role_capacity)
++        if (type(radius) is not int or not 1 <= radius < 32768
++                or type(pair_capacity) is not int or pair_capacity < 0
++                or type(batch_size) is not int or not 1 <= batch_size <= 4096):
++            raise ValueError('Explicit visibility radius, bounded capacities and batch size required')
++        self.radius,self.pair_capacity,self.batch_size=radius,pair_capacity,batch_size
++
++    @classmethod
++    def membership_only(cls,address,catalog,*,role_capacity,owner_generation=None):
++        """Track trusted map membership without appearance, AOI or wire output."""
++        scene=cls.__new__(cls)
++        scene._initialize(address,catalog,role_capacity)
++        if owner_generation is not None:
++            if type(owner_generation) is not str or not 1<=len(owner_generation)<=128:
++                raise ValueError('Explicit owner generation required')
++            scene._generation=owner_generation
++        scene._membership_only=True
++        return scene
++
++    @property
++    def metadata_only(self):
++        return self._membership_only
++
++    def _initialize(self,address,catalog,role_capacity):
+         if (type(address) is not MapAddress
+                 or any(type(v) is not int or v < 1 for v in (address.map_id,address.instance_id))
+                 or type(address.partition_id) is not int or address.partition_id < 0
+                 or not catalog.get(address.map_id,{}).get('available')):
+             raise ValueError('Available map instance required')
+-        if (type(radius) is not int or not 1 <= radius < 32768
+-                or type(role_capacity) is not int or role_capacity < 1
+-                or type(pair_capacity) is not int or pair_capacity < 0
+-                or type(batch_size) is not int or not 1 <= batch_size <= 4096):
+-            raise ValueError('Explicit visibility radius, bounded capacities and batch size required')
++        if type(role_capacity) is not int or role_capacity < 1:
++            raise ValueError('Explicit bounded role capacity required')
+         self.address,self.catalog=address,catalog
+-        self.radius,self.role_capacity,self.pair_capacity,self.batch_size=radius,role_capacity,pair_capacity,batch_size
++        self.role_capacity=role_capacity
++        self.radius=self.pair_capacity=self.batch_size=None
++        self._membership_only=False
+         self._roles,self._cells,self._links,self._sequences={},{},{},{}
+         self._pairs,self._revision=0,0
+         self._generation=uuid4().hex
+@@ -66,6 +89,9 @@
+ 
+     def _location(self,location):
+         if (type(location) is not Location or location.address != self.address
++                or type(location.address) is not MapAddress
++                or any(type(v) is not int for v in (location.address.map_id,
++                    location.address.instance_id,location.address.partition_id))
+                 or location.state != 'active'
+                 or any(type(v) is not int or not 0 < v < 2**63 for v in (location.role_id,location.version))
+                 or not ((type(location.login_epoch) is str and 1 <= len(location.login_epoch) <= 128)
+@@ -75,6 +101,10 @@
+             raise ValueError('Invalid active role visibility location')
+ 
+     def _appearance(self,location,appearance):
++        if self._membership_only:
++            if appearance is not None:
++                raise ValueError('Membership-only projection has no appearance')
++            return
+         if (type(appearance) is not RoleBasic
+                 or (appearance.role_id,appearance.x,appearance.y)!=(location.role_id,location.x,location.y)
+                 or type(appearance.name) is not str
+@@ -133,7 +163,7 @@
+         enqueueing. Already emitted packets have no native scene epoch. This
+         predicate is not a durable outbox, delivery ACK or duplicate filter.
+         """
+-        if type(delivery) is not RoleDelivery:
++        if self._membership_only or type(delivery) is not RoleDelivery:
+             return False
+         current=self.snapshot(delivery.recipient_role_id)
+         return bool(current and delivery.address==self.address
+@@ -152,10 +182,14 @@
+             raise ValueError('Role already present; old membership must leave first')
+         if len(self._roles)>=self.role_capacity:
+             raise ValueError('Player visibility role capacity')
++        presence=RolePresence(self._generation,self._revision+1,location,appearance,self._revision+1)
++        if self._membership_only:
++            self._roles[location.role_id]=presence
++            self._revision=presence.revision
++            return RoleSceneChange(presence,())
+         neighbors=self._near(location)
+         if self._pairs+len(neighbors)>self.pair_capacity:
+             raise ValueError('Player visibility pair capacity')
+-        presence=RolePresence(self._generation,self._revision+1,location,appearance,self._revision+1)
+         one=((S_ADD_USER_SCREEN,role_screen((appearance,))),)
+         packets={key:one for key in neighbors}
+         packets[location.role_id]=self._add_packets(self._roles[k].appearance for k in sorted(neighbors))
+@@ -173,9 +207,27 @@
+ 
+     def _current(self,expected):
+         if (type(expected) is not RolePresence or expected.owner_generation!=self._generation
++                or type(expected.owner_generation) is not str
++                or type(expected.revision) is not int or type(expected.membership_revision) is not int
++                or type(expected.location) is not Location
+                 or expected.location.address!=self.address
+                 or self.snapshot(expected.location.role_id)!=expected):
+             raise ValueError('Stale player visibility snapshot')
++        self._location(expected.location)
++
++    def fence_binding(self,expected):
++        """Permanently supersede this metadata member's previous binding.
++
++        Called by the paired map command after authoritative active-member
++        validation. It creates no AOI sequence, packet or position update.
++        """
++        if not self._membership_only:
++            raise ValueError('Binding fence requires membership-only projection')
++        self._current(expected)
++        presence=replace(expected,revision=self._revision+1,membership_revision=self._revision+1)
++        self._roles[expected.location.role_id]=presence
++        self._revision=presence.revision
++        return presence
+ 
+     def _remove_packets(self,role_ids):
+         role_ids=tuple(role_ids)
+@@ -197,6 +249,11 @@
+         if (location.role_id!=old.role_id or location.login_epoch!=old.login_epoch
+                 or location.version<=old.version):
+             raise ValueError('Player movement requires the same lease and a newer position')
++        if self._membership_only:
++            presence=RolePresence(self._generation,self._revision+1,location,None,expected.membership_revision)
++            self._roles[location.role_id]=presence
++            self._revision=presence.revision
++            return RoleSceneChange(presence,())
+         neighbors=self._near(location)
+         previous=self._links[old.role_id]
+         entered,left=neighbors-previous,previous-neighbors
+@@ -240,6 +297,10 @@
+         if self.snapshot(key) is None:
+             return RoleSceneChange(None,())
+         self._current(expected)
++        if self._membership_only:
++            del self._roles[key]
++            self._revision+=1
++            return RoleSceneChange(None,())
+         neighbors=self._links[key]
+         removed=((S_REMOVE_USER_SCREEN,remove_role_screen((key,))),)
+         deliveries=self._deliveries({peer:removed for peer in neighbors})

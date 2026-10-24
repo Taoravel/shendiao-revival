@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameBottom" Name="GameJigsaw">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="SoundResource" Value="open.ogg" />
+    <Property Name="UnifiedAreaRect" Value="{{0.011875,0},{0.113334,0},{0.115625,679},{0.113333,475}}" />
+    <Property Name="CloseSoundResource" Value="close.ogg" />
+    <Window Type="TaharezLook/StaticImage" Name="GameJigsaw/TopBack">
+      <Property Name="Image" Value="set:MainControl19 image:GameHeadBack" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,604},{0,63}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,604},{0,63}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0223097,0},{0.0378947,0},{0.0219512,604},{0.155172,7}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticImage" Name="GameJigsaw/HeadImage">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,-14},{-1.11111,0},{0.05,114},{-0.8717,119}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GamePuzzle/Top/Info">
+        <Property Name="Text" Value="那么，按下开始吧！" />
+        <Property Name="HorzExtent" Value="117" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+        <Property Name="BorderColour" Value="FF5F4100" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0,148},{0,29},{0,577},{0,56}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GamePuzzle/Top/Name">
+        <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+        <Property Name="BorderColour" Value="FF5F4100" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,149},{0,6},{0,288},{0,26}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="GameJigsaw/Defult">
+      <Property Name="UnifiedAreaRect" Value="{{0.0183727,0},{0.178947,0},{0.985564,0},{0.890526,0}}" />
+      <Window Type="TaharezLook/CommonCase" Name="GameJigsaw/Back">
+        <Property Name="UnifiedAreaRect" Value="{{0.05,100},{0.05,-15},{0.05,567},{0.05,317}}" />
+        <Window Type="TaharezLook/StaticText" Name="GameJigsaw/Bottom/LeftTime">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,344},{0,339},{0,371},{0,359}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameJigsaw/Bottom/Image">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,4},{0,3},{0,464},{0,328}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="GameJigsaw/LeftCase">
+        <Property Name="UnifiedAreaRect" Value="{{0.05,-33},{0.05,-14},{0.05,101},{0.05,318}}" />
+        <Window Type="TaharezLook/StaticImage" Name="GameJigsaw/LeftCase/ProgressBar">
+          <Property Name="Image" Value="set:MainControl19 image:GameProgressBar" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,35},{0,324}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,35},{0,324}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.641791,0},{0.0120482,0},{0.902985,0},{0,328}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/GameProgressBar" Name="GameJigsaw/Bottom/Progress">
+            <Property Name="StepSize" Value="0.01" />
+            <Property Name="CurrentProgress" Value="0" />
+            <Property Name="UnifiedAreaRect" Value="{{0.314286,0},{0.0308642,0},{2.98023e-008,25},{0,315}}" />
+            <Property Name="VerticalProgress" Value="True" />
+            <Window Type="TaharezLook/StaticImage" Name="GameJigsaw/LeftCase/Result41">
+              <Property Name="Image" Value="set:MainControl19 image:Victory" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,77},{0,33}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,77},{0,33}}" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.05,-77},{0.05,-9},{0.0714286,0},{0.05,24}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="GameJigsaw/LeftCase/Result4">
+              <Property Name="Image" Value="set:MainControl19 image:LevelBest" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,77},{0,37}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,77},{0,37}}" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.05,-77},{0,63},{0.0714286,0},{0,100}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="GameJigsaw/LeftCase/Result3">
+              <Property Name="Image" Value="set:MainControl19 image:LevelGood" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,77},{0,37}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,77},{0,37}}" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.05,-77},{0,102},{0.0714286,0},{0,139}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="GameJigsaw/LeftCase/Result2">
+              <Property Name="Image" Value="set:MainControl19 image:LevelMedium" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,77},{0,37}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,77},{0,37}}" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.05,-77},{0,189},{0.0714286,0},{0,226}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="GameJigsaw/LeftCase/Result1">
+              <Property Name="Image" Value="set:MainControl19 image:LevelBad" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,77},{0,37}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,77},{0,37}}" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.05,-77},{0,276},{0.0714286,0},{0,313}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="GameJigsaw/RightBack/Image">
+        <Property Name="Image" Value="set:MainControl4 image:GameRightBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,566},{0.05,-14},{0.05,690},{0.05,316}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="GameJigsaw/Bottom/WholeImage">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0645161,0},{0,82},{0,117},{0,162}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GameJigsaw/RightBack/Image/change">
+          <Property Name="Text" Value="换张图" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,29},{0,170},{0,97},{0,194}}" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="GameJigsaw/Ago">
+      <Property Name="Image" Value="set:MainControl19 image:StartAgo" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,89},{0,39}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,89},{0,39}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.833333,0},{0.0631579,0},{0.950131,0},{0.145263,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticText" Name="GameJigsaw/Ago/Time">
+        <Property Name="Font" Value="msyh-16" />
+        <Property Name="Text" Value="未开始" />
+        <Property Name="HorzExtent" Value="48" />
+        <Property Name="VertExtent" Value="18.75" />
+        <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.202247,0},{0.153846,0},{0.808989,0},{0.3,16}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="GameJigsaw/Close">
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:component image:CloseButtonHover" />
+      <Property Name="NormalImage" Value="set:component image:CloseButtonNormal" />
+      <Property Name="PushedImage" Value="set:component image:CloseButtonPressed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,21},{0,19}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,21},{0,19}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0.948819,0},{0.04,0},{0.976378,0},{0.08,0}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="GameJigsaw/Guide">
+      <Property Name="Image" Value="set:MainControl4 image:GameInfoBack" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,720},{0,355}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,720},{0,355}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0262467,0},{0.05,59},{0.0505431,701},{0.05,414}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticImage" Name="GameJigsaw/GameInfo">
+        <Property Name="Image" Value="set:MainControl19 image:Jisw" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,365},{0,255}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,365},{0,255}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,-18},{0.149296,0},{0.05,347},{0.05,290}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="GameJigsaw/GameInfo/Word">
+          <Property Name="Text" Value="          如图所示：点击两张图片可以将它们对换位置，通过不断的调整位置，最终拼出正确的图案就可以了。" />
+          <Property Name="HorzExtent" Value="261" />
+          <Property Name="VertExtent" Value="46.8567" />
+          <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+          <Property Name="BorderColour" Value="FF5F4100" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="VertFormatting" Value="TopAligned" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{1.12055,0},{0.278431,0},{1.83562,0},{0.470588,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GameJigsaw/Return">
+          <Property Name="Text" Value="返        回" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,491},{0.05,210},{0.05,585},{0.05,234}}" />
+          <Property Name="NormalTextColour" Value="tl:FFFFF5A2 tr:FFFFF5A2 bl:FFFFD200 br:FFFFD200" />
+          <Property Name="ButtonBorderColour" Value="FF6E340D" />
+          <Property Name="ButtonBorderEnable" Value="True" />
+          <Property Name="ButtonDefaultBorderEnable" Value="False" />
+          <Property Name="ButtonDefaultColourEnable" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="GameJigsaw/Front/Back">
+      <Property Name="Image" Value="set:MainControl4 image:GameCase" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,720},{0,356}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,720},{0,356}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.023622,0},{0.168421,0},{0.0235436,720},{0.917895,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/ImageButton" Name="GameJigsaw/Start">
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl19 image:GameStartHover" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="NormalImage" Value="set:MainControl19 image:GameStartNormal" />
+        <Property Name="PushedImage" Value="set:MainControl19 image:GameStartPushed" />
+        <Property Name="DisabledImage" Value="set:MainControl19 image:OverDisable" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="UnifiedMaxSize" Value="{{0,303},{0,49}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,303},{0,49}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,170},{0,80},{0.05,473},{0,129}}" />
+        <Property Name="NormalTextColour" Value="tl:FFFFF5A2 tr:FFFFF5A2 bl:FFFFD200 br:FFFFD200" />
+        <Property Name="ButtonBorderColour" Value="FF6E340D" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="GameJigsaw/Operation">
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl19 image:GameInfoHover" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="NormalImage" Value="set:MainControl19 image:GameInfoNormal" />
+        <Property Name="PushedImage" Value="set:MainControl19 image:GameInfoPushed" />
+        <Property Name="DisabledImage" Value="set:MainControl23 image:OverDisable" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="UnifiedMaxSize" Value="{{0,303},{0,49}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,303},{0,49}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,182},{0,151},{0,485},{0,200}}" />
+        <Property Name="NormalTextColour" Value="tl:FFFFF5A2 tr:FFFFF5A2 bl:FFFFD200 br:FFFFD200" />
+        <Property Name="ButtonBorderColour" Value="FF6E340D" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="GameJigsaw/Exit">
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl19 image:GameExitHover" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="NormalImage" Value="set:MainControl19 image:GameExitNormal" />
+        <Property Name="PushedImage" Value="set:MainControl19 image:GameExitPushed" />
+        <Property Name="DisabledImage" Value="set:MainControl23 image:OverDisable" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="UnifiedMaxSize" Value="{{0,303},{0,49}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,303},{0,49}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,182},{0,222},{0,485},{0,271}}" />
+        <Property Name="NormalTextColour" Value="tl:FFFFF5A2 tr:FFFFF5A2 bl:FFFFD200 br:FFFFD200" />
+        <Property Name="ButtonBorderColour" Value="FF6E340D" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

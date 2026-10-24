@@ -1,0 +1,15 @@
+# 序章太祖长拳授予裁定
+
+2026-10-24。恢复十个“掌握技能”节点、人物其他技能账本、建角技能授权或完整技能同步前读取本页和唯一执行参数 `design/newbie-first-skill-v1.json`。未知精确grant字段已经经过原客户端及端游官方定向调查，按用户授权作设计；无需再等原服公式才实现隔离任务链。
+
+根本批重新读取原config.pfs四表并核长度/CRC，十任务均type10/原ProcessBarTime1/原120经验、NPC10908/1501，唯一入边type40/AI8001和唯一后继逐项核实；玩家技能100008原三表及其他技能26项列表交叉一致。事实与SHA见prologue-first-skill-root-source-20261024.json。官方只支持初入江湖习得，具体授予仍unknown，见PROLOGUE_FIRST_SKILL_GUIDE_RESEARCH。原进度kind5只提交CCommit，原技能包为完整替换，不能把对白/任务state1当学习成功。
+
+本地设计采用完成该教学任务时免费授100008的value1；已有受支持值取max(current,1)保留高值。最短1000ms、有效300000ms是服务器设计时间，不冒称原ProcessBarTime的单位已闭合。保留原120经验和其他零奖励，只激活原唯一后继active0。前驱须本路线真实可信AI8001任务结算凭据，不能仅completed或造胜利；正式PVE暂停保持。
+
+技能状态归角色所有者。由任务窗口暂时单写新role_skills及必要协议Module，提供调用方事务的已知完整基线、当前冻结快照及expected-revision grant CAS；main仍单写accounts建角、共享登录/分发。Battle仅消费未来已批准的版本化只读技能快照，不在此修改持久技能或把训练公式作正式授权。任务持有唯一教学操作凭据；技能CAS无第二套任务结算authority，费用/技能/经验/资源/凭据与最终编码同事务。
+
+真实新建事务可以显式保存已知空技能授权。旧new_restoration_role/章节来源、缺记录或原先曾发空包不证明历史完整空技能；旧角色只有经公开Interface显式验证完整基线才可授予，不做隐式补档。完整known map必须保留每个受支持旧key/value；未知或部分map不发猜测空包。paid只读当前技能，不回放旧level或重发120XP。flag1仅设计用于抑制原可选快捷栏自动摆放，仍须完整当前map；原消费者会删除未包含旧key。
+
+完成条件：startup严格校验原十节点/43路线和技能三表；新建授权与历史未知负例；已有其他技能/已有100008高值保留；原完整map编码/consumer含“漏一项必删除”的敏感性；同任务事务lateSQL/编码回滚；paid在后来学习/成长后SQL authorizer禁止DML仍返回当前；断线重登和旧epoch围栏。第一阶段可用明确临时Participant/BattleFinished契约fixture走真实task结算测试前驱接缝，但不称实际AI8001或生产可达。共享准入与准确发布须另批，不能混入当前忠诚或碰撞修复。
+
+方法：research按客户端→官方→designed分别列来源；codebase-design把角色账本、原协议、任务授予与战斗授权分为真实Interface；writing-for-agents将唯一参数、写者、故障和完成条件共置。本政策创建时只有来源/原codec研究；新ledger、grant实现、shared、部署、真实GUI和正式战斗均未验。

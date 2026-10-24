@@ -1,0 +1,276 @@
+<?xml version='1.0' encoding='utf-8'?>
+<fragments>
+  <shaderFragment name="VS_PP_Default_OutputPos" slot="SS_Vertex_Output_Position">
+    <code>
+      
+      output.Position = input.Position;
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_PP_Default_OutputUV" slot="SS_Vertex_Output_UVTex">
+    <parameter>
+	extern float gWidth_DOP; 
+	extern float gHeight_DOP;
+    </parameter>
+    <code>
+      
+	output.UV0 = input.UV0;
+	output.UV0 += float4(0.5f/gWidth_DOP,0.5f/gHeight_DOP,0,0);
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_PP_DownFilter" slot="SS_Pixel_Output_Color">
+    <parameter>
+	extern sampler gOldSampler_DF; 
+    </parameter>
+    <code>
+      
+	output.Color = tex2D(gOldSampler_DF,input.UV0);
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_PP_GaussianFilter" slot="SS_Pixel_Output_Color">
+    <parameter>
+	extern sampler gOldSampler_GF; 
+	extern float gSampleWeight_GF[Gaussian_Sample_Count];//外部宏定义Gaussian_Sample_Count
+	extern float2 gSampleWeightOffset_GF[Gaussian_Sample_Count];
+	extern float gColorScale_GF;
+	/*
+	const static float gSampleWeight_DF[Gaussian_Sample_Count] = 
+	{
+	0.032493934,
+	0.045823786,     
+	0.060706660,     
+	0.075550653,     
+	0.088327669,     
+	0.097008966,      
+	0.10008837 ,    
+	0.097008966,     
+	0.088327669,     
+	0.075550653,     
+	0.060706660,     
+	0.045823786,  
+	0.032493934
+	};
+
+	const static float2 gSampleWeightOffset_DF[Gaussian_Sample_Count] =
+	{
+	{-0.0058593750, 0.00000000},
+	{-0.0048828125,0.00000000 },
+	{-0.0039062500, 0.00000000},
+	{-0.0029296875,0.00000000},
+	{-0.0019531250,0.00000000},
+	{-0.00097656250,0.00000000},
+	{-0.00000000  , 0.00000000},  
+	{0.00097656250, 0.00000000},
+	{0.0019531250 , 0.00000000 },   
+	{0.0029296875 , 0.00000000 },
+	{0.0039062500 , 0.00000000 },
+	{0.0048828125 , 0.00000000 },
+	{0.0058593750 , 0.00000000}
+	};
+	*/
+    </parameter>
+    <code>
+      
+        output.Color = float4(0.f,0.f,0.f,1.f);
+	for(int i=0; i&lt;Gaussian_Sample_Count; ++i)
+	{
+	    output.Color += tex2D(gOldSampler_GF,input.UV0+gSampleWeightOffset_GF[i]) * gSampleWeight_GF[i];
+	}
+	output.Color *= gColorScale_GF;
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_PP_BrightFilter" slot="SS_Pixel_Output_Color">
+    <parameter>
+	static const float sMiddleGray = 0.18f;
+	static const float sWhiteCutoff = 0.8f;
+        extern float gLuminace_PBF;
+	extern sampler gOldSampler_PBF; 
+    </parameter>
+    <code>
+      
+        output.Color = tex2D(gOldSampler_PBF, input.UV0);
+        output.Color *= sMiddleGray / ( gLuminace_PBF + 0.001f );
+        output.Color *= ( 1.0f + ( output.Color/ ( sWhiteCutoff * sWhiteCutoff ) ) );
+        output.Color -= 5.0f;
+        output.Color = max( output.Color, 0.0f );
+        output.Color /= ( 10.0f + output.Color);
+        output.Color.w = 1.0f;
+	
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_PP_CompositeAdd" slot="SS_Pixel_Output_Color">
+    <parameter>
+	extern sampler gOldSampler_CA; 
+	extern sampler gAdditionalSampler_CA; 
+    </parameter>
+    <code>
+      
+      output.Color = tex2D(gOldSampler_CA, input.UV0);
+      output.Color += tex2D(gAdditionalSampler_CA, input.UV0);
+	
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_PP_Distort" slot="SS_Pixel_Output_Color">
+    <parameter>
+	extern sampler gOldSampler_DisP; 
+	extern sampler gNormalSampler_DisP; 
+    </parameter>
+    <code>
+      
+	float4 normal = tex2D(gNormalSampler_DisP, input.UV0);
+	float2 offset = (normal.xz*2.0f - 1.0f)*normal.a;
+	float2 distortUV  = saturate(input.UV0+offset*0.3f);
+	float4 distorNormal = tex2D(gNormalSampler_DisP, distortUV);
+
+	if(normal.x==0.f &amp;&amp; normal.z==0.f || distorNormal.x==0.f&amp;&amp;distorNormal.z==0.f)
+	{
+		output.Color = tex2D(gOldSampler_DisP,input.UV0);
+	}
+	else
+	{
+		output.Color = tex2D(gOldSampler_DisP,distortUV);
+	}
+	
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_PP_UnderWaterDistort" slot="SS_Pixel_Output_Color">
+    <parameter>
+	extern sampler gOldSampler; 
+	extern sampler gNormalSampler; 
+	extern float2  gDeltaUV;
+    </parameter>
+    <code>
+      
+        float2 normalUV = input.UV0 + gDeltaUV;
+	float4 normal = tex2D(gNormalSampler, normalUV);
+	float2 distortUV  = saturate(input.UV0+normal.xy*0.1);
+	output.Color = tex2D(gOldSampler,distortUV);
+	//output.Color.xyz = float3(distortUV,0);
+	//output.Color = tex2D(gNormalSampler,normalUV);
+	
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_PP_UnderWaterCompositeAdd" slot="SS_Pixel_Output_Color">
+    <parameter>
+	extern sampler gFullSampler; 
+	extern sampler gSamplerBy4; 
+	extern sampler gNormalSampler; 
+	extern float4  gDeltaUVAndUVTile;//xy deltaUV zw uvTile
+	extern float   gDistortScale;
+    </parameter>
+    <code>
+      
+        float2 normalUV = input.UV0*gDeltaUVAndUVTile.zw + gDeltaUVAndUVTile.xy;
+	float4 normal = tex2D(gNormalSampler, normalUV)*gDistortScale;
+	float2 scaleFactor = saturate((1.0f- abs(2.0f*(input.UV0 - 0.5))));
+	float2 distortUV  = (input.UV0+float2(normal.y,0.0f)*scaleFactor);
+
+        float4 distortFull = tex2D(gFullSampler, distortUV);
+	float4 distortFullBy4 = tex2D(gSamplerBy4,distortUV);
+	output.Color = lerp(distortFull,distortFullBy4,0.6);
+	
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_PP_BoxFilter" slot="SS_Pixel_Output_Color">
+    <parameter>
+	extern sampler gOldSampler_AB; 
+	extern float gWidth_AB; 
+	extern float gHeight_AB;
+	//extern sampler gOldLargeSampler_AB;//原尺寸的图
+
+	const float2 PixelCoordsDownFilter[16] =
+	{
+	    { 1.5,  -1.5 },
+	    { 1.5,  -0.5 },
+	    { 1.5,   0.5 },
+	    { 1.5,   1.5 },
+
+	    { 0.5,  -1.5 },
+	    { 0.5,  -0.5 },
+	    { 0.5,   0.5 },
+	    { 0.5,   1.5 },
+
+	    {-0.5,  -1.5 },
+	    {-0.5,  -0.5 },
+	    {-0.5,   0.5 },
+	    {-0.5,   1.5 },
+
+	    {-1.5,  -1.5 },
+	    {-1.5,  -0.5 },
+	    {-1.5,   0.5 },
+	    {-1.5,   1.5 },
+      };
+    </parameter>
+    <code>
+      
+        float2 dWidthHeight = float2(1.0f/gWidth_AB,1.0f/gHeight_AB);
+	for(int i=0; i&lt;16; ++i)
+	{
+		output.Color += tex2D(gOldSampler_AB,input.UV0+PixelCoordsDownFilter[i]*dWidthHeight);
+	}
+	output.Color /= 16;
+	//output.Color += tex2D(gOldLargeSampler_AB,input.UV0);
+	output.Color *= 0.5;
+	
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_PP_MotionBlur" slot="SS_Pixel_Output_Color">
+    <parameter>
+      extern float4   gParams_MB;          //Params.x=1采用实时模式，否则采用固定模式；Params.y固定模式下，速度的factor；Params.z全屏模式下，速度的factor; 固定模式下(Params.z,Params.w)是集中点坐标
+      extern float4x4 gMatLastViewProj;    //上一帧的view*proj的矩阵
+      extern float4x4 gMatCurViewProj;     //当前帧的view*proj的矩阵
+      extern float4x4 gMatCurViewProjInv;  //当前帧的view*proj的逆矩阵
+      extern float4x4 gMatCurProjInv;      //当前帧的Proj的逆矩阵
+      extern sampler  gDepthSampler_MB;    //深度纹理
+      extern sampler  gColorSampler_MB;    //颜色纹理
+    </parameter>
+    <code>
+      
+      if ( gParams_MB.x==1 )
+      {
+          float2 velocity = tex2D(gDepthSampler_MB,input.UV0).rg;
+          velocity = velocity*2.0f*gParams_MB.z;
+          velocity.y = -velocity.y;
+          
+          float2 texcoord = input.UV0;
+          float3 color=tex2D(gColorSampler_MB,texcoord).rgb;
+          float realSamples = 1;
+          float numSamples = 12;
+          velocity/=numSamples;
+          texcoord+=velocity;
+          for ( float i=1;i&lt;numSamples;++i,texcoord+=velocity )
+          {
+            float weight=1;
+            float2 velocityTarget = tex2D(gDepthSampler_MB,texcoord).rg;
+            velocityTarget = velocityTarget*2.0f*gParams_MB.z;
+            velocityTarget.y = -velocityTarget.y;
+            velocityTarget/=numSamples;
+            weight = saturate( (abs(velocityTarget.x)+abs(velocityTarget.y))/(0.0001f+abs(velocity.x)+abs(velocity.y)) );
+            color.rgb += tex2D(gColorSampler_MB,texcoord).rgb*weight;
+            realSamples += weight;
+          }
+          output.Color = float4(color/realSamples,1.0);
+      }
+      else
+      {
+          //固定模式
+          float4 curViewProjPos=float4(input.UV0.x*2.0f-1.0f,1.0f-2.0f*input.UV0.y,0,1);
+          float2 velocity=gParams_MB.y*(gParams_MB.zw-curViewProjPos.xy)/16.0f;
+          velocity.y = -velocity.y;
+          float2 texcoord = input.UV0;
+          float3 color=0;
+          float numSamples = 12;
+          velocity/=numSamples;
+          for ( float i=0;i&lt;numSamples;++i,texcoord+=velocity )
+          {
+            color.rgb += tex2D(gColorSampler_MB,texcoord).rgb;
+          }
+          output.Color = float4(color/numSamples,1.0);
+      }
+      
+    </code>
+  </shaderFragment>
+</fragments>

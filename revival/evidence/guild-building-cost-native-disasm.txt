@@ -1,0 +1,50 @@
+01486d00 mov      eax, dword ptr [esp + 4]
+01486d04 mov      ecx, dword ptr [ecx + eax*8 + 0x338]
+01486d0b cmp      ecx, 0x14
+01486d0e jge      0x1486d46
+01486d10 sub      eax, 0
+01486d13 je       0x1486d39
+01486d15 sub      eax, 1
+01486d18 je       0x1486d2c
+01486d1a sub      eax, 1
+01486d1d jne      0x1486d46
+01486d1f lea      eax, [ecx + 5]
+01486d22 imul     eax, eax, 0x61a80
+01486d28 cdq      
+01486d29 ret      4
+01486d2c lea      eax, [ecx + 5]
+01486d2f imul     eax, eax, 0x493e0
+01486d35 cdq      
+01486d36 ret      4
+01486d39 lea      eax, [ecx + 5]
+01486d3c imul     eax, eax, 0x186a0
+01486d42 cdq      
+01486d43 ret      4
+01486d46 xor      eax, eax
+01486d48 xor      edx, edx
+01486d4a ret      4
+01486d4d int3     
+01486d4e int3     
+01486d4f int3     
+01486d50 mov      edx, dword ptr [esp + 4]
+01486d54 xor      eax, eax
+01486d56 cmp      dword ptr [ecx + edx*8 + 0x338], 0x14
+01486d5e setge    al
+01486d61 sub      eax, 1
+01486d64 and      eax, 0xc8
+01486d69 ret      4
+01486d6c int3     
+01486d6d int3     
+01486d6e int3     
+01486d6f int3     
+01486d70 mov      eax, dword ptr [esp + 4]
+01486d74 mov      eax, dword ptr [ecx + eax*8 + 0x338]
+01486d7b cmp      eax, 0x14
+01486d7e jge      0x1486d89
+01486d80 add      eax, 2
+01486d83 imul     eax, eax, 0x32
+01486d86 ret      4
+01486d89 xor      eax, eax
+01486d8b ret      4
+01486d8e int3     
+01486d8f int3     

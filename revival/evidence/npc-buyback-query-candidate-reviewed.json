@@ -1,0 +1,79 @@
+{
+  "created_utc": "2026-10-24T06:12:33.120205+00:00",
+  "status": "npc_owned_readonly_query_candidate_reviewed_pending_root_adoption_price_consistency_and_shared",
+  "full_NPC_goal": "active",
+  "source_candidate": "D:\\神雕侠侣\\revival\\staging\\npc-buyback-query-candidate-v2\\npc_shop_sales.py",
+  "source_candidate_sha256": "5b25096ce774e0d27469a6259e6efbbedc4d11b62a3ecc76553841019d6b9a24",
+  "real_published_base_sha256": "5bfbc44403d9ab2e3aa93dc0cf6304f20e74e7a1b5a111e757fc04bfb6e01058",
+  "prototype_bad_record_red_sha256": "4fc6504f06dbeb6493cf9c24c935317d01bd87076ed2ee8815b659b16e8ffb19",
+  "fixed_review_directory": "D:\\神雕侠侣\\revival\\evidence\\reviews\\npc-buyback-query-20261024-r1",
+  "manifest_sha256": "075e967157188aaf5dcf0fa491cfcfde768a13630ac4ccbcb700692a4aae0bd5",
+  "fixed_local_inputs": 12,
+  "fixed_external_inputs": 3083,
+  "standards_hard_findings": 0,
+  "standards_judgement_findings": 0,
+  "spec_findings": 0,
+  "positive_check_runs": 6,
+  "actual_missing_query_red_reproductions": 3,
+  "actual_bad_record_red_reproductions": 3,
+  "red_counted_as_feature_pass": false,
+  "positive_checks": [
+    "parent:readonly_query",
+    "parent:legacy_sale_runtime",
+    "standards:readonly_query",
+    "standards:legacy_sale_runtime",
+    "spec:readonly_query",
+    "spec:legacy_sale_runtime"
+  ],
+  "actual_red_checks": [
+    "parent:missing_query_red",
+    "parent:bad_record_red",
+    "standards:missing_query_red",
+    "standards:bad_record_red",
+    "spec:missing_query_red",
+    "spec:bad_record_red"
+  ],
+  "readonly_public_behavior_groups_per_run": 13,
+  "original_Peer_sale_groups_per_run": 12,
+  "result_sha256": {
+    "verification/parent/missing_query_red/result.json": "084443b533605058a75ad1cf09e5f5249daa244f9ad8ddbe951844fe04582c81",
+    "verification/parent/bad_record_red/result.json": "294a4a4d37d84f99b32f97ced8c669746fcee0f63d9724895cb70d6eb64bc900",
+    "verification/parent/readonly_query/result.json": "9ffdc18158feca3b938e2e06ed69034769b546f8785860110f216da6100f17d9",
+    "verification/parent/legacy_sale_runtime/result.json": "10e233058f22796f61b1989767711ac41ff88a38e72a6c34f7a53da0f395c875",
+    "verification/standards/missing_query_red/result.json": "dcc3931024f5aa8f19267e3a09469df1d6e3832fe87a54bd6ffea47cf4a2c9a1",
+    "verification/standards/bad_record_red/result.json": "65f946a30699d9ee2d58adcb11d49a544fcc45e03bf0817be47caed949906d2b",
+    "verification/standards/readonly_query/result.json": "aa70a83d75c1b55e2ee610a34e7aa774be923305deeb8329d28ec070c261f649",
+    "verification/standards/legacy_sale_runtime/result.json": "10e233058f22796f61b1989767711ac41ff88a38e72a6c34f7a53da0f395c875",
+    "verification/spec/missing_query_red/result.json": "ba7c0281c44ef565954eb9aa27ce8951580392ace636a38b41a1396d40b4e1e7",
+    "verification/spec/bad_record_red/result.json": "0d77228a3a8588ce7c0376eff76c942747c331d145b268f9141e0b8a61bcc68d",
+    "verification/spec/readonly_query/result.json": "d650abe52090f715e70f81baf2b0f7c83b42c0de2abf97121201d929fbbe1bd0",
+    "verification/spec/legacy_sale_runtime/result.json": "10e233058f22796f61b1989767711ac41ff88a38e72a6c34f7a53da0f395c875"
+  },
+  "independent_report_sha256": {
+    "standards.md": "cf7eeab73cada3a53b82297a6e797c83c437602cb6163aa9b342c629439f774d",
+    "spec.md": "b84064938f47303f687baeb1ad1f6b28f78e5b1c292ee3b92485f19d6ee4dbea",
+    "REVIEW.md": "c456d6b545afc146c3f2f2d6083ad3bb96b3266542e2d6ae8c48b441a4208529"
+  },
+  "method": {
+    "diagnosing_bugs": "published actual encrypted query empty loop retained; permission/route/cache differentiated",
+    "tdd": "actual missing-interface RED; real source-scope reads green; actual malformed-record RED to controlled refusal",
+    "codebase_design": "query read snapshot separate from mutator cleanup; one real pure c0434 projection for read/transaction",
+    "code_review": "actual non-Git BASE, independent Standards/Spec each2positive+2actualRED",
+    "writing_for_agents": "map-member receipt/deadline/send fence and independent policy gates co-located with integration steps"
+  },
+  "original_service2_read_permission_is_server_proposal": true,
+  "response_choice_is_server_proposal": true,
+  "existing_display_debit_discrepancy_resolved": false,
+  "fees_or_receipt_identity_changed": false,
+  "shared_query_routed": false,
+  "query_native_GUI_verified": false,
+  "deployed": false,
+  "live_database_or_service_or_GUI_changed": false,
+  "unverified": [
+    "root adoption of service2/c0434 read-only proposal",
+    "root display/debit policy and oldpaid compatibility for actual buyback",
+    "main actual encrypted query4 with current permission/delivery revalidation",
+    "complete original GUI and atomic immutable deployment",
+    "full NPC restoration and capacity"
+  ]
+}

@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="TurpetMsgInputDlg">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,256.35},{0,215.053},{0,538.35},{0,414.053}}" />
+    <Window Type="TaharezLook/StaticImage" Name="TurpetMsgInputDlg/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,162},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,162},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,114},{0,9.8134},{0,276},{0,36.8134}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="TurpetMsgInputDlg/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="喇叭" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="34" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,60},{0,1},{0,204},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TurpetMsgInputDlg/Text">
+      <Property Name="Text" Value="请输入你要发送的信息" />
+      <Property Name="HorzExtent" Value="131" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003679" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,88.75},{0.05,27.397},{0.05,218.75},{0.05,47.397}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="TurpetMsgInputDlg/Back/Textback">
+      <Property Name="UnifiedAreaRect" Value="{{0,16},{0.05,46.397},{0,265},{-0.23877,178.189}}" />
+      <Window Type="TaharezLook/RichEditbox" Name="TurpetMsgInputDlg/InputBox">
+        <Property Name="LineSpace" Value="1" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,-6.35},{0,6.94699},{0.05,232.65},{0,67.947}}" />
+        <Property Name="BackGroundEnable" Value="False" />
+        <Property Name="BlinkCaretTimeout" Value="0.5" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TurpetMsgInputDlg/CharNum">
+      <Property Name="Text" Value="你还可以输入50个字" />
+      <Property Name="HorzExtent" Value="120" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003679" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0,77.65},{-0.23877,181.863},{0,203.65},{-0.23877,201.863}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="TurpetMsgInputDlg/Ok">
+      <Property Name="Text" Value="确定" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,58.6499},{-0.23877,202.863},{0,128.65},{-0.23877,224.863}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="TurpetMsgInputDlg/Cancel">
+      <Property Name="Text" Value="取消" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,150.65},{-0.23877,202.863},{0,220.65},{-0.23877,224.863}}" />
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,30 @@
+# 新角色自然开场接线裁定
+
+2026-10-23，主策划。涉及创建来源、出生点、type50或重连开场时，先读NEW_CHARACTER_OPENING_RESEARCH，再加载design/newbie-opening-v1.json。配置是本地补全规则的单一来源；43条路线和原始movie ID仍取newbie-routes.json。
+
+1. 启动加载只读路线及政策，验证全部合法组合和落点。账号创建在同一事务记录独立新手来源及所选路线，建立对应门派设计出生点。任务Module拥有新手来源/阶段表，向创建路径提供调用方事务Interface；现有成长来源没有新手标记时保持待显式迁移。
+2. 首个有效角色租约在一个事务兑现来源并offer/accept原type50 root，持久授权阶段与当前任务一致。连接初始化完成后，角色所有者发本门派原SStartPlayCG；仅持有冻结IntroTicket/章节快照，I/O事务内以公开恢复Interface创建局部NewbieFlow，保留source_id并校验当前范围。可变flow不跨所有者/线程共享；提交后才更新角色凭据，失败保留原冻结凭据用于同命令重试。不等待电影时长阻塞地图、I/O线程或网络循环。
+3. 角色所有者验证CEndPlayCG，再由任务Module完成root、原角色专属后继激活、奖励和幂等凭据的同一事务。提交后发布当前快照与逻辑消息；历史回执不回写旧状态。人物加点、背包等写入口需受同一角色开场门禁约束。
+4. 待完成章节在新连接重新授权播放；已完成章节按当前位置、任务恢复。原movie临时换图由客户端Return恢复，服务器保留电影前权威位置。0/1 intro投影是已注明的本地Adapter设计，真实EXP始终独立编码。
+
+领域接线归任务窗口；路线、可走格及地图契约归世界窗口；共享创建/运行时入口由原始复原窗口集中集成。根窗口维护裁定并独立验证。下一完成条件是：临时库实际Owner自然建角→匹配门派CG→结束→唯一后继→重连保持；可信offer_task(100192)不满足此条件。
+
+方法：research复核原包/端游来源及自然Section结束链；codebase-design将创建事务、阶段Module、位置所有者和原生Adapter放在已有Seam，以小Interface隐藏来源、回执和版本校验；writing-for-agents按初始化、播放、提交、恢复安排可判定步骤。产物为政策及本文；当前独立复跑verify_world_snapshot_experience_native通过EXP0、150、4886718345分别进入真实+f8且intro+48独立为0。
+
+主策划新增verify_newbie_runtime.py并执行--expect-missing，已捕捉当前源码缺口：新古墓角色仍位于临安1007实验位置(8480,6976)，任务记录为空、未发开场CG，而非设计的古墓1100(1488,1152)、root100101 active和movie11001。证据newbie-runtime-baseline.json；此模式退出0表示缺口复现。默认模式将要求实际Owner自然建角及两派各自CG/后继、错误完成拒绝、重连与重建运行时恢复。章节落盘/共享入口及真实GUI尚未验收，未重启或部署现有服务。
+
+主策划独立运行世界窗口audit_newbie_birth_sites.py，通过43路线/10处独立落点：地图资源与signed16范围有效、mask1可走，见证路径每段重用原DDA碰撞谓词，抵达首NPC32逻辑像素交互半径。证据newbie-birth-sites-audit.json；32半径及落点选用均为本地设计，静态见证不证明原生客户端寻路/输入或画面已恢复。历史成长-only来源夹具verify_new_character_growth已改成创建前旧档+明确旧成长模板，必要复跑通过；不会删除当前新角色chapter来绕门禁。
+
+任务独立Interface交付后，主策划运行verify_task_newbie_chapter.py通过全部43组合：独立创建来源/root授权、bean在正确CG前、保留原0XP、仅选角色后继；创建及完成各项同事务回滚；错movie/位置/generation/期限及旧epoch拒绝，pending新连接可再授权、完成重试无第二份奖。此为controlled创建/世界Adapter临时库检查，共享实际Owner仍待verify_newbie_runtime默认模式。世界已交NewbieFlow.from_ticket，事务局部恢复冻结凭据；原误名successor_movie_id统一为successor_card_effect_id，首师父200xx是卡片。
+
+共享入口接线后，主策划运行同一verify_newbie_runtime.py默认模式已转绿：实际AccountStore自然创建古墓与少林角色，得到各自设计出生点、原root及11001/11032电影；没有可信offer任务或手工设位置。错/截断/重复CEnd不改任务/资产，原0XP保持0，完成仅激活角色9对应后继；pending断线重新授权，completed及重建运行时不再重播，原SEnterWorld解码确认独立intro0→1。等待期间可信玩法写拒绝，另一角色心跳及不同MapOwner查询仍继续。证据newbie-runtime-verification.json；真实RoleOwner/ConnectionOwner、连续RC4/原生MPPC及原CG codec，内存Writer/临时库，不是客户端实际播放/Return/走到师父，也未部署或启动客户端、服务、战斗。
+
+后续部署状态：用户在原始复原聊天明确“部署 我来验收”，集成窗口已部署本次intro并启动PID31052；主策划只读复核其命令行指向本项目serve.py、127.0.0.1:28993监听。备份、23原表一致性和原version601心跳结果见latest-deployment-verification.json，由集成方记录。此前不部署限制已被此项明确授权覆盖；当前保留该进程供人验收，不据此授权后续自动重启或打开客户端。之后的选择卡/装备属性源码变更不属于本次已验GUI或已生效功能，源码快照以该部署证据区分。
+
+用户实际验收反证：ESC取消剧情后，追踪显示“[主线]序章缘起 任务已失败”。集成方只读核对角色3的章/root完成、100186 active、tracking空，初步属于显示与持久状态不一致，尚未取得原生显示根因。用户同时要求修退出/删角按钮。原集成窗口独占当前现场/共享入口修复，根保持PID与角色不动；卡/装备接线顺延。已有offline Owner/codec通过不覆盖该GUI反证，不能称序章显示或原生可玩验收已经通过。
+
+显示枚举纠正：原始集成研究已定向核对native160daa0..160daf9，Scenario bean.state2走失败helper/原CSpecialQuestConfig1000.tracdiscribe“任务已失败”；0与3走正常TraceListA，3在NPC分类为ready。先前设计的active state2由客户端实际反证推翻，政策改用active0，完成Refresh1/ready3保持。该纠正只改线显示投影，章节持久phase/route与policy身份不迁移；精确接取调度和未知value仍为设计。主集成集中修常量及各任务投影/当前active章后继resume，根待其Owner→原tracker反馈独立复跑。不能把原TASK_NEWBIE_COMPLETION_DISPLAY的“state1不重播”结论扩大为state2的tracker正确性。
+
+纠正后root独立执行verify_task_tracker_native.py确认原x86的0/2/3分流及失败原文；随后独立verify_task_tracker_runtime.py通过实际Owner的root、匹配END后的原后继、重连后唯一active后继，解码bean喂原tracker均走normal_config_trace。重复END、重连不改持久任务/奖励，后继恢复不需要假装卡玩法已接。证据task-tracker-runtime-verification.json；该切片不执行真实renderer/完整观察者UI，当前源码修复不等于用户已复验画面。退出/删角的Owner独立复核也通过，记录在ARCHITECTURE_ACCEPTANCE。
+
+本次修复发布已更新：主集成由20261023T063445Z不可变源码副本运行run_release.py，root只读确认PID8724命令行及127.0.0.1:28993监听。Main在同一发布副本已跑lifecycle/tracker两项并保存at-stop一致性备份，记录latest-deployment-verification。期间内容哈希围栏阻止多窗口晚到改动混版，当前工作区未回滚；新增活力接线未并入这个发布。root已解除6系统窗口源码冻结，恢复各自离线模块工作；后续源不自动进入当前进程，保留给用户真实GUI复验。root没有认证登录、删真实角色或操作客户端。

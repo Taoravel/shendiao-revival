@@ -1,0 +1,55 @@
+{
+  "behavior_tests_passed": 8,
+  "native_codecs": [
+    {
+      "class": "SSendBattleStart",
+      "bytes": 34,
+      "native_consumed": 34
+    },
+    {
+      "class": "SSendAddFighters",
+      "bytes": 137,
+      "native_consumed": 137
+    },
+    {
+      "class": "SSendRoundStart",
+      "bytes": 9,
+      "native_consumed": 9
+    },
+    {
+      "class": "CSendAction",
+      "bytes": 14,
+      "native_consumed": 14
+    },
+    {
+      "class": "CSendRoundPlayEnd",
+      "bytes": 5,
+      "native_consumed": 5
+    },
+    {
+      "class": "SSendRoundScript",
+      "bytes": 60,
+      "native_consumed": 60
+    },
+    {
+      "class": "SSendBattleEnd",
+      "bytes": 9,
+      "native_consumed": 9
+    },
+    {
+      "class": "SSendRoundPlayEnd",
+      "bytes": 4,
+      "native_consumed": 4
+    }
+  ],
+  "native_commands_accepted": [
+    "attack",
+    "defend",
+    "escape"
+  ],
+  "damaged_snapshot_max_hp_verified": true,
+  "native_command_timer_seconds": 30,
+  "training_rules_revision": "2026-10-23.3",
+  "live_client_battle_verified": false,
+  "scope": "offline state transitions, native decoders/sender commands, gateway world fixture; live presentation pending"
+}

@@ -1,0 +1,56 @@
+{
+  "source_status": "client_verified",
+  "request": {
+    "type": "0xc0800",
+    "constructor": "0xdbcab0",
+    "payload": "empty"
+  },
+  "reply": {
+    "type": "0xc0801",
+    "constructor": "0xf21090",
+    "marshal": "0xf213f0",
+    "decoder": "0xf21450",
+    "wire": "compact count, then BE32 pet instance key + BE16 progress bit pattern",
+    "consumer_signedness": "142f0aa movsx word means UI interprets signed16; raw values >=32768 would display negative"
+  },
+  "cases": [
+    {
+      "pet_key": 7,
+      "progress_raw": 0,
+      "wire_hex": "01000000070000"
+    },
+    {
+      "pet_key": 7,
+      "progress_raw": 7,
+      "wire_hex": "01000000070007"
+    },
+    {
+      "pet_key": 7,
+      "progress_raw": 32767,
+      "wire_hex": "01000000077fff"
+    },
+    {
+      "pet_key": 7,
+      "progress_raw": 32768,
+      "wire_hex": "01000000078000"
+    },
+    {
+      "pet_key": 7,
+      "progress_raw": 65535,
+      "wire_hex": "0100000007ffff"
+    }
+  ],
+  "consumer_static_evidence": [
+    "142fbb0 passes decoded map to142f870 on current CPetSkillDlg",
+    "142f8cc reads value word and142f8d7 inserts by key into dialog+cc",
+    "142efef loads selected pet key from dialog+ac;142f061..142f0b6 looks up same key and converts signed progress to float",
+    "142f0ba..142f0ce uses selected Pet+48 learned-list count to lookup89d870 configuration",
+    "142f0dd..142f106 divides progress by record+4 positive threshold for progress bar"
+  ],
+  "limits": [
+    "Only request and nonempty reply codecs executed here; UI mapping/threshold statements based on exact disassembly and need full consumer execution",
+    "Threshold configuration getter RTTI/field association pending explicit check",
+    "Server progress increments/reset/guarantee and certification probability not implemented",
+    "No runtime or GUI interaction"
+  ]
+}

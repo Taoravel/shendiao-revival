@@ -1,0 +1,39 @@
+# 地图成员许可与连接绑定裁定
+
+2026-10-24，主策划设计。状态：架构裁定候选r2，供World和main冻结实现后验收；本文不批准上线或开启鉴定收费。
+
+方法：codebase-design将身份签发集中在地图Module的公开Interface；domain-modeling区分地图成员关系、可撤销成员许可、玩家同屏和在线租约。依据为ARCHITECTURE、现有RoleViewBinding及World的公开生命周期反例；服务器内部身份模型属于designed，不冒称客户端原服规则。领域用语见根GLOSSARY.md。
+
+## 唯一归属与兼容
+
+实际WorldDomain生命周期固定持有唯一metadata成员投影；共享MapOwner仅在自己的地图执行者创建和访问它。采用WorldDomain.member_projection(role_capacity=显式预算)，而不是让调用者向新Domain注入同地址的旧RoleScene。投影须在该Domain已有成员、交接或场景投递前建立；重复同预算取得同实例，拒绝热替换或改容量。成员模式的owner_generation采用实际Domain代次；不是位置version、常量或客户端值。新Domain即使地址和角色Location完全相同，也须产生不同代次，且拒绝旧投影与旧presence。
+
+沿用现有不可变RolePresence和RoleViewBinding，保持NPC已封签的数据契约。membership_revision解释为当前成员许可的世代：真实退出再加入，以及显式fence均产生新世代；普通移动保持许可世代。RolePresence.revision与Location.version用于当前快照核对，不能代替成员许可身份。投影只从地图权威命令结果派生；不建立第二份可自主写入的位置权威。
+
+RoleScene完整玩家同屏模式仍有独立的外观、容量、序列与投递规则。metadata不构造假外观，不产出或授权RoleDelivery，不实例化RoleViewInbox；未来同屏须另行接线与验收。
+
+## 地图Interface
+
+join/move/leave/ready/resume/finalize均经过同一Domain和固定投影的配套命令，避免只更新一方；这些操作不得绕开配套路径直接改变权威成员状态。freeze仍使用原Domain命令：先精确fence旧许可，再冻结源位置；源投影暂留最后active快照，但Domain frozen期间不签发许可，该快照不能授权交互。取消后由resume_with_view同步当前位置并保留新许可世代，成功交接后由finalize_with_view精确清源；不要求不存在的freeze_with_view。投影容量拒绝、无效或幂等join不得提前清除当前移动状态、成员许可或连接绑定；失败保持前态，实际成功改变成员关系后才替换相关状态。
+
+role_binding(expected_presence, view, connection_generation)只能消费跨所有者投递前捕获的真实不可变presence。执行时核当前Domain active Location和完整当前presence；connection_generation由可信角色/连接关系提供。旧请求执行时不得按role_id重取新presence来补身份。完整地址包含地图模板、实例和分区。
+
+fence_role_binding使用同样的精确captured presence验证；仅成员模式推进许可世代、保留位置。冻结期间拒绝签发；取消/恢复同步当前位置但沿用已推进的许可世代，冻结前旧许可不得复活。陈旧fence不得撤销后来新成员的许可；历史finalize不得清理新成员或新移动上下文，保留r4既有保护。
+
+## 角色与连接的接线
+
+角色所有者持有不可变当前presence。进入传送、剧情、战斗、同图瞬移等流程时，先停止受影响的服务命令、清未付费modal/ticket并向连接投递撤销，再向地图请求精确fence；等待期间保持该角色流程受控。实际流程失败不恢复旧许可；重新建立许可须走当前可信生命周期结果。不同角色、地图和战斗不等待一把全局锁或全服执行器。
+
+连接所有者独占RC4/MPPC及writer。安装和撤销绑定必须带当前角色租约、真实连接代次、完整expected身份及生命周期控制身份，以compare-and-set处理；普通回复不能建立身份。旧安装不得覆盖新绑定，旧close/finalize不得清新绑定。撤销控制的顺序和生效门槛须由实际队列屏障证明；不能仅发起撤销就宣称另一个执行者已生效。
+
+带成员范围的逻辑回复在入队和实际编码/write之前均校验捕获的完整binding以及该回复需要的当前scene/flow/ticket身份。待安装或撤销控制未决期间不得穿过许可检查；旧排队回复即使恢复同图也不得重新包装成新身份。已经write的字节无法撤回，drain只证明服务器发送屏障；沿用原协议的场景隔离限制，不称客户端执行ACK。
+
+稳定binding只证明成员及连接关系，NPC当前距离、准确位置凭据、物品全量CAS、ticket有效期和付费事务仍各自必须校验。已付款重复查询仅返回当前结果，不恢复旧许可、不补发旧物品描述、不再次扣费。
+
+## 接入与验收
+
+World先冻结所属源码、真实BASE diff及新Domain复用旧投影的准确反例；main独占共享入口集成，以现役npc-repair-20261024T023920Z为BASE制作单独成员候选。选择性合入本片所需变更，不捎带未验的inventory、任务、方向或收费功能。
+
+必须通过真实公开Interface证明：同位置多角色登记无AOI；普通移动许可稳定；失败/幂等join保持原状态；同Location重入、冷建、连接替换隔离；loading不签发；fence/freeze/cancel/resume旧许可永不复活；旧finalize/close/install无法影响新成员。使用临时DB和实际加密Peer阻塞入队/编码，证明旧回复拒绝、原RC4/MPPC流连续、队列满按既定策略处理；另一角色、地图或连接在受控等待时仍可推进。
+
+源码、测试、配置和实际import来源均在固定候选前后核SHA；Standards和Spec分轴复审。只有纯模块通过不代表共享接线通过。批准成员候选后，再单独整合已封签NPC鉴定和最小资产diff并重验真实付费事务；真实客户端GUI及商业容量另记未验证范围。

@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="BindSerial">
+    <Property Name="Font" Value="msyh-16" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.305,0},{0.242647,0},{0.28875,329},{0.297794,190}}" />
+    <Window Type="TaharezLook/StaticImage" Name="BindSerial/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,58},{0,12},{0,220},{0,38}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="BindSerial/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="绑定玩家" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,72},{0,1},{0,144},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="BindSerial/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.056962,0},{0.201794,0},{0.936709,0},{0.802691,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="BindSerial/ApplyMsg">
+        <Property Name="Text">使用说明：
+填写好友ID确定后可与该好友好友度增加至   
+1000，如果已达到1000及以上，则不会变化。
+</Property>
+        <Property Name="HorzExtent" Value="272" />
+        <Property Name="VertExtent" Value="46.8567" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,7},{0,72},{0,272},{0,130}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/Editbox" Name="BindSerial/Content">
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0,50},{0,39},{0,215},{0,59}}" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="BindSerial/PS">
+        <Property Name="Text" Value="请输入要绑定的老玩家序列号" />
+        <Property Name="HorzExtent" Value="169" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.190647,0},{0,13},{0,225},{0,35}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Figure" Name="BindSerial/Back/">
+        <Property Name="UnifiedAreaRect" Value="{{0.104317,0},{0.11194,0},{0.895683,0},{0.231343,0}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="BindSerial/Send">
+      <Property Name="Text">确定
+
+
+
+</Property>
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,56},{0,178},{0,131},{0,202}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="BindSerial/Cancel">
+      <Property Name="Text">取   消
+
+
+
+</Property>
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,186},{0,178},{0,261},{0,202}}" />
+    </Window>
+  </Window>
+</GUILayout>

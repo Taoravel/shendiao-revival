@@ -1,0 +1,506 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="ExitGameDialog/back">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="DragMoveEnable" Value="True" />
+    <Property Name="ClippedByParent" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.16875,0},{0.225,0},{0.16875,531},{0.225,330}}" />
+    <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/title">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="步步高升" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="68" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0321883,0},{0,12},{0.224279,0},{0,38.6554}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/title1">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="任务指引" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="68" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.480935,0},{0,12},{0.654193,0},{0,38.3063}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ExitGameDialog/back/button">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="退出游戏" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0,57},{0,289},{0,157},{0,313}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ExitGameDialog/back/button1">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="重新登录" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0,162},{0,289},{0,262},{0,313}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ExitGameDialog/back/button2">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="继续游戏" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0,372},{0,289},{0,472},{0,313}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ExitGameDialog/back/button21">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="离线保护" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0894225,272.656},{2.27825,0},{0.103098,302.085},{2.44189,0}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ExitGameDialog/back/Return">
+      <Property Name="Text" Value="返回角色选择" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0,267},{0,289},{0,367},{0,313}}" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="ExitGameDialog/back/Left">
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,44},{0,264},{0,286}}" />
+      <Window Type="TaharezLook/StaticImage" Name="ExitGameDialog/back/Top">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,-5.36001},{0.05,-3.21463},{0.05,222.64},{0.05,114.785}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/jiangli">
+          <Property Name="Text" Value="次日上线，将获得下列物品之一" />
+          <Property Name="HorzExtent" Value="183" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF12C4FF tr:FF12C4FF bl:FF12C4FF br:FF12C4FF" />
+          <Property Name="BorderColour" Value="FF043974" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,-4},{0,26},{0,235.534},{0,46}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ExitGameDialog/back/todayActivity">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0438596,0},{0,66},{0,231},{0,116}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="ExitGameDialog/back/todayActivity/ItemBack">
+            <Property Name="Image" Value="set:BaseControl image:ExitItem" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0824238,0},{0.0395872,0},{0.299618,0},{0.999587,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="ExitGameDialog/back/todayActivity/Award1">
+              <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,47},{0,47}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ExitGameDialog/back/todayActivity/ItemBack1">
+            <Property Name="Image" Value="set:BaseControl image:ExitItem" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.374497,0},{0.0238139,0},{0.591692,0},{0.983814,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="ExitGameDialog/back/todayActivity/Award2">
+              <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,47},{0,47}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ExitGameDialog/back/todayActivity/ItemBack2">
+            <Property Name="Image" Value="set:BaseControl image:ExitItem" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.64539,0},{0.0409273,0},{0.862585,0},{1.00093,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="ExitGameDialog/back/todayActivity/Award3">
+              <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,47},{0,47}}" />
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ExitGameDialog/back/Top/Name">
+          <Property Name="Image" Value="set:MainControl image:Figure" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,287},{0,28}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,287},{0,28}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00425531,0},{-0.025424,0},{0.00864128,286},{0,25}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/1">
+            <Property Name="Text" Value="次日上线奖励" />
+            <Property Name="HorzExtent" Value="78" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="TextColours" Value="tl:FFFFEF42 tr:FFFFEF42 bl:FFFFBB05 br:FFFFBB05" />
+            <Property Name="BorderColour" Value="FF072C78" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,13},{0.148499,0},{0,99.048},{0.00564227,23.9999}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/Top/Word">
+          <Property Name="Text" Value="的身份的身份撒旦法但是" />
+          <Property Name="HorzExtent" Value="143" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFEF42 tr:FFFFEF42 bl:FFFFBB05 br:FFFFBB05" />
+          <Property Name="BorderColour" Value="FF043974" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,14},{0,26},{0,216},{0,121.54}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="ExitGameDialog/back/todayActivity1">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,-5.36001},{0.05,119.485},{0.05,229.64},{0.05,237.485}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/Money">
+          <Property Name="Text" Value="获得现金：" />
+          <Property Name="HorzExtent" Value="65" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF12C4FF tr:FF12C4FF bl:FF12C4FF br:FF12C4FF" />
+          <Property Name="BorderColour" Value="FF043974" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,4.5},{0,27.2066},{0,67.5},{0,47.2066}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/Gongjijin">
+          <Property Name="Text" Value="获得储备金：" />
+          <Property Name="HorzExtent" Value="78" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF12C4FF tr:FF12C4FF bl:FF12C4FF br:FF12C4FF" />
+          <Property Name="BorderColour" Value="FF043974" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,4.5},{0,51.2066},{0,82.268},{0,71.2066}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/Money1">
+          <Property Name="Text" Value="获得经验：" />
+          <Property Name="HorzExtent" Value="65" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF12C4FF tr:FF12C4FF bl:FF12C4FF br:FF12C4FF" />
+          <Property Name="BorderColour" Value="FF043974" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,5.5},{0,75.2066},{0,70.5},{0,95.2066}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/todayActivity1/Money1">
+          <Property Name="TextColours" Value="tl:FFFFEF42 tr:FFFFEF42 bl:FFFFBB05 br:FFFFBB05" />
+          <Property Name="BorderColour" Value="FF220B01" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,70.5},{0,27.2066},{0,134.5},{0,47.2066}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/todayActivity1/Money2">
+          <Property Name="TextColours" Value="tl:FFFFEF42 tr:FFFFEF42 bl:FFFFBB05 br:FFFFBB05" />
+          <Property Name="BorderColour" Value="FF220B01" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,81.5},{0,51.2066},{0,143.5},{0,71.2066}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/Money2">
+          <Property Name="Text" Value="综合评价" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,145.5},{0,4.2066},{0,211.5},{0,24.2066}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/ProgressBar" Name="ExitGameDialog/back/todayActivity1/Progressbar">
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="CurrentProgress" Value="0" />
+          <Property Name="UnifiedAreaRect" Value="{{0,70.5},{0,75.2066},{0,149.5},{0,95.2066}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ExitGameDialog/back/Top/Name1">
+          <Property Name="Image" Value="set:MainControl image:Figure" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,287},{0,28}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,287},{0,28}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00425531,0},{0,4.29999},{0,288},{0,32.3}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/title2">
+            <Property Name="Text" Value="今日在线成就" />
+            <Property Name="HorzExtent" Value="78" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFEF42 tr:FFFFEF42 bl:FFFFBB05 br:FFFFBB05" />
+            <Property Name="BorderColour" Value="FF072C78" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,13},{0.142857,0},{0,103},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ExitGameDialog/back/todayActivity1/Assess">
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,88},{0,92}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,88},{0,92}}" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,149.5},{0,21.5965},{0,237.5},{0,113.596}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="ExitGameDialog/back/Right">
+      <Property Name="UnifiedAreaRect" Value="{{0,265},{0,44},{0,511},{0,286}}" />
+      <Window Type="TaharezLook/StaticImage" Name="ExitGameDialog/back/Back1">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,-5.70999},{0.05,-7.86463},{0.05,228.29},{0.05,227.136}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="ExitGameDialog/back/todayActivity2">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,99.9002},{0,239},{0,121.9}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/todayActivity2/Master1/Title1">
+            <Property Name="Text" Value="师门任务" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF12C4FF tr:FF12C4FF bl:FF12C4FF br:FF12C4FF" />
+            <Property Name="BorderColour" Value="FF043974" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,0},{0,56.2917},{0,18}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/BlueBar" Name="ExitGameDialog/back/todayActivity2/Master1/ProgressBar1">
+            <Property Name="Tooltip" Value="40级以上每天20次，可获得大量经验、金钱" />
+            <Property Name="StepSize" Value="0.01" />
+            <Property Name="CurrentProgress" Value="0" />
+            <Property Name="UnifiedAreaRect" Value="{{0,63},{0,1},{0,207.161},{0,17}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/Back1/Team1">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,124.9},{0,239},{0,144.9}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/todayActivity2/Master1/Merchat">
+            <Property Name="Text" Value="家族特产" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF12C4FF tr:FF12C4FF bl:FF12C4FF br:FF12C4FF" />
+            <Property Name="BorderColour" Value="FF043974" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,-0.0998001},{0,60},{0,17.9002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/VioletBar" Name="ExitGameDialog/back/todayActivity2/Master1/ProgressBar2">
+            <Property Name="Tooltip" Value="每天最多50次，可获得金钱及阵法元素" />
+            <Property Name="StepSize" Value="0.01" />
+            <Property Name="CurrentProgress" Value="0" />
+            <Property Name="UnifiedAreaRect" Value="{{0,63},{0,1},{0,207.161},{0,17}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/Back1/Team2">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,49.9002},{0,239},{0,71.9002}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/todayActivity2/Master1/Family">
+            <Property Name="Text" Value="五绝令" />
+            <Property Name="HorzExtent" Value="40" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF12C4FF tr:FF12C4FF bl:FF12C4FF br:FF12C4FF" />
+            <Property Name="BorderColour" Value="FF043974" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.00822702,0},{0,0},{0,56.0498},{0,18}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/YellowBar" Name="ExitGameDialog/back/todayActivity2/Master1/ProgressBar3">
+            <Property Name="Tooltip" Value="每天3次，建议5人组队" />
+            <Property Name="StepSize" Value="0.01" />
+            <Property Name="CurrentProgress" Value="0" />
+            <Property Name="UnifiedAreaRect" Value="{{0,63},{0,1},{0,207.161},{0,17}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/Back1/Team3">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,74.9002},{0,239},{0,96.9002}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/todayActivity2/Master1/Goods">
+            <Property Name="Text" Value="侠侣任务" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF12C4FF tr:FF12C4FF bl:FF12C4FF br:FF12C4FF" />
+            <Property Name="BorderColour" Value="FF043974" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.00822702,0},{0,0},{0,56.1017},{0,18}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/ProgressBar" Name="ExitGameDialog/back/todayActivity2/Master1/ProgressBar4">
+            <Property Name="Tooltip" Value="每天10次，可获得经验、友好度及鲜花" />
+            <Property Name="StepSize" Value="0.01" />
+            <Property Name="CurrentProgress" Value="0" />
+            <Property Name="UnifiedAreaRect" Value="{{0,63},{0,1},{0,207.161},{0,17}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/Back1/Team4">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,24.9002},{0,239},{0,46.9002}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/todayActivity2/Master1/MultEXPTime">
+            <Property Name="Text" Value="三倍时间" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF12C4FF tr:FF12C4FF bl:FF12C4FF br:FF12C4FF" />
+            <Property Name="BorderColour" Value="FF043974" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.00822702,0},{0,0},{0,56.2745},{0,18}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/RedBar" Name="ExitGameDialog/back/todayActivity2/Master1/ProgressBar5">
+            <Property Name="Tooltip" Value="每周5小时，可用“修为丹”额外获得7小时三倍时间" />
+            <Property Name="StepSize" Value="0.01" />
+            <Property Name="CurrentProgress" Value="0" />
+            <Property Name="UnifiedAreaRect" Value="{{0,63},{0,1},{0,207.161},{0,17}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/Back1/Team5">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,1.9002},{0,239},{0,23.9002}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/todayActivity2/Master1/Upgrade">
+            <Property Name="Text" Value="适合练功区" />
+            <Property Name="HorzExtent" Value="65" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF12C4FF tr:FF12C4FF bl:FF12C4FF br:FF12C4FF" />
+            <Property Name="BorderColour" Value="FF043974" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.00824849,0},{0.0899838,0},{0,67.1622},{0.0899838,18}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/Back1/Level">
+            <Property Name="Text" Value="155~155级" />
+            <Property Name="HorzExtent" Value="72" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFA8FF00 tr:FFA8FF00 bl:FFA8FF00 br:FFA8FF00" />
+            <Property Name="BorderColour" Value="FF043974" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,66.8594},{0.0899838,0},{0,142.319},{0.0899838,18}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/Back1/Map">
+            <Property Name="Text" Value="桃花岛野外一层" />
+            <Property Name="HorzExtent" Value="91" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFEF42 tr:FFFFEF42 bl:FFFFBB05 br:FFFFBB05" />
+            <Property Name="BorderColour" Value="FF072C78" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.31416,217.809},{0.0899838,0},{-0.0560823,263.772},{0.0899838,18}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="ExitGameDialog/back/Back1/Figure">
+          <Property Name="UnifiedAreaRect" Value="{{0.0128205,0},{0,153},{0,228},{0,232}}" />
+          <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/todayActivity2/Master1/Title2">
+            <Property Name="TextColours" Value="tl:FFFFEF42 tr:FFFFEF42 bl:FFFFBB05 br:FFFFBB05" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.985964,-138.691},{0,5.9114},{0.710408,0},{0,25.9114}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/todayActivity2/Master1/Title21">
+            <Property Name="TextColours" Value="tl:FFFFEF42 tr:FFFFEF42 bl:FFFFBB05 br:FFFFBB05" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.985964,-138.691},{0,26.9114},{0.710408,0},{0,46.9114}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/todayActivity2/Master1/money">
+            <Property Name="TextColours" Value="tl:FFFFEF42 tr:FFFFEF42 bl:FFFFBB05 br:FFFFBB05" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.985964,-138.691},{0,47.9114},{0.710408,0},{0,67.9114}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/Back1/Figure/Over">
+            <Property Name="Text">完成师门
+还可获得</Property>
+            <Property Name="HorzExtent" Value="53" />
+            <Property Name="VertExtent" Value="31.2378" />
+            <Property Name="TextColours" Value="tl:FF12C4FF tr:FF12C4FF bl:FF12C4FF br:FF12C4FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.10489,0},{0,20},{0.349334,0},{0,55}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ExitGameDialog/back/Back1/Figure/Exp">
+            <Property Name="Text" Value="EXP" />
+            <Property Name="HorzExtent" Value="23" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFC3FF20 tr:FFC3FF20 bl:FF61AC00 br:FF61AC00" />
+            <Property Name="BorderColour" Value="FF003B1A" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.714161,0},{0,5.9114},{0.834161,0},{0,25.9114}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ExitGameDialog/back/Back1/Figure/Xianjin">
+            <Property Name="Image" Value="set:MainControl image:Xianjin" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.715525,0},{0,26.9114},{0.79997,0},{0,45.9114}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ExitGameDialog/back/Back1/Figure/Chubei">
+            <Property Name="Image" Value="set:MainControl image:Chubeijin" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.715525,0},{0,47.9114},{0.79997,0},{0,66.9114}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,99 @@
+[
+  {
+    "class": "RoleBasicOctets",
+    "native_encode_decode": true,
+    "hex": "0000000123456789080c544f5ca04fa25b3100000009000002"
+  },
+  {
+    "class": "RoleBasicOctets-both-maps",
+    "native_decoder": true,
+    "native_serializer": false,
+    "hex": "000000000000002a02327571000000090201000f69bd07fffffffd020102010211066f706171756500"
+  },
+  {
+    "class": "RoleBasic-outer",
+    "native_encode_decode": true,
+    "hex": "190000000123456789080c544f5ca04fa25b3100000009000002069014bf0100"
+  },
+  {
+    "class": "SAddUserScreen-one-real-role",
+    "native_encode_decode": true,
+    "hex": "01190000000123456789080c544f5ca04fa25b3100000009000002069014bf010000"
+  },
+  {
+    "class": "RoleBasic-two-path-nodes",
+    "native_decoder": true,
+    "native_serializer": false
+  },
+  {
+    "class": "SRemoveUserScreen-one-role",
+    "native_encode_decode": true,
+    "hex": "01000000012345678900"
+  },
+  {
+    "class": "SRoleMove",
+    "native_encode_decode": true,
+    "x": 1680,
+    "y": 5311,
+    "hex": "0000000123456789069014bf"
+  },
+  {
+    "class": "SRoleMove",
+    "native_encode_decode": true,
+    "x": -123,
+    "y": 32767,
+    "hex": "0000000123456789ff857fff"
+  },
+  {
+    "class": "SRoleStop",
+    "native_encode_decode": true,
+    "x": 1680,
+    "y": 5311,
+    "hex": "0000000123456789069014bf"
+  },
+  {
+    "class": "SRoleStop",
+    "native_encode_decode": true,
+    "x": -123,
+    "y": 32767,
+    "hex": "0000000123456789ff857fff"
+  },
+  {
+    "original_handler": "0x11dd8a0",
+    "captured_create_player_call": "0x11da180",
+    "shape_input": 9,
+    "model_output": 1010109,
+    "packed_2c": 113,
+    "RoleInfo_48": 11,
+    "RoleInfo_54": 7,
+    "position": [
+      1680,
+      5311
+    ],
+    "scope": "original handler executed until player create call; engine creation not executed"
+  },
+  {
+    "original_handler": "0x11dd8a0",
+    "captured_create_player_call": "0x11da180",
+    "shape_input": 10,
+    "model_output": 1010110,
+    "packed_2c": 50,
+    "RoleInfo_48": 12,
+    "RoleInfo_54": 3,
+    "position": [
+      1680,
+      5311
+    ],
+    "scope": "original handler executed until player create call; engine creation not executed"
+  },
+  {
+    "original_SRoleMove_Process": "0x11d7fc0",
+    "remote_virtual_b0_arguments": [
+      -123,
+      5311
+    ],
+    "original_SRoleStop_Process": "0x11c56c0",
+    "stop_no_calls_or_object_writes": true,
+    "scope": "original remote dispatch; move method boundary captured, movement simulation not executed"
+  }
+]

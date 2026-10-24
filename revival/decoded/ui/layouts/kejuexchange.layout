@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="KejuExchange">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.296265,0},{0.323334,0},{0.715014,0},{0.675119,0}}" />
+    <Window Type="TaharezLook/StaticImage" Name="KejuExchange/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.180596,0},{0,12},{1.1,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="KejuExchange/Title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="宠物寿命兑换" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="102" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.3,0},{0,1},{0.666883,0},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/RichEditbox" Name="KejuExchange/Back/Text1">
+      <Property Name="Font" Value="fzy4k-11" />
+      <Property Name="ReadOnly" Value="True" />
+      <Property Name="LineSpace" Value="1" />
+      <Property Name="BlinkCaret" Value="True" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="MaxTextLength" Value="2147483647" />
+      <Property Name="UnifiedAreaRect" Value="{{0.051194,0},{0.199289,0},{0.05,299.85},{0.05,135.65}}" />
+      <Property Name="BlinkCaretTimeout" Value="0.5" />
+      <Property Name="TextParsingEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="KejuExchange/Back/Text2">
+      <Property Name="Text" Value="宠物" />
+      <Property Name="HorzExtent" Value="26" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003679" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,20},{0,149},{0,50},{0,171}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/Combobox" Name="KejuExchange/Back/pet">
+      <Property Name="Text" Value="一二三四五六七八（野生）" />
+      <Property Name="CaratIndex" Value="12" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,51},{0,149},{0,227},{0,310}}" />
+      <Property Name="MaxEditTextLength" Value="2147483647" />
+      <Property Name="EditSelectionStart" Value="12" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="KejuExchange/Back/Text3">
+      <Property Name="Text" Value="积分" />
+      <Property Name="HorzExtent" Value="27" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003679" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,232},{0,149},{0,262},{0,171}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/Editbox" Name="KejuExchange/Back/credit">
+      <Property Name="BlinkCaret" Value="True" />
+      <Property Name="MaxTextLength" Value="2147483647" />
+      <Property Name="UnifiedAreaRect" Value="{{0,262},{0,149},{0,315},{0,170.71}}" />
+      <Property Name="TextParsingEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="KejuExchange/Back/cancel">
+      <Property Name="Text" Value="取   消" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,190},{0,171},{0,258},{0,195}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="KejuExchange/Back/OK">
+      <Property Name="Text" Value="兑   换" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,71},{0,171},{0,139},{0,195}}" />
+    </Window>
+  </Window>
+</GUILayout>

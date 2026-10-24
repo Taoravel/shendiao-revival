@@ -1,0 +1,18 @@
+{
+  "revision": "2026-10-24.pet-stones.1",
+  "source_status": "designed",
+  "original_source_status": "client_verified",
+  "templates": [70052, 70053],
+  "maximum_count": 5,
+  "growth_per_stone": 5,
+  "aptitude_per_stone": 50,
+  "draws": {"count": 50, "exclusive_maximum": 10000, "distribution": "designed: each captured draw independently assigns one aptitude point to floor(draw*5/10000); exactly50 points total, no client supplied allocation"},
+  "composition": "BASE aptitudes contain cakes and poison changes; apply existing blood policy to BASE, then add independent stone extras. Current Profile.growth_raw already includes5*count; never add again on load/wire.",
+  "replacement": "designed: ordinary and super rebirth retain count/extras and add5*count exactly once to the newly rolled natural growth plus retained evolution bonus; pending super source includes complete stone version/state",
+  "resources": "designed: preserve absolute HP/MP and death; clear clamps to reduced caps, never heals or revives. XP, allocation and unrelated metadata retained.",
+  "admission": "original explicit pet key permits selected/fighting and other owned pets; caller RoleOwner still admits out-of-battle use and checks active battle/exclusive operations",
+  "generation": "new restoration pet explicitly count0/extras0. Missing old state stays unknown; explicit complete one-time import requires known total growth and BASE aptitude sources, never infer zero or grant a historical bonus.",
+  "clear": "70053 consumes one only when count>0; subtract exactly5*oldcount and remove only independently recorded extras; original150483 no-effect otherwise",
+  "native": "initial Pet+134 map and distinct attr::SRefreshPetData c32c9 absolute fields1930/1940/1950/1960/1970/1980 including all zeros on clear",
+  "publication": "workspace implementation; deployment and original GUI remain separate acceptance"
+}

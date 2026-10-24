@@ -1,0 +1,9 @@
+# 人物治疗294精确最小发布审查
+
+固定BASE为npc-bound-shop-20261023T115742Z（本批开始时PID39796），候选npc-role-healing-20261023T125539Z。非Git，精确七生产输入255行见manifest/base/current/changes.diff；六既审数值/领域输入加从BASE提取的game_runtime三行，不含工作区private、social、radius、care、creation或v2增量。
+
+独立Standards与Spec各0项发现，详各自报告。两端14个SHA及候选manifest一致，候选1429项均匹配，对BASE恰七变化、无删除。game_runtime为7089408b929b8b730cf99e14e1c8d8e750b41d91dd3e405cde202a1c70f2fd6f。
+
+root再从精确候选source/config及冻结harness独立执行domain11、实际加密Owner3、guards7组均绿；六生产Module.__file__逐项确认在候选source，harness哈希匹配，每项后全部1429清单及runner不变。结果npc-role-healing-root-candidate-verification.json，输出仅工作evidence/root-candidate-npc-healing，未改冻结source/config。
+
+294仅已知无伤势resource.1、HP>0及普通等级1..155、10380当前合法服务，现金等级×30；已付保留当前状态，未知profile不迁移、满新请求不扣、死亡不复活。启动已审DDL新增一张空npc_role_healing_receipts，candidate metadata精确声明new_empty_tables仅此名；部署方预检报告107旧表逐行不变，未知/非空新表、旧表变动或删除仍拒绝，不能把总表集合增加等同玩家资产变化。现有自动资源创建和v2开关保持关闭。battle/loading是状态fixture，没有实际战斗。root未访问真人库、认证、启停服务或GUI；实际发布由原始集成窗口按已有用户授权统一完成，发布后仍需精确runner/监听/hash确认。本审查不构成运行服已更新或GUI已验收的证据。

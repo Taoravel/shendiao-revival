@@ -1,0 +1,479 @@
+{
+  "method": "research: first-party original PFS/native image + exact captured published frame; explicit dependency adapters",
+  "actual_case_count": 20,
+  "case_count_unit": "1 full generated schema reader +16 scalar precision/path fixtures +3 real-frame item quote chains; 12 cash subchecks are internal",
+  "capture_input_sha256": "ea45ec31e266eafc39699ee77797f53c59c28d7a2932a8bffbefbcc1b7f13955",
+  "producer_sha256": "0be40588f04796ef72aee299520455251c98478dfd47c5015b05f06044fbf34c",
+  "captured_body_sha256": "7786db2dfe7253c94516c2245aec4e133ab61413ed7ce66bce4ca25b980f6755",
+  "captured_body_hex": "0000000000001f40000000140300009d08000000010000000100000000000000000000000000000001000000000000000000000000000000000000000000009d0c000000000000000200000001000000000000000000000001000000000000000000000000000000000000000000007d0000000000000000030000000200000000000000000000000200000000000000000000000000000000000000000300000001000000fa0000000200001b580000000300000096",
+  "source": {
+    "entry": "autoconfig/knight.gsp.npc.citemsell.xml",
+    "archive": "artres/config.pfs",
+    "bytes": 19831,
+    "crc32": "0x8f8661dc",
+    "sha256": "403e46a1a75d0b0a2dc0b34438b5314099a4a9fbcd7f6c483533c08cbd91a401",
+    "rows": 434,
+    "full_attributes_and_lists_equal": true,
+    "buyprice_distribution": {
+      "positive": 434,
+      "zero": 0,
+      "negative": 0
+    },
+    "wrapper_vtable": "0x225c2bc",
+    "wrapper_rtti": ".?AVknight_gsp_npc_Citemsell_table_implement@XMLCONFIG@@",
+    "member": "ConfigManager+0xb28",
+    "selected_rows": {
+      "40200": null,
+      "40204": null,
+      "32000": {
+        "id": "32000",
+        "buyprice": "150",
+        "sellprice": "75",
+        "moneytype": "2",
+        "sellnpc": "10011",
+        "ifshow": "0"
+      }
+    }
+  },
+  "schema_case": {
+    "source_id": 32000,
+    "native_fields": {
+      "id@0": 32000,
+      "buyprice@4": 150,
+      "sellprice@8": 75,
+      "moneytype@c": 2,
+      "sellnpc@10": 10011,
+      "ifshow@14": 0
+    },
+    "xml_reads": [
+      [
+        "id",
+        32000
+      ],
+      [
+        "buyprice",
+        150
+      ],
+      [
+        "sellprice",
+        75
+      ],
+      [
+        "moneytype",
+        2
+      ],
+      [
+        "sellnpc",
+        10011
+      ],
+      [
+        "ifshow",
+        0
+      ]
+    ]
+  },
+  "quote_chains": [
+    {
+      "template": 40200,
+      "key": 1,
+      "quantity": 1,
+      "raw_price_map_value": 250,
+      "override_found": false,
+      "override_buyprice": null,
+      "final_native_quote": 275,
+      "actual_published_cash_debit": 250,
+      "difference": 25,
+      "row_price_after_original_store": 275,
+      "selected_UI_quantity": 1,
+      "cash_guards": [
+        {
+          "cash": 250,
+          "quote_in_EDI": 275,
+          "passed_to_capacity_check": false,
+          "boundary": "actual published debit"
+        },
+        {
+          "cash": 274,
+          "quote_in_EDI": 275,
+          "passed_to_capacity_check": false,
+          "boundary": "computed quote -1/equal"
+        },
+        {
+          "cash": 275,
+          "quote_in_EDI": 275,
+          "passed_to_capacity_check": true,
+          "boundary": "computed quote -1/equal"
+        },
+        {
+          "cash": 8000,
+          "quote_in_EDI": 275,
+          "passed_to_capacity_check": true,
+          "boundary": "actual captured wallet"
+        }
+      ],
+      "lookup_keys": [
+        40200
+      ],
+      "conversion_entries": [
+        "0x19191e9"
+      ],
+      "default_native_quote": 275
+    },
+    {
+      "template": 40204,
+      "key": 2,
+      "quantity": 1,
+      "raw_price_map_value": 7000,
+      "override_found": false,
+      "override_buyprice": null,
+      "final_native_quote": 7700,
+      "actual_published_cash_debit": 7000,
+      "difference": 700,
+      "row_price_after_original_store": 7700,
+      "selected_UI_quantity": 1,
+      "cash_guards": [
+        {
+          "cash": 7000,
+          "quote_in_EDI": 7700,
+          "passed_to_capacity_check": false,
+          "boundary": "actual published debit"
+        },
+        {
+          "cash": 7699,
+          "quote_in_EDI": 7700,
+          "passed_to_capacity_check": false,
+          "boundary": "computed quote -1/equal"
+        },
+        {
+          "cash": 7700,
+          "quote_in_EDI": 7700,
+          "passed_to_capacity_check": true,
+          "boundary": "computed quote -1/equal"
+        },
+        {
+          "cash": 8000,
+          "quote_in_EDI": 7700,
+          "passed_to_capacity_check": true,
+          "boundary": "actual captured wallet"
+        }
+      ],
+      "lookup_keys": [
+        40204
+      ],
+      "conversion_entries": [
+        "0x19191e9"
+      ],
+      "default_native_quote": 7700
+    },
+    {
+      "template": 32000,
+      "key": 3,
+      "quantity": 2,
+      "raw_price_map_value": 150,
+      "override_found": true,
+      "override_buyprice": "150",
+      "final_native_quote": 300,
+      "actual_published_cash_debit": 150,
+      "difference": 150,
+      "row_price_after_original_store": 300,
+      "selected_UI_quantity": 1,
+      "cash_guards": [
+        {
+          "cash": 150,
+          "quote_in_EDI": 300,
+          "passed_to_capacity_check": false,
+          "boundary": "actual published debit"
+        },
+        {
+          "cash": 299,
+          "quote_in_EDI": 300,
+          "passed_to_capacity_check": false,
+          "boundary": "computed quote -1/equal"
+        },
+        {
+          "cash": 300,
+          "quote_in_EDI": 300,
+          "passed_to_capacity_check": true,
+          "boundary": "computed quote -1/equal"
+        },
+        {
+          "cash": 8000,
+          "quote_in_EDI": 300,
+          "passed_to_capacity_check": true,
+          "boundary": "actual captured wallet"
+        }
+      ],
+      "lookup_keys": [
+        32000
+      ],
+      "conversion_entries": [
+        "0x19191e9"
+      ],
+      "default_native_quote": 330
+    }
+  ],
+  "conversion_cases": [
+    {
+      "price": 1,
+      "quantity": 1,
+      "fpcw": "0x27f",
+      "cpu_flag": 0,
+      "native_result": 1,
+      "conversion_entry": "0x1919216"
+    },
+    {
+      "price": 1,
+      "quantity": 1,
+      "fpcw": "0x27f",
+      "cpu_flag": 1,
+      "native_result": 1,
+      "conversion_entry": "0x19191e9"
+    },
+    {
+      "price": 1,
+      "quantity": 1,
+      "fpcw": "0x37f",
+      "cpu_flag": 0,
+      "native_result": 1,
+      "conversion_entry": "0x1919216"
+    },
+    {
+      "price": 1,
+      "quantity": 1,
+      "fpcw": "0x37f",
+      "cpu_flag": 1,
+      "native_result": 1,
+      "conversion_entry": "0x19191e9"
+    },
+    {
+      "price": 9,
+      "quantity": 1,
+      "fpcw": "0x27f",
+      "cpu_flag": 0,
+      "native_result": 9,
+      "conversion_entry": "0x1919216"
+    },
+    {
+      "price": 9,
+      "quantity": 1,
+      "fpcw": "0x27f",
+      "cpu_flag": 1,
+      "native_result": 9,
+      "conversion_entry": "0x19191e9"
+    },
+    {
+      "price": 9,
+      "quantity": 1,
+      "fpcw": "0x37f",
+      "cpu_flag": 0,
+      "native_result": 9,
+      "conversion_entry": "0x1919216"
+    },
+    {
+      "price": 9,
+      "quantity": 1,
+      "fpcw": "0x37f",
+      "cpu_flag": 1,
+      "native_result": 9,
+      "conversion_entry": "0x19191e9"
+    },
+    {
+      "price": 10,
+      "quantity": 1,
+      "fpcw": "0x27f",
+      "cpu_flag": 0,
+      "native_result": 11,
+      "conversion_entry": "0x1919216"
+    },
+    {
+      "price": 10,
+      "quantity": 1,
+      "fpcw": "0x27f",
+      "cpu_flag": 1,
+      "native_result": 11,
+      "conversion_entry": "0x19191e9"
+    },
+    {
+      "price": 10,
+      "quantity": 1,
+      "fpcw": "0x37f",
+      "cpu_flag": 0,
+      "native_result": 11,
+      "conversion_entry": "0x1919216"
+    },
+    {
+      "price": 10,
+      "quantity": 1,
+      "fpcw": "0x37f",
+      "cpu_flag": 1,
+      "native_result": 11,
+      "conversion_entry": "0x19191e9"
+    },
+    {
+      "price": 3,
+      "quantity": 5,
+      "fpcw": "0x27f",
+      "cpu_flag": 0,
+      "native_result": 16,
+      "conversion_entry": "0x1919216"
+    },
+    {
+      "price": 3,
+      "quantity": 5,
+      "fpcw": "0x27f",
+      "cpu_flag": 1,
+      "native_result": 16,
+      "conversion_entry": "0x19191e9"
+    },
+    {
+      "price": 3,
+      "quantity": 5,
+      "fpcw": "0x37f",
+      "cpu_flag": 0,
+      "native_result": 16,
+      "conversion_entry": "0x1919216"
+    },
+    {
+      "price": 3,
+      "quantity": 5,
+      "fpcw": "0x37f",
+      "cpu_flag": 1,
+      "native_result": 16,
+      "conversion_entry": "0x19191e9"
+    }
+  ],
+  "constant": {
+    "address": "0x2290090",
+    "bytes_le": "9a9999999999f13f",
+    "binary64_hex": "0x1.199999999999ap+0",
+    "exact_fraction": "2476979795053773/2251799813685248",
+    "difference_from_11_over_10": "1/11258999068426240"
+  },
+  "image_original_conversion_flag": 1,
+  "image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+  "host_dependency_adapters": [
+    "PFS/BXML authoritative row attributes: native XML reader executes; XML integer getter and temporary UTF16 host strings are adapters",
+    "full exact captured three-item c0434 frame: original decoder and marshal execute; native decoded STL price tree is searched without replacing its getter",
+    "partial ItemRef memory bridge points to an Object; original 81a760 bean copy and 10817bc property writes execute; wrapper template duplicates decoded template",
+    "original ConfigManager getter89e210 and Citemsell wrapper8842d0 execute; backend lookup is adapted from full CRC-checked PFS membership and native-parsed row, with genuine absence sentinel for 40200/40204; full config cache loader is not executed",
+    "price calculation, config branch, row-price assignment, selection quantity=1, entire cash callback entry/guard execute; only selection highlight is a GUI no-op",
+    "FPCW027f/037f and feature-flag0/1 are explicit offline environment fixtures; actual running client FPU state is not measured",
+    "hashed native_gameplay_probe offline CRT allocation/free/copy/refcount adapters; Machine scratch mappings; no network/process/DB access"
+  ],
+  "findings": [
+    "Citemsell override uses buyprice@+4, not sellprice@+8; key is wrapper template ID",
+    "original final native quote differs from actual published debit in all three captured cases; a confirmed presentation/cash-guard mismatch for these fixtures",
+    "default native UI formula and override are client observations, not unavailable original-server truth"
+  ],
+  "unknowns": [
+    "full original GUI/cache lifecycle and original server pricing policy",
+    "original running client x87 precision/control and CPU feature flag; tested alternatives agree for bounded fixtures",
+    "other templates, extreme signed32 overflow and negative-price handling; no broad price-policy claim",
+    "whether any original server fee, currency rule or special NPC policy matches these client quotes; requires independent authority decision"
+  ],
+  "input_sha256_before": {
+    "../artres/config.pfs": "eee475d5ffe7eecbde99abc119c2b9b8faa899489e2f7e13533a8de81f40d915",
+    "../artres/ui.pfs": "5a687aeeb6356ba12af8dc05aea691cd6d14ff3dfe56122d2fd9bd52dc1143ab",
+    "ARCHITECTURE.md": "0b98c5d027f33cf99071c2a316b77dbcd6a2a785b6658987209321bbadfc1d7d",
+    "DESIGN_AUTHORITY.md": "820829778bcd632f2963eebc5f3106600c873481212fa8542cdd144a2e0ecf5f",
+    "bxml.py": "ba61810a10fede4305075efd7120429fb165af90fdbb4fb94697862a30c8b66d",
+    "catalogs/knight.gsp.item.citemattr.json": "018a609fe0a007d3aa3bd4eaac2c9ba9310e3dcb234e6366499dab82cf33c0fd",
+    "catalogs/knight.gsp.item.npcsellitem.json": "a33ac25034281ce517965266e4a425f4f42766851167994b6ce995a78b8f35e0",
+    "catalogs/knight.gsp.npc.citemsell.json": "7042b8711a094a0c49d96618f6ad8f1a414561a0a80ff5caf2eb1237c428a1fd",
+    "catalogs/knight.gsp.npc.cnpcconfig.json": "cf070e700e37a6d8d350ccb1e4d86610408e5ffcecad4710641cf2d06aca847d",
+    "evidence/NPC_REPAIR_COLUMN_RESEARCH.md": "d6d40c1bbcc1d4434ceee02e561b9bee5fef49fef53704261a3da7dd64546133",
+    "evidence/NPC_SHOP_CATALOG_NATIVE_RESEARCH.md": "0b7622cba029fcad6e0bd34bfde696ca6dc115b99dd30d131ceb5d4da0677c0c",
+    "evidence/NPC_SPECIAL_REPAIRS_NATIVE_RESEARCH.md": "10a418afe9175882a7dc9712ad126287dd951a77eef88087428e8162cd7044a3",
+    "evidence/NPC_SPECIAL_REPAIR_COST_RESEARCH.md": "ec45ef4fe98ac23916dd78162093fc2048b73ff10304066b7fc8687ecb43b2d3",
+    "evidence/NPC_SPECIAL_REPAIR_MENU_RESEARCH.md": "3a49bb3b26c7c3c0a366617367e80c869e7dc70c38502596abc5ea7d03e35b6f",
+    "evidence/native-image.bin": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+    "evidence/npc-buyback-current-price-frame.json": "ea45ec31e266eafc39699ee77797f53c59c28d7a2932a8bffbefbcc1b7f13955",
+    "evidence/npc-equipment-identification-ready.json": "9b05ab14fd786558a2e320a70ae5a9579b578b3c4170ecb241fac8e2bab98794",
+    "evidence/npc-placement-direction-ready.json": "761c97193b18d92e860aa8cbfeac045a34d9c10057c792d586b0484c7df62d82",
+    "evidence/npc-repair-column-candidate-ready.json": "9e297b2f66678c2a198492a3240ec72cf3d7bf4659531427e5d759582b5e1543",
+    "evidence/npc-repair-column-disassembly.txt": "085dcc7c6a2333bef076509d7b4e0c3d09b0e15ffea77af8e8122353c2559c67",
+    "evidence/npc-repair-column-native.json": "fa3b4aa032f9f9dd671189eb5d2c153ff480e4fc4f1d93ea6496ea6df0572b27",
+    "evidence/npc-shop-catalog-disassembly.txt": "65f618d1113e4f75bc6ec0c3b4778d8f05a26da7c8044960632e6cc08329b5e2",
+    "evidence/npc-shop-catalog-native.json": "ddeddb4a860377559cb3a5f60ddc2c2ae73922757d9b878ad93d793257a07c5b",
+    "evidence/npc-special-repair-cost-native-disassembly.txt": "38e3e63ddffc171675fcfc2415d7113fb74b4a021e6f482ca623420a3d5f37fb",
+    "evidence/npc-special-repair-cost-native.json": "ac36e5ac8499384b208f34b88719ae7fd8240e9c6cf5587c551178885cfe899c",
+    "evidence/npc-special-repair-menu-disassembly.txt": "fcccf19772a38bca3a130cdd74e8e0542baff2ebc7fe60d7ee6d1ffaf78fb25b",
+    "evidence/npc-special-repair-menu-native.json": "c252c9b5b9c15efaf685705500b38d2b228f58da80ec98d30f23ebcffb13b9df",
+    "evidence/npc-special-repairs-native-disassembly.txt": "d8c1b02d345911c1e2e5cd74155a827270e3e197e8271780b6051d89402053ed",
+    "evidence/npc-special-repairs-native.json": "8ecc806aab098d8d0e2edac192f57517c1e05f66746e3919ac809f927e8d83dc",
+    "inspect_client.py": "a7efdeec98f4d5b0b3e4980e73b2a7e2f0973c2a0c20bcfdc587b1b481f382fa",
+    "inventory.py": "d66329dbb8976e6ed3642e7fcc5f26f6a6f5ad2d4ced56f9af4689c5081764d4",
+    "native_gameplay_probe.py": "a585adc6522c8162ecaa8c87250eed240a49477ee57322f2950344a92bb7e24c",
+    "native_inspect.py": "0793e525a8e06fe8e6a216b3509202244463dc4bd469c7e87950edb03810b6a0",
+    "npc_gameplay.py": "7212aa304509721bf82c4e5d6545212a5cc8c21b26bfbbf3901ed3c946c83387",
+    "npc_repairs.py": "3cc4ff7dc2a956946fd31debb18b1a3773d6ca472b93b218fcc257e5aaf86884",
+    "npc_shop_payments.py": "874f6f02e3f154b32f408d61c853bc9cea07236d3f5db812c769e9de91d72450",
+    "npc_shop_sales.py": "5bfbc44403d9ab2e3aa93dc0cf6304f20e74e7a1b5a111e757fc04bfb6e01058",
+    "pfs.py": "d4c9a5f6080276ab51886fdd4f1d7e7c1618715f870cbce84c916cf03b163352",
+    "research_npc_buyback_quote.py": "ac3264d0fc8501e65f71e20de525822f8a2a560fefc4ac169d7cad5eb3e9d365",
+    "research_npc_repair_columns.py": "c73f3f20ad1be46130790e3ca8917f1ebfeba64111813eb15d0e839657b7aed3",
+    "research_npc_shop_catalog.py": "fd3f5dc3feac5c532a35251c59cb38daa98e7b68ab757c734d1ebbe3390033ea",
+    "research_npc_special_repair_cost.py": "459e0463fabfa5e53e487250bd7c880a7b337a4c0bc87e7838eaaf9a7fa47078",
+    "research_npc_special_repair_menu.py": "b82d31d73ac85383e8a1f730048ec597012fa4053222754acdb5e622b6fc78a9",
+    "research_npc_special_repairs.py": "88bb5258c17a9db8d1dd28324f2528d98b79b16097edb14d5b54b43368452023",
+    "research_npc_submenu.py": "6ab20507535f93be920e4eed5f01b59e005aa81184ba0f2e7fdc28793a5bb19b",
+    "staging/capture_npc_buyback_price_frame.py": "0be40588f04796ef72aee299520455251c98478dfd47c5015b05f06044fbf34c",
+    "staging/npc-repair-column-candidate-v1/npc_repairs.py": "e648d4f977a58d774d670e606a0f72e722c657e17f66f50413ff9170d227dd9b",
+    "verify_social_native.py": "a5e85ff5ec786c461a55af075b5ecd5c6d40b57da41c6f84bf9116596cae1a80"
+  },
+  "input_sha256_after": {
+    "../artres/config.pfs": "eee475d5ffe7eecbde99abc119c2b9b8faa899489e2f7e13533a8de81f40d915",
+    "../artres/ui.pfs": "5a687aeeb6356ba12af8dc05aea691cd6d14ff3dfe56122d2fd9bd52dc1143ab",
+    "ARCHITECTURE.md": "0b98c5d027f33cf99071c2a316b77dbcd6a2a785b6658987209321bbadfc1d7d",
+    "DESIGN_AUTHORITY.md": "820829778bcd632f2963eebc5f3106600c873481212fa8542cdd144a2e0ecf5f",
+    "bxml.py": "ba61810a10fede4305075efd7120429fb165af90fdbb4fb94697862a30c8b66d",
+    "catalogs/knight.gsp.item.citemattr.json": "018a609fe0a007d3aa3bd4eaac2c9ba9310e3dcb234e6366499dab82cf33c0fd",
+    "catalogs/knight.gsp.item.npcsellitem.json": "a33ac25034281ce517965266e4a425f4f42766851167994b6ce995a78b8f35e0",
+    "catalogs/knight.gsp.npc.citemsell.json": "7042b8711a094a0c49d96618f6ad8f1a414561a0a80ff5caf2eb1237c428a1fd",
+    "catalogs/knight.gsp.npc.cnpcconfig.json": "cf070e700e37a6d8d350ccb1e4d86610408e5ffcecad4710641cf2d06aca847d",
+    "evidence/NPC_REPAIR_COLUMN_RESEARCH.md": "d6d40c1bbcc1d4434ceee02e561b9bee5fef49fef53704261a3da7dd64546133",
+    "evidence/NPC_SHOP_CATALOG_NATIVE_RESEARCH.md": "0b7622cba029fcad6e0bd34bfde696ca6dc115b99dd30d131ceb5d4da0677c0c",
+    "evidence/NPC_SPECIAL_REPAIRS_NATIVE_RESEARCH.md": "10a418afe9175882a7dc9712ad126287dd951a77eef88087428e8162cd7044a3",
+    "evidence/NPC_SPECIAL_REPAIR_COST_RESEARCH.md": "ec45ef4fe98ac23916dd78162093fc2048b73ff10304066b7fc8687ecb43b2d3",
+    "evidence/NPC_SPECIAL_REPAIR_MENU_RESEARCH.md": "3a49bb3b26c7c3c0a366617367e80c869e7dc70c38502596abc5ea7d03e35b6f",
+    "evidence/native-image.bin": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+    "evidence/npc-buyback-current-price-frame.json": "ea45ec31e266eafc39699ee77797f53c59c28d7a2932a8bffbefbcc1b7f13955",
+    "evidence/npc-equipment-identification-ready.json": "9b05ab14fd786558a2e320a70ae5a9579b578b3c4170ecb241fac8e2bab98794",
+    "evidence/npc-placement-direction-ready.json": "761c97193b18d92e860aa8cbfeac045a34d9c10057c792d586b0484c7df62d82",
+    "evidence/npc-repair-column-candidate-ready.json": "9e297b2f66678c2a198492a3240ec72cf3d7bf4659531427e5d759582b5e1543",
+    "evidence/npc-repair-column-disassembly.txt": "085dcc7c6a2333bef076509d7b4e0c3d09b0e15ffea77af8e8122353c2559c67",
+    "evidence/npc-repair-column-native.json": "fa3b4aa032f9f9dd671189eb5d2c153ff480e4fc4f1d93ea6496ea6df0572b27",
+    "evidence/npc-shop-catalog-disassembly.txt": "65f618d1113e4f75bc6ec0c3b4778d8f05a26da7c8044960632e6cc08329b5e2",
+    "evidence/npc-shop-catalog-native.json": "ddeddb4a860377559cb3a5f60ddc2c2ae73922757d9b878ad93d793257a07c5b",
+    "evidence/npc-special-repair-cost-native-disassembly.txt": "38e3e63ddffc171675fcfc2415d7113fb74b4a021e6f482ca623420a3d5f37fb",
+    "evidence/npc-special-repair-cost-native.json": "ac36e5ac8499384b208f34b88719ae7fd8240e9c6cf5587c551178885cfe899c",
+    "evidence/npc-special-repair-menu-disassembly.txt": "fcccf19772a38bca3a130cdd74e8e0542baff2ebc7fe60d7ee6d1ffaf78fb25b",
+    "evidence/npc-special-repair-menu-native.json": "c252c9b5b9c15efaf685705500b38d2b228f58da80ec98d30f23ebcffb13b9df",
+    "evidence/npc-special-repairs-native-disassembly.txt": "d8c1b02d345911c1e2e5cd74155a827270e3e197e8271780b6051d89402053ed",
+    "evidence/npc-special-repairs-native.json": "8ecc806aab098d8d0e2edac192f57517c1e05f66746e3919ac809f927e8d83dc",
+    "inspect_client.py": "a7efdeec98f4d5b0b3e4980e73b2a7e2f0973c2a0c20bcfdc587b1b481f382fa",
+    "inventory.py": "d66329dbb8976e6ed3642e7fcc5f26f6a6f5ad2d4ced56f9af4689c5081764d4",
+    "native_gameplay_probe.py": "a585adc6522c8162ecaa8c87250eed240a49477ee57322f2950344a92bb7e24c",
+    "native_inspect.py": "0793e525a8e06fe8e6a216b3509202244463dc4bd469c7e87950edb03810b6a0",
+    "npc_gameplay.py": "7212aa304509721bf82c4e5d6545212a5cc8c21b26bfbbf3901ed3c946c83387",
+    "npc_repairs.py": "3cc4ff7dc2a956946fd31debb18b1a3773d6ca472b93b218fcc257e5aaf86884",
+    "npc_shop_payments.py": "874f6f02e3f154b32f408d61c853bc9cea07236d3f5db812c769e9de91d72450",
+    "npc_shop_sales.py": "5bfbc44403d9ab2e3aa93dc0cf6304f20e74e7a1b5a111e757fc04bfb6e01058",
+    "pfs.py": "d4c9a5f6080276ab51886fdd4f1d7e7c1618715f870cbce84c916cf03b163352",
+    "research_npc_buyback_quote.py": "ac3264d0fc8501e65f71e20de525822f8a2a560fefc4ac169d7cad5eb3e9d365",
+    "research_npc_repair_columns.py": "c73f3f20ad1be46130790e3ca8917f1ebfeba64111813eb15d0e839657b7aed3",
+    "research_npc_shop_catalog.py": "fd3f5dc3feac5c532a35251c59cb38daa98e7b68ab757c734d1ebbe3390033ea",
+    "research_npc_special_repair_cost.py": "459e0463fabfa5e53e487250bd7c880a7b337a4c0bc87e7838eaaf9a7fa47078",
+    "research_npc_special_repair_menu.py": "b82d31d73ac85383e8a1f730048ec597012fa4053222754acdb5e622b6fc78a9",
+    "research_npc_special_repairs.py": "88bb5258c17a9db8d1dd28324f2528d98b79b16097edb14d5b54b43368452023",
+    "research_npc_submenu.py": "6ab20507535f93be920e4eed5f01b59e005aa81184ba0f2e7fdc28793a5bb19b",
+    "staging/capture_npc_buyback_price_frame.py": "0be40588f04796ef72aee299520455251c98478dfd47c5015b05f06044fbf34c",
+    "staging/npc-repair-column-candidate-v1/npc_repairs.py": "e648d4f977a58d774d670e606a0f72e722c657e17f66f50413ff9170d227dd9b",
+    "verify_social_native.py": "a5e85ff5ec786c461a55af075b5ecd5c6d40b57da41c6f84bf9116596cae1a80"
+  },
+  "production_changed": false,
+  "live_database_accessed": false,
+  "producer_rerun": false,
+  "network_or_services_used": false,
+  "native_gui_verified": false
+}

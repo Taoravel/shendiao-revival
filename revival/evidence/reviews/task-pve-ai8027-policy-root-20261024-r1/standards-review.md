@@ -1,0 +1,13 @@
+Standards：硬违规0；heuristic可行动发现0。
+
+方法：沿用完整code-review/codebase-design，逐条静态审两个新增政策及其依赖契约；全部12项Fowler只作判断启发，不对无实现的文档强套代码重构。依据AGENTS、冻结ARCHITECTURE/DESIGN_AUTHORITY、现有技能账本与终态恢复裁定。无Git/commit，两个文件empty BASE；未读另一轴结论。
+
+来源：JSON provenance与DECISION:5–9区分原任务/模型/技能描述、历史guide定性线索和designed敌阵/公式。两只29105、数值、MP2+L和20+5L均未冒充原服；JSON为唯一执行参数源，未从场景DisplayNPC或MonsterNum推敌阵，符合DESIGN_AUTHORITY未知补全及来源分层。
+
+所有权：JSON admission/participant/isolation分别维持当前角色租约、完整私有MapAddress/NPC证明、真实版本化属性与完整技能账本；独立battle状态、单角色consumer事务及有界邮箱/receipt明确，不授权全局世界锁或跨owner持锁等待。技能仅按真实已学100008解锁，保留高值/完整map；一次MP扣减、多目标独立HP和不足MP拒绝有可判定语义。
+
+兼容：JSON recovery及DECISION:13明确保留旧AI8001 recipe，pending按原admission版本恢复，未知配方保pending；不覆盖唯一current registry来重标旧结果，不放宽普通old-epoch settle。新复活须独立recipe/terminal/source permit，不能改旧permit的task/hash冒充。资源/Task/consumer/outbox同事务及paid current-only仍保留。JSON continuation、DECISION:15只激活原后继CG，不假造播放/完成；3、17行明确仅设计候选，不阻挡或扩大当前P0。
+
+审前后2政策+9引用+3external全部匹配manifest，manifest/patch亦稳定。manifest SHA=95d195c9c4bb7c9755ef9f4ab695e9bc9a7825fbf9e624f4b7724905d3211569；policy=7bbef4665a11366718fee6c2d465902286fa0b7f7adec1e138fac84f2e65ba59；decision=de7dc6b84d7a112faf08d3abde39e98d032d9c59596c9b4ac54112f35d947fa4；patch=ca4daf0efa21ad8a2ad086332fc91ba562bc599010bdfb240b09ae3da3efc910。
+
+仅静态来源/契约审查；未重跑原包解码、官方检索、engine/native、测试、服务、DB、socket或GUI，不证明下一战实际可用或批准部署。只新增本报告。

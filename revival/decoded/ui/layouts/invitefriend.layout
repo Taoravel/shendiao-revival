@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/HouseFrameWindow" Name="InviteFriend">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="open.ogg" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.15125,0},{0,48},{0.1375,569},{0,466}}" />
+    <Property Name="CloseSoundResource" Value="close.ogg" />
+    <Window Type="TaharezLook/StaticImage" Name="InviteFriend/titleimage">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.311828,0},{0,20},{0.863799,0},{0,47}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="InviteFriend/titlename">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="好友招募" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,49},{-0.037037,0},{0,252},{0,25}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/MultiColumnList" Name="InviteFriend/list">
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,36},{0,143},{0,256},{0,389}}" />
+      <Property Name="ColumnHeader" Value="text: width:{0.11,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:角色名 width:{0.6,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:等级 width:{1,-156} id:2" />
+    </Window>
+    <Window Type="TaharezLook/Figure" Name="InviteFriend/figure">
+      <Property Name="UnifiedAreaRect" Value="{{0.146953,0},{0.291866,0},{0.387097,0},{0.327751,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="InviteFriend/figure/txt">
+        <Property Name="Text" Value="您邀请的玩家" />
+        <Property Name="HorzExtent" Value="79" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.201493,0},{-0.0666667,0},{0.798507,0},{1,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="InviteFriend/group1">
+      <Property Name="Text" Value="新同学奖励" />
+      <Property Name="UnifiedAreaRect" Value="{{0.476703,0},{0.136364,0},{0.620072,0},{0.139059,21}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="InviteFriend/group11">
+      <Property Name="Text" Value="推广员奖励" />
+      <Property Name="UnifiedAreaRect" Value="{{0.621864,0},{0.136364,0},{0.765233,0},{0.188995,0}}" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="InviteFriend/back">
+      <Property Name="UnifiedAreaRect" Value="{{0.464158,0},{0.188995,0},{0.935484,0},{0.935407,0}}" />
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="InviteFriend/back/case1">
+        <Property Name="UnifiedAreaRect" Value="{{0.0228137,0},{0.0160256,0},{0.977186,0},{0.198718,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="InviteFriend/back/case1/txt">
+          <Property Name="Text" Value="啦啦啦啦" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0.23506,0},{0.245614,0},{0.7251,0},{0.824561,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="InviteFriend/back/case1/item">
+          <Property Name="UnifiedAreaRect" Value="{{0.0159363,0},{0.0877193,0},{0.0966184,28},{0.409639,30}}" />
+        </Window>
+        <Window Type="TaharezLook/LittleButton" Name="InviteFriend/back/case1/button">
+          <Property Name="Text" Value="领取" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.733068,0},{0.333333,0},{0.976096,0},{0.736842,0}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="InviteFriend/back/case2">
+        <Property Name="UnifiedAreaRect" Value="{{0.0228137,0},{0.211538,0},{0.977186,0},{0.394231,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="InviteFriend/back/case2/txt">
+          <Property Name="Text" Value="啦啦啦啦" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0.23506,0},{0.245614,0},{0.693227,0},{0.824561,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="InviteFriend/back/case2/item">
+          <Property Name="UnifiedAreaRect" Value="{{0.0159363,0},{0.0877193,0},{0.0966184,28},{0.409639,30}}" />
+        </Window>
+        <Window Type="TaharezLook/LittleButton" Name="InviteFriend/back/case2/button">
+          <Property Name="Text" Value="领取" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.733068,0},{0.333333,0},{0.976096,0},{0.736842,0}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="InviteFriend/back/case3">
+        <Property Name="UnifiedAreaRect" Value="{{0.0228137,0},{0.407051,0},{0.977186,0},{0.589744,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="InviteFriend/back/case3/txt">
+          <Property Name="Text" Value="啦啦啦啦" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0.23506,0},{0.245614,0},{0.693227,0},{0.824561,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="InviteFriend/back/case3/item">
+          <Property Name="UnifiedAreaRect" Value="{{0.0159363,0},{0.0877193,0},{0.0966184,28},{0.409639,30}}" />
+        </Window>
+        <Window Type="TaharezLook/LittleButton" Name="InviteFriend/back/case3/button">
+          <Property Name="Text" Value="领取" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.733068,0},{0.333333,0},{0.976096,0},{0.736842,0}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="InviteFriend/back/case4">
+        <Property Name="UnifiedAreaRect" Value="{{0.0228137,0},{0.602564,0},{0.977186,0},{0.785256,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="InviteFriend/back/case4/txt">
+          <Property Name="Text" Value="啦啦啦啦" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0.23506,0},{0.245614,0},{0.693227,0},{0.824561,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="InviteFriend/back/case4/item">
+          <Property Name="UnifiedAreaRect" Value="{{0.0159363,0},{0.0877193,0},{0.0966184,28},{0.409639,30}}" />
+        </Window>
+        <Window Type="TaharezLook/LittleButton" Name="InviteFriend/back/case4/button">
+          <Property Name="Text" Value="领取" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.733068,0},{0.333333,0},{0.976096,0},{0.736842,0}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="InviteFriend/back/case5">
+        <Property Name="UnifiedAreaRect" Value="{{0.0228137,0},{0.794872,0},{0.977186,0},{0.977564,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="InviteFriend/back/case5/txt">
+          <Property Name="Text" Value="啦啦啦啦" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0.23506,0},{0.245614,0},{0.693227,0},{0.824561,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="InviteFriend/back/case5/item">
+          <Property Name="UnifiedAreaRect" Value="{{0.0159363,0},{0.0877193,0},{0.0966184,28},{0.409639,30}}" />
+        </Window>
+        <Window Type="TaharezLook/LittleButton" Name="InviteFriend/back/case5/button">
+          <Property Name="Text" Value="领取" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.733068,0},{0.333333,0},{0.976096,0},{0.736842,0}}" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="InviteFriend/button">
+      <Property Name="Text" Value="填写推广员" />
+      <Property Name="Tooltip" Value="新同学填写" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0878136,0},{0.205742,0},{0.256272,0},{0.267943,0}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="InviteFriend/back/case1/txt1">
+      <Property Name="Text" Value="                             （新同学填写）" />
+      <Property Name="HorzExtent" Value="178" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,30},{0.05,68},{0.05,222},{0.05,87}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="InviteFriend/up">
+      <Property Name="Visible" Value="False" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.482079,0},{0.868421,0},{0.582437,0},{0.937799,0}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="InviteFriend/down">
+      <Property Name="Visible" Value="False" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.598566,0},{0.875598,0},{0.698925,0},{0.944976,0}}" />
+    </Window>
+    <Window Type="TaharezLook/Figure" Name="InviteFriend/figure1">
+      <Property Name="UnifiedAreaRect" Value="{{0.146953,0},{0.148325,0},{0.387097,0},{0.184211,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="InviteFriend/figure/txt1">
+        <Property Name="Text" Value="邀请您的玩家" />
+        <Property Name="HorzExtent" Value="79" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0149254,0},{-0.0666667,0},{0.701493,0},{1,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

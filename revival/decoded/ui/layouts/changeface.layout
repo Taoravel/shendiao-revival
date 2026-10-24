@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="ChangeFace">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="SoundResource" Value="ciqi.ogg" />
+    <Property Name="UnifiedAreaRect" Value="{{0,204},{0,229},{0,704},{0,425}}" />
+    <Property Name="CloseSoundResource" Value="npcdlg.ogg" />
+    <Window Type="TaharezLook/StaticImage" Name="ChangeFace/icon">
+      <Property Name="Image" Value="set:RoleAndMonster23 image:9094" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="Tiled" />
+      <Property Name="UnifiedMaxSize" Value="{{0,256},{0,256}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,256},{0,256}}" />
+      <Property Name="VertFormatting" Value="Tiled" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,-110.277},{0,-40},{0,145.723},{0,216}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="ChangeFace/back">
+      <Property Name="Image" Value="set:MainControl image:NPCtalk" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="Tiled" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,462},{0,226}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/ImageButton" Name="ChangeFace/closeBtn">
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:component image:CloseButtonHover" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="NormalImage" Value="set:component image:CloseButtonNormal" />
+        <Property Name="PushedImage" Value="set:component image:CloseButtonPressed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,21},{0,19}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,21},{0,19}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.937229,0},{0,10},{0.982684,0},{0,29}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ChangeFace/back/explain">
+        <Property Name="Font" Value="msyh-16" />
+        <Property Name="Text" Value="请选择易容卡的使用方式：" />
+        <Property Name="HorzExtent" Value="192" />
+        <Property Name="VertExtent" Value="18.75" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.30303,0},{0.0711111,0},{0.850649,0},{0.195556,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="ChangeFace/back/c0">
+        <Property Name="Font" Value="msyh-16" />
+        <Property Name="Text" Value="易容且获得附加效果" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl36 image:xuanhover" />
+        <Property Name="NormalImage" Value="set:MainControl36 image:xuannormal" />
+        <Property Name="PushedImage" Value="set:MainControl36 image:xuanpushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,181},{0,26}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,181},{0,26}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.406926,0},{0.471246,-61},{0.798701,0},{0.566484,-57}}" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="ChangeFace/back/c1">
+        <Property Name="Font" Value="msyh-16" />
+        <Property Name="Text" Value="不易容但获得效果    " />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl36 image:xuanhover" />
+        <Property Name="NormalImage" Value="set:MainControl36 image:xuannormal" />
+        <Property Name="PushedImage" Value="set:MainControl36 image:xuanpushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,181},{0,26}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,181},{0,26}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.406926,0},{0.566484,-55},{0.798701,0},{0.661722,-50}}" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="ChangeFace/back/c2">
+        <Property Name="Font" Value="msyh-16" />
+        <Property Name="Text" Value="易容但不获得效果    " />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl36 image:xuanhover" />
+        <Property Name="NormalImage" Value="set:MainControl36 image:xuannormal" />
+        <Property Name="PushedImage" Value="set:MainControl36 image:xuanpushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,181},{0,26}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,181},{0,26}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.406926,0},{0.661722,-48},{0.798701,0},{0.75696,-43}}" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="ChangeFace/back/c3">
+        <Property Name="Font" Value="msyh-16" />
+        <Property Name="Text" Value="返回                            " />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl36 image:xuanhover" />
+        <Property Name="NormalImage" Value="set:MainControl36 image:xuannormal" />
+        <Property Name="PushedImage" Value="set:MainControl36 image:xuanpushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,181},{0,26}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,181},{0,26}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.406926,0},{0.872515,-39},{0.798701,0},{0.967753,-35}}" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="ChangeFace/back/c4">
+        <Property Name="Font" Value="msyh-16" />
+        <Property Name="Text" Value="放入我的易容卡贴    " />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl36 image:xuanhover" />
+        <Property Name="NormalImage" Value="set:MainControl36 image:xuannormal" />
+        <Property Name="PushedImage" Value="set:MainControl36 image:xuanpushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,181},{0,26}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,181},{0,26}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.406926,0},{0.75696,-41},{0.798701,0},{0.872515,-41}}" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

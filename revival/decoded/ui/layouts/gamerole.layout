@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="GameRole">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.321875,0},{0.208333,0},{0.321875,281},{0.208333,334}}" />
+    <Window Type="TaharezLook/StaticText" Name="GameRole/Name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="寄售角色" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="68" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.964413,0},{0.0359281,0},{1.37367,0},{0.10479,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="GameRole/Back1">
+      <Property Name="UnifiedAreaRect" Value="{{0.0640569,0},{0.137725,0},{0.0424933,248},{0.252625,202}}" />
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="GameRole/Back2">
+        <Property Name="UnifiedAreaRect" Value="{{0.0330578,0},{0.025,0},{0.0206745,229},{0.0218875,66}}" />
+        <Window Type="TaharezLook/StaticText" Name="GameRole/Back/A11">
+          <Property Name="Text" Value="1、销售价格" />
+          <Property Name="HorzExtent" Value="74" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0265487,0},{0.0153846,0},{0.05,76},{0.0214286,26}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Editbox" Name="GameRole/Back2/yuan">
+          <Property Name="BlinkCaret" Value="True" />
+          <Property Name="MaxTextLength" Value="2147483647" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0486726,0},{0.0214286,26},{0.05,79},{0.0214286,46}}" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Editbox" Name="GameRole/Back2/fen">
+          <Property Name="BlinkCaret" Value="True" />
+          <Property Name="MaxTextLength" Value="2147483647" />
+          <Property Name="UnifiedAreaRect" Value="{{0.1,88},{0.0214286,26},{0.1,149},{0.0214286,46}}" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GameRole/Back/A111">
+          <Property Name="Text" Value="元" />
+          <Property Name="HorzExtent" Value="14" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.411504,0},{0.0214286,29},{0.1,93},{0.0214286,49}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GameRole/Back/A112">
+          <Property Name="Text" Value="分" />
+          <Property Name="HorzExtent" Value="14" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.783186,0},{0.0214286,29},{0.15,167},{0.0214286,49}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="GameRole/Back3">
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0330578,0},{0.0218875,69},{0.0206745,229},{0.0218875,134}}" />
+        <Window Type="TaharezLook/StaticText" Name="GameRole/Back/A113">
+          <Property Name="Text" Value="2、选择您要出售的天数" />
+          <Property Name="HorzExtent" Value="139" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0265487,0},{0.0153846,0},{0.05,143},{0.0214286,29}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Combobox" Name="GameRole/Back3/Day">
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0752212,0},{0.446154,0},{0.623894,0},{2.50769,0}}" />
+          <Property Name="MaxEditTextLength" Value="2147483647" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="GameRole/Back4">
+        <Property Name="UnifiedAreaRect" Value="{{0.0330578,0},{0.0218875,137},{0.0206745,229},{0.0218875,227}}" />
+        <Window Type="TaharezLook/StaticText" Name="GameRole/Back/A1131">
+          <Property Name="Text" Value="3、是否选择指定玩家购买" />
+          <Property Name="HorzExtent" Value="152" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0265487,0},{0.0222222,0},{0.05,155},{0.0157895,27}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Editbox" Name="GameRole/Back4/Player">
+          <Property Name="BlinkCaret" Value="True" />
+          <Property Name="MaxTextLength" Value="2147483647" />
+          <Property Name="UnifiedAreaRect" Value="{{0.1,64},{0.05,50},{0.1,156},{0.05,71}}" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GameRole/Back/A11211">
+          <Property Name="Text" Value="输入玩家 ID" />
+          <Property Name="HorzExtent" Value="70" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0265487,0},{0.622222,0},{0.142146,58},{0.644444,16}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/RadioButton" Name="GameRole/Back4/Y">
+          <Property Name="Text" Value="是" />
+          <Property Name="UnifiedAreaRect" Value="{{0.221239,0},{0.3,0},{0.40708,0},{0.3,18}}" />
+        </Window>
+        <Window Type="TaharezLook/RadioButton" Name="GameRole/Back4/N">
+          <Property Name="Text" Value="否" />
+          <Property Name="UnifiedAreaRect" Value="{{0.615044,0},{0.3,0},{0.800885,0},{0.3,18}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="GameRole/Back1/Check">
+        <Property Name="Text" Value="我要上架开始销售" />
+        <Property Name="Tooltip" Value="勾选后，上架成功商品将直接进行出售。\n不勾选，商品不能直接进行出售。" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.053719,0},{0.0125,0},{0.880165,0},{0.0958333,0}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GameRole/OK">
+      <Property Name="Text" Value="确   定" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.174377,0},{0.865269,0},{0.44484,0},{0.937126,0}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GameRole/cansel">
+      <Property Name="Text" Value="取    消" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.558719,0},{0.865269,0},{0.829181,0},{0.937126,0}}" />
+    </Window>
+  </Window>
+</GUILayout>

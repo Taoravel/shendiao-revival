@@ -1,0 +1,19 @@
+{
+  "passed": [
+    "explicit trusted instance adoption and durable reload",
+    "caller adoption failure rolls back to unknown; mismatched/typed locations refuse before writes",
+    "late instance SQL failure rolls back position, journal and address together",
+    "full target address commits in the caller transaction without nested I/O or DDL",
+    "later walking and exact replay preserve current point and instance",
+    "foreign account and explicit rebind refused",
+    "wrong source instance cannot create a recovery journal",
+    "commit rechecks source instance even after the offer was journaled",
+    "same-template different-instance handoff persists full target address",
+    "old receipt cannot rewind a later same-template instance",
+    "corrupt instance/position or replay identity refuses instead of selecting a default instance",
+    "new lease recovery retains instance while old lease is fenced"
+  ],
+  "shared_runtime_integrated": false,
+  "gui_verified": false,
+  "live_server_changed": false
+}

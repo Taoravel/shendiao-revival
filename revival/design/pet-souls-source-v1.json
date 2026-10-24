@@ -1,0 +1,18 @@
+{
+  "revision": "2026-10-24.pet-souls-source.1",
+  "source": "evidence/PET_EQUIPMENT_SOURCE_RESEARCH.md",
+  "status": "client_verified original28 soul rows,420 raw scalar/ratio values, cumulative XP and template-uselevel cap branches; no server mutation or battle formula",
+  "maximum_level": 15,
+  "maximum_slots": 5,
+  "xp_first_threshold_row": 2,
+  "xp": "original cumulative XP, retain row1 but use row2..15 thresholds; equal boundary reaches grade, never subtract XP or truncate by effective cap",
+  "cap_skills": [10001,10002],
+  "cap": "known pet kind!=1 or worn soul skill10002 ->15; otherwise max(1,trunc(template uselevel/10))+has10001+explicit known privilege22",
+  "removal_item": 38045,
+  "removal": "original grade/type table quote only; not authority to consume material or grant soul items",
+  "bean": "six explicit signed32 wire values: item_id,cumulative_exp,soul_skill_id,raw4,raw5,raw6; known nonnegative first3 for server source, trailing3 preserve signs and unknown meaning; no implicit defaults",
+  "profile": "explicit complete map, slots1..5 and stable source; known empty must be supplied, never inferred from missing history",
+  "effects": "per-slot original attrid,shuzitype and exact signed Fraction scalar; no flat/percentage merging, rounding or battle application",
+  "duplicate": "client function checks exact item_id; ordinary/advanced pair remains distinct; no additional family exclusivity inferred",
+  "activation": "read-only source foundation; no persistent asset exchange, use-item route, fusion, shared, deployment or GUI"
+}

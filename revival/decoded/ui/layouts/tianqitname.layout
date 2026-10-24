@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="TianqiTname">
+    <Property Name="Font" Value="msyh-16" />
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.1525,0},{0.278333,0},{-0.00874999,685},{0.278333,276}}" />
+    <Window Type="TaharezLook/MultiColumnList" Name="TianqiTname/TianqiTnameFrame/TianqiTnameMember">
+      <Property Name="UnifiedAreaRect" Value="{{0,19},{0.166667,0},{0,286},{0.166667,180}}" />
+      <Property Name="ColumnHeader" Value="text:成员 width:{0.5,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:等级 width:{0.19,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:门派 width:{1,-184} id:2" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TianqiTname/Info">
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0.517986,0},{0.166667,0},{0.96223,0},{0.913043,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="TianqiTname/Info/Text">
+        <Property Name="Text">第1~8天：报名阶段。
+
+结束后队伍名单将无法在更改。
+
+
+ 
+第9~13天：题名赛。
+
+
+题名赛将依据战绩和实力评分确定排名。
+
+
+
+ 
+第16天：8进4强资格赛开始。
+第18天：4进2强资格赛开始。
+第21天：华山论剑资格赛决赛开始。
+</Property>
+        <Property Name="HorzExtent" Value="234" />
+        <Property Name="VertExtent" Value="140.57" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0242915,0},{0.121359,0},{0.97166,0},{0.859223,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Figure" Name="TianqiTname/Info/Title">
+        <Property Name="UnifiedAreaRect" Value="{{0.279352,0},{0.0242718,0},{0.8583,0},{0.026936,14}}" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Window Type="TaharezLook/StaticText" Name="TianqiTname/Info/Title/Name">
+          <Property Name="Text" Value="华山论剑资格赛" />
+          <Property Name="HorzExtent" Value="92" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+          <Property Name="BorderColour" Value="FF433C10" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.20979,0},{-0.0666667,0},{0.895105,0},{0,17}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="TianqiTname/Info/Text1">
+        <Property Name="Text" Value="若需更改队员，请先解散战队，重新报名。" />
+        <Property Name="HorzExtent" Value="247" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0121457,0},{0.868932,0},{1.03644,0},{0.985437,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="TianqiTname/Check1">
+      <Property Name="Text" Value="邀请队员" />
+      <Property Name="Visible" Value="False" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0341727,0},{0.82971,0},{0.154676,0},{0.659499,71}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TianqiTname/Name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Title" Value="True" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.217626,0},{0.0434783,0},{0.577338,0},{0.200669,-20}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="TianqiTname/Disness">
+      <Property Name="Text" Value="解散战队" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.208633,0},{0.82971,0},{0.329137,0},{0.712655,56}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="TianqiTname/Expel">
+      <Property Name="Text" Value="请离队员" />
+      <Property Name="Visible" Value="False" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.27518,0},{0.82971,0},{0.395683,0},{0.759167,43}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="TianqiTname/Exit">
+      <Property Name="Text" Value="退出战队" />
+      <Property Name="Visible" Value="False" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.395683,0},{0.82971,0},{0.516187,0},{0.916667,0}}" />
+    </Window>
+  </Window>
+</GUILayout>

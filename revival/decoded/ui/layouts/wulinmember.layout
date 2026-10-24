@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="WulinMember">
+    <Property Name="Font" Value="msyh-16" />
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.121875,0},{0.250833,0},{-0.040625,741},{0.250833,301}}" />
+    <Window Type="TaharezLook/MultiColumnList" Name="WulinMember/Member">
+      <Property Name="UnifiedAreaRect" Value="{{0,20},{0,69},{0,267},{0,249}}" />
+      <Property Name="ColumnHeader" Value="text:成员 width:{0.5,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:等级 width:{0.19,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:门派 width:{1,-170} id:2" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="WulinMember/Info">
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0.436989,0},{0.152824,0},{0.962357,0},{0.923588,0}}" />
+      <Window Type="TaharezLook/RichEditbox" Name="WulinMember/Info/Text">
+        <Property Name="ReadOnly" Value="True" />
+        <Property Name="LineSpace" Value="1" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0155763,0},{0.0905172,0},{1.00312,0},{0.978448,0}}" />
+        <Property Name="BackGroundEnable" Value="False" />
+        <Property Name="BlinkCaretTimeout" Value="0.5" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Figure" Name="WulinMember/Info/Title">
+        <Property Name="UnifiedAreaRect" Value="{{0.214953,0},{0.012931,0},{0.520249,0},{0.026936,12}}" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Window Type="TaharezLook/StaticText" Name="WulinMember/Info/Title/Name">
+          <Property Name="Text" Value="报名规则 " />
+          <Property Name="HorzExtent" Value="55" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+          <Property Name="BorderColour" Value="FF433C10" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.316327,0},{-0.0666667,0},{0.938776,0},{0,17}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="WulinMember/S">
+      <Property Name="Text" Value="队名" />
+      <Property Name="HorzExtent" Value="26" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0360065,0},{0.162791,0},{0.091653,0},{0.113456,33}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/Editbox" Name="WulinMember/TeamName">
+      <Property Name="BlinkCaret" Value="True" />
+      <Property Name="MaxTextLength" Value="2147483647" />
+      <Property Name="UnifiedAreaRect" Value="{{0.086743,0},{0.159468,0},{0.278232,0},{0.225914,0}}" />
+      <Property Name="TextParsingEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="WulinMember/Check1">
+      <Property Name="Text" Value="确认报名" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.160393,0},{1.08469,-72},{0.322422,0},{0.923588,0}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="WulinMember/Name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="武林大会组队报名" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="136" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.198036,0},{0.0398671,0},{0.525368,0},{0.200669,-25}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+  </Window>
+</GUILayout>

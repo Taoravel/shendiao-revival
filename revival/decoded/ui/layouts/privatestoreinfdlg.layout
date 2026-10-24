@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="PrivateStoreInfDlg">
+    <Property Name="Font" Value="simhei-12" />
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.33875,0},{0.1625,0},{0.33875,277},{0.1625,420}}" />
+    <Window Type="TaharezLook/Button" Name="PrivateStoreInfDlg/Clear">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="清空记录" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0,185},{0,353.955},{0,257},{0,377.955}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="PrivateStoreInfDlg/ChangeBorder">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="更改摊位公告" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.315885,0},{0,129},{0.322879,92.0627},{0,153}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="PrivateStoreInfDlg/LookCount">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="已经被浏览0次" />
+      <Property Name="HorzExtent" Value="86" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003679" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+      <Property Name="UnifiedAreaRect" Value="{{0,17.385},{0,355.955},{0,160.385},{0,375.955}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/RichEditbox" Name="PrivateStoreInfDlg/ChatInputBox">
+      <Property Name="LineSpace" Value="1" />
+      <Property Name="BlinkCaret" Value="True" />
+      <Property Name="MaxTextLength" Value="1073741823" />
+      <Property Name="UnifiedAreaRect" Value="{{0,17},{0,377.955},{0,188},{0,399.955}}" />
+      <Property Name="BlinkCaretTimeout" Value="0.5" />
+      <Property Name="TextParsingEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="PrivateStoreInfDlg/Emote">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:MainControl image:EmoteHover" />
+      <Property Name="NormalImage" Value="set:MainControl image:EmoteNormal" />
+      <Property Name="PushedImage" Value="set:MainControl image:EmotePushed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,22},{0,22}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,22},{0,22}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0,190},{0,379},{0,212},{0,401}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="PrivateStoreInfDlg/Send">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="发送" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0,213.314},{0,377.955},{0,257.314},{0,401.955}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="PrivateStoreInfDlg/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,162},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,162},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.481336,0},{0,12},{1.06617,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="PrivateStoreInfDlg/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="摊位信息" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,76},{0,1},{0,173},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="PrivateStoreInfDlg/Top">
+      <Property Name="UnifiedAreaRect" Value="{{0,17},{0,44},{0,257},{0,128}}" />
+      <Window Type="TaharezLook/RichEditbox" Name="PrivateStoreInfDlg/StallBoder">
+        <Property Name="LineSpace" Value="1" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,3},{0,235},{0,79}}" />
+        <Property Name="BackGroundEnable" Value="False" />
+        <Property Name="BlinkCaretTimeout" Value="0.5" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="PrivateStoreInfDlg/Bot">
+      <Property Name="UnifiedAreaRect" Value="{{0,17},{0,154},{0,257},{0,353.124}}" />
+      <Window Type="TaharezLook/RichEditbox" Name="PrivateStoreInfDlg/ChatHistory">
+        <Property Name="LineSpace" Value="1" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="1073741823" />
+        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,2},{0,238},{0,198}}" />
+        <Property Name="BackGroundEnable" Value="False" />
+        <Property Name="BlinkCaretTimeout" Value="0.5" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

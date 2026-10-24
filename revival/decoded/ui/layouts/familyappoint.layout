@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/SmallFrameWindow" Name="FamilyAppoint">
+    <Property Name="Font" Value="msyh-16" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,252},{0,199},{0,554},{0,348}}" />
+    <Window Type="TaharezLook/Button" Name="FamilyAppoint/FamilyManager">
+      <Property Name="Text" Value="族   长" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,216},{0,39},{0,284},{0,63}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="FamilyAppoint/FamilyViceManager">
+      <Property Name="Text" Value="副族长" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,216},{0,63},{0,284},{0,87}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="FamilyAppoint/FamilyMember">
+      <Property Name="Text" Value="成   员" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,216},{0,111},{0,284},{0,135}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="FamilyAppoint/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,214},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,214},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,127},{0,10},{0,341},{0,37}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="FamilyAppoint/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="家族任命" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,63.9},{-0.00377359,0},{0,144.9},{0,22}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="FamilyAppoint/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0,16},{0.275168,0},{0,213},{0.885906,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="FamilyAppoint/Tips1">
+        <Property Name="Text">请选择你要更改的职位
+</Property>
+        <Property Name="HorzExtent" Value="130" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.035533,0},{0.0659341,0},{-0.116667,208},{0.076053,19}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="FamilyAppoint/Back/Tips2">
+        <Property Name="Text">提醒：族长任命自己为其他职位
+             或者任命副族长为族长，
+             均视为退位。</Property>
+        <Property Name="HorzExtent" Value="182" />
+        <Property Name="VertExtent" Value="46.8567" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.035533,0},{0.307692,0},{1.00508,0},{0.945055,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="FamilyAppoint/PatrolManager">
+      <Property Name="Text" Value="巡察使" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,216},{0,87},{0,284},{0,111}}" />
+    </Window>
+  </Window>
+</GUILayout>

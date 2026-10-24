@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/StaticImage" Name="SignInDlg">
+    <Property Name="Image" Value="set:MainControl14 image:SignBack" />
+    <Property Name="FrameEnabled" Value="False" />
+    <Property Name="UnifiedMaxSize" Value="{{0,567},{0,219}}" />
+    <Property Name="UnifiedMinSize" Value="{{0,567},{0,219}}" />
+    <Property Name="ImageSizeEnable" Value="False" />
+    <Property Name="UnifiedAreaRect" Value="{{0.176875,0},{0.325833,0},{0.268125,232},{0.637253,0}}" />
+    <Property Name="BackgroundEnabled" Value="False" />
+    <Window Type="DefaultWindow" Name="SignInDlg/One">
+      <Property Name="UnifiedAreaRect" Value="{{0.342152,0},{0.273973,0},{0.825397,0},{0.520548,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="SignInDlg/One/text">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="你只需等待片刻，就可以进入游戏了。" />
+        <Property Name="HorzExtent" Value="221" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,18},{-0.111111,0},{0,249},{0,41}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="SignInDlg/Two">
+      <Property Name="UnifiedAreaRect" Value="{{0.366843,0},{0.182648,0},{0.348081,311},{0.181135,75}}" />
+      <Window Type="TaharezLook/StaticText" Name="SignInDlg/Two/text">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text">服务器人数已满，需排队登入
+</Property>
+        <Property Name="HorzExtent" Value="195" />
+        <Property Name="VertExtent" Value="17.1936" />
+        <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+        <Property Name="BorderColour" Value="FF433C10" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.07,0},{0,0},{0,238},{0.0799996,21}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="SignInDlg/Two/text1">
+          <Property Name="Text">
+您当前排在第                 位，预计还要等         分钟</Property>
+          <Property Name="HorzExtent" Value="273" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF030916" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{-0.0552995,0},{0.05,26},{0.146486,240},{0.05,46}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticText" Name="SignInDlg/Two/text/num">
+            <Property Name="Font" Value="tahoma-9" />
+            <Property Name="Text" Value="100000" />
+            <Property Name="HorzExtent" Value="48" />
+            <Property Name="VertExtent" Value="12.8813" />
+            <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+            <Property Name="BorderColour" Value="FF030916" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,75},{-0.1,0},{0,130},{0.0250023,17}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="SignInDlg/Two/text/time">
+            <Property Name="Font" Value="tahoma-9" />
+            <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,220},{-0.1,0},{0,246},{0.0250023,17}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="SignInDlg/after">
+        <Property Name="Text" Value="在你后面还有                 位" />
+        <Property Name="HorzExtent" Value="142" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF030916" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0266667,0},{0.0799996,42},{0.0180442,153},{0.0799996,62}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="SignInDlg/after/num">
+          <Property Name="Font" Value="tahoma-9" />
+          <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,75},{-0.1,0},{0,131},{0,18}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="SignInDlg/cansel">
+      <Property Name="Text" Value="取    消" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.66843,0},{0.694064,0},{0.823633,0},{0.760408,9}}" />
+    </Window>
+    <Window Type="TaharezLook/RichEditbox" Name="SignInDlg/prompt/http">
+      <Property Name="LineSpace" Value="1" />
+      <Property Name="BlinkCaret" Value="True" />
+      <Property Name="MaxTextLength" Value="2147483647" />
+      <Property Name="UnifiedAreaRect" Value="{{0.37037,0},{0.05,97},{-0.0925269,533},{0.05,139}}" />
+      <Property Name="BackGroundEnable" Value="False" />
+      <Property Name="BlinkCaretTimeout" Value="0.5" />
+      <Property Name="TextParsingEnabled" Value="False" />
+    </Window>
+  </Window>
+</GUILayout>

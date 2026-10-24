@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="QingCombination">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,173},{0,113},{0,630},{0,440}}" />
+    <Window Type="TaharezLook/StaticImage" Name="QingCombination/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.398249,0},{0,11},{1.07221,0},{0,38}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="QingCombination/Title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="自创轻功组合" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="102" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.298701,0},{0,1},{0.948052,0},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="QingCombination/Back1">
+      <Property Name="UnifiedAreaRect" Value="{{0,20},{0,46},{0,435},{0,305}}" />
+      <Window Type="TaharezLook/Button" Name="QingCombination/OK">
+        <Property Name="Text" Value="自创轻功" />
+        <Property Name="Tooltip" Value="选择相应组合后，点击此按钮可设为默认的自创轻功招式" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0963857,0},{0.88417,0},{0.274699,0},{0.880309,25}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="QingCombination/OK1">
+        <Property Name="Text" Value="制作秘籍" />
+        <Property Name="Tooltip" Value="选择相应组合后，点击此按钮可设为默认轻功招式" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.421687,0},{0.88417,0},{0.6,0},{0.880309,25}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="QingCombination/Back/OK1">
+        <Property Name="Text" Value="返回" />
+        <Property Name="Tooltip" Value="选择相应组合后，点击此按钮可设为默认轻功招式" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.15,262},{0.88417,0},{0.328313,262},{0.88417,24}}" />
+      </Window>
+      <Window Type="TaharezLook/EquipCase" Name="QingCombination/Back1/Left">
+        <Property Name="UnifiedAreaRect" Value="{{0.0433735,0},{0.042471,0},{0.325301,0},{0.57529,0}}" />
+        <Window Type="TaharezLook/StaticImage" Name="QingCombination/Back1/Left/Qback">
+          <Property Name="Image" Value="set:MainControl25 image:PatternBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,102},{0,130}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,102},{0,130}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0683761,0},{0.0289856,0},{1.77778,0},{1.11594,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="QingCombination/Jump1">
+            <Property Name="Image" Value="set:MainControl25 image:Q1" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,103},{0,131}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,103},{0,131}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.00882353,0},{-0.0124303,0},{0.05,97},{0.1,116}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="QingCombination/Jump1/text">
+              <Property Name="Text" Value="一段轻功" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.23301,0},{0,114},{0.0354368,75},{0,132}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+            <Window Type="TaharezLook/Combobox" Name="QingCombination/Jump1/Combo">
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.0582524,0},{0,139},{1.05825,0},{0,235}}" />
+              <Property Name="MaxEditTextLength" Value="2147483647" />
+              <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/EquipCase" Name="QingCombination/Back1/Mid">
+        <Property Name="UnifiedAreaRect" Value="{{0.308434,22},{0.042471,0},{0.590362,22},{0.57529,0}}" />
+        <Window Type="TaharezLook/StaticImage" Name="QingCombination/Back1/Mid/Qback">
+          <Property Name="Image" Value="set:MainControl25 image:PatternBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,102},{0,130}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,102},{0,130}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0769231,0},{0.0289856,0},{1.78633,0},{1.11594,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="QingCombination/Jump2">
+            <Property Name="Image" Value="set:MainControl25 image:Q2" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,103},{0,131}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,103},{0,131}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.000980394,0},{-0.0124303,0},{0.05,98},{0.0644928,121}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="QingCombination/Jump2/text">
+              <Property Name="Text" Value="二段轻功" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.281553,0},{0,114},{0.0839805,75},{0,132}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+            <Window Type="TaharezLook/Combobox" Name="QingCombination/Jump2/Combo">
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.0291262,0},{0,139},{1.02913,0},{0,235}}" />
+              <Property Name="MaxEditTextLength" Value="2147483647" />
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/EquipCase" Name="QingCombination/Back1/Right">
+        <Property Name="UnifiedAreaRect" Value="{{0.590362,37},{0.042471,0},{0.87229,37},{0.57529,0}}" />
+        <Window Type="TaharezLook/StaticImage" Name="QingCombination/Back1/Right/Back">
+          <Property Name="Image" Value="set:MainControl3 image:LuckyWheelMiddleBox" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,66},{0,68}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,66},{0,68}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.222222,0},{0.253623,0},{0.786325,0},{0.746377,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="QingCombination/Jump3">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,11},{0.05,10},{0.05,51},{0.05,50}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="QingCombination/Jump3/text">
+              <Property Name="Text" Value="绚丽拖尾" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{1.05,0},{0,67},{0.103398,94},{0,85}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+            <Window Type="TaharezLook/Combobox" Name="QingCombination/Jump3/Combo">
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{-0.75,0},{0,93},{-0.65,99},{0,189}}" />
+              <Property Name="MaxEditTextLength" Value="2147483647" />
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="QingCombination/Back1/Bot">
+        <Property Name="UnifiedAreaRect" Value="{{0.0433735,0},{0.683398,0},{0.0433736,381},{0.876448,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="QingCombination/Text">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0,6},{0,2},{0,379},{0,46}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="QingCombination/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0437637,0},{0.140673,0},{0.95186,0},{0.140673,259}}" />
+      <Window Type="TaharezLook/StaticText" Name="QingCombination/Text1">
+        <Property Name="Text" Value="1/2" />
+        <Property Name="HorzExtent" Value="23" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,91},{0.05,167},{0.05,126},{0.05,187}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="QingCombination/Text2">
+        <Property Name="Text">1/7
+</Property>
+        <Property Name="HorzExtent" Value="23" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,286},{0.05,167},{0.1,321},{0.05,187}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="QingCombination/Finish1">
+        <Property Name="Image" Value="set:MainControl6 image:Award" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,40},{0,32}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,40},{0,32}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.359036,0},{0.1,149},{0.1,147},{0.1,181}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="QingCombination/Finish2">
+        <Property Name="Image" Value="set:MainControl6 image:Award" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,40},{0,32}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,40},{0,32}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.879518,0},{0.1,149},{0.15,343},{0.1,181}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="QingCombination/Back/OK">
+        <Property Name="Text" Value="自创预览" />
+        <Property Name="Tooltip" Value="择" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.409639,0},{0.1,203},{0.409639,75},{0.1,227}}" />
+      </Window>
+      <Window Type="TaharezLook/EquipCase" Name="QingCombination/Back/Left">
+        <Property Name="UnifiedAreaRect" Value="{{0.0144579,0},{0.030888,0},{0.0144579,201},{0.030888,167}}" />
+        <Window Type="TaharezLook/StaticImage" Name="QingCombination/Qing1">
+          <Property Name="Image" Value="set:MainControl25 image:Qing1" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,193},{0,159}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,193},{0,159}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0199005,0},{0.0239521,0},{0.05,187},{0.05,155}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/EquipCase" Name="QingCombination/Back/Right">
+        <Property Name="UnifiedAreaRect" Value="{{0.0144579,203},{0.030888,0},{0.0144579,404},{0.030888,167}}" />
+        <Window Type="TaharezLook/StaticImage" Name="QingCombination/Qing2">
+          <Property Name="Image" Value="set:MainControl25 image:Qing2" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,193},{0,159}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,193},{0,159}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,197},{0,163}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="QingCombination/Back/Info">
+        <Property Name="Text" Value="学会二级轻功" />
+        <Property Name="HorzExtent" Value="78" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+        <Property Name="BorderColour" Value="FF433C10" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0650607,0},{0.702703,0},{0.262651,0},{0.50193,70}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="QingCombination/Back/Info1">
+        <Property Name="Text" Value="连续7天完整师门" />
+        <Property Name="HorzExtent" Value="99" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+        <Property Name="BorderColour" Value="FF433C10" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.539157,0},{0.698842,0},{0.789759,0},{0.552123,56}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="QingCombination/Text11">
+        <Property Name="Font" Value="fzy4k-9" />
+        <Property Name="Text" Value="使用特殊轻功秘籍需要完成以上条件，拖尾则可自由设置" />
+        <Property Name="HorzExtent" Value="300" />
+        <Property Name="VertExtent" Value="14.0625" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.138554,0},{0.1,178},{0.1,328},{0.1,200}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

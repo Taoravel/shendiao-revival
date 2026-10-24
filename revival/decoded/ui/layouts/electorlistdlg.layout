@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="ElectListDlg">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,235.092},{0,166.52},{0,657.092},{0,446.52}}" />
+    <Window Type="TaharezLook/StaticText" Name="ElectListDlg/explain">
+      <Property Name="Text">投票消耗体力100点
+
+
+投票奖励绑银10000两</Property>
+      <Property Name="HorzExtent" Value="131" />
+      <Property Name="VertExtent" Value="31.2378" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,225},{0,158},{0,263}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="DefaultBorderEnable" Value="True" />
+      <Property Name="DefaultColourEnable" Value="True" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ElectListDlg/yes">
+      <Property Name="Text" Value="投   票" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,233},{0,232},{0,301},{0,256}}" />
+      <Property Name="NormalTextColour" Value="ffffffff" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ElectListDlg/no">
+      <Property Name="Text" Value="关   闭" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,314},{0,232},{0,382},{0,256}}" />
+      <Property Name="NormalTextColour" Value="ffffffff" />
+    </Window>
+    <Window Type="TaharezLook/MultiColumnList" Name="ElectListDlg/list">
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,45},{0,212},{0,226}}" />
+      <Property Name="ColumnHeader" Value="text: 角色名 width:{0.7,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:积分 width:{1,-135} id:1" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="ElectListDlg/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.130332,0},{0,11},{0.86019,0},{0,38}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="ElectListDlg/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="首席弟子竞选" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="102" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,71},{0,1},{0,217},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="ElectListDlg/Case">
+      <Property Name="UnifiedAreaRect" Value="{{0,214},{0,63},{0.42,224},{0,226}}" />
+      <Window Type="TaharezLook/MultiLineEditbox" Name="ElectListDlg/info">
+        <Property Name="Text">
+</Property>
+        <Property Name="ReadOnly" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,3},{0,184},{0,160}}" />
+        <Property Name="BackGroundEnable" Value="False" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Figure1" Name="ElectListDlg/Case/Title">
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.187166,0},{0,-19},{0.818182,0},{0,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="ElectListDlg/words">
+          <Property Name="Text" Value="竞选词" />
+          <Property Name="HorzExtent" Value="39" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,256},{-0.0526316,0},{0,346},{0,21}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

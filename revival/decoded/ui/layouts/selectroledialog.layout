@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="selectRoleDialog">
+    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+    <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    <Window Type="TaharezLook/StaticImage" Name="selectRoleDialog/back">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.00125,0},{0,0},{1.00125,0},{1,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/ImageButton" Name="selectRoleDialog/gotoBtn">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value=" 进入游戏" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl16 image:GameInHover" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="NormalImage" Value="set:MainControl16 image:GameInNormal" />
+        <Property Name="PushedImage" Value="set:MainControl16 image:GameInPushed" />
+        <Property Name="DisabledImage" Value="set:MainControl16 image:GameInDisable" />
+        <Property Name="SoundResource" Value="Switch_Toggle_Cockpit1.ogg" />
+        <Property Name="UnifiedMaxSize" Value="{{0,129},{0,60}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,129},{0,60}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.5,-60},{1,-85},{0.5,69},{1,-25}}" />
+        <Property Name="ButtonBorderColour" Value="FF2673D3" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="selectRoleDialog/leftPanle">
+        <Property Name="Font" Value="msyh-16" />
+        <Property Name="Image" Value="set:MainControl16 image:RoleSeletBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,364},{0,155}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,364},{0,155}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,304},{0,53},{0,668},{0,208}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Window Type="TaharezLook/StaticText" Name="selectRoleDialog/leftname">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+          <Property Name="BorderColour" Value="FF5F4100" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,193.574},{0,41.0049},{0,310.574},{0,61.0049}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="selectRoleDialog/leftLevel">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+          <Property Name="BorderColour" Value="FF5F4100" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,193.574},{0,81.7209},{0,310.574},{0,101.721}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="selectRoleDialog/leftSchool">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+          <Property Name="BorderColour" Value="FF5F4100" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,193.574},{0,61.0049},{0,310.574},{0,81.0049}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="selectRoleDialog/leftID">
+          <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+          <Property Name="BorderColour" Value="FF5F4100" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,193.574},{0,99.0049},{0,310.574},{0,119.005}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="selectRoleDialog/1">
+          <Property Name="Text" Value="名称：" />
+          <Property Name="HorzExtent" Value="39" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003679" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,157.7},{0,40.0049},{0,191.7},{0,60.0049}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="selectRoleDialog/2">
+          <Property Name="Text" Value="门派：" />
+          <Property Name="HorzExtent" Value="39" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003679" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,157.7},{0,60.0049},{0,191.7},{0,80.0049}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="selectRoleDialog/3">
+          <Property Name="Text" Value="等级：" />
+          <Property Name="HorzExtent" Value="39" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003679" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,157.7},{0,81.0049},{0,191.7},{0,101.005}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="selectRoleDialog/4">
+          <Property Name="Text" Value=" I D：" />
+          <Property Name="HorzExtent" Value="34" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003679" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,162.7},{0,99.0049},{0,196.7},{0,119.005}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="selectRoleDialog/lefticon">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,13.853},{0,7.1888},{0,141.853},{0,135.189}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="selectRoleDialog/lefticon/Cloud">
+            <Property Name="Image" Value="set:MainControl16 image:RoleCloud" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,187},{0,161}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,187},{0,161}}" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.267812,0},{-0.0843738,0},{1.29469,0},{1.0875,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="selectRoleDialog/back/return">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl16 image:RoleInHover" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="NormalImage" Value="set:MainControl16 image:RoleInNormal" />
+        <Property Name="PushedImage" Value="set:MainControl16 image:RoleInPushed" />
+        <Property Name="DisabledImage" Value="set:MainControl16 image:RoleInDisable" />
+        <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+        <Property Name="UnifiedMaxSize" Value="{{0,173},{0,43}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,173},{0,43}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,15},{1,-88},{0,188},{0,567}}" />
+        <Property Name="NormalTextColour" Value="tl:FFFFF7D0 tr:FFFFF7D0 bl:FF794F05 br:FF794F05" />
+        <Property Name="ButtonBorderColour" Value="FF171318" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+        <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="selectRoleDialog/createbtn">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl16 image:RoleNewHover" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="NormalImage" Value="set:MainControl16 image:RoleNewNormal" />
+        <Property Name="PushedImage" Value="set:MainControl16 image:RoleNewPushed" />
+        <Property Name="DisabledImage" Value="set:MainControl16 image:RoleNewDisable" />
+        <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+        <Property Name="UnifiedMaxSize" Value="{{0,173},{0,43}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,173},{0,43}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,15},{1,-126},{0,188},{0,529}}" />
+        <Property Name="NormalTextColour" Value="tl:FFFFF7D0 tr:FFFFF7D0 bl:FF794F05 br:FF794F05" />
+        <Property Name="ButtonBorderColour" Value="FF171318" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+        <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="selectRoleDialog/reservers">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl16 image:RoleReturnHover" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="NormalImage" Value="set:MainControl16 image:RoleReturnNormal" />
+        <Property Name="PushedImage" Value="set:MainControl16 image:RoleReturnPushed" />
+        <Property Name="DisabledImage" Value="set:MainControl16 image:RoleReturnDisable" />
+        <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+        <Property Name="UnifiedMaxSize" Value="{{0,173},{0,43}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,173},{0,43}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,15},{1,-49},{0,188},{1,-6}}" />
+        <Property Name="NormalTextColour" Value="tl:FFFFF7D0 tr:FFFFF7D0 bl:FF794F05 br:FF794F05" />
+        <Property Name="ButtonBorderColour" Value="FF171318" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+        <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="selectRoleDialog/removebtn">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl16 image:RoleHover" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="NormalImage" Value="set:MainControl16 image:RoleNormal" />
+        <Property Name="PushedImage" Value="set:MainControl16 image:RolePushed" />
+        <Property Name="DisabledImage" Value="set:MainControl16 image:RoleDisable" />
+        <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+        <Property Name="UnifiedMaxSize" Value="{{0,173},{0,43}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,173},{0,43}}" />
+        <Property Name="UnifiedAreaRect" Value="{{1,-170},{1,-49},{1.00375,0},{1,-6}}" />
+        <Property Name="NormalTextColour" Value="tl:FFFFF7D0 tr:FFFFF7D0 bl:FF794F05 br:FF794F05" />
+        <Property Name="ButtonBorderColour" Value="FF171318" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+        <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="selectRoleDialog/sprite2">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,112},{0,58}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,112},{0,58}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.5,-250},{0.5,150},{0.5,-138},{0.5,208}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="selectRoleDialog/sprite/sprite2">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,9},{0,-81},{0,124},{0,66}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="selectRoleDialog/sprite/sprite2/Image">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,105},{0,60}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,105},{0,60}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0847826,0},{0.532993,0},{1.82391,0},{1.5534,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="selectRoleDialog/sprite1">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,112},{0,58}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,112},{0,58}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.44625,0},{0.485294,0},{0.58625,0},{0.580065,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="selectRoleDialog/sprite/sprite1">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,9},{0,-90},{0,124},{0,57}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="selectRoleDialog/sprite/sprite1/Image">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,105},{0,60}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,105},{0,60}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0782609,0},{0.564626,0},{1.81739,0},{1.58503,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="selectRoleDialog/sprite3">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,112},{0,58}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,112},{0,58}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.5,180},{0.5,88},{0.5,292},{0.5,146}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="selectRoleDialog/sprite/sprite3">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,7},{0,-92},{0,122},{0,55}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="selectRoleDialog/sprite/sprite3/Image">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,105},{0,60}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,105},{0,60}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0826087,0},{0.562585,0},{1.82174,0},{1.58299,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="selectRoleDialog/back/Up">
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:LoginBack image:hidebtnhover" />
+        <Property Name="NormalImage" Value="set:LoginBack image:hidebtnnormal" />
+        <Property Name="PushedImage" Value="set:LoginBack image:hidebtnpushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,90},{0,90}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,90},{0,90}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.00875,0},{0.437909,0},{0.12125,0},{0.584967,0}}" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="selectRoleDialog/back/Down">
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:LoginBack image:showbtnhover" />
+        <Property Name="NormalImage" Value="set:LoginBack image:showbtnnormal" />
+        <Property Name="PushedImage" Value="set:LoginBack image:showbtnpushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,90},{0,90}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,90},{0,90}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.88125,0},{0.437909,0},{0.99375,0},{0.584967,0}}" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

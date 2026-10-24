@@ -1,0 +1,33 @@
+{
+  "revision": "wild-rewards-v2",
+  "source_status": "designed",
+  "experience": {"reference": "scene_min_level_nextexp", "numerator": 1, "denominator": 100, "minimum": 1},
+  "overlevel_no_reward_above_scene": 10,
+  "currency": "bound_silver",
+  "silver_per_scene_level": 2,
+  "cash_per_scene_level": 2,
+  "drop_draw_range": 10000,
+  "medicine": {"chance": 2000, "bands": [
+    {"minimum_scene_level": 1, "items": [33001,33013]},
+    {"minimum_scene_level": 25, "items": [33001,33003,33013,33015]},
+    {"minimum_scene_level": 50, "items": [33003,33005,33015,33018]}
+  ]},
+  "porcelain": {"chance": 2000, "maximum_absolute_level_gap": 5, "items": [
+    {"item_id": 50001, "weight": 6000},
+    {"item_id": 50015, "weight": 3000},
+    {"item_id": 50002, "weight": 1000}
+  ]},
+  "equipment": {"chance": 200, "maximum_level": 80, "selection": "highest_template_level_at_or_below_scene_then_uniform", "quality": "existing_clean_ordinary_baseline"},
+  "binding": 1,
+  "pet": {"experience_multiplier": 2, "maximum_level_above_entry_role": 5, "ordinary_cap": 150, "recipient": "original_owned_battle_pet_alive_at_terminal", "resource_order": "write_terminal_pet_resources_before_experience_in_same_transaction"},
+  "notes": [
+    "Medicine, porcelain and equipment rolls are independent; a victory can award up to three items, one per group.",
+    "Every granted item is quantity one, bound. No cash substitution or template quality randomness.",
+    "Equipment candidate IDs/levels/base details are client_verified, assignment/rates/binding are designed; historical PC guide supports equipment drops up to level 80 only.",
+    "Porcelain +/-5 eligibility is client_verified description; 20% group chance and 60/30/10 group weights are designed. Historical 10-49 range is not imposed on this client.",
+    "Role XP and bound silver retain the v1 designed formula for now; this revision adds content/atomic pet rewards, not a claim of final balancing.",
+    "Cash adds a designed scene_level*2 per victory to fund restored cash-only NPC expenses; bound silver remains a separate scene_level*2 credit, no implicit conversion.",
+    "Ordinary unmodified single-role single-enemy battles only. Multiple-time buffs, teams, events, rare materials and death penalties require separate policies.",
+    "Already persisted v1 admissions retain v1 plans; a v2 retry must not silently rewrite them."
+  ]
+}

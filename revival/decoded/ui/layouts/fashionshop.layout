@@ -1,0 +1,978 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="FashionShop">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.083125,0},{0.0875,0},{0.084375,669},{0.0875,482}}" />
+    <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Model">
+      <Property Name="Image" Value="set:MainControl25 image:RoleBack" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,171},{0,189}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,171},{0,189}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,19},{0,45},{0,190},{0,234}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/LittleButton" Name="FashionShop/Back/Model/House">
+        <Property Name="Text" Value="取消试穿" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.526316,0},{0.857143,0},{0.964912,0},{0.847873,24}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Model/Image/Role">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,22},{0.05,29},{0.05,133},{0.05,154}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="FashionShop/Back/Model/Image/Left">
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl14 image:FashionLeftHover" />
+        <Property Name="NormalImage" Value="set:MainControl14 image:FashionLeftNormal" />
+        <Property Name="PushedImage" Value="set:MainControl14 image:FashionLeftPushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,37},{0,30}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,37},{0,30}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0526316,0},{0.05,105},{0.05,37},{0.05,135}}" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="FashionShop/Back/Model/Image/Left1">
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl14 image:FashionRightHover" />
+        <Property Name="NormalImage" Value="set:MainControl14 image:FashionRightNormal" />
+        <Property Name="PushedImage" Value="set:MainControl14 image:FashionRightPushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,37},{0,30}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,37},{0,30}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,122},{0.05,105},{0,159},{0.05,135}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Model/effectback">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0643275,0},{0.0582011,0},{0.953216,0},{0.201058,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Yuanbao">
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0.113433,0},{0,238},{0.276119,0},{0,256}}" />
+      <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Yuanbao/Y">
+        <Property Name="Image" Value="set:MainControl image:yuanbao" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,16},{0,16}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,16},{0,16}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0275229,0},{0,0},{0.174312,0},{0.888889,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Yuanbao/Money">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.192661,0},{0,0},{0.981651,0},{0.3,8}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Yuanbao1">
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0.113433,0},{0,259},{0.276119,0},{0,277}}" />
+      <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Yuanbao1/B">
+        <Property Name="Image" Value="set:MainControl image:bangdingyuanbao" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,16},{0,16}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,16},{0,16}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0183486,0},{0,0},{0.165138,0},{0.888889,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Yuanbao1/Money">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.192661,0},{0.0555556,0},{0.981651,0},{0.35,9}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Yuanbao2">
+      <Property Name="Text" Value="携带元宝" />
+      <Property Name="HorzExtent" Value="53" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+      <Property Name="BorderColour" Value="FF433C10" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,21},{0,238},{0.104452,8},{0,256}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Yuanbao21">
+      <Property Name="Text" Value="绑定元宝" />
+      <Property Name="HorzExtent" Value="53" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+      <Property Name="BorderColour" Value="FF433C10" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,21},{0,259},{0.104452,8},{0,277}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="FashionShop/Back/bot">
+      <Property Name="UnifiedAreaRect" Value="{{0,19},{0.215909,177},{0,190},{0.215909,333}}" />
+      <Window Type="TaharezLook/LinkText" Name="FashionShop/Back/bot/Buy1">
+        <Property Name="Text" Value="快捷支付" />
+        <Property Name="UnifiedAreaRect" Value="{{0,20},{0.281725,16},{0,85},{0.281725,38}}" />
+      </Window>
+      <Window Type="TaharezLook/LinkText" Name="FashionShop/Back/bot/Buy2">
+        <Property Name="Text" Value="官网充值" />
+        <Property Name="UnifiedAreaRect" Value="{{0,20},{0.281725,39},{0.386905,17},{0.281725,61}}" />
+      </Window>
+      <Window Type="TaharezLook/LinkText" Name="FashionShop/Back/bot/Buy3">
+        <Property Name="Text" Value="银两购买" />
+        <Property Name="UnifiedAreaRect" Value="{{0,20},{0.281725,62},{0.386905,17},{0.281725,84}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/bot/Info">
+        <Property Name="Text" Value="若您的元宝不足，您可以选择如下方式获得：" />
+        <Property Name="HorzExtent" Value="156" />
+        <Property Name="VertExtent" Value="31.2378" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0292398,0},{0.166667,0},{0.953216,0},{0.378205,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/bot/Info1">
+        <Property Name="Text" Value="元宝充值" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+        <Property Name="BorderColour" Value="FF433C10" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0292398,0},{0.05,-3},{0.339181,0},{0.05,13}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+      <Window Type="TaharezLook/LinkText" Name="FashionShop/Back/bot/Buy4">
+        <Property Name="Text" Value="卡密充值" />
+        <Property Name="UnifiedAreaRect" Value="{{0,20},{0.281725,85},{0.386905,17},{0.281725,107}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item1/Back/Line11">
+        <Property Name="Image" Value="set:MainControl14 image:Line" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0526316,0},{0.05,13},{0.0380952,158},{0.05,15}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="FashionShop/New">
+      <Property Name="Text" Value="新品上市" />
+      <Property Name="UnifiedAreaRect" Value="{{0.298507,0},{0,45},{0.398507,0},{0,67}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="FashionShop/Hot">
+      <Property Name="Text" Value="热卖时装" />
+      <Property Name="UnifiedAreaRect" Value="{{0.398507,0},{0,45},{0.498507,0},{0,67}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="FashionShop/Num">
+      <Property Name="Text" Value="限量特供" />
+      <Property Name="UnifiedAreaRect" Value="{{0.498507,0},{0,45},{0.598507,0},{0,67}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="FashionShop/Time">
+      <Property Name="Text" Value="限时折扣" />
+      <Property Name="UnifiedAreaRect" Value="{{0.598507,0},{0,45},{0.698507,0},{0,67}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="FashionShop/All">
+      <Property Name="Text" Value="全部时装" />
+      <Property Name="UnifiedAreaRect" Value="{{0.698507,0},{0,45},{0.798507,0},{0,67}}" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="FashionShop/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.291045,0},{0.139004,0},{0.291045,453},{0.130859,373}}" />
+      <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item1/Back">
+        <Property Name="Image" Value="set:MainControl14 image:SmallBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,221},{0,119}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,221},{0,119}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{0,226},{0,124}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item1/Back/Image">
+          <Property Name="Image" Value="set:MainControl3 image:LuckyWheelNormalBox" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,64},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,64},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.040724,0},{0,27},{0.339366,0},{0,95}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="FashionShop/Back/Item1/Back/Image/Cell">
+            <Property Name="UnifiedAreaRect" Value="{{0.120739,0},{0.130515,0},{0,56},{0.160294,46}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Figure" Name="FashionShop/Back/Item1/Title">
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.144796,0},{0.0331933,0},{0.105172,167},{0.05,13}}" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+          <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item1/Title/Name">
+            <Property Name="TextColours" Value="tl:FF3BF3FF tr:FF3BF3FF bl:FF3BF3FF br:FF3BF3FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.253164,0},{-0.0666667,0},{1.01899,0},{0,17}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/LittleButton" Name="FashionShop/Back/Item1/Back/Try">
+          <Property Name="Text" Value="试穿" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.511312,0},{0.747899,0},{0.438914,64},{0.71731,26}}" />
+        </Window>
+        <Window Type="TaharezLook/LittleButton" Name="FashionShop/Back/Item1/Back/Buy">
+          <Property Name="Text" Value="购买" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.751131,0},{0.747899,0},{0.705882,58},{0.725714,25}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item1/Back/Image/Money">
+          <Property Name="Image" Value="set:MainControl image:yuanbao" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,16},{0,16}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,16},{0,16}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,73},{0.05,20},{0.05,89},{0.05,36}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item1/Back/Image/Num">
+          <Property Name="Text" Value="50000" />
+          <Property Name="HorzExtent" Value="40" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,110},{0,26},{0,160},{0,44}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item1/Back/Image/Num/Delete">
+            <Property Name="Image" Value="set:MainControl14 image:Delete" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.1,0},{0.388889,0},{-0.1,52},{0.388889,1}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item1/Back/Image/Money1">
+          <Property Name="Image" Value="set:MainControl14 image:FashionTime" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,20},{0,20}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,20},{0,20}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,71},{0,47},{0.05,89},{0,66}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item1/Back/Image/Time">
+          <Property Name="Text" Value="7天23小时30秒" />
+          <Property Name="HorzExtent" Value="93" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,110},{0,48},{0,217},{0,66}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item1/Back/Left">
+          <Property Name="Font" Value="fzy4k-9" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,84},{0,68},{0,214},{0,88}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item1/Back/Limit">
+          <Property Name="Font" Value="fzy4k-9" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.380091,0},{0.571428,0},{0.968326,0},{0.497297,29}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item1/Back/Image/Num1">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,151},{0,26},{0.05,203},{0,44}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item1/Back/Line">
+          <Property Name="Image" Value="set:MainControl14 image:Line" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,193},{0,2}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,193},{0,2}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0678733,0},{0.168067,0},{0.972852,0},{1.42857,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item1/Back/Label">
+          <Property Name="Image" Value="set:MainControl24 image:New" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,35}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,35}}" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00452491,0},{0.0168067,0},{-0.0271493,52},{0.394959,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item2/Back">
+        <Property Name="Image" Value="set:MainControl14 image:SmallBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,221},{0,119}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,221},{0,119}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,227},{0,5},{0,448},{0,124}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item2/Back/Image">
+          <Property Name="Image" Value="set:MainControl3 image:LuckyWheelNormalBox" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,64},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,64},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,9},{0,27},{0,73},{0,91}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="FashionShop/Back/Item2/Back/Image/Cell">
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,56},{0,56}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Figure" Name="FashionShop/Back/Item2/Title">
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,32},{0,4},{-0.039624,199},{0,19}}" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+          <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item2/Title/Name">
+            <Property Name="TextColours" Value="tl:FF3BF3FF tr:FF3BF3FF bl:FF3BF3FF br:FF3BF3FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.246835,0},{0,-1},{1.01266,0},{0,17}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/LittleButton" Name="FashionShop/Back/Item2/Back/Try">
+          <Property Name="Text" Value="试穿" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,113},{0,89},{0,161},{0,111}}" />
+        </Window>
+        <Window Type="TaharezLook/LittleButton" Name="FashionShop/Back/Item2/Back/Buy">
+          <Property Name="Text" Value="购买" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,166},{0,89},{0,214},{0,111}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item2/Back/Image/Money2">
+          <Property Name="Image" Value="set:MainControl image:yuanbao" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,16},{0,16}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,16},{0,16}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,84},{0,26},{0,100},{0,42}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item2/Back/Image/Num">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,110},{0,26},{0,160},{0,44}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item2/Back/Image/Num/Delete">
+            <Property Name="Image" Value="set:MainControl14 image:Delete" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,-5},{0,7},{0,47},{0,8}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item2/Back/Image/Money">
+          <Property Name="Image" Value="set:MainControl14 image:FashionTime" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,20},{0,20}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,20},{0,20}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,82},{0,47},{0,102},{0,67}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item2/Back/Image/Time">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,110},{0,48},{0,217},{0,66}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item2/Back/Left">
+          <Property Name="Font" Value="fzy4k-9" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,84},{0,68},{0,214},{0,88}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item2/Back/Limit">
+          <Property Name="Font" Value="fzy4k-9" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,84},{0,68},{0,214},{0,88}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item2/Back/Image/Num1">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,162},{0,26},{0,214},{0,44}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item1/Back/Line1">
+          <Property Name="Image" Value="set:MainControl14 image:Line" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,193},{0,2}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,193},{0,2}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,15},{0,20},{0,208},{0,22}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item2/Back/Label">
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00452491,0},{0.0168067,0},{-0.0271493,52},{-0.0420168,42}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item3/Back">
+        <Property Name="Image" Value="set:MainControl14 image:SmallBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,221},{0,119}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,221},{0,119}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,125},{0,225},{0,244}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item3/Back/Image">
+          <Property Name="Image" Value="set:MainControl3 image:LuckyWheelNormalBox" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,64},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,64},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,9},{0,27},{0,73},{0,91}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="FashionShop/Back/Item3/Back/Image/Cell">
+            <Property Name="UnifiedAreaRect" Value="{{0.125,0},{0.125,0},{0,56},{0.160294,46}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Figure" Name="FashionShop/Back/Item3/Title">
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,32},{0,4},{-0.039624,199},{0,19}}" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+          <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item3/Title/Name">
+            <Property Name="TextColours" Value="tl:FF3BF3FF tr:FF3BF3FF bl:FF3BF3FF br:FF3BF3FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.246835,0},{0,-1},{1.01266,0},{0,17}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/LittleButton" Name="FashionShop/Back/Item3/Back/Try">
+          <Property Name="Text" Value="试穿" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,113},{0,89},{0,161},{0,111}}" />
+        </Window>
+        <Window Type="TaharezLook/LittleButton" Name="FashionShop/Back/Item3/Back/Buy">
+          <Property Name="Text" Value="购买" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,166},{0,89},{0,214},{0,111}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item3/Back/Image/Money">
+          <Property Name="Image" Value="set:MainControl image:yuanbao" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,16},{0,16}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,16},{0,16}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,84},{0,26},{0,100},{0,42}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item3/Back/Image/Num">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,110},{0,26},{0,160},{0,44}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item3/Back/Image/Num/Delete">
+            <Property Name="Image" Value="set:MainControl14 image:Delete" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,-5},{0,7},{0,47},{0,8}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item3/Back/Image/Money1">
+          <Property Name="Image" Value="set:MainControl14 image:FashionTime" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,20},{0,20}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,20},{0,20}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,82},{0,47},{0,102},{0,67}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item3/Back/Image/Time">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,110},{0,48},{0,217},{0,66}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item3/Back/Left">
+          <Property Name="Font" Value="fzy4k-9" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,84},{0,68},{0,214},{0,88}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item3/Back/Limit">
+          <Property Name="Font" Value="fzy4k-9" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,84},{0,68},{0,214},{0,88}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item3/Back/Image/Num1">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,162},{0,26},{0,214},{0,44}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item1/Back/Line2">
+          <Property Name="Image" Value="set:MainControl14 image:Line" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,193},{0,2}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,193},{0,2}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,15},{0,20},{0,208},{0,22}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item3/Back/Label">
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00452491,0},{0.0168067,0},{-0.0271493,52},{-0.0420168,42}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item4/Back">
+        <Property Name="Image" Value="set:MainControl14 image:SmallBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,221},{0,119}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,221},{0,119}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,227},{0,125},{0,448},{0,244}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item4/Back/Image">
+          <Property Name="Image" Value="set:MainControl3 image:LuckyWheelNormalBox" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,64},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,64},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,9},{0,27},{0,73},{0,91}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="FashionShop/Back/Item4/Back/Image/Cell">
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,56},{0,56}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Figure" Name="FashionShop/Back/Item4/Title">
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,32},{0,4},{-0.039624,199},{0,19}}" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+          <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item4/Title/Name">
+            <Property Name="TextColours" Value="tl:FF3BF3FF tr:FF3BF3FF bl:FF3BF3FF br:FF3BF3FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.246835,0},{0,-1},{1.01266,0},{0,17}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/LittleButton" Name="FashionShop/Back/Item4/Back/Try">
+          <Property Name="Text" Value="试穿" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,113},{0,89},{0,161},{0,111}}" />
+        </Window>
+        <Window Type="TaharezLook/LittleButton" Name="FashionShop/Back/Item4/Back/Buy">
+          <Property Name="Text" Value="购买" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,166},{0,89},{0,214},{0,111}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item4/Back/Image/Money">
+          <Property Name="Image" Value="set:MainControl image:yuanbao" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,16},{0,16}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,16},{0,16}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,84},{0,26},{0,100},{0,42}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item4/Back/Image/Num">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,110},{0,26},{0,160},{0,44}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item4/Back/Image/Num/Delete">
+            <Property Name="Image" Value="set:MainControl14 image:Delete" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,-5},{0,7},{0,47},{0,8}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item4/Back/Image/Money1">
+          <Property Name="Image" Value="set:MainControl14 image:FashionTime" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,20},{0,20}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,20},{0,20}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,82},{0,47},{0,102},{0,67}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item4/Back/Image/Time">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,110},{0,48},{0,217},{0,66}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item4/Back/Left">
+          <Property Name="Font" Value="fzy4k-9" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,84},{0,68},{0,214},{0,88}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item4/Back/Limit">
+          <Property Name="Font" Value="fzy4k-9" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,84},{0,68},{0,214},{0,88}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item4/Back/Image/Num1">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,162},{0,26},{0,214},{0,44}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item1/Back/Line3">
+          <Property Name="Image" Value="set:MainControl14 image:Line" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,193},{0,2}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,193},{0,2}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,15},{0,20},{0,208},{0,22}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item4/Back/Label">
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00452491,0},{0.0168067,0},{-0.0271493,52},{-0.0420168,42}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item5/Back">
+        <Property Name="Image" Value="set:MainControl14 image:SmallBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,221},{0,119}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,221},{0,119}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,245},{0,225},{0,364}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item5/Back/Image">
+          <Property Name="Image" Value="set:MainControl3 image:LuckyWheelNormalBox" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,64},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,64},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,9},{0,27},{0,73},{0,91}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="FashionShop/Back/Item5/Back/Image/Cell">
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,56},{0,56}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Figure" Name="FashionShop/Back/Item5/Title">
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,32},{0,4},{-0.039624,199},{0,19}}" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+          <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item5/Title/Name">
+            <Property Name="TextColours" Value="tl:FF3BF3FF tr:FF3BF3FF bl:FF3BF3FF br:FF3BF3FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.246835,0},{0,-1},{1.01266,0},{0,17}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/LittleButton" Name="FashionShop/Back/Item5/Back/Try">
+          <Property Name="Text" Value="试穿" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,113},{0,89},{0,161},{0,111}}" />
+        </Window>
+        <Window Type="TaharezLook/LittleButton" Name="FashionShop/Back/Item5/Back/Buy">
+          <Property Name="Text" Value="购买" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,166},{0,89},{0,214},{0,111}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item5/Back/Image/Money">
+          <Property Name="Image" Value="set:MainControl image:yuanbao" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,16},{0,16}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,16},{0,16}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,84},{0,26},{0,100},{0,42}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item5/Back/Image/Num">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,110},{0,26},{0,160},{0,44}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item5/Back/Image/Num/Delete">
+            <Property Name="Image" Value="set:MainControl14 image:Delete" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,-5},{0,7},{0,47},{0,8}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item5/Back/Image/Money1">
+          <Property Name="Image" Value="set:MainControl14 image:FashionTime" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,20},{0,20}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,20},{0,20}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,82},{0,47},{0,102},{0,67}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item5/Back/Image/Time">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,110},{0,48},{0,217},{0,66}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item5/Back/Left">
+          <Property Name="Font" Value="fzy4k-9" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,84},{0,68},{0,214},{0,88}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item5/Back/Limit">
+          <Property Name="Font" Value="fzy4k-9" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,84},{0,68},{0,214},{0,88}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item5/Back/Image/Num1">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,162},{0,26},{0,214},{0,44}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item1/Back/Line4">
+          <Property Name="Image" Value="set:MainControl14 image:Line" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,193},{0,2}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,193},{0,2}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,15},{0,20},{0,208},{0,22}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item5/Back/Label">
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00452491,0},{0.0168067,0},{-0.0271493,52},{-0.0420168,42}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item6/Back">
+        <Property Name="Image" Value="set:MainControl14 image:SmallBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,221},{0,119}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,221},{0,119}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,227},{0,245},{0,448},{0,364}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item6/Back/Image">
+          <Property Name="Image" Value="set:MainControl3 image:LuckyWheelNormalBox" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,64},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,64},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,9},{0,27},{0,73},{0,91}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="FashionShop/Back/Item6/Back/Image/Cell">
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,56},{0,56}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Figure" Name="FashionShop/Back/Item6/Title">
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,32},{0,4},{-0.039624,199},{0,19}}" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+          <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item6/Title/Name">
+            <Property Name="TextColours" Value="tl:FF3BF3FF tr:FF3BF3FF bl:FF3BF3FF br:FF3BF3FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.246835,0},{0,-1},{1.01266,0},{0,17}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/LittleButton" Name="FashionShop/Back/Item6/Back/Try">
+          <Property Name="Text" Value="试穿" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,113},{0,89},{0,161},{0,111}}" />
+        </Window>
+        <Window Type="TaharezLook/LittleButton" Name="FashionShop/Back/Item6/Back/Buy">
+          <Property Name="Text" Value="购买" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,166},{0,89},{0,214},{0,111}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item6/Back/Image/Money">
+          <Property Name="Image" Value="set:MainControl image:yuanbao" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,16},{0,16}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,16},{0,16}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,84},{0,26},{0,100},{0,42}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item6/Back/Image/Num">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,110},{0,26},{0,160},{0,44}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item6/Back/Image/Num/Delete">
+            <Property Name="Image" Value="set:MainControl14 image:Delete" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,-5},{0,7},{0,47},{0,8}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item6/Back/Image/Money1">
+          <Property Name="Image" Value="set:MainControl14 image:FashionTime" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,20},{0,20}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,20},{0,20}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,82},{0,47},{0,102},{0,67}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item6/Back/Image/Time">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,110},{0,48},{0,217},{0,66}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item6/Back/Left">
+          <Property Name="Font" Value="fzy4k-9" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,84},{0,68},{0,214},{0,88}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item6/Back/Limit">
+          <Property Name="Font" Value="fzy4k-9" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,84},{0,68},{0,214},{0,88}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FashionShop/Back/Item6/Back/Image/Num1">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,162},{0,26},{0,214},{0,44}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item1/Back/Line5">
+          <Property Name="Image" Value="set:MainControl14 image:Line" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,193},{0,2}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,193},{0,2}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,15},{0,20},{0,208},{0,22}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FashionShop/Back/Item6/Back/Label">
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00452491,0},{0.0168067,0},{-0.0271493,52},{-0.0420168,42}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="FashionShop/Up">
+      <Property Name="Text" Value="上一页" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.450746,0},{0.910788,0},{0.568657,0},{0.960581,0}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="FashionShop/Down">
+      <Property Name="Text" Value="下一页" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.683582,0},{0.910788,0},{0.801493,0},{0.960581,0}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="FashionShop/Name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="江湖衣舍" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="68" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.28209,0},{0.0290456,0},{0.558209,0},{0.0705394,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="FashionShop/Page">
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.570149,0},{0.917012,0},{0.680597,0},{0.954357,0}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="FashionShop/ride">
+      <Property Name="Text" Value="炫彩坐骑" />
+      <Property Name="UnifiedAreaRect" Value="{{0.298507,0},{0,45},{0.398507,0},{0,67}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="FashionShop/Plaything">
+      <Property Name="Text" Value="新鲜玩意" />
+      <Property Name="UnifiedAreaRect" Value="{{0.798507,0},{0.05,21},{0.898507,0},{0.05,43}}" />
+    </Window>
+  </Window>
+</GUILayout>

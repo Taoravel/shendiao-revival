@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-24",
+  "domain_ready_for_main_integration": true,
+  "baseline": {
+    "world_movement.py": "d2238aaa4f9ce88743b26a32d7ae961148d6bd82999f29300442169dc2fea322",
+    "world_owner.py": "3a893ec87feab966adf4f07f1917779296669f143177cb78da580758c3ef4d5b"
+  },
+  "candidate": {
+    "world_movement.py": "34ad13f25e9a7ea412e0e885b07ea37714ac02ad4695e40d22f64c4388145f30",
+    "world_owner.py": "51cd7090cb8215231d3be9bafc68a170ced635bd339f68a291dc77f05057b438"
+  },
+  "patch": "world-current-cell-collision-candidate.patch",
+  "unchanged_since_first_review": true,
+  "fixed_two_file_review": "reviews/world-current-cell-collision-v1",
+  "standards_open": 0,
+  "spec_open": 0,
+  "interface": "world-current-cell-collision-current-interface.json",
+  "new_all302_domain_report": "world-current-cell-maps-verification.json",
+  "native_state35_parent_report": "world-movement-state-transitions-parent-verification.json",
+  "native_state35_review": "reviews/world-movement-state-and-maps-v2",
+  "shared_collision_wiring_completed": false,
+  "live_server_changed_by_world": false,
+  "unknown_state_must_not_be_guessed": true,
+  "runtime_trusted_state_lifecycle_owned_by_main": true,
+  "native_current_is_current_cell_only": true,
+  "trajectory_speed_and_jump_authorization_verified": false,
+  "lifecycle_evidence_ready": true,
+  "lifecycle_cases": 28,
+  "lifecycle_parent_report": "world-movement-state-lifecycle-parent-verification.json",
+  "lifecycle_handoff": "WORLD_MOVEMENT_STATE_LIFECYCLE_GATES.md",
+  "lifecycle_review": "WORLD_MOVEMENT_STATE_LIFECYCLE_REVIEW.md",
+  "lifecycle_review_snapshot": "reviews/world-movement-state-lifecycle-v1",
+  "lifecycle_standards_open": 0,
+  "lifecycle_spec_open": 0,
+  "server_declaration_policy": "main-owned designed policy; original explicit location0 semantics verified only under stated role/Scene conditions",
+  "write_drain_is_client_execution_ack": false,
+  "first_world_ack_is_universal_state0_proof": false,
+  "CG_END_is_automatic_state0_reset_proof": false,
+  "position_gates_can_leave_actor_and_target_inconsistent": true,
+  "missing_scene_or_role_prevents_location_state_assignment": true
+}

@@ -1,0 +1,31 @@
+# 人物潜能与实战属性接线
+
+2026-10-23，主策划。目标是让已恢复的普通升级/潜能增量可转为角色属性快照，避免全部等级长期沿用100HP的实验初值；不触碰当前手动测试进程与存档。
+
+证据：ROLE_PROGRESSION_RESEARCH已直接核验cattrmoddata和cattributedesconfig。HP、MP、外防、命中、躲闪、速度、内伤/内防数字系数保留；外伤ID80全零与客户端“力量影响外伤”的说明同时存在，故不能据这张表拼成原完整公式。历史端游检索未找到当前版本完整外伤算法。
+
+设计：以调用方明确给出的基线为起点，对成长自动/已分配潜能增量作一次整数内积并向下取整；外伤为基线+2×力量增量+2×等级差。全套组合是designed，原系数仍单列其出处。新角色配置基线是本地恢复策略；已有角色必须提供自己的版本化基线，不能按等级补造过去的五维或分配。
+
+codebase-design的实际决定：AttributeBaseline、GrowthState与只读规则通过derive_attributes输出冻结RoleAttributes；加载规则仅在启动，数学计算没有DB、Session、锁、队列或热路径读盘。growth_vitals仅返回新的VitalState，事务、登录租约/成长版本、存档和连接刷新由所属角色Module处理。
+
+基础算例：L1基线100HP/100MP/外攻20/防御5/命中40/速度10，L2自动五维各1并分配力量5后，结果HP110/MP106/外攻34/防御8/命中64/速度11；角色原70HP、40MP变为80HP、46MP，缺失量保持；死亡保持HP0。一次基本检查同时确认64位角色ID不截断、跨角色输入拒绝、原输入不变。结果role-attributes-verification.json。
+
+产物：纯属性模块、角色属性配置、统一裁定指针、本交接。已交任务成长与运行时集成窗口接线。writing-for-agents用于集中说明版本、范围和完成条件；本批按既有先批量恢复/必要检查安排，仅做基础算例，未宣称完整TDD流程。
+
+后续人物成长/属性基线/伤势同事务已由任务窗口实现，并由主策划verify_role_attribute_storage独立通过，见ARCHITECTURE_ACCEPTANCE。普通显示研究见ROLE_GROWTH_UI_RESEARCH，主策划新增role_attribute_protocol：0xc32c8原生普通map的等级490、潜能500及已核验属性；known RoleDetail前五槽按显式profile返回当前HP/伤势上限/maxHP/MP/maxMP。现阶段未建伤势上限模型，明确设计伤势上限640=maxHP，仅适用无伤势系统的显式恢复profile；保留缺失HP，不将此算法称原版。
+
+verify_role_growth_protocol以19项当前属性执行原map序列化/解码逐字节比对通过，拒绝跨角色、成长版本不符和float32不可精确表示；没有执行整个level handler或GUI。调用方应在外层事务提交前预编码校验，提交后顺序投递，避免奖励已落盘才发现显示不可表示。重登从持久化当前快照初始化，不能回到100HP兼容值或历史奖励回执。
+
+人物显示运行时后续已接线：主策划扩充verify_growth_runtime，独立通过显式L1入场HP70/100、MP40/100及首次ACK19项普通属性；完成100192后L2潜能5、HP80/110、MP46/106、外攻24/命中44；重连保持同一当前伤势与属性。连续原生MPPC解码，不是GUI验收。
+
+新角色自动成长现已接入创建来源：AttributeRules.initial_profile提供冻结InitialRoleProfile；创建事务保存模板及growth/attribute版本来源，首次有效角色租约兑现，已有XP/等级/状态冲突则待核对。主策划独立verify_new_character_growth未手工给新角色初始化，经过创建→首登→可信NPC任务100192→重建运行时重连，L2/XP61/free5与单份基线/凭据通过；旧角色L7XP42及旧wallet-only来源没有自动成长。原开场任务激活仍用trusted offer夹具，不代表自然剧情已接。具体来源迁移和兑现见CREATION_PROFILE_RUNTIME_INTEGRATION.md。
+
+手动升级和潜能分配的新Interface、原请求及必要检查见ROLE_GROWTH_ACTIONS.md。自然新角色创建/root/CG/后继的源码Owner已独立通过，见NEWBIE_OPENING_DECISION；随后部署的实际GUI验收发现ESC后tracker错误失败文本，不能将源码通过当成原生画面通过。现有无profile角色仍不得自动套显式新基线。完整装备/技能/经脉/伤势修正、全等级与宠物的战斗平衡尚未完成。
+
+入场完整profile补齐：root新增role_attribute_protocol.role_detail_profile(growth,snapshot)，返回冻结RoleDetailProfile(values32,five_stats,potential)，已知vitals/命中/攻防/速/躲取当前快照，五维按原入场体/内/力/耐/敏序，潜能用当前账本；额外封印1230仅从已显式初始化的EquipmentRoleSnapshot填入。未知槽仍保留原构造零。原ROLE_GROWTH_UI_RESEARCH与当前native8339b5..833a53再次逐条读取确认五h的40/50顺序，不套CAddPointToAttr的敏/耐序。
+
+growth_refresh与入场共用版本/五维校验，普通五维超过32767在成长/加点结果预编码前拒绝，避免先提交后重连才在signed16失败。非对称11/11/16/11/11、当前潜能及已知combat位置的公开Interface必要检查已通过；世界追加可选growth_snapshot后做原entry解码，主集成在现场按钮/tracker修复收敛后局部传profile.growth。该后续源码不自动部署。
+
+本批方法：codebase-design将两种线格式的已知属性位置和约束收在同一协议Adapter，成长/库存仍只提供冻结当前快照；research使用现有原表/原handler证据并再次读原指令，不猜未知字段；writing-for-agents把来源、跨模块接入和部署边界共置。已完成纯Interface/19项原codec验证，完整entry及共享调用按后续结果登记；未打开或重启客户端/验收服务。
+
+世界可选growth_snapshot接线后，root独立verify_world_equipment_entry_native通过最终武器49/38/8、伤势、原XP及五维/潜能；root自己的verify_role_growth_protocol另以非对称五维12/13/14/15/16、潜能7、HP90/120与MP58/118、裸身外伤/内伤30/30调用生产world_snapshot，再由原SEnterWorld decoder逐项核对通过。这一步证明实际encoder的字段顺序与数值，不是仅构造Python对象；RoleOwner调用与现场部署仍由主集成后续明确传profile.growth，不把codec等同已加载GUI。

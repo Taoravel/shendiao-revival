@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="GameReceive">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.20375,0},{0.270833,0},{0.20375,495},{0.270833,275}}" />
+    <Window Type="TaharezLook/StaticText" Name="GameReceive/Name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="领取商品" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="68" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.355556,0},{0.0509091,0},{0.567677,0},{0.0430769,23}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="GameReceive/1">
+      <Property Name="Text" Value="以下是您账户目前能领取的物品，如超过领取可容纳上限，可先领取当前物品，然后等待系统再次发送给您剩余物品。" />
+      <Property Name="HorzExtent" Value="403" />
+      <Property Name="VertExtent" Value="31.2378" />
+      <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+      <Property Name="BorderColour" Value="FF433C10" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0868687,0},{0.16,0},{0.90101,0},{0.276364,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="GameReceive/Left">
+      <Property Name="UnifiedAreaRect" Value="{{0.0343434,0},{0.287273,0},{0.0343435,152},{0.237692,165}}" />
+      <Window Type="TaharezLook/Listbox" Name="GameReceive/Left/List">
+        <Property Name="UnifiedAreaRect" Value="{{0.0197368,0},{0.0264901,0},{0.980263,0},{0.980132,0}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="GameReceive/Middle">
+      <Property Name="UnifiedAreaRect" Value="{{0.0343435,153},{0.287273,0},{0.0343435,305},{0.237692,165}}" />
+      <Window Type="TaharezLook/ItemCell" Name="GameReceive/Middle/Item1">
+        <Property Name="UnifiedAreaRect" Value="{{0.0263158,0},{0.0198676,0},{0.0236842,48},{0.0197368,48}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="GameReceive/Middle/Item2">
+        <Property Name="UnifiedAreaRect" Value="{{0.044186,45},{0.0198676,0},{0.044186,93},{0.0197368,48}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="GameReceive/Middle/Item3">
+        <Property Name="UnifiedAreaRect" Value="{{-0.153488,123},{0.0198676,0},{-0.153488,171},{0.0197368,48}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="GameReceive/Middle/Item4">
+        <Property Name="UnifiedAreaRect" Value="{{0.0263158,0},{0.0894737,37},{0.0236842,48},{0.0894737,85}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="GameReceive/Middle/Item5">
+        <Property Name="UnifiedAreaRect" Value="{{0.044186,45},{0.0894737,37},{0.044186,93},{0.0894737,85}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="GameReceive/Middle/Item6">
+        <Property Name="UnifiedAreaRect" Value="{{-0.153488,123},{0.0894737,37},{-0.153488,171},{0.0894737,85}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="GameReceive/Middle/Item7">
+        <Property Name="UnifiedAreaRect" Value="{{0.0263158,0},{0.0842104,86},{0.342105,0},{0.0842104,134}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="GameReceive/Middle/Item8">
+        <Property Name="UnifiedAreaRect" Value="{{0.044186,45},{0.0842104,86},{0.044186,93},{0.0842104,134}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="GameReceive/Middle/Item9">
+        <Property Name="UnifiedAreaRect" Value="{{-0.153488,123},{0.0842104,86},{-0.153488,171},{0.0842104,134}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="GameReceive/Right">
+      <Property Name="UnifiedAreaRect" Value="{{0.0343435,306},{0.287273,0},{0.0343435,458},{0.237692,165}}" />
+      <Window Type="TaharezLook/StaticText" Name="GameReceive/Right/bi">
+        <Property Name="Text" Value="游戏币" />
+        <Property Name="HorzExtent" Value="40" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.302632,0},{0.284768,0},{0.585526,0},{0.3,17}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GameReceive/Right/Money">
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0.125,0},{0.602649,0},{0.888158,0},{0.728477,0}}" />
+        <Property Name="TextParsingEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GameReceive/Pet">
+      <Property Name="Text" Value="领取宠物" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.113131,0},{0.847273,0},{0.0515151,106},{0.5,120}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GameReceive/ItemButton">
+      <Property Name="Text" Value="领取物品" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.422222,0},{0.847273,0},{0.101515,233},{0.546154,109}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GameReceive/MoneyButton">
+      <Property Name="Text" Value="领取现银" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.733333,0},{0.847273,0},{0.151515,362},{0.583077,98}}" />
+    </Window>
+  </Window>
+</GUILayout>

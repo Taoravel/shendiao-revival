@@ -1,0 +1,27 @@
+# 普通物理终局的唯一资源接缝
+
+2026-10-23，root数值交单。怪物窗口在用户明确授权的暗雷接线中提出plan_combat_resources/battle_terminal增量，root保存其原字节并接手规则与验收。原授权/共享局部范围见WILD_RUNTIME_DIRECT_AUTHORIZATION；本页只接受资源Interface，不验收野外开战、胜负、奖励算法或实际战斗。
+
+## 可信输入与政策
+
+沿ARCHITECTURE角色调用方事务Seam，战斗Owner冻结参与者资源与版本，终局只产生可信结果；角色Owner先校验battle_id/settlement_id、参与归属、当前epoch及精确原快照，再写自己的唯一资源carrier。客户端HP/MP、历史伤害包或未经结算资格确认的胜负都不是这里的输入授权。
+
+role-resources-v1新增明确designed的combat_causes=['battle_terminal']及consume-only说明。`ResourceRules.combat_causes`为冻结集合；启动load_resource_rules读取并验证。旧四参数手工构造的规则仍可用于已有纯场景，默认空combat集合不授权战斗。没有新增第二份当前HP/MP或自动profile激活。
+
+`plan_combat_resources(before,hp,mp,rules)`只接受完整RoleResources、当前同policy及精确非负native整数；结果HP<=before.hp、MP<=before.mp，数值上限与完整投影source保持原值，不能治疗、复活、变更装备/成长或借终局迁移profile。实际数值变化推进一次resource version，完全相同不推进。它不计算伤害/技能公式，也不证明外部战斗资格；这是当前普通物理消耗型终局的窄设计，未来治疗/复活需另原因与明确授权。
+
+`apply_resource_transition`仅在冻结combat_causes中按该计划复算，并保留当前租约、完整before/CAS、实际投影source核验、独立request_id指纹和同事务receipt。角色持有原受理transition；同键确认读取当前资源，不再次扣伤害。调用方还需current_resource_profile严格当前来源并真实最终编码，再提交；不要把低层read_role_resources当作已证明实际装备来源的最终profile。
+
+## 与奖励和故障的顺序
+
+资源终局使用开战所冻结且仍有效的同一装备/成长/资产来源。在同角色事务先结算终局消耗，再执行奖励成长及奖励资产各自资源原因/source同步，最后编码唯一完整profile并一起提交。若资产/成长已发生无关变化，完整before/source必须拒绝，不把终局重贴新来源。野外领域负责稳定战斗状态和奖励receipt，资源receipt不能代替它。
+
+paid领域重放应严格读当前资源与实际资产，不按后来伤势重造不同终局计划。旧角色仍按其已知原合同，不从战斗参与或终局函数自动迁移；未知旧资源拒绝，无依据时不能补满。断线、终局与奖励失败恢复仍由对应世界/战斗/角色Module各自证明，本页没有复跑战斗。
+
+## 实际验证与限制
+
+verify_role_resource_combat在既定资源公开Seam先捕捉冻结规则缺combat_causes的红反馈，加入显式policy/规则后绿。其余guard为随后验证，不声称每条都单独经历红。纯例70/40→61/35及version7→8，固定caps/source、no-op、死亡/治疗/负值/错误类型/禁用combat拒绝；实际临时SQLite已知70/40转交后61/35/version1，真实growth_refresh及role_detail_profile通过。
+
+真实调用方在资源写、现金-10、最终原生编码后受控异常，整笔回滚至70/40与cash100，同失败键随后成功；已知后来治疗到65/35/version2后旧terminal返回65/35，stale before、伪造caps及旧epoch拒绝，新lease读取相同当前结果。记录role-resource-combat-verification.json。必要原verify_role_resource_plan及verify_role_resource_storage已独立通过。
+
+codebase-design将结果验证集中于既有资源Module而不造战斗转发层；tdd用实际公开资源计划/调用方存储事务和字面算例；code-review以既有已审role-resource-profile两文件为固定base，政策以接手前原值为base，保留working-inherited差异来区分怪物先交实现与root收口。未运行任何战斗引擎、GUI或线上角色，未部署；商业数据库/容量、wild整体路由与伤害/奖励正确性另验。

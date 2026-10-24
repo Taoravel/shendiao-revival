@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/RichEditbox1" Name="ChatItemTips">
+    <Property Name="Font" Value="simhei-12" />
+    <Property Name="ReadOnly" Value="True" />
+    <Property Name="LineSpace" Value="1" />
+    <Property Name="BlinkCaret" Value="True" />
+    <Property Name="AlwaysOnTop" Value="True" />
+    <Property Name="MaxTextLength" Value="1073741823" />
+    <Property Name="UnifiedAreaRect" Value="{{0,100},{0,107},{0,372},{0,248}}" />
+    <Property Name="BlinkCaretTimeout" Value="0.5" />
+    <Property Name="TextParsingEnabled" Value="False" />
+    <Window Type="TaharezLook/StaticImage" Name="ChatItemTips/colorimage">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0183824,0},{0,5},{0,267},{0,60}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ChatItemTips/name">
+      <Property Name="Font" Value="msyh-16" />
+      <Property Name="TextColours" Value="tl:FFFF0000 tr:FFFFFF00 bl:FFFFFF00 br:FFFFFF00" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,11},{0,4},{0,192},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="ChatItemTips/icon">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="Tiled" />
+      <Property Name="VertFormatting" Value="Tiled" />
+      <Property Name="UnifiedAreaRect" Value="{{1,-61},{0,5},{1,-21},{0,45}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="ChatItemTips/lockicon">
+      <Property Name="Image" Value="set:MainControl5 image:Locked" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,12},{0,19}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,12},{0,19}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{1,-78},{0,7},{1,-62},{0,23}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="ChatItemTips/closebtn">
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:component image:CloseButtonHover" />
+      <Property Name="NormalImage" Value="set:component image:CloseButtonNormal" />
+      <Property Name="PushedImage" Value="set:component image:CloseButtonPressed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,21},{0,19}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,21},{0,19}}" />
+      <Property Name="UnifiedAreaRect" Value="{{1,-24},{0.0425532,0},{0.985294,0},{0,26}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ChatItemTips/bind">
+      <Property Name="Text" Value="已绑定" />
+      <Property Name="HorzExtent" Value="39" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFF00 bl:FFFF0000 br:FFFF0000" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{1,-61},{0,44},{1,-20},{0,69}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+  </Window>
+</GUILayout>

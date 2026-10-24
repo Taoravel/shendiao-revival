@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="ZaXueNpcGive">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.219375,0},{0.143333,0},{0.345692,358},{0.143333,438}}" />
+    <Window Type="TaharezLook/TabControl" Name="ZaXueNpcGive/TC">
+      <Property Name="TabHeight" Value="{0,18}" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="TabPanePosition" Value="Top" />
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,45},{0,268},{0,415}}" />
+      <Window Type="DefaultWindow" Name="ZaXueNpcGive/TC/FW1">
+        <Property Name="Text" Value="给予道具" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,1.675},{0,-1.9252},{0,250.675},{0,311.075}}" />
+        <Window Type="TaharezLook/TabControl" Name="ZaXueNpcGive/TC/FW1/TC">
+          <Property Name="TabHeight" Value="{0,18}" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="TabPanePosition" Value="Left" />
+          <Property Name="UnifiedAreaRect" Value="{{0,3.29279},{0,6.35239},{0,262.293},{0,247.352}}" />
+        </Window>
+        <Window Type="TaharezLook/CommonCase" Name="ZaXueNpcGive/TC/FW1/ItemBack">
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,3.29279},{0.854615,0},{0,244.293},{0.854615,83}}" />
+          <Window Type="TaharezLook/ItemCell" Name="ZaXueNpcGive/TC/FW1/GiveCell1">
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,6},{0,49},{0,54}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="ZaXueNpcGive/TC/FW1/GiveCell2">
+            <Property Name="UnifiedAreaRect" Value="{{0,48},{0,6},{0,96},{0,54}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="ZaXueNpcGive/TC/FW1/GiveCell3">
+            <Property Name="UnifiedAreaRect" Value="{{0,95},{0,6},{0,143},{0,54}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="ZaXueNpcGive/TC/FW1/GiveCell4">
+            <Property Name="UnifiedAreaRect" Value="{{0,142},{0,6},{0,190},{0,54}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="ZaXueNpcGive/TC/FW1/GiveCell5">
+            <Property Name="UnifiedAreaRect" Value="{{0,189},{0,6},{0,237},{0,54}}" />
+          </Window>
+          <Window Type="TaharezLook/Editbox" Name="ZaXueNpcGive/TC/FW1/Num1">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="BlinkCaret" Value="True" />
+            <Property Name="MaxTextLength" Value="1073741823" />
+            <Property Name="UnifiedAreaRect" Value="{{0,4},{0,54},{0,46},{0,74}}" />
+            <Property Name="TextParsingEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Editbox" Name="ZaXueNpcGive/TC/FW1/Num2">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="BlinkCaret" Value="True" />
+            <Property Name="MaxTextLength" Value="1073741823" />
+            <Property Name="UnifiedAreaRect" Value="{{0,51.3164},{0,54},{0,92.3164},{0,74}}" />
+            <Property Name="TextParsingEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Editbox" Name="ZaXueNpcGive/TC/FW1/Num3">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="BlinkCaret" Value="True" />
+            <Property Name="MaxTextLength" Value="1073741823" />
+            <Property Name="UnifiedAreaRect" Value="{{0,98.323},{0,54},{0,139.323},{0,74}}" />
+            <Property Name="TextParsingEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Editbox" Name="ZaXueNpcGive/TC/FW1/Num4">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="BlinkCaret" Value="True" />
+            <Property Name="MaxTextLength" Value="1073741823" />
+            <Property Name="UnifiedAreaRect" Value="{{0,144.836},{0,54},{0,185.836},{0,74}}" />
+            <Property Name="TextParsingEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Editbox" Name="ZaXueNpcGive/TC/FW1/Num5">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="BlinkCaret" Value="True" />
+            <Property Name="MaxTextLength" Value="1073741823" />
+            <Property Name="UnifiedAreaRect" Value="{{0,193.325},{0,54},{0,234.325},{0,74}}" />
+            <Property Name="TextParsingEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Figure1" Name="ZaXueNpcGive/TC/FW1/ItemBack/Title">
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.172348,0},{0,-18},{0.4,-3.3176},{0.0120482,0}}" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Window Type="TaharezLook/StaticText" Name="ZaXueNpcGive/TC/FW1/give">
+              <Property Name="Text" Value="给予物品栏" />
+              <Property Name="HorzExtent" Value="65" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0,15},{-0.0526316,0},{0,91},{0,21}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="DefaultColourEnable" Value="True" />
+              <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="ZaXueNpcGive/titleBack">
+      <Property Name="Disabled" Value="True" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="CentreAligned" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="VertFormatting" Value="CentreAligned" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,170},{0,10},{0,478},{0,37}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="ZaXueNpcGive/titleBack/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="给  予" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,76},{0,1},{0,138},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="ZaXueNpcGive/HeadBack">
+      <Property Name="Image" Value="set:MainControl6 image:PetPropertyBack" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,126},{0,125}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,126},{0,125}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.642702,0},{0,45},{0.917211,0},{0.285388,45}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticImage" Name="ZaXueNpcGive/TC/FW1/HeadImage">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0555556,0},{0.04,0},{0.0555556,115},{0.04,115}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="ZaXueNpcGive/WordBack">
+      <Property Name="UnifiedAreaRect" Value="{{0,282},{0.39726,0},{0,433},{0.395545,240}}" />
+      <Window Type="TaharezLook/StaticText" Name="ZaXueNpcGive/TC/FW1/Name">
+        <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+        <Property Name="BorderColour" Value="FF190400" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,40},{0,8},{0,145},{0,28}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ZaXueNpcGive/TC/FW1/Level">
+        <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+        <Property Name="BorderColour" Value="FF190400" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,40},{0,29},{0,145},{0,49}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ZaXueNpcGive/TC/FW1/Relation">
+        <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+        <Property Name="BorderColour" Value="FF190400" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,40},{0,50},{0,145},{0,70}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="ZaXueNpcGive/TC/FW1/GiveButton">
+        <Property Name="Text" Value="给     予" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="click.ogg" />
+        <Property Name="UnifiedAreaRect" Value="{{0,27},{0,207},{0,128},{0,231}}" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ZaXueNpcGive/WordBack/Name1">
+        <Property Name="Text" Value="名字：" />
+        <Property Name="HorzExtent" Value="39" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,8},{0,41},{0,28}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ZaXueNpcGive/WordBack/Level1">
+        <Property Name="Text">等级：
+</Property>
+        <Property Name="HorzExtent" Value="39" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,29},{0,41},{0,49}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ZaXueNpcGive/WordBack/Relation">
+        <Property Name="Text" Value="关系：" />
+        <Property Name="HorzExtent" Value="39" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,50},{0,41},{0,70}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ZaXueNpcGive/WordBack/Relation1">
+        <Property Name="Text" Value="喜好：" />
+        <Property Name="HorzExtent" Value="39" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,71},{0,41},{0,91}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ZaXueNpcGive/TC/FW1/Relation1">
+        <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+        <Property Name="BorderColour" Value="FF190400" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0,6},{0.05,80},{0,145},{0.05,186}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

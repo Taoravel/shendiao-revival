@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shaderTemplate>
+  <include name="common">
+		
+                float CalcFogFactor( float d )
+		{
+			return 0.1f;
+		};
+		
+		
+    </include>
+  <shareInputDeclaration>
+		
+                        struct VS_INPUT
+			{
+			    float4 Position  : POSITION;
+			    float4 Color     : COLOR; 
+			    float3 Normal    : NORMAL; 
+			    #ifdef DeclareInputUV0 
+			    float4 UV0        : TEXCOORD0; 
+			    #endif 
+			    #ifdef DeclareInputUV1 
+    			    float4 UV1       :TEXCOORD1; 
+			    #endif 
+			    #ifdef DeclareInputUV2 
+			    float4 UV2       :TEXCOORD2; 
+			    #endif 
+			    #ifdef DeclareInputUV3 
+			    float4 UV3       :TEXCOORD3; 
+			    #endif 
+			    #ifdef DeclareInputUV4 
+			    float4 UV4       :TEXCOORD4; 
+			    #endif 
+			    #ifdef DeclareInputUV5 
+			    float4 UV5       :TEXCOORD5; 
+			    #endif 
+			    #ifdef DeclareInputUV6 
+			    float4 UV6       :TEXCOORD6; 
+			    #endif 
+			    #ifdef DeclareInputUV7 
+			    float4 UV7       :TEXCOORD7; 
+			    #endif 
+			    #ifdef Declare_USE_Bionormal 
+			    float3 Bionormal : BINORMAL; 
+			    #endif 
+			    #ifdef Declare_USE_Tangent 
+			    float3 Tangent	 : TANGENT; 
+		            #endif 
+			};
+		
+    </shareInputDeclaration>
+  <shareOutputDeclaration>
+		
+			struct VS_OUTPUT 
+			{ 
+			    float4 Position      : POSITION; 
+			    float4 Normal        : NORMAL; 
+			    float4 Color         : COLOR; 
+			    #ifdef DeclareOutputUV0 
+			    float4 UV0        : TEXCOORD0; 
+			    #endif 
+			    #ifdef DeclareOutputUV1 
+			    float4 UV1         :TEXCOORD1; 
+			    #endif 
+			    #ifdef DeclareOutputUV2 
+			    float4 UV2         :TEXCOORD2; 
+			    #endif 
+			    #ifdef DeclareOutputUV3 
+			    float4 UV3         :TEXCOORD3; 
+			    #endif 
+			    #ifdef DeclareOutputUV4 
+			    float4 UV4         :TEXCOORD4; 
+			    #endif 
+			    #ifdef DeclareOutputUV5 
+			    float4 UV5         :TEXCOORD5; 
+			    #endif 
+			    #ifdef DeclareOutputUV6 
+			    float4 UV6         :TEXCOORD6; 
+			    #endif 
+			    #ifdef DeclareOutputUV7 
+			    float4 UV7         :TEXCOORD7; 
+			    #endif 
+		    };
+		
+    </shareOutputDeclaration>
+  <sharePSOutputDeclaration>
+	
+	struct PS_OUTPUT
+	{
+	    float4 color : COLOR;
+	};
+	
+    </sharePSOutputDeclaration>
+  <shaderFramework name="common">
+    <inputDeclaration type="share" />
+    <outputDeclaration type="share" />
+    <pixelOutputDeclaration type="share" />
+    <shaderInfo type="VS">
+      <includeName name="common" />
+      <globalVar>
+		    float4x4 gMatWorld;
+		    float4x4 gMatView;
+		    float4x4 gMatProj;
+		    float4x4 sBoneMatLocal;
+	    </globalVar>
+      <initCode>
+		sBoneMatLocal = (float4x4)0;
+		sBoneMatLocal._11 = 1.0f;
+		sBoneMatLocal._22 = 1.0f;
+		sBoneMatLocal._33 = 1.0f;
+		sBoneMatLocal._44 = 1.0f;
+	    </initCode>
+      <macro name="SS_Vertex_UV" />
+      <macro name="SS_Vertex_Vertex_Color" />
+      <macro name="SS_Vertex_World_Transform">
+		    output.Position = mul(input.Position,gMatWorld);
+	    </macro>
+      <macro name="SS_Vertex_Normal" />
+      <macro name="SS_Vertex_Phong" />
+      <macro name="SS_Vertex_View_Proj_Transform">
+	    	output.Position = mul(output.Position,mul(gMatView,gMatProj));
+	    </macro>
+      <macro name="SS_Vertex_Texture" />
+    </shaderInfo>
+    <shaderInfo type="PS">
+      <globalVar>
+		  float4 gNormal;
+	    </globalVar>
+      <initCode>
+		float4 color = float4(1,1,1,1);
+	    </initCode>
+      <macro name="SS_Pixel_Diffuse" />
+      <macro name="SS_Pixel_Normal" />
+      <macro name="SS_Pixel_Phong" />
+    </shaderInfo>
+  </shaderFramework>
+</shaderTemplate>

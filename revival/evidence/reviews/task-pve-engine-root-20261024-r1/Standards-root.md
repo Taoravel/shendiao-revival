@@ -1,0 +1,13 @@
+Standards：硬违规0；heuristic可行动发现0。
+
+方法：实际沿用code-review/codebase-design/tdd，逐hunk核纯engine和BattleOwner必要分支，逐项判断完整12种Fowler启发；沿公开BattleOwner命令/终态Interface核单写者、消息与持久化Seam。依据冻结AGENTS、ARCHITECTURE、DESIGN_AUTHORITY、GLOSSARY及AI8001裁定；不读另一轴结论，不运行测试。
+
+证据：battle_owner.py:108–115使显式engine_factory直接构造专用engine，默认None分支保持原TrainingBattle构造参数；不再先实例化训练战斗。task_pve.py:107–125直接创建纯Battle，175–180从实际状态构造既有BattleFinished DTO，非Training/Wild实例结果改标。每battle独占Battle状态，命令由原有局部有界Queue/单调状态与receipt容量控制；满receipt不驱逐重试证据，没有新全局锁/队列或跨owner可变Session。符合ARCHITECTURE按battle_id单写、有界执行及连接独占编码要求。
+
+task_pve.py:42–65仅启动加载，按固定政策字节SHA拒漂移，冻结规则、Fighter及pet catalog；87–122拒缺真实stats/版本和TrainingPet，OwnedBattlePet核归属、资格及资源版本；未用默认人物/宠物补值。163–180输出真实原始资源，258–271真实关闭后才可产生非胜利中止，未实施梦境复活或资源写。原本局部receipt/terminal仅供host承接，不被文档冒称持久outbox已完成。
+
+verifier跨公开Owner及原生命令/HP消费Seam验证行为；600命令、1024预算和另一battle等为root独立执行证据，本轴只核其检查结构。Task/storage/revive/shared仍pending，未宣称自然成长或运行服已可用。
+
+审前后18登记输入、scope/SPEC/diff均SHA稳定并匹配；BASE battle_owner与实际repair023920一致，两个新文件在BASE不存在。engine=6506372e4a2ccf6c9d29cc2ceeb754f0638d5e1e22cb7acd4276eae6579cb053；owner=fac2112f6763089c1135b9868248fd9cd6325421898116ec5aea1ce3f7f0ed45；diff=a8b0c740dc7c154ea5a7cafd9a12a3d39d49fbf94d4c4d60dfd21e0e0ed32ade；SPEC=27c5e63a829988f668cefd1fb45b70b594cf03f2e8902137e75c3bb17367b96a。
+
+仅静态；未执行测试、服务、DB、socket、GUI或战斗。未证明实际持久结算、旧租约恢复、共享投递或商业容量；不批准运行/部署。无Git/commit，只新增本报告。

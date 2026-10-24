@@ -1,0 +1,7 @@
+# 私有当前频道快照固定审查
+
+固定点为39796运行版的同名文件及新增文件空基线，非Git。精确范围见manifest.json和固定181行diff；social_runtime的guild.initial不在本批。Standards与Spec由两个独立代理并行完成，各0项发现，原报告分别见Standards.md、Spec.md，六个base/current及外部依赖哈希一致。
+
+root此前独立执行verify_social_scene_scope六组通过并核源码前后稳定，见social-scene-scope-root-verification.json。后续root再独立实际执行private-role四组及目录guards三组，包含实际当前频道私有隔离、重登与世界/门派互通，见root-private-independent-20261023.json。后者使用当前共享工作区，不把共享全量变化纳入本次181行审查；初始私有checkpoint仍为明确fixture，血手印自然handoff及pool完整接线未由本片证明。
+
+未部署、未GUI或商业容量验收。后续改动须另定范围，不用本审查覆盖新字节。

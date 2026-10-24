@@ -1,0 +1,77 @@
+"""Offline evidence probe; feed this text to Python from repository root.
+
+Get-Content -Raw revival/evidence/pet-binding-probe.py.txt | & <python> -
+Does not modify runtime source, policy, persistence or evidence artifacts.
+"""
+import sys
+import struct
+
+sys.path.insert(0, 'revival')
+from native_gameplay_probe import probe
+from unicorn.x86_const import (
+    UC_X86_REG_EAX, UC_X86_REG_EBX, UC_X86_REG_EDI,
+    UC_X86_REG_ESP, UC_X86_REG_EIP,
+)
+
+checked = []
+
+
+def observer(flags):
+    def run(uc, target):
+        def w(address, *values):
+            uc.mem_write(address, struct.pack('<' + 'I' * len(values), *values))
+
+        stack, manager, head, node, stop = (
+            0x5108000, 0x5300000, 0x5301000, 0x5302000, 0x500f000)
+        pet = node + 8
+        w(0x2944550, manager)
+        w(manager + 0x27c, head)
+        w(head, node, node)
+        w(node, head, head)
+        w(pet, 7)
+        # Original converter prologue reserves 0x38 bytes. Its by-value
+        # Pet argument starts at ESP+0x3c, flag at ESP+0x118.
+        uc.mem_write(stack + 0x3c, bytes(uc.mem_read(target, 0x140)))
+        uc.reg_write(UC_X86_REG_ESP, stack)
+        uc.reg_write(UC_X86_REG_EDI, pet)
+        uc.emu_start(0x10c2bb5, 0x10c2bf1, count=1000)
+        assert uc.reg_read(UC_X86_REG_EIP) == 0x10c2bf1
+        assert bytes(uc.mem_read(pet + 0x68, 3)) == bytes(
+            (bool(flags & 5), bool(flags & 2), flags))
+        assert uc.mem_read(target + 0xdc, 1)[0] == flags
+
+        def bound(key):
+            w(stack, stop, key)
+            uc.reg_write(UC_X86_REG_ESP, stack)
+            uc.emu_start(0x11308c0, stop, count=1000)
+            assert uc.reg_read(UC_X86_REG_EIP) == stop
+            return uc.reg_read(UC_X86_REG_EAX) & 255
+
+        assert bound(7) == bool(flags & 2)
+        assert bound(999) == 0
+        changed = flags ^ 2
+        ptr = 0x5303000
+        w(ptr, changed)
+        w(stack + 0x10, ptr)
+        uc.reg_write(UC_X86_REG_ESP, stack)
+        uc.reg_write(UC_X86_REG_EAX, pet)
+        uc.reg_write(UC_X86_REG_EBX, pet)
+        uc.emu_start(0x1133c9e, 0x1133cb1, count=1000)
+        assert uc.reg_read(UC_X86_REG_EIP) == 0x1133cb1
+        assert bytes(uc.mem_read(pet + 0x68, 3)) == bytes(
+            (bool(changed & 5), bool(flags & 2), changed))
+        assert bound(7) == bool(flags & 2)
+        checked.append(flags)
+    return run
+
+
+for flags in range(256):
+    payload, _ = probe(
+        0xf89ba0, 0xf5df70, 0xf5f1f0,
+        {4: struct.pack('<i', 500001), 8: struct.pack('<i', 7),
+         0xdc: bytes([flags])}, observer=observer(flags))
+    assert payload[141] == flags
+
+assert checked == list(range(256))
+print('PASS 256 original codec/projection/bound-query cases; '
+      'missing pet false; flag refresh retains previous binding cache')

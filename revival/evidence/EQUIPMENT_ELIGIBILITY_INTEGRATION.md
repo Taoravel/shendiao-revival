@@ -1,0 +1,21 @@
+# 原性别资格进入实际穿戴事务
+
+2026-10-23。采用主策划ORDINARY_EQUIPMENT_ELIGIBILITY_AUDIT的原指令证据，所属Inventory实际穿戴现已检查sexNeed，并使roleNeed检查只作用原武器槽0。本文只报告领域源码和临时数据库/原生指令验证；共享路由、部署、现场角色与GUI另验。
+
+## 接线与不变的Interface
+
+继续使用`equip_transaction(db,key,equipment_slot,epoch,request_id)`，返回既有冻结EquipmentEvent。可信角色Owner传当前fenced事务；当前角色level/shape及原物品资格均在此事务校验。native `receive(EQUIP_ITEM,body,precommit)`和旧`equip(key,slot)`同走该实现，拒绝发生在替换旧装备或写入事件/凭据之前。历史凭据仍是历史确认，不重穿；root按当前源和当前角色投影拒绝不合格贡献。
+
+启动`Inventory.prepare`新增冻结`InventoryConfig.shape_sexes`，只含原createroleconfig的30种明确shape，原SEnterWorld规则为末位1..5→sex1，0/6..9→sex2；原sexNeed保留在既有冻结equipment元数据。不接受客户端传入性别，不在穿戴时读文件、DDL或另开连接。构造继续注入同批prepare得到的完整config；无需新领域方法或修改root属性政策。未知shape在非0性别要求处拒绝；sexNeed0按原消费者不限，root的严格v2投影身份要求仍独立执行。
+
+验收条件：sexNeed0不限，非0与当前shape的已知原sex精确相等；原武器roleNeed为空不限，非空按原列表OR；非武器不应用此列表。49197的原(20,21)完整保留，不裁成1..10或清空，因此当前十角色均不匹配它。needLevel继续取原citemattr.needLevel，不以item level代替。原服务器全部资格实现未恢复，现等级门槛的证据限制沿主策划审计。
+
+## 实际方法与验证
+
+tdd在既定Inventory事务/不可变快照Seam先复现原sex2形象1010110错误穿上sex1护腕42000的红例，加入真实门禁后绿；再以冻结配置注入检查非武器roleNeed误用的红例，按原10771d0分支收口后绿。注入例不声称原42001拥有非空列表。codebase-design把资格保留在单一穿戴实现，由原生/事务/旧方法共同使用；writing-for-agents明确启动参数、当前事务与历史确认的责任。
+
+verify_equipment_eligibility及equipment-eligibility-verification.json覆盖30原shape的男女护腕正反组合、同一尚未提交事务变更shape后即时采用当前性别、禁止热路径读文件/另开连接、冻结原元数据、原20/21武器拒绝、空列表武器仍独立受性别限制、level100/needLevel1腰带在角色1级允许及needLevel10护腕拒绝。失败替换保留原装备，先前拒绝的同request_id随后合格可成功；native/legacy/opaque LeasedAccounts均有门禁，重开保持，原双栏完整decoder消费回复。
+
+已通过必要回归：实际装备事件/卸装事务/详情/快照/租约、root默认和v2六槽属性/资源事务、共同Inventory命令Owner重试、通用资源hook、人物药和血脉精华。verify_role_equipment_repair_hook本次未通过：旧verify_npc_repair_projection构造的AccountStore缺少当前shared equipment_projection_messages所需resource_rules，抛AttributeError；尚未进入修理投影的新资源校验，不能记绿。diagnosing-bugs以真实失败脚本和调用栈定位到此独立启动fixture缺口，因确定的缺配置错误跳过性能/随机性探针；未修改root/shared或其测试以掩盖失败，交集成方统一新资源修理接线时处理。
+
+当前仅资格和已有干净实例基础投影；未知高级prefix/score、宝石/强化/附加、套装、神兵及其最终属性不会因wear成功而视作恢复完成。

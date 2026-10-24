@@ -1,0 +1,35 @@
+# 家族历程记录与原面板
+
+第24批建筑事务为组织Store/Runtime增加可选building_policy和原c5627查询依赖，家族历程指针随30项回归完整候选同步；本页/第23批历程语义不变。默认None不补旧建筑档，不启用生产数值，见GUILD_BUILDINGS_RUNTIME.md。
+
+第二十三批已补入帮5/离帮6真实源、家族消费、帮派确认及有界分区恢复，交单见FAMILY_GUILD_HISTORY_RUNTIME.md；当前准确完整候选查family-history-current-review.json。第19批原档案、最新100窗口和日期规则保持；21/22研究依赖及其历史候选保留。研究默认None无生产曲线，当前候选不是家族/帮派激活许可。
+
+读取条件：接入家族历程、扩充其事件写者或发布FamilyView非空course vector前。第十九批为未激活组织增量；完整目标继续包含家族、帮派、修炼及其他社交，不以历程完成代替玩法完成。当前固定审查指针为family-history-current-review.json。
+
+## 当前行为与来源
+
+原CourseInfo vtable0x22838c8，marshal0xed7910：i32模板ID和vector<Octets>；元素8字节，vector marshal0xebb620。FamilyData+80的vector元素步长0x18，由0xed76e0遍历，再经0xed7340完整发送。原consumer0x14a2a65起取参数Octets长度除2作UTF16，0x14a2ca9按CourseInfo+4查配置，再交参数替换。SFamilyCourse的原Process0x1486760为空；本批使用已有SUpdateFamilyData，不另发一个无效推送。
+
+原cfamilyprogress七行提供建族1、升级2、降级3、换族长4、加入帮派5、离开帮派6、最活跃家族7。第一行只有parameter1，其余两项。原表/原marshal及UTF16参数结构为client_verified；parameter1显示本地服务器日期、日期采用现有family时区/格式及相同事务多级升级只记最终等级均为designed，未称原服历史格式。
+
+当前实际写者：成功创建家族；直接传位或原生自退位后的实际新族长；银箱确认导致的等级增长；小时维护导致的非零降级。普通任命、不改变等级的捐献、历史请求/维护重放均不新增历程。降到0的解散继续由原outbox承担，没有虚构第八种原历程模板。
+
+## 所有权、持久化与读模型
+
+family_history只在调用方已开始的家族事务记录稳定source_id、原模板、当时姓名/等级和时间。创建所有者沿既有creator分区；建成后该家族唯一Owner写历程。记录、角色职位/族长、资金/建设/等级、clock及最终领域凭据共同成功或回滚。角色付款阶段不写历程；家族确认失败仍保留角色原paid证明，下次按同键恢复，不假退款或二次扣箱。
+
+family_projection在原租约/成员代次校验后读取历程；旧FamilyWake仍经现有generation拒绝。FamilyView新增kw-only冻结history，旧构造及默认空vector保持兼容；不持Session、不发送、不修改RC4/MPPC所有权。当前既有FamilyRuntime自然通知、登录和重连路径直接消费新view，shared文件无修改。
+
+面板局部预算MAX_FAMILY_COURSES=100集中在faction_protocol，查询按(family,sequence)索引只读最近100，再按写入顺序投影；每条最多两个非空128字文本，限制编解码/广播工作。100是本地有界预算，不称原服保留上限。更旧行仍在持久archive，尚无原客户端历史翻页契约，本批不增加猜测请求。旧库只启动建空表；不追造建族时间、旧族长或历史升级，缺旧历程保持空，后续真实事件正常记录。
+
+加入/离开帮派的模板5/6已在第23批通过帮派durable outbox、家族archive/inbox及帮派确认接通；帮派所有者仍不直接写家族archive。最活跃家族模板7尚无活动生产者，原生GUI和完整活动仍未恢复。
+
+## 验证与接入完成标准
+
+verify_family_history在公开OrganizationStore/当前角色Inventory/家族projection Seam检查建族、两种传位、银箱升级、小时降级、重放/重启、历程写入及末尾凭据故障整体回滚、旧档不伪造、成员代次/非成员拒绝，以及105次真实传位后最新100有序窗口。verify_family_history_native执行原CourseInfo与完整FamilyData marshal，包括两条/100条非空历程，核对原七模板参数数目并拒绝畸形输入。
+
+verify_family_management沿实际GameRuntime/ConnectionOwner认证、RC4/MPPC及原管理请求验证创建、原生自退位后新历程与runtime重启恢复，日期只检查设计格式，不冒称原GUI。成员、资金与费用的原兼容验证继续独立保留。
+
+方法：codebase-design把记录与限量投影集中在一个家族Module，写者只传真实事件细节，日期渲染在读模型使用既有政策；tdd实际红灯为缺FamilyCourse、建族未记录、传位未记录、升级未记录，再逐项实现。错误operation='position'是验证装配修正，不列功能红灯。code-review以第十八批固定源作基线，Standards/Spec独立；writing-for-agents把来源、写者、预算、未知旧史和完成条件共置。
+
+本批完成判据是固定源码/资源哈希、全部必要自动检查及双轴记录；这些不证明真实GUI、商业容量或完整组织激活闭包。未部署、打开游戏、实际战斗或改真人数据。主集成须单独选取当前准确BASE，固定包含此Module的整闭包，再验实际NPC/共享连接链与GUI；数值执行recipe未改，本增量不夹入private-story发布。

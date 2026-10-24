@@ -1,0 +1,667 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="PartnerSelection">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.18375,0},{0.0816667,0},{0.18375,517},{0.0816667,454}}" />
+    <Window Type="TaharezLook/StaticImage" Name="PartnerSelection/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.394584,0},{0,12},{0.990329,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Title/Name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="伙伴选择" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.3,0},{0,1},{0.949351,0},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="PartnerSelection/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0,13},{0,36},{0,503},{0,441.348}}" />
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="PartnerSelection/Back/Top">
+        <Property Name="UnifiedAreaRect" Value="{{0,7},{0,7},{0,481.94},{0,100.102}}" />
+        <Window Type="TaharezLook/StaticImage" Name="PartnerSelection/Back/Top/Recent1">
+          <Property Name="Image" Value="set:MainControl image:FriendHeadBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,63},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,63},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.158441,0},{0.250798,0},{0.291089,0},{0.938215,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="PartnerSelection/Back/Top/Recent1/Head">
+            <Property Name="UnifiedAreaRect" Value="{{0.119152,0},{0.120565,0},{0.0704918,54.2469},{0.0419355,55.6133}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PartnerSelection/Back/Top/Recent2">
+          <Property Name="Image" Value="set:MainControl image:FriendHeadBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,63},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,63},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.339517,0},{0.250798,0},{0.472165,0},{0.938215,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="PartnerSelection/Back/Top/Recent2/Head">
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,58},{0,58}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PartnerSelection/Back/Top/Recent3">
+          <Property Name="Image" Value="set:MainControl image:FriendHeadBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,63},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,63},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.474138,22.0633},{0.250798,0},{0.614368,18.4624},{0.938215,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="PartnerSelection/Back/Top/Recent3/Head">
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,58},{0,58}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PartnerSelection/Back/Top/Recent4">
+          <Property Name="Image" Value="set:MainControl image:FriendHeadBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,63},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,63},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.614368,41.4624},{0.250798,0},{0.754598,37.8615},{0.938215,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="PartnerSelection/Back/Top/Recent4/Head">
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,58},{0,58}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Top/RecentPerson">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="综合战力：" />
+          <Property Name="Tooltip" Value="角色当前综合战力\n战力越高协战伙伴能力越强" />
+          <Property Name="HorzExtent" Value="65" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFF5A2 tr:FFFFF5A2 bl:FFFFD200 br:FFFFD200" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0189495,0},{0.0107409,0},{0.151598,0},{0.0108768,19.8981}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Top/RecentPerson1">
+          <Property Name="Text" Value="技能战力：" />
+          <Property Name="Tooltip" Value="角色技能战力\n取决于平均穴位等级" />
+          <Property Name="HorzExtent" Value="65" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.330149,0},{0.0107409,0},{0.452269,0},{0.0108768,19.8981}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Top/RecentPerson2">
+          <Property Name="Text" Value="装备战力：" />
+          <Property Name="Tooltip" Value="角色装备战力\n取决于当前装备评分" />
+          <Property Name="HorzExtent" Value="65" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.561334,0},{0.0107409,0},{0.68556,0},{0.0108768,19.8981}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Top/RecentPerson3">
+          <Property Name="Text" Value="宠物战力：" />
+          <Property Name="Tooltip" Value="角色宠物战力\n取决于当前携带宠物的平均评分" />
+          <Property Name="HorzExtent" Value="65" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.790415,0},{0.0107409,0},{0.927274,0},{0.0108768,19.8981}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Top/zhandou">
+          <Property Name="Text" Value="1000" />
+          <Property Name="HorzExtent" Value="32" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFF5A2 tr:FFFFF5A2 bl:FFFFD200 br:FFFFD200" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.149914,0},{0.0107409,0},{0.242557,0},{0.0108768,19.8981}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Top/Skill">
+          <Property Name="Text" Value="1000" />
+          <Property Name="HorzExtent" Value="32" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.453952,0},{0.0107409,0},{0.557123,0},{0.0108768,19.8981}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Top/Waepon">
+          <Property Name="Text" Value="1000" />
+          <Property Name="HorzExtent" Value="32" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.69356,0},{0.0107409,0},{0.786204,0},{0.0108768,19.8981}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Top/Pet">
+          <Property Name="Text" Value="1000" />
+          <Property Name="HorzExtent" Value="32" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.920535,0},{0.0107409,0},{1.00897,0},{0.0108768,19.8981}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCase" Name="PartnerSelection/Back/Bot">
+        <Property Name="UnifiedAreaRect" Value="{{0,7},{0,118},{0,482},{0,370.524}}" />
+        <Window Type="TaharezLook/StaticImage" Name="PartnerSelection/Back/Bot/Back/Role0">
+          <Property Name="Image" Value="set:MainControl18 image:BigBoardHover" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0204796,0},{0.0188598,0},{0.0204366,149.529},{0.0192804,77.444}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="PartnerSelection/Back/Top/Icon1">
+            <Property Name="Image" Value="set:MainControl image:FriendHeadBack" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,63},{0,64}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,63},{0,64}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.040126,0},{0.05,4.62779},{0.05,61.5236},{0.05,68.6278}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="PartnerSelection/Back/Top/Icon1/Head">
+              <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,58},{0,58}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Bot/Back/Role1/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.494888,0},{0.064563,0},{0.936275,0},{0.0631328,22.0749}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Bot/Back/Role1/School">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.494888,0},{0.316359,0},{0.936275,0},{0.309351,27.1671}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/ImageButton" Name="PartnerSelection/Back/Bot/Back/Role1/Invitation">
+            <Property Name="Text" Value="邀   请" />
+            <Property Name="SizeType" Value="Image" />
+            <Property Name="HoverImage" Value="set:MainControl23 image:ReturnHover" />
+            <Property Name="NormalImage" Value="set:MainControl23 image:ReturnNormal" />
+            <Property Name="PushedImage" Value="set:MainControl23 image:ReturnPushed" />
+            <Property Name="DisabledImage" Value="set:MainControl23 image:ReturnDisable" />
+            <Property Name="UnifiedMaxSize" Value="{{0,71},{0,26}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,71},{0,26}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.454762,0},{0.606891,0},{0.929587,0},{0.942618,0}}" />
+            <Property Name="NormalTextColour" Value="tl:FFFFF5A2 tr:FFFFF5A2 bl:FFFFD200 br:FFFFD200" />
+            <Property Name="ButtonBorderColour" Value="FF6E340D" />
+            <Property Name="ButtonBorderEnable" Value="True" />
+            <Property Name="ButtonDefaultBorderEnable" Value="False" />
+            <Property Name="ButtonDefaultColourEnable" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PartnerSelection/Back/Bot/Back/Role1">
+          <Property Name="Image" Value="set:MainControl18 image:BigBoardHover" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0174887,154.196},{0.0182874,0},{0.0174887,304.196},{0.0186954,77.5208}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="PartnerSelection/Back/Top/Icon2">
+            <Property Name="Image" Value="set:MainControl image:FriendHeadBack" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,63},{0,64}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,63},{0,64}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0333334,0},{0.05,4.62394},{0.05,60.5},{0.05,68.6239}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="PartnerSelection/Back/Top/Icon2/Head">
+              <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,57.7389},{0,58}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Bot/Back/Role2/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.493333,0},{0.0644983,0},{0.933333,0},{0.0631129,22.012}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Bot/Back/Role2/School">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.493333,0},{0,25},{0.933333,0},{0,45}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/ImageButton" Name="PartnerSelection/Back/Bot/Back/Role2/Invitation">
+            <Property Name="Text" Value="邀   请" />
+            <Property Name="SizeType" Value="Image" />
+            <Property Name="HoverImage" Value="set:MainControl23 image:ReturnHover" />
+            <Property Name="NormalImage" Value="set:MainControl23 image:ReturnNormal" />
+            <Property Name="PushedImage" Value="set:MainControl23 image:ReturnPushed" />
+            <Property Name="DisabledImage" Value="set:MainControl23 image:ReturnDisable" />
+            <Property Name="UnifiedMaxSize" Value="{{0,71},{0,26}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,71},{0,26}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.453333,0},{0.606285,0},{0.926666,0},{0.941679,0}}" />
+            <Property Name="NormalTextColour" Value="tl:FFFFF5A2 tr:FFFFF5A2 bl:FFFFD200 br:FFFFD200" />
+            <Property Name="ButtonBorderColour" Value="FF6E340D" />
+            <Property Name="ButtonBorderEnable" Value="True" />
+            <Property Name="ButtonDefaultBorderEnable" Value="False" />
+            <Property Name="ButtonDefaultColourEnable" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PartnerSelection/Back/Bot/Back/Role2">
+          <Property Name="Image" Value="set:MainControl18 image:BigBoardHover" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0145183,307.385},{0.0177154,0},{0.0145183,457.385},{0.0181106,77.5984}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="PartnerSelection/Back/Top/Icon3">
+            <Property Name="Image" Value="set:MainControl image:FriendHeadBack" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,63},{0,64}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,63},{0,64}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0333334,0},{0.05,4.62008},{0.05,60.5},{0.05,68.6201}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="PartnerSelection/Back/Top/Icon3/Head">
+              <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,58},{0,58}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Bot/Back/Role3/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.493333,0},{0.0644344,0},{0.933333,0},{0.063094,21.9486}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Bot/Back/Role3/School">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.493333,0},{0,25},{0.933333,0},{0,45}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/ImageButton" Name="PartnerSelection/Back/Bot/Back/Role3/Invitation">
+            <Property Name="Text" Value="邀   请" />
+            <Property Name="SizeType" Value="Image" />
+            <Property Name="HoverImage" Value="set:MainControl23 image:ReturnHover" />
+            <Property Name="NormalImage" Value="set:MainControl23 image:ReturnNormal" />
+            <Property Name="PushedImage" Value="set:MainControl23 image:ReturnPushed" />
+            <Property Name="DisabledImage" Value="set:MainControl23 image:ReturnDisable" />
+            <Property Name="UnifiedMaxSize" Value="{{0,71},{0,26}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,71},{0,26}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.453333,0},{0.605685,0},{0.926666,0},{0.940743,0}}" />
+            <Property Name="NormalTextColour" Value="tl:FFFFF5A2 tr:FFFFF5A2 bl:FFFFD200 br:FFFFD200" />
+            <Property Name="ButtonBorderColour" Value="FF6E340D" />
+            <Property Name="ButtonBorderEnable" Value="True" />
+            <Property Name="ButtonDefaultBorderEnable" Value="False" />
+            <Property Name="ButtonDefaultColourEnable" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PartnerSelection/Back/Bot/Back/Role3">
+          <Property Name="Image" Value="set:MainControl18 image:BigBoardHover" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0204796,0},{0.0192804,80.8937},{0.0204366,149.529},{0.0192804,160.894}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="PartnerSelection/Back/Top/Icon4">
+            <Property Name="Image" Value="set:MainControl image:FriendHeadBack" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,63},{0,64}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,63},{0,64}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0334384,0},{0.05,4.5},{0.05,60.5236},{0.05,68.5}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="PartnerSelection/Back/Top/Icon4/Head">
+              <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,57.7381},{0,58}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Bot/Back/Role4/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.494888,0},{0.0625,0},{0.936275,0},{0.0625,20}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Bot/Back/Role4/School">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.494888,0},{0,25},{0.936275,0},{0,45}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/ImageButton" Name="PartnerSelection/Back/Bot/Back/Role4/Invitation">
+            <Property Name="Text" Value="邀   请" />
+            <Property Name="SizeType" Value="Image" />
+            <Property Name="HoverImage" Value="set:MainControl23 image:ReturnHover" />
+            <Property Name="NormalImage" Value="set:MainControl23 image:ReturnNormal" />
+            <Property Name="PushedImage" Value="set:MainControl23 image:ReturnPushed" />
+            <Property Name="DisabledImage" Value="set:MainControl23 image:ReturnDisable" />
+            <Property Name="UnifiedMaxSize" Value="{{0,71},{0,26}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,71},{0,26}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.454762,0},{0.5875,0},{0.929587,0},{0.912497,0}}" />
+            <Property Name="NormalTextColour" Value="tl:FFFFF5A2 tr:FFFFF5A2 bl:FFFFD200 br:FFFFD200" />
+            <Property Name="ButtonBorderColour" Value="FF6E340D" />
+            <Property Name="ButtonBorderEnable" Value="True" />
+            <Property Name="ButtonDefaultBorderEnable" Value="False" />
+            <Property Name="ButtonDefaultColourEnable" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PartnerSelection/Back/Bot/Back/Role4">
+          <Property Name="Image" Value="set:MainControl18 image:BigBoardHover" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0174887,154.196},{0.0192804,80.8937},{0.0174887,304.196},{0.0192804,160.894}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="PartnerSelection/Back/Top/Icon5">
+            <Property Name="Image" Value="set:MainControl image:FriendHeadBack" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,63},{0,64}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,63},{0,64}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,4.77621},{0.05,4.5},{0,67.7762},{0.05,68.5}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="PartnerSelection/Back/Top/Icon5/Head">
+              <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,58},{0,58}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Bot/Back/Role5/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,73.7762},{0.0625,0},{0,139.776},{0.0625,20}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Bot/Back/Role5/School">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,73.7762},{0,25},{0.434611,65.5707},{0,45}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/ImageButton" Name="PartnerSelection/Back/Bot/Back/Role5/Invitation">
+            <Property Name="Text" Value="邀   请" />
+            <Property Name="SizeType" Value="Image" />
+            <Property Name="HoverImage" Value="set:MainControl23 image:ReturnHover" />
+            <Property Name="NormalImage" Value="set:MainControl23 image:ReturnNormal" />
+            <Property Name="PushedImage" Value="set:MainControl23 image:ReturnPushed" />
+            <Property Name="DisabledImage" Value="set:MainControl23 image:ReturnDisable" />
+            <Property Name="UnifiedMaxSize" Value="{{0,71},{0,26}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,71},{0,26}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,67.7762},{0.5875,0},{0,138.776},{0.912497,0}}" />
+            <Property Name="NormalTextColour" Value="tl:FFFFF5A2 tr:FFFFF5A2 bl:FFFFD200 br:FFFFD200" />
+            <Property Name="ButtonBorderColour" Value="FF6E340D" />
+            <Property Name="ButtonBorderEnable" Value="True" />
+            <Property Name="ButtonDefaultBorderEnable" Value="False" />
+            <Property Name="ButtonDefaultColourEnable" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PartnerSelection/Back/Bot/Back/Role5">
+          <Property Name="Image" Value="set:MainControl18 image:BigBoardHover" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0145183,307.385},{0.0192804,80.8937},{0.0145183,457.385},{0.0192804,160.894}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="PartnerSelection/Back/Top/Icon6">
+            <Property Name="Image" Value="set:MainControl image:FriendHeadBack" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,63},{0,64}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,63},{0,64}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,4.59332},{0.05,4.5},{0,67.5933},{0.05,68.5}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="PartnerSelection/Back/Top/Icon6/Head">
+              <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,58},{0,58}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Bot/Back/Role6/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,73.5933},{0.0624998,0},{0,139.593},{0.0624998,20}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Bot/Back/Role6/School">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,73.5933},{0,26},{0.434611,65.9661},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/ImageButton" Name="PartnerSelection/Back/Bot/Back/Role6/Invitation">
+            <Property Name="Text" Value="邀   请" />
+            <Property Name="SizeType" Value="Image" />
+            <Property Name="HoverImage" Value="set:MainControl23 image:ReturnHover" />
+            <Property Name="NormalImage" Value="set:MainControl23 image:ReturnNormal" />
+            <Property Name="PushedImage" Value="set:MainControl23 image:ReturnPushed" />
+            <Property Name="DisabledImage" Value="set:MainControl23 image:ReturnDisable" />
+            <Property Name="UnifiedMaxSize" Value="{{0,71},{0,26}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,71},{0,26}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,67.5933},{0.5875,0},{0,138.593},{0.912497,0}}" />
+            <Property Name="NormalTextColour" Value="tl:FFFFF5A2 tr:FFFFF5A2 bl:FFFFD200 br:FFFFD200" />
+            <Property Name="ButtonBorderColour" Value="FF6E340D" />
+            <Property Name="ButtonBorderEnable" Value="True" />
+            <Property Name="ButtonDefaultBorderEnable" Value="False" />
+            <Property Name="ButtonDefaultColourEnable" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PartnerSelection/Back/Bot/Back/Role6">
+          <Property Name="Image" Value="set:MainControl18 image:BigBoardHover" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0204796,0},{0.0192804,161.894},{0.0204366,149.529},{0.0192804,241.894}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="PartnerSelection/Back/Top/Icon7">
+            <Property Name="Image" Value="set:MainControl image:FriendHeadBack" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,63},{0,64}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,63},{0,64}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0334384,0},{0.05,4.5},{0.05,60.5236},{0.05,68.5}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="PartnerSelection/Back/Top/Icon7/Head">
+              <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,58},{0,58}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Bot/Back/Role7/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.494888,0},{0.0625,0},{0.936275,0},{0.0625,20}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Bot/Back/Role7/School">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.494888,0},{0,25},{0.936275,0},{0,45}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/ImageButton" Name="PartnerSelection/Back/Bot/Back/Role7/Invitation">
+            <Property Name="Text" Value="邀   请" />
+            <Property Name="SizeType" Value="Image" />
+            <Property Name="HoverImage" Value="set:MainControl23 image:ReturnHover" />
+            <Property Name="NormalImage" Value="set:MainControl23 image:ReturnNormal" />
+            <Property Name="PushedImage" Value="set:MainControl23 image:ReturnPushed" />
+            <Property Name="DisabledImage" Value="set:MainControl23 image:ReturnDisable" />
+            <Property Name="UnifiedMaxSize" Value="{{0,71},{0,26}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,71},{0,26}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.454762,0},{0.587499,0},{0.929587,0},{0.912499,0}}" />
+            <Property Name="NormalTextColour" Value="tl:FFFFF5A2 tr:FFFFF5A2 bl:FFFFD200 br:FFFFD200" />
+            <Property Name="ButtonBorderColour" Value="FF6E340D" />
+            <Property Name="ButtonBorderEnable" Value="True" />
+            <Property Name="ButtonDefaultBorderEnable" Value="False" />
+            <Property Name="ButtonDefaultColourEnable" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PartnerSelection/Back/Bot/Back/Role7">
+          <Property Name="Image" Value="set:MainControl18 image:BigBoardHover" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0174887,154.196},{0.0192804,161.894},{0.0174887,304.196},{0.0192804,241.894}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="PartnerSelection/Back/Top/Icon8">
+            <Property Name="Image" Value="set:MainControl image:FriendHeadBack" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,63},{0,64}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,63},{0,64}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,4.77621},{0.05,4.5},{0,67.7762},{0.05,68.5}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="PartnerSelection/Back/Top/Icon8/Head">
+              <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,58.6557},{0,58}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Bot/Back/Role8/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,73.7762},{0.0625,0},{0,139.776},{0.0625,20}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Bot/Back/Role8/School">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,73.7762},{0,25},{0.434611,66.339},{0,45}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/ImageButton" Name="PartnerSelection/Back/Bot/Back/Role8/Invitation">
+            <Property Name="Text" Value="邀   请" />
+            <Property Name="SizeType" Value="Image" />
+            <Property Name="HoverImage" Value="set:MainControl23 image:ReturnHover" />
+            <Property Name="NormalImage" Value="set:MainControl23 image:ReturnNormal" />
+            <Property Name="PushedImage" Value="set:MainControl23 image:ReturnPushed" />
+            <Property Name="DisabledImage" Value="set:MainControl23 image:ReturnDisable" />
+            <Property Name="UnifiedMaxSize" Value="{{0,71},{0,26}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,71},{0,26}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,67.7762},{0.5875,0},{0,138.776},{0.9125,0}}" />
+            <Property Name="NormalTextColour" Value="tl:FFFFF5A2 tr:FFFFF5A2 bl:FFFFD200 br:FFFFD200" />
+            <Property Name="ButtonBorderColour" Value="FF6E340D" />
+            <Property Name="ButtonBorderEnable" Value="True" />
+            <Property Name="ButtonDefaultBorderEnable" Value="False" />
+            <Property Name="ButtonDefaultColourEnable" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PartnerSelection/Back/Bot/Back/Role8">
+          <Property Name="Image" Value="set:MainControl18 image:BigBoardHover" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0145183,307.385},{0.0192804,161.894},{0.0145183,457.385},{0.0192804,241.894}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="PartnerSelection/Back/Top/Icon9">
+            <Property Name="Image" Value="set:MainControl image:FriendHeadBack" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,63},{0,64}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,63},{0,64}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,4.59332},{0.05,4.5},{0,67.5933},{0.05,68.5}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="PartnerSelection/Back/Top/Icon9/Head">
+              <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,58},{0,58}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Bot/Back/Role9/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,76.5933},{0.0749998,0},{0,142.593},{0.0749998,20}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Bot/Back/Role9/School">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,73.5933},{0,26},{0.434611,67.5188},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/ImageButton" Name="PartnerSelection/Back/Bot/Back/Role9/Invitation">
+            <Property Name="Text" Value="邀   请" />
+            <Property Name="SizeType" Value="Image" />
+            <Property Name="HoverImage" Value="set:MainControl23 image:ReturnHover" />
+            <Property Name="NormalImage" Value="set:MainControl23 image:ReturnNormal" />
+            <Property Name="PushedImage" Value="set:MainControl23 image:ReturnPushed" />
+            <Property Name="DisabledImage" Value="set:MainControl23 image:ReturnDisable" />
+            <Property Name="UnifiedMaxSize" Value="{{0,71},{0,26}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,71},{0,26}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,67.5933},{0.5875,0},{0,138.593},{0.9125,0}}" />
+            <Property Name="NormalTextColour" Value="tl:FFFFF5A2 tr:FFFFF5A2 bl:FFFFD200 br:FFFFD200" />
+            <Property Name="ButtonBorderColour" Value="FF6E340D" />
+            <Property Name="ButtonBorderEnable" Value="True" />
+            <Property Name="ButtonDefaultBorderEnable" Value="False" />
+            <Property Name="ButtonDefaultColourEnable" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/GroupButton" Name="PartnerSelection/Back/All0">
+        <Property Name="Text" Value="全部" />
+        <Property Name="UnifiedAreaRect" Value="{{0,12},{0.249662,0},{0,76},{0.243269,21.2313}}" />
+      </Window>
+      <Window Type="TaharezLook/GroupButton" Name="PartnerSelection/Back/All1">
+        <Property Name="Text" Value="外攻" />
+        <Property Name="UnifiedAreaRect" Value="{{0,77},{0.249662,0},{0,141},{0.243269,21.2313}}" />
+      </Window>
+      <Window Type="TaharezLook/GroupButton" Name="PartnerSelection/Back/All2">
+        <Property Name="Text" Value="内攻" />
+        <Property Name="UnifiedAreaRect" Value="{{0,142},{0.249662,0},{0,206},{0.243269,21.2313}}" />
+      </Window>
+      <Window Type="TaharezLook/GroupButton" Name="PartnerSelection/Back/All3">
+        <Property Name="Text" Value="治疗" />
+        <Property Name="UnifiedAreaRect" Value="{{0,207},{0.249662,0},{0,271},{0.243269,21.2313}}" />
+      </Window>
+      <Window Type="TaharezLook/GroupButton" Name="PartnerSelection/Back/All4">
+        <Property Name="Text" Value="封印" />
+        <Property Name="UnifiedAreaRect" Value="{{0,272},{0.249662,0},{0,336},{0.243269,21.2313}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PartnerSelection/Back/Info">
+        <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0285716,0},{0.944621,0},{0.518368,0},{0.920433,29.7368}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="PartnerSelection/Back/Up">
+        <Property Name="Text" Value="上一页" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.529388,0},{0.927352,0},{0.668164,0},{0.927352,24}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="PartnerSelection/Back/Up1">
+        <Property Name="Text" Value="下一页" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.668164,10},{0.927352,0},{0.668164,78},{0.927352,24}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="PartnerSelection/Back/leave">
+        <Property Name="Text" Value="确   定" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.668164,88},{0.927352,0},{0.668164,156},{0.927352,24}}" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,52 @@
+{
+  "revision": "2026-10-23.pet-care.1",
+  "scope": "persisted care and ordinary losses; template-kind immunity is supplied by pet-kind-care-v1.json without rewriting saved values; colour advancement remains separate",
+  "generation": {
+    "provenance": "designed",
+    "grade": 1,
+    "loyalty": "initially full at the explicitly selected grade's original maxloy",
+    "lifetime": "original cpetattr.life, unchanged integer",
+    "note": "Grade 1 is an explicit local restoration baseline, not inferred from the middle growth roll. Preserve existing instances. Native colour mapping is verified separately in PET_PRESENTATION; it does not prove the original generation distribution."
+  },
+  "limits": {
+    "provenance": "client_verified_table_values",
+    "maximum_loyalty": "cpetxuemaiconfig.maxloy indexed by explicit grade 1..6",
+    "selection_requires_positive_loyalty": true,
+    "ordinary_battle_lifetime_minimum": 50,
+    "lifetime_selection_source": "client_verified bookanswer36001/36002: lifetime below50 may remain selected but does not participate in battle",
+    "special_pets": "immortal pet classification and exemptions require separate explicit rules"
+  },
+  "food": {
+    "provenance": "client_verified_descriptions_in_cpetitemeffect_and_citemattr",
+    "loyalty": {"31000": 5, "31001": 20, "31089": 5},
+    "lifetime_fixed": {"32036": 1000},
+    "lifetime_quality": {
+      "templates": [32007],
+      "source": "client_verified original cfooddrugeffectformula.ai/bi; 32007 ai0=0.5 bi0=0",
+      "effect": "designed floor(abs(persisted_instance_quality * original_ai0 + original_bi0))",
+      "quality": "strict signed32 nonnegative known integer from owned carried instance; unknown refuses",
+      "zero_effect": "reject without consumption"
+    },
+    "lifetime_source": "client_verified cfoodanddrugeffect32036.effect=[1000] and citemattr description; no side effect",
+    "lifetime_overflow": "designed reject above signed32 representation without consuming; no inferred template-life cap",
+    "at_cap": "reject without consuming",
+    "overflow": "clamp to the original grade cap and consume one food only if loyalty increased",
+    "target": "explicit owned pet key; no implicit first-pet selection"
+  },
+  "ordinary_death": {
+    "provenance": "guide_supported_historical_rule_adopted_for_restoration",
+    "source": "https://sdxl.wanmei.com/info/qita/fight/20120729/133541.shtml",
+    "article_date": "2012-07-29",
+    "loyalty_loss": 20,
+    "lifetime_loss": 50,
+    "floor": 0,
+    "note": "Only a trusted ordinary-battle death event applies this rule. No loss on sparring or arbitrary client requests. PK and special battle policies remain separate."
+  },
+  "persistence": {
+    "owner": "role_id + login_epoch",
+    "transaction": "care, item deduction, asset revision and request receipt commit together",
+    "legacy": "explicit one-time initialization with an authoritative grade, loyalty and lifetime; no automatic rewriting",
+    "battle_integration": "care death operation joins the role owner's common settlement transaction; it does not infer death from an HP assignment"
+  },
+  "unverified": ["original generation grade distribution", "original maximum lifetime", "original aptitude loss amount from toxic lifetime food (current separate designed policy)", "disobedience probability below 60", "kind3 original server immunity and remaining special care", "live client UI"]
+}

@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/HouseFrameWindow" Name="FriendPass">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.255,0},{0.162408,0},{0.748748,0},{0.772344,0}}" />
+    <Window Type="TaharezLook/StaticText" Name="FriendPass/Title">
+      <Property Name="Disabled" Value="True" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,214},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,214},{0,27}}" />
+      <Property Name="VertFormatting" Value="TopAligned" />
+      <Property Name="UnifiedAreaRect" Value="{{0,49},{0,18},{0,263},{0,45}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="FriendPass/Title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="招募好友传功" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="102" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF361D08" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,94.4},{0,0.6},{0,205.4},{0,23.6}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseHouse" Name="FriendPass/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0911392,0},{0.142077,0},{0.911392,0},{0.948087,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="FriendPass/CharacterExp">
+        <Property Name="Text" Value="角色经验" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0216049,0},{0.0271186,0},{0.05,50},{0.05,13}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+        <Window Type="TaharezLook/ProgressBar" Name="FriendPass/CharacterExp/ProGressBar">
+          <Property Name="StepSize" Value="1" />
+          <Property Name="FrameEnable" Value="True" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="CurrentProgress" Value="0" />
+          <Property Name="UnifiedAreaRect" Value="{{0.932203,0},{0.05,0},{5.23729,0},{0.05,18}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="FriendPass/ChangeExp">
+        <Property Name="Text" Value="输入传功经验" />
+        <Property Name="HorzExtent" Value="79" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0524691,0},{0.05,165},{0.012963,97},{0.05,185}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+        <Window Type="TaharezLook/Editbox" Name="FriendPass/ChangeExp/Edit">
+          <Property Name="BlinkCaret" Value="True" />
+          <Property Name="MaxTextLength" Value="2147483647" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{1.02381,0},{0.05,0},{2.36905,0},{0.95,0}}" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="FriendPass/CharacterName">
+        <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+        <Property Name="BorderColour" Value="FF5F4100" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,12},{0,145},{0,126},{0,163}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="FriendPass/PetExp">
+        <Property Name="Text" Value="可传经验" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0216049,0},{0.101695,0},{0.0216049,59},{0.124576,13}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+        <Window Type="TaharezLook/ProgressBar" Name="FriendPass/PetrExp/ProGressBar">
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="FrameEnable" Value="True" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="CurrentProgress" Value="0" />
+          <Property Name="UnifiedAreaRect" Value="{{0.932203,0},{0.05,0},{5.23729,0},{0.05,16}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="FriendPass/Item">
+        <Property Name="Image" Value="set:MainControl25 image:PatternBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,102},{0,130}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,102},{0,130}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.342593,0},{0.155932,0},{0.657407,0},{0.59661,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="FriendPass/Ok">
+        <Property Name="Text" Value="传功" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.709877,0},{0.6,0},{0.907407,0},{0.677966,0}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="FriendPass/Back/CHead">
+        <Property Name="Image" Value="set:MainControl6 image:PetBackRide" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,74},{0,74}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,74},{0,74}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.095679,0},{0.230508,0},{0.324074,0},{0.481356,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="FriendPass/CharacterHead">
+          <Property Name="Image" Value="set:RightTopRole0 image:30000" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,60},{0,58}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,60},{0,58}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.121622,0},{0.108108,0},{0.108108,61},{0.0675676,61}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="FriendPass/Back/PHead">
+        <Property Name="Image" Value="set:MainControl6 image:PetBackRide" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,74},{0,74}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,74},{0,74}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.682099,0},{0.230508,0},{0.910494,0},{0.481356,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="FriendPass/PetHead">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.135135,0},{0.0945946,0},{0.77027,11},{0.297297,45}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/Combobox" Name="FriendPass/PetHead/List">
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.534483,0},{1.13333,0},{1.5,0},{2.56667,0}}" />
+            <Property Name="MaxEditTextLength" Value="2147483647" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="FriendPass/Back/Text">
+        <Property Name="Text" Value="                " />
+        <Property Name="HorzExtent" Value="48" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0246914,0},{0.698305,0},{0.975309,0},{0.972881,0}}" />
+        <Window Type="TaharezLook/LinkText" Name="FriendPass/Back/Text/Link">
+          <Property Name="Text" Value="传功说明" />
+          <Property Name="UserID" Value="83943" />
+          <Property Name="Visible" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.412338,0},{0.0987654,0},{0.597403,0},{0.296296,0}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FriendPass/Back/Text/title">
+          <Property Name="Text" Value="69级以上玩家每日可为被自己招募的好友角色进行经验传功，每日传功经验量与经验接收人的级别有关，若经验接收人级别大于传功者，则无法传功。" />
+          <Property Name="HorzExtent" Value="289" />
+          <Property Name="VertExtent" Value="46.8567" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0.025974,0},{0.0987654,0},{0.987013,0},{0.691358,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FriendPass/Back/Text/title1">
+          <Property Name="Text" Value="（经验接收人等级需小于89级）" />
+          <Property Name="HorzExtent" Value="185" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0.376623,0},{0.728395,0},{0.98052,0},{0.950617,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

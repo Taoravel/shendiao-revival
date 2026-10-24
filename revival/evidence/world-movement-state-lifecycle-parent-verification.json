@@ -1,0 +1,1463 @@
+{
+  "all_passed": true,
+  "case_count": 28,
+  "cases": [
+    {
+      "case": "separate_scene_success_and_first_ACK_slices",
+      "map_id": 1100,
+      "normalized_a": 0,
+      "scene_result": {
+        "branch": "0x11e26de",
+        "state_218": 0,
+        "mask": 1,
+        "position_sets_projected": [
+          [
+            150,
+            120
+          ],
+          [
+            150,
+            120
+          ]
+        ]
+      },
+      "ACK_slice": {
+        "reason": 516015,
+        "sent_types": [
+          786493
+        ]
+      },
+      "scope": "two separately executed original slices, not full Scene flow"
+    },
+    {
+      "case": "separate_scene_success_and_first_ACK_slices",
+      "map_id": 1100,
+      "normalized_a": 1,
+      "scene_result": {
+        "branch": "0x11e26de",
+        "state_218": 1,
+        "mask": 8,
+        "position_sets_projected": [
+          [
+            150,
+            120
+          ],
+          [
+            150,
+            120
+          ]
+        ]
+      },
+      "ACK_slice": {
+        "reason": 516015,
+        "sent_types": [
+          786493
+        ]
+      },
+      "scope": "two separately executed original slices, not full Scene flow"
+    },
+    {
+      "case": "separate_scene_success_and_first_ACK_slices",
+      "map_id": 1404,
+      "normalized_a": 0,
+      "scene_result": {
+        "branch": "0x11e272d",
+        "state_218": 2,
+        "mask": 8,
+        "position_sets_projected": []
+      },
+      "ACK_slice": {
+        "reason": 516015,
+        "sent_types": [
+          786493
+        ]
+      },
+      "scope": "two separately executed original slices, not full Scene flow"
+    },
+    {
+      "case": "ordinary_reason_no_first_ACK",
+      "ACK_slice": {
+        "reason": 0,
+        "sent_types": []
+      }
+    },
+    {
+      "case": "Scene_then_original_SSetRoleLocation0",
+      "prior": 0,
+      "scene_case": "ordinary",
+      "scene_result": {
+        "branch": "0x11e26de",
+        "state_218": 0,
+        "mask": 1,
+        "position_sets_projected": [
+          [
+            150,
+            120
+          ],
+          [
+            150,
+            120
+          ],
+          [
+            150,
+            100
+          ],
+          [
+            150,
+            100
+          ]
+        ]
+      },
+      "location_result": {
+        "current": [
+          100,
+          100
+        ],
+        "position_sets_projected": [
+          [
+            150,
+            120
+          ],
+          [
+            150,
+            120
+          ],
+          [
+            150,
+            100
+          ],
+          [
+            150,
+            100
+          ]
+        ],
+        "requests": [],
+        "future_engine": [],
+        "future_local": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "history_local": [
+          [
+            8,
+            8
+          ]
+        ],
+        "movement_state_218": 0,
+        "target_328": [
+          100,
+          100
+        ],
+        "lookahead_358": [
+          100,
+          100
+        ]
+      },
+      "mask_after": 1
+    },
+    {
+      "case": "Scene_then_original_SSetRoleLocation0",
+      "prior": 0,
+      "scene_case": "map1404",
+      "scene_result": {
+        "branch": "0x11e272d",
+        "state_218": 0,
+        "mask": 1,
+        "position_sets_projected": [
+          [
+            150,
+            100
+          ],
+          [
+            150,
+            100
+          ]
+        ]
+      },
+      "location_result": {
+        "current": [
+          100,
+          100
+        ],
+        "position_sets_projected": [
+          [
+            150,
+            100
+          ],
+          [
+            150,
+            100
+          ]
+        ],
+        "requests": [],
+        "future_engine": [],
+        "future_local": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "history_local": [
+          [
+            8,
+            8
+          ]
+        ],
+        "movement_state_218": 0,
+        "target_328": [
+          100,
+          100
+        ],
+        "lookahead_358": [
+          100,
+          100
+        ]
+      },
+      "mask_after": 1
+    },
+    {
+      "case": "Scene_then_original_SSetRoleLocation0",
+      "prior": 0,
+      "scene_case": "reason516023",
+      "scene_result": {
+        "branch": "0x11e272d",
+        "state_218": 0,
+        "mask": 1,
+        "position_sets_projected": [
+          [
+            150,
+            100
+          ],
+          [
+            150,
+            100
+          ]
+        ]
+      },
+      "location_result": {
+        "current": [
+          100,
+          100
+        ],
+        "position_sets_projected": [
+          [
+            150,
+            100
+          ],
+          [
+            150,
+            100
+          ]
+        ],
+        "requests": [],
+        "future_engine": [],
+        "future_local": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "history_local": [
+          [
+            8,
+            8
+          ]
+        ],
+        "movement_state_218": 0,
+        "target_328": [
+          100,
+          100
+        ],
+        "lookahead_358": [
+          100,
+          100
+        ]
+      },
+      "mask_after": 1
+    },
+    {
+      "case": "location0_position_gate",
+      "prior": 0,
+      "gate": "virtual158",
+      "result": {
+        "current": [
+          8,
+          8
+        ],
+        "position_sets_projected": [],
+        "requests": [],
+        "future_engine": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "future_local": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "history_local": [
+          [
+            8,
+            8
+          ]
+        ],
+        "movement_state_218": 0,
+        "target_328": [
+          100,
+          100
+        ],
+        "lookahead_358": [
+          100,
+          100
+        ]
+      },
+      "mask_after": 1,
+      "position_and_target_disagree": true
+    },
+    {
+      "case": "location0_position_gate",
+      "prior": 0,
+      "gate": "virtual15c",
+      "result": {
+        "current": [
+          8,
+          8
+        ],
+        "position_sets_projected": [],
+        "requests": [],
+        "future_engine": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "future_local": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "history_local": [
+          [
+            8,
+            8
+          ]
+        ],
+        "movement_state_218": 0,
+        "target_328": [
+          100,
+          100
+        ],
+        "lookahead_358": [
+          100,
+          100
+        ]
+      },
+      "mask_after": 1,
+      "position_and_target_disagree": true
+    },
+    {
+      "case": "location0_missing_target_preserves",
+      "prior": 0,
+      "missing": "lookup_role",
+      "result": {
+        "current": [
+          8,
+          8
+        ],
+        "position_sets_projected": [],
+        "requests": [],
+        "future_engine": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "future_local": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "history_local": [
+          [
+            8,
+            8
+          ]
+        ],
+        "movement_state_218": 0,
+        "target_328": [
+          56,
+          56
+        ],
+        "lookahead_358": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "case": "location0_missing_target_preserves",
+      "prior": 0,
+      "missing": "Scene",
+      "result": {
+        "current": [
+          8,
+          8
+        ],
+        "position_sets_projected": [],
+        "requests": [],
+        "future_engine": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "future_local": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "history_local": [
+          [
+            8,
+            8
+          ]
+        ],
+        "movement_state_218": 0,
+        "target_328": [
+          56,
+          56
+        ],
+        "lookahead_358": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "case": "Scene_then_original_SSetRoleLocation0",
+      "prior": 1,
+      "scene_case": "ordinary",
+      "scene_result": {
+        "branch": "0x11e26de",
+        "state_218": 0,
+        "mask": 1,
+        "position_sets_projected": [
+          [
+            150,
+            120
+          ],
+          [
+            150,
+            120
+          ],
+          [
+            150,
+            100
+          ],
+          [
+            150,
+            100
+          ]
+        ]
+      },
+      "location_result": {
+        "current": [
+          100,
+          100
+        ],
+        "position_sets_projected": [
+          [
+            150,
+            120
+          ],
+          [
+            150,
+            120
+          ],
+          [
+            150,
+            100
+          ],
+          [
+            150,
+            100
+          ]
+        ],
+        "requests": [],
+        "future_engine": [],
+        "future_local": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "history_local": [
+          [
+            8,
+            8
+          ]
+        ],
+        "movement_state_218": 0,
+        "target_328": [
+          100,
+          100
+        ],
+        "lookahead_358": [
+          100,
+          100
+        ]
+      },
+      "mask_after": 1
+    },
+    {
+      "case": "Scene_then_original_SSetRoleLocation0",
+      "prior": 1,
+      "scene_case": "map1404",
+      "scene_result": {
+        "branch": "0x11e272d",
+        "state_218": 1,
+        "mask": 8,
+        "position_sets_projected": [
+          [
+            150,
+            100
+          ],
+          [
+            150,
+            100
+          ]
+        ]
+      },
+      "location_result": {
+        "current": [
+          100,
+          100
+        ],
+        "position_sets_projected": [
+          [
+            150,
+            100
+          ],
+          [
+            150,
+            100
+          ]
+        ],
+        "requests": [],
+        "future_engine": [],
+        "future_local": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "history_local": [
+          [
+            8,
+            8
+          ]
+        ],
+        "movement_state_218": 0,
+        "target_328": [
+          100,
+          100
+        ],
+        "lookahead_358": [
+          100,
+          100
+        ]
+      },
+      "mask_after": 1
+    },
+    {
+      "case": "Scene_then_original_SSetRoleLocation0",
+      "prior": 1,
+      "scene_case": "reason516023",
+      "scene_result": {
+        "branch": "0x11e272d",
+        "state_218": 1,
+        "mask": 8,
+        "position_sets_projected": [
+          [
+            150,
+            100
+          ],
+          [
+            150,
+            100
+          ]
+        ]
+      },
+      "location_result": {
+        "current": [
+          100,
+          100
+        ],
+        "position_sets_projected": [
+          [
+            150,
+            100
+          ],
+          [
+            150,
+            100
+          ]
+        ],
+        "requests": [],
+        "future_engine": [],
+        "future_local": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "history_local": [
+          [
+            8,
+            8
+          ]
+        ],
+        "movement_state_218": 0,
+        "target_328": [
+          100,
+          100
+        ],
+        "lookahead_358": [
+          100,
+          100
+        ]
+      },
+      "mask_after": 1
+    },
+    {
+      "case": "location0_position_gate",
+      "prior": 1,
+      "gate": "virtual158",
+      "result": {
+        "current": [
+          8,
+          8
+        ],
+        "position_sets_projected": [],
+        "requests": [],
+        "future_engine": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "future_local": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "history_local": [
+          [
+            8,
+            8
+          ]
+        ],
+        "movement_state_218": 0,
+        "target_328": [
+          100,
+          100
+        ],
+        "lookahead_358": [
+          100,
+          100
+        ]
+      },
+      "mask_after": 1,
+      "position_and_target_disagree": true
+    },
+    {
+      "case": "location0_position_gate",
+      "prior": 1,
+      "gate": "virtual15c",
+      "result": {
+        "current": [
+          8,
+          8
+        ],
+        "position_sets_projected": [],
+        "requests": [],
+        "future_engine": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "future_local": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "history_local": [
+          [
+            8,
+            8
+          ]
+        ],
+        "movement_state_218": 0,
+        "target_328": [
+          100,
+          100
+        ],
+        "lookahead_358": [
+          100,
+          100
+        ]
+      },
+      "mask_after": 1,
+      "position_and_target_disagree": true
+    },
+    {
+      "case": "location0_missing_target_preserves",
+      "prior": 1,
+      "missing": "lookup_role",
+      "result": {
+        "current": [
+          8,
+          8
+        ],
+        "position_sets_projected": [],
+        "requests": [],
+        "future_engine": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "future_local": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "history_local": [
+          [
+            8,
+            8
+          ]
+        ],
+        "movement_state_218": 1,
+        "target_328": [
+          56,
+          56
+        ],
+        "lookahead_358": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "case": "location0_missing_target_preserves",
+      "prior": 1,
+      "missing": "Scene",
+      "result": {
+        "current": [
+          8,
+          8
+        ],
+        "position_sets_projected": [],
+        "requests": [],
+        "future_engine": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "future_local": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "history_local": [
+          [
+            8,
+            8
+          ]
+        ],
+        "movement_state_218": 1,
+        "target_328": [
+          56,
+          56
+        ],
+        "lookahead_358": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "case": "Scene_then_original_SSetRoleLocation0",
+      "prior": 2,
+      "scene_case": "ordinary",
+      "scene_result": {
+        "branch": "0x11e26de",
+        "state_218": 0,
+        "mask": 1,
+        "position_sets_projected": [
+          [
+            150,
+            120
+          ],
+          [
+            150,
+            120
+          ],
+          [
+            150,
+            100
+          ],
+          [
+            150,
+            100
+          ]
+        ]
+      },
+      "location_result": {
+        "current": [
+          100,
+          100
+        ],
+        "position_sets_projected": [
+          [
+            150,
+            120
+          ],
+          [
+            150,
+            120
+          ],
+          [
+            150,
+            100
+          ],
+          [
+            150,
+            100
+          ]
+        ],
+        "requests": [],
+        "future_engine": [],
+        "future_local": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "history_local": [
+          [
+            8,
+            8
+          ]
+        ],
+        "movement_state_218": 0,
+        "target_328": [
+          100,
+          100
+        ],
+        "lookahead_358": [
+          100,
+          100
+        ]
+      },
+      "mask_after": 1
+    },
+    {
+      "case": "Scene_then_original_SSetRoleLocation0",
+      "prior": 2,
+      "scene_case": "map1404",
+      "scene_result": {
+        "branch": "0x11e272d",
+        "state_218": 2,
+        "mask": 8,
+        "position_sets_projected": [
+          [
+            150,
+            100
+          ],
+          [
+            150,
+            100
+          ]
+        ]
+      },
+      "location_result": {
+        "current": [
+          100,
+          100
+        ],
+        "position_sets_projected": [
+          [
+            150,
+            100
+          ],
+          [
+            150,
+            100
+          ]
+        ],
+        "requests": [],
+        "future_engine": [],
+        "future_local": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "history_local": [
+          [
+            8,
+            8
+          ]
+        ],
+        "movement_state_218": 0,
+        "target_328": [
+          100,
+          100
+        ],
+        "lookahead_358": [
+          100,
+          100
+        ]
+      },
+      "mask_after": 1
+    },
+    {
+      "case": "Scene_then_original_SSetRoleLocation0",
+      "prior": 2,
+      "scene_case": "reason516023",
+      "scene_result": {
+        "branch": "0x11e272d",
+        "state_218": 2,
+        "mask": 8,
+        "position_sets_projected": [
+          [
+            150,
+            100
+          ],
+          [
+            150,
+            100
+          ]
+        ]
+      },
+      "location_result": {
+        "current": [
+          100,
+          100
+        ],
+        "position_sets_projected": [
+          [
+            150,
+            100
+          ],
+          [
+            150,
+            100
+          ]
+        ],
+        "requests": [],
+        "future_engine": [],
+        "future_local": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "history_local": [
+          [
+            8,
+            8
+          ]
+        ],
+        "movement_state_218": 0,
+        "target_328": [
+          100,
+          100
+        ],
+        "lookahead_358": [
+          100,
+          100
+        ]
+      },
+      "mask_after": 1
+    },
+    {
+      "case": "location0_position_gate",
+      "prior": 2,
+      "gate": "virtual158",
+      "result": {
+        "current": [
+          8,
+          8
+        ],
+        "position_sets_projected": [],
+        "requests": [],
+        "future_engine": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "future_local": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "history_local": [
+          [
+            8,
+            8
+          ]
+        ],
+        "movement_state_218": 0,
+        "target_328": [
+          100,
+          100
+        ],
+        "lookahead_358": [
+          100,
+          100
+        ]
+      },
+      "mask_after": 1,
+      "position_and_target_disagree": true
+    },
+    {
+      "case": "location0_position_gate",
+      "prior": 2,
+      "gate": "virtual15c",
+      "result": {
+        "current": [
+          8,
+          8
+        ],
+        "position_sets_projected": [],
+        "requests": [],
+        "future_engine": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "future_local": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "history_local": [
+          [
+            8,
+            8
+          ]
+        ],
+        "movement_state_218": 0,
+        "target_328": [
+          100,
+          100
+        ],
+        "lookahead_358": [
+          100,
+          100
+        ]
+      },
+      "mask_after": 1,
+      "position_and_target_disagree": true
+    },
+    {
+      "case": "location0_missing_target_preserves",
+      "prior": 2,
+      "missing": "lookup_role",
+      "result": {
+        "current": [
+          8,
+          8
+        ],
+        "position_sets_projected": [],
+        "requests": [],
+        "future_engine": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "future_local": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "history_local": [
+          [
+            8,
+            8
+          ]
+        ],
+        "movement_state_218": 2,
+        "target_328": [
+          56,
+          56
+        ],
+        "lookahead_358": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "case": "location0_missing_target_preserves",
+      "prior": 2,
+      "missing": "Scene",
+      "result": {
+        "current": [
+          8,
+          8
+        ],
+        "position_sets_projected": [],
+        "requests": [],
+        "future_engine": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "future_local": [
+          [
+            56.0,
+            8.0
+          ],
+          [
+            56.0,
+            56.0
+          ]
+        ],
+        "history_local": [
+          [
+            8,
+            8
+          ]
+        ],
+        "movement_state_218": 2,
+        "target_328": [
+          56,
+          56
+        ],
+        "lookahead_358": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "case": "original_Setmap_Return_End_cleanup_preserves_state",
+      "prior": 0,
+      "after": 0,
+      "state_writes": [],
+      "CEnd_type": "0xc0018",
+      "movie_id": 11001,
+      "manager_active_after": 0,
+      "world_load_requests": [
+        {
+          "directory": "map_1009_huashanzhidian",
+          "maze_path": "map_1009_huashanzhidian/maze.dat",
+          "position": [
+            240,
+            2192
+          ],
+          "flag": 0
+        },
+        {
+          "directory": "map_1100_gumupai",
+          "maze_path": "map_1100_gumupai/maze.dat",
+          "position": [
+            1800,
+            1200
+          ],
+          "flag": 0
+        }
+      ],
+      "scope": "direct public wrappers/cleanup; not full original movie playback"
+    },
+    {
+      "case": "original_Setmap_Return_End_cleanup_preserves_state",
+      "prior": 1,
+      "after": 1,
+      "state_writes": [],
+      "CEnd_type": "0xc0018",
+      "movie_id": 11001,
+      "manager_active_after": 0,
+      "world_load_requests": [
+        {
+          "directory": "map_1009_huashanzhidian",
+          "maze_path": "map_1009_huashanzhidian/maze.dat",
+          "position": [
+            240,
+            2192
+          ],
+          "flag": 0
+        },
+        {
+          "directory": "map_1100_gumupai",
+          "maze_path": "map_1100_gumupai/maze.dat",
+          "position": [
+            1800,
+            1200
+          ],
+          "flag": 0
+        }
+      ],
+      "scope": "direct public wrappers/cleanup; not full original movie playback"
+    },
+    {
+      "case": "original_Setmap_Return_End_cleanup_preserves_state",
+      "prior": 2,
+      "after": 2,
+      "state_writes": [],
+      "CEnd_type": "0xc0018",
+      "movie_id": 11001,
+      "manager_active_after": 0,
+      "world_load_requests": [
+        {
+          "directory": "map_1009_huashanzhidian",
+          "maze_path": "map_1009_huashanzhidian/maze.dat",
+          "position": [
+            240,
+            2192
+          ],
+          "flag": 0
+        },
+        {
+          "directory": "map_1100_gumupai",
+          "maze_path": "map_1100_gumupai/maze.dat",
+          "position": [
+            1800,
+            1200
+          ],
+          "flag": 0
+        }
+      ],
+      "scope": "direct public wrappers/cleanup; not full original movie playback"
+    }
+  ],
+  "image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+  "source_hashes": {
+    "verify_world_movement_state_lifecycle_native.py": "2bde30c97d093f276cfdb4c8855cbe0bdad42059b5359d69ff4ad3ada3ee62a8",
+    "verify_world_scene_movement_state_native.py": "3d0291df5fab9d1cb3962a4eee72e371a41ff594b283639011fed1594bcbe80e",
+    "research_scene_ready.py": "60de991c1689bd9b87abaedebe9780f07629b71815f9c3f938021f998ae7d40f",
+    "verify_world_intro_return_native.py": "fb5fc621085f65e913c69482ab38170ff1d0665da71a4c8556baafd0542b45e6",
+    "verify_world_intro_dispatch_native.py": "dbe914b50cc6fedb0f757ca5841a5ad896c52724482604daf68a5c01d750682f"
+  },
+  "adapters": [
+    "existing Scene success post-load slice and ACK-send boundary",
+    "existing ReturnReplay engine/config/presentation seams"
+  ],
+  "not_proven": [
+    "actual client ACK correlation or resource rendering",
+    "entire CG timeline or all +218 writers",
+    "unknown auxiliary Scene services do not write +218",
+    "server declaration/activation policy"
+  ],
+  "parent_independent_execution": true,
+  "actual_inputs": {
+    "verify_world_movement_state_lifecycle_native": {
+      "path": "D:\\神雕侠侣\\revival\\verify_world_movement_state_lifecycle_native.py",
+      "sha256": "2bde30c97d093f276cfdb4c8855cbe0bdad42059b5359d69ff4ad3ada3ee62a8"
+    },
+    "verify_world_scene_movement_state_native": {
+      "path": "D:\\神雕侠侣\\revival\\verify_world_scene_movement_state_native.py",
+      "sha256": "3d0291df5fab9d1cb3962a4eee72e371a41ff594b283639011fed1594bcbe80e"
+    },
+    "research_scene_ready": {
+      "path": "D:\\神雕侠侣\\revival\\research_scene_ready.py",
+      "sha256": "60de991c1689bd9b87abaedebe9780f07629b71815f9c3f938021f998ae7d40f"
+    },
+    "verify_world_intro_return_native": {
+      "path": "D:\\神雕侠侣\\revival\\verify_world_intro_return_native.py",
+      "sha256": "fb5fc621085f65e913c69482ab38170ff1d0665da71a4c8556baafd0542b45e6"
+    },
+    "verify_world_intro_dispatch_native": {
+      "path": "D:\\神雕侠侣\\revival\\verify_world_intro_dispatch_native.py",
+      "sha256": "dbe914b50cc6fedb0f757ca5841a5ad896c52724482604daf68a5c01d750682f"
+    },
+    "verify_world_movement_reconciliation_native": {
+      "path": "D:\\神雕侠侣\\revival\\verify_world_movement_reconciliation_native.py",
+      "sha256": "3e8947a9fa6e33b6996503523d7acd20144df57579bec9c6f2d30e9338a1edf7"
+    },
+    "verify_movement_reports_native": {
+      "path": "D:\\神雕侠侣\\revival\\verify_movement_reports_native.py",
+      "sha256": "891664c96b3a6e333628c0c8eddaa21619e890247802f2245680fb2e3bd5cc48"
+    },
+    "native_gameplay_probe": {
+      "path": "D:\\神雕侠侣\\revival\\native_gameplay_probe.py",
+      "sha256": "a585adc6522c8162ecaa8c87250eed240a49477ee57322f2950344a92bb7e24c"
+    },
+    "native_inspect": {
+      "path": "D:\\神雕侠侣\\revival\\native_inspect.py",
+      "sha256": "0793e525a8e06fe8e6a216b3509202244463dc4bd469c7e87950edb03810b6a0"
+    },
+    "bxml": {
+      "path": "D:\\神雕侠侣\\revival\\bxml.py",
+      "sha256": "ba61810a10fede4305075efd7120429fb165af90fdbb4fb94697862a30c8b66d"
+    },
+    "pfs": {
+      "path": "D:\\神雕侠侣\\revival\\pfs.py",
+      "sha256": "d4c9a5f6080276ab51886fdd4f1d7e7c1618715f870cbce84c916cf03b163352"
+    },
+    "native-image.bin": {
+      "path": "D:\\神雕侠侣\\revival\\evidence\\native-image.bin",
+      "sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791"
+    },
+    "config.pfs": {
+      "path": "D:\\神雕侠侣\\artres\\config.pfs",
+      "sha256": "eee475d5ffe7eecbde99abc119c2b9b8faa899489e2f7e13533a8de81f40d915"
+    }
+  },
+  "inputs_stable": true,
+  "native_gui_verified": false,
+  "live_server_changed": false
+}

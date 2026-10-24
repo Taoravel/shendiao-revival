@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="UserPeticon">
+    <Property Name="UnifiedAreaRect" Value="{{1,-289},{3.25963e-009,0},{0.99875,0},{3.25963e-009,68}}" />
+    <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    <Window Type="TaharezLook/StaticImage" Name="UserPeticon/userback">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,210},{0,7},{0,288},{0,52}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/RoleMpBar" Name="UserPeticon/blueBar">
+        <Property Name="StepSize" Value="0.01" />
+        <Property Name="CurrentProgress" Value="1" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0128205,0},{0,13},{0,72},{0,21}}" />
+      </Window>
+      <Window Type="TaharezLook/ProgressBarTwoValue" Name="UserPeticon/redBar">
+        <Property Name="Tooltip" Value="右键点击快速回复" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0128205,0},{0.0666667,0},{0,72},{0.0757246,8}}" />
+      </Window>
+      <Window Type="TaharezLook/RoleEXPBar" Name="UserPeticon/RoleExpBar">
+        <Property Name="StepSize" Value="0.01" />
+        <Property Name="CurrentProgress" Value="1" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0128205,0},{0.511111,0},{0.923077,0},{0.5,9}}" />
+      </Window>
+      <Window Type="TaharezLook/RoleAngerBar" Name="UserPeticon/complaintBar">
+        <Property Name="StepSize" Value="0.01" />
+        <Property Name="CurrentProgress" Value="1" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0128205,0},{0.733333,0},{0.923077,0},{0.766667,6}}" />
+        <Window Type="TaharezLook/StaticText" Name="UserPeticon/complaintBar/Num">
+          <Property Name="Font" Value="tahoma-9" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF000000" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.633803,0},{-0.75,0},{1.01408,0},{1.75,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="UserPeticon/petBack">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,78},{0,6},{0,142},{0,52}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/PetLoylityBar" Name="UserPeticon/loyaltyBar">
+        <Property Name="StepSize" Value="0.01" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="CurrentProgress" Value="1" />
+        <Property Name="UnifiedAreaRect" Value="{{0.015625,0},{0.73913,0},{0.0232759,55},{0.913043,0}}" />
+      </Window>
+      <Window Type="TaharezLook/PetExpBar" Name="UserPeticon/PExpBar">
+        <Property Name="StepSize" Value="0.01" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="CurrentProgress" Value="1" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0.5,0},{0.0389009,55},{0.505435,10}}" />
+      </Window>
+      <Window Type="TaharezLook/PetMpBar" Name="UserPeticon/PBlueBar">
+        <Property Name="StepSize" Value="0.01" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="CurrentProgress" Value="1" />
+        <Property Name="UnifiedAreaRect" Value="{{0.015625,0},{0.304348,0},{0.0210938,55},{0.275378,9}}" />
+      </Window>
+      <Window Type="TaharezLook/PetHpBar" Name="UserPeticon/PredBar">
+        <Property Name="StepSize" Value="0.01" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="CurrentProgress" Value="1" />
+        <Property Name="UnifiedAreaRect" Value="{{0.015625,0},{0.0652174,0},{0.0210938,55},{0.0757246,8}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="UserPeticon/UserBack">
+      <Property Name="Image" Value="set:MainControl image:UserBack" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,154},{0,72}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,154},{0,72}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,138},{0,-4},{0,292},{0,68}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/AnimationButton" Name="UserPeticon/userpoint">
+        <Property Name="ImageName" Value="AddPointCharacter" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="AnimationSpeed" Value="2" />
+        <Property Name="UnifiedMaxSize" Value="{{0,96},{0,53}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,96},{0,53}}" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,55},{0,312},{0,151},{0,365}}" />
+      </Window>
+      <Window Type="TaharezLook/AnimationButton" Name="UserPeticon/levelup">
+        <Property Name="ImageName" Value="LevelUp" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="AnimationSpeed" Value="2" />
+        <Property Name="UnifiedMaxSize" Value="{{0,96},{0,53}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,96},{0,53}}" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,58},{0,364},{0,154},{0,417}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="UserPeticon/UserBack/Level">
+        <Property Name="Font" Value="fzy4k-9" />
+        <Property Name="Text" Value="155" />
+        <Property Name="HorzExtent" Value="24" />
+        <Property Name="VertExtent" Value="14.0625" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF002569" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,65.5425},{0.787237,0},{0.05,92.5425},{0.781223,13.3459}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="UserPeticon/userHead">
+        <Property Name="Tooltip" Value="点击打开人物面板" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,68},{0,68}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ImageButton" Name="UserPeticon/userIcon">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:Head" />
+          <Property Name="NormalImage" Value="set:MainControl image:Head" />
+          <Property Name="PushedImage" Value="set:MainControl image:Head" />
+          <Property Name="UnifiedMaxSize" Value="{{0,62},{0,62}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,62},{0,62}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,62},{0,62}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="UserPeticon/UserBack/Medal">
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl28 image:MedalHover" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="NormalImage" Value="set:MainControl28 image:MedalNormal" />
+        <Property Name="PushedImage" Value="set:MainControl28 image:MedalPushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,50},{0,17}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,50},{0,17}}" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.62987,0},{0.771022,0},{0.961039,0},{0.979355,0}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="UserPeticon/PetBack">
+      <Property Name="Image" Value="set:MainControl image:PetBack" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,137},{0,74}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,137},{0,74}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,6},{0,-3},{0,143},{0,71}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/AnimationButton" Name="UserPeticon/petaddpoint">
+        <Property Name="ImageName" Value="AddPointPet" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="AnimationSpeed" Value="2" />
+        <Property Name="UnifiedMaxSize" Value="{{0,96},{0,53}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,96},{0,53}}" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,190},{0,417},{0,211},{0,437}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="UserPeticon/PetBack/Level">
+        <Property Name="Font" Value="fzy4k-9" />
+        <Property Name="Text" Value="155" />
+        <Property Name="HorzExtent" Value="24" />
+        <Property Name="VertExtent" Value="14.0625" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF002569" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.507731,0},{0.759459,0},{0.707731,0},{0.3,47}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="UserPeticon/PetHead">
+        <Property Name="Tooltip" Value="点击打开宠物面板" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,8.5},{0,7},{0,66.5},{0,67}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ImageButton" Name="UserPeticon/PetIcon">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:Head" />
+          <Property Name="NormalImage" Value="set:MainControl image:Head" />
+          <Property Name="PushedImage" Value="set:MainControl image:Head" />
+          <Property Name="UnifiedMaxSize" Value="{{0,62},{0,62}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,62},{0,62}}" />
+          <Property Name="UnifiedAreaRect" Value="{{-0.0172414,0},{-0.0166671,0},{0,61},{0,61}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="UserPeticon/PetBack/Xiake">
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="HoverImage" Value="set:MainControl26 image:XiakeHover" />
+        <Property Name="NormalImage" Value="set:MainControl26 image:XiakeNormal" />
+        <Property Name="PushedImage" Value="set:MainControl26 image:XiakePushed" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.664233,0},{0.743244,0},{1.0073,0},{0.972971,0}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="UserPeticon/UserBack/vip">
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:MainControl27 image:VipHover" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="NormalImage" Value="set:MainControl27 image:VipNormal" />
+      <Property Name="PushedImage" Value="set:MainControl27 image:VipPushed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,47},{0,24}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,47},{0,24}}" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,224},{0.05,68},{0.05,274},{0.05,85}}" />
+    </Window>
+  </Window>
+</GUILayout>

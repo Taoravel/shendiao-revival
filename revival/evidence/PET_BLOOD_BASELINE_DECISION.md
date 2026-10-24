@@ -1,0 +1,19 @@
+# 普通血脉基线与有效成长投影
+
+2026-10-23，本文记录元数据、明确历史导入和有效属性/潜能预算的基线阶段。后续36117消耗事务及带稳定命令上下文的原生Adapter已补，当前接线与验证以PET_BLOOD_ITEMS_INTEGRATION为准。来源及113例原消费者见PET_BLOOD_RESEARCH，规则唯一来源design/pet-blood-v1.json。奖励渠道和完整进阶、共享部署与实机仍待恢复；全量目标active。
+
+PetProgress新增末尾默认None的effective_profile和blood。profile仍为真实保存的基础资质及成长，BloodProgress冻结原能量版本、当前颜色、血脉等级、颜色等级上限、能量上限、额外潜能及政策。inventory_pet_blood只保存PetBlood(version,power)和政策，没有另一份可写当前资质。新恢复宠显式power0；旧宠缺行保持未知。initialize_pet_blood(db,pet_id,power)仅供可信完整普通血脉与已知BASE profile一次导入，不推断旧资质是否已经含加成，不重新治疗或重置旧行。
+
+客户端闭区间和颜色最大等级直接采用原表。当前设计以该颜色最大等级记录的upper bound作能量上限，白色3级1139，金色15级52611；初步probe中提供的566只是测试输入，不是原服封顶证据。基线保留完整原区间，封顶/溢出策略仍标designed。资质采用base+floor(base×原ratio)，用原十进制文本转精确有理数作整数取整；此服务端取整是designed，原包bookanswerconfig150确认资质当前值与最大值按强化比例提升，但未证服务端舍入。原生显示和battle最终效果仍须各自接入。
+
+真实可用潜能为自然成长5×经过等级+10×血脉等级−已分配点数；自然自动五维仍按原pet-growth-v1，不把血脉点当作已分配或自动五维。GrowthRules的bonus_potential显式参数限普通上限150；蜕变/其他加成另作政策。Inventory读取和change_pet_growth统一注入当前血脉与颜色，经验、加点、资源用药均以有效资质/当前预算计算；基础Profile不回写加成。旧未知血脉仍按原已知基础profile路径读取，不隐式补0；新血脉功能须先可信导入。
+
+成长凭据兼容原二元素[profile,state]；已知血脉新凭据增加第三项冻结BloodProgress。历史凭据按当时血脉/颜色和政策重建历史ack，不套后来血脉；当前通知继续重读当前状态。Pet原生编码将有效五资质写原字段，power/最大能量写bean+30/+34。原1160的旧“根骨”标签已纠正为悟性，独立已知traits存档见PET_TRAITS_INTEGRATION；蜕变及悟性概率尚未恢复，不据字段存在补造公式。
+
+verify_pet_blood实际red→green验证新宠已知0、原刷新与原等级显示；明确历史power200保留基础(1130,1235,960,657,1122)，有效资质为(1132,1237,961,658,1124)，增加10潜能而不读档治疗。随后已知血脉加点因旧writer未注入规则而红，统一effective投影和预算后可真正分配5点、历史ack稳定；再获200XP由原设计初始L0升L1余150XP，剩10潜能，血脉及基础Profile保留，重开一致。verify_pet_growth的独立原serializer补已知1139字段后全字节相等。其他成长/喂药/显示/技能/任务XP回归通过。
+
+定向官方查询仍未找到服务端舍入或完整封顶公式。原包还存在bookanswer36027的45级/不参战帮助，与36117.needLevel1、当前任务玩法“无等级限制”及原物品参战宠使用文本相冲突；因此按当前具体物品门禁选择1级是designed裁定，不能说整个客户端已证明没有45级限制。消费分支尚未启用，后续接线应继续记录冲突并按此政策或更新的主策划裁定执行。
+
+本批tdd沿既定Inventory事务/快照Seam实际使用，codebase-design集中基础与有效投影、单一潜能预算，writing-for-agents明确当前实现与后续缺口。已中止推进精华请求接线，先完成根急需的INVENTORY_RESOURCE_HOOK_INTEGRATION；没有将这一基线阶段重新定义成全量恢复完成。
+
+结构化基线验证为pet-blood-baseline-verification.json，另覆盖冻结状态、禁止reset/bool/颜色越界、原二元素历史成长凭据不补历史血脉和读取后不叠乘。精华请求首次测试因Interface缺失而红后，按根插入的共享接线优先级暂缓该纵切；未加入假消耗或将测试放宽为通过。当前验证只覆盖实际已实现的基线及原有成长Interface。

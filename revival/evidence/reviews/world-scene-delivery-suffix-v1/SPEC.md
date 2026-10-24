@@ -1,0 +1,7 @@
+# 有界共享修正候选需求
+修复实际私有场景批次在首条容量拒绝并清理暂停时被取消，未offer后缀无人清理而遗留ticket/pin的问题。ConnectionOwner.receive、run tick及_send scene_sent后回复三处都适用。
+保留当前项由offer_message/queue接管的所有权，只对尚未offer后缀建立终止清理；已入队消息不得提前finish。取消观察者不等于真实地图操作终止，所有pin到实际terminal才释放，未知结果继续fenced。
+保留receive逐barrier递增scene_generation、原连接RC4/MPPC顺序、容量/错误行为，不改协议/玩法/政策或全局串行化。
+先实际三路径正常/取消6组红反馈，再在同一私有完整静态snapshot只改GameRuntime批次helper和3caller，6组绿及现有10组terminal实际Owner/加密/存储fixture回归；准确区分真正执行与身份/catalog/dispatch/Reader/Writer/初始private位置fixtures。
+补丁/原与候选hash/静态import闭包/回归结果绑定固定base；不改shared源码、部署、服务或GUI。脚本必须能准确红，不能仅无崩溃或依赖另一个pin遮蔽。
+维护清理异常恢复另属缺口，不在这条suffix修正里自加默认恢复协议；静态事实不能称动态已验。文档应写清真实未完成范围，不以本纵切宣称全量恢复。

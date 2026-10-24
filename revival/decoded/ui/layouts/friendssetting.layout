@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="FriendsSetting">
+    <Property Name="Font" Value="msyh-16" />
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.271875,0},{0.271667,0},{0.271875,365},{0.271667,274}}" />
+    <Window Type="TaharezLook/TabControl" Name="FriendsSetting/FriendsSetting">
+      <Property Name="TabHeight" Value="{0,18}" />
+      <Property Name="TabPanePosition" Value="Top" />
+      <Property Name="UnifiedAreaRect" Value="{{0,16},{0,41},{0,346},{0,230}}" />
+      <Window Type="DefaultWindow" Name="FriendsSetting/FriendsSetting/BasicSetting">
+        <Property Name="Text" Value="基本设置" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,335},{0,175}}" />
+        <Window Type="TaharezLook/CommonCase" Name="FriendsSetting/FriendsSetting/BasicSetting/Back">
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,330},{0,170}}" />
+          <Window Type="TaharezLook/Checkbox" Name="FriendsSetting/FriendsSetting/BasicSetting/OnlyShowForFriend">
+            <Property Name="Text" Value="个人信息仅对好友可见" />
+            <Property Name="UnifiedAreaRect" Value="{{0,27},{0,22},{0,227},{0,44}}" />
+          </Window>
+          <Window Type="TaharezLook/Checkbox" Name="FriendsSetting/FriendsSetting/BasicSetting/Strange">
+            <Property Name="Text" Value="拒绝陌生人信息" />
+            <Property Name="UnifiedAreaRect" Value="{{0,27},{0,56},{0,227},{0,78}}" />
+          </Window>
+          <Window Type="TaharezLook/Checkbox" Name="FriendsSetting/FriendsSetting/BasicSetting/Strangerchat">
+            <Property Name="Text" Value="好友上线通知" />
+            <Property Name="UnifiedAreaRect" Value="{{0,27},{0,90},{0,227},{0,112}}" />
+          </Window>
+          <Window Type="TaharezLook/Checkbox" Name="FriendsSetting/FriendsSetting/BasicSetting/CloseChatWindows">
+            <Property Name="Text" Value="发送后自动关闭聊天窗口" />
+            <Property Name="UnifiedAreaRect" Value="{{0,27},{0,124},{0,227},{0,146}}" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="FriendsSetting/FriendsSetting/GroupSetting">
+        <Property Name="Text" Value="分组设置" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,335},{0,175}}" />
+        <Window Type="TaharezLook/CommonCase" Name="FriendsSetting/FriendsSetting/GroupSetting/Back">
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,330},{0,170}}" />
+          <Window Type="TaharezLook/StaticText" Name="FriendsSetting/FriendsSetting/GroupSetting/ChangeGroupsNum">
+            <Property Name="Text" Value="增加/删除好友分组" />
+            <Property Name="HorzExtent" Value="111" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,13},{0,7},{0,145},{0,29}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="FriendsSetting/FriendsSetting/GroupSetting/AddGroup">
+            <Property Name="Text" Value="增加分组" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,39},{0,32},{0,93},{0,54}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Editbox" Name="FriendsSetting/FriendsSetting/GroupSetting/NewGroupName">
+            <Property Name="BlinkCaret" Value="True" />
+            <Property Name="MaxTextLength" Value="2147483647" />
+            <Property Name="UnifiedAreaRect" Value="{{0,95},{0,32},{0,215},{0,55}}" />
+            <Property Name="TextParsingEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/LittleButton" Name="FriendsSetting/FriendsSetting/GroupSetting/AddGroupOK">
+            <Property Name="Text" Value="增加" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,239.949},{0,32},{0,325.949},{0,54}}" />
+            <Property Name="NormalTextColour" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFB08945 br:FFB08945" />
+            <Property Name="ButtonBorderColour" Value="FF002B65" />
+            <Property Name="ButtonBorderEnable" Value="True" />
+            <Property Name="ButtonDefaultBorderEnable" Value="False" />
+            <Property Name="ButtonDefaultColourEnable" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="FriendsSetting/FriendsSetting/GroupSetting/DelGroup">
+            <Property Name="Text" Value="删除分组" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,39},{0,57},{0,93},{0,79}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/LittleButton" Name="FriendsSetting/FriendsSetting/GroupSetting/DelGroupOK">
+            <Property Name="Text" Value="删除" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,239.949},{0,57},{0,325.949},{0,79}}" />
+            <Property Name="NormalTextColour" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFB08945 br:FFB08945" />
+            <Property Name="ButtonBorderColour" Value="FF002B65" />
+            <Property Name="ButtonBorderEnable" Value="True" />
+            <Property Name="ButtonDefaultBorderEnable" Value="False" />
+            <Property Name="ButtonDefaultColourEnable" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Combobox" Name="FriendsSetting/FriendsSetting/GroupSetting/DelGroupName">
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,95},{0,57},{0,233},{0,169}}" />
+            <Property Name="MaxEditTextLength" Value="2147483647" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="FriendsSetting/FriendsSetting/GroupSetting/ReNameGroup">
+            <Property Name="Text" Value="重命名分组" />
+            <Property Name="HorzExtent" Value="65" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,12},{0,82},{0,83},{0,104}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="FriendsSetting/FriendsSetting/GroupSetting/SelectGroup">
+            <Property Name="Text" Value="选择分组" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,39},{0,107},{0,93},{0,129}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Combobox" Name="FriendsSetting/FriendsSetting/GroupSetting/SelectGroupName">
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,95},{0,107},{0,233},{0,211}}" />
+            <Property Name="MaxEditTextLength" Value="2147483647" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="FriendsSetting/FriendsSetting/GroupSetting/ReName">
+            <Property Name="Text" Value="重命名为" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,39},{0,132},{0,93},{0,154}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Editbox" Name="FriendsSetting/FriendsSetting/GroupSetting/NewName">
+            <Property Name="BlinkCaret" Value="True" />
+            <Property Name="MaxTextLength" Value="2147483647" />
+            <Property Name="UnifiedAreaRect" Value="{{0,95},{0,132},{0,215},{0,156}}" />
+            <Property Name="TextParsingEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/LittleButton" Name="FriendsSetting/FriendsSetting/GroupSetting/Change">
+            <Property Name="Text" Value="修改" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,239.949},{0,133},{0,325.949},{0,155}}" />
+            <Property Name="NormalTextColour" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFB08945 br:FFB08945" />
+            <Property Name="ButtonBorderColour" Value="FF002B65" />
+            <Property Name="ButtonBorderEnable" Value="True" />
+            <Property Name="ButtonDefaultBorderEnable" Value="False" />
+            <Property Name="ButtonDefaultColourEnable" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="FriendsSetting/FriendsSetting/Authentication">
+        <Property Name="Text" Value="身份验证" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,335},{0,175}}" />
+        <Window Type="TaharezLook/CommonCase" Name="FriendsSetting/FriendsSetting/Authentication/Back">
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,330},{0,170}}" />
+          <Window Type="TaharezLook/StaticText" Name="FriendsSetting/FriendsSetting/Authentication/antidisturb">
+            <Property Name="Text" Value="防打扰" />
+            <Property Name="HorzExtent" Value="40" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,14},{0,7},{0,143},{0,29}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+          </Window>
+          <Window Type="TaharezLook/Checkbox" Name="FriendsSetting/FriendsSetting/Authentication/OnlySearchByID">
+            <Property Name="Text" Value="只能通过ID找到我" />
+            <Property Name="UnifiedAreaRect" Value="{{0,27},{0,32},{0,166},{0,54}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="FriendsSetting/FriendsSetting/Authentication/FriendsConfirm">
+            <Property Name="Text" Value="好友认证" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,14},{0,57},{0,143},{0,79}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+          </Window>
+          <Window Type="TaharezLook/RadioButton" Name="FriendsSetting/FriendsSetting/Authentication/NoConfirm">
+            <Property Name="Text" Value="允许任何人加我为好友" />
+            <Property Name="UnifiedAreaRect" Value="{{0,27},{0,82},{0,245},{0,104}}" />
+          </Window>
+          <Window Type="TaharezLook/RadioButton" Name="FriendsSetting/FriendsSetting/Authentication/WantConfirm">
+            <Property Name="Text" Value="需要验证才能加我为好友" />
+            <Property Name="UnifiedAreaRect" Value="{{0,27},{0,107},{0,245},{0,129}}" />
+          </Window>
+          <Window Type="TaharezLook/RadioButton" Name="FriendsSetting/FriendsSetting/Authentication/NotConfirm">
+            <Property Name="Text" Value="不允许任何人加我为好友" />
+            <Property Name="UnifiedAreaRect" Value="{{0,27},{0,132},{0,245},{0,154}}" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="FriendsSetting/FriendsSetting/OtherSetting">
+        <Property Name="Text" Value="其他设置" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,335},{0,175}}" />
+        <Window Type="TaharezLook/CommonCase" Name="FriendsSetting/FriendsSetting/OtherSetting/Back">
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,330},{0,170}}" />
+          <Window Type="TaharezLook/StaticText" Name="FriendsSetting/FriendsSetting/OtherSetting/AutoResponse">
+            <Property Name="Text" Value="自动回复" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,14},{0,13},{0,71},{0,33}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+          </Window>
+          <Window Type="TaharezLook/Checkbox" Name="FriendsSetting/FriendsSetting/OtherSetting/CloseMusic">
+            <Property Name="Text" Value="关闭信息提示音" />
+            <Property Name="UnifiedAreaRect" Value="{{0,91.8272},{0,145},{0,212.827},{0,165}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="FriendsSetting/FriendsSetting/OtherSetting/AutoResponse1">
+            <Property Name="Text" Value="回复内容" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,14},{0,37},{0,71},{0,57}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="FriendsSetting/FriendsSetting/OtherSetting/Music">
+            <Property Name="Text" Value="信息提示音" />
+            <Property Name="HorzExtent" Value="65" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,14},{0,145},{0,84},{0,165}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+          </Window>
+          <Window Type="TaharezLook/Checkbox" Name="FriendsSetting/FriendsSetting/OtherSetting/OpenAuto">
+            <Property Name="Text" Value="开启自动回复" />
+            <Property Name="UnifiedAreaRect" Value="{{0,91.8272},{0,13},{0,200.827},{0,33}}" />
+          </Window>
+          <Window Type="TaharezLook/CommonCaseFigure1" Name="FriendsSetting/FriendsSetting/OtherSetting/Back/Infoback">
+            <Property Name="UnifiedAreaRect" Value="{{0.214447,0},{0.222413,0},{0.981114,0},{0.828295,0}}" />
+            <Window Type="TaharezLook/RichEditbox" Name="FriendsSetting/FriendsSetting/OtherSetting/AutoContent">
+              <Property Name="LineSpace" Value="1" />
+              <Property Name="BlinkCaret" Value="True" />
+              <Property Name="MaxTextLength" Value="2147483647" />
+              <Property Name="UnifiedAreaRect" Value="{{0,4.056},{0,4},{0,253.056},{0,98}}" />
+              <Property Name="BackGroundEnable" Value="False" />
+              <Property Name="BlinkCaretTimeout" Value="0.5" />
+              <Property Name="TextParsingEnabled" Value="False" />
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="FriendsSetting/OK">
+      <Property Name="Text" Value="确   定" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,47.5001},{0,233},{0,115.5},{0,257}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="FriendsSetting/Cancel">
+      <Property Name="Text" Value="取   消" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,147.5},{0,233},{0,215.5},{0,257}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="FriendsSetting/Application">
+      <Property Name="Text" Value="应   用" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,241.5},{0,233},{0,309.5},{0,257}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="FriendsSetting/title/name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="好友设置" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="68" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,-45.8},{0.0463504,0},{0.05,39.2},{0.05,22}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+  </Window>
+</GUILayout>

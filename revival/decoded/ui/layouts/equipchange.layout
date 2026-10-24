@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="EquipChange">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="SpecialOpen.ogg" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,410},{0,110},{0,756},{0,454}}" />
+    <Property Name="CloseSoundResource" Value="blank.ogg" />
+    <Window Type="TaharezLook/Checkbox" Name="EquipChange/back/Display">
+      <Property Name="Text" Value="显示提醒" />
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,39},{0,99},{0,61}}" />
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="EquipChange/back/New">
+      <Property Name="UnifiedAreaRect" Value="{{0.0508277,0},{0.187,0},{0.0488511,308.25},{0.182232,126.827}}" />
+      <Window Type="TaharezLook/ItemCell" Name="EquipChange/back/Item0">
+        <Property Name="UnifiedAreaRect" Value="{{0,32},{0.140656,0},{0,80},{0.140656,48}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="EquipChange/back/Item1">
+        <Property Name="UnifiedAreaRect" Value="{{0,128},{0.140656,0},{0,176},{0.140656,48}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="EquipChange/back/Item2">
+        <Property Name="UnifiedAreaRect" Value="{{0,224},{0.140656,0},{0,272},{0.140656,48}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="EquipChange/back/Item3">
+        <Property Name="UnifiedAreaRect" Value="{{1.08702,0},{0.139214,0},{1.08702,48},{0.139214,48}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipChange/back/Name0">
+        <Property Name="Font" Value="fzy4k-9" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0214848,0},{0.213845,41.3962},{0.0548679,89.2011},{0.213845,61.3962}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipChange/back/Name1">
+        <Property Name="Font" Value="fzy4k-9" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,98},{0.213845,41.3962},{0,206.751},{0.213845,61.3962}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipChange/back/Name2">
+        <Property Name="Font" Value="fzy4k-9" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,194},{0.213845,41.3962},{0,302.752},{0.213845,61.3962}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipChange/back/Name3">
+        <Property Name="Font" Value="fzy4k-9" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,296},{0.175421,47.1648},{0,418.777},{0.175421,67.1648}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Figure1" Name="EquipChange/back/New/Title">
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.414285,0},{0,-19},{0.902487,0},{0,0}}" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Window Type="TaharezLook/StaticText" Name="EquipChange/back/New/Title/Name">
+          <Property Name="Text" Value="新获得的装备" />
+          <Property Name="HorzExtent" Value="79" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003679" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.400685,0},{0,0},{1.06735,0},{0,20}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Button" Name="EquipChange/Wear0">
+        <Property Name="Text" Value="装备它" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0,22},{0.213845,68.3962},{0,90},{0.213845,92.3962}}" />
+        <Property Name="NormalTextColour" Value="ffffffff" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="EquipChange/Wear1">
+        <Property Name="Text" Value="装备它" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0,118},{0.213845,68.3962},{0,186},{0.213845,92.3962}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="EquipChange/Wear2">
+        <Property Name="Text" Value="装备它" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0,214},{0.213845,68.3962},{0,282},{0.213845,92.3962}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="EquipChange/Wear3">
+        <Property Name="Text" Value="装备它" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.188534,266.011},{0.273629,59.7389},{0.188534,336.011},{0.273629,81.7389}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="EquipChange/back/Back2">
+      <Property Name="UnifiedAreaRect" Value="{{0.0508277,0},{0,208},{0.0488511,308.25},{0,325}}" />
+      <Window Type="TaharezLook/Figure1" Name="EquipChange/back/Back2/Title">
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.399277,0},{0,-18},{0.796348,0},{0.00854701,0}}" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Window Type="TaharezLook/StaticText" Name="EquipChange/back/Back2/Title/name">
+          <Property Name="Text" Value="人物属性" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003679" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.302521,0},{0,0},{0.835308,0},{0,20}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipChange/back/Life">
+        <Property Name="Text" Value="生 命" />
+        <Property Name="HorzExtent" Value="29" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,63},{0,25.7478}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipChange/back/True">
+        <Property Name="Text" Value="真 气" />
+        <Property Name="HorzExtent" Value="30" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,26.7478},{0,63},{0,46.7478}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipChange/back/Hit">
+        <Property Name="Text" Value="命 中" />
+        <Property Name="HorzExtent" Value="29" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,47.7478},{0,63},{0,67.7478}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipChange/back/Trau">
+        <Property Name="Text" Value="外功伤害" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,145},{0,6},{0,202},{0,26}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipChange/back/Inter">
+        <Property Name="Text" Value="内功伤害" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,145},{0.026716,45.0951},{0,202},{0.026716,65.0951}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipChange/back/Defense">
+        <Property Name="Text" Value="外功防御" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,145},{0.026716,24.0951},{0,202},{0.026716,44.0951}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipChange/back/Indefense">
+        <Property Name="Text" Value="内功防御" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,145},{0.026716,66.0951},{0,202},{0.026716,86.0951}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipChange/back/Speed">
+        <Property Name="Text" Value="速 度" />
+        <Property Name="HorzExtent" Value="29" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,68.7478},{0,63},{0,88.7478}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipChange/back/Back2/Current">
+        <Property Name="Text" Value="当前装备评分：" />
+        <Property Name="HorzExtent" Value="91" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,7},{0,95},{0,98},{0,115}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipChange/back/Back2/Current1">
+        <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,99},{0,95},{0.230608,99.4374},{0,115}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipChange/back/1">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="UnifiedAreaRect" Value="{{0,40},{0,6},{0,140},{0,26}}" />
+        <Window Type="TaharezLook/StaticImage" Name="EquipChange/back/1/Arrow">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.87,0},{0.189999,0},{0.87,10},{0.4,11.9036}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipChange/back/2">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="UnifiedAreaRect" Value="{{0,40},{0.026716,24.0951},{0,140},{0.026716,44.0951}}" />
+        <Window Type="TaharezLook/StaticImage" Name="EquipChange/back/2/Arrow">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,87},{0,4},{0,97},{0,14}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipChange/back/3">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="UnifiedAreaRect" Value="{{0,40},{0.026716,45.0951},{0,140},{0.026716,65.0951}}" />
+        <Window Type="TaharezLook/StaticImage" Name="EquipChange/back/3/Arrow">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,87},{0,4},{0,97},{0,14}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipChange/back/4">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="UnifiedAreaRect" Value="{{0,40},{0.026716,66.0951},{0,140},{0.026716,86.0951}}" />
+        <Window Type="TaharezLook/StaticImage" Name="EquipChange/back/4/Arrow">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,87},{0,4},{0,97},{0,14}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipChange/back/5">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="UnifiedAreaRect" Value="{{0,202},{0,6},{0,302},{0,26}}" />
+        <Window Type="TaharezLook/StaticImage" Name="EquipChange/back/5/Arrow">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,87},{0,4},{0,97},{0,14}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipChange/back/6">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="UnifiedAreaRect" Value="{{0,202},{0.026716,24.0951},{0,302},{0.026716,44.0951}}" />
+        <Window Type="TaharezLook/StaticImage" Name="EquipChange/back/6/Arrow">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,87},{0,4},{0,97},{0,14}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipChange/back/7">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="UnifiedAreaRect" Value="{{0,202},{0.026716,45.0951},{0,302},{0.026716,65.0951}}" />
+        <Window Type="TaharezLook/StaticImage" Name="EquipChange/back/7/Arrow">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,87},{0,4},{0,97},{0,14}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipChange/back/8">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="UnifiedAreaRect" Value="{{0,202},{0.026716,66.0951},{0,302},{0.026716,86.0951}}" />
+        <Window Type="TaharezLook/StaticImage" Name="EquipChange/back/8/Arrow">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,87},{0,4},{0,97},{0,14}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="EquipChange/back/8/AddArrow">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.230608,100.146},{0,95},{0.230608,119.146},{0,118}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="EquipChange/Title/Name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="赶快换上新装备吧！" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="153" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,26.7},{0,13},{0.05,202.7},{0,36}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+  </Window>
+</GUILayout>

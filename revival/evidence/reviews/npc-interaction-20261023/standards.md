@@ -1,0 +1,11 @@
+# Standards
+
+硬规则违背0项；Fowler判断性问题0项。
+
+按已读code-review、codebase-design、tdd审查manifest固定四文件增量，依据AGENTS、ARCHITECTURE、DESIGN_AUTHORITY及本目录距离裁定。完整12项Fowler baseline均检查，未发现值得报告的问题；不重复根政策或共享入口审查。
+
+规则启动读取后冻结，Scene与Lifecycle调用同一radius_for，三重身份例外不扩大其它摆放权限；原显式32和二元资源tuple兼容。控制快照只含不可变当前状态，没有暴露可变所有者或新增热I/O。距离变化仍经过既有位置、状态及实体检查。
+
+八个原始字节哈希匹配。current优先导入执行固定verify_npc_interaction_rules，八组通过；必要verify_world_npcs与verify_npc_lifecycle回归通过，含原生存在性编码及不可变快照检查。结果写当前workspace证据，未修改冻结current。
+
+未修改生产、shared、政策、真实数据库或服务。未验证共享注入、自然任务流程转绿、发布、GUI及商业容量；本领域检查不证明这些事项完成。

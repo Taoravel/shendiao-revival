@@ -1,0 +1,37 @@
+# 地图NPC生命周期首批接线裁定
+
+2026-10-23，root主策划。按ARCHITECTURE及NPC_LIFECYCLE_INTEGRATION接共享MapOwner之前读本文；参数单一来源design/npc-lifecycle-v1.json。政策只授权首批源码接线/隔离验证，不纳入当前master-ready-exit五文件发布，也不启用未恢复活动。共享仍由主集成写，NPC所属Module由NPC窗口写。
+
+## 已知规模与设计预算
+
+root独立读取实际load_placements快照并按valid_position和原生非负signed16坐标筛选：3443条均有效，304张地图记录中285张非空、19张空；单图最大临安1007共196条。最初把304称为“有摆放地图”过宽，已按实数纠正，证据npc-lifecycle-capacity-source.json。
+
+设计每个MapAddress/generation的binding_capacity=512、receipt_capacity=4096、interaction_radius=32、snapshot batch_size=64，均为designed本地有界预算，不是原服数值或已测商业容量。512包括原静态binding和动态活跃实体，不另外绕开预算；满载在变更前拒绝，保留原可信请求供协调重试。4096只保证该Owner内有界幂等窗口，淘汰后仍用原generation/revision/deadline拒绝旧意图，不能给同ID重新填新版本伪装重试。
+
+generation直接采用所属MapOwner当前generation，Owner重建就换代；不是角色epoch、地图ID或墙钟。同图不同实例/分区各有自己的生命周期/邮箱/预算，不能把NPC集中放进全服单线程或一把世界锁。
+
+## 首个真实控制Seam
+
+首批用NpcLifecycle替换原静态NpcScene，但bootstrap仅保留已有明确服务/NPC绑定。原7592景物仍由原客户端景物系统管理，不能因原表有一行就全部创建服务端实体。motion_rules/maze不注入，运动/巡逻及2015固定演出不自动启用。
+
+地图邮箱提供两个仅服务端可信操作：npc_state返回冻结控制快照（完整address、generation、revision、next_entity_key及当前presence tuple）；npc_change接受已有冻结NpcLifecycleCommand，允许spawn/remove，返回冻结NpcChange及投递所需的冻结当前接收者信息。快照类型放NPC Module或已有地图命令类型处，调用者不得取得可变NpcLifecycle/MapOwner对象。
+
+首批唯一控制source_ref为政策给出的`root-lifecycle-control:2026-10-23.npc-lifecycle.1`，仅进程内编排/隔离验证持有该能力；没有客户端网络type、公开后台或按source字符串自授权的入口。来源验证在实际可信路由完成，CVisitNpc/CNpcService/对白/菜单请求不构成spawn/remove权限。
+
+后续任务/活动/明雷各以其已有内容Owner的真实已提交事件注册独立渠道，稳定事件身份作为request_id/source_ref来源，仍带精确map-control快照。注册某个渠道前先交其内容政策、真实触发与回放证明；不能仅匹配`task:`字符串就授权所有任务。个人剧情实体必须进入个人实例或已实现的个人可见投影，不向共享地图广播一个角色的剧情状态。本批先证明可用的控制和投递Seam，不将它写成全部动态NPC玩法已恢复。
+
+## 交互与逻辑投递
+
+MapOwner内执行apply并取得当前接收者冻结快照后退出邮箱；跨Owner投递在外部有界编排完成，不让地图邮箱持有自己队列等待角色/连接响应。仅投逻辑消息，经目标ConnectionOwner原有背压和编码顺序发送。
+
+出队到实际发送间须校验完整MapAddress、地图generation、成员/场景身份、角色epoch和连接generation。角色同一连接可换图，只有epoch/connection相同仍不够；旧图延迟spawn/remove不得改变新图。已有移动版本不应直接冒充稳定成员身份，具体当前场景围栏由集成窗口据实际Interface实现并给出故障反馈。
+
+登录/重连/场景重新加入使用lifecycle.snapshot当前presence，不能继续缓存最初spawn_packets而复活已remove实体。旧entity_key不复用。旧menu/ticket只是待提交授权：新服务/对白/卡/车夫命令受理时，必须用当前NpcLifecycle.interact对该entity_key重新证明存在、位置和距离；已经进入可靠资产结算的已受理命令按既有合同提交/重放，不因之后remove撤销已付结果。
+
+## 完成判据
+
+NPC窗口在实际MapOwner/Peer公开Seam写红例，由主集成最小接线后转绿：移除原NPC立即拒绝新访问/旧待提交菜单；重连快照不复活；原定义新key出现可访；旧spawn重放不复活后来已删实体；错source/generation/revision、容量与部分批失败在变更前拒绝；另一地图/实例继续推进。再以实际场景切换/延迟投递反馈证明旧图消息被挡，不只查代码字段。
+
+原静态NPC菜单/师父/车夫/仓库必要兼容检查保留，当前五文件候选及人类存档不改。全部临时库/内存连接/离线原codec，无GUI、实际战斗或自动发布。未完成这些判据前只记录领域Module已交，不称运行时生命周期已开放。
+
+方法：codebase-design只使用已存在NpcLifecycle和真实MapOwner Seam，预算按当前constructor实需给出，不加泛用调度器；writing-for-agents将来源授权、预算、投递围栏及完成判据共置；research原摆放数量由当前原目录/坐标过滤复核，不把本地容量选择写成原服事实。

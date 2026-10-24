@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="GUILayout" type="GUILayoutType" />
+  <xs:complexType name="GUILayoutType">
+    <xs:sequence>
+      <xs:element name="Window" type="WindowType" />
+    </xs:sequence>
+    <xs:attribute name="Parent" type="xsd:string" use="optional" default="" />
+  </xs:complexType>
+  <xs:complexType name="WindowType">
+    <xs:sequence>
+      <xs:element name="LayoutImport" type="LayoutImportType" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="Property" type="PropertyType" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="Event" type="EventType" minOccurs="0" maxOccurs="unbounded" />
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Window" type="WindowType" />
+        <xs:element name="AutoWindow" type="AutoWindowType" />
+      </xs:choice>
+      <xs:element name="Property" type="PropertyType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="Type" type="xsd:string" use="required" />
+    <xs:attribute name="Name" type="xsd:string" use="optional" default="" />
+  </xs:complexType>
+  <xs:complexType name="AutoWindowType">
+    <xs:sequence>
+      <xs:element name="LayoutImport" type="LayoutImportType" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="Property" type="PropertyType" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="Event" type="EventType" minOccurs="0" maxOccurs="unbounded" />
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Window" type="WindowType" />
+        <xs:element name="AutoWindow" type="AutoWindowType" />
+      </xs:choice>
+      <xs:element name="Property" type="PropertyType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="NameSuffix" type="xsd:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="PropertyType">
+    <xs:simpleContent>
+      <xs:extension base="xsd:string">
+        <xs:attribute name="Name" type="xsd:string" use="required" />
+        <xs:attribute name="Value" type="xsd:string" use="optional" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="LayoutImportType">
+    <xs:attribute name="Filename" type="xsd:string" use="required" />
+    <xs:attribute name="Prefix" type="xsd:string" use="optional" default="" />
+    <xs:attribute name="ResourceGroup" type="xsd:string" use="optional" default="" />
+  </xs:complexType>
+  <xs:complexType name="EventType">
+    <xs:attribute name="Name" type="xsd:string" use="required" />
+    <xs:attribute name="Function" type="xsd:string" use="required" />
+  </xs:complexType>
+</xs:schema>

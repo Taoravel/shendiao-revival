@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/CommonBox" Name="BattleAutoDlg">
+    <Property Name="DragMoveEnable" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.5,-95},{1,-245},{0.5,113},{1,-110}}" />
+    <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    <Window Type="TaharezLook/StaticText" Name="BattleAutoDlg/Text">
+      <Property Name="Text" Value="当前剩余        回合" />
+      <Property Name="HorzExtent" Value="102" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF5CCFFF tr:FF5CCFFF bl:FF5CCFFF br:FF5CCFFF" />
+      <Property Name="BorderColour" Value="FF003679" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,35},{0.05,26},{0.05,211},{0.05,46}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="BattleAutoDlg/Text/round">
+        <Property Name="Text" Value="25" />
+        <Property Name="HorzExtent" Value="16" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFF9AF1F tr:FFF9AF1F bl:FFF9AF1F br:FFF9AF1F" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,87},{0,0},{0,114},{0,20}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="BattleAutoDlg/CurrentCommand">
+      <Property Name="Text" Value="普通攻击" />
+      <Property Name="HorzExtent" Value="52" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFF9AF1F tr:FFF9AF1F bl:FFF9AF1F br:FFF9AF1F" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,54},{0.05,47},{0,192},{0.05,67}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="BattleAutoDlg/CurrentCommand1">
+      <Property Name="Text" Value="按ALT+1打开/关闭自动战斗" />
+      <Property Name="HorzExtent" Value="163" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFF9AF1F tr:FFF9AF1F bl:FFF9AF1F br:FFF9AF1F" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,19},{0.05,68},{0,194},{0.05,88}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="BattleAutoDlg/commandtext">
+      <Property Name="Text" Value="指令：" />
+      <Property Name="HorzExtent" Value="39" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFF9AF1F tr:FFF9AF1F bl:FFF9AF1F br:FFF9AF1F" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,19},{0.05,47},{0,56},{0.05,67}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="BattleAutoDlg/Cancel">
+      <Property Name="Text" Value="取   消" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,66},{0,97},{0,134},{0,121}}" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="BattleAutoDlg/title/name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="自动战斗" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="68" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,37},{0.05,5},{0.05,120},{0.05,28}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+  </Window>
+</GUILayout>

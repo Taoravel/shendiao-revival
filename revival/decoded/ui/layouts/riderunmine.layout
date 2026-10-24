@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="RideRunMine">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.17875,0},{0.281699,0},{0.80875,0},{0.693561,0}}" />
+    <Window Type="TaharezLook/StaticText" Name="RideRunMine/Title">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="个人投注查看" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="102" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.380952,0},{0.0607287,0},{0.597222,0},{0.1417,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/MultiColumnList" Name="RideRunMine/PersonalInfo/list">
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,45},{0,484},{0,204}}" />
+      <Property Name="ColumnHeader" Value="text:角色名 width:{0.3,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:当前坐骑 width:{0.15,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:历史胜率 width:{0.15,0} id:2" />
+      <Property Name="ColumnHeader" Value="text:当前赔率 width:{0.15,0} id:3" />
+      <Property Name="ColumnHeader" Value="text:已投注数 width:{0.14,0} id:4" />
+      <Property Name="ColumnHeader" Value="text:押注 width:{1,-413} id:5" />
+      <Window Type="TaharezLook/LittleButton" Name="RideRunMine/PersonalInfo/list/OK1">
+        <Property Name="Text" Value="再投" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.890558,0},{0.157232,0},{0.995708,0},{0.157232,18}}" />
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="RideRunMine/PersonalInfo/list/OK2">
+        <Property Name="Text" Value="再投" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.890558,0},{0.157232,19},{0.995708,0},{0.157232,37}}" />
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="RideRunMine/PersonalInfo/list/OK3">
+        <Property Name="Text" Value="再投" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.890558,0},{0.157232,38},{0.995708,0},{0.157232,56}}" />
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="RideRunMine/PersonalInfo/list/OK4">
+        <Property Name="Text" Value="再投" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.890558,0},{0.157232,57},{0.995708,0},{0.157232,75}}" />
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="RideRunMine/PersonalInfo/list/OK5">
+        <Property Name="Text" Value="再投" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.890558,0},{0.157232,76},{0.995708,0},{0.157232,94}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="RideRunMine/Reward">
+      <Property Name="Text" Value="领取奖励" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.410714,0},{0.825911,0},{0.59127,0},{0.817814,26}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="RideRunMine/Horse">
+      <Property Name="Image" Value="set:MainControl22 image:ridetitle" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,170},{0,52}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,170},{0,52}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.015873,0},{-0.0121457,0},{0.353175,0},{0.198381,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+  </Window>
+</GUILayout>

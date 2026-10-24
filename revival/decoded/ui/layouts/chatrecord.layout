@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="ChatRecord">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.2225,0},{0.19915,0},{0.2225,444},{0.750196,0}}" />
+    <Window Type="TaharezLook/StaticText" Name="ChatRecord/Back">
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0315315,0},{0.118694,0},{0.252252,0},{0.908012,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/Button" Name="ChatRecord/Back/Export">
+        <Property Name="Text" Value="导出记录" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="click.ogg" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0306122,0},{0.0150376,0},{0.0408217,71},{0.00909066,26}}" />
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="ChatRecord/Back/Current">
+        <Property Name="Text" Value="当前" />
+        <Property Name="UnifiedAreaRect" Value="{{0.132653,0},{0.0580069,16},{-0.0768103,79},{0.0580069,38}}" />
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="ChatRecord/Back/Team">
+        <Property Name="Text" Value="队伍" />
+        <Property Name="UnifiedAreaRect" Value="{{0.132653,0},{0.0580069,41},{-0.0768103,79},{0.0580069,63}}" />
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="ChatRecord/Back/Family">
+        <Property Name="Text" Value="家族" />
+        <Property Name="UnifiedAreaRect" Value="{{0.132653,0},{0.0580069,66},{-0.0768103,79},{0.0580069,88}}" />
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="ChatRecord/Back/Gang">
+        <Property Name="Text" Value="帮派" />
+        <Property Name="UnifiedAreaRect" Value="{{0.132653,0},{0.0580069,91},{-0.0768103,79},{0.0580069,113}}" />
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="ChatRecord/Back/World">
+        <Property Name="Text" Value="世界" />
+        <Property Name="UnifiedAreaRect" Value="{{0.132653,0},{0.0580069,116},{-0.0768103,79},{0.0580069,138}}" />
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="ChatRecord/Back/Master">
+        <Property Name="Text" Value="门派" />
+        <Property Name="UnifiedAreaRect" Value="{{0.132653,0},{0.0580069,141},{-0.0768103,79},{0.0580069,163}}" />
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="ChatRecord/Back/System">
+        <Property Name="Text" Value="系统" />
+        <Property Name="UnifiedAreaRect" Value="{{0.132653,0},{0.0580069,166},{-0.0768103,79},{0.0580069,188}}" />
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="ChatRecord/Back/New">
+        <Property Name="Text" Value="消息" />
+        <Property Name="UnifiedAreaRect" Value="{{0.132653,0},{0.0580069,191},{-0.0768103,79},{0.0580069,213}}" />
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="ChatRecord/Back/Horn">
+        <Property Name="Text" Value="喇叭" />
+        <Property Name="UnifiedAreaRect" Value="{{0.132653,0},{0.0580069,216},{-0.0768103,79},{0.0580069,238}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="ChatRecord/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.274775,0},{0,11},{0.968469,0},{0,38}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="ChatRecord/Title/Name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="聊天记录查询" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="102" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.207792,0},{0,1},{0.594156,0},{0,25}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="ChatRecord/Back/FrameBack">
+      <Property Name="UnifiedAreaRect" Value="{{0.05,74},{0.05,27},{0.05,402},{0.05,271}}" />
+      <Window Type="TaharezLook/RichEditbox" Name="ChatRecord/Back/FrameBack/RecordBox">
+        <Property Name="ReadOnly" Value="True" />
+        <Property Name="LineSpace" Value="1" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,4},{0,325},{0,221}}" />
+        <Property Name="BackGroundEnable" Value="False" />
+        <Property Name="BlinkCaretTimeout" Value="0.5" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ChatRecord/up">
+      <Property Name="Text" Value="上一页" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.373874,0},{0.869436,0},{0.259424,119},{0.807692,45}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ChatRecord/down">
+      <Property Name="Text" Value="下一页" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.628378,0},{0.869436,0},{0.470066,138},{0.807692,45}}" />
+    </Window>
+    <Window Type="TaharezLook/Checkbox" Name="ChatRecord/Back/Horn1">
+      <Property Name="Text" Value="全服" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,5},{0.05,278},{0.05,63},{0.05,300}}" />
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,52 @@
+{
+  "status": "owned_module_reviewed_ready_for_shared_candidate_not_deployment",
+  "goal_complete": false,
+  "scope": "Exact old in-process map-member retirement after a committed new-lease same-instance relocation recovery",
+  "source_sha256": {
+    "world_owner.py": "d748e058d17c757062a4f70afd467ecb84e516e3117d9e7e325f663d2c8cbb05",
+    "world_roles.py": "5bf03c3e1ff3869a808b8fa2f871d6a9064e9c7074632036f190a9e0c47dfba4",
+    "world_relocation_storage.py": "b2ced920f1525f869b0def55041b7d5e0d343391a5f27f7e234bf188e7d3decd"
+  },
+  "verifier_sha256": "bcbb7fa2767e9c33d0a883d145fcf4ba29c08efa622b16a2c460cc31afb6c7d9",
+  "review_manifest": "D:\\神雕侠侣\\revival\\evidence\\reviews\\world-relocation-recovery-20261024-r2\\manifest.json",
+  "review_manifest_sha256": "6a536ada07f956ca1b2f7f6fb0b0ac5c97b55f3a93dd59d9c4b5606429fc4cae",
+  "review": {
+    "standards_open": 0,
+    "spec_open": 0,
+    "original_r1_P2_closed": true,
+    "independent_frozen_groups": 11,
+    "standards_report": "D:\\神雕侠侣\\revival\\evidence\\reviews\\world-relocation-recovery-20261024-r2\\standards.md",
+    "spec_report": "D:\\神雕侠侣\\revival\\evidence\\reviews\\world-relocation-recovery-20261024-r2\\spec.md",
+    "spec_independent": "D:\\神雕侠侣\\revival\\evidence\\reviews\\world-relocation-recovery-20261024-r2\\spec-independent.json"
+  },
+  "verification": {
+    "recovery_groups": 11,
+    "storage_groups": 9,
+    "prior_domain_groups": 10,
+    "existing_scripts": 5,
+    "metadata_groups_in_existing": 14,
+    "reports": {
+      "world-relocation-recovery-r2-verification.json": "01f9ae276302579252a4f01a767f13d3c0f7a618f10e98be6712d2fdad0557db",
+      "world-relocation-recovery-r2-storage-regression.json": "4cc63c007c63e438ce501845d9d5e3e0f36bb78e6b38968588cb42e8ed2c26d3",
+      "world-relocation-recovery-r2-domain-regression.json": "e71a43c9a3e57c47df25d1ec89aef3c8c8604b42f7a6c5e0a952b4019ed365df",
+      "world-relocation-recovery-r2-existing-regressions.json": "30ce32341e02495eee84c595840e6d53e1b4ec93ab8d67522460eb5ca2e61c5f",
+      "world-relocation-recovery-r2-metadata-regression.json": "6c8cb991661785f66dae6b39e0c3dca7f5f166cba422f4aee4e4aa6484669dd3"
+    }
+  },
+  "shared_runtime_integrated": false,
+  "actual_network_send_verified": false,
+  "native_gui_verified": false,
+  "live_server_changed_by_world": false,
+  "real_role_or_formal_database_changed": false,
+  "previous_metadata_v2_ready_superseded": false,
+  "adoption_requirements": [
+    "Main owns shared MapRuntime/RoleOwner/connection integration; freeze a fresh candidate with these exact source dependencies",
+    "Fence old writers and acquire the real new login lease before the recovery transaction",
+    "Discover snapshots on the actual registered old MapOwner generation; do not create a replacement owner as cleanup evidence",
+    "Commit prepare_relocation_recovery_transaction in caller-owned bounded IO; None is not cleanup permission",
+    "Retire the captured old member/projection on its map executor with RelocationRecoveryDecision; the returned authority is an observation, never an overwrite command",
+    "Recheck current role/connection/flow identities and current complete checkpoint before cache retirement, joining and installing new movement/member declarations",
+    "Retire only exact old derived caches and order old-leave/new-enter logical messages through the connection owner",
+    "Use exact send barriers and late-input fencing; same-map1627 and housing1594 require separate explicit entrance policy and native client acceptance"
+  ]
+}

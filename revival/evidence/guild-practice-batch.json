@@ -1,0 +1,80 @@
+{
+  "batch": 10,
+  "created_utc": "2026-10-23T11:17:46.873993+00:00",
+  "previous_goal_turn": "progress: native guild roster/office routing, durable family join handoff and authoritative verification added",
+  "goal_status": "active",
+  "complete": false,
+  "methods": [
+    "codebase-design",
+    "tdd",
+    "research",
+    "writing-for-agents"
+  ],
+  "source_sha256": {
+    "role_practice.py": "6419cff6001c4d5fdc8a941175d949173eeb681c34736f0e1ed5f972bac7d0ed",
+    "guild_practice.py": "da88ee239f794d592ee4680171e98a7088880b1ab8589c12255e2024c2ae8b50",
+    "practice_protocol.py": "92a363a1adfcccc16fc5d2257f08a8712208bc7c32d0c9f67e0fa9630945f635",
+    "guild_runtime.py": "127a65ab9af96e5508d8c1aa8c381fd874d7ce78228eff4dfd9a0386d693ee97",
+    "guild_offices.py": "df59e4eca04bb86fc66eb4ceba4bcb6f319da1a6fe4dc4c2b679dde7600eeed3",
+    "faction_domain.py": "f01e71a0d34cebea0bedbbe03bdda5924886f49c23564151de1d9814d6a54d64",
+    "recover_social_inventory.py": "83e1e5f16b5522dcb1854769d7ce4e0f851dd7b9213346f7500dd56d325e9284",
+    "design/recovery-baseline.json": "2e150b6edfa2f8321c0ae9d5c5510a3a68059f4fc23de6d3fb9ed023fd373e7f",
+    "verify_role_practice.py": "f5fb0a3c5142d3334a27b577ca0b20cfee5eb15d79ff9969fe9e0bcded26a033",
+    "verify_role_practice_native.py": "0cec92ccc324841b4c8ec8aa5a5c5cdca1a3e4c31106ad2fd2a9f7e244c368cb"
+  },
+  "checks": {
+    "role-practice-verification.json": {
+      "passed_groups": 12,
+      "sha256": "880ca7598ab87cf1340af5bc56b3653d193dd91d53dab1b0ddf73c1ac38f6a5f"
+    },
+    "role-practice-native-verification.json": {
+      "passed_groups": 4,
+      "sha256": "4e1491e0808f4ff7d783e1b4ee96967b07a17cdd5c545f2b7fd7889cdaa09ccd"
+    },
+    "guild-management-verification.json": {
+      "passed_groups": 11,
+      "sha256": "75ec9cde7b7c9d4174f0510a7664e00e1db6cee98f56419e330b9fa9daad3d1a"
+    },
+    "guild-tcp-verification.json": {
+      "passed_groups": 7,
+      "sha256": "bf248014d54847d4e212f271645c3b54c814a38f9cadf05e953e1a9c5f591bc4"
+    },
+    "guild-offices-verification.json": {
+      "passed_groups": 10,
+      "sha256": "2e403e14429e2b89b5d3752583bea974e13ddff42a8dffbd8724ff37ef39dc39"
+    },
+    "guild-training-verification.json": {
+      "passed_groups": 10,
+      "sha256": "b89d074bbcb7b3ec5a1a5337bbf1e8c31c979783e2a01ac4fc2e4452c93df7ff"
+    },
+    "guild-training-policy-verification.json": {
+      "passed_groups": 3,
+      "sha256": "a775910b9bd8a0f63d652a9f80a1932a1924cc98886a8f1bd6ad453c9eb44b59"
+    },
+    "faction-payment-verification.json": {
+      "passed_groups": 13,
+      "sha256": "872e0469fcb1501b74925e6a84c120c201c2c35c0dc4bc17154fae7ca7546e7e"
+    },
+    "faction-runtime-verification.json": {
+      "passed_groups": 11,
+      "sha256": "0c6f67e5ed2e256fd11366b8dc5705dfec558dd1d1f3e89af3bd56ab769708a9"
+    }
+  },
+  "research": "evidence/GUILD_INDIVIDUAL_TRAINING_RESEARCH.md",
+  "handoff": "evidence/GUILD_PRACTICE_RUNTIME.md",
+  "source_integrated": [
+    "organization owner reserve_practice/resolve_practice",
+    "startup schema and explicit new-guild resource baseline",
+    "role fenced cash/skill/receipt transaction Interface"
+  ],
+  "not_integrated": [
+    "trusted NPC purchase dispatcher and full responses",
+    "automatic login recovery/current native skill refresh",
+    "pill/property/life-skill/inscription settlement and battle effects",
+    "cross-database outbox/inbox saga"
+  ],
+  "native_gui_verified": false,
+  "shared_entry_files_edited": false,
+  "service_deployed_or_restarted_by_this_batch": false,
+  "real_role_or_user_store_changed": false
+}

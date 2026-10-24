@@ -1,0 +1,988 @@
+{
+  "image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+  "cases": [
+    {
+      "case": "actual_actor_getter_head_inserts_current",
+      "fixture_current": [
+        8.0,
+        8.0
+      ],
+      "snapshot": [
+        [
+          8.0,
+          8.0
+        ],
+        [
+          56.0,
+          8.0
+        ],
+        [
+          56.0,
+          56.0
+        ]
+      ],
+      "history": [
+        [
+          8,
+          8
+        ]
+      ],
+      "remaining_plan": [
+        [
+          56.0,
+          8.0
+        ],
+        [
+          56.0,
+          56.0
+        ]
+      ]
+    },
+    {
+      "case": "actual_actor_getter_head_inserts_current",
+      "fixture_current": [
+        31.9,
+        17.9
+      ],
+      "snapshot": [
+        [
+          31.0,
+          17.0
+        ],
+        [
+          56.0,
+          8.0
+        ],
+        [
+          56.0,
+          56.0
+        ]
+      ],
+      "history": [
+        [
+          31,
+          17
+        ]
+      ],
+      "remaining_plan": [
+        [
+          56.0,
+          8.0
+        ],
+        [
+          56.0,
+          56.0
+        ]
+      ]
+    },
+    {
+      "case": "original_snapshot_vs_report_quantization",
+      "fixture_current": [
+        15.0,
+        8.0
+      ],
+      "snapshot_head": [
+        14.0,
+        8.0
+      ],
+      "sent": {
+        "kind": "0xc0fa3",
+        "points": [
+          [
+            14,
+            8
+          ]
+        ],
+        "current": [
+          15,
+          8
+        ],
+        "body_hex": "000f000801000e00081122334455667788"
+      }
+    },
+    {
+      "case": "original_snapshot_vs_report_quantization",
+      "fixture_current": [
+        31.9,
+        17.9
+      ],
+      "snapshot_head": [
+        31.0,
+        17.0
+      ],
+      "sent": {
+        "kind": "0xc0fa3",
+        "points": [
+          [
+            31,
+            17
+          ]
+        ],
+        "current": [
+          31,
+          17
+        ],
+        "body_hex": "001f001101001f00111122334455667788"
+      }
+    },
+    {
+      "case": "original_snapshot_vs_report_quantization",
+      "fixture_current": [
+        16.0,
+        16.0
+      ],
+      "snapshot_head": [
+        16.0,
+        16.0
+      ],
+      "sent": {
+        "kind": "0xc0fa3",
+        "points": [
+          [
+            16,
+            16
+          ]
+        ],
+        "current": [
+          16,
+          16
+        ],
+        "body_hex": "0010001001001000101122334455667788"
+      }
+    },
+    {
+      "case": "original_clear_leg_quantized_check_false_rejection",
+      "start": [
+        25,
+        88
+      ],
+      "intended_end": [
+        73,
+        70
+      ],
+      "budget": 38,
+      "original_engine_float_current": [
+        60.58051045735677,
+        74.65731048583984
+      ],
+      "sent": {
+        "kind": "0xc0fa3",
+        "points": [
+          [
+            24,
+            88
+          ]
+        ],
+        "current": [
+          60,
+          74
+        ],
+        "body_hex": "003c004a01001800581122334455667788"
+      },
+      "wall_cell": [
+        2,
+        4
+      ],
+      "wall_pixel_range": [
+        32,
+        64,
+        47,
+        79
+      ],
+      "native_dda_start_to_intended_end": 0,
+      "native_dda_start_to_reported_current": 1,
+      "native_dda_history_to_reported_current": 1,
+      "recomputed_wall_samples": [
+        [
+          47,
+          79
+        ]
+      ],
+      "native_observed_start_current_wall_sample": [
+        47,
+        79
+      ],
+      "native_observed_history_current_wall_sample": [
+        46,
+        79
+      ],
+      "native_observed_intended_samples": [
+        [
+          26,
+          88
+        ],
+        [
+          27,
+          87
+        ],
+        [
+          28,
+          87
+        ],
+        [
+          29,
+          87
+        ],
+        [
+          30,
+          86
+        ],
+        [
+          31,
+          86
+        ],
+        [
+          32,
+          85
+        ],
+        [
+          33,
+          85
+        ],
+        [
+          34,
+          85
+        ],
+        [
+          35,
+          84
+        ],
+        [
+          36,
+          84
+        ],
+        [
+          37,
+          84
+        ],
+        [
+          38,
+          83
+        ],
+        [
+          39,
+          83
+        ],
+        [
+          40,
+          82
+        ],
+        [
+          41,
+          82
+        ],
+        [
+          42,
+          82
+        ],
+        [
+          43,
+          81
+        ],
+        [
+          44,
+          81
+        ],
+        [
+          45,
+          81
+        ],
+        [
+          46,
+          80
+        ],
+        [
+          47,
+          80
+        ],
+        [
+          48,
+          79
+        ],
+        [
+          49,
+          79
+        ],
+        [
+          50,
+          79
+        ],
+        [
+          51,
+          78
+        ],
+        [
+          52,
+          78
+        ],
+        [
+          53,
+          78
+        ],
+        [
+          54,
+          77
+        ],
+        [
+          55,
+          77
+        ],
+        [
+          56,
+          76
+        ],
+        [
+          57,
+          76
+        ],
+        [
+          58,
+          76
+        ],
+        [
+          59,
+          75
+        ],
+        [
+          60,
+          75
+        ],
+        [
+          61,
+          75
+        ],
+        [
+          62,
+          74
+        ],
+        [
+          63,
+          74
+        ],
+        [
+          64,
+          73
+        ],
+        [
+          65,
+          73
+        ],
+        [
+          66,
+          73
+        ],
+        [
+          67,
+          72
+        ],
+        [
+          68,
+          72
+        ],
+        [
+          69,
+          72
+        ],
+        [
+          70,
+          71
+        ],
+        [
+          71,
+          71
+        ],
+        [
+          72,
+          70
+        ],
+        [
+          73,
+          70
+        ]
+      ],
+      "scope": "original DDA-clear straight leg + original float tick + original current getter/report; A* generator not run"
+    },
+    {
+      "case": "original_role_move_destination_lookahead",
+      "planned_points": [
+        [
+          8.0,
+          8.0
+        ],
+        [
+          56.0,
+          8.0
+        ],
+        [
+          56.0,
+          56.0
+        ]
+      ],
+      "threshold": 500.0,
+      "selected_destination": [
+        56,
+        56
+      ],
+      "original_builder_start": [
+        8,
+        8
+      ],
+      "original_builder_end": [
+        56,
+        56
+      ],
+      "first_future_corner": [
+        56.0,
+        8.0
+      ],
+      "not_authorized_as_direct_straight_leg": true
+    },
+    {
+      "case": "original_role_move_destination_lookahead",
+      "planned_points": [
+        [
+          8.0,
+          8.0
+        ],
+        [
+          408.0,
+          8.0
+        ],
+        [
+          408.0,
+          408.0
+        ],
+        [
+          8.0,
+          408.0
+        ]
+      ],
+      "threshold": 500.0,
+      "selected_destination": [
+        408,
+        408
+      ],
+      "original_builder_start": [
+        8,
+        8
+      ],
+      "original_builder_end": [
+        408,
+        408
+      ],
+      "first_future_corner": [
+        408.0,
+        8.0
+      ],
+      "not_authorized_as_direct_straight_leg": true
+    },
+    {
+      "case": "engine_tick",
+      "budget": 24,
+      "pause_46": false,
+      "current_after": [
+        32.0,
+        8.0
+      ],
+      "events": [],
+      "remaining_future": [
+        [
+          56.0,
+          8.0
+        ],
+        [
+          56.0,
+          56.0
+        ]
+      ]
+    },
+    {
+      "case": "engine_tick",
+      "budget": 48,
+      "pause_46": false,
+      "current_after": [
+        56.0,
+        8.0
+      ],
+      "events": [],
+      "remaining_future": [
+        [
+          56.0,
+          8.0
+        ],
+        [
+          56.0,
+          56.0
+        ]
+      ]
+    },
+    {
+      "case": "engine_tick",
+      "budget": 49,
+      "pause_46": false,
+      "current_after": [
+        56.0,
+        9.0
+      ],
+      "events": [
+        {
+          "raw_actor_argument": 12345,
+          "event": 1,
+          "logical_current": [
+            56.0,
+            8.0
+          ]
+        }
+      ],
+      "remaining_future": [
+        [
+          56.0,
+          56.0
+        ]
+      ]
+    },
+    {
+      "case": "engine_tick",
+      "budget": 120,
+      "pause_46": false,
+      "current_after": [
+        56.0,
+        56.0
+      ],
+      "events": [
+        {
+          "raw_actor_argument": 12345,
+          "event": 1,
+          "logical_current": [
+            56.0,
+            8.0
+          ]
+        },
+        {
+          "raw_actor_argument": 12345,
+          "event": 1,
+          "logical_current": [
+            56.0,
+            56.0
+          ]
+        }
+      ],
+      "remaining_future": []
+    },
+    {
+      "case": "engine_tick",
+      "budget": 49,
+      "pause_46": true,
+      "current_after": [
+        8.0,
+        8.0
+      ],
+      "events": [],
+      "remaining_future": [
+        [
+          56.0,
+          8.0
+        ],
+        [
+          56.0,
+          56.0
+        ]
+      ]
+    },
+    {
+      "case": "original_engine_app_scene_maincharacter_chain",
+      "history_before": [
+        [
+          8,
+          8
+        ]
+      ],
+      "current_after": [
+        56.0,
+        9.0
+      ],
+      "history_after": [
+        [
+          8,
+          8
+        ],
+        [
+          56,
+          8
+        ]
+      ],
+      "remaining_plan": [
+        [
+          56.0,
+          56.0
+        ]
+      ],
+      "events": [
+        {
+          "actor_pointer": "0x5008000",
+          "event": 1,
+          "logical_current": [
+            56.0,
+            8.0
+          ]
+        }
+      ],
+      "operations": [
+        {
+          "operation": "append_history",
+          "point": [
+            8,
+            8
+          ]
+        },
+        {
+          "operation": "erase_plan_head",
+          "point": [
+            8.0,
+            8.0
+          ]
+        },
+        {
+          "operation": "erase_plan_head",
+          "point": [
+            56.0,
+            8.0
+          ]
+        },
+        {
+          "operation": "actual_maincharacter_callback",
+          "event": 1
+        },
+        {
+          "operation": "append_history",
+          "point": [
+            56,
+            8
+          ]
+        },
+        {
+          "operation": "erase_plan_head",
+          "point": [
+            56.0,
+            8.0
+          ]
+        }
+      ]
+    },
+    {
+      "case": "ordinary_two_reports_form_ordered_travel_polyline",
+      "initial_current": [
+        8,
+        8
+      ],
+      "sent": [
+        {
+          "kind": "0xc0fa3",
+          "points": [
+            [
+              8,
+              8
+            ],
+            [
+              56,
+              8
+            ]
+          ],
+          "current": [
+            56,
+            9
+          ],
+          "body_hex": "003800090200080008003800081122334455667788"
+        },
+        {
+          "kind": "0xc0faa",
+          "points": [
+            [
+              56,
+              56
+            ]
+          ],
+          "current": [
+            54,
+            56
+          ],
+          "body_hex": "0100380038003600381122334455667788"
+        }
+      ],
+      "history_after": [],
+      "local_plan_after_stop": [],
+      "engine_plan_before_outer_stop": [
+        [
+          8.0,
+          56.0
+        ]
+      ]
+    },
+    {
+      "case": "initial_consume_before_actor_progress",
+      "history": [
+        [
+          8,
+          8
+        ]
+      ],
+      "remaining_plan": [
+        [
+          56.0,
+          8.0
+        ]
+      ],
+      "events": [
+        {
+          "operation": "append_history",
+          "point": [
+            8,
+            8
+          ]
+        },
+        {
+          "operation": "erase_plan_head",
+          "point": [
+            8.0,
+            8.0
+          ]
+        }
+      ]
+    },
+    {
+      "case": "ordinary_event_1",
+      "fixture_current": [
+        8,
+        8
+      ],
+      "history": [
+        [
+          56,
+          8
+        ]
+      ],
+      "remaining_plan": [
+        [
+          56.0,
+          56.0
+        ]
+      ],
+      "events": [
+        {
+          "operation": "append_history",
+          "point": [
+            56,
+            8
+          ]
+        },
+        {
+          "operation": "erase_plan_head",
+          "point": [
+            56.0,
+            8.0
+          ]
+        }
+      ]
+    },
+    {
+      "case": "mode_1_skip_record",
+      "fixture_current": [
+        8,
+        8
+      ],
+      "history": [],
+      "remaining_plan": [
+        [
+          56.0,
+          56.0
+        ]
+      ],
+      "events": [
+        {
+          "operation": "erase_plan_head",
+          "point": [
+            56.0,
+            8.0
+          ]
+        }
+      ]
+    },
+    {
+      "case": "field_284_skip_record",
+      "fixture_current": [
+        8,
+        8
+      ],
+      "history": [],
+      "remaining_plan": [
+        [
+          56.0,
+          56.0
+        ]
+      ],
+      "events": [
+        {
+          "operation": "erase_plan_head",
+          "point": [
+            56.0,
+            8.0
+          ]
+        }
+      ]
+    },
+    {
+      "case": "special_13c_skip_record",
+      "fixture_current": [
+        8,
+        8
+      ],
+      "history": [],
+      "remaining_plan": [
+        [
+          56.0,
+          56.0
+        ]
+      ],
+      "events": [
+        {
+          "operation": "erase_plan_head",
+          "point": [
+            56.0,
+            8.0
+          ]
+        }
+      ]
+    },
+    {
+      "case": "other_callback_event",
+      "fixture_current": [
+        8,
+        8
+      ],
+      "history": [],
+      "remaining_plan": [
+        [
+          56.0,
+          8.0
+        ],
+        [
+          56.0,
+          56.0
+        ]
+      ],
+      "events": []
+    },
+    {
+      "case": "check_builder_0",
+      "sent": [
+        {
+          "kind": "0xc0fa3",
+          "points": [],
+          "current": [
+            56,
+            24
+          ],
+          "body_hex": "00380018001122334455667788"
+        }
+      ],
+      "remaining_plan": [
+        [
+          56.0,
+          56.0
+        ],
+        [
+          8.0,
+          56.0
+        ]
+      ],
+      "history_after": []
+    },
+    {
+      "case": "check_builder_2",
+      "sent": [
+        {
+          "kind": "0xc0fa3",
+          "points": [
+            [
+              8,
+              8
+            ],
+            [
+              56,
+              8
+            ]
+          ],
+          "current": [
+            56,
+            24
+          ],
+          "body_hex": "003800180200080008003800081122334455667788"
+        }
+      ],
+      "remaining_plan": [
+        [
+          56.0,
+          56.0
+        ],
+        [
+          8.0,
+          56.0
+        ]
+      ],
+      "history_after": []
+    },
+    {
+      "case": "stop_builder_0",
+      "sent": [
+        {
+          "kind": "0xc0faa",
+          "points": [],
+          "current": [
+            56,
+            24
+          ],
+          "body_hex": "00003800181122334455667788"
+        }
+      ],
+      "remaining_plan": [],
+      "history_after": []
+    },
+    {
+      "case": "stop_builder_2",
+      "sent": [
+        {
+          "kind": "0xc0faa",
+          "points": [
+            [
+              8,
+              8
+            ],
+            [
+              56,
+              8
+            ]
+          ],
+          "current": [
+            56,
+            24
+          ],
+          "body_hex": "020008000800380008003800181122334455667788"
+        }
+      ],
+      "remaining_plan": [],
+      "history_after": []
+    }
+  ],
+  "adapters": [
+    "allocator/free/security cookie",
+    "current position getter",
+    "actor moving getter",
+    "base character callback side effects",
+    "CRT x87 sqrt",
+    "network send capture",
+    "scene actor-pointer lookup and unrelated special-object lookup",
+    "no map/navmesh recomputation"
+  ],
+  "scope": "original actor snapshot + engine tick + App/Scene/MainCharacter event dispatch + report builders; scene actor lookup/base-character side effects adapted",
+  "no_game_gui_service_started": true
+}

@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="TianqiFinalList">
+    <Property Name="Font" Value="msyh-16" />
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.09625,0},{0.273333,0},{-0.0225,741},{0.278333,281}}" />
+    <Window Type="TaharezLook/MultiColumnList" Name="TianqiFinalList/TianqiFinalListFrame/TianqiFinalListMember">
+      <Property Name="UnifiedAreaRect" Value="{{0,20},{0.235915,0},{0,287},{0.235915,180}}" />
+      <Property Name="ColumnHeader" Value="text:战队 width:{0.5,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:胜场 width:{0.19,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:战力 width:{1,-184} id:2" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TianqiFinalList/Info">
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0.447368,0},{0.161972,0},{0.965944,0},{0.922535,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="TianqiFinalList/Info/Text">
+        <Property Name="Text">1、题名赛以挑战审核队伍积累胜场为比赛方式。用以磨合队伍，演练战术。
+2、审核队伍共36支，每取胜1次胜场数+1，失败不减少。
+3、八强候补榜仅取所有参赛队中获得胜场数最高的8支队伍，胜场数相同的以队伍战力高低排序，战力相同的以上榜时间排序。题名赛期间每天23点刷新。
+4、战力由题名战斗结束时参战成员装备评分和最高宠物评分总和计。
+5、题名赛为期3天，可以不限次挑战，失败没有惩罚，但击败所有审核队伍后无法再进行挑战。第3天晚23点结束。
+</Property>
+        <Property Name="HorzExtent" Value="323" />
+        <Property Name="VertExtent" Value="187.427" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0179104,0},{0.101852,0},{0.979104,0},{0.990741,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Figure" Name="TianqiFinalList/Info/Title">
+        <Property Name="UnifiedAreaRect" Value="{{0.20597,0},{0.0231481,0},{0.623881,0},{0.026936,14}}" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Window Type="TaharezLook/StaticText" Name="TianqiFinalList/Info/Title/Name">
+          <Property Name="Text" Value="候选审核赛规则" />
+          <Property Name="HorzExtent" Value="91" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+          <Property Name="BorderColour" Value="FF433C10" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.221429,0},{-0.0666667,0},{0.871429,0},{0,17}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TianqiFinalList/Name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Title" Value="True" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.187307,0},{0.0422535,0},{0.496904,0},{0.200669,-22}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TianqiFinalList/Info/Title/Name1">
+      <Property Name="Font" Value="msyh-16" />
+      <Property Name="Text" Value="战队武决名单" />
+      <Property Name="HorzExtent" Value="96" />
+      <Property Name="VertExtent" Value="18.75" />
+      <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+      <Property Name="BorderColour" Value="FF433C10" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,71},{0.161972,0},{0.05,189},{0.153333,25}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+  </Window>
+</GUILayout>

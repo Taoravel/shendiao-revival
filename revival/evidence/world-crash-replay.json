@@ -1,0 +1,78 @@
+{
+  "dump": "D:\\\u795e\u96d5\u4fa0\u4fa3\\revival\\runtime\\client\\bin\\2026-10-23 9-56-57.dmp",
+  "exception_code": "0xc0000005",
+  "exception_address": "0x12a18f3",
+  "exception_parameters": [
+    "0x0",
+    "0x35"
+  ],
+  "registers": {
+    "edi": "0x1b40",
+    "esi": "0x0",
+    "ebx": "0x0",
+    "edx": "0x0",
+    "ecx": "0x0",
+    "eax": "0x1",
+    "ebp": "0x7dfaf",
+    "eip": "0x12a18f3",
+    "esp": "0x19ee98"
+  },
+  "memory_ranges": 338,
+  "stack_words": [
+    "0x28af9fb0",
+    "0x11e282a",
+    "0x1959a6ac",
+    "0x764e85f0",
+    "0x2b5f3440",
+    "0x29a4a70",
+    "0x185a21c0",
+    "0x15f344c",
+    "0x4",
+    "0x2b5f344c",
+    "0x2",
+    "0x19eef0",
+    "0x713a109c",
+    "0x1ef38",
+    "0x0",
+    "0x2b5f344c",
+    "0x4",
+    "0x2bab0000",
+    "0x19ef38",
+    "0x7",
+    "0x2b5f344c",
+    "0x0",
+    "0x7",
+    "0x713b0128",
+    "0x19ef38",
+    "0x7",
+    "0x713b0133",
+    "0x2",
+    "0x764e85f0",
+    "0x19ef34",
+    "0x1959a6bc",
+    "0x19f3e4"
+  ],
+  "replay": {
+    "verdict": "RED: original fault instruction reproduced its invalid read",
+    "instruction": [
+      "cmp byte ptr [esi + 0x35], 0"
+    ],
+    "invalid_access": {
+      "address": "0x35",
+      "size": 1,
+      "kind": 19
+    },
+    "scope": "one original instruction with real dump registers; no application changes"
+  },
+  "time_verification": {
+    "protocol_name": "knight::gsp::SGameTime",
+    "type": 786439,
+    "sample_be_u64": "0000019a00001234",
+    "decoded_value": 1760936596020,
+    "consumed": 8,
+    "native_decoder_completed": true,
+    "time_normal_branch_reaches_activity_creator": true,
+    "scope": "original decoder and missing-global branch to creator entry only; does not execute complete timer handler or resource-dependent creator"
+  },
+  "captured_activity_manager": "00000000"
+}

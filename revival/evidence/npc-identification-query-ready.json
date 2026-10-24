@@ -1,0 +1,40 @@
+{
+  "status": "reviewed_domain_ready_for_separate_shared_integration",
+  "files": {
+    "npc_identification_query.py": "a981a3136a6d061b806bc8a8242fb89573c59faf38a905d5c86690aefb37ed45",
+    "design/npc-identification-query-v1.json": "67a06fea785edd54e76a3490ee49f9ff5d1297cb1809be1313f6081ab5dae94e"
+  },
+  "dependencies": {
+    "npc_identification_protocol.py": "ac7eecf02f9ef564d0961c5702a8e54a38c9dea1d846b609a536066264654fdb"
+  },
+  "review": "reviews/npc-identification-query-20261024/REVIEW.md",
+  "checks": {
+    "domain_groups": 9,
+    "invalid_startup_policy_cases": 48,
+    "original_reply_consumer": "actual produced body through original decoder and10934a0; owned lookup/UI adapters"
+  },
+  "public_interfaces": [
+    "prepare(accounts,*,path=None)",
+    "load_query_rules(placements,definitions,services,detail_rules,*,path=None)",
+    "plan_query(body,proof,current,inventory_revision,*,rules,now_ms,deadline_ms)",
+    "query_states(inventory,intent) -> immutable logical message tuple"
+  ],
+  "shared_requirements": "fresh map proof and modal gate; current inventory revision and bounded role IO; final full-scene/login/connection send fences; explicit495 association/menu/routing separately reviewed",
+  "database_writes": false,
+  "registry_activated": false,
+  "shared_runtime_integrated": false,
+  "paid_identification_restored": false,
+  "native_gui_verified": false,
+  "review_result": {
+    "standards_hard": 0,
+    "standards_heuristic": 0,
+    "spec_missing": 0,
+    "spec_extra": 0,
+    "spec_wrong": 0
+  },
+  "reviewed_files": {
+    "npc_identification_query.py": "a981a3136a6d061b806bc8a8242fb89573c59faf38a905d5c86690aefb37ed45",
+    "verify_npc_identification_query.py": "9101c9e6c7ee5daf945b893d64dccf4dbc877d11225032cd1b7cf34cbf49a5ce"
+  },
+  "handoff": "NPC_IDENTIFICATION_INTEGRATION.md#只读查询实际领域接线"
+}

@@ -1,0 +1,2741 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/HouseFrameWindow" Name="HouseDlg">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.0652,0},{0.113356,0},{0.0227,729},{0.121689,429}}" />
+    <Window Type="TaharezLook/StaticText" Name="HouseDlg/name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="我 的 家 园" />
+      <Property Name="HorzExtent" Value="86" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+      <Property Name="BorderColour" Value="FF280B03" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.350365,0},{0.05,-4},{0.345219,192},{0.05,21}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="HouseDlg/close">
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:component image:CloseButtonHover" />
+      <Property Name="NormalImage" Value="set:component image:CloseButtonNormal" />
+      <Property Name="PushedImage" Value="set:component image:CloseButtonPressed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,21},{0,19}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,21},{0,19}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,680},{0.101149,0},{0.05,701},{0.05,41}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="HouseDlg/title1">
+      <Property Name="Text" Value="总    揽" />
+      <Property Name="UnifiedAreaRect" Value="{{0.059854,0},{0.14023,0},{0.148905,0},{0.188506,0}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="HouseDlg/title2">
+      <Property Name="Text" Value="功能家具" />
+      <Property Name="UnifiedAreaRect" Value="{{0.14964,3},{0.14023,0},{0.238849,3},{0.188506,0}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="HouseDlg/title3">
+      <Property Name="Text" Value="美观家具" />
+      <Property Name="UnifiedAreaRect" Value="{{0.238849,6},{0.14023,0},{0.328058,6},{0.188506,0}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="HouseDlg/title4">
+      <Property Name="Text" Value="家园仓库" />
+      <Property Name="UnifiedAreaRect" Value="{{0.328058,9},{0.14023,0},{0.417266,9},{0.188506,0}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="HouseDlg/title5">
+      <Property Name="Text" Value="夫妻仓库" />
+      <Property Name="UnifiedAreaRect" Value="{{0.417266,12},{0.14023,0},{0.506475,12},{0.188506,0}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="HouseDlg/title6">
+      <Property Name="Text" Value="家园动态" />
+      <Property Name="UnifiedAreaRect" Value="{{0.506475,15},{0.14023,0},{0.595683,15},{0.188506,0}}" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="HouseDlg/all">
+      <Property Name="UnifiedAreaRect" Value="{{0,37},{0,82},{0,657},{0,407}}" />
+      <Window Type="TaharezLook/StaticText" Name="HouseDlg/all/txt1">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="家园评分：" />
+        <Property Name="HorzExtent" Value="75" />
+        <Property Name="VertExtent" Value="17.1936" />
+        <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+        <Property Name="BorderColour" Value="FF190400" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0129032,0},{0.0369231,0},{0.162904,0},{0.0276923,23}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="HouseDlg/all/txt2">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="我的排名：" />
+        <Property Name="HorzExtent" Value="75" />
+        <Property Name="VertExtent" Value="17.1936" />
+        <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+        <Property Name="BorderColour" Value="FF190400" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.238709,0},{0.0369231,0},{0.388709,0},{0.0276923,23}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="HouseDlg/all/txt3">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="555555" />
+        <Property Name="HorzExtent" Value="54" />
+        <Property Name="VertExtent" Value="17.1936" />
+        <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.132258,0},{0.0369231,0},{0.230645,0},{0.0276923,23}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="HouseDlg/all/txt14">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="555555" />
+        <Property Name="HorzExtent" Value="54" />
+        <Property Name="VertExtent" Value="17.1936" />
+        <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.359677,0},{0.0369231,0},{0.456452,0},{0.0276923,23}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="HouseDlg/all/rank">
+        <Property Name="Text" Value="家园排行" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.640323,0},{0.88,0},{0.741176,4},{0.0276923,302}}" />
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="HouseDlg/all/house">
+        <Property Name="Text" Value="家园信息" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.772581,0},{0.88,0},{0.873434,4},{0.0276923,302}}" />
+      </Window>
+      <Window Type="TaharezLook/CommonCaseHouse" Name="HouseDlg/all/back1">
+        <Property Name="UnifiedAreaRect" Value="{{0.0580645,0},{0.12,0},{0.0209677,283},{0.12,280}}" />
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/all/back1/txt1">
+          <Property Name="Text" Value="拥  有  者" />
+          <Property Name="Tooltip" Value="家园所有者" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0846154,0},{0.0892857,0},{0.43077,0},{0.160714,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/all/back1/txt2">
+          <Property Name="Text" Value="配         偶" />
+          <Property Name="Tooltip" Value="家园所有者的配偶" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0846154,0},{0.0964286,28},{0.43077,0},{0.167857,28}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/all/back1/txt3">
+          <Property Name="Text" Value="当前等级" />
+          <Property Name="Tooltip" Value="当前家园的等级" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0846154,0},{0.303571,0},{0.43077,0},{0.375,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/all/back1/txt4">
+          <Property Name="Text" Value="建  设  度" />
+          <Property Name="Tooltip" Value="当前家园的建设情况" />
+          <Property Name="HorzExtent" Value="51" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0846154,0},{0.452865,19},{0.43077,0},{0.524293,19}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/all/back1/txt5">
+          <Property Name="Text" Value="功能家具" />
+          <Property Name="Tooltip" Value="当前家园内拥有的功能类家具总数" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0846154,0},{0.702512,8},{0.411539,0},{0.77394,8}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/all/back1/txt6">
+          <Property Name="Text" Value="美观家具" />
+          <Property Name="Tooltip" Value="当前家园内拥有的美观类家具总数" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0846154,0},{0.689783,41},{0.411539,0},{0.761211,41}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/all/back1/txt7">
+          <Property Name="Text" Value="当前档次" />
+          <Property Name="Tooltip" Value="当前等级内的档次" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0846154,0},{0.625497,-60},{0.411539,0},{0.696925,-60}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/all/back1/txt8">
+          <Property Name="Text" Value="总豪华值" />
+          <Property Name="Tooltip" Value="当前家园内所有家具的豪华值总和，影响传家宝的属性。" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0846154,0},{0.627512,0},{0.411539,0},{0.69894,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/all/back1/num1">
+          <Property Name="Tooltip" Value="家园所有者" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0.357692,0},{0.0821429,0},{0.923077,0},{0.153571,0}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/all/back1/num2">
+          <Property Name="Tooltip" Value="家园所有者的配偶" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0.357692,0},{0.0964286,26},{0.923077,0},{0.167857,26}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/all/back1/num111">
+          <Property Name="Tooltip" Value="当前家园的等级" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0.357692,0},{0.167857,36},{0.923077,0},{0.239286,36}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/all/back1/num112">
+          <Property Name="Tooltip" Value="当前等级内的档次" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0.357692,0},{0.239286,46},{0.923077,0},{0.310714,46}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/all/back1/num11">
+          <Property Name="Tooltip" Value="当前家园的建设情况" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0.357692,0},{0.310714,56},{0.923077,0},{0.382143,56}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/all/back1/num12">
+          <Property Name="Tooltip" Value="当前家园内所有家具的豪华值总和，影响传家宝的属性。" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0.357692,0},{0.382143,66},{0.923077,0},{0.453572,66}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/all/back1/num13">
+          <Property Name="Tooltip" Value="当前家园内拥有的功能类家具总数" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0.357692,0},{0.453572,76},{0.923077,0},{0.525,76}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/all/back1/num14">
+          <Property Name="Tooltip" Value="当前家园内拥有的美观类家具总数" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0.357692,0},{0.525,86},{0.923077,0},{0.596429,86}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="HouseDlg/all/txt21">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="家园地址：" />
+        <Property Name="HorzExtent" Value="75" />
+        <Property Name="VertExtent" Value="17.1936" />
+        <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+        <Property Name="BorderColour" Value="FF190400" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.469355,0},{0.0369231,0},{0.585484,0},{0.0984615,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="HouseDlg/all/txt141">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.587097,0},{0.0369231,0},{0.97258,0},{0.0830769,5}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="HouseDlg/all/image">
+        <Property Name="Image" Value="set:MainControl27 image:HouseWin" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,250},{0,189}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,250},{0,189}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.537097,0},{0.172308,0},{0.859677,0},{0.633846,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="HouseDlg/skill">
+      <Property Name="UnifiedAreaRect" Value="{{0,37},{0,82},{0,657},{0,407}}" />
+      <Window Type="TaharezLook/StaticText" Name="HouseDlg/skill/txt">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="功能家具：" />
+        <Property Name="HorzExtent" Value="75" />
+        <Property Name="VertExtent" Value="17.1936" />
+        <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+        <Property Name="BorderColour" Value="FF190400" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0225806,0},{0.0276923,0},{0.143548,0},{0.107692,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="HouseDlg/skill/num">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="3/20" />
+        <Property Name="HorzExtent" Value="34" />
+        <Property Name="VertExtent" Value="17.1936" />
+        <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+        <Property Name="BorderColour" Value="FF190400" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.141935,0},{0.0246154,0},{0.262903,0},{0.104615,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="HouseDlg/skill/pack">
+        <Property Name="Text" Value="一键收起" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.5,0},{0.913846,0},{0.568839,19},{0.0246154,312}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack0">
+        <Property Name="UnifiedAreaRect" Value="{{0.0145161,0},{0.113846,0},{0.0727941,564},{0.304615,0}}" />
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack0/item1">
+          <Property Name="UnifiedAreaRect" Value="{{0.40106,-37},{0.112903,0},{0.42,0},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack0/item2">
+          <Property Name="UnifiedAreaRect" Value="{{0.421667,0},{0.112903,0},{0.40106,60},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack0/item3">
+          <Property Name="UnifiedAreaRect" Value="{{0.40106,61},{0.112903,0},{0.40106,109},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack0/item4">
+          <Property Name="UnifiedAreaRect" Value="{{0.40106,110},{0.112903,0},{0.40106,158},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack0/item5">
+          <Property Name="UnifiedAreaRect" Value="{{0.40106,159},{0.112903,0},{0.40106,207},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack0/item6">
+          <Property Name="UnifiedAreaRect" Value="{{0.40106,208},{0.112903,0},{0.40106,256},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack0/item7">
+          <Property Name="UnifiedAreaRect" Value="{{0.40106,257},{0.112903,0},{0.485866,254},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="HouseDlg/skill/CellBack0/left">
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="HoverImage" Value="set:MainControl4 image:LeftArrowHover" />
+          <Property Name="NormalImage" Value="set:MainControl4 image:LeftArrowNormal" />
+          <Property Name="PushedImage" Value="set:MainControl4 image:LeftArrowPushed" />
+          <Property Name="UnifiedAreaRect" Value="{{0.26,0},{0.314516,0},{0.338333,0},{0.685484,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="HouseDlg/skill/CellBack0/right">
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="HoverImage" Value="set:MainControl4 image:RightArrowHover" />
+          <Property Name="NormalImage" Value="set:MainControl4 image:RightArrowNormal" />
+          <Property Name="PushedImage" Value="set:MainControl4 image:RightArrowPushed" />
+          <Property Name="UnifiedAreaRect" Value="{{0.911667,0},{0.314516,0},{0.99,0},{0.685484,0}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack0/back">
+          <Property Name="Image" Value="set:MainControl18 image:ShortHover" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,155},{0,50}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,155},{0,50}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00833333,0},{0.0967742,0},{0.266667,0},{0.903226,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticText" Name="HouseDlg/skill/CellBack0/back/name">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0387097,0},{0.26,0},{0.658065,0},{0.76,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="HouseDlg/skill/CellBack0/back/num">
+            <Property Name="Text" Value="20/20" />
+            <Property Name="HorzExtent" Value="39" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.664516,0},{0.26,0},{0.929032,0},{0.76,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack0/image1">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.323333,0},{0.016129,0},{0.395,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack0/image2">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.373334,19},{0.016129,0},{0.435001,25},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack0/image3">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.435001,31},{0.016129,0},{0.496668,37},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack0/image4">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.496668,43},{0.016129,0},{0.558335,49},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack0/image5">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.558335,55},{0.016129,0},{0.620002,61},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack0/image6">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.620002,67},{0.016129,0},{0.681669,73},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack0/image7">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.681669,79},{0.016129,0},{0.743336,85},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack1">
+        <Property Name="UnifiedAreaRect" Value="{{0.0145161,0},{0.307692,1},{0.0727941,564},{0.498462,1}}" />
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack1/item1">
+          <Property Name="UnifiedAreaRect" Value="{{0.40106,-36},{0.112903,0},{0.485866,-39},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack1/item2">
+          <Property Name="UnifiedAreaRect" Value="{{0.485866,-38},{0.112903,0},{0.485866,10},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack1/item3">
+          <Property Name="UnifiedAreaRect" Value="{{0.485866,11},{0.112903,0},{0.485866,59},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack1/item4">
+          <Property Name="UnifiedAreaRect" Value="{{0.570672,11},{0.112903,0},{0.655478,8},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack1/item5">
+          <Property Name="UnifiedAreaRect" Value="{{0.655478,9},{0.112903,0},{0.655478,57},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack1/item6">
+          <Property Name="UnifiedAreaRect" Value="{{0.655478,58},{0.112903,0},{0.655478,106},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack1/item7">
+          <Property Name="UnifiedAreaRect" Value="{{0.655478,107},{0.112903,0},{0.740284,104},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="HouseDlg/skill/CellBack1/left">
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="HoverImage" Value="set:MainControl4 image:LeftArrowHover" />
+          <Property Name="NormalImage" Value="set:MainControl4 image:LeftArrowNormal" />
+          <Property Name="PushedImage" Value="set:MainControl4 image:LeftArrowPushed" />
+          <Property Name="UnifiedAreaRect" Value="{{0.261667,0},{0.33871,0},{0.34,0},{0.33871,20}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="HouseDlg/skill/CellBack1/right">
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="HoverImage" Value="set:MainControl4 image:RightArrowHover" />
+          <Property Name="NormalImage" Value="set:MainControl4 image:RightArrowNormal" />
+          <Property Name="PushedImage" Value="set:MainControl4 image:RightArrowPushed" />
+          <Property Name="UnifiedAreaRect" Value="{{0.913333,0},{0.33871,0},{0.991667,0},{0.33871,20}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack1/back">
+          <Property Name="Image" Value="set:MainControl18 image:ShortHover" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,155},{0,50}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,155},{0,50}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00833333,0},{0.0967742,0},{0.266667,0},{0.903226,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticText" Name="HouseDlg/skill/CellBack1/back/name">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0387097,0},{0.28,0},{0.658065,0},{0.74,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="HouseDlg/skill/CellBack1/back/num">
+            <Property Name="Text" Value="20/20" />
+            <Property Name="HorzExtent" Value="39" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.664516,0},{0.28,0},{0.929032,0},{0.74,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack1/image1">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.323333,0},{0.016129,0},{0.395,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack1/image2">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.373334,19},{0.016129,0},{0.428334,29},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack1/image3">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.435001,31},{0.016129,0},{0.490001,41},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack1/image4">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.496668,43},{0.016129,0},{0.551668,53},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack1/image5">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.558335,55},{0.016129,0},{0.613335,65},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack1/image6">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.620002,67},{0.016129,0},{0.675002,77},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack1/image7">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.681669,79},{0.016129,0},{0.736669,89},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack2">
+        <Property Name="UnifiedAreaRect" Value="{{0.0145161,0},{0.498462,3},{0.0727941,564},{0.689231,3}}" />
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack2/item1">
+          <Property Name="UnifiedAreaRect" Value="{{0.40106,-36},{0.112903,0},{0.485866,-39},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack2/item2">
+          <Property Name="UnifiedAreaRect" Value="{{0.485866,-38},{0.112903,0},{0.485866,10},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack2/item3">
+          <Property Name="UnifiedAreaRect" Value="{{0.485866,11},{0.112903,0},{0.485866,59},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack2/item4">
+          <Property Name="UnifiedAreaRect" Value="{{0.570672,11},{0.112903,0},{0.655478,8},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack2/item5">
+          <Property Name="UnifiedAreaRect" Value="{{0.655478,9},{0.112903,0},{0.655478,57},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack2/item6">
+          <Property Name="UnifiedAreaRect" Value="{{0.655478,58},{0.112903,0},{0.655478,106},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack2/item7">
+          <Property Name="UnifiedAreaRect" Value="{{0.655478,107},{0.112903,0},{0.740284,104},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="HouseDlg/skill/CellBack2/left">
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="HoverImage" Value="set:MainControl4 image:LeftArrowHover" />
+          <Property Name="NormalImage" Value="set:MainControl4 image:LeftArrowNormal" />
+          <Property Name="PushedImage" Value="set:MainControl4 image:LeftArrowPushed" />
+          <Property Name="UnifiedAreaRect" Value="{{0.261667,0},{0.306452,0},{0.34,0},{0.693548,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="HouseDlg/skill/CellBack2/right">
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="HoverImage" Value="set:MainControl4 image:RightArrowHover" />
+          <Property Name="NormalImage" Value="set:MainControl4 image:RightArrowNormal" />
+          <Property Name="PushedImage" Value="set:MainControl4 image:RightArrowPushed" />
+          <Property Name="UnifiedAreaRect" Value="{{0.913333,0},{0.33871,0},{0.991667,0},{0.33871,20}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack2/back">
+          <Property Name="Image" Value="set:MainControl18 image:ShortHover" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,155},{0,50}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,155},{0,50}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00833333,0},{0.0967742,0},{0.266667,0},{0.903226,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticText" Name="HouseDlg/skill/CellBack2/back/name">
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0387097,0},{0.24,0},{0.658065,0},{0.76,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="TextParsingEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="HouseDlg/skill/CellBack2/back/num">
+            <Property Name="Text" Value="20/20" />
+            <Property Name="HorzExtent" Value="39" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.664516,0},{0.24,0},{0.929032,0},{0.76,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack2/image1">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.323333,0},{0.016129,0},{0.395,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack2/image2">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.373334,19},{0.016129,0},{0.435001,25},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack2/image3">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.435001,31},{0.016129,0},{0.496668,37},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack2/image4">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.496668,43},{0.016129,0},{0.558335,49},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack2/image5">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.558335,55},{0.016129,0},{0.620002,61},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack2/image6">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.620002,67},{0.016129,0},{0.681669,73},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack2/image7">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.681669,79},{0.016129,0},{0.743336,85},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack3">
+        <Property Name="UnifiedAreaRect" Value="{{0.0145161,0},{0.689231,5},{0.0727941,564},{0.88,5}}" />
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack3/item1">
+          <Property Name="UnifiedAreaRect" Value="{{0.40106,-35},{0.112903,0},{0.485866,-38},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack3/item2">
+          <Property Name="UnifiedAreaRect" Value="{{0.485866,-37},{0.112903,0},{0.485866,11},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack3/item3">
+          <Property Name="UnifiedAreaRect" Value="{{0.485866,12},{0.112903,0},{0.485866,60},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack3/item4">
+          <Property Name="UnifiedAreaRect" Value="{{0.570672,12},{0.112903,0},{0.655478,9},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack3/item5">
+          <Property Name="UnifiedAreaRect" Value="{{0.655478,10},{0.112903,0},{0.655478,58},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack3/item6">
+          <Property Name="UnifiedAreaRect" Value="{{0.655478,59},{0.112903,0},{0.655478,107},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/skill/CellBack3/item7">
+          <Property Name="UnifiedAreaRect" Value="{{0.655478,108},{0.112903,0},{0.740284,105},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="HouseDlg/skill/CellBack3/left">
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="HoverImage" Value="set:MainControl4 image:LeftArrowHover" />
+          <Property Name="NormalImage" Value="set:MainControl4 image:LeftArrowNormal" />
+          <Property Name="PushedImage" Value="set:MainControl4 image:LeftArrowPushed" />
+          <Property Name="UnifiedAreaRect" Value="{{0.263333,0},{0.33871,0},{0.341667,0},{0.33871,20}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="HouseDlg/skill/CellBack3/right">
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="HoverImage" Value="set:MainControl4 image:RightArrowHover" />
+          <Property Name="NormalImage" Value="set:MainControl4 image:RightArrowNormal" />
+          <Property Name="PushedImage" Value="set:MainControl4 image:RightArrowPushed" />
+          <Property Name="UnifiedAreaRect" Value="{{0.915,0},{0.33871,0},{0.993333,0},{0.33871,20}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack3/back">
+          <Property Name="Image" Value="set:MainControl18 image:ShortHover" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,155},{0,50}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,155},{0,50}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00833333,0},{0.0967742,0},{0.266667,0},{0.903226,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticText" Name="HouseDlg/skill/CellBack3/back/name">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0387097,0},{0.26,0},{0.658065,0},{0.74,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="HouseDlg/skill/CellBack3/back/num">
+            <Property Name="Text" Value="20/20" />
+            <Property Name="HorzExtent" Value="39" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.664516,0},{0.26,0},{0.929032,0},{0.74,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack3/image1">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.323333,0},{0.016129,0},{0.395,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack3/image2">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.373334,19},{0.016129,0},{0.435001,25},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack3/image3">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.435001,31},{0.016129,0},{0.496668,37},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack3/image4">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.496668,43},{0.016129,0},{0.558335,49},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack3/image5">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.558335,55},{0.016129,0},{0.620002,61},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack3/image6">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.620002,67},{0.016129,0},{0.681669,73},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/skill/CellBack3/image7">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.681669,79},{0.016129,0},{0.743336,85},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="HouseDlg/skill/out">
+        <Property Name="Text" Value="一键取出" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.774194,0},{0.910769,0},{0.805603,43},{0.0184616,313}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="HouseDlg/skill/up">
+        <Property Name="Text" Value="上页" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0274194,0},{0.910769,0},{0.130645,0},{0.904615,26}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="HouseDlg/skill/down">
+        <Property Name="Text" Value="下页" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.159677,0},{0.910769,0},{0.262903,0},{0.904615,26}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="HouseDlg/skill/pack1">
+        <Property Name="Text" Value="收    起" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.305648,34},{0.910769,0},{0.418605,26},{0.904615,26}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="HouseDlg/skill/out1">
+        <Property Name="Text" Value="取    出" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.418605,135},{0.910769,0},{0.531562,126},{0.904615,26}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="HouseDlg/skill/info">
+        <Property Name="Text" Value="收起的家具可右键摆放" />
+        <Property Name="HorzExtent" Value="130" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.253226,0},{0.0246154,0},{0.583871,0},{0.104615,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="HouseDlg/beauty">
+      <Property Name="UnifiedAreaRect" Value="{{0,37},{0,82},{0,657},{0,407}}" />
+      <Window Type="TaharezLook/StaticText" Name="HouseDlg/beauty/txt">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="美观家具：" />
+        <Property Name="HorzExtent" Value="75" />
+        <Property Name="VertExtent" Value="17.1936" />
+        <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+        <Property Name="BorderColour" Value="FF190400" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0225806,0},{0.0276923,0},{0.143548,0},{0.107692,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="HouseDlg/beauty/num">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="3/20" />
+        <Property Name="HorzExtent" Value="34" />
+        <Property Name="VertExtent" Value="17.1936" />
+        <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+        <Property Name="BorderColour" Value="FF190400" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.141935,0},{0.0246154,0},{0.262903,0},{0.104615,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="HouseDlg/beauty/pack">
+        <Property Name="Text" Value="一键收起" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.5,0},{0.913846,0},{0.568839,19},{0.0246154,312}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack0">
+        <Property Name="UnifiedAreaRect" Value="{{0.0145161,0},{0.113846,0},{0.0727941,564},{0.304615,0}}" />
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack0/item1">
+          <Property Name="UnifiedAreaRect" Value="{{0.40106,-37},{0.112903,0},{0.42,0},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack0/item2">
+          <Property Name="UnifiedAreaRect" Value="{{0.421667,0},{0.112903,0},{0.40106,60},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack0/item3">
+          <Property Name="UnifiedAreaRect" Value="{{0.40106,61},{0.112903,0},{0.40106,109},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack0/item4">
+          <Property Name="UnifiedAreaRect" Value="{{0.40106,110},{0.112903,0},{0.40106,158},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack0/item5">
+          <Property Name="UnifiedAreaRect" Value="{{0.40106,159},{0.112903,0},{0.40106,207},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack0/item6">
+          <Property Name="UnifiedAreaRect" Value="{{0.40106,208},{0.112903,0},{0.40106,256},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack0/item7">
+          <Property Name="UnifiedAreaRect" Value="{{0.40106,257},{0.112903,0},{0.485866,254},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="HouseDlg/beauty/CellBack0/left">
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="HoverImage" Value="set:MainControl4 image:LeftArrowHover" />
+          <Property Name="NormalImage" Value="set:MainControl4 image:LeftArrowNormal" />
+          <Property Name="PushedImage" Value="set:MainControl4 image:LeftArrowPushed" />
+          <Property Name="UnifiedAreaRect" Value="{{0.26,0},{0.314516,0},{0.338333,0},{0.685484,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="HouseDlg/beauty/CellBack0/right">
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="HoverImage" Value="set:MainControl4 image:RightArrowHover" />
+          <Property Name="NormalImage" Value="set:MainControl4 image:RightArrowNormal" />
+          <Property Name="PushedImage" Value="set:MainControl4 image:RightArrowPushed" />
+          <Property Name="UnifiedAreaRect" Value="{{0.911667,0},{0.314516,0},{0.99,0},{0.685484,0}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack0/back">
+          <Property Name="Image" Value="set:MainControl18 image:ShortHover" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,155},{0,50}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,155},{0,50}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00833333,0},{0.0967742,0},{0.266667,0},{0.903226,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticText" Name="HouseDlg/beauty/CellBack0/back/name">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0387097,0},{0.26,0},{0.658065,0},{0.76,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="HouseDlg/beauty/CellBack0/back/num">
+            <Property Name="Text" Value="20/20" />
+            <Property Name="HorzExtent" Value="39" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.664516,0},{0.26,0},{0.929032,0},{0.76,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack0/image1">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.323333,0},{0.016129,0},{0.395,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack0/image2">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.405,0},{0.016129,0},{0.476667,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack0/image3">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.486667,0},{0.016129,0},{0.558333,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack0/image4">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.568333,0},{0.016129,0},{0.64,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack0/image5">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.65,0},{0.016129,0},{0.721667,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack0/image6">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.731667,0},{0.016129,0},{0.803333,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack0/image7">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.813333,0},{0.016129,0},{0.885,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack1">
+        <Property Name="UnifiedAreaRect" Value="{{0.0145161,0},{0.307692,1},{0.0727941,564},{0.498462,1}}" />
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack1/item1">
+          <Property Name="UnifiedAreaRect" Value="{{0.40106,-36},{0.112903,0},{0.485866,-39},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack1/item2">
+          <Property Name="UnifiedAreaRect" Value="{{0.485866,-38},{0.112903,0},{0.485866,10},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack1/item3">
+          <Property Name="UnifiedAreaRect" Value="{{0.485866,11},{0.112903,0},{0.485866,59},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack1/item4">
+          <Property Name="UnifiedAreaRect" Value="{{0.570672,11},{0.112903,0},{0.655478,8},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack1/item5">
+          <Property Name="UnifiedAreaRect" Value="{{0.655478,9},{0.112903,0},{0.655478,57},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack1/item6">
+          <Property Name="UnifiedAreaRect" Value="{{0.655478,58},{0.112903,0},{0.655478,106},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack1/item7">
+          <Property Name="UnifiedAreaRect" Value="{{0.655478,107},{0.112903,0},{0.740284,104},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="HouseDlg/beauty/CellBack1/left">
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="HoverImage" Value="set:MainControl4 image:LeftArrowHover" />
+          <Property Name="NormalImage" Value="set:MainControl4 image:LeftArrowNormal" />
+          <Property Name="PushedImage" Value="set:MainControl4 image:LeftArrowPushed" />
+          <Property Name="UnifiedAreaRect" Value="{{0.261667,0},{0.33871,0},{0.34,0},{0.33871,20}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="HouseDlg/beauty/CellBack1/right">
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="HoverImage" Value="set:MainControl4 image:RightArrowHover" />
+          <Property Name="NormalImage" Value="set:MainControl4 image:RightArrowNormal" />
+          <Property Name="PushedImage" Value="set:MainControl4 image:RightArrowPushed" />
+          <Property Name="UnifiedAreaRect" Value="{{0.913333,0},{0.33871,0},{0.991667,0},{0.33871,20}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack1/back">
+          <Property Name="Image" Value="set:MainControl18 image:ShortHover" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,155},{0,50}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,155},{0,50}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00833333,0},{0.0967742,0},{0.266667,0},{0.903226,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticText" Name="HouseDlg/beauty/CellBack1/back/name">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0387097,0},{0.28,0},{0.658065,0},{0.74,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="HouseDlg/beauty/CellBack1/back/num">
+            <Property Name="Text" Value="20/20" />
+            <Property Name="HorzExtent" Value="39" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.664516,0},{0.28,0},{0.929032,0},{0.74,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack1/image1">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.323333,0},{0.016129,0},{0.395,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack1/image2">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.405,0},{0.016129,0},{0.476667,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack1/image3">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.486667,0},{0.016129,0},{0.558333,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack1/image4">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.568333,0},{0.016129,0},{0.64,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack1/image5">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.65,0},{0.016129,0},{0.721667,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack1/image6">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.731667,0},{0.016129,0},{0.803333,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack1/image7">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.813333,0},{0.016129,0},{0.885,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack2">
+        <Property Name="UnifiedAreaRect" Value="{{0.0145161,0},{0.498462,3},{0.0727941,564},{0.689231,3}}" />
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack2/item1">
+          <Property Name="UnifiedAreaRect" Value="{{0.40106,-36},{0.112903,0},{0.485866,-39},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack2/item2">
+          <Property Name="UnifiedAreaRect" Value="{{0.485866,-38},{0.112903,0},{0.485866,10},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack2/item3">
+          <Property Name="UnifiedAreaRect" Value="{{0.485866,11},{0.112903,0},{0.485866,59},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack2/item4">
+          <Property Name="UnifiedAreaRect" Value="{{0.570672,11},{0.112903,0},{0.655478,8},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack2/item5">
+          <Property Name="UnifiedAreaRect" Value="{{0.655478,9},{0.112903,0},{0.655478,57},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack2/item6">
+          <Property Name="UnifiedAreaRect" Value="{{0.655478,58},{0.112903,0},{0.655478,106},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack2/item7">
+          <Property Name="UnifiedAreaRect" Value="{{0.655478,107},{0.112903,0},{0.740284,104},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="HouseDlg/beauty/CellBack2/left">
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="HoverImage" Value="set:MainControl4 image:LeftArrowHover" />
+          <Property Name="NormalImage" Value="set:MainControl4 image:LeftArrowNormal" />
+          <Property Name="PushedImage" Value="set:MainControl4 image:LeftArrowPushed" />
+          <Property Name="UnifiedAreaRect" Value="{{0.261667,0},{0.306452,0},{0.34,0},{0.693548,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="HouseDlg/beauty/CellBack2/right">
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="HoverImage" Value="set:MainControl4 image:RightArrowHover" />
+          <Property Name="NormalImage" Value="set:MainControl4 image:RightArrowNormal" />
+          <Property Name="PushedImage" Value="set:MainControl4 image:RightArrowPushed" />
+          <Property Name="UnifiedAreaRect" Value="{{0.913333,0},{0.33871,0},{0.991667,0},{0.33871,20}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack2/back">
+          <Property Name="Image" Value="set:MainControl18 image:ShortHover" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,155},{0,50}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,155},{0,50}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00833333,0},{0.0967742,0},{0.266667,0},{0.903226,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticText" Name="HouseDlg/beauty/CellBack2/back/name">
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0387097,0},{0.24,0},{0.658065,0},{0.76,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="TextParsingEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="HouseDlg/beauty/CellBack2/back/num">
+            <Property Name="Text" Value="20/20" />
+            <Property Name="HorzExtent" Value="39" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.664516,0},{0.24,0},{0.929032,0},{0.76,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack2/image1">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.323333,0},{0.016129,0},{0.395,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack2/image2">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.405,0},{0.016129,0},{0.476667,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack2/image3">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.486667,0},{0.016129,0},{0.558333,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack2/image4">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.568333,0},{0.016129,0},{0.64,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack2/image5">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.65,0},{0.016129,0},{0.721667,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack2/image6">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.731667,0},{0.016129,0},{0.803333,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack2/image7">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.813333,0},{0.016129,0},{0.885,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack3">
+        <Property Name="UnifiedAreaRect" Value="{{0.0145161,0},{0.689231,5},{0.0727941,564},{0.88,5}}" />
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack3/item1">
+          <Property Name="UnifiedAreaRect" Value="{{0.40106,-35},{0.112903,0},{0.485866,-38},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack3/item2">
+          <Property Name="UnifiedAreaRect" Value="{{0.485866,-37},{0.112903,0},{0.485866,11},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack3/item3">
+          <Property Name="UnifiedAreaRect" Value="{{0.485866,12},{0.112903,0},{0.485866,60},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack3/item4">
+          <Property Name="UnifiedAreaRect" Value="{{0.570672,12},{0.112903,0},{0.655478,9},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack3/item5">
+          <Property Name="UnifiedAreaRect" Value="{{0.655478,10},{0.112903,0},{0.655478,58},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack3/item6">
+          <Property Name="UnifiedAreaRect" Value="{{0.655478,59},{0.112903,0},{0.655478,107},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="HouseDlg/beauty/CellBack3/item7">
+          <Property Name="UnifiedAreaRect" Value="{{0.655478,108},{0.112903,0},{0.740284,105},{0.112903,48}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="HouseDlg/beauty/CellBack3/left">
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="HoverImage" Value="set:MainControl4 image:LeftArrowHover" />
+          <Property Name="NormalImage" Value="set:MainControl4 image:LeftArrowNormal" />
+          <Property Name="PushedImage" Value="set:MainControl4 image:LeftArrowPushed" />
+          <Property Name="UnifiedAreaRect" Value="{{0.263333,0},{0.33871,0},{0.341667,0},{0.33871,20}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="HouseDlg/beauty/CellBack3/right">
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="HoverImage" Value="set:MainControl4 image:RightArrowHover" />
+          <Property Name="NormalImage" Value="set:MainControl4 image:RightArrowNormal" />
+          <Property Name="PushedImage" Value="set:MainControl4 image:RightArrowPushed" />
+          <Property Name="UnifiedAreaRect" Value="{{0.915,0},{0.33871,0},{0.993333,0},{0.33871,20}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack3/back">
+          <Property Name="Image" Value="set:MainControl18 image:ShortHover" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,155},{0,50}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,155},{0,50}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00833333,0},{0.0967742,0},{0.266667,0},{0.903226,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticText" Name="HouseDlg/beauty/CellBack3/back/name">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0387097,0},{0.26,0},{0.658065,0},{0.74,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="HouseDlg/beauty/CellBack3/back/num">
+            <Property Name="Text" Value="20/20" />
+            <Property Name="HorzExtent" Value="39" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.664516,0},{0.26,0},{0.929032,0},{0.74,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack3/image1">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.323333,0},{0.016129,0},{0.395,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack3/image2">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.405,0},{0.016129,0},{0.476667,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack3/image3">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.486667,0},{0.016129,0},{0.558333,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack3/image4">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.568333,0},{0.016129,0},{0.64,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack3/image5">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.65,0},{0.016129,0},{0.721667,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack3/image6">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.731667,0},{0.016129,0},{0.803333,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/beauty/CellBack3/image7">
+          <Property Name="Image" Value="set:MainControl28 image:Bai" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.813333,0},{0.016129,0},{0.885,0},{0.580645,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="HouseDlg/beauty/out">
+        <Property Name="Text" Value="一键取出" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.774194,0},{0.910769,0},{0.805603,43},{0.0184616,313}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="HouseDlg/beauty/up">
+        <Property Name="Text" Value="上页" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0274194,0},{0.910769,0},{0.130645,0},{0.904615,26}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="HouseDlg/beauty/down">
+        <Property Name="Text" Value="下页" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.159677,0},{0.910769,0},{0.262903,0},{0.904615,26}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="HouseDlg/beauty/pack1">
+        <Property Name="Text" Value="收    起" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.305648,34},{0.910769,0},{0.418605,26},{0.904615,26}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="HouseDlg/beauty/out1">
+        <Property Name="Text" Value="取    出" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.418605,135},{0.910769,0},{0.531562,126},{0.904615,26}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="HouseDlg/beauty/info">
+        <Property Name="Text" Value="收起的家具可右键摆放" />
+        <Property Name="HorzExtent" Value="130" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.253226,0},{0.0246154,0},{0.583871,0},{0.104615,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="HouseDlg/HouseBag">
+      <Property Name="UnifiedAreaRect" Value="{{0,37},{0,82},{0,657},{0,407}}" />
+      <Window Type="TaharezLook/StaticImage" Name="HouseDlg/HouseBag/back1">
+        <Property Name="UnifiedAreaRect" Value="{{0.0596774,0},{0.0953846,0},{0.0441176,272},{0.0676923,289}}" />
+        <Window Type="TaharezLook/GroupButton" Name="HouseDlg/HouseBag/back1/one">
+          <Property Name="Text" Value="一" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0572519,0},{0.0285715,0},{0.164122,0},{0.0999996,0}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/HouseBag/back1/CellBack">
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0305344,0},{0.05,13},{0.0857143,232},{0.05,259}}" />
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back1/CellBack/item1">
+            <Property Name="UnifiedAreaRect" Value="{{0.40106,-96},{0.0121951,0},{0.40106,-48},{0.0121951,48}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back1/CellBack/item2">
+            <Property Name="UnifiedAreaRect" Value="{{0.485866,-69},{0.0121951,0},{0.485866,-21},{0.35137,-35}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back1/CellBack/item3">
+            <Property Name="UnifiedAreaRect" Value="{{0.570672,-41},{0.0121951,0},{0.570672,7},{0.35137,-35}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back1/CellBack/item4">
+            <Property Name="UnifiedAreaRect" Value="{{0.655478,-14},{0.0121951,0},{0.655478,34},{0.35137,-35}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back1/CellBack/item5">
+            <Property Name="UnifiedAreaRect" Value="{{0.740284,13},{0.0121951,0},{0.740284,61},{0.35137,-35}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back1/CellBack/item6">
+            <Property Name="UnifiedAreaRect" Value="{{0.40106,-96},{0.35137,-35},{0.40106,-48},{0.35137,13}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back1/CellBack/item7">
+            <Property Name="UnifiedAreaRect" Value="{{0.485866,-69},{0.35137,-35},{0.485866,-21},{0.35137,13}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back1/CellBack/item8">
+            <Property Name="UnifiedAreaRect" Value="{{0.570672,-41},{0.35137,-35},{0.570672,7},{0.35137,13}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back1/CellBack/item9">
+            <Property Name="UnifiedAreaRect" Value="{{0.655478,-14},{0.35137,-35},{0.655478,34},{0.35137,13}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back1/CellBack/item10">
+            <Property Name="UnifiedAreaRect" Value="{{0.740284,13},{0.35137,-35},{0.740284,61},{0.35137,13}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back1/CellBack/item11">
+            <Property Name="UnifiedAreaRect" Value="{{0.40106,-96},{0,99},{0.40106,-48},{0.34324,63}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back1/CellBack/item12">
+            <Property Name="UnifiedAreaRect" Value="{{0.485866,-69},{0,99},{0.485866,-21},{0.34324,63}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back1/CellBack/item13">
+            <Property Name="UnifiedAreaRect" Value="{{0.570672,-41},{0,99},{0.570672,7},{0.34324,63}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back1/CellBack/item14">
+            <Property Name="UnifiedAreaRect" Value="{{0.655478,-14},{0,99},{0.655478,34},{0.34324,63}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back1/CellBack/item15">
+            <Property Name="UnifiedAreaRect" Value="{{0.740284,13},{0,99},{0.740284,61},{0.34324,63}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back1/CellBack/item16">
+            <Property Name="UnifiedAreaRect" Value="{{0.40106,-96},{0,147},{0.40106,-48},{0.34324,111}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back1/CellBack/item17">
+            <Property Name="UnifiedAreaRect" Value="{{0.485866,-69},{0,148},{0.485866,-21},{0.34324,112}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back1/CellBack/item18">
+            <Property Name="UnifiedAreaRect" Value="{{0.570672,-41},{0,148},{0.570672,7},{0.34324,112}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back1/CellBack/item19">
+            <Property Name="UnifiedAreaRect" Value="{{0.655478,-14},{0,148},{0.655478,34},{0.34324,112}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back1/CellBack/item20">
+            <Property Name="UnifiedAreaRect" Value="{{0.740284,13},{0,148},{0.740284,61},{0.34324,112}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back1/CellBack/item21">
+            <Property Name="UnifiedAreaRect" Value="{{0.40106,-96},{0,196},{0.40106,-48},{0.34324,160}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back1/CellBack/item22">
+            <Property Name="UnifiedAreaRect" Value="{{0.485866,-69},{0,196},{0.485866,-21},{0.34324,160}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back1/CellBack/item23">
+            <Property Name="UnifiedAreaRect" Value="{{0.570672,-41},{0,196},{0.570672,7},{0.34324,160}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back1/CellBack/item24">
+            <Property Name="UnifiedAreaRect" Value="{{0.655478,-14},{0,196},{0.655478,34},{0.34324,160}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back1/CellBack/item25">
+            <Property Name="UnifiedAreaRect" Value="{{0.740284,13},{0,196},{0.740284,61},{0.34324,160}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/GroupButton" Name="HouseDlg/HouseBag/back1/two">
+          <Property Name="Text" Value="二" />
+          <Property Name="UnifiedAreaRect" Value="{{0.167939,0},{0.0285715,0},{0.27481,0},{0.0999996,0}}" />
+        </Window>
+        <Window Type="TaharezLook/GroupButton" Name="HouseDlg/HouseBag/back1/three">
+          <Property Name="Text" Value="三" />
+          <Property Name="UnifiedAreaRect" Value="{{0.278627,0},{0.0285715,0},{0.385498,0},{0.0999996,0}}" />
+        </Window>
+        <Window Type="TaharezLook/GroupButton" Name="HouseDlg/HouseBag/back1/four">
+          <Property Name="Text" Value="四" />
+          <Property Name="UnifiedAreaRect" Value="{{0.385498,1},{0.0285715,0},{0.492369,1},{0.0999996,0}}" />
+        </Window>
+        <Window Type="TaharezLook/GroupButton" Name="HouseDlg/HouseBag/back1/five">
+          <Property Name="Text" Value="五" />
+          <Property Name="UnifiedAreaRect" Value="{{0.492369,2},{0.0285715,0},{0.599239,2},{0.0999996,0}}" />
+        </Window>
+        <Window Type="TaharezLook/GroupButton" Name="HouseDlg/HouseBag/back1/six">
+          <Property Name="Text" Value="六" />
+          <Property Name="UnifiedAreaRect" Value="{{0.599239,3},{0.0285715,0},{0.70611,3},{0.0999996,0}}" />
+        </Window>
+        <Window Type="TaharezLook/GroupButton" Name="HouseDlg/HouseBag/back1/seven">
+          <Property Name="Text" Value="七" />
+          <Property Name="UnifiedAreaRect" Value="{{0.70611,4},{0.0285715,0},{0.81298,4},{0.0999996,0}}" />
+        </Window>
+        <Window Type="TaharezLook/GroupButton" Name="HouseDlg/HouseBag/back1/eight">
+          <Property Name="Text" Value="八" />
+          <Property Name="UnifiedAreaRect" Value="{{0.81298,5},{0.0285715,0},{0.91985,5},{0.0999996,0}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Figure1" Name="HouseDlg/HouseBag/my">
+        <Property Name="UnifiedAreaRect" Value="{{0.187097,0},{0.0307692,0},{0.351613,0},{0.0892308,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/HouseBag/my/txt">
+          <Property Name="Text" Value="我的仓库" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+          <Property Name="BorderColour" Value="FF5F4100" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.343137,0},{0.0526316,0},{0.882353,0},{0.947368,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Figure1" Name="HouseDlg/HouseBag/bag">
+        <Property Name="UnifiedAreaRect" Value="{{0.646774,0},{0.0338462,0},{0.809677,0},{0.0923077,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/HouseBag/bag/txt">
+          <Property Name="Text" Value="我的包裹" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+          <Property Name="BorderColour" Value="FF5F4100" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.346535,0},{0.0526316,0},{0.891089,0},{0.947368,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="HouseDlg/HouseBag/back2">
+        <Property Name="UnifiedAreaRect" Value="{{0.51129,0},{0.0953846,0},{0.442646,305},{0.0676923,289}}" />
+        <Window Type="TaharezLook/GroupButton" Name="HouseDlg/HouseBag/back2/one">
+          <Property Name="Text" Value="一" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0534351,0},{0.0285714,0},{0.160305,0},{0.1,0}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/HouseBag/back2/CellBack">
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0267176,0},{0.05,13},{0.0857143,231},{0.05,259}}" />
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back2/CellBack/item1">
+            <Property Name="UnifiedAreaRect" Value="{{0.40106,-96},{0.0121951,0},{0.40106,-48},{0.359434,-37}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back2/CellBack/item2">
+            <Property Name="UnifiedAreaRect" Value="{{0.485866,-69},{0.0121951,0},{0.485866,-21},{0.359434,-37}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back2/CellBack/item3">
+            <Property Name="UnifiedAreaRect" Value="{{0.570672,-41},{0.0121951,0},{0.570672,7},{0.359434,-37}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back2/CellBack/item4">
+            <Property Name="UnifiedAreaRect" Value="{{0.655478,-14},{0.0121951,0},{0.655478,34},{0.359434,-37}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back2/CellBack/item5">
+            <Property Name="UnifiedAreaRect" Value="{{0.740284,13},{0.0121951,0},{0.740284,61},{0.359434,-37}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back2/CellBack/item6">
+            <Property Name="UnifiedAreaRect" Value="{{0.40106,-96},{0.35137,-35},{0.40106,-48},{0.35137,13}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back2/CellBack/item7">
+            <Property Name="UnifiedAreaRect" Value="{{0.485866,-69},{0.35137,-35},{0.485866,-21},{0.35137,13}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back2/CellBack/item8">
+            <Property Name="UnifiedAreaRect" Value="{{0.570672,-41},{0.35137,-35},{0.570672,7},{0.35137,13}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back2/CellBack/item9">
+            <Property Name="UnifiedAreaRect" Value="{{0.655478,-14},{0.35137,-35},{0.655478,34},{0.35137,13}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back2/CellBack/item10">
+            <Property Name="UnifiedAreaRect" Value="{{0.740284,13},{0.35137,-35},{0.740284,61},{0.35137,13}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back2/CellBack/item11">
+            <Property Name="UnifiedAreaRect" Value="{{0.40106,-96},{0,99},{0.40106,-48},{0.347239,62}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back2/CellBack/item12">
+            <Property Name="UnifiedAreaRect" Value="{{0.485866,-69},{0,99},{0.485866,-21},{0.347239,62}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back2/CellBack/item13">
+            <Property Name="UnifiedAreaRect" Value="{{0.570672,-41},{0,99},{0.570672,7},{0.347239,62}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back2/CellBack/item14">
+            <Property Name="UnifiedAreaRect" Value="{{0.655478,-14},{0,99},{0.655478,34},{0.347239,62}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back2/CellBack/item15">
+            <Property Name="UnifiedAreaRect" Value="{{0.740284,13},{0,99},{0.740284,61},{0.347239,62}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back2/CellBack/item16">
+            <Property Name="UnifiedAreaRect" Value="{{0.40106,-96},{0,148},{0.40106,-48},{0.347239,111}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back2/CellBack/item17">
+            <Property Name="UnifiedAreaRect" Value="{{0.485866,-69},{0,148},{0.485866,-21},{0.347239,111}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back2/CellBack/item18">
+            <Property Name="UnifiedAreaRect" Value="{{0.570672,-41},{0,148},{0.570672,7},{0.347239,111}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back2/CellBack/item19">
+            <Property Name="UnifiedAreaRect" Value="{{0.655478,-14},{0,148},{0.655478,34},{0.347239,111}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back2/CellBack/item20">
+            <Property Name="UnifiedAreaRect" Value="{{0.740284,13},{0,148},{0.740284,61},{0.347239,111}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back2/CellBack/item21">
+            <Property Name="UnifiedAreaRect" Value="{{0.40106,-96},{0,196},{0.40106,-48},{0.347239,159}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back2/CellBack/item22">
+            <Property Name="UnifiedAreaRect" Value="{{0.485866,-69},{0,196},{0.485866,-21},{0.347239,159}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back2/CellBack/item23">
+            <Property Name="UnifiedAreaRect" Value="{{0.570672,-41},{0,196},{0.570672,7},{0.347239,159}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back2/CellBack/item24">
+            <Property Name="UnifiedAreaRect" Value="{{0.655478,-14},{0,196},{0.655478,34},{0.347239,159}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/HouseBag/back2/CellBack/item25">
+            <Property Name="UnifiedAreaRect" Value="{{0.740284,13},{0,196},{0.740284,61},{0.347239,159}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/GroupButton" Name="HouseDlg/HouseBag/back2/two">
+          <Property Name="Text" Value="二" />
+          <Property Name="UnifiedAreaRect" Value="{{0.10687,15},{0.0285714,0},{0.21374,15},{0.1,0}}" />
+        </Window>
+        <Window Type="TaharezLook/GroupButton" Name="HouseDlg/HouseBag/back2/three">
+          <Property Name="Text" Value="三" />
+          <Property Name="UnifiedAreaRect" Value="{{0.21374,16},{0.0285714,0},{0.32061,16},{0.1,0}}" />
+        </Window>
+        <Window Type="TaharezLook/GroupButton" Name="HouseDlg/HouseBag/back2/four">
+          <Property Name="Text" Value="四" />
+          <Property Name="UnifiedAreaRect" Value="{{0.32061,17},{0.0285714,0},{0.42748,17},{0.0518518,13}}" />
+        </Window>
+        <Window Type="TaharezLook/GroupButton" Name="HouseDlg/HouseBag/back2/five">
+          <Property Name="Text" Value="五" />
+          <Property Name="UnifiedAreaRect" Value="{{0.37061,33},{0.0285714,0},{0.47748,33},{0.0982804,0}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="HouseDlg/HouseBag/flower1">
+        <Property Name="Image" Value="set:MainControl13 image:03" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,19},{0,95}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,19},{0,95}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0129032,0},{0.187692,0},{0.0435484,0},{0.48,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="HouseDlg/HouseBag/flower2">
+        <Property Name="Image" Value="set:MainControl13 image:03" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,19},{0,95}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,19},{0,95}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0129032,0},{0.48,0},{0.0435484,0},{0.772308,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="HouseDlg/HouseBag/flower3">
+        <Property Name="Image" Value="set:MainControl13 image:03" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,19},{0,95}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,19},{0,95}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.948387,0},{0.187692,0},{0.979032,0},{0.48,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="HouseDlg/HouseBag/flower4">
+        <Property Name="Image" Value="set:MainControl13 image:03" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,19},{0,95}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,19},{0,95}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.948387,0},{0.48,0},{0.979032,0},{0.772308,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="HouseDlg/CoupleBag">
+      <Property Name="UnifiedAreaRect" Value="{{0,37},{0,82},{0,657},{0,407}}" />
+      <Window Type="TaharezLook/StaticImage" Name="HouseDlg/CoupleBag/back1">
+        <Property Name="UnifiedAreaRect" Value="{{0.0596774,0},{0.0953846,0},{0.0441176,272},{0.0676923,289}}" />
+        <Window Type="TaharezLook/GroupButton" Name="HouseDlg/CoupleBag/back1/one">
+          <Property Name="Text" Value="一" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0648855,0},{0.0321429,0},{0.206107,0},{0.103571,0}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/CoupleBag/back1/CellBack">
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0305344,0},{0.05,14},{0.0857143,232},{0.05,260}}" />
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back1/CellBack/item1">
+            <Property Name="UnifiedAreaRect" Value="{{0.40106,-96},{0.0121951,0},{0.40106,-48},{0.0121951,48}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back1/CellBack/item2">
+            <Property Name="UnifiedAreaRect" Value="{{0.485866,-69},{0.0121951,0},{0.485866,-21},{0.35137,-35}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back1/CellBack/item3">
+            <Property Name="UnifiedAreaRect" Value="{{0.570672,-41},{0.0121951,0},{0.570672,7},{0.35137,-35}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back1/CellBack/item4">
+            <Property Name="UnifiedAreaRect" Value="{{0.655478,-14},{0.0121951,0},{0.655478,34},{0.35137,-35}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back1/CellBack/item5">
+            <Property Name="UnifiedAreaRect" Value="{{0.740284,13},{0.0121951,0},{0.740284,61},{0.35137,-35}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back1/CellBack/item6">
+            <Property Name="UnifiedAreaRect" Value="{{0.40106,-96},{0.35137,-35},{0.40106,-48},{0.35137,13}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back1/CellBack/item7">
+            <Property Name="UnifiedAreaRect" Value="{{0.485866,-69},{0.35137,-35},{0.485866,-21},{0.35137,13}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back1/CellBack/item8">
+            <Property Name="UnifiedAreaRect" Value="{{0.570672,-41},{0.35137,-35},{0.570672,7},{0.35137,13}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back1/CellBack/item9">
+            <Property Name="UnifiedAreaRect" Value="{{0.655478,-14},{0.35137,-35},{0.655478,34},{0.35137,13}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back1/CellBack/item10">
+            <Property Name="UnifiedAreaRect" Value="{{0.740284,13},{0.35137,-35},{0.740284,61},{0.35137,13}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back1/CellBack/item11">
+            <Property Name="UnifiedAreaRect" Value="{{0.40106,-96},{0,99},{0.40106,-48},{0.34324,63}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back1/CellBack/item12">
+            <Property Name="UnifiedAreaRect" Value="{{0.485866,-69},{0,99},{0.485866,-21},{0.34324,63}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back1/CellBack/item13">
+            <Property Name="UnifiedAreaRect" Value="{{0.570672,-41},{0,99},{0.570672,7},{0.34324,63}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back1/CellBack/item14">
+            <Property Name="UnifiedAreaRect" Value="{{0.655478,-14},{0,99},{0.655478,34},{0.34324,63}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back1/CellBack/item15">
+            <Property Name="UnifiedAreaRect" Value="{{0.740284,13},{0,99},{0.740284,61},{0.34324,63}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back1/CellBack/item16">
+            <Property Name="UnifiedAreaRect" Value="{{0.40106,-96},{0,147},{0.40106,-48},{0.34324,111}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back1/CellBack/item17">
+            <Property Name="UnifiedAreaRect" Value="{{0.485866,-69},{0,148},{0.485866,-21},{0.34324,112}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back1/CellBack/item18">
+            <Property Name="UnifiedAreaRect" Value="{{0.570672,-41},{0,148},{0.570672,7},{0.34324,112}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back1/CellBack/item19">
+            <Property Name="UnifiedAreaRect" Value="{{0.655478,-14},{0,148},{0.655478,34},{0.34324,112}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back1/CellBack/item20">
+            <Property Name="UnifiedAreaRect" Value="{{0.740284,13},{0,148},{0.740284,61},{0.34324,112}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back1/CellBack/item21">
+            <Property Name="UnifiedAreaRect" Value="{{0.40106,-96},{0,196},{0.40106,-48},{0.34324,160}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back1/CellBack/item22">
+            <Property Name="UnifiedAreaRect" Value="{{0.485866,-69},{0,196},{0.485866,-21},{0.34324,160}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back1/CellBack/item23">
+            <Property Name="UnifiedAreaRect" Value="{{0.570672,-41},{0,196},{0.570672,7},{0.34324,160}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back1/CellBack/item24">
+            <Property Name="UnifiedAreaRect" Value="{{0.655478,-14},{0,196},{0.655478,34},{0.34324,160}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back1/CellBack/item25">
+            <Property Name="UnifiedAreaRect" Value="{{0.740284,13},{0,196},{0.740284,61},{0.34324,160}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/GroupButton" Name="HouseDlg/CoupleBag/back1/two">
+          <Property Name="Text" Value="二" />
+          <Property Name="UnifiedAreaRect" Value="{{0.21374,0},{0.0321429,0},{0.354962,0},{0.103571,0}}" />
+        </Window>
+        <Window Type="TaharezLook/GroupButton" Name="HouseDlg/CoupleBag/back1/three">
+          <Property Name="Text" Value="三" />
+          <Property Name="UnifiedAreaRect" Value="{{0.362595,0},{0.0321429,0},{0.503817,0},{0.103571,0}}" />
+        </Window>
+        <Window Type="TaharezLook/GroupButton" Name="HouseDlg/CoupleBag/back1/four">
+          <Property Name="Text" Value="四" />
+          <Property Name="UnifiedAreaRect" Value="{{0.51145,0},{0.0321429,0},{0.652672,0},{0.103571,0}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Figure1" Name="HouseDlg/CoupleBag/my">
+        <Property Name="UnifiedAreaRect" Value="{{0.187097,0},{0.0307692,0},{0.351613,0},{0.0892308,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/CoupleBag/my/txt">
+          <Property Name="Text" Value="夫妻仓库" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+          <Property Name="BorderColour" Value="FF5F4100" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.343137,0},{0.0526316,0},{0.882353,0},{0.947368,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Figure1" Name="HouseDlg/CoupleBag/bag">
+        <Property Name="UnifiedAreaRect" Value="{{0.646774,0},{0.0338462,0},{0.809677,0},{0.0923077,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/CoupleBag/bag/txt">
+          <Property Name="Text" Value="我的包裹" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+          <Property Name="BorderColour" Value="FF5F4100" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.346535,0},{0.0526316,0},{0.891089,0},{0.947368,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="HouseDlg/CoupleBag/back2">
+        <Property Name="UnifiedAreaRect" Value="{{0.51129,0},{0.0953846,0},{0.442646,305},{0.0676923,289}}" />
+        <Window Type="TaharezLook/GroupButton" Name="HouseDlg/CoupleBag/back2/one">
+          <Property Name="Text" Value="一" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0610687,0},{0.0285714,0},{0.20229,0},{0.1,0}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/CoupleBag/back2/CellBack">
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0267176,0},{0.05,13},{0.0857143,231},{0.05,259}}" />
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back2/CellBack/item1">
+            <Property Name="UnifiedAreaRect" Value="{{0.40106,-96},{0.0121951,0},{0.40106,-48},{0.359434,-37}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back2/CellBack/item2">
+            <Property Name="UnifiedAreaRect" Value="{{0.485866,-69},{0.0121951,0},{0.485866,-21},{0.359434,-37}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back2/CellBack/item3">
+            <Property Name="UnifiedAreaRect" Value="{{0.570672,-41},{0.0121951,0},{0.570672,7},{0.359434,-37}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back2/CellBack/item4">
+            <Property Name="UnifiedAreaRect" Value="{{0.655478,-14},{0.0121951,0},{0.655478,34},{0.359434,-37}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back2/CellBack/item5">
+            <Property Name="UnifiedAreaRect" Value="{{0.740284,13},{0.0121951,0},{0.740284,61},{0.359434,-37}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back2/CellBack/item6">
+            <Property Name="UnifiedAreaRect" Value="{{0.40106,-96},{0.35137,-35},{0.40106,-48},{0.35137,13}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back2/CellBack/item7">
+            <Property Name="UnifiedAreaRect" Value="{{0.485866,-69},{0.35137,-35},{0.485866,-21},{0.35137,13}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back2/CellBack/item8">
+            <Property Name="UnifiedAreaRect" Value="{{0.570672,-41},{0.35137,-35},{0.570672,7},{0.35137,13}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back2/CellBack/item9">
+            <Property Name="UnifiedAreaRect" Value="{{0.655478,-14},{0.35137,-35},{0.655478,34},{0.35137,13}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back2/CellBack/item10">
+            <Property Name="UnifiedAreaRect" Value="{{0.740284,13},{0.35137,-35},{0.740284,61},{0.35137,13}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back2/CellBack/item11">
+            <Property Name="UnifiedAreaRect" Value="{{0.40106,-96},{0,99},{0.40106,-48},{0.347239,62}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back2/CellBack/item12">
+            <Property Name="UnifiedAreaRect" Value="{{0.485866,-69},{0,99},{0.485866,-21},{0.347239,62}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back2/CellBack/item13">
+            <Property Name="UnifiedAreaRect" Value="{{0.570672,-41},{0,99},{0.570672,7},{0.347239,62}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back2/CellBack/item14">
+            <Property Name="UnifiedAreaRect" Value="{{0.655478,-14},{0,99},{0.655478,34},{0.347239,62}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back2/CellBack/item15">
+            <Property Name="UnifiedAreaRect" Value="{{0.740284,13},{0,99},{0.740284,61},{0.347239,62}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back2/CellBack/item16">
+            <Property Name="UnifiedAreaRect" Value="{{0.40106,-96},{0,148},{0.40106,-48},{0.347239,111}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back2/CellBack/item17">
+            <Property Name="UnifiedAreaRect" Value="{{0.485866,-69},{0,148},{0.485866,-21},{0.347239,111}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back2/CellBack/item18">
+            <Property Name="UnifiedAreaRect" Value="{{0.570672,-41},{0,148},{0.570672,7},{0.347239,111}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back2/CellBack/item19">
+            <Property Name="UnifiedAreaRect" Value="{{0.655478,-14},{0,148},{0.655478,34},{0.347239,111}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back2/CellBack/item20">
+            <Property Name="UnifiedAreaRect" Value="{{0.740284,13},{0,148},{0.740284,61},{0.347239,111}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back2/CellBack/item21">
+            <Property Name="UnifiedAreaRect" Value="{{0.40106,-96},{0,196},{0.40106,-48},{0.347239,159}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back2/CellBack/item22">
+            <Property Name="UnifiedAreaRect" Value="{{0.485866,-69},{0,196},{0.485866,-21},{0.347239,159}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back2/CellBack/item23">
+            <Property Name="UnifiedAreaRect" Value="{{0.570672,-41},{0,196},{0.570672,7},{0.347239,159}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back2/CellBack/item24">
+            <Property Name="UnifiedAreaRect" Value="{{0.655478,-14},{0,196},{0.655478,34},{0.347239,159}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/CoupleBag/back2/CellBack/item25">
+            <Property Name="UnifiedAreaRect" Value="{{0.740284,13},{0,196},{0.740284,61},{0.347239,159}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/GroupButton" Name="HouseDlg/CoupleBag/back2/two">
+          <Property Name="Text" Value="二" />
+          <Property Name="UnifiedAreaRect" Value="{{0.209924,0},{0.0285714,0},{0.351145,0},{0.1,0}}" />
+        </Window>
+        <Window Type="TaharezLook/GroupButton" Name="HouseDlg/CoupleBag/back2/three">
+          <Property Name="Text" Value="三" />
+          <Property Name="UnifiedAreaRect" Value="{{0.358779,0},{0.0285714,0},{0.5,0},{0.1,0}}" />
+        </Window>
+        <Window Type="TaharezLook/GroupButton" Name="HouseDlg/CoupleBag/back2/four">
+          <Property Name="Text" Value="四" />
+          <Property Name="UnifiedAreaRect" Value="{{0.507634,0},{0.0285714,0},{0.648855,0},{0.0518518,13}}" />
+        </Window>
+        <Window Type="TaharezLook/GroupButton" Name="HouseDlg/CoupleBag/back2/five">
+          <Property Name="Text" Value="五" />
+          <Property Name="UnifiedAreaRect" Value="{{0.65687,0},{0.0285714,0},{0.798091,0},{0.0982804,0}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="HouseDlg/CoupleBag/flower1">
+        <Property Name="Image" Value="set:MainControl13 image:03" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,19},{0,95}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,19},{0,95}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0129032,0},{0.187692,0},{0.0435484,0},{0.48,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="HouseDlg/CoupleBag/flower2">
+        <Property Name="Image" Value="set:MainControl13 image:03" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,19},{0,95}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,19},{0,95}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0129032,0},{0.48,0},{0.0435484,0},{0.772308,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="HouseDlg/CoupleBag/flower3">
+        <Property Name="Image" Value="set:MainControl13 image:03" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,19},{0,95}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,19},{0,95}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.948387,0},{0.187692,0},{0.979032,0},{0.48,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="HouseDlg/CoupleBag/flower4">
+        <Property Name="Image" Value="set:MainControl13 image:03" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,19},{0,95}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,19},{0,95}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.948387,0},{0.48,0},{0.979032,0},{0.772308,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="HouseDlg/info">
+      <Property Name="UnifiedAreaRect" Value="{{0,37},{0,82},{0,657},{0,407}}" />
+      <Window Type="TaharezLook/Figure1" Name="HouseDlg/info/my">
+        <Property Name="UnifiedAreaRect" Value="{{0.159677,0},{0.0215385,0},{0.33871,0},{0.08,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/info/my/txt">
+          <Property Name="Text" Value="家园奇遇" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+          <Property Name="BorderColour" Value="FF5F4100" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.27027,0},{0.0526316,0},{0.774775,0},{0.947368,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Figure1" Name="HouseDlg/info/bag">
+        <Property Name="UnifiedAreaRect" Value="{{0.653226,0},{0.0246154,0},{0.832258,0},{0.0830769,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/info/bag/txt">
+          <Property Name="Text" Value="家园历程" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+          <Property Name="BorderColour" Value="FF5F4100" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.261261,0},{0.0526316,0},{0.774775,0},{0.947368,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="HouseDlg/info/back1">
+        <Property Name="UnifiedAreaRect" Value="{{0.0258065,0},{0.0861538,0},{0.0258065,290},{0.972308,0}}" />
+        <Window Type="TaharezLook/RichEditbox" Name="HouseDlg/info/back1/txt">
+          <Property Name="ReadOnly" Value="True" />
+          <Property Name="LineSpace" Value="1" />
+          <Property Name="BlinkCaret" Value="True" />
+          <Property Name="MaxTextLength" Value="2147483647" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0172414,0},{0.0138889,0},{0.986207,0},{1,0}}" />
+          <Property Name="BackGroundEnable" Value="False" />
+          <Property Name="BlinkCaretTimeout" Value="0.5" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="HouseDlg/info/back2">
+        <Property Name="UnifiedAreaRect" Value="{{0.509677,0},{0.0861538,0},{0.509677,290},{0.969231,0}}" />
+        <Window Type="TaharezLook/RichEditbox" Name="HouseDlg/info/back2/txt">
+          <Property Name="ReadOnly" Value="True" />
+          <Property Name="LineSpace" Value="1" />
+          <Property Name="BlinkCaret" Value="True" />
+          <Property Name="MaxTextLength" Value="2147483647" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0172414,0},{0.0139373,0},{0.986207,0},{0.989547,0}}" />
+          <Property Name="BackGroundEnable" Value="False" />
+          <Property Name="BlinkCaretTimeout" Value="0.5" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="HouseDlg/title7">
+      <Property Name="Text" Value="家传宝贝" />
+      <Property Name="UnifiedAreaRect" Value="{{0.556475,45},{0.14023,0},{0.645683,45},{0.188506,0}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack">
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0525547,0},{0.05,60},{0.05,622},{0.05,385}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/CommonCase" Name="HouseDlg/BabyBack/back1">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0.00483874,617},{-1.02445e-008,325}}" />
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/CoupleBag/back21">
+          <Property Name="UnifiedAreaRect" Value="{{0.0193548,0},{0.0707692,0},{0.441935,0},{0.117692,265}}" />
+          <Window Type="TaharezLook/GroupButton" Name="HouseDlg/CoupleBag/back2/one1">
+            <Property Name="Text" Value="一" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0610687,0},{0.0285714,0},{0.20229,0},{0.1,0}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="HouseDlg/BabyBack/back1/CellBack">
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0267176,0},{0.05,13},{0.0857143,231},{0.05,259}}" />
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/CellBack/item1">
+              <Property Name="UnifiedAreaRect" Value="{{0.40106,-96},{0.0121951,0},{0.40106,-48},{0.359434,-37}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/CellBack/item2">
+              <Property Name="UnifiedAreaRect" Value="{{0.485866,-69},{0.0121951,0},{0.485866,-21},{0.359434,-37}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/CellBack/item3">
+              <Property Name="UnifiedAreaRect" Value="{{0.570672,-41},{0.0121951,0},{0.570672,7},{0.359434,-37}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/CellBack/item4">
+              <Property Name="UnifiedAreaRect" Value="{{0.655478,-14},{0.0121951,0},{0.655478,34},{0.359434,-37}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/CellBack/item5">
+              <Property Name="UnifiedAreaRect" Value="{{0.740284,13},{0.0121951,0},{0.740284,61},{0.359434,-37}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/CellBack/item6">
+              <Property Name="UnifiedAreaRect" Value="{{0.40106,-96},{0.35137,-35},{0.40106,-48},{0.35137,13}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/CellBack/item7">
+              <Property Name="UnifiedAreaRect" Value="{{0.485866,-69},{0.35137,-35},{0.485866,-21},{0.35137,13}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/CellBack/item8">
+              <Property Name="UnifiedAreaRect" Value="{{0.570672,-41},{0.35137,-35},{0.570672,7},{0.35137,13}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/CellBack/item9">
+              <Property Name="UnifiedAreaRect" Value="{{0.655478,-14},{0.35137,-35},{0.655478,34},{0.35137,13}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/CellBack/item10">
+              <Property Name="UnifiedAreaRect" Value="{{0.740284,13},{0.35137,-35},{0.740284,61},{0.35137,13}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/CellBack/item11">
+              <Property Name="UnifiedAreaRect" Value="{{0.40106,-96},{0,99},{0.40106,-48},{0.347239,62}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/CellBack/item12">
+              <Property Name="UnifiedAreaRect" Value="{{0.485866,-69},{0,99},{0.485866,-21},{0.347239,62}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/CellBack/item13">
+              <Property Name="UnifiedAreaRect" Value="{{0.570672,-41},{0,99},{0.570672,7},{0.347239,62}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/CellBack/item14">
+              <Property Name="UnifiedAreaRect" Value="{{0.655478,-14},{0,99},{0.655478,34},{0.347239,62}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/CellBack/item15">
+              <Property Name="UnifiedAreaRect" Value="{{0.740284,13},{0,99},{0.740284,61},{0.347239,62}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/CellBack/item16">
+              <Property Name="UnifiedAreaRect" Value="{{0.40106,-96},{0,148},{0.40106,-48},{0.347239,111}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/CellBack/item17">
+              <Property Name="UnifiedAreaRect" Value="{{0.485866,-69},{0,148},{0.485866,-21},{0.347239,111}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/CellBack/item18">
+              <Property Name="UnifiedAreaRect" Value="{{0.570672,-41},{0,148},{0.570672,7},{0.347239,111}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/CellBack/item19">
+              <Property Name="UnifiedAreaRect" Value="{{0.655478,-14},{0,148},{0.655478,34},{0.347239,111}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/CellBack/item20">
+              <Property Name="UnifiedAreaRect" Value="{{0.740284,13},{0,148},{0.740284,61},{0.347239,111}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/CellBack/item21">
+              <Property Name="UnifiedAreaRect" Value="{{0.40106,-96},{0,196},{0.40106,-48},{0.347239,159}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/CellBack/item22">
+              <Property Name="UnifiedAreaRect" Value="{{0.485866,-69},{0,196},{0.485866,-21},{0.347239,159}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/CellBack/item23">
+              <Property Name="UnifiedAreaRect" Value="{{0.570672,-41},{0,196},{0.570672,7},{0.347239,159}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/CellBack/item24">
+              <Property Name="UnifiedAreaRect" Value="{{0.655478,-14},{0,196},{0.655478,34},{0.347239,159}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/CellBack/item25">
+              <Property Name="UnifiedAreaRect" Value="{{0.740284,13},{0,196},{0.740284,61},{0.347239,159}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/GroupButton" Name="HouseDlg/CoupleBag/back2/two1">
+            <Property Name="Text" Value="二" />
+            <Property Name="UnifiedAreaRect" Value="{{0.209924,0},{0.0285714,0},{0.351145,0},{0.1,0}}" />
+          </Window>
+          <Window Type="TaharezLook/GroupButton" Name="HouseDlg/CoupleBag/back2/three1">
+            <Property Name="Text" Value="三" />
+            <Property Name="UnifiedAreaRect" Value="{{0.358779,0},{0.0285714,0},{0.5,0},{0.1,0}}" />
+          </Window>
+          <Window Type="TaharezLook/GroupButton" Name="HouseDlg/CoupleBag/back2/four1">
+            <Property Name="Text" Value="四" />
+            <Property Name="UnifiedAreaRect" Value="{{0.507634,0},{0.0285714,0},{0.648855,0},{0.0518518,13}}" />
+          </Window>
+          <Window Type="TaharezLook/GroupButton" Name="HouseDlg/CoupleBag/back2/five1">
+            <Property Name="Text" Value="五" />
+            <Property Name="UnifiedAreaRect" Value="{{0.656489,0},{0.0285714,0},{0.79771,0},{0.0518518,13}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/BabyBack/back1/item1">
+          <Property Name="Image" Value="set:MainControl3 image:LuckyWheelMiddleBox" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,66},{0,68}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,66},{0,68}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.491935,0},{0.163077,0},{0.598387,0},{0.372308,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/item1/item">
+            <Property Name="UnifiedAreaRect" Value="{{0.151515,0},{0.161765,0},{0.30303,36},{0.294118,37}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/BabyBack/back1/item2">
+          <Property Name="Image" Value="set:MainControl3 image:LuckyWheelMiddleBox" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,66},{0,68}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,66},{0,68}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.803226,0},{0.163077,0},{0.909677,0},{0.372308,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back1/item2/item">
+            <Property Name="UnifiedAreaRect" Value="{{0.151515,0},{0.161765,0},{0.30303,36},{0.294118,37}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/BabyBack/back1/image">
+          <Property Name="Image" Value="set:MainControl2 image:Preview" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,115},{0,38}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,115},{0,38}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.604839,0},{0.212308,0},{0.790323,0},{0.329231,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back1/name1">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.446774,0},{0.393846,0},{0.195162,279},{0.353846,31}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back1/name2">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.729032,0},{0.393846,0},{0.506452,295},{0.409231,13}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back1/txt1">
+          <Property Name="Text" Value="需要银两" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+          <Property Name="BorderColour" Value="FF220B01" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.608065,0},{0.498462,0},{0.698387,0},{0.556923,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back1/txt2">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF220B01" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.704839,0},{0.498462,0},{0.769355,50},{0.413077,46}}" />
+          <Window Type="TaharezLook/StaticImage" Name="HouseDlg/BabyBack/back1/txt2/image">
+            <Property Name="Image" Value="set:MainControl image:Xianjin" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.755556,0},{-0.0555556,0},{0.966667,0},{1,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Button" Name="HouseDlg/BabyBack/back1/button">
+          <Property Name="Text" Value="转    化" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.866129,0},{0.489231,0},{0.956452,0},{0.56,0}}" />
+        </Window>
+        <Window Type="TaharezLook/CommonCase" Name="HouseDlg/BabyBack/back1/info">
+          <Property Name="UnifiedAreaRect" Value="{{0.459677,0},{0.609231,0},{0.979032,0},{0.926154,0}}" />
+          <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back1/info/txt">
+            <Property Name="Text">1.任意一个非绑定的非任务道具都可以转化为传家宝。
+2.生成的传家宝默认为白色，可使用各种等级的琥珀对    传家宝的颜色进行提升。
+3.在古董商人处分解古董可以获得琥珀，部分高级琥珀    可以通过合成低级琥珀而获得。
+4.传家宝的颜色影响其部分能力。</Property>
+            <Property Name="HorzExtent" Value="311" />
+            <Property Name="VertExtent" Value="93.7134" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="UnifiedAreaRect" Value="{{0.015528,0},{0.0194175,0},{0.981366,0},{1,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCase" Name="HouseDlg/BabyBack/back2">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{-0.00307692,0},{0.0548387,586},{0.05,308}}" />
+        <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/txt41">
+          <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+          <Property Name="BorderColour" Value="FF220B01" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0693548,0},{0.283077,0},{0.322581,0},{0.341538,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="HouseDlg/BabyBack/back2/item">
+          <Property Name="Image" Value="set:MainControl3 image:LuckyWheelMiddleBox" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,66},{0,68}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,66},{0,68}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.140323,0},{0.0676923,0},{0.246774,0},{0.276923,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back2/item/image">
+            <Property Name="UnifiedAreaRect" Value="{{0.166667,0},{0.161765,0},{0.30303,37},{0.294118,37}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure" Name="HouseDlg/BabyBack/back2/re">
+          <Property Name="UnifiedAreaRect" Value="{{0.066129,0},{0.363077,0},{0.319355,0},{0.923077,0}}" />
+          <Window Type="TaharezLook/StaticImage" Name="HouseDlg/BabyBack/back2/item1">
+            <Property Name="Image" Value="set:MainControl image:SellItemBack" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,127},{0,55}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,127},{0,55}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0955414,0},{0.175824,0},{0.05,134},{0.05,78}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back2/item1/item">
+              <Property Name="UnifiedAreaRect" Value="{{0.023622,0},{0.0545455,0},{0.300699,13},{0.294118,35}}" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/item1/name">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.409449,0},{0.0909091,0},{0.976378,0},{0.436364,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/item1/num">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.377953,0},{0.527273,0},{0.976378,0},{0.872727,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="HouseDlg/BabyBack/back2/item2">
+            <Property Name="Image" Value="set:MainControl image:SellItemBack" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,127},{0,55}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,127},{0,55}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0955414,0},{0,89},{0.0680272,131},{0,144}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="HouseDlg/BabyBack/back2/item2/item">
+              <Property Name="UnifiedAreaRect" Value="{{0.023622,0},{0.0545455,0},{0.300699,13},{0.294118,35}}" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/item2/name">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.409449,0},{0.0909091,0},{0.976378,0},{0.436364,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/item2/num">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.377953,0},{0.527273,0},{0.976378,0},{0.872727,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/txt4">
+            <Property Name="Text" Value="强化所需材料" />
+            <Property Name="HorzExtent" Value="79" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0573248,0},{0.05,3},{0.05,84},{0.05,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="HouseDlg/BabyBack/back2/button">
+            <Property Name="Text" Value="强    化" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,38},{0.05,139},{0.05,104},{0.05,161}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCaseHouse" Name="HouseDlg/BabyBack/back2/flower">
+          <Property Name="UnifiedAreaRect" Value="{{0.396774,0},{0.0923077,0},{0.948387,0},{0.901538,0}}" />
+          <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/txt1">
+            <Property Name="Text" Value="基础属性" />
+            <Property Name="HorzExtent" Value="53" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0526316,0},{0.0798479,0},{0.05,57},{0.05,28}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/CommonCaseFigure" Name="HouseDlg/BabyBack/back2/basic">
+            <Property Name="UnifiedAreaRect" Value="{{0,7},{0,40},{0,160},{0,143}}" />
+            <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/basic/txt1">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.0784314,0},{0.0891089,0},{0.928103,0},{0.277228,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/basic/txt2">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.0784314,0},{0,31},{0.928103,0},{0,50}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/basic/txt3">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.0784314,0},{0,53},{0.928103,0},{0,72}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/basic/txt4">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.0784314,0},{0,75},{0.928103,0},{0,93}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/txt2">
+            <Property Name="Text" Value="附加属性" />
+            <Property Name="HorzExtent" Value="53" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,170},{0.0798479,0},{0,226},{0.05,28}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/txt3">
+            <Property Name="Text" Value="特殊属性" />
+            <Property Name="HorzExtent" Value="53" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,19},{0,155},{0,75},{-0.0298479,183}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/CommonCaseFigure" Name="HouseDlg/BabyBack/back2/special">
+            <Property Name="UnifiedAreaRect" Value="{{0,7},{0,172},{0,160},{0,242}}" />
+            <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/special/txt">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+              <Property Name="UnifiedAreaRect" Value="{{0.0588235,0},{0,8},{0.960784,0},{0,60}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/CommonCaseFigure" Name="HouseDlg/BabyBack/back2/add">
+            <Property Name="UnifiedAreaRect" Value="{{0.05,145},{0.05,27},{0.05,315},{0.05,230}}" />
+            <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/add/txt1">
+              <Property Name="Text" Value="体质" />
+              <Property Name="HorzExtent" Value="26" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.117647,0},{0.0689655,0},{0.341176,0},{0.162562,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/add/txt2">
+              <Property Name="Text" Value="内力" />
+              <Property Name="HorzExtent" Value="26" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.117647,0},{0.137931,13},{0.341176,0},{0.231527,13}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/add/txt3">
+              <Property Name="Text" Value="力量" />
+              <Property Name="HorzExtent" Value="26" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.117647,0},{0.137931,39},{0.341176,0},{0.231527,39}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/add/txt4">
+              <Property Name="Text" Value="耐力" />
+              <Property Name="HorzExtent" Value="26" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.117647,0},{0.137931,65},{0.341176,0},{0.231527,65}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/add/num1">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="UnifiedAreaRect" Value="{{0.388235,0},{0.0689655,0},{0.870588,0},{0.0689655,20}}" />
+              <Window Type="TaharezLook/ImageButton" Name="HouseDlg/BabyBack/back2/add/num1/dec">
+                <Property Name="SizeType" Value="Image" />
+                <Property Name="HoverImage" Value="set:component image:TreeListOpenedHover1" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:component image:TreeListOpenedNormal1" />
+                <Property Name="PushedImage" Value="set:component image:TreeListOpenedPressed1" />
+                <Property Name="DisabledImage" Value="set:component image:TreeListOpenedDisable1" />
+                <Property Name="SoundResource" Value="click.ogg" />
+                <Property Name="UnifiedMaxSize" Value="{{0,13},{0,13}}" />
+                <Property Name="UnifiedMinSize" Value="{{0,13},{0,13}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.658537,0},{0.15,0},{0.817073,0},{0.8,0}}" />
+              </Window>
+              <Window Type="TaharezLook/ImageButton" Name="HouseDlg/BabyBack/back2/add/num1/vit">
+                <Property Name="SizeType" Value="Image" />
+                <Property Name="HoverImage" Value="set:component image:TreeListClosedHover1" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:component image:TreeListClosedNormal1" />
+                <Property Name="PushedImage" Value="set:component image:TreeListClosedPressed1" />
+                <Property Name="DisabledImage" Value="set:component image:TreeListClosedDisable1" />
+                <Property Name="SoundResource" Value="click.ogg" />
+                <Property Name="UnifiedMaxSize" Value="{{0,13},{0,13}}" />
+                <Property Name="UnifiedMinSize" Value="{{0,13},{0,13}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.817073,0},{0.15,0},{0.97561,0},{0.8,0}}" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/add/txt5">
+              <Property Name="Text" Value="敏捷" />
+              <Property Name="HorzExtent" Value="27" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.117647,0},{0.137931,91},{0.341176,0},{0.231527,91}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/add/txt6">
+              <Property Name="Font" Value="fzy4k-11" />
+              <Property Name="Text" Value="剩余" />
+              <Property Name="HorzExtent" Value="31" />
+              <Property Name="VertExtent" Value="17.1936" />
+              <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.117647,0},{0.137931,119},{0.341176,0},{0.137931,137}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/add/num2">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="UnifiedAreaRect" Value="{{0.388235,0},{0.0689655,26},{0.870588,0},{-0.0147784,63}}" />
+              <Window Type="TaharezLook/ImageButton" Name="HouseDlg/BabyBack/back2/add/num2/dec">
+                <Property Name="SizeType" Value="Image" />
+                <Property Name="HoverImage" Value="set:component image:TreeListOpenedHover1" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:component image:TreeListOpenedNormal1" />
+                <Property Name="PushedImage" Value="set:component image:TreeListOpenedPressed1" />
+                <Property Name="DisabledImage" Value="set:component image:TreeListOpenedDisable1" />
+                <Property Name="SoundResource" Value="click.ogg" />
+                <Property Name="UnifiedMaxSize" Value="{{0,13},{0,13}}" />
+                <Property Name="UnifiedMinSize" Value="{{0,13},{0,13}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.658537,0},{0.15,0},{0.817073,0},{0.8,0}}" />
+              </Window>
+              <Window Type="TaharezLook/ImageButton" Name="HouseDlg/BabyBack/back2/add/num2/vit">
+                <Property Name="SizeType" Value="Image" />
+                <Property Name="HoverImage" Value="set:component image:TreeListClosedHover1" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:component image:TreeListClosedNormal1" />
+                <Property Name="PushedImage" Value="set:component image:TreeListClosedPressed1" />
+                <Property Name="DisabledImage" Value="set:component image:TreeListClosedDisable1" />
+                <Property Name="SoundResource" Value="click.ogg" />
+                <Property Name="UnifiedMaxSize" Value="{{0,13},{0,13}}" />
+                <Property Name="UnifiedMinSize" Value="{{0,13},{0,13}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.817073,0},{0.15,0},{0.97561,0},{0.8,0}}" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/add/num3">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="UnifiedAreaRect" Value="{{0.388235,0},{-0.0147784,69},{0.870588,0},{-0.187191,124}}" />
+              <Window Type="TaharezLook/ImageButton" Name="HouseDlg/BabyBack/back2/add/num3/dec">
+                <Property Name="SizeType" Value="Image" />
+                <Property Name="HoverImage" Value="set:component image:TreeListOpenedHover1" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:component image:TreeListOpenedNormal1" />
+                <Property Name="PushedImage" Value="set:component image:TreeListOpenedPressed1" />
+                <Property Name="DisabledImage" Value="set:component image:TreeListOpenedDisable1" />
+                <Property Name="SoundResource" Value="click.ogg" />
+                <Property Name="UnifiedMaxSize" Value="{{0,13},{0,13}}" />
+                <Property Name="UnifiedMinSize" Value="{{0,13},{0,13}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.658537,0},{0.15,0},{0.817073,0},{0.8,0}}" />
+              </Window>
+              <Window Type="TaharezLook/ImageButton" Name="HouseDlg/BabyBack/back2/add/num3/vit">
+                <Property Name="SizeType" Value="Image" />
+                <Property Name="HoverImage" Value="set:component image:TreeListClosedHover1" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:component image:TreeListClosedNormal1" />
+                <Property Name="PushedImage" Value="set:component image:TreeListClosedPressed1" />
+                <Property Name="DisabledImage" Value="set:component image:TreeListClosedDisable1" />
+                <Property Name="SoundResource" Value="click.ogg" />
+                <Property Name="UnifiedMaxSize" Value="{{0,13},{0,13}}" />
+                <Property Name="UnifiedMinSize" Value="{{0,13},{0,13}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.817073,0},{0.15,0},{0.97561,0},{0.8,0}}" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/add/num4">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="UnifiedAreaRect" Value="{{0.388235,0},{-0.187191,130},{0.870588,0},{-0.443348,202}}" />
+              <Window Type="TaharezLook/ImageButton" Name="HouseDlg/BabyBack/back2/add/num4/dec">
+                <Property Name="SizeType" Value="Image" />
+                <Property Name="HoverImage" Value="set:component image:TreeListOpenedHover1" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:component image:TreeListOpenedNormal1" />
+                <Property Name="PushedImage" Value="set:component image:TreeListOpenedPressed1" />
+                <Property Name="DisabledImage" Value="set:component image:TreeListOpenedDisable1" />
+                <Property Name="SoundResource" Value="click.ogg" />
+                <Property Name="UnifiedMaxSize" Value="{{0,13},{0,13}}" />
+                <Property Name="UnifiedMinSize" Value="{{0,13},{0,13}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.658537,0},{0.15,0},{0.817073,0},{0.8,0}}" />
+              </Window>
+              <Window Type="TaharezLook/ImageButton" Name="HouseDlg/BabyBack/back2/add/num4/vit">
+                <Property Name="SizeType" Value="Image" />
+                <Property Name="HoverImage" Value="set:component image:TreeListClosedHover1" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:component image:TreeListClosedNormal1" />
+                <Property Name="PushedImage" Value="set:component image:TreeListClosedPressed1" />
+                <Property Name="DisabledImage" Value="set:component image:TreeListClosedDisable1" />
+                <Property Name="SoundResource" Value="click.ogg" />
+                <Property Name="UnifiedMaxSize" Value="{{0,13},{0,13}}" />
+                <Property Name="UnifiedMinSize" Value="{{0,13},{0,13}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.817073,0},{0.15,0},{0.97561,0},{0.8,0}}" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/add/num5">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="UnifiedAreaRect" Value="{{0.388235,0},{-0.443348,208},{0.870588,0},{-0.773397,295}}" />
+              <Window Type="TaharezLook/ImageButton" Name="HouseDlg/BabyBack/back2/add/num5/dec">
+                <Property Name="SizeType" Value="Image" />
+                <Property Name="HoverImage" Value="set:component image:TreeListOpenedHover1" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:component image:TreeListOpenedNormal1" />
+                <Property Name="PushedImage" Value="set:component image:TreeListOpenedPressed1" />
+                <Property Name="DisabledImage" Value="set:component image:TreeListOpenedDisable1" />
+                <Property Name="SoundResource" Value="click.ogg" />
+                <Property Name="UnifiedMaxSize" Value="{{0,13},{0,13}}" />
+                <Property Name="UnifiedMinSize" Value="{{0,13},{0,13}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.658537,0},{0.15,0},{0.817073,0},{0.8,0}}" />
+              </Window>
+              <Window Type="TaharezLook/ImageButton" Name="HouseDlg/BabyBack/back2/add/num5/vit">
+                <Property Name="SizeType" Value="Image" />
+                <Property Name="HoverImage" Value="set:component image:TreeListClosedHover1" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="EnableSound" Value="True" />
+                <Property Name="NormalImage" Value="set:component image:TreeListClosedNormal1" />
+                <Property Name="PushedImage" Value="set:component image:TreeListClosedPressed1" />
+                <Property Name="DisabledImage" Value="set:component image:TreeListClosedDisable1" />
+                <Property Name="SoundResource" Value="click.ogg" />
+                <Property Name="UnifiedMaxSize" Value="{{0,13},{0,13}}" />
+                <Property Name="UnifiedMinSize" Value="{{0,13},{0,13}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.817073,0},{0.15,0},{0.97561,0},{0.8,0}}" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="HouseDlg/BabyBack/back2/add/num6">
+              <Property Name="Font" Value="fzy4k-11" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="UnifiedAreaRect" Value="{{0.388235,0},{-0.773397,301},{0.870588,0},{-1.10345,388}}" />
+            </Window>
+            <Window Type="TaharezLook/Button" Name="HouseDlg/BabyBack/back2/add/button">
+              <Property Name="Text" Value="确    定" />
+              <Property Name="SizeType" Value="Auto" />
+              <Property Name="UnifiedAreaRect" Value="{{0.311765,0},{0.837438,0},{0.3,68},{0.837438,22}}" />
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/LittleButton" Name="HouseDlg/colour">
+      <Property Name="Text" Value="家具换色" />
+      <Property Name="Tooltip" Value="处于摆放状态的家具，请先收起后再进行换色。" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.79854,0},{0.128736,0},{0.89781,0},{0.183908,0}}" />
+    </Window>
+  </Window>
+</GUILayout>

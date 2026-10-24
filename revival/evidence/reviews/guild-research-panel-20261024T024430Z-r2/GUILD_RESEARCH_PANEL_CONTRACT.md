@@ -1,0 +1,17 @@
+# 原生帮派研究刷新
+
+读取条件：发送研究列表、处理帮派wake或研究成长后通知成员前。第22批把第21批已知持久状态接入已有收件人Owner投影与真实原生连接；不启用未知研究曲线、正常维护或NPC入口。完整目标继续active。
+
+原SRefreshFactionSkillData vtable0x2282518，构造0xe918b0写type0xc563a；marshal0xe92110为selected_skill i32加list<FactionSkill>（compact计数+五i32条目）。原handler0x149a410写selected→manager+324，清理并重建manager+318研究列表，再在对话框存在时调用0x14e1920/0x14aea90。它可以单独更新研究缓存，不必构造完整GuildDetails其他未知字段。
+
+guild_research_protocol.refresh(state)只编码冻结ResearchSnapshot当前绝对值；选择0表示明确无研究，非0必须在已知列表。状态须为唯一14原可研究技能、没有重复/可变/畸形数值；level在0..cap，未满级时next_experience>experience>=0，满级经验与next均0；所有标量限非负signed32。原bean字段含义来自第21批原cache/四列证据，原列表顺序为显式快照顺序，不从客户端列表回写。服务器只调用已知真实snapshot，不用函数通过当权限许可。
+
+沿既有GuildProjection增加kw-only可选research字段，旧三位置参数保持兼容。OrganizationStore.guild_projection在同一读取事务先校验当前角色租约和guild/family/member双代次，再读取已显式配置的已知研究状态。未配置或未知旧状态返回research=None，不初始化/伪造0级；recipe不符/损坏须拒绝，不能悄悄发假研究状态。
+
+缓存失效规则：原基础SUpdateFactionData的0x148c7e0只覆盖基本字段，不清研究cache；离帮原0x1499380会清，但排队离帮/重入不能靠旧scope消息覆盖所有情形。因此当前guild投影为未知时也发送clear_cache的原selected=0/list空体（5字节），显式失效旧客户端缓存；这不写DB、不补14条0级、不声称未知旧档真的没有研究。原0x149a410空list清旧节点并清selected已完整执行验证，离帮reset的相关两个切片也独立通过。已知状态仍发送真实14行。
+
+GuildRuntime.packets在既有目标角色Owner准备当前消息时附加0xc563a；登录presence、原帮派查询、研究选择等既有wake自然获取新值。研究奖励提交后也通过同guild Owner取得当前audience并投递既有GuildWake，收件人在出队时重查当前租约/成员代次、重新编码当前值；不把旧奖励凭据作为显示快照，不从帮派线程碰Session/cipher/writer。消息拒绝或丢失后，下一查询/重登可从持久状态恢复。研究提交已成功后展示未知/成员变化只记延后，不把提交伪报失败。
+
+验证沿既有public codec/Store/actual Peer Seam：原marshal和完整无GUI handler的选择/非空列表替换；已知研究登录/查询/选择/经验后收到当前值与重启恢复；旧奖励重放仍显示当前研究选择/经验；未知旧档只清旧cache不补行；退出/重新加入后排队旧双代次wake不发研究；过期租约拒绝。保留cash/丹/组织/家族必要回归。NPC设置研究仍需完整组织地址与真实服务证明；本批没有扩大SOCIAL_TYPES或注册原c563b请求。
+
+方法：codebase-design复用已有guild收件人投影Seam，不新增广播后端；tdd沿已授权公开codec/Peer路径实际缺codec、缺登录刷新、奖励后缺通知逐切片红绿。diagnosing-bugs用未知旧档的真实Peer缺清缓存信号先红，原基础/离帮/刷新三条消费路径区分“基础不清/离帮会清/空刷新清”；本批主动发现的缓存缺口不是人类报告的现场GUI症状。清理fix后同一完整Peer回归绿，未加生产诊断日志。code-review固定21源码独立Standards/Spec；writing-for-agents共置当前规则和未验范围。原指令探查先前buffer与sentinel地址相撞的临时夹具错误已修正，不计功能红灯。

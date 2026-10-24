@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="LuckDraw">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.275,0},{0.0270691,0},{0.275,400},{0.29,282}}" />
+    <Window Type="TaharezLook/CommonCase" Name="LuckDraw/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0475,0},{0.568182,0},{0.047619,360},{0.15,327}}" />
+      <Window Type="TaharezLook/StaticText" Name="LuckDraw/Back/Text">
+        <Property Name="Text">
+1、幸运号码在10000~99999之间的整数中完全随机产生；
+2、批量购买的起始不得小于结束号码且差值不得超过100；
+3、每周一、周三、周五、周日的21:30分公布幸运号码，开奖前后1小时不允许购买；
+4、每个幸运号码的购买金额为6666两。</Property>
+        <Property Name="HorzExtent" Value="345" />
+        <Property Name="VertExtent" Value="78.0945" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0166667,0},{0.188811,0},{0.980556,0},{0.769231,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="LuckDraw/Back/bot">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0194444,0},{0.832168,0},{0.021875,300},{1.02098,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/Editbox" Name="LuckDraw/Back/bot/number">
+          <Property Name="BlinkCaret" Value="True" />
+          <Property Name="MaxTextLength" Value="2147483647" />
+          <Property Name="UnifiedAreaRect" Value="{{0.375415,0},{0,0},{0.747508,0},{0.851852,0}}" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="LuckDraw/Back/Text1">
+          <Property Name="Text" Value="在此输入幸运号码：" />
+          <Property Name="HorzExtent" Value="117" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="VertFormatting" Value="TopAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0.013289,0},{0.037037,0},{0.0664835,108},{0.05,17}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="LuckDraw/line">
+        <Property Name="Image" Value="set:MainControl14 image:Line" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0166667,0},{0.05,103},{0.05,298},{0.05,105}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="LuckDraw/bot1">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,7},{0.832168,0},{0,284},{1.02098,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/Editbox" Name="LuckDraw/bot1/startnum">
+          <Property Name="BlinkCaret" Value="True" />
+          <Property Name="MaxTextLength" Value="2147483647" />
+          <Property Name="UnifiedAreaRect" Value="{{0.155414,17},{0,0},{0.340599,30},{-0.066667,21}}" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="LuckDraw/bot1/startnum1">
+          <Property Name="Text" Value="起始号码" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00722022,0},{0,0},{0,63},{0,20}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Editbox" Name="LuckDraw/bot1/overnum">
+          <Property Name="BlinkCaret" Value="True" />
+          <Property Name="MaxTextLength" Value="2147483647" />
+          <Property Name="UnifiedAreaRect" Value="{{0.500145,61},{0,0},{0.685331,74},{-0.026667,20}}" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="LuckDraw/bot1/startnum11">
+          <Property Name="Text" Value="结束号码" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.340599,45},{0,0},{0.340599,102},{-0.066667,21}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="LuckDraw/Back/title">
+        <Property Name="Text" Value="占卜玩法说明" />
+        <Property Name="HorzExtent" Value="78" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.388889,0},{0.027972,0},{0.611111,0},{0.188811,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="LuckDraw/Title">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="幸运占卜" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="68" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.5225,0},{0.0272727,0},{1.0225,0},{0.075,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="LuckDraw/sure">
+      <Property Name="Text" Value="确     定" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.4075,0},{0.9,0},{0.59,0},{0.298387,290}}" />
+    </Window>
+    <Window Type="TaharezLook/MultiColumnList" Name="LuckDraw/Player">
+      <Property Name="UnifiedAreaRect" Value="{{0.0475,0},{0.0886364,0},{0.945,0},{0.565909,0}}" />
+      <Property Name="ColumnHeader" Value="text:排名 width:{0.13,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:历史中奖金额 width:{0.28,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:名称 width:{0.33,0} id:2" />
+      <Property Name="ColumnHeader" Value="text:服务器 width:{1,-264} id:4" />
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="CofCIntro">
+    <Property Name="Font" Value="msyh-16" />
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.208333,0},{0.2,514},{0.208333,350}}" />
+    <Window Type="TaharezLook/StaticImage" Name="CofCIntro/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.180934,0},{0.0285714,0},{0.780156,0},{0.105714,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="CofCIntro/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="开店须知" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,71},{0,1},{0,162},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="CofCIntro/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0330739,0},{0.125714,0},{0.963035,0},{0.125448,285}}" />
+      <Window Type="TaharezLook/ScrollablePane" Name="CofCIntro/Back/List">
+        <Property Name="ContentArea" Value="l:0 t:0 r:450 b:517" />
+        <Property Name="HorzStepSize" Value="0.1" />
+        <Property Name="VertStepSize" Value="0.1" />
+        <Property Name="HorzOverlapSize" Value="0.01" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0041841,0},{0.0105263,0},{1.02301,0},{0.978947,0}}" />
+        <Property Name="VertOverlapSize" Value="0.01" />
+        <Property Name="HorzScrollPosition" Value="0" />
+        <Property Name="VertScrollPosition" Value="0" />
+        <AutoWindow NameSuffix="__auto_container__">
+          <Property Name="ContentArea" Value="l:0 t:0 r:450 b:517" />
+          <Property Name="ChildExtentsArea" Value="l:0 t:0 r:450 b:517" />
+          <Window Type="TaharezLook/StaticText" Name="CofCIntro/line1">
+            <Property Name="Text" Value="30级可以开设商店，每个人可以开设最多两间店。" />
+            <Property Name="HorzExtent" Value="289" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,8},{0,297},{0,28}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+            <Property Name="DefaultColourEnable" Value="True" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="CofCIntro/startmoney">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Text" Value="建店费用" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFF00 tr:FFFFFF00 bl:FFFF6E02 br:FFFF6E02" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,29},{0,84},{0,49}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="CofCIntro/1">
+            <Property Name="Text">开店时要支付的建造费用和基本运营资金各240000*商业指数，另外，这一
+
+切费用还需要缴纳3%的投资税，也就是说，一共是                         两。</Property>
+            <Property Name="HorzExtent" Value="433" />
+            <Property Name="VertExtent" Value="31.2378" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,50},{0,441},{0,88}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+            <Property Name="DefaultColourEnable" Value="True" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="CofCIntro/preserve">
+            <Property Name="Text" Value="维护费用" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFF00 tr:FFFFFF00 bl:FFFF6E02 br:FFFF6E02" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,89},{0,124},{0,109}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="CofCIntro/tradetax">
+            <Property Name="Text" Value="交易税" />
+            <Property Name="HorzExtent" Value="40" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFF00 tr:FFFFFF00 bl:FFFF6E02 br:FFFF6E02" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,195},{0,124},{0,215}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="CofCIntro/counter">
+            <Property Name="Text" Value="扩张和缩减柜台" />
+            <Property Name="HorzExtent" Value="91" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFF00 tr:FFFFFF00 bl:FFFF6E02 br:FFFF6E02" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,258},{0,169},{0,278}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="CofCIntro/runtax">
+            <Property Name="Text" Value="[colrect='tl:ffffff00 tr:ffffff00 bl:ffff6e02 br:ffff6e02']经营税收" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFF00 tr:FFFFFF00 bl:FFFF6E02 br:FFFF6E02" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,330},{0,125},{0,350}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="CofCIntro/checkin">
+            <Property Name="Text" Value="登记注册" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFF00 tr:FFFFFF00 bl:FFFF6E02 br:FFFF6E02" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,404},{0,64},{0,424}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="CofCIntro/attention">
+            <Property Name="Text" Value="特别提醒" />
+            <Property Name="HorzExtent" Value="53" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFF00 tr:FFFFFF00 bl:FFFF6E02 br:FFFF6E02" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,462},{0,124},{0,482}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="CofCIntro/2">
+            <Property Name="Text">商店开张后，将按每间柜台每天10000*商业指数交付维护费用，商店可以开
+门营业或关门休息，运营中的柜台会加收每小时800*商业指数，店铺的这
+些费用都将从运营资金中扣除，如运营资金不足，商店将会进入破产保护期，
+店铺停止营业，资金冻结，商品不可出入。
+进入破产保护14天后，商店将正式倒闭，店铺内资金以及商品被回收。</Property>
+            <Property Name="HorzExtent" Value="442" />
+            <Property Name="VertExtent" Value="78.0945" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,110},{0,450},{0,194}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+            <Property Name="DefaultColourEnable" Value="True" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="CofCIntro/indexname">
+            <Property Name="Text" Value="当前商业指数" />
+            <Property Name="HorzExtent" Value="79" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,298},{0,9},{0,380},{0,29}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+            <Property Name="DefaultColourEnable" Value="True" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="CofCIntro/index">
+            <Property Name="Text" Value="[colrect='tl:ffffff00 tr:ffffff00 bl:ffff6e02 br:ffff6e02']202%" />
+            <Property Name="HorzExtent" Value="39" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFF00 tr:FFFFFF00 bl:FFFF6E02 br:FFFF6E02" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,383},{0,9},{0,427},{0,29}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="CofCIntro/3">
+            <Property Name="Text">商会将会在每天结算的时候对交易额度比较大的商店征收一定的交易税，增
+
+收的交易税将采用退税制。</Property>
+            <Property Name="HorzExtent" Value="429" />
+            <Property Name="VertExtent" Value="31.2378" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,216},{0,441},{0,257}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+            <Property Name="DefaultColourEnable" Value="True" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="CofCIntro/4">
+            <Property Name="Text">新建商店规模只有一间柜台，店主可以随时扩张或者缩减柜台，每扩张一间
+
+柜台就相当于建一个新店的费用，柜台数最多可以扩张到10。缩减柜台后建
+
+造费用也不退回。</Property>
+            <Property Name="HorzExtent" Value="433" />
+            <Property Name="VertExtent" Value="46.8567" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,279},{0,441},{0,329}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+            <Property Name="DefaultColourEnable" Value="True" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="CofCIntro/5">
+            <Property Name="Text">商店中的物品卖出后，就需要缴纳一定的获利税，不过规模越大的商店其税
+率会越低，税收在交易的同时从货款中扣除，货款将被存放在商店中作为运
+营资金，店主可以随时取出。</Property>
+            <Property Name="HorzExtent" Value="430" />
+            <Property Name="VertExtent" Value="46.8567" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,351},{0,441},{0,403}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+            <Property Name="DefaultColourEnable" Value="True" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="CofCIntro/7">
+            <Property Name="Text">每间商店中最多只能容纳400000000两运营资金，所有超过的部分都将被视
+为不明财产而直接没收，请谨慎投资。</Property>
+            <Property Name="HorzExtent" Value="428" />
+            <Property Name="VertExtent" Value="31.2378" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,483},{0,441},{0,517}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+            <Property Name="DefaultColourEnable" Value="True" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="CofCIntro/money">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,301},{0,67},{0,373},{0,87}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="CofCIntro/checkin1">
+            <Property Name="Text">开店前必须先填写商店申请表，店铺名称可以由汉字、英文、数字组成，长
+度不能超过7个字。</Property>
+            <Property Name="HorzExtent" Value="429" />
+            <Property Name="VertExtent" Value="31.2378" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,425},{0,441},{0,461}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+            <Property Name="DefaultColourEnable" Value="True" />
+          </Window>
+        </AutoWindow>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

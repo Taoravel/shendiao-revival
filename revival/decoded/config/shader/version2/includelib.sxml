@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='utf-8'?>
+<include>
+  <section name="PhongDiffuse">
+    
+    float4 Phong_PointLight_Diffuse(float4x4 pointLightInfo,float4 worldPosition,float4 worldNormal)
+    {
+      float dist = distance(worldPosition,pointLightInfo[1]);
+      if ( dist&gt;=pointLightInfo._34 ) //_34 is range
+        return float4(0.0f,0.0f,0.0f,1.0f);
+      float atten = 1.0f/(pointLightInfo._31+dist*pointLightInfo._32+dist*dist*pointLightInfo._33);
+      float3 lightDir;
+      lightDir = (worldPosition-pointLightInfo[1])/dist;
+      return dot(float4(lightDir,0.0f),worldNormal)*atten*pointLightInfo[0]*pointLightInfo[0].a*2.0f;
+    }
+
+    float4 Phong_DirectLight_Diffuse(float4 lightColor,float4 lightBackColor,float4 lightDir,float4 worldNormal)
+    {
+	float4 directColor = saturate(dot(lightDir,worldNormal))*lightColor.a*2.0f*lightColor;
+        float3 backLightDirection = -lightDir.xyz; // direction
+        backLightDirection.y = -backLightDirection.y;
+        //for direction light typeAndPosition's yzw for back color
+        float4 backColor = 2.0f*saturate(dot(backLightDirection,worldNormal))*lightBackColor;
+	return float4((directColor + backColor).rgb,1.f);
+    }
+    
+  </section>
+  <section name="PhongSpecular">
+    
+    void Phong_DirectLight_Diffuse_Specular(
+      float4 lightColor,
+      float4 lightBackColor,
+      float4 lightDir,
+      float  specExpon,
+      float  dotLN, //dot(lightDir,normal)
+      float  dotHN, //dot(Hn,normal)
+      float3 worldNormal,
+      out float4 OutDiffuseColor,
+      out float4 OutSpecularColor,
+      out float4 OutBackColor
+	)
+    {
+      float4 litResult = lit(dotLN,dotHN,specExpon);
+      float4 realLightColor = lightColor*lightColor.a*2.0f;
+      OutDiffuseColor  = realLightColor*litResult.y;
+      OutSpecularColor = realLightColor*litResult.y*litResult.z;
+
+      float3 backLightDirection = -lightDir.xyz; // direction
+      backLightDirection.y = -backLightDirection.y;
+      //for direction light typeAndPosition's yzw for back color
+      OutBackColor = 2.0f*saturate(dot(backLightDirection,worldNormal))*lightBackColor;
+    }
+
+    void Phong_PointLight_Diffuse_Specular(
+      float4x4 pointLightInfo,
+      float specExpon,
+      float4 eyePosition,
+      float4 worldPosition,
+      float4 worldNormal,
+      out float4 OutDiffuseColor,
+      out float4 OutSpecularColor)
+    {
+      float dist = distance(worldPosition,pointLightInfo[1]);
+      
+      if ( dist&gt; pointLightInfo._34 ) //_34 is range
+      {
+      	OutDiffuseColor  = float4(0,0,0,0);
+      	OutSpecularColor = float4(0,0,0,0);
+        return;
+      }
+ 
+      float atten = 1.0f/(pointLightInfo._31+dist*pointLightInfo._32+dist*dist*pointLightInfo._33);
+      float3 lightDir;
+      lightDir = (pointLightInfo[1].xyz - worldPosition.xyz)/dist;
+  
+      float3 viewDir;
+      viewDir = normalize(eyePosition-worldPosition);
+      
+      float3 Hn = normalize(viewDir + lightDir);
+      float4 litResult = lit(dot(lightDir,worldNormal),dot(Hn,worldNormal),specExpon);
+      float4 realLightColor = atten*pointLightInfo[0]*pointLightInfo[0].a*2.0f;
+      realLightColor.a = 1.0f;
+      OutDiffuseColor  = realLightColor*litResult.y;
+      OutSpecularColor = realLightColor*litResult.z;
+    }
+
+    
+  </section>
+  <section name="VegetationBatch">
+    
+    float4 smoothCurve(float4 x)
+    {
+	    return x*x*(3-2*x);
+    }
+    float4 triangleWave(float4 x)
+    {
+      return abs(frac(x+0.5)*2-1);
+    }
+    float4 smoothTriangleWave(float4 x)
+    {
+	    return smoothCurve(triangleWave(x));
+    }
+    
+  </section>
+  <section name="Fog">
+    
+        #define E 2.71828
+	float CalcFogFactor(float4 fogArgument,float d)
+	{
+		float lFogRangeFactor = fogArgument.x;//1/(end-start)
+		float lFogDensity     = fogArgument.y;
+		float lFogEnd         = fogArgument.z;
+		float fogCoeff = 1.0;
+		
+		#ifdef FOGMODE_LINEAR
+		{
+			fogCoeff = (lFogEnd - d)*lFogRangeFactor;
+		}
+		#elif FOGMODE_EXP
+		{
+			fogCoeff = 1.0 / pow( E, d*lFogDensity );
+		}
+		#elif FOGMODE_EXP2
+		{
+			fogCoeff = 1.0 / pow( E, d*d*lFogDensity*lFogDensity );
+		}
+		#endif
+		
+		return clamp ( fogCoeff , 0 , 1 ) ;
+	}
+    
+  </section>
+  <section name="TextureLayer">
+    
+    	void color2x(in out float4 outputColor,in float4 color)
+	{
+		outputColor += 2*color;
+	}
+
+	void colorPlus(in out float4 outputColor,in float4 color)
+	{
+		outputColor += color;
+	}
+
+	void colorAverage(in out float4 outputColor,in float4 color)
+	{
+		outputColor += color;
+		outputColor *= 0.5f;
+	}
+
+	void colorAlphaBlend(in out float4 outputColor,in float4 color)
+	{
+		outputColor = lerp(outputColor,color,color.a);
+	}
+
+	void colorSuperBlend(in out float4 outputColor,in float4 color)
+	{
+		outputColor = (1-color)*outputColor + color;
+	}
+
+	void colorSuperSuperBlend(in out float4 outputColor,in float4 color)
+	{
+		outputColor = outputColor + color;
+	}
+
+	void colorBlend(in out float4 outputColor,in float4 color)
+	{
+		outputColor = outputColor*(1-color) + color*color;
+	}
+
+	void colorZLSuperBlend(in out float4 outputColor,in float4 color)
+	{
+		outputColor.rgb = outputColor.rgb + color.rgb*color.a;
+	}
+	
+	void colorZLColorBlend(in out float4 outputColor,in float4 color)
+	{
+		outputColor = color + outputColor*(1-color);
+	}
+
+	void colorMultiplyx2(in out float4 outputColor, in float4 color)
+	{
+		outputColor = color*outputColor*2;
+	}
+
+	void colorEqual(in out float4 outputColor, in float4 color)
+	{
+		outputColor = color;
+	}
+
+	void colorAmbilight(in out float4 outputColor, in float4 color,in float alphaClipRefMin,in float alphaClipRefMax)
+	{
+		float gray = 0.2126*color.r+0.7152*color.g+0.0722*color.b;
+		if(gray &gt; alphaClipRefMin &amp;&amp; gray &lt; alphaClipRefMax)
+		{
+			outputColor += (gray-alphaClipRefMin)/(alphaClipRefMax-alphaClipRefMin);
+		}
+	}
+
+	void colorBurning(in out float4 outputColor, in float4 refColor,in float4 color,in float alphaClipRefMin,in float alphaClipRefMax)
+	{
+		float gray = 0.2126*refColor.r+0.7152*refColor.g+0.0722*refColor.b;
+		clip(gray-alphaClipRefMin);
+		if(gray &lt; alphaClipRefMax)
+		{
+			outputColor = lerp(outputColor,color,(gray-alphaClipRefMin)/(alphaClipRefMax-alphaClipRefMin));
+		}
+	}
+
+	void colorStreamerAdd(in out float4 outputColor, sampler tex,in float alphaClipRef)
+	{
+		float gray = 0.2126*outputColor.r+0.7152*outputColor.g+0.0722*outputColor.b;
+		float2 uv = gray + alphaClipRef;
+		outputColor += tex2D(tex,uv);
+	}
+
+	void colorStreamer(in out float4 outputColor, sampler tex,in float alphaClipRef)
+	{
+		float gray = 0.2126*outputColor.r+0.7152*outputColor.g+0.0722*outputColor.b;
+		clip(gray-0.001f);
+		float2 uv = gray + alphaClipRef;
+		outputColor = tex2D(tex,uv);
+	}
+
+    #define TextureLayer(index)\
+	{\
+		float2 thisUV = input.DIFFUSE_UV_INDEX;\
+		PATCH_UV##index;\
+		float4 color = tex2D(gSampler##index,thisUV);\
+		TL_CLIP##index;\
+		COLOR_OP##index(output.Color,color);\
+	}
+
+    
+  </section>
+</include>

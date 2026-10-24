@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/SmallFrameWindow" Name="SaleYuanBao">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,261.678},{0,191.855},{0,526.677},{0,361.855}}" />
+    <Window Type="TaharezLook/StaticText" Name="SaleYuanBao/Text">
+      <Property Name="Text" Value="请输入出售数量" />
+      <Property Name="HorzExtent" Value="91" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,20},{0,42},{0,117},{0,64}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="DefaultBorderEnable" Value="True" />
+      <Property Name="DefaultColourEnable" Value="True" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="SaleYuanBao/Text1">
+      <Property Name="Text" Value="出   售   单   价" />
+      <Property Name="HorzExtent" Value="80" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,20},{0,67},{0,117},{0,89}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="DefaultBorderEnable" Value="True" />
+      <Property Name="DefaultColourEnable" Value="True" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="SaleYuanBao/Text2">
+      <Property Name="Text" Value="收   入   总   额" />
+      <Property Name="HorzExtent" Value="80" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,20},{0,92},{0,117},{0,114}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="DefaultBorderEnable" Value="True" />
+      <Property Name="DefaultColourEnable" Value="True" />
+    </Window>
+    <Window Type="TaharezLook/Editbox" Name="SaleYuanBao/SaleNumber">
+      <Property Name="Font" Value="tahoma-10" />
+      <Property Name="BlinkCaret" Value="True" />
+      <Property Name="MaxTextLength" Value="2147483647" />
+      <Property Name="UnifiedAreaRect" Value="{{0,119},{0,42},{0,248},{0,64}}" />
+      <Property Name="TextParsingEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="SaleYuanBao/Ok">
+      <Property Name="Text" Value="确定出售" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,51.9772},{0,125},{0,123.977},{0,149}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="SaleYuanBao/Cancel">
+      <Property Name="Text" Value="取   消" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,133.977},{0,125},{0,205.977},{0,149}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="SaleYuanBao/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,162},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,162},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,103.6},{0,9},{0,265.6},{0,36}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="SaleYuanBao/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="出售元宝" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,60},{0,1},{0,144},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="SaleYuanBao/MoneyBack1">
+      <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0,119},{0,66},{0,248},{0,86}}" />
+      <Window Type="TaharezLook/StaticImage" Name="SaleYuanBao/MoneyBack1/Money">
+        <Property Name="Image" Value="set:MainControl image:Xianjin" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0.799999},{0,1.2},{0,19.8},{0,20.2}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="SaleYuanBao/Price">
+        <Property Name="Font" Value="tahoma-10" />
+        <Property Name="Text" Value="111111" />
+        <Property Name="HorzExtent" Value="48" />
+        <Property Name="VertExtent" Value="13.6734" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,19.4885},{0,0.264368},{0,126.489},{0,20.2644}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="SaleYuanBao/MoneyBack11">
+      <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0,119},{0.145,65.97},{0,248},{0.145,85.97}}" />
+      <Window Type="TaharezLook/StaticImage" Name="SaleYuanBao/MoneyBack1/Money1">
+        <Property Name="Image" Value="set:MainControl image:Xianjin" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0.799999},{0,1.2},{0,19.8},{0,20.2}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="SaleYuanBao/TotalPrice">
+        <Property Name="Font" Value="tahoma-10" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,19.4885},{0,0.264369},{0,126.489},{0,19.2644}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

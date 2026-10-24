@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/SmallFrameWindow" Name="PlayerNameChange">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.35625,0},{0.276666,0},{0.632499,0},{0.533333,0}}" />
+    <Window Type="TaharezLook/StaticText" Name="PlayerNameChange/Name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="修改名称" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="68" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.511312,0},{0.0649351,0},{0.914027,0},{0.201299,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="PlayerNameChange/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0859729,0},{0.285714,0},{0.900452,0},{0.87013,0}}" />
+      <Window Type="TaharezLook/Editbox" Name="PlayerNameChange/Back/New">
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0.272222,0},{0.0777778,0},{0.922222,0},{0.311111,0}}" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PlayerNameChange/Back/In">
+        <Property Name="Text" Value="新名字" />
+        <Property Name="HorzExtent" Value="39" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0333333,0},{0.0777778,0},{0.272222,0},{0.3,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="PlayerNameChange/Back/OK">
+        <Property Name="Text" Value="确定" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.633333,0},{0.455556,0},{0.398438,45}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="PlayerNameChange/Back/OK1">
+        <Property Name="Text" Value="取消" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.527778,0},{0.622222,0},{0.883333,0},{0.448438,40}}" />
+      </Window>
+      <Window Type="TaharezLook/LinkText" Name="PlayerNameChange/Back/Warn">
+        <Property Name="Text" Value="查看注意事项！" />
+        <Property Name="UserID" Value="83908" />
+        <Property Name="UnifiedAreaRect" Value="{{0.238889,0},{0.377778,0},{0.733333,0},{0.203125,34}}" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

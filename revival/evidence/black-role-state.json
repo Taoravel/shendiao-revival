@@ -1,0 +1,44 @@
+{
+  "pid": 11756,
+  "method": "ReadProcessMemory only, fixed known player globals; no process writes or arbitrary strings",
+  "objects": {
+    "main_actor": {
+      "global": "0x294454c",
+      "pointer": "0x2b27e240",
+      "vtable": "0x2299344",
+      "native_type": ".?AVCMainCharacter@@",
+      "render_object_at_44": "0x19004d48"
+    },
+    "player_data": {
+      "global": "0x2944550",
+      "pointer": "0x25119740",
+      "vtable": "0x2291c84",
+      "native_type": ".?AVCMainRoleDataManager@@"
+    },
+    "role_manager": {
+      "global": "0x2944564",
+      "pointer": "0x18b6d218",
+      "vtable": "0x22972a8",
+      "native_type": ".?AVCGameScene@@",
+      "scene_state_at_364": 0
+    },
+    "scene_manager": {
+      "global": "0x2944798",
+      "pointer": "0x18f81c70",
+      "vtable": "0x22949ac",
+      "native_type": ".?AVCBattleManager@@"
+    },
+    "activity": {
+      "global": "0x29455ac",
+      "pointer": "0x19dfc5c0",
+      "vtable": "0x229de44",
+      "native_type": ".?AVCActivityListManager@@"
+    }
+  },
+  "flags": {
+    "0x2945080": "00",
+    "0x2945438": "01",
+    "0x294524d": "00"
+  },
+  "scope": "native actor/data object presence only; visual black-screen diagnosis requires renderer/scene probes"
+}

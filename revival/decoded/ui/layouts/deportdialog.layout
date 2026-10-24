@@ -1,0 +1,444 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="DepotDialog">
+    <Property Name="Font" Value="simhei-12" />
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,116.74},{0,76.7999},{0,674.74},{0,489.8}}" />
+    <Window Type="TaharezLook/TabControl" Name="DepotDialog/tab">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="TabHeight" Value="{0,18}" />
+      <Property Name="TabPanePosition" Value="Top" />
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,44},{0,539},{0,394}}" />
+      <Window Type="DefaultWindow" Name="DepotDialog/tab/Tab 1">
+        <Property Name="Text" Value="   物品仓库   " />
+        <Property Name="Visible" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,0},{0,520},{0,330}}" />
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="DepotDialog/tab/Tab 1/Back1">
+          <Property Name="UnifiedAreaRect" Value="{{0,7},{0,22},{0,262},{0,327}}" />
+          <Window Type="TaharezLook/Figure1" Name="DepotDialog/tab/Tab 1/Back1/Title">
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,31},{0,-20},{0,157},{0,-1}}" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Window Type="TaharezLook/StaticText" Name="DepotDialog/tab/Tab 1/deportTitle">
+              <Property Name="Font" Value="simhei-12" />
+              <Property Name="Text" Value="我的仓库" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0,19},{0,1},{0,83},{0,21}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="DefaultColourEnable" Value="True" />
+              <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/TabControl" Name="DepotDialog/tab/Tab 1/deportTab">
+            <Property Name="TabHeight" Value="{0,18}" />
+            <Property Name="TabPanePosition" Value="Top" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0196078,0},{0,13},{0.0125523,243.536},{0,277}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="DepotDialog/tab/Tab 1/dmoneyText">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Text" Value="仓库存款" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,280},{0,63},{0,300}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+            <Property Name="DefaultColourEnable" Value="True" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="DepotDialog/tab/Tab 1/takeout">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Text" Value="取   钱" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="SoundResource" Value="click.ogg" />
+            <Property Name="UnifiedAreaRect" Value="{{0,185},{0,278},{0,253},{0,302}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="DepotDialog/tab/Tab 1/MoneyBack1">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="UnifiedAreaRect" Value="{{0,64},{0,280},{0,184},{0,300}}" />
+            <Window Type="TaharezLook/StaticImage" Name="DepotDialog/tab/Tab 1/MoneyBack1/Money">
+              <Property Name="Image" Value="set:MainControl image:Xianjin" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,99.6},{0,0.2},{0,118.6},{0,19.2}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="DepotDialog/tab/Tab 1/dmoneyText1">
+              <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="RightAligned" />
+              <Property Name="UnifiedAreaRect" Value="{{0.062209,0},{0.0243188,0},{0,100.105},{0.0243188,20}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="DepotDialog/tab/Tab 1/gxck">
+            <Property Name="Text" Value="存入绑定道具时需要消耗一定费用" />
+            <Property Name="HorzExtent" Value="195" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="WordWrapCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,6},{0.05,265},{0.05,219},{0.05,285}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+            <Property Name="DefaultColourEnable" Value="True" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="DepotDialog/tab/Tab 1/Back2">
+          <Property Name="UnifiedAreaRect" Value="{{0,263},{0,22},{0,518},{0,327}}" />
+          <Window Type="TaharezLook/Figure1" Name="DepotDialog/tab/Tab 1/Back2/Title">
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,31},{0,-20},{0,157},{0,-1}}" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Window Type="TaharezLook/StaticText" Name="DepotDialog/tab/Tab 1/deportTitle1">
+              <Property Name="Font" Value="simhei-12" />
+              <Property Name="Text" Value="我的包裹" />
+              <Property Name="HorzExtent" Value="53" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0,19},{0,1},{0,83},{0,21}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="DefaultColourEnable" Value="True" />
+              <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/TabControl" Name="DepotDialog/tab/Tab 1/packTab">
+            <Property Name="TabHeight" Value="{0,18}" />
+            <Property Name="TabPanePosition" Value="Top" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0235294,0},{0,13},{0.0164739,243.536},{0,277}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="DepotDialog/tab/Tab 1/dmoneyText2">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Text" Value="包裹银两" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,10},{0,280},{0,66},{0,300}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+            <Property Name="DefaultColourEnable" Value="True" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="DepotDialog/tab/Tab 1/takeout1">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Text" Value="存   钱" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="SoundResource" Value="click.ogg" />
+            <Property Name="UnifiedAreaRect" Value="{{0,186},{0,278},{0,254},{0,302}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="DepotDialog/tab/Tab 1/MoneyBack11">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="UnifiedAreaRect" Value="{{0,66},{0,280},{0,186},{0,300}}" />
+            <Window Type="TaharezLook/StaticImage" Name="DepotDialog/tab/Tab 1/MoneyBack1/Money1">
+              <Property Name="Image" Value="set:MainControl image:Xianjin" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,99.6},{0,0.2},{0,118.6},{0,19.2}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="DepotDialog/tab/Tab 1/dmoneyText3">
+              <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="RightAligned" />
+              <Property Name="UnifiedAreaRect" Value="{{0.0559063,0},{-0.00191667,0},{0,102.088},{-0.00191667,20}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/LinkText" Name="DepotDialog/tab/Tab 1/Back2/gxck">
+            <Property Name="Text" Value="点击查看可存入的绑定物品" />
+            <Property Name="UnifiedAreaRect" Value="{{0.184314,0},{0.92459,0},{0.811766,0},{0.977049,0}}" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="DepotDialog/tab/Tab 2">
+        <Property Name="Text" Value="   宠物仓库   " />
+        <Property Name="Visible" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,0},{0,520},{0,330}}" />
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="DepotDialog/tab/Tab 2/back1">
+          <Property Name="UnifiedAreaRect" Value="{{0,7},{0,22},{0,262},{0,327}}" />
+          <Window Type="TaharezLook/Figure1" Name="DepotDialog/tab/Tab 2/Title1">
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.121563,0},{0,-19},{0.615681,0},{0,0}}" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Window Type="TaharezLook/StaticText" Name="DepotDialog/tab/Tab 2/deprotTitle">
+              <Property Name="Font" Value="simhei-12" />
+              <Property Name="Text" Value="宠物仓库" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0,28},{0,0},{0,95},{0,22}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="DefaultColourEnable" Value="True" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/Listbox" Name="DepotDialog/tab/Tab 2/deportPetList">
+            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,16},{0,248},{0,272}}" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="DepotDialog/tab/Tab 2/ltackout">
+            <Property Name="Text" Value="取   出" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,186},{0,277},{0,254},{0,301}}" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="DepotDialog/tab/Tab 2/lookPropoter">
+            <Property Name="Text" Value="查看属性" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,105},{0,277},{0,187},{0,301}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="DepotDialog/tab/Tab 2/capacity1">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,59},{0,279},{0,105},{0,299}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="DepotDialog/tab/Tab 2/capacity">
+            <Property Name="Text" Value="仓库容量" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,279},{0,57},{0,299}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+            <Property Name="DefaultColourEnable" Value="True" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="DepotDialog/tab/Tab 2/Back2">
+          <Property Name="UnifiedAreaRect" Value="{{0,263},{0,22},{0,518},{0,327}}" />
+          <Window Type="TaharezLook/Listbox" Name="DepotDialog/tab/Tab 2/packPetList">
+            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,16},{-0.00784314,250},{0,272}}" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+          <Window Type="TaharezLook/Figure1" Name="DepotDialog/tab/Tab 2/Title2">
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,31},{0,-19},{0,157},{0,0}}" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Window Type="TaharezLook/StaticText" Name="DepotDialog/tab/Tab 2/deprotTitle1">
+              <Property Name="Font" Value="simhei-12" />
+              <Property Name="Text" Value="我的宠物" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0,47},{0,0},{0,111},{0,22}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="DefaultColourEnable" Value="True" />
+              <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="DepotDialog/tab/Tab 2/capacity2">
+            <Property Name="Text" Value="携带数量" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,279},{0,61},{0,299}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+            <Property Name="DefaultColourEnable" Value="True" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="DepotDialog/tab/Tab 2/takenum">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,61},{0,279},{0,104},{0,299}}" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="DepotDialog/tab/Tab 2/lookPropoter1">
+            <Property Name="Text" Value="查看属性" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,105},{0,277},{0,187},{0,301}}" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="DepotDialog/tab/Tab 2/save">
+            <Property Name="Text" Value="存   入" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,186},{0,277},{0,254},{0,301}}" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="DepotDialog/tab/Tab 3">
+        <Property Name="Text" Value="   坐骑仓库   " />
+        <Property Name="Visible" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,-28},{-0.00120482,0},{0.05,494},{0.05,313}}" />
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="DepotDialog/tab/Tab 3/back11">
+          <Property Name="UnifiedAreaRect" Value="{{0,7},{0,22},{0,262},{0,327}}" />
+          <Window Type="TaharezLook/Figure1" Name="DepotDialog/tab/Tab 3/Title1">
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.121563,0},{0,-19},{0.615681,0},{0,0}}" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Window Type="TaharezLook/StaticText" Name="DepotDialog/tab/Tab 3/deprotTitle2">
+              <Property Name="Text" Value="坐骑仓库" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0,28},{0,0},{0,95},{0,22}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="DefaultColourEnable" Value="True" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/Listbox" Name="DepotDialog/tab/Tab 3/deportPetList1">
+            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,16},{0,248},{0,272}}" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="DepotDialog/tab/Tab 3/ltackout1">
+            <Property Name="Text" Value="取   出" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,186},{0,277},{0,254},{0,301}}" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="DepotDialog/tab/Tab 3/lookPropoter2">
+            <Property Name="Text" Value="查看属性" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,105},{0,277},{0,187},{0,301}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="DepotDialog/tab/Tab 3/capacity11">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,59},{0,279},{0,105},{0,299}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="DepotDialog/tab/Tab 3/capacity3">
+            <Property Name="Text" Value="仓库容量" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,279},{0,57},{0,299}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+            <Property Name="DefaultColourEnable" Value="True" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="DepotDialog/tab/Tab 3/Back21">
+          <Property Name="UnifiedAreaRect" Value="{{0,263},{0,22},{0,518},{0,327}}" />
+          <Window Type="TaharezLook/Listbox" Name="DepotDialog/tab/Tab 2/packPetList1">
+            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,16},{-0.00784314,250},{0,272}}" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+          <Window Type="TaharezLook/Figure1" Name="DepotDialog/tab/Tab 3/Title21">
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,31},{0,-19},{0,157},{0,0}}" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Window Type="TaharezLook/StaticText" Name="DepotDialog/tab/Tab 3/deprotTitle11">
+              <Property Name="Text" Value="我的坐骑" />
+              <Property Name="HorzExtent" Value="53" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0,47},{0,0},{0,111},{0,22}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="DefaultColourEnable" Value="True" />
+              <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="DepotDialog/tab/Tab 3/capacity21">
+            <Property Name="Text" Value="携带数量" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,279},{0,61},{0,299}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+            <Property Name="DefaultColourEnable" Value="True" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="DepotDialog/tab/Tab 3/takenum1">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,61},{0,279},{0,104},{0,299}}" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="DepotDialog/tab/Tab 3/lookPropoter11">
+            <Property Name="Text" Value="查看属性" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,105},{0,277},{0,187},{0,301}}" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="DepotDialog/tab/Tab 3/save1">
+            <Property Name="Text" Value="存   入" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,186},{0,277},{0,254},{0,301}}" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/LittleButton" Name="DepotDialog/tidydeport">
+      <Property Name="Text" Value="整理仓库" />
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,464},{0,40},{0,534},{0,60}}" />
+      <Property Name="NormalTextColour" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+      <Property Name="ButtonDefaultBorderEnable" Value="False" />
+      <Property Name="ButtonDefaultColourEnable" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="DepotDialog/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,214},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,214},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,153.223},{0,10.4066},{0,367.223},{0,37.4066}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="DepotDialog/Title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="仓  库" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="46" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,87},{0,1},{0,244},{0,25}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

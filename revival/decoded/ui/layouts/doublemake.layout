@@ -1,0 +1,378 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="DoubleMake">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="open.ogg" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.227656,0},{0.0595614,0},{0.11875,527},{0.114167,470}}" />
+    <Property Name="CloseSoundResource" Value="close.ogg" />
+    <Window Type="TaharezLook/StaticImage" Name="DoubleMake/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.797727,0},{0,12},{1.49773,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="DoubleMake/Title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="无双技能铸造" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="102" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.237013,0},{0,1},{0.597403,0},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="DoubleMake/Skill">
+      <Property Name="UnifiedAreaRect" Value="{{0.0386364,0},{0.0874752,0},{0.232045,322},{0.0733333,471}}" />
+      <Window Type="TaharezLook/CommonCase" Name="DoubleMake/Skill/back">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{-0.00646552,0},{-0.00737101,410},{0,442}}" />
+        <Window Type="TaharezLook/Figure" Name="DoubleMake/Skill/back/title">
+          <Property Name="UnifiedAreaRect" Value="{{0.272727,0},{0,5},{0.273464,186},{0,20}}" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+          <Window Type="TaharezLook/StaticText" Name="DoubleMake/Skill/back/title/name">
+            <Property Name="Text" Value="请选择需要铸造的装备" />
+            <Property Name="HorzExtent" Value="131" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.311828,0},{-0.133333,0},{1.05376,0},{0,18}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="DoubleMake/Skill/back/pagback">
+          <Property Name="UnifiedAreaRect" Value="{{0.012285,0},{0,22},{0.990172,0},{0,124}}" />
+          <Window Type="TaharezLook/ScrollablePane" Name="DoubleMake/Skill/back/pagback/List">
+            <Property Name="ContentArea" Value="l:-21 t:-5 r:356 b:137" />
+            <Property Name="HorzStepSize" Value="0.1" />
+            <Property Name="VertStepSize" Value="0.1" />
+            <Property Name="HorzOverlapSize" Value="0.01" />
+            <Property Name="UnifiedAreaRect" Value="{{0.00753769,0},{0.0294118,0},{0.00673583,410},{0.0179958,97}}" />
+            <Property Name="VertOverlapSize" Value="0.01" />
+            <Property Name="HorzScrollPosition" Value="0" />
+            <Property Name="VertScrollPosition" Value="0" />
+            <AutoWindow NameSuffix="__auto_container__">
+              <Property Name="ContentArea" Value="l:-21 t:-5 r:356 b:137" />
+              <Property Name="ChildExtentsArea" Value="l:-21 t:-5 r:356 b:137" />
+              <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/pagback/List/cell1">
+                <Property Name="UnifiedAreaRect" Value="{{0,-21},{0,-5},{0,27},{0,43}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/pagback/List/cell2">
+                <Property Name="UnifiedAreaRect" Value="{{0,26},{0,-5},{0,74},{0,43}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/pagback/List/cell3">
+                <Property Name="UnifiedAreaRect" Value="{{0,73},{0,-5},{0,121},{0,43}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/pagback/List/cell4">
+                <Property Name="UnifiedAreaRect" Value="{{0,120},{0,-5},{0,168},{0,43}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/pagback/List/cell5">
+                <Property Name="UnifiedAreaRect" Value="{{0,167},{0,-5},{0,215},{0,43}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/pagback/List/cell6">
+                <Property Name="UnifiedAreaRect" Value="{{0,214},{0,-5},{0,262},{0,43}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/pagback/List/cell7">
+                <Property Name="UnifiedAreaRect" Value="{{0,261},{0,-5},{0,309},{0,43}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/pagback/List/cell8">
+                <Property Name="UnifiedAreaRect" Value="{{0,308},{0,-5},{0,356},{0,43}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/pagback/List/cell9">
+                <Property Name="UnifiedAreaRect" Value="{{0,-21},{0,42},{0,27},{0,90}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/pagback/List/cell10">
+                <Property Name="UnifiedAreaRect" Value="{{0,26},{0,42},{0,74},{0,90}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/pagback/List/cell11">
+                <Property Name="UnifiedAreaRect" Value="{{0,73},{0,42},{0,121},{0,90}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/pagback/List/cell12">
+                <Property Name="UnifiedAreaRect" Value="{{0,120},{0,42},{0,168},{0,90}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/pagback/List/cell13">
+                <Property Name="UnifiedAreaRect" Value="{{0,167},{0,42},{0,215},{0,90}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/pagback/List/cell14">
+                <Property Name="UnifiedAreaRect" Value="{{0,214},{0,42},{0,262},{0,90}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/pagback/List/cell15">
+                <Property Name="UnifiedAreaRect" Value="{{0,261},{0,42},{0,309},{0,90}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/pagback/List/cell16">
+                <Property Name="UnifiedAreaRect" Value="{{0,308},{0,42},{0,356},{0,90}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/pagback/List/cell17">
+                <Property Name="UnifiedAreaRect" Value="{{0,-21},{0,89},{0,27},{0,137}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/pagback/List/cell18">
+                <Property Name="UnifiedAreaRect" Value="{{0,26},{0,89},{0,74},{0,137}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/pagback/List/cell19">
+                <Property Name="UnifiedAreaRect" Value="{{0,73},{0,89},{0,121},{0,137}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/pagback/List/cell20">
+                <Property Name="UnifiedAreaRect" Value="{{0,120},{0,89},{0,168},{0,137}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/pagback/List/cell21">
+                <Property Name="UnifiedAreaRect" Value="{{0,167},{0,89},{0,215},{0,137}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/pagback/List/cell22">
+                <Property Name="UnifiedAreaRect" Value="{{0,214},{0,89},{0,262},{0,137}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/pagback/List/cell23">
+                <Property Name="UnifiedAreaRect" Value="{{0,261},{0,89},{0,309},{0,137}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/pagback/List/cell24">
+                <Property Name="UnifiedAreaRect" Value="{{0,308},{0,89},{0,356},{0,137}}" />
+              </Window>
+            </AutoWindow>
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="DoubleMake/Skill/back/name">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003679" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,19},{0,216},{0,131},{0,234}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="DoubleMake/Skill/back/drop">
+          <Property Name="UnifiedAreaRect" Value="{{0.027027,0},{0,314},{0.02457,386},{0,412}}" />
+          <Window Type="TaharezLook/StaticImage" Name="DoubleMake/Skill/back/drop/Item1">
+            <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,-14},{0.05,21},{0.05,136},{0.05,74}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="DoubleMake/Skill/back/drop/Item1/name">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003679" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,144},{0,25}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="DoubleMake/Skill/back/drop/Item1/num">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003679" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,53},{0,28},{0,122},{0,48}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/drop/Item1/item">
+              <Property Name="UnifiedAreaRect" Value="{{0,2},{0,3},{0,50},{0,51}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="DoubleMake/Skill/back/drop/Item2">
+            <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.1,119},{0.265306,0},{0.1,269},{0.1,69}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="DoubleMake/Skill/back/drop/Item2/name">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003679" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,143},{0,25}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="DoubleMake/Skill/back/drop/Item2/num">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003679" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,53},{0,29},{0,122},{0,49}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/drop/Item2/item">
+              <Property Name="UnifiedAreaRect" Value="{{0,2},{0,3},{0,50},{0,51}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="DoubleMake/Skill/back/drop/weapon">
+            <Property Name="Text" Value="铸造结果" />
+            <Property Name="HorzExtent" Value="53" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+            <Property Name="BorderColour" Value="FF280B03" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,298},{0.0612245,0},{0.05,357},{0.0256199,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="DoubleMake/Skill/back/drop/back">
+            <Property Name="Image" Value="set:MainControl3 image:LuckyWheelMiddleBox" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,66},{0,68}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,66},{0,68}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,293},{0.05,20},{0.05,359},{0.05,88}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/SkillBox" Name="DoubleMake/Skill/back/drop/back/skill">
+              <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+              <Property Name="UnifiedAreaRect" Value="{{0.166667,0},{0.161765,0},{0.833333,0},{0.808824,0}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="DoubleMake/Skill/back/drop/text1">
+            <Property Name="Text" Value="所需材料" />
+            <Property Name="HorzExtent" Value="53" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+            <Property Name="BorderColour" Value="FF280B03" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0103896,0},{0.0612245,0},{0.1,39},{0.1,16}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Button" Name="DoubleMake/Skill/back/make">
+          <Property Name="Text" Value="铸    造" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,303},{0.1,371},{0.05,371},{0.1,395}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="DoubleMake/Skill/back/weapon1">
+          <Property Name="Text" Value="放入装备" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+          <Property Name="BorderColour" Value="FF280B03" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.039312,0},{0.05,106},{0.05,55},{0.05,126}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="DoubleMake/Skill/back/back1">
+          <Property Name="Image" Value="set:MainControl3 image:LuckyWheelMiddleBox" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,66},{0,68}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,66},{0,68}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,42},{0,147},{0,108},{0,215}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="DoubleMake/Skill/back/back1/item">
+            <Property Name="UnifiedAreaRect" Value="{{0,14},{0,11},{0,60},{0,57}}" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="DoubleMake/Skill/back/weapon2">
+          <Property Name="Text" Value="铸造方式" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+          <Property Name="BorderColour" Value="FF280B03" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,144},{0.05,106},{0,250},{0.05,126}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="DoubleMake/Skill/back/allskill">
+          <Property Name="UnifiedAreaRect" Value="{{0.027027,0},{0.530337,0},{0.972973,0},{0.696629,0}}" />
+          <Window Type="TaharezLook/StaticText" Name="DoubleMake/Skill/back/allskill/text">
+            <Property Name="Text" Value="可铸主动无双技能" />
+            <Property Name="HorzExtent" Value="104" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+            <Property Name="BorderColour" Value="FF280B03" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0103896,0},{0.05,-2},{0.0709021,93},{0.05,19}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/SkillBox" Name="DoubleMake/Skill/back/allskill/skill1">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0155844,0},{0.310811,0},{0.12987,0},{0.905405,0}}" />
+          </Window>
+          <Window Type="TaharezLook/SkillBox" Name="DoubleMake/Skill/back/allskill/skill2">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.12987,3},{0.310811,0},{0.244156,3},{0.905405,0}}" />
+          </Window>
+          <Window Type="TaharezLook/SkillBox" Name="DoubleMake/Skill/back/allskill/skill3">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.244156,6},{0.310811,0},{0.358441,6},{0.905405,0}}" />
+          </Window>
+          <Window Type="TaharezLook/SkillBox" Name="DoubleMake/Skill/back/allskill/skill4">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.358441,9},{0.310811,0},{0.472727,9},{0.905405,0}}" />
+          </Window>
+          <Window Type="TaharezLook/SkillBox" Name="DoubleMake/Skill/back/allskill/skill5">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.472727,12},{0.310811,0},{0.587012,12},{0.905405,0}}" />
+          </Window>
+          <Window Type="TaharezLook/SkillBox" Name="DoubleMake/Skill/back/allskill/skill6">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.587012,15},{0.310811,0},{0.701298,15},{0.905405,0}}" />
+          </Window>
+          <Window Type="TaharezLook/SkillBox" Name="DoubleMake/Skill/back/allskill/skill7">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.701298,18},{0.310811,0},{0.815583,18},{0.905405,0}}" />
+          </Window>
+          <Window Type="TaharezLook/SkillBox" Name="DoubleMake/Skill/back/allskill/skill8">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.815583,21},{0.310811,0},{0.929869,21},{0.905405,0}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="DoubleMake/Skill/back/allskill/select">
+            <Property Name="Image" Value="set:BaseControl image:green" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.25974,0},{0.324324,0},{0.301299,28},{0.297297,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Button" Name="DoubleMake/Skill/back/ok">
+          <Property Name="Text" Value="确    定" />
+          <Property Name="Visible" Value="False" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.1,32},{0.1,370},{0.1,100},{0.1,394}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="DoubleMake/Skill/back/text2">
+          <Property Name="Text">为装备铸造上技能池中选定的技能
+铸造后的装备将会绑定</Property>
+          <Property Name="HorzExtent" Value="195" />
+          <Property Name="VertExtent" Value="31.2378" />
+          <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.427518,0},{0.393258,0},{0.118088,344},{0.476404,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/RadioButton" Name="DoubleMake/Skill/back/choose1">
+          <Property Name="Text" Value="普通铸造" />
+          <Property Name="Visible" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.385749,0},{0.339326,0},{0.587224,0},{0.377528,0}}" />
+          <Property Name="NormalTextColour" Value="FFFFFF33" />
+        </Window>
+        <Window Type="TaharezLook/RadioButton" Name="DoubleMake/Skill/back/choose2">
+          <Property Name="Text" Value="完美铸造" />
+          <Property Name="UnifiedAreaRect" Value="{{0.385749,0},{0.393162,-20},{0.587224,0},{0.429487,-19}}" />
+          <Property Name="NormalTextColour" Value="FFFFFF33" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="FriendsSearchDlg">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,255.219},{0,198.125},{0,525.219},{0,394.125}}" />
+    <Window Type="TaharezLook/TabControl" Name="FriendsSearchDlg/FriendsSearchBar">
+      <Property Name="TabHeight" Value="{0,18}" />
+      <Property Name="TabPanePosition" Value="Top" />
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,42},{0,250},{0,154}}" />
+      <Window Type="DefaultWindow" Name="FriendsSearchDlg/FriendsSearchBar/Friends">
+        <Property Name="Text" Value="好友查询" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,0},{0,233},{0,92}}" />
+        <Window Type="TaharezLook/RadioButton" Name="FriendsSearchDlg/FriendsSearchBar/Friends/NameRadio">
+          <Property Name="Text" Value="按名字查找" />
+          <Property Name="Selected" Value="True" />
+          <Property Name="UnifiedAreaRect" Value="{{0,8},{0,20},{0,98},{0,40}}" />
+        </Window>
+        <Window Type="TaharezLook/Editbox" Name="FriendsSearchDlg/FriendsSearchBar/Friends/NameEdit">
+          <Property Name="BlinkCaret" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="MaxTextLength" Value="8" />
+          <Property Name="UnifiedAreaRect" Value="{{0,103},{0,20},{0,219},{0,40}}" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/RadioButton" Name="FriendsSearchDlg/FriendsSearchBar/Friends/IDRadio">
+          <Property Name="Text" Value="按ID查找" />
+          <Property Name="UnifiedAreaRect" Value="{{0,8},{0,57},{0,98},{0,77}}" />
+        </Window>
+        <Window Type="TaharezLook/Editbox" Name="FriendsSearchDlg/FriendsSearchBar/Friends/IDEdit">
+          <Property Name="BlinkCaret" Value="True" />
+          <Property Name="MaxTextLength" Value="2147483647" />
+          <Property Name="UnifiedAreaRect" Value="{{0,103},{0,57},{0,219},{0,77}}" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="FriendsSearchDlg/FriendsSearchBar/Groups">
+        <Property Name="Text" Value="群查询" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0215517,0},{0,0},{0,231},{0,91}}" />
+        <Window Type="TaharezLook/RadioButton" Name="FriendsSearchDlg/FriendsSearchBar/Friends/GroupNameSearc">
+          <Property Name="Text" Value="按群名查找" />
+          <Property Name="Selected" Value="True" />
+          <Property Name="UnifiedAreaRect" Value="{{0,8},{0,20},{0,97},{0,40}}" />
+        </Window>
+        <Window Type="TaharezLook/Editbox" Name="FriendsSearchDlg/FriendsSearchBar/Friends/GroupNameEdit1">
+          <Property Name="BlinkCaret" Value="True" />
+          <Property Name="MaxTextLength" Value="8" />
+          <Property Name="UnifiedAreaRect" Value="{{0,103},{0,20},{0,219},{0,44}}" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/RadioButton" Name="FriendsSearchDlg/FriendsSearchBar/Friends/GroupIDSearc">
+          <Property Name="Text" Value="按群ID查找" />
+          <Property Name="UnifiedAreaRect" Value="{{0,8},{0,55},{0,97},{0,75}}" />
+        </Window>
+        <Window Type="TaharezLook/Editbox" Name="FriendsSearchDlg/FriendsSearchBar/Friends/GroupIDEdit">
+          <Property Name="BlinkCaret" Value="True" />
+          <Property Name="MaxTextLength" Value="2147483647" />
+          <Property Name="UnifiedAreaRect" Value="{{0,103},{0,55},{0,219},{0,78}}" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="FriendsSearchDlg/Search">
+      <Property Name="Text">查   询
+</Property>
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,46},{0,156},{0,114},{0,180}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="FriendsSearchDlg/Cancel">
+      <Property Name="Text" Value="取   消" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,148.2},{0,156},{0,216.2},{0,180}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="FriendsSearchDlg/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,214},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,214},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.283334,0},{0,12},{0.883334,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="FriendsSearchDlg/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="查 找" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="43" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,60},{0,1},{0,113},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

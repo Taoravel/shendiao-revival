@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="GangMemberManger">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.5,-400},{0.163397,0},{0.5,400},{0.163397,428}}" />
+    <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    <Window Type="TaharezLook/Button" Name="GangMemberManger/Appoint">
+      <Property Name="Text" Value="任命职位" />
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,246},{0,384},{0,318},{0,408}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GangMemberManger/Relinquishment">
+      <Property Name="Text" Value="卸 任" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,321},{0,384},{0,389},{0,408}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GangMemberManger/DeportFamily">
+      <Property Name="Text" Value="驱逐家族" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,534},{0,384},{0,606},{0,408}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GangMemberManger/Reject">
+      <Property Name="Text" Value="拒 收" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,463},{0,384},{0,531},{0,408}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GangMemberManger/GangStatus">
+      <Property Name="Text" Value="帮派状态" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,21},{0,384},{0,93},{0,408}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GangMemberManger/GangInformation">
+      <Property Name="Text" Value="综合信息" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,96},{0,384},{0,168},{0,408}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GangMemberManger/GangBuilding">
+      <Property Name="Text" Value="建设明细" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,171},{0,384},{0,243},{0,408}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GangMemberManger/Punishment">
+      <Property Name="Text" Value="禁止发言" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,609},{0,384},{0,681},{0,408}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GangMemberManger/Accept">
+      <Property Name="Text" Value="接 收" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,392},{0,384},{0,460},{0,408}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GangMemberManger/Family">
+      <Property Name="Text" Value="切换到家族" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,684},{0,384},{0,779},{0,408}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="GangMemberManger/MemberList/Tab 1">
+      <Property Name="Text" Value="帮派核心" />
+      <Property Name="UnifiedAreaRect" Value="{{0,21},{0,46},{0,102},{0,68}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="GangMemberManger/MemberList/Tab 2">
+      <Property Name="Text" Value="家族1" />
+      <Property Name="UnifiedAreaRect" Value="{{0,102},{0,46},{0,186},{0,68}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="GangMemberManger/MemberList/Tab 3">
+      <Property Name="Text" Value="家族2" />
+      <Property Name="UnifiedAreaRect" Value="{{0,186},{0,46},{0,270},{0,68}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="GangMemberManger/MemberList/Tab 4">
+      <Property Name="Text" Value="家族3" />
+      <Property Name="UnifiedAreaRect" Value="{{0,270},{0,46},{0,354},{0,68}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="GangMemberManger/MemberList/Tab 5">
+      <Property Name="Text" Value="家族4" />
+      <Property Name="UnifiedAreaRect" Value="{{0,354},{0,46},{0,438},{0,68}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="GangMemberManger/MemberList/Tab 6">
+      <Property Name="Text" Value="家族5" />
+      <Property Name="UnifiedAreaRect" Value="{{0,438},{0,46},{0,522},{0,68}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="GangMemberManger/MemberList/Tab 7">
+      <Property Name="Text" Value="申请家族" />
+      <Property Name="UnifiedAreaRect" Value="{{0,522},{0,46},{0,606},{0,68}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="GangMemberManger/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.5575,0},{0,10},{0.9425,0},{0.0864486,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="GangMemberManger/Title/Name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="帮   派" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,76},{0,1},{0,153},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="GangMemberManger/IconBack">
+      <Property Name="Image" Value="set:MainControl15 image:GangPepBack" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.77375,0},{0.156542,0},{0.98125,0},{0.892523,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticText" Name="GangMemberManger/MemberName">
+        <Property Name="TextColours" Value="tl:FF78203C tr:FF78203C bl:FF78203C br:FF78203C" />
+        <Property Name="BorderColour" Value="FFFFFFFF" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,47},{0,156},{0,154},{0,176}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GangMemberManger/MemberID">
+        <Property Name="TextColours" Value="tl:FF78203C tr:FF78203C bl:FF78203C br:FF78203C" />
+        <Property Name="BorderColour" Value="FFFFFFFF" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,47},{0,175},{0,154},{0,195}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GangMemberManger/MemberLevel">
+        <Property Name="TextColours" Value="tl:FF78203C tr:FF78203C bl:FF78203C br:FF78203C" />
+        <Property Name="BorderColour" Value="FFFFFFFF" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,47},{0,194},{0,154},{0,214}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GangMemberManger/MemberTime">
+        <Property Name="TextColours" Value="tl:FF78203C tr:FF78203C bl:FF78203C br:FF78203C" />
+        <Property Name="BorderColour" Value="FFFFFFFF" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,13},{0,252},{0,158},{0,270}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GangMemberManger/text11">
+        <Property Name="Text" Value="名字：" />
+        <Property Name="HorzExtent" Value="39" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF78203C tr:FF78203C bl:FF78203C br:FF78203C" />
+        <Property Name="BorderColour" Value="FFFFFFFF" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,13},{0,157},{0,48},{0,175}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GangMemberManger/text111">
+        <Property Name="Text" Value="I   D：" />
+        <Property Name="HorzExtent" Value="37" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF78203C tr:FF78203C bl:FF78203C br:FF78203C" />
+        <Property Name="BorderColour" Value="FFFFFFFF" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,13},{0,176},{0,48},{0,194}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GangMemberManger/text112">
+        <Property Name="Text" Value="等级：" />
+        <Property Name="HorzExtent" Value="39" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF78203C tr:FF78203C bl:FF78203C br:FF78203C" />
+        <Property Name="BorderColour" Value="FFFFFFFF" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,13},{0,195},{0,48},{0,213}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GangMemberManger/text113">
+        <Property Name="Text" Value="上次离线时间：" />
+        <Property Name="HorzExtent" Value="91" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF78203C tr:FF78203C bl:FF78203C br:FF78203C" />
+        <Property Name="BorderColour" Value="FFFFFFFF" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,13},{0,233},{0,105},{0,251}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="GangMemberManger/IconBack/Icon">
+        <Property Name="Image" Value="set:MainControl15 image:GangPetBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,138},{0,130}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,138},{0,130}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0903614,0},{0.0761905,0},{0.921687,0},{0.488889,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="GangMemberManger/MemberImage">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0362319,0},{0,2},{0.0507247,129},{0,126}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GangMemberManger/IconBack/Info">
+        <Property Name="Text" Value="成员信息" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF78203C tr:FF78203C bl:FF78203C br:FF78203C" />
+        <Property Name="BorderColour" Value="FFFFFFFF" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.325301,0},{0.0222222,0},{0.3,64},{0.0237541,20}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GangMemberManger/text1121">
+        <Property Name="Text" Value="拖欠次数：" />
+        <Property Name="HorzExtent" Value="65" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF78203C tr:FF78203C bl:FF78203C br:FF78203C" />
+        <Property Name="BorderColour" Value="FFFFFFFF" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,13},{0,214},{0,75},{0,232}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GangMemberManger/MemberLevel1">
+        <Property Name="TextColours" Value="tl:FF78203C tr:FF78203C bl:FF78203C br:FF78203C" />
+        <Property Name="BorderColour" Value="FFFFFFFF" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,75},{0,213},{0,112},{0,233}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="GangMemberManger/IconBack/Off">
+        <Property Name="Text" Value="清欠" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.674699,0},{0.692064,0},{0.927711,0},{0.74744,5}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GangMemberManger/text1131">
+        <Property Name="Text" Value="入帮时间：" />
+        <Property Name="HorzExtent" Value="65" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF78203C tr:FF78203C bl:FF78203C br:FF78203C" />
+        <Property Name="BorderColour" Value="FFFFFFFF" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,13},{0,271},{0,75},{0,289}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GangMemberManger/GangTime">
+        <Property Name="TextColours" Value="tl:FF78203C tr:FF78203C bl:FF78203C br:FF78203C" />
+        <Property Name="BorderColour" Value="FFFFFFFF" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,13},{0,290},{0,158},{0,308}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="GangMemberManger/back">
+      <Property Name="UnifiedAreaRect" Value="{{0,14},{0.158879,0},{0,618},{0.150918,316}}" />
+      <Window Type="TaharezLook/MultiColumnList" Name="GangMemberManger/GangAll">
+        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,3},{0,600},{0,310}}" />
+        <Property Name="ColumnHeader" Value="text: 名称 width:{0.2,0} id:0" />
+        <Property Name="ColumnHeader" Value="text:等级 width:{0.08,0} id:1" />
+        <Property Name="ColumnHeader" Value="text:门派 width:{0.1,0} id:2" />
+        <Property Name="ColumnHeader" Value="text: 职务 width:{0.14,0} id:3" />
+        <Property Name="ColumnHeader" Value="text:本周帮费 width:{0.12,0} id:4" />
+        <Property Name="ColumnHeader" Value="text:历史帮费 width:{0.12,0} id:5" />
+        <Property Name="ColumnHeader" Value="text:帮派声望 width:{0.12,0} id:6" />
+        <Property Name="ColumnHeader" Value="text:声望上限 width:{1,-522} id:7" />
+      </Window>
+      <Window Type="TaharezLook/MultiColumnList" Name="GangMemberManger/FamilyApply">
+        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,3},{0,600},{0,310}}" />
+        <Property Name="ColumnHeader" Value="text:家族名称 width:{0.2,0} id:0" />
+        <Property Name="ColumnHeader" Value="text:家族等级 width:{0.12,0} id:1" />
+        <Property Name="ColumnHeader" Value="text:家族人数 width:{0.12,0} id:2" />
+        <Property Name="ColumnHeader" Value="text:  族长 width:{0.2,0} id:3" />
+        <Property Name="ColumnHeader" Value="text:申请时间 width:{1,-380} id:4" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/LittleButton" Name="GangMemberManger/leaderbook">
+      <Property Name="Text" Value="宝典" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0,737},{0,46},{0,783},{0,66}}" />
+    </Window>
+    <Window Type="TaharezLook/LittleButton" Name="GangMemberManger/Mail">
+      <Property Name="Text" Value="群体邮件" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.84125,0},{0,46},{0.92125,0},{0,66}}" />
+    </Window>
+    <Window Type="TaharezLook/LittleButton" Name="GangMemberManger/GT">
+      <Property Name="Text" Value="帮派语音" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.76125,0},{0.05,25},{0.84125,0},{0.05,45}}" />
+      <Property Name="NormalTextColour" Value="FFFFFF33" />
+      <Property Name="ButtonBorderEnable" Value="True" />
+      <Property Name="ButtonDefaultBorderEnable" Value="False" />
+      <Property Name="ButtonDefaultColourEnable" Value="False" />
+    </Window>
+  </Window>
+</GUILayout>

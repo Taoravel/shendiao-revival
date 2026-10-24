@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="QuackSkillIntensify">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.1575,0},{0.166666,0},{0.71,0},{0.769999,0}}" />
+    <Window Type="TaharezLook/StaticImage" Name="PetSkill/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,12},{0.696833,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="PetSkill/Title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="侠客后天技能强化" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="136" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.298701,0},{-0.037037,0},{0.818182,0},{0,22}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="QuackSkillIntensify/back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0384615,0},{0.116667,0},{0.954751,0},{0.872222,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="QuackSkillIntensify/back/name">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="悲酥清风" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFDCF6CE tr:FFDCF6CE bl:FF10BBD3 br:FF10BBD3" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.00493827,0},{0.261029,0},{0.05,64},{0.05,75}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="QuackSkillIntensify/back/txt0">
+        <Property Name="Text" Value="品质：" />
+        <Property Name="HorzExtent" Value="39" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF96F3A4 tr:FF96F3A4 bl:FF96F3A4 br:FF96F3A4" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.234568,0},{0.0477941,0},{0.345679,0},{0.0992647,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="QuackSkillIntensify/back/txt1">
+        <Property Name="Text" Value="评分：" />
+        <Property Name="HorzExtent" Value="39" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF96F3A4 tr:FF96F3A4 bl:FF96F3A4 br:FF96F3A4" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.234568,0},{0.172794,0},{0.34321,0},{0.227941,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="QuackSkillIntensify/back/txt2">
+        <Property Name="Text" Value="描述：" />
+        <Property Name="HorzExtent" Value="39" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF96F3A4 tr:FF96F3A4 bl:FF96F3A4 br:FF96F3A4" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.234568,0},{0.231618,0},{0.345679,0},{0.305147,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="QuackSkillIntensify/back/skill">
+        <Property Name="Image" Value="set:BaseControl image:SkillBackCell1" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,66},{0,66}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,66},{0,66}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0222222,0},{0.0220588,0},{0.185185,0},{0.264706,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/SkillBox" Name="QuackSkillIntensify/back/icon">
+          <Property Name="UnifiedMaxSize" Value="{{0,40},{0,40}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,40},{0,40}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,13},{0,13},{0,53},{0,53}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="QuackSkillIntensify/back/level">
+          <Property Name="Text" Value="99" />
+          <Property Name="HorzExtent" Value="16" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.530303,0},{0.515152,0},{0.818182,0},{0.848485,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseBlue" Name="QuackSkillIntensify/back/Shuxing">
+        <Property Name="UnifiedAreaRect" Value="{{0.0222222,0},{0.330882,0},{0.975309,0},{0.724265,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="QuackSkillIntensify/back/Shuxing/level">
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="UnifiedAreaRect" Value="{{0.111399,0},{0.121495,0},{0.1,95},{-0.173077,50}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="QuackSkillIntensify/back/Shuxing/effect">
+          <Property Name="Font" Value="fzy4k-9" />
+          <Property Name="Text" Value="增加侠客内功暴击几率20%" />
+          <Property Name="HorzExtent" Value="145" />
+          <Property Name="VertExtent" Value="14.0625" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0207254,0},{0.317757,0},{0.146512,108},{0.15,34}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="QuackSkillIntensify/back/Shuxing/level1">
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="UnifiedAreaRect" Value="{{0.750964,0},{0.121495,0},{0.153157,318},{-0.173077,50}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="QuackSkillIntensify/back/Shuxing/effect1">
+          <Property Name="Font" Value="fzy4k-9" />
+          <Property Name="Text">增加侠客外功暴击几率20%
+</Property>
+          <Property Name="HorzExtent" Value="145" />
+          <Property Name="VertExtent" Value="14.0625" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="UnifiedAreaRect" Value="{{0.57513,0},{0.317757,0},{0.153157,318},{0.156126,34}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="QuackSkillIntensify/back/Shuxing/image">
+          <Property Name="Image" Value="set:MainControl2 image:Preview" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,115},{0,38}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,115},{0,38}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.352332,0},{0.130841,0},{0.650259,0},{0.485981,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="QuackSkillIntensify/back/Shuxing/level21">
+          <Property Name="Text" Value="当前进度" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,-9},{0.05,52},{0.05,50},{0.05,69}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="QuackSkillIntensify/back/Shuxing/level2">
+          <Property Name="Text" Value="需要银两" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0259067,0},{0,78},{0.0303797,57},{0,97}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="QuackSkillIntensify/back/Shuxing/money">
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="UnifiedAreaRect" Value="{{0,69},{0,78},{0,166},{0,96}}" />
+          <Window Type="TaharezLook/StaticImage" Name="QuackSkillIntensify/back/Shuxing/money/icon">
+            <Property Name="Image" Value="set:MainControl image:Xianjin" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.793814,0},{0,-1},{0.989691,0},{0,18}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/ProgressBar" Name="QuackSkillIntensify/back/ProgressBar">
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="FrameEnable" Value="True" />
+          <Property Name="CurrentProgress" Value="0" />
+          <Property Name="UnifiedAreaRect" Value="{{0,69},{0,56},{0,376},{-0.287112,104}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="QuackSkillIntensify/back/Shuxing/level211">
+          <Property Name="Text" Value="等级" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,-9},{0.128037,0},{0.05,23},{0.1,20}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="QuackSkillIntensify/back/Shuxing/level2111">
+          <Property Name="Text" Value="等级" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.1,220},{0.131308,0},{0.1,252},{0.15,15}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="QuackSkillIntensify/back/Pinzhi">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.340741,0},{0.0220588,0},{0.340741,36},{0.0220588,36}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="QuackSkillIntensify/back/Shuxing/Pingfen">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.340741,0},{0.05,33},{0.15,332},{0.05,49}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="QuackSkillIntensify/back/Shuxing/Text">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.340741,0},{0.1,38},{0.2,312},{0.1,54}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="QuackSkillIntensify/back/skill1">
+        <Property Name="Image" Value="set:MainControl3 image:LuckyWheelNormalBox" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,64},{0,64}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,64},{0,64}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0148148,0},{0.746324,0},{0.17284,0},{0.981618,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="QuackSkillIntensify/back/icon1">
+          <Property Name="UnifiedAreaRect" Value="{{0.1875,0},{0.1875,0},{0.296875,33},{0.296875,33}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="QuackSkillIntensify/back/level1">
+          <Property Name="Visible" Value="False" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0.296875,0},{0.296875,0},{0.796875,0},{0.734375,0}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="QuackSkillIntensify/back/skill2">
+        <Property Name="Image" Value="set:MainControl3 image:LuckyWheelNormalBox" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,64},{0,64}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,64},{0,64}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.175309,1},{0.746324,0},{0.333333,1},{0.981618,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="QuackSkillIntensify/back/icon2">
+          <Property Name="UnifiedAreaRect" Value="{{0.1875,0},{0.1875,0},{0.296875,33},{0.296875,33}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="QuackSkillIntensify/back/level2">
+          <Property Name="Visible" Value="False" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0.296875,0},{0.296875,0},{0.796875,0},{0.734375,0}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="QuackSkillIntensify/back/skill3">
+        <Property Name="Image" Value="set:MainControl3 image:LuckyWheelNormalBox" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,64},{0,64}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,64},{0,64}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.333333,3},{0.746324,0},{0.491358,3},{0.981618,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="QuackSkillIntensify/back/icon3">
+          <Property Name="UnifiedAreaRect" Value="{{0.1875,0},{0.1875,0},{0.296875,33},{0.296875,33}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="QuackSkillIntensify/back/level3">
+          <Property Name="Visible" Value="False" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0.296875,0},{0.296875,0},{0.796875,0},{0.734375,0}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="QuackSkillIntensify/back/skill4">
+        <Property Name="Image" Value="set:MainControl3 image:LuckyWheelNormalBox" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,64},{0,64}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,64},{0,64}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.491358,5},{0.746324,0},{0.649383,5},{0.981618,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="QuackSkillIntensify/back/icon4">
+          <Property Name="UnifiedAreaRect" Value="{{0.1875,0},{0.1875,0},{0.296875,33},{0.296875,33}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="QuackSkillIntensify/back/level4">
+          <Property Name="Visible" Value="False" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0.296875,0},{0.296875,0},{0.796875,0},{0.734375,0}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="QuackSkillIntensify/back/skill5">
+        <Property Name="Image" Value="set:MainControl3 image:LuckyWheelNormalBox" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,64},{0,64}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,64},{0,64}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.649383,7},{0.746324,0},{0.807407,7},{0.981618,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="QuackSkillIntensify/back/icon5">
+          <Property Name="UnifiedAreaRect" Value="{{0.1875,0},{0.1875,0},{0.296875,33},{0.296875,33}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="QuackSkillIntensify/back/level5">
+          <Property Name="Visible" Value="False" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0.296875,0},{0.296875,0},{0.796875,0},{0.734375,0}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="QuackSkillIntensify/back/skill6">
+        <Property Name="Image" Value="set:MainControl3 image:LuckyWheelNormalBox" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,64},{0,64}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,64},{0,64}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.807407,9},{0.746324,0},{0.965432,9},{0.981618,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="QuackSkillIntensify/back/icon6">
+          <Property Name="UnifiedAreaRect" Value="{{0.1875,0},{0.1875,0},{0.296875,33},{0.296875,33}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="QuackSkillIntensify/back/level6">
+          <Property Name="Visible" Value="False" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0.296875,0},{0.296875,0},{0.796875,0},{0.734375,0}}" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="QuackSkillIntensify/Intensify">
+      <Property Name="Text" Value="强化" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.794118,0},{0.883333,0},{0.947964,0},{0.947222,0}}" />
+    </Window>
+  </Window>
+</GUILayout>

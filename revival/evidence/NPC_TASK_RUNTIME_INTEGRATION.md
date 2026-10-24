@@ -1,0 +1,65 @@
+# NPC、任务奖励与跨图接线历史记录
+
+2026-10-24阅读订正：本页保留2026-10-23各阶段实际记录，“未部署/不要重启”等现场叙述不是当前发布状态或新的用户限制。当前状态查NPC_COMPLETION_AUDIT.md、runtime/deployment.json及对应独立验收。早期半径32已被npc-interaction-v2的格距平方<169政策替代；本页早期SAccept/state2接取描述已被TASK_TRACKER_FAILURE_RESEARCH与task_protocol的active0/failed2原指令证据纠正，不能据历史文字重新采用state2。任务跨图、奖励及GUI各按最新决定文档和实际发布验证。新102002/NPC10157室内地图契约差异及全量引用对照见NPC_TASK_COVERAGE_AUDIT.md；未因此完成或重映射任务。
+
+2026-10-23。沿用已读codebase-design与diagnosing-bugs：复用各系统Module的公开Interface，把地图交互证据、角色计划、事务提交和目标连接通知放在不同Seam；只做临时数据库必要验证。NPC菜单/对白由research对子任务核对本版本原生消费者，见TASK_DIALOG_PROTOCOL.md与TASK_NPC_DISPLAY_BINDINGS.md。不操作原客户端界面、不发在线奖励。
+
+## 已接入源码
+
+- runtime_storage.prepare在监听前加载不可变NPC摆放/定义，创建奖励渠道表及world_handoffs。无角色登录时DDL或全表读配置。
+- 地图所有者绑定NpcScene。NPC key使用服务器命名空间`map_id<<32 | placement_id`，每地图最多4096绑定、每批64条SAddUserScreen。只有资源可用、坐标有效且存在定义的摆放进入注册。NPC完整模型消息布局复用world_entity_protocol；尚无原客户端NPC画面实测。
+- CVisitNpc与CNpcService先交地图所有者验证角色epoch、实例、位置版本、NPC实体绑定及32逻辑像素半径。半径为本地恢复策略；目前移动尚无完整碰撞/速度校验，因此不能宣称防作弊已完成。
+- TaskConversation仅展示合法已接或已授权offer的普通对话任务。原SVisitNpc第二vector含任务ID；主线任务点击发CCommit。CNpcService的serviceID仍作为独立普通服务，不解释为任务ID。
+- 角色所有者有服务器专用`offer_task(task_id)`命令，无任意客户端offer入口；未自行决定正式主线起点或把所有同NPC任务自动激活。线上新角色任务自动激活策略仍需主策划裁定/配置，测试使用明确的隔离任务授权。
+- 主策划后续核对：100192的incoming为100112，不能拿它替代自然主线起点；原root100101为type50、无incoming，后继涉及100184–100187及梦境1501的后续。当前不改变用户角色出生点或故事状态，不把测试offer写成新角已自然有主线；原动画/章节触发与后继队列仍需接入。
+- CCommit接取分支重新校验地图NPC证明，提交accept计划后返回SAccept state2；再以目标已满足的普通对话证据生成ready state3与NPC任务菜单。对白来自原客户端本地配置，未用通用确认框代替。CCommit交付/匹配对白结束只消费有效ticket；移动会取消ticket。
+- 完成通过task_workflow.complete_task_transaction，在同一租约围栏事务中写任务状态、effect、人物经验、Inventory.apply_settlement及各渠道凭据；提交后再acknowledge ticket并通知任务状态/绝对经验余额。绑定接口已由道具窗口提供，原100192的绑定43000可正常保留绑定1入库；未明币种、宠物经验渠道保留pending。
+- 重登加载经验余额，进图后发送SRefreshUserExp；TaskConversation.resume_messages恢复支持的普通已接任务bean。完成/奖励数据库记录不等于所有后续剧情已执行；effect的后续节点、结束对白、地图指令仍保留pending。
+
+## 必要验证
+
+`verify_npc_task_runtime.py`使用临时库、GameRuntime/ConnectionOwner真实接线、原生持续解压器：服务器授权原100192→原桃花岛1006/NPC10899实体→菜单→CCommit接取→断线重登恢复→再次拜访对白→CCommit交付→150经验与绑定43000×1同事务→非空背包协议→重复不重复发奖→再重登余额150。测试原任务有真实对白列表；没有把空对白直接提交当显示成功。临时角色不影响用户已有角色。
+
+NPC范围、过期证据、版本等由原world_npcs必要检查覆盖；此集成切片验证scope路由，不扩展完整UI自动化。`verify_runtime.py`保留必要独立推进/密文/背压检查通过。所有测试结果只证明源码接线，不证明当前运行进程已加载这些改动。
+
+## 跨图源码进度（补入主策划scene.1裁定）
+
+- 已将原portal候选继续接到目标reserve→源freeze→目标activate，之前记录prepared写前决策；目标位置/版本与committed回执在同一租约事务落盘，随后才finalize源并发送换图。SQLite的文件级单写限制不变。
+- 激活前已知拒绝走明确cancel决策及源resume，不凭超时推断取消。激活后提交结果未知或源清理异常将角色隔离，禁止继续旧源修改；现阶段此类同进程恢复仍待完善，不能宣称全部故障自动恢复。
+- committed目标在新运行时/新租约加载时仍是唯一存档位置；prepared没有修改权威存档，新租约恢复时标取消。`verify_transfer_runtime.py`已通过门户提交、清源顺序、loading拒绝移动/旧初入世界ack、服务器可信ready hook、新运行时恢复目标。
+- 原生证据确认reason0不会发送初入世界CAfterEnterWorld，不能拿它冒充普通跨图ready。主策划随后发布design/scene-transition-v1.json，采用服务器发送屏障设计适配。源码现已绑定精确SRoleEnterScene写出/drain后的冻结SceneSendBarrier，校验role/epoch/connection generation/transfer ID/目标version及完整消息正文，才释放目标loading状态；已移除不带证明的scene_ready命令入口。
+- 同一来源read批次的剩余玩法及旧场景部分帧拒绝，loading期间玩法写入拒绝；屏障后首次移动必须从精确目标位置开始，普通移动不能充当ready。原wire没有场景世代，完全相同的迟到字节不可完美区分，碰撞/速度完整检查仍未恢复。
+- verify_transfer_runtime.py已改为受控阻塞目标drain，验证落盘后仍loading、同read旧包拒绝、错误generation屏障拒绝、精确屏障后继续目标移动及新运行时恢复目标。native_general_scene_ready_verified仍为false：这是一项designed服务器投递激活，不是原生客户端加载或渲染确认。实际客户端跨图和继续走路尚未测，且现场禁止重启，未部署。
+- SRelocateRolePos→CRelocateRolePos的13字节响应只证明位置同步：原scene ID在资源加载前已更新，故未用它伪装渲染确认。两份只读研究见SCENE_READY_NATIVE.md与主策划SCENE_READY_RESEARCH.md。
+
+## 现场与部署
+
+主策划转述用户持续黑屏，地图窗口正在采集原生绘制现场。按现场约束，本批没有重启服务器、客户端，也未让用户角色重登；所有新增内容均未部署。前批网络进图回归和更早临安可见截图不能作为当前画面已恢复的证据。待现场采样结束或用户明确允许再统一刷新并记录源码哈希，随后由用户进行画面测试。
+
+最新用户反馈为“角色都没移动、黑屏、场景加载满、不要打开游戏”，已停止把进图网络成功当作可玩成功；后续优先只读现有日志与原指令排查前置黑屏。零经验分支安装movieblack.tga的事实不等于已证明根因，遮罩移除、绘制门控与加载失败路径仍需核对，不通过伪造经验1、重置出生点或修改用户任务躲过问题。
+
+## 货币准备接线（源码未验证、未部署）
+
+按主策划currency-v1交接，runtime_storage.prepare在启动期加载CurrencyRules、建立钱包表。AccountStore只有在这条已准备的新恢复创建流程中，才与新角色同事务写role_restoration_origins；该显式来源在首次角色租约内初始化零余额，重试不覆盖现有余额。已有角色无该来源记录，不自动建钱包，也不为消除任务pending迁移旧余额。
+
+角色所有者新增服务器专用initialize_wallet(baseline, origin)命令；new_restoration_role必须校验创建来源与策略版本，explicit_migration必须由可信服务器调用明确提供。返回read_wallet当前余额，不拿历史结算凭据覆盖缓存。没有任何客户端数据包入口，也未猜测原生钱包显示槽位。旧角色的显式迁移及任务窗口货币同事务Interface接入仍依后续交接。
+
+本段未运行额外检查，未接触现场数据库；currency窗口原有临时库报告不视为本运行时新接线已通过。必须与后续部署/必要回归分开记录。
+
+### 任务事务规则注入修正
+
+主策划静态核对发现complete_conversation遗漏规则参数，导致已有CurrencyRules未进入complete_task_transaction而沿默认None保留货币pending。本批按codebase-design的依赖注入Interface补齐：runtime_storage.prepare统一加载growth_rules、attribute_rules、currency_rules，只在启动阶段执行成长与属性表迁移，不创建角色基线；LeasedAccounts共享对应只读规则。
+
+complete_conversation按明确关键字把三组规则传入同一个原事务，不再依赖workflow默认None。未准备或为None直接失败，不允许已存在属性基线的角色悄悄沿旧属性结算。已有角色的成长、属性和钱包仍需各自显式初始化/迁移，启动准备不会补基线。下游TaskWorkflow/成长/属性Module继续负责事务内版本与租约检查；本批不另写计算或奖励逻辑。
+
+验证范围：只静态核对最新公开参数名、调用链、缺规则拒绝及启动位置，未运行战斗/游戏/额外脚本，未打开数据库或重启进程。源码尚未部署；现有模块独立检查报告不代表本次接线已执行通过。
+
+### 登录/重连的钱包显示桥接
+
+采用codebase-design沿既有存储Seam增加wallet_snapshot：在当前角色租约事务内读取当前Wallet余额；仅WalletNotInitialized返回None，不初始化旧钱包，策略/租约/所有权错误继续失败。角色收到首次进图确认时重新读取，不复用历史奖励回执或较早登录缓存。
+
+仅对已初始化钱包的cash与bound_silver调用currency_protocol.encode_currency_balance，生成逻辑消息交回目标连接发送泵FIFO。cash→money_1/kind1、bound_silver→smoney使用主策划已核实显示桥；元宝两个未知槽未发送，kind2未当作绑定银。没有钱包不发送伪造0余额。任务SMoney→绑定银仍为designed奖励映射，显示桥证据不改变其来源等级；任务提交后的刷新由任务窗口维护completion_messages。
+
+本补丁仅静态核对公开Interface、当前绝对余额与目标连接发送路径，未运行脚本/客户端/战斗检查或重启服务，未操作现场数据，尚未部署。原codec窗口的字节验证不作为本次登录接线已实测的结论。
+
+主策划随后完成元宝顺序证据：登录/重连读取完整显式钱包后，追加encode_yuanbao_balances(current_yuanbao,current_bound_yuanbao)，在同一原生消息中刷新两项。两项都从同一次当前权威快照取得；缺任一项明确失败，绝不填0。各值超过原UI非负signed32范围时拒绝本次元宝显示操作并记wallet_display_rejected，不截断/改写64位账本，也不阻断无关NPC/任务初始化。无钱包仍完全不发默认余额；现金/绑定银保持原已确认桥接。未运行额外检查、未部署或操作现场，来源及原codec验证归主策划报告。

@@ -1,0 +1,397 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/HouseFrameWindow" Name="FurnitureColour">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="open.ogg" />
+    <Property Name="ClippedByParent" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.195,0},{0.0526259,0},{0.2125,474},{0.0526259,516}}" />
+    <Property Name="CloseSoundResource" Value="close.ogg" />
+    <Window Type="DefaultWindow" Name="FurnitureColour/divide">
+      <Property Name="UnifiedAreaRect" Value="{{0.0819672,0},{0.116279,0},{0.2275,335},{0.125,422}}" />
+      <Window Type="TaharezLook/CommonCaseHouse" Name="FurnitureColour/divide/back">
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{-0.00738916,0},{-0.00234742,0},{0,410},{-0.00238095,433}}" />
+        <Window Type="TaharezLook/Figure" Name="FurnitureColour/divide/back/title">
+          <Property Name="UnifiedAreaRect" Value="{{0.355932,0},{0,7},{0.35086,179},{0,24}}" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+          <Window Type="TaharezLook/StaticText" Name="FurnitureColour/divide/back/title/name">
+            <Property Name="Text" Value="请选择要换色的家具" />
+            <Property Name="HorzExtent" Value="117" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.158192,0},{-0.117647,0},{0.847458,0},{0,18}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="FurnitureColour/divide/back/pagback">
+          <Property Name="UnifiedAreaRect" Value="{{0.0338983,0},{0,25},{0.966102,0},{0,127}}" />
+          <Window Type="TaharezLook/ScrollablePane" Name="FurnitureColour/divide/back/pagback/List">
+            <Property Name="ContentArea" Value="l:-21 t:-4 r:356 b:93" />
+            <Property Name="HorzStepSize" Value="0.1" />
+            <Property Name="VertStepSize" Value="0.1" />
+            <Property Name="HorzOverlapSize" Value="0.01" />
+            <Property Name="UnifiedAreaRect" Value="{{0.00779221,0},{0.0196078,0},{0.00673583,414},{0.01,103}}" />
+            <Property Name="VertOverlapSize" Value="0.01" />
+            <Property Name="HorzScrollPosition" Value="0" />
+            <Property Name="VertScrollPosition" Value="0" />
+            <AutoWindow NameSuffix="__auto_container__">
+              <Property Name="ContentArea" Value="l:-21 t:-4 r:356 b:93" />
+              <Property Name="ChildExtentsArea" Value="l:-21 t:-4 r:356 b:93" />
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell1">
+                <Property Name="UnifiedAreaRect" Value="{{0,-21},{0,-4},{0,27},{0,44}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell2">
+                <Property Name="UnifiedAreaRect" Value="{{0,26},{0,-4},{0,74},{0,44}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell3">
+                <Property Name="UnifiedAreaRect" Value="{{0,73},{0,-4},{0,121},{0,44}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell4">
+                <Property Name="UnifiedAreaRect" Value="{{0,120},{0,-4},{0,168},{0,44}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell5">
+                <Property Name="UnifiedAreaRect" Value="{{0,167},{0,-4},{0,215},{0,44}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell6">
+                <Property Name="UnifiedAreaRect" Value="{{0,214},{0,-4},{0,262},{0,44}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell7">
+                <Property Name="UnifiedAreaRect" Value="{{0,261},{0,-4},{0,309},{0,44}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell8">
+                <Property Name="UnifiedAreaRect" Value="{{0,308},{0,-4},{0,356},{0,44}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell9">
+                <Property Name="UnifiedAreaRect" Value="{{0,-21},{0,45},{0,27},{0,93}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell10">
+                <Property Name="UnifiedAreaRect" Value="{{0,26},{0,45},{0,74},{0,93}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell11">
+                <Property Name="UnifiedAreaRect" Value="{{0,73},{0,45},{0,121},{0,93}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell12">
+                <Property Name="UnifiedAreaRect" Value="{{0,120},{0,45},{0,168},{0,93}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell13">
+                <Property Name="UnifiedAreaRect" Value="{{0,167},{0,45},{0,215},{0,93}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell14">
+                <Property Name="UnifiedAreaRect" Value="{{0,214},{0,45},{0,262},{0,93}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell15">
+                <Property Name="UnifiedAreaRect" Value="{{0,261},{0,45},{0,309},{0,93}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell16">
+                <Property Name="UnifiedAreaRect" Value="{{0,308},{0,45},{0,356},{0,93}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell17">
+                <Property Name="Visible" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{-0.0411622,0},{0.05,24},{0.05,10},{0.05,72}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell18">
+                <Property Name="Visible" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,308},{0,24},{0,356},{0,72}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell19">
+                <Property Name="Visible" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,308},{0,24},{0,356},{0,72}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell20">
+                <Property Name="Visible" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,308},{0,14},{0,356},{0,62}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell21">
+                <Property Name="Visible" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,308},{0,24},{0,356},{0,72}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell22">
+                <Property Name="Visible" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,308},{0,24},{0,356},{0,72}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell23">
+                <Property Name="Visible" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,308},{0,24},{0,356},{0,72}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell24">
+                <Property Name="Visible" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,308},{0,24},{0,356},{0,72}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell25">
+                <Property Name="Visible" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,308},{0,24},{0,356},{0,72}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell26">
+                <Property Name="Visible" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,308},{0,24},{0,356},{0,72}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell27">
+                <Property Name="Visible" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,308},{0,24},{0,356},{0,72}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell28">
+                <Property Name="Visible" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,308},{0,24},{0,356},{0,72}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell29">
+                <Property Name="Visible" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,308},{0,24},{0,356},{0,72}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell30">
+                <Property Name="Visible" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,308},{0,24},{0,356},{0,72}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell31">
+                <Property Name="Visible" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,308},{0,24},{0,356},{0,72}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/pagback/List/cell32">
+                <Property Name="Visible" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,308},{0,24},{0,356},{0,72}}" />
+              </Window>
+            </AutoWindow>
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FurnitureColour/divide/back/gu">
+          <Property Name="Text" Value="放入家具" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+          <Property Name="BorderColour" Value="FF280B03" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.157385,0},{0.05,140},{0.05,100},{0.05,160}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FurnitureColour/divide/back/back1">
+          <Property Name="Image" Value="set:MainControl3 image:LuckyWheelMiddleBox" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,66},{0,68}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,66},{0,68}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,37},{0.05,162},{0.05,103},{0.05,230}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/back1/item">
+            <Property Name="UnifiedAreaRect" Value="{{0.136364,0},{0.132353,0},{0.30303,37},{0.294118,37}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FurnitureColour/divide/back/name">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0581114,0},{0.581986,0},{0.382567,0},{0.625866,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FurnitureColour/divide/back/image">
+          <Property Name="UnifiedAreaRect" Value="{{0.0338983,0},{0.683603,0},{0.0338981,157},{0.74134,0}}" />
+          <Window Type="TaharezLook/StaticText" Name="FurnitureColour/divide/back/image/txt1">
+            <Property Name="Text" Value="■" />
+            <Property Name="HorzExtent" Value="13" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.044586,0},{0.24,0},{0.301653,-24},{0.208333,15}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="FurnitureColour/divide/back/image/txt2">
+            <Property Name="Text" Value="■" />
+            <Property Name="HorzExtent" Value="13" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.301653,-21},{0.24,0},{0.55872,-45},{0.208333,15}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="FurnitureColour/divide/back/image/txt3">
+            <Property Name="Text" Value="■" />
+            <Property Name="HorzExtent" Value="13" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.580681,-47},{0.24,0},{0.837748,-71},{0.208333,15}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="FurnitureColour/divide/back/image/txt4">
+            <Property Name="Text" Value="■" />
+            <Property Name="HorzExtent" Value="13" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.85971,-72},{0.24,0},{1.11678,-96},{0.208333,15}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="FurnitureColour/divide/back/image/txt5">
+            <Property Name="Text" Value="■" />
+            <Property Name="HorzExtent" Value="13" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{1.13874,-97},{0.24,0},{1.39581,-121},{0.208333,15}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="FurnitureColour/divide/back/image/txt6">
+            <Property Name="Text" Value="■" />
+            <Property Name="HorzExtent" Value="13" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{1.41777,-123},{0.24,0},{1.67484,-147},{0.208333,15}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="FurnitureColour/divide/back/image/txt7">
+            <Property Name="Text" Value="■" />
+            <Property Name="HorzExtent" Value="13" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{1.6968,-147},{0.24,0},{1.95387,-171},{0.208333,15}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="FurnitureColour/divide/back/image/txt8">
+            <Property Name="Text" Value="■" />
+            <Property Name="HorzExtent" Value="13" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{1.97582,-172},{0.24,0},{2.23289,-196},{0.208333,15}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="FurnitureColour/divide/back/image/select">
+            <Property Name="Image" Value="set:BaseControl image:green" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0254777,0},{0.12,0},{0.0129034,21},{0.125,18}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FurnitureColour/divide/back/gu2">
+          <Property Name="Text" Value="选择颜色" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+          <Property Name="BorderColour" Value="FF280B03" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.157385,0},{0.05,252},{0.103269,78},{0.05,272}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FurnitureColour/divide/back/gu3">
+          <Property Name="Text" Value="效果预览" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+          <Property Name="BorderColour" Value="FF280B03" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.631961,0},{0.1,117},{0.15,259},{0.1,137}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="FurnitureColour/divide/back/effect">
+          <Property Name="UnifiedAreaRect" Value="{{0.430993,0},{0.424942,0},{0.968523,0},{0.919169,0}}" />
+          <Window Type="TaharezLook/StaticImage" Name="FurnitureColour/divide/back/effect/look">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.234234,0},{0.196262,0},{0.0681614,156},{0.108953,148}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Button" Name="FurnitureColour/divide/back/button">
+          <Property Name="Text" Value="确认换色" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.806295,0},{0.928406,0},{0.96368,0},{0.983834,0}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FurnitureColour/divide/back/gu1">
+          <Property Name="Text" Value="所需材料" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+          <Property Name="BorderColour" Value="FF280B03" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.157385,0},{0.1,280},{0.100847,79},{0.1,300}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FurnitureColour/divide/back/resource">
+          <Property Name="Image" Value="set:MainControl image:SellItemBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,127},{0,55}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,127},{0,55}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.062954,0},{0.792148,0},{0.37046,0},{0.919169,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="FurnitureColour/divide/back/resource/item">
+            <Property Name="UnifiedAreaRect" Value="{{0.015748,0},{0.0545455,0},{6.33299e-008,50},{0.0545454,48}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="FurnitureColour/divide/back/resource/name">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.409449,0},{0.109091,0},{0.968504,0},{0.436364,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="FurnitureColour/divide/back/resource/num">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.409449,0},{0.545455,0},{0.968504,0},{0.872727,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Button" Name="FurnitureColour/divide/back/first">
+          <Property Name="Text" Value="默认颜色" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.644068,0},{0.928406,0},{0.801453,0},{0.983834,0}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FurnitureColour/divide/back/txt">
+          <Property Name="Text" Value="若家具为摆放状态，请收起后再换色。" />
+          <Property Name="HorzExtent" Value="221" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0217918,0},{0.937644,0},{0.549637,0},{0.981524,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="FurnitureColour/divide/back/up">
+          <Property Name="Text" Value="上一页" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.242131,0},{0.30485,0},{0.414044,0},{0.360277,0}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="FurnitureColour/divide/back/up1">
+          <Property Name="Text" Value="下一页" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.581114,0},{0.30485,0},{0.753027,0},{0.360277,0}}" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="FurnitureColour/name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="家具换色" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="68" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,-165},{0.0387597,0},{0.05,-73},{0.05,16}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+  </Window>
+</GUILayout>

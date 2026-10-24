@@ -1,0 +1,102 @@
+{
+  "source_status": "client_verified",
+  "request_cases": [
+    {
+      "type": "0xc0813",
+      "pet": 1,
+      "body": "00000001"
+    },
+    {
+      "type": "0xc0813",
+      "pet": 7,
+      "body": "00000007"
+    },
+    {
+      "type": "0xc0813",
+      "pet": 2147483647,
+      "body": "7fffffff"
+    },
+    {
+      "type": "0xc0812",
+      "pet": 1,
+      "body": "00000001"
+    },
+    {
+      "type": "0xc0812",
+      "pet": 7,
+      "body": "00000007"
+    },
+    {
+      "type": "0xc0812",
+      "pet": 2147483647,
+      "body": "7fffffff"
+    },
+    {
+      "type": "0xc0811",
+      "pet": 1,
+      "body": "00000001"
+    },
+    {
+      "type": "0xc0811",
+      "pet": 7,
+      "body": "00000007"
+    },
+    {
+      "type": "0xc0811",
+      "pet": 2147483647,
+      "body": "7fffffff"
+    }
+  ],
+  "preview_cases": [
+    [
+      7,
+      1040,
+      1130,
+      840,
+      585,
+      1025,
+      73,
+      1006,
+      2000
+    ],
+    [
+      2147483647,
+      0,
+      1,
+      2,
+      3,
+      4,
+      0,
+      986,
+      0
+    ]
+  ],
+  "actual_client_sends": [
+    {
+      "type": "0xc0811",
+      "native_send": "0x1436eef",
+      "pet": 7
+    },
+    {
+      "type": "0xc0812",
+      "native_send": "0x143df31",
+      "pet": 7
+    },
+    {
+      "type": "0xc0813",
+      "native_send": "0x1438b6b",
+      "pet": 7
+    }
+  ],
+  "wire": "C0811/12/13 one BE32 pet key; S0810 nine BE32: key,attack/defense/vitality/magic/speed aptitudes,insight,growth_raw,score",
+  "constructors": "actual original allocating factories, original type+4 and full marshal/unmarshal; not a borrowed constructor",
+  "process": "whole143c870 emits exact nine original arguments to143c710; UI cache/renderer terminal not executed",
+  "semantics": "preview row+00..10 five aptitudes, +14insight matches current1160 at143bb1b, +18rawgrowth, +1cscore; return UI stores inspected separately",
+  "pending_shape": "original UI keeps a map of pet key->preview; close iterates cached pet keys and emits C0813 for each, query/submit carry current selected pet key",
+  "limits": [
+    "No preview random distribution, item spend or save transaction implemented by this probe",
+    "Ordinary return still uses CUseItem separately; no claim of ordinary preview",
+    "Known score must be supplied; supported current-wire score now independently verified by pet-score-native.json; advanced score remains incomplete",
+    "No live service/client or actual rebirth"
+  ]
+}

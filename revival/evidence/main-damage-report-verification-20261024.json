@@ -1,0 +1,25 @@
+{
+  "recorded_utc": "2026-10-24T03:32:19.1282722Z",
+  "method": "diagnosing-bugs: exact deployed source -> original x86 target HP-result consumer; legacy packet retained as negative witness",
+  "release": "npc-repair-20261024T023920Z",
+  "pid": 7456,
+  "source_files_verified": 1442,
+  "checks_passed": 8,
+  "legacy_packet_hp_delta": 0,
+  "corrected_normal_attack_hp_delta": -16,
+  "original_taihu_cat_two_rounds": "passed",
+  "running_release_contains_fix": true,
+  "production_changed_this_batch": false,
+  "service_restarted_this_batch": false,
+  "live_database_accessed": false,
+  "real_client_operated": false,
+  "rendered_animation_verified": false,
+  "source_evidence": "evidence/BATTLE_DAMAGE_PRESENTATION_FIX.md",
+  "runtime_evidence": "evidence/main-damage-report-liveness-20261024.json",
+  "verification_evidence": "runtime/deployments/npc-repair-20261024T023920Z/checks/verify_battle_damage_presentation.py.result.json",
+  "remaining_growth_blocker_evidence": "evidence/main-growth-first-battle-runtime-red-20261024.json",
+  "limitations": [
+    "Original decoded HP dispatch verified; full fighter presentation, animation scheduling and GPU rendering are not executed.",
+    "Task 100107 formal AI8001 is an independently reproduced incomplete path; damage codec success does not complete that quest."
+  ]
+}

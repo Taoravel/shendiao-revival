@@ -1,0 +1,14 @@
+# 固定伤害候选独立验收
+
+独立Standards与Spec各0项发现。
+
+固定BASE为npc-role-healing-20261023T125539Z，候选battle-damage-20261023T180731Z；只有两生产文件、63行差异，无Git提交记录。Standards-root.md报告硬违规0、Fowler判断项0；Spec-root.md报告缺失0、额外范围0、错误实现0。两轴各自核对冻结BASE、candidate字节及来源，不以工作区替代。
+
+- battle_protocol.py：1a472edf4f1a9db20d8c08ba05eb5516b56b723b87b2b2c80ca0c0a60c75cd22
+- training_battle.py：0eff784921f509c3f173de8ebd9aeab2a539f098b9a26fed1d5e1a675e91b127
+
+根独立运行staging/root_verify_battle_damage_release.py：BASE真实TrainingBattle输出的权威伤害-16、原消费0，原回归1项明确失败；候选原消费8项全部通过，包括太湖原小花猫两回合、宠物、多目标、防御、技能单次MP与致死裁剪。两次运行均前后核全部1429生产清单、runner和8个harness，实际导入路径仅准确冻结source/harness；原image SHA256为2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791。证据为evidence/root-battle-damage-20261024/{base,candidate}/verification.json及unittest.txt。
+
+方法：diagnosing-bugs用旧实际输出/原消费最小失败对照；codebase-design审Impact到原客户端结果消费的Interface；code-review两独立轴。根验收脚本曾先被旧DemoAttr断言阻挡，后补明确权威-16/原消费0探针；该过程只改根输出脚本，未改生产或冻结harness，不隐去最初失败日志含义。
+
+本审查仅支持该两文件协议结果修复。不改公式、数值、Owner、auto-target或其他工作区增量。根未打开游戏、登录、访问真人DB、实际战斗或启停服务；原客户端渲染命中/伤害动画仍须真人画面确认。部署由原始集成窗口执行现有独立备份、精确进程、无在线连接与后验检查。

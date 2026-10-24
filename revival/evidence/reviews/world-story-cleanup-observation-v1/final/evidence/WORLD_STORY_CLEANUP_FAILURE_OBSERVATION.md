@@ -1,0 +1,11 @@
+# 私有地图回收清理失败：实际定时器观察
+
+2026-10-24。执行 `verify_world_story_cleanup_failure.py` 两组：真实RuntimeStoryMaps一秒维护定时器、MapOwner退休、pool围栏与下一张地图准入；目录身份/catalog为可信测试夹具，关闭Adapter在资源终止前报告ConnectionError或TimeoutError。没有数据库、网络、角色操作、游戏或发布。
+
+两种错误都发生在retire→forget之后、实际close终止之前；已退休地址继续占pool槽且拒绝同地址再建。再推进一个完整60000ms并调用公开collect，没有重试close，原close仅被调用一次；另一独立地图仍可载入执行。ConnectionError导致gc任务实际结束，TimeoutError被循环捕获后gc仍在，但不能恢复这个已退休条目。
+
+这是正确保留未知结果安全围栏及**缺少自动清理恢复能力**的动态证据，不宣称地图可自动恢复。当前公开Interface没有保存并交出这次unload ticket/retirement receipt的重试状态；后续collect看到retired、非idle即返回，不走close→finish_unload。主集成如补恢复，须保存原generation/退休凭据与真实清理任务身份，只有确认原资源终止后才能释放原槽；观察超时不能凭空认定终止，不能造新Owner或删除metadata绕过围栏。
+
+原始来源/hash与两组字段见 `world-story-cleanup-failure-observation.json`。初次观察脚本误把尚未执行terminal callback的旧maintenance任务当成新collect，修为等待实际终止回调后重跑两组通过；不将此测试调度错误当成运行时缺口。测试收尾显式恢复并关闭Adapter只为避免留下测试任务，**不计生产恢复实现**。此补充未纳入suffix六文件双轴审查，没有修改runtime_story_maps或任何共享入口。
+
+方法：diagnosing-bugs把静态异常分支接到真正维护定时器、精确error Adapter与公开get_map/collect；codebase-design分别判定安全围栏、局部独立推进及恢复Interface，未新增默认政策。完整故障恢复、实际I/O失败及商业容量仍未验。

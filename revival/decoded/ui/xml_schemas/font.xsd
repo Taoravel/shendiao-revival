@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Font" type="FontType" />
+  <xs:complexType name="FontType">
+    <xs:sequence>
+      <xs:element name="Mapping" type="MapType" maxOccurs="unbounded" minOccurs="0" />
+    </xs:sequence>
+    <xs:attributeGroup ref="FontAttrs" />
+  </xs:complexType>
+  <xs:complexType name="MapType">
+    <xs:attribute name="Codepoint" type="xsd:nonNegativeInteger" use="required" />
+    <xs:attribute name="Image" type="xsd:string" use="required" />
+    <xs:attribute name="HorzAdvance" type="xsd:integer" use="optional" default="-1" />
+  </xs:complexType>
+  <xs:attributeGroup name="FontAttrs">
+    <xs:attribute name="Name" type="xsd:string" use="required" />
+    <xs:attribute name="Filename" type="xsd:string" use="required" />
+    <xs:attribute name="ResourceGroup" type="xsd:string" use="optional" default="" />
+    <xs:attribute name="Type" use="required">
+      <xs:simpleType>
+        <xs:restriction base="xsd:string">
+          <xs:enumeration value="FreeType" />
+          <xs:enumeration value="Pixmap" />
+        </xs:restriction>
+      </xs:simpleType>
+    </xs:attribute>
+    <xs:attribute name="Size" type="xsd:nonNegativeInteger" use="optional" default="12" />
+    <xs:attribute name="NativeHorzRes" type="xsd:nonNegativeInteger" use="optional" default="640" />
+    <xs:attribute name="NativeVertRes" type="xsd:nonNegativeInteger" use="optional" default="480" />
+    <xs:attribute name="AutoScaled" type="xsd:boolean" use="optional" default="false" />
+    <xs:attribute name="AntiAlias" type="xsd:boolean" use="optional" default="true" />
+  </xs:attributeGroup>
+</xs:schema>

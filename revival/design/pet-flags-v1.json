@@ -1,0 +1,12 @@
+{
+  "revision": "2026-10-23.pet-flags.1",
+  "source_status": "client_verified layout; designed generation and binding action",
+  "wire": {"bean_offset": 220, "binding_mask": 2, "maximum_raw": 255},
+  "generation": {"initial_raw": 0, "provenance": "designed: explicitly new ordinary pets begin unbound with no other flags"},
+  "legacy": "unknown flags remain unknown; explicit one-time import of the entire known raw byte required; never infer from pet template or an item binding bit",
+  "bound_book": "designed: a successful petbangding1 book action sets bit1 in the same role transaction as skill learning, exact book debit, asset version and receipt; preserve every other flag; duplicate/weaker/invalid learning does not bind or consume",
+  "refresh": "client_verified: full column Pet conversion rebuilds binding cache; SRefreshPetFlag alone does not update internal+69; stage current complete pet-column and cash-bag representation before commit",
+  "transfer": "designed: unknown or bound pets cannot be reserved for cross-role transfer; this gate does not implement a trade state machine",
+  "evidence": "evidence/PET_BINDING_RESEARCH.md; evidence/pet-binding-native.json",
+  "native_gui_verified": false
+}

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="ZhifuBaodian">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="open.ogg" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.181875,0},{0.146667,0},{0.181875,509},{0.146667,421}}" />
+    <Property Name="CloseSoundResource" Value="close.ogg" />
+    <Window Type="TaharezLook/StaticImage" Name="zhifu/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,154},{0,12},{0,462},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="zhifubaodian/title">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="致富宝典" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,78},{0,1},{0,155},{0,23}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="zhifubaodian/main">
+      <Property Name="Text" Value="可接任务" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0255403,0},{0.0973872,0},{0.05,470},{0.05,387}}" />
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="zhifubaodian/Left">
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,3},{0,163},{0,361}}" />
+        <Window Type="TaharezLook/Listbox" Name="zhifubaodian/Left/tree">
+          <Property Name="UnifiedAreaRect" Value="{{0,7},{0,6},{0,155},{0,351}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="zhifubaodian/Right">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0,164},{0,3},{0,476},{0,361}}" />
+        <Window Type="TaharezLook/RichEditbox" Name="zhifubaodian/Right/info">
+          <Property Name="ReadOnly" Value="True" />
+          <Property Name="LineSpace" Value="1" />
+          <Property Name="BlinkCaret" Value="True" />
+          <Property Name="MaxTextLength" Value="2147483647" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0288462,0},{0,5},{0,307},{0,349}}" />
+          <Property Name="BackGroundEnable" Value="False" />
+          <Property Name="BlinkCaretTimeout" Value="0.5" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

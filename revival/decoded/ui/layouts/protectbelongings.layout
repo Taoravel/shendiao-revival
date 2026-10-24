@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="ProtectBelongings">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.3175,0},{0,45},{0.32375,291},{0,500}}" />
+    <Window Type="TaharezLook/Listbox" Name="ProtectBelongings/list">
+      <Property Name="UnifiedAreaRect" Value="{{0,153},{0,42},{0,277},{0,171}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="ProtectBelongings/icon">
+      <Property Name="Image" Value="set:MainControl6 image:PetPropertyBack" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,126},{0,125}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,126},{0,125}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,21},{0,43},{0,147},{0,168}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticText" Name="ProtectBelongings/icon/type">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+        <Property Name="BorderColour" Value="FF5F4100" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,75},{0,6},{0,123},{0,36}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ProtectBelongings/icon/Level">
+        <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+        <Property Name="BorderColour" Value="FF5F4100" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,84},{0.05,96},{0,121},{0.05,118}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="ProtectBelongings/lock">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0634921,0},{0.056,0},{0.0634921,12},{0.056,19}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ProtectBelongings/jiasuo">
+      <Property Name="Text" Value="加锁" />
+      <Property Name="Tooltip" Value="对物品/宠物进行加锁\n加锁期间的物品/宠物不能进行交易等操作。" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,17},{0,417},{0,67},{0,441}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ProtectBelongings/jiesuo">
+      <Property Name="Text" Value="解锁" />
+      <Property Name="Tooltip" Value="对已加锁的物品/宠物进行解锁操作\n解锁后的物品/宠物可以进行交易等操作。" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,69},{0,417},{0,119},{0,441}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ProtectBelongings/shisuo">
+      <Property Name="Text" Value="时间锁" />
+      <Property Name="Tooltip" Value="对物品/宠物加上时间锁\n在时间锁设定时间内不能进行交易等操作。" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,121},{0,417},{0,173},{0,441}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ProtectBelongings/clear">
+      <Property Name="Text" Value="修改" />
+      <Property Name="Tooltip" Value="修改清除财产保护密码\n修改后即时生效，并扣除20点体力" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,175},{0,417},{0,225},{0,441}}" />
+    </Window>
+    <Window Type="TaharezLook/TabControl" Name="ProtectBelongings/tabcontrol">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="TabHeight" Value="{0,18}" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="TabPanePosition" Value="Left" />
+      <Property Name="UnifiedAreaRect" Value="{{0,17},{0,172},{0,280},{0,416}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="ProtectBelongings/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,214},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,214},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,110},{0,12},{0,324},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="ProtectBelongings/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="财产保护" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,1},{0,150},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ProtectBelongings/Clear">
+      <Property Name="Text" Value="清除" />
+      <Property Name="Tooltip" Value="扣除100点体力即时清除密码。" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0,227},{0,417},{0,277},{0,441}}" />
+    </Window>
+  </Window>
+</GUILayout>

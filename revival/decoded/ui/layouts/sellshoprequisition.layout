@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/SmallFrameWindow" Name="SellShop">
+    <Property Name="Font" Value="msyh-16" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,254},{0,199},{0,552},{0,351}}" />
+    <Window Type="TaharezLook/Button" Name="SellShop/OKBtn">
+      <Property Name="Text" Value="确   定" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,63.455},{0,112.933},{0,131.455},{0,136.933}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="SellShop/CancleBtn">
+      <Property Name="Text" Value="取   消" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,164.455},{0,112.933},{0,232.455},{0,136.933}}" />
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="SellShop/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0422026,0},{0.26795,0},{0.944887,0},{0.702161,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="SellShop/shopName1">
+        <Property Name="Text" Value="商店名称" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,12},{0,7},{0,68},{0,27}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Combobox" Name="SellShop/shopName">
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,72},{0,7},{0,211},{0,120}}" />
+        <Property Name="MaxEditTextLength" Value="2147483647" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="SellShop/price1">
+        <Property Name="Text" Value="出售价格" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,12},{0,35},{0,73},{0,55}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="SellShop/shopType">
+        <Property Name="Text" Value="物品店" />
+        <Property Name="HorzExtent" Value="39" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,214},{0,7},{0,259},{0,27}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="SellShop/Back/moneyback">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,73},{0,35},{0.523351,73.2339},{0,55}}" />
+        <Window Type="TaharezLook/StaticImage" Name="SellShop/Back/moneyback/Money">
+          <Property Name="Image" Value="set:MainControl image:Xianjin" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.843206,0},{-0.000238575,0},{0.977735,0},{0.949761,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Editbox" Name="SellShop/price">
+          <Property Name="BlinkCaret" Value="True" />
+          <Property Name="MaxTextLength" Value="2147483647" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0048931,0},{0,0},{0,114.613},{0,20}}" />
+          <Property Name="BackGroundEnable" Value="False" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="SellShop/title/name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="出售商店申请单" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="119" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,-14.3},{0,11},{0.05,127.7},{0,30.7798}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+  </Window>
+</GUILayout>

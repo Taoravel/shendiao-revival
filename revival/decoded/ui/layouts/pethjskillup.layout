@@ -1,0 +1,339 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="PethjSkillUp">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.1575,0},{0.0999994,0},{0.71,0},{0.841474,0}}" />
+    <Window Type="TaharezLook/StaticImage" Name="PetSkillUp/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,12},{0.696833,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="PetSkillUp/Title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="宠物化境技能强化" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="136" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.298701,0},{-0.037037,0},{0.818182,0},{0,22}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="PethjSkillUp/back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0384615,0},{0.094382,0},{0.954751,0},{0.874157,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="PethjSkillUp/back/name">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="闪现1级" />
+        <Property Name="HorzExtent" Value="48" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFDCF6CE tr:FFDCF6CE bl:FF10BBD3 br:FF10BBD3" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.00493827,0},{0.204611,0},{0.05,64},{0.05,73}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PethjSkillUp/back/txt0">
+        <Property Name="Text" Value="品质：" />
+        <Property Name="HorzExtent" Value="39" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF96F3A4 tr:FF96F3A4 bl:FF96F3A4 br:FF96F3A4" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.234568,0},{0.037464,0},{0.345679,0},{0.0778098,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PethjSkillUp/back/txt1">
+        <Property Name="Text" Value="评分：" />
+        <Property Name="HorzExtent" Value="39" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF96F3A4 tr:FF96F3A4 bl:FF96F3A4 br:FF96F3A4" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.234568,0},{0.135447,0},{0.34321,0},{0.178674,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PethjSkillUp/back/txt2">
+        <Property Name="Text" Value="描述：" />
+        <Property Name="HorzExtent" Value="39" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF96F3A4 tr:FF96F3A4 bl:FF96F3A4 br:FF96F3A4" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.234568,0},{0.181556,0},{0.345679,0},{0.239193,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="PethjSkillUp/back/skill">
+        <Property Name="Image" Value="set:BaseControl image:SkillBackCell1" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,66},{0,66}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,66},{0,66}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0222222,0},{0.0172911,0},{0.185185,0},{0.207493,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/SkillBox" Name="PethjSkillUp/back/icon">
+          <Property Name="UnifiedMaxSize" Value="{{0,40},{0,40}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,40},{0,40}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,13},{0,13},{0,53},{0,53}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PethjSkillUp/back/level">
+          <Property Name="Text" Value="99" />
+          <Property Name="HorzExtent" Value="16" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.530303,0},{0.515152,0},{0.818182,0},{0.848485,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseBlue" Name="PethjSkillUp/back/Shuxing">
+        <Property Name="UnifiedAreaRect" Value="{{0.0222222,0},{0.259366,0},{0.975309,0},{0.772334,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="PethjSkillUp/back/Shuxing/level">
+          <Property Name="Text" Value="19" />
+          <Property Name="HorzExtent" Value="16" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="UnifiedAreaRect" Value="{{0.111399,0},{0.0730337,0},{0.1,94},{-0.173077,63}}" />
+        </Window>
+        <Window Type="TaharezLook/RichEditbox" Name="PethjSkillUp/back/Shuxing/effect">
+          <Property Name="Font" Value="fzy4k-9" />
+          <Property Name="Text">该宠物死亡时，待参战宠物
+中评分最高的宠物有22%几
+率无需召唤立即出战。</Property>
+          <Property Name="LineSpace" Value="1" />
+          <Property Name="BlinkCaret" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="MaxTextLength" Value="2147483647" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0336788,0},{0.213483,0},{0.146512,113},{0.646067,0}}" />
+          <Property Name="BlinkCaretTimeout" Value="0.5" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PethjSkillUp/back/Shuxing/level1">
+          <Property Name="Text" Value="20" />
+          <Property Name="HorzExtent" Value="16" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="UnifiedAreaRect" Value="{{0.751295,0},{0.0730337,0},{0.153157,318},{-0.173077,63}}" />
+        </Window>
+        <Window Type="TaharezLook/RichEditbox" Name="PethjSkillUp/back/Shuxing/effect1">
+          <Property Name="Font" Value="fzy4k-9" />
+          <Property Name="Text">该宠物死亡时，待参战宠物
+中评分最高的宠物有90%几
+率无需召唤立即出战。</Property>
+          <Property Name="LineSpace" Value="1" />
+          <Property Name="BlinkCaret" Value="True" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="MaxTextLength" Value="2147483647" />
+          <Property Name="UnifiedAreaRect" Value="{{0.569948,0},{0.213483,0},{0.153157,317},{0.646067,0}}" />
+          <Property Name="BlinkCaretTimeout" Value="0.5" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PethjSkillUp/back/Shuxing/image">
+          <Property Name="Image" Value="set:MainControl2 image:Preview" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,115},{0,38}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,115},{0,38}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.352332,0},{0.0786517,0},{0.650259,0},{0.292135,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PethjSkillUp/back/Shuxing/level21">
+          <Property Name="Text" Value="当前进度" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,-9},{0.05,119},{0.05,50},{0.05,136}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PethjSkillUp/back/Shuxing/level2">
+          <Property Name="Text" Value="需要银两" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0259067,0},{0,148},{0.0303797,57},{0,167}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PethjSkillUp/back/Shuxing/money">
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="UnifiedAreaRect" Value="{{0,69},{0,148},{0,166},{0,166}}" />
+          <Window Type="TaharezLook/StaticImage" Name="PethjSkillUp/back/Shuxing/money/icon">
+            <Property Name="Image" Value="set:MainControl image:Xianjin" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.793814,0},{0,-1},{0.989691,0},{0,18}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/ProgressBar" Name="PethjSkillUp/back/ProgressBar">
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="FrameEnable" Value="True" />
+          <Property Name="CurrentProgress" Value="0" />
+          <Property Name="UnifiedAreaRect" Value="{{0,69},{0,126},{0,376},{-0.287112,195}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PethjSkillUp/back/Shuxing/level211">
+          <Property Name="Text" Value="等级" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,-9},{0.0730337,0},{0.05,23},{0.1,10}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PethjSkillUp/back/Shuxing/level2111">
+          <Property Name="Text" Value="等级" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.1,220},{0.0786517,0},{0.1,252},{0.15,4}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="PethjSkillUp/back/Pinzhi">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.340741,0},{0.0172911,0},{0.340741,36},{0.0220588,34}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PethjSkillUp/back/Shuxing/Pingfen">
+        <Property Name="Text" Value="3333" />
+        <Property Name="HorzExtent" Value="32" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.340741,0},{0.05,29},{0.15,331},{0.05,45}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PethjSkillUp/back/Shuxing/Text">
+        <Property Name="Text" Value="概率提升" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.340741,0},{0.1,29},{0.2,312},{0.1,45}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="PethjSkillUp/back/skill1">
+        <Property Name="Image" Value="set:MainControl3 image:LuckyWheelNormalBox" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,64},{0,64}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,64},{0,64}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0148148,0},{0.792507,0},{0.17284,0},{0.976945,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="PethjSkillUp/back/icon1">
+          <Property Name="UnifiedAreaRect" Value="{{0.1875,0},{0.1875,0},{0.296875,33},{0.296875,33}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="PethjSkillUp/back/skill2">
+        <Property Name="Image" Value="set:MainControl3 image:LuckyWheelNormalBox" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,64},{0,64}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,64},{0,64}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.173267,1},{0.792507,0},{0.331291,1},{0.976945,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="PethjSkillUp/back/icon2">
+          <Property Name="UnifiedAreaRect" Value="{{0.1875,0},{0.1875,0},{0.296875,33},{0.296875,33}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="PethjSkillUp/back/skill3">
+        <Property Name="Image" Value="set:MainControl3 image:LuckyWheelNormalBox" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,64},{0,64}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,64},{0,64}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.331291,2},{0.792507,0},{0.489316,2},{0.976945,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="PethjSkillUp/back/icon3">
+          <Property Name="UnifiedAreaRect" Value="{{0.1875,0},{0.1875,0},{0.296875,33},{0.296875,33}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="PethjSkillUp/back/skill4">
+        <Property Name="Image" Value="set:MainControl3 image:LuckyWheelNormalBox" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,64},{0,64}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,64},{0,64}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.489316,3},{0.792507,0},{0.630015,10},{0.976945,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="PethjSkillUp/back/icon4">
+          <Property Name="UnifiedAreaRect" Value="{{0.1875,0},{0.1875,0},{0.296875,33},{0.296875,33}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="PethjSkillUp/back/skill5">
+        <Property Name="Image" Value="set:MainControl3 image:LuckyWheelNormalBox" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,64},{0,64}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,64},{0,64}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.630015,12},{0.792507,0},{0.788039,12},{0.976945,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="PethjSkillUp/back/icon5">
+          <Property Name="UnifiedAreaRect" Value="{{0.1875,0},{0.1875,0},{0.296875,33},{0.296875,33}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="PethjSkillUp/back/skill6">
+        <Property Name="Image" Value="set:MainControl3 image:LuckyWheelNormalBox" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,64},{0,64}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,64},{0,64}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.788039,13},{0.792507,0},{0.946064,13},{0.976945,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="PethjSkillUp/back/icon6">
+          <Property Name="UnifiedAreaRect" Value="{{0.1875,0},{0.1875,0},{0.296875,33},{0.296875,33}}" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="PethjSkillUp/Intensify">
+      <Property Name="Text" Value="强化" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.79638,0},{0.892135,0},{0.950226,0},{0.94382,0}}" />
+    </Window>
+  </Window>
+</GUILayout>

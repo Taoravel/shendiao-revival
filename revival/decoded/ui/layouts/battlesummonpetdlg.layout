@@ -1,0 +1,225 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/SmallFrameWindow" Name="BattleSummonPetDlg">
+    <Property Name="Font" Value="simhei-12" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,466.411},{0,95.9765},{0,648.411},{0,477.977}}" />
+    <Window Type="TaharezLook/Button" Name="BattleSummonPetDlg/SummonCallback">
+      <Property Name="Text" Value="召   唤" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,20},{0,346},{0,88},{0,370}}" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/Listbox" Name="BattleSummonPetDlg/PetList">
+      <Property Name="UnifiedAreaRect" Value="{{0,13},{0,40},{0,166},{0,144}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="BattleSummonPetDlg/Name">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,162},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,162},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,7},{0,9},{0,169},{0,36}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticText" Name="BattleSummonPetDlg/Title">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="宠物选择" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,34},{0,1},{0,117},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="BattleSummonPetDlg/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0,15},{0,145},{0,164},{0,343}}" />
+      <Window Type="TaharezLook/StaticText" Name="BattleSummonPetDlg/Level">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,63},{0,5},{0,144},{0,25}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="BattleSummonPetDlg/Hp">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,63},{0,26},{0,144},{0,46}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="BattleSummonPetDlg/Mp">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,63},{0,47},{0,144},{0,67}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="BattleSummonPetDlg/Attack">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,63},{0,68},{0,144},{0,88}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="BattleSummonPetDlg/Defence">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,63},{0,89},{0,144},{0,109}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="BattleSummonPetDlg/Magicattack">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,63},{0,110},{0,144},{0,130}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="BattleSummonPetDlg/MagicDefence">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,63},{0,131},{0,144},{0,151}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="BattleSummonPetDlg/speed">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,63},{0,152},{0,144},{0,172}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="BattleSummonPetDlg/text1">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="等 级" />
+        <Property Name="HorzExtent" Value="30" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="RightAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{0,59},{0,25}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="BattleSummonPetDlg/text2">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="生 命" />
+        <Property Name="HorzExtent" Value="29" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="RightAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,26},{0,59},{0,46}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="BattleSummonPetDlg/text3">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="真 气" />
+        <Property Name="HorzExtent" Value="30" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="RightAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,47},{0,59},{0,67}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="BattleSummonPetDlg/text4">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="外功伤害" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="RightAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,68},{0,59},{0,88}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="BattleSummonPetDlg/text5">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="外功防御" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="RightAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,89},{0,59},{0,109}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="BattleSummonPetDlg/text6">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="内功伤害" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="RightAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,110},{0,59},{0,130}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="BattleSummonPetDlg/text7">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="内功防御" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="RightAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,131},{0,59},{0,151}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="BattleSummonPetDlg/text9">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="忠 诚 度" />
+        <Property Name="HorzExtent" Value="45" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="RightAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,173},{0,59},{0,193}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="BattleSummonPetDlg/Loy">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,63},{0,173},{0,144},{0,193}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="BattleSummonPetDlg/text8">
+        <Property Name="Text" Value="速 度" />
+        <Property Name="HorzExtent" Value="29" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="RightAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,152},{0,59},{0,172}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

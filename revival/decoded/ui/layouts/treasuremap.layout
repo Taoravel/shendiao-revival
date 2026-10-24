@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="TreasureMap">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.32125,0},{0.336519,0},{0.682501,0},{0.641126,0}}" />
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="TreasureMap/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0622838,0},{0.232413,0},{0.930796,0},{0.784325,0}}" />
+      <Window Type="TaharezLook/ItemCell" Name="TreasureMap/Back/Item">
+        <Property Name="UnifiedAreaRect" Value="{{0.0585664,0},{0.261589,0},{0.0745026,44},{0.281391,46}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="TreasureMap/Back/Text">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.289641,0},{0.292079,0},{0.958964,0},{0.707921,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="TreasureMap/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,214},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,214},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.062284,0},{0,10},{0.802768,0},{0.202186,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="TreasureMap/Title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="宝图奖励" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFF9600 br:FFFF9600" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.265,0},{0,1},{0.694907,0},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="TreasureMap/OK">
+      <Property Name="Text" Value="确  定" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0.393771,0},{0.799441,0},{0.2,137},{0.799441,22}}" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+  </Window>
+</GUILayout>

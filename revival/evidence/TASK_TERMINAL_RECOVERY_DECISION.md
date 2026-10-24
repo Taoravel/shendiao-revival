@@ -1,0 +1,17 @@
+# 首战真实终态在新租约下的受限恢复
+
+2026-10-24，主策架构裁定候选，恢复规则版本`2026-10-24.task-terminal-recovery.1`，来源designed。补充TASK_PVE_AI8001_DECISION，不改变已审combat recipe字节或普通Task settle/ack的旧epoch拒绝规则；未批准上线。
+
+main提出的真实窗口是：battle已实际结束，可信producer terminal/outbox已提交，但角色资源与Task奖励事务尚未提交，进程中断后角色取得新租约。选择保留该原结果并提供受限恢复Interface，不选择把耐久真实胜利丢成无奖中止。没有可信终态时仍按真实中止无奖恢复；已有可信终态时close必须重交该原结果，不能改成draw或重新制造胜利。
+
+区分两次持久化：第一步只保存producer的不可变原终态、原admission与完整指纹；第二步由角色所有者在一个事务内提交资源/专用恢复/Task原奖励及唯一后继、consumer回执和outbox settled标记。晚期失败保留第一步pending，第二步全部回滚。已有成功consumer回执的重试只读当前资源/技能/任务，不重复奖励、复活、状态1或电影。
+
+只有有效的新当前租约及该角色唯一恢复流程可调用新公开Task recovery Seam。main的持久化Adapter须通过公开读取Interface核可信producer原件，不允许客户端请求或单个DTO自称已验证。Task自身须重新核原admission角色/任务/AI/原定义指纹/engine版本/原Participant及terminal的全量一致性、原任务实例仍active、当前角色资格与前态；普通settle不能因为caller多传一个bool就放行旧结果。复用原结算内部实现可以，但不能构造修改epoch的BattleFinished，原终态和指纹永久保持。
+
+main在登录最早阶段识别pending并冻结该角色的冲突资产、成长、任务及再次入战命令。资源、装备、宠物、库存、技能及任务等实际用到的完整来源版本须仍满足原admission的前态CAS；只换租约不换业务来源。来源漂移、重复但冲突payload、未知规则版本、原任务已被其他流程推进、外来角色/连接等均拒绝并保留pending供明确协调，不覆盖当前值、不补发未知奖励、不退回伪造原进度。恢复期间其他角色、地图及战斗必须继续推进。
+
+恢复成功receipt分别保留original accepted epoch、original terminal fingerprint、实际settled epoch、恢复规则版本及唯一settlement ID；不把新epoch反写原admission。源版本校验、资源恢复、Task奖励与outbox状态不得各自commit。每个角色一条当前有效租约，两个新租约竞争仍以原租约/完整前态CAS和唯一receipt保证一次效果。
+
+验证须真实覆盖：原Owner胜利后producer提交→结算晚期异常→关闭进程级夹具并换新租约→新Interface同原终态一次结算；原普通old-epoch settle仍拒绝；已有settled重复只读当前；源漂移/训练wild/错误AI或指纹/其他角色拒绝；资源/Task/outbox同事务回滚；持久化受控等待时另一所有者继续。终态可用真实engine生成，不能以手工won夹具替代完整恢复链的通过证明。
+
+方法：codebase-design把producer耐久与角色consumer事务放在已有不同所有者Seam；domain-modeling明确“耐久战斗结果”与“已结算任务回执”不同。实现分工：main负责Task combat outbox、资源/source CAS及shared恢复；Task窗口只修改所属公开Task recovery Interface和最小内部复用。Battle长期goal与GUI仍保持暂停；该离线修复按现成长目标推进。

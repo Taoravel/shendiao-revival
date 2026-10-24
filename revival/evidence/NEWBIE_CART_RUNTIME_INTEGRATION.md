@@ -1,0 +1,38 @@
+# 新手车夫共享运行时：同事务提交与发送屏障
+
+2026-10-23，原始集成窗口。依据NEWBIE_CART_TRANSFER_DECISION、TASK_CART_TRANSFER_INTEGRATION及WORLD_CART_TRANSFER_HANDOFF接线。当前开发源码的自然正常流程、提交前回滚和提交前后故障的同Runtime重登恢复已通过；PID8724验收发布未变。原字段到cell×16的解释inferred、采用配方designed，没有把可走候选升级成原服精确落点。
+
+## 已接顺序
+
+启动加载原CartResources、CartTransferRules并准备task_cart_transfers；原世界prepare管理自己的world_handoffs。角色到当前ActiveNpc，由地图验证实体/距离和位置版本；存储读当前显式章节/卡/精确获领实例装备完成及active车夫任务，返回冻结CartDialogueTicket、原ready3完整bean和菜单。只接受匹配任务、NPCkey、option0的CCommit，CQuestDialogEnd不是前置。
+
+cart_authorize只验证/解析原意图，角色Owner先checkpoint精确source map/x/y/version；MapOwner authorized_transfer重验当前完整Location，并保留原intent.request_id和毫秒deadline。没有用浮点deadline往返替换原身份，也没有在车夫路径打开legacy source-lag。
+
+现有handoff沿world.begin prepared→目标reserve→源freeze→目标activate取得loading receipt。cart分支只调用runtime_storage.complete_cart_transfer：该角色租约事务内部由任务公开complete_cart_transfer_transaction组合世界公开commit_transfer_transaction、车夫完成、原奖励0、唯一原嘉兴后继与凭据；共享层不复制模块SQL，不先调用旧独立world commit。当前20map/背包和目标scene_entry全部在同事务编码，失败整体回滚。
+
+提交后才source finalize/retire，角色归属切目标loading，清对白/仓库相关入口，发布已提交角色状态并经当前连接排任务/属性和SceneMessage。现有精确scene发送/排空屏障驱动ready，不使用任意延时或假通用客户端ACK。普通portal仍走原独立持久包装器；本批未把其宽松源检查引入新任务路径。
+
+## 反馈与验证
+
+- verify_newbie_cart_runtime --expect-missing：自然intro/card/实际武器/equip后走原mask1见证报告到古墓车夫，100104仍active、只有c232a无ready3，准确红基线。接线后默认绿，主策划独立复跑：原option0到设计嘉兴目标、唯一原后继、重复和重连保持任务/武器/45/35/8。
+- verify_cart_scene_atomic_runtime：复用未改的自然cart_visit，实际共享提交末端scene_entry注入ValueError，确认被调用一次；全库除world_handoffs外所有表行完全不变，源坐标保持、cart receipt0，仅prepared决定保留，旧Owner被围栏。随后用新lease在同Runtime重新登录回持久源，旧loading清理并能重新授权乘车成功一次；same_runtime_reconnect_verified现为True。
+- verify_transfer_runtime必要回归绿：旧portal预留/冻结/loading/持久目标、旧同批输入拒绝、错误屏障拒绝、正确drain后目标ready和后续移动、重建Runtime目标回读。
+- 世界/任务各自的十条原路线调用方事务、错deadline/源/租约、晚期失败和重复凭据证据保持归所属Module，不将其冒称十条共享自然客户端流程。
+
+## 新lease恢复的实际接线与完成证据
+
+原红反馈verify_transfer_failure_recovery --expect-stuck真实重现SQL回滚后源frozen/v3、目标loading/v4，原GameRuntime重登Role already in map。世界提供WORLD_TRANSFER_RECOVERY_HANDOFF的新公开契约后，RoleOwner.load现先执行prepare_login_transfer_recovery：在新acquire_lease后以当前fenced事务取得最终TransferRecoveryDecision并提交prepared取消；之后才向地图发退役命令。
+
+共享地图Adapter在普通在线成员门禁之前路由公开inspect_transfer与retire_recovered_transfer。源按完整MapAddress找已注册Owner，从冻结公开记录/退役结果取得精确target_address；只有准备期未留下目标地址时，才在已注册目标map_id候选实例逐个公开inspect，处理匹配transfer记录。冷Runtime不创建替代旧地图。每条退役在所属地图邮箱完成，Adapter.positions只清epoch与result.old_epoch一致的缓存；每次await后重验角色身份及连接epoch/generation。所有旧成员/收据退役完成后，load_role再次读当前租约下的权威位置/版本，再普通join。没有共享层删除世界私有_roles、按超时推定提交或恢复旧epoch为active。
+
+- 原verify_transfer_failure_recovery默认由原红转绿：SQL晚期失败保留持久源，同Runtime新lease回源、清旧target loading，原两MapOwner立即能完成新portal；主策划独立复跑。其新增--after-commit分支由主策划独立绿：真实world commit后source.finalize失败，重登回持久目标，继续合法移动和再次重登不被旧receipt拉回。
+- verify_cart_scene_atomic_runtime自然车夫晚期scene编码失败全回滚后，同Runtime新lease回源、重新授权cart成功一次。
+- verify_cart_committed_recovery_runtime自然车夫在真实任务/world事务已经提交后，对公共source.finalize注入故障：旧源frozen/目标loading残留；同Runtime新lease公开退役清域状态与Adapter缓存，嘉兴target active、当前45/35/8、武器和唯一车夫凭据保持，重复旧选项不重奖、不回源。该故障为提交后源清理，不冒称真实TCP断网。
+- 主策划增强自然happy verifier并独立绿：原x86场景decoder核map/坐标/reason0，真实connection drain后transfer None、源已清/目标active，目标合法MOVE/STOP及重连保持后来的checkpoint。
+- 本窗口补跑受影响lifecycle必要回归绿，退出、选角、删角及旧lease围栏保持。
+
+以上是临时库真实Owner/原codec与受控故障，当前测试服不因此重启。真实客户端断网/进图GUI、未覆盖的任意I/O超时和大批实例恢复仍未验；位置实例完整持久化与商业容量仍按世界文档保留范围。
+
+方法：diagnosing-bugs的自然原请求红→绿及实际末端编码故障反馈；codebase-design将任务/坐标政策、世界durable决定与共享Owner保持在各自Module，以调用方事务Seam组合；writing-for-agents将正常提交、两种失败时点与完成条件共置。无世界锁、无全服串行队列，阻塞存储继续走角色键有界I/O，连接独占加密/压缩。
+
+未验收：真实车夫客户端菜单/场景GUI、自然实际走路与完整速度校验、全十角色共享流程、完整序章/怪物和商业容量。本批无现场端口、真人角色、战斗或发布变更。

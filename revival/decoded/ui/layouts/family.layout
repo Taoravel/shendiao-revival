@@ -1,0 +1,455 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="Family">
+    <Property Name="Font" Value="msyh-16" />
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.0025,0},{0,110},{-0.00375,810},{0,520}}" />
+    <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame">
+      <Property Name="TextColours" Value="tl:FFDCF6CE tr:FFDCF6CE bl:FF10BBD3 br:FF10BBD3" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,13},{0,36},{0,787},{0,363}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/CommonCase" Name="Family/Back2">
+        <Property Name="UnifiedAreaRect" Value="{{0.464163,0},{0.0288722,0},{0.464163,406},{0.0290499,317.942}}" />
+        <Window Type="TaharezLook/MultiColumnList" Name="Family/FamilyFrame/FamilyMember">
+          <Property Name="UnifiedAreaRect" Value="{{0,2},{0,24},{0,403},{0,186}}" />
+          <Property Name="ColumnHeader" Value="text:角色名 width:{0.29,0} id:0" />
+          <Property Name="ColumnHeader" Value="text:等级 width:{0.11,0} id:1" />
+          <Property Name="ColumnHeader" Value="text:家族声望 width:{0.2,0} id:2" />
+          <Property Name="ColumnHeader" Value="text:上次离线时间 width:{1,-240} id:3" />
+        </Window>
+        <Window Type="TaharezLook/MultiColumnList" Name="Family/FamilyFrame/ApplyPlayer">
+          <Property Name="UnifiedAreaRect" Value="{{0,2},{0.483921,50.5271},{0,403},{0.483921,161.527}}" />
+          <Property Name="ColumnHeader" Value="text:角色名 width:{0.3,0} id:0" />
+          <Property Name="ColumnHeader" Value="text:门派 width:{0.2,0} id:1" />
+          <Property Name="ColumnHeader" Value="text:等级 width:{0.199,0} id:2" />
+          <Property Name="ColumnHeader" Value="text:推荐人 width:{1,-279} id:3" />
+        </Window>
+        <Window Type="TaharezLook/Figure1" Name="Family/Back2/TitleBack3">
+          <Property Name="UnifiedAreaRect" Value="{{0.272665,0},{0.00943569,0},{0.560842,0},{-0.00314523,23}}" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+          <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/Familymembers">
+            <Property Name="Text" Value="家族成员" />
+            <Property Name="HorzExtent" Value="53" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.364436,0},{0.157895,0},{0.407678,66.8246},{0,19.1442}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+            <Property Name="DefaultColourEnable" Value="True" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Figure1" Name="Family/Back2/TitleBack4">
+          <Property Name="UnifiedAreaRect" Value="{{0.213375,0},{0.483921,32.527},{0.501552,0},{0.483921,51.527}}" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+          <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/AllpyList">
+            <Property Name="Text" Value="申请列表" />
+            <Property Name="HorzExtent" Value="53" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,57},{0,21}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+            <Property Name="DefaultColourEnable" Value="True" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/LittleButton" Name="Family/Back2/Book">
+          <Property Name="Text" Value="天书" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.75468,0},{0.00880669,0},{0.86798,0},{0.0717113,0}}" />
+          <Property Name="NormalTextColour" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFB08945 br:FFB08945" />
+          <Property Name="ButtonBorderColour" Value="FF002B65" />
+          <Property Name="ButtonBorderEnable" Value="True" />
+          <Property Name="ButtonDefaultBorderEnable" Value="False" />
+          <Property Name="ButtonDefaultColourEnable" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/LittleButton" Name="Family/Back2/LeaderBook">
+          <Property Name="Text" Value="宝典" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.874508,0},{0.00880669,0},{0.987808,0},{0.0717113,0}}" />
+          <Property Name="NormalTextColour" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFB08945 br:FFB08945" />
+          <Property Name="ButtonBorderColour" Value="FF002B65" />
+          <Property Name="ButtonBorderEnable" Value="True" />
+          <Property Name="ButtonDefaultBorderEnable" Value="False" />
+          <Property Name="ButtonDefaultColourEnable" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/LittleButton" Name="Family/Back2/Email">
+          <Property Name="Text" Value="群体邮件" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0140395,0},{0.00880669,0},{0.179064,0},{0.0717113,0}}" />
+          <Property Name="NormalTextColour" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFB08945 br:FFB08945" />
+          <Property Name="ButtonBorderColour" Value="FF002B65" />
+          <Property Name="ButtonBorderEnable" Value="True" />
+          <Property Name="ButtonDefaultBorderEnable" Value="False" />
+          <Property Name="ButtonDefaultColourEnable" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCase" Name="Family/FamilyFrame/Back1">
+        <Property Name="UnifiedAreaRect" Value="{{0.00809118,0},{0.0288722,0},{0.00809118,352},{0.0290499,317.942}}" />
+        <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/Familyname1">
+          <Property Name="Text" Value="家 族 ID" />
+          <Property Name="HorzExtent" Value="47" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.146158,124.435},{0,4},{0.21647,156.295},{0.000683863,20.9792}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/FamilyID">
+          <Property Name="Text" Value="家族名家族名家族" />
+          <Property Name="HorzExtent" Value="105" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0.21647,158.255},{0,4},{0.362628,219.804},{0.000683863,20.9792}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/Familymanager1">
+          <Property Name="Text" Value="剩余药品" />
+          <Property Name="Tooltip" Value="正常维护时生产，正常维护需要家族当前资金\n大于48倍的正常、特产及药品维护费之和" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.146158,124.435},{0,83.1966},{0.21647,157.295},{0,101.197}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/FamilyDrugNum">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0.21647,158.255},{0,83.1966},{0.362628,219.804},{0,101.197}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/Familymanager11">
+          <Property Name="Text" Value="剩余特产" />
+          <Property Name="Tooltip" Value="正常维护时生产，正常维护需要家族当前资金\n大于48倍的正常、特产及药品维护费之和" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.146158,124.435},{0,103.197},{0.21647,157.295},{0,121.197}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/FamilySpecial">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0.21647,158.255},{0,103.197},{0.362628,219.804},{0,121.197}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/FamilyPopular">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0,60},{0,103.197},{0.146158,120.549},{0,121.197}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/Familyname">
+          <Property Name="Text" Value="家 族 名" />
+          <Property Name="HorzExtent" Value="45" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,58},{0,21.1966}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/Familymoney">
+          <Property Name="Text" Value="家族资金" />
+          <Property Name="Tooltip" Value="捐献家族银箱、参加家族龙舟和完成帮派日常任务\n都能增加家族资金，支持家族运作。" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,4},{0,83.1966},{0,58},{0,101.197}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/FamilyName">
+          <Property Name="Text" Value="家族名家族名家族" />
+          <Property Name="HorzExtent" Value="105" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0,60},{0,4},{0.146158,120.549},{0.000683863,20.9792}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/FamilyMoney">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0,60},{0,83.1966},{0.146158,120.549},{0,101.197}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/Familylevel">
+          <Property Name="Text" Value="家族等级" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,4},{0,23.1966},{0,58},{0,41.1966}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/FamilyLevel">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0,60},{0,23.1966},{0.146158,120.549},{0,41.1966}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/Familymembernum">
+          <Property Name="Text" Value="成员数量" />
+          <Property Name="Tooltip" Value="当前在线人数/家族总人数/家族可容纳人数" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.146158,124.435},{0,23.1966},{0.21647,157.295},{0,41.1966}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/FamilyMemberNum">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0.21647,158.255},{0,23.1966},{0.362628,219.804},{0,41.1966}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/Bulider">
+          <Property Name="Text" Value="创 始 人" />
+          <Property Name="HorzExtent" Value="46" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,4},{0,43.1966},{0,58},{0,61.1966}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/FamilyCreater">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0,60},{0,43.1966},{0.146158,120.549},{0,61.1966}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/Familymanager">
+          <Property Name="Text" Value="现任族长" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.146158,124.435},{0,43.1966},{0.21647,157.295},{0,61.1966}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/FamilyManager">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0.21647,158.255},{0,43.1966},{0.362628,219.804},{0,61.1966}}" />
+        </Window>
+        <Window Type="TaharezLook/ProgressBar" Name="Family/BuliderProgress">
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="CurrentProgress" Value="1" />
+          <Property Name="UnifiedAreaRect" Value="{{0,58},{0.0321895,53.7722},{0.146158,292.548},{0.0321895,69.7722}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/BulideNum">
+          <Property Name="Text" Value="建 设 度" />
+          <Property Name="Tooltip" Value="家族升级的唯一指标，只能通过捐献家族银箱获得。" />
+          <Property Name="HorzExtent" Value="45" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,4},{0,63.1966},{0,58},{0,81.1966}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/PopularNum">
+          <Property Name="Text" Value="人 气 度" />
+          <Property Name="Tooltip" Value="每小时变化1次，家族在线人数越多，增加越多，\n人气不足1000时，家族维护费增加50%" />
+          <Property Name="HorzExtent" Value="45" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,4},{0,103.197},{0,58},{0,121.197}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/Figure1" Name="Family/FamilyFrame/Back1/TitleBack2">
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="UnifiedAreaRect" Value="{{0.313295,0},{0.206878,164.116},{0.64284,0},{0.206878,183.116}}" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+          <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/Familypurpose">
+            <Property Name="Text" Value="家族宗旨" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{7.07805e-007,0},{0,59},{0,20.0004}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+            <Property Name="DefaultColourEnable" Value="True" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="Family/FamilyFrame/Back1/BoxBack">
+          <Property Name="UnifiedAreaRect" Value="{{0,4},{0,142},{0,349},{0,229}}" />
+          <Window Type="TaharezLook/RichEditbox" Name="Family/FamilyFrame/Back1/BoxBack/familycourse">
+            <Property Name="ReadOnly" Value="True" />
+            <Property Name="LineSpace" Value="1" />
+            <Property Name="BlinkCaret" Value="True" />
+            <Property Name="MaxTextLength" Value="2147483647" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0.0545977,0},{1,0},{0.905173,0}}" />
+            <Property Name="BackGroundEnable" Value="False" />
+            <Property Name="BlinkCaretTimeout" Value="0.5" />
+            <Property Name="TextParsingEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Figure1" Name="Family/FamilyFrame/Back1/TitleBack">
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="UnifiedAreaRect" Value="{{0.407194,0},{0.0326862,113.62},{0.73674,0},{0.0326862,132.62}}" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+          <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/Familyexperience">
+            <Property Name="Text" Value="家族历程" />
+            <Property Name="HorzExtent" Value="53" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.240441,0},{0,0},{0,87.9777},{0,20}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+            <Property Name="DefaultColourEnable" Value="True" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="Family/FamilyFrame/Back1/BoxBack2">
+          <Property Name="UnifiedAreaRect" Value="{{0,4},{0,249},{0,349},{0,314}}" />
+          <Window Type="TaharezLook/StaticText" Name="Family/FamilyFrame/FamilyPurpose">
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,11},{0,340.979},{0,59}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="TextParsingEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="Family/StartChat">
+      <Property Name="Text" Value="清空列表" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,469},{0.543736,143},{0,546},{0.543736,167}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="Family/AllpyOK">
+      <Property Name="Text" Value="批准申请" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,313},{0.543736,143},{0,390},{0.543736,167}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="Family/RefuseApply">
+      <Property Name="Text" Value="回绝申请" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,391},{0.543736,143},{0,468},{0.543736,167}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="Family/KickMember">
+      <Property Name="Text" Value="驱逐成员" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,547},{0.543736,143},{0,624},{0.543736,167}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="Family/ChangePosition">
+      <Property Name="Text" Value="更改职位" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,625},{0.543736,143},{0,702},{0.543736,167}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="Family/BreakAway">
+      <Property Name="Text" Value="脱离家族" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,157},{0.543736,143},{0,234},{0.543736,167}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="Family/GotoGang">
+      <Property Name="Text" Value="切换到帮派" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,703},{0.543736,143},{0,780},{0.543736,167}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="Family/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.35625,0},{0.0243902,0},{0.74125,0},{0.0902439,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="Family/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="家   族" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,36},{0,0},{0,129},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="Family/Recruit">
+      <Property Name="Text" Value="家族招募" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,235},{0.543736,143},{0,312},{0.543736,167}}" />
+    </Window>
+    <Window Type="TaharezLook/RichEditbox" Name="Family/Link">
+      <Property Name="ReadOnly" Value="True" />
+      <Property Name="LineSpace" Value="1" />
+      <Property Name="BlinkCaret" Value="True" />
+      <Property Name="MaxTextLength" Value="2147483647" />
+      <Property Name="UnifiedAreaRect" Value="{{0.025,0},{0.890244,0},{0.19625,0},{0.951219,0}}" />
+      <Property Name="BlinkCaretTimeout" Value="0.5" />
+      <Property Name="TextParsingEnabled" Value="False" />
+    </Window>
+  </Window>
+</GUILayout>

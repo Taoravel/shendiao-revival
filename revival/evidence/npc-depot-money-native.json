@@ -1,0 +1,51 @@
+{
+  "scope": "original codecs and wallet field writes; runtime route and GUI separate",
+  "passed": [
+    "deposit/draw original16byte codecs retain64bit NPC key and amount",
+    "original positive signed64 constraints and truncation rejection",
+    "both SRefreshMoney slots original codec and consumers preserve sibling balance"
+  ],
+  "cases": [
+    {
+      "name": "CDepositMoney",
+      "npc_key": 1,
+      "amount": 1,
+      "bytes": "00000000000000010000000000000001"
+    },
+    {
+      "name": "CDepositMoney",
+      "npc_key": 4886718345,
+      "amount": 4294967303,
+      "bytes": "00000001234567890000000100000007"
+    },
+    {
+      "name": "CDepositMoney",
+      "npc_key": 81985529216486895,
+      "amount": 9223372036854775807,
+      "bytes": "0123456789abcdef7fffffffffffffff"
+    },
+    {
+      "name": "CDrawMoney",
+      "npc_key": 1,
+      "amount": 1,
+      "bytes": "00000000000000010000000000000001"
+    },
+    {
+      "name": "CDrawMoney",
+      "npc_key": 4886718345,
+      "amount": 4294967303,
+      "bytes": "00000001234567890000000100000007"
+    },
+    {
+      "name": "CDrawMoney",
+      "npc_key": 81985529216486895,
+      "amount": 9223372036854775807,
+      "bytes": "0123456789abcdef7fffffffffffffff"
+    }
+  ],
+  "native_dialog_dispatch": "0x10ca451..0x10ca4db",
+  "consumer_executed": "0x10a159a..0x10a1623 for cash;0x10a159a->0x10a0da0..0x10a0db9 for depot",
+  "consumer_limit": "stop before recalculation/observers; no visual rendering proof",
+  "native_image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+  "native_gui_verified": false
+}

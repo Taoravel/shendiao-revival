@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="GangMessageSend">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.239375,0},{0,176.8},{0.239375,417},{0,429.8}}" />
+    <Window Type="TaharezLook/StaticText" Name="GangMessageSend/Tips">
+      <Property Name="Text" Value="提示：请输入256个汉字内的文字、数字或符号。" />
+      <Property Name="HorzExtent" Value="284" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003679" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0,8},{0,36},{0,406},{0,59}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GangMessageSend/OK">
+      <Property Name="Text" Value="确定" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,92},{0,214},{0,190},{0,236}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GangMessageSend/Cancel">
+      <Property Name="Text" Value="取消" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,229},{0,214},{0,327},{0,236}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="GangMessageSend/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,214},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,214},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.305036,0},{0.0400003,0},{0.818225,0},{0.14672,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="GangMessageSend/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="邮件群发" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFF9600 br:FFFF9600" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,1},{0,165},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="GangMessageSend/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0.223953,0},{0.952038,0},{0.832649,0}}" />
+      <Window Type="TaharezLook/RichEditbox" Name="GangMessageSend/Notice">
+        <Property Name="LineSpace" Value="1" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{0,375},{0,149}}" />
+        <Property Name="BackGroundEnable" Value="False" />
+        <Property Name="BlinkCaretTimeout" Value="0.5" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

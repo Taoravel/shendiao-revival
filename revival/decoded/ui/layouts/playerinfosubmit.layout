@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="PlayerInfoSubmit">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.31375,0},{0.256667,0},{0.31375,245},{0.256667,183}}" />
+    <Window Type="TaharezLook/StaticText" Name="PlayerInfoSubmit/title">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="个人信息提交" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="102" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.187755,0},{0,12},{0.832653,0},{0,35}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="PlayerInfoSubmit/main">
+      <Property Name="UnifiedAreaRect" Value="{{0.0693878,0},{0.234973,0},{0.918367,0},{0.874317,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="PlayerInfoSubmit/main/content">
+        <Property Name="Text" Value="请点击以下链接完成个人信息提交。活动结束后我们会将奖品尽快发放给您。" />
+        <Property Name="HorzExtent" Value="170" />
+        <Property Name="VertExtent" Value="46.8567" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0913462,0},{0.05,1},{0.05,187},{0.05,63}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/LinkText" Name="PlayerInfoSubmit/main/link">
+        <Property Name="Text" Value="进入提交信息页面" />
+        <Property Name="UnifiedAreaRect" Value="{{0.110577,0},{0,76},{0.110577,105},{0,95}}" />
+        <Property Name="TextParsingEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

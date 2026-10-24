@@ -1,0 +1,43 @@
+{
+  "revision": "2026-10-23.equipment-condition.2",
+  "scope": "ordinary six-slot equipment; ride/decorate/god weapons are separate",
+  "generation": {
+    "provenance": "designed_baseline_using_historical_guide",
+    "current": 100,
+    "maximum": 100,
+    "note": "New ordinary restoration grants use white color1. This color is distinct from the five prefix-quality classes; existing condition.1 records need explicit color reconciliation, preserving current/max and audit.",
+    "color_tier": 1
+  },
+  "npc_repair": {
+    "method_id": 2,
+    "cost": "client 10dbb20 ordinary branch: binary64 coefficient from unit*npower(1.2,color-1), then trunc(binary64(coefficient*missing))",
+    "unit": "original cequiprepairconfig.npcrepair indexed by original item level",
+    "success": "draw in 0..999 < cequiprepairsuccposs[2].probability",
+    "probability_scale_provenance": "designed per-mille interpretation of original 600 and 1000 entries",
+    "fee_currency": "cash, equipment_repair purpose under currency-v1",
+    "fee_timing": "designed: charge once for a valid attempt on success or failure",
+    "success_state": "current=maximum; maximum unchanged",
+    "failure_state": "maximum-=10, current=min(current,new maximum)",
+    "failure_state_provenance": "historical guide confirms -10 maximum; preserving/clamping current is designed",
+    "minimum_repairable_maximum_exclusive": 10,
+    "at_full": "reject without spending or version change",
+    "randomness": "server owner supplies one trusted draw per stable command; never accept a client draw or resample committed receipts",
+    "eligibility": "caller validates current lease, NPC repair service and out-of-battle state before invoking; raw NPC ID alone is not a capability",
+    "color_source": "native1073090 reads EquipObject+5c; 10730b0 indexes CEquipColorConfig via89d4a0; normal detail parser derives color1..6 from score and prefix bestcolortype cap"
+  },
+  "wear": {
+    "operation": "trusted positive current-durability loss, floor zero",
+    "battle_loss_formula": "not recovered; caller must supply an explicit validated event amount",
+    "zero_durability_base_attributes": "designed: contribute no baseEffect until repaired"
+  },
+  "source": "https://sdxl.wanmei.com/info/intro/20120623/131855.shtml",
+  "source_date": "2012-06-23",
+  "unverified": [
+    "1.6.1 original server probability and failure charging",
+    "special repair methods",
+    "live repair UI",
+    "full equipment detail bean",
+    "battle durability loss"
+  ],
+  "migration": "condition.1 mislabeled repair color as quality_tier. Do not reinterpret saved values. Explicit trusted color reconciliation preserves durability and original JSON in migration audit; historical command fingerprints remain policy-scoped."
+}

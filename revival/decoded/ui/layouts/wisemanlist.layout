@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="WiseManList">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.2,0},{0.825001,0},{0.733333,0}}" />
+    <Window Type="TaharezLook/StaticText" Name="WiseManList/Title">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="智者名单" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="68" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.4,0},{0.034375,0},{0.8,0},{0.109375,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/MultiColumnList" Name="WiseManList/list">
+      <Property Name="UnifiedAreaRect" Value="{{0,19},{0,45},{0,480},{0,268}}" />
+      <Property Name="ColumnHeader" Value="text:排名 width:{0.15,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:名称 width:{0.3,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:门派 width:{0.2,0} id:2" />
+      <Property Name="ColumnHeader" Value="text:历史答对题目 width:{1,-299} id:3" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="WiseManList/Up">
+      <Property Name="Text" Value="上一页" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.294,0},{0.853125,0},{0.456,0},{0.93125,0}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="WiseManList/Down">
+      <Property Name="Text" Value="下一页" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.538,0},{0.853125,0},{0.7,0},{0.93125,0}}" />
+    </Window>
+  </Window>
+</GUILayout>

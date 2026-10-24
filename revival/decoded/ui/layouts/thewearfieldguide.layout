@@ -1,0 +1,402 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="TheWearFieldGuide">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.10375,0},{0.176667,0},{0.16875,548},{0.176667,435}}" />
+    <Window Type="TaharezLook/StaticImage" Name="TheWearFieldGuide/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.353333,0},{0,11},{0.866667,0},{0,38}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="TheWearFieldGuide/Title/Name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="配饰合成" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.298701,0},{0,1},{0.948052,0},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="TheWearFieldGuide/Head">
+      <Property Name="Text" Value="头饰图鉴" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0383333,0},{0.091954,0},{0.16,0},{0.5,-154}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="TheWearFieldGuide/Face">
+      <Property Name="Text" Value="面饰图鉴" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,65},{0.091954,0},{0.05,138},{0.5,-154}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="TheWearFieldGuide/Should">
+      <Property Name="Text" Value="背饰图鉴" />
+      <Property Name="UnifiedAreaRect" Value="{{0.1,108},{0.091954,0},{0.1,181},{0.5,-154}}" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="TheWearFieldGuide/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0216667,0},{0.142529,0},{0.0193334,573},{0.142725,358}}" />
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="TheWearFieldGuide/Back/Left">
+        <Property Name="UnifiedAreaRect" Value="{{0.00874126,0},{0.00837989,0},{0.00869559,183},{0.00865922,350}}" />
+        <Window Type="TaharezLook/ScrollablePane" Name="TheWearFieldGuide/Back/Left/List">
+          <Property Name="ContentArea" Value="l:0 t:0 r:159 b:567" />
+          <Property Name="HorzStepSize" Value="0.1" />
+          <Property Name="VertStepSize" Value="0.1" />
+          <Property Name="HorzOverlapSize" Value="0.01" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0163934,0},{0.00857143,0},{0.0178378,203},{0.00786453,346}}" />
+          <Property Name="VertOverlapSize" Value="0.01" />
+          <Property Name="HorzScrollPosition" Value="0" />
+          <Property Name="VertScrollPosition" Value="0" />
+          <AutoWindow NameSuffix="__auto_container__">
+            <Property Name="ContentArea" Value="l:0 t:0 r:159 b:567" />
+            <Property Name="ChildExtentsArea" Value="l:0 t:0 r:159 b:567" />
+            <Window Type="TaharezLook/WearGroupButton" Name="TheWearFieldGuide/Back/Left/List/Item1">
+              <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0.000571684,157},{-0.000515089,58}}" />
+              <Window Type="TaharezLook/ItemCell" Name="TheWearFieldGuide/Back/Left/List/Item/Cell1">
+                <Property Name="UnifiedAreaRect" Value="{{0.0254777,0},{0,4},{0.33121,0},{0,52}}" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TheWearFieldGuide/Back/Left/List/Item/Name1">
+                <Property Name="Text" Value="一二三四五六七" />
+                <Property Name="HorzExtent" Value="91" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.343949,0},{0,20},{0.993631,0},{0,40}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/WearGroupButton" Name="TheWearFieldGuide/Back/Left/List/Item2">
+              <Property Name="UnifiedAreaRect" Value="{{0,0},{0,57},{0.000571684,157},{0,113}}" />
+              <Window Type="TaharezLook/ItemCell" Name="TheWearFieldGuide/Back/Left/List/Item/Cell2">
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,52},{0,52}}" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TheWearFieldGuide/Back/Left/List/Item/Name2">
+                <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,54},{0,20},{0,156},{0,40}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/WearGroupButton" Name="TheWearFieldGuide/Back/Left/List/Item3">
+              <Property Name="UnifiedAreaRect" Value="{{0,0},{0,114},{0.000571684,157},{0,170}}" />
+              <Window Type="TaharezLook/ItemCell" Name="TheWearFieldGuide/Back/Left/List/Item/Cell3">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0.0714286,0},{0,53},{0.0642851,48}}" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TheWearFieldGuide/Back/Left/List/Item/Name3">
+                <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,54},{0,20},{0,156},{0,40}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/WearGroupButton" Name="TheWearFieldGuide/Back/Left/List/Item4">
+              <Property Name="UnifiedAreaRect" Value="{{0,0},{0,171},{0.000571684,157},{0,227}}" />
+              <Window Type="TaharezLook/ItemCell" Name="TheWearFieldGuide/Back/Left/List/Item/Cell4">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0.0714286,0},{0,53},{0.0642862,48}}" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TheWearFieldGuide/Back/Left/List/Item/Name4">
+                <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,54},{0,20},{0,156},{0,40}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/WearGroupButton" Name="TheWearFieldGuide/Back/Left/List/Item5">
+              <Property Name="UnifiedAreaRect" Value="{{0,0},{0,228},{0.000568436,157},{0,284}}" />
+              <Window Type="TaharezLook/ItemCell" Name="TheWearFieldGuide/Back/Left/List/Item/Cell5">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0.0714286,0},{0,53},{0.0642851,48}}" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TheWearFieldGuide/Back/Left/List/Item/Name5">
+                <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,54},{0,20},{0,156},{0,40}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/WearGroupButton" Name="TheWearFieldGuide/Back/Left/List/Item6">
+              <Property Name="UnifiedAreaRect" Value="{{0,0},{0,285},{0.000568436,157},{0,342}}" />
+              <Window Type="TaharezLook/ItemCell" Name="TheWearFieldGuide/Back/Left/List/Item/Cell6">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0.0701754,0},{0,53},{0.0631573,48}}" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TheWearFieldGuide/Back/Left/List/Item/Name6">
+                <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,54},{0,20},{0,156},{0,40}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/WearGroupButton" Name="TheWearFieldGuide/Back/Left/List/Item8">
+              <Property Name="UnifiedAreaRect" Value="{{0,0},{0,397},{0.000571684,157},{0,453}}" />
+              <Window Type="TaharezLook/ItemCell" Name="TheWearFieldGuide/Back/Left/List/Item/Cell8">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0.0714286,0},{0,53},{0.0642862,48}}" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TheWearFieldGuide/Back/Left/List/Item/Name8">
+                <Property Name="Text" Value="尚未发现的图鉴" />
+                <Property Name="HorzExtent" Value="92" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,54},{0,20},{0,156},{0,47}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/WearGroupButton" Name="TheWearFieldGuide/Back/Left/List/Item9">
+              <Property Name="UnifiedAreaRect" Value="{{0,0},{0,455},{0.000571684,157},{0,511}}" />
+              <Window Type="TaharezLook/ItemCell" Name="TheWearFieldGuide/Back/Left/List/Item/Cell9">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0.0714286,0},{0,53},{0.0642851,48}}" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TheWearFieldGuide/Back/Left/List/Item/Name9">
+                <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,54},{0,20},{0,156},{0,47}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/WearGroupButton" Name="TheWearFieldGuide/Back/Left/List/Item10">
+              <Property Name="UnifiedAreaRect" Value="{{0,0},{0,511},{0.000571684,157},{0,567}}" />
+              <Window Type="TaharezLook/ItemCell" Name="TheWearFieldGuide/Back/Left/List/Item/Cell10">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0.0714286,0},{0,53},{0.0642862,48}}" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TheWearFieldGuide/Back/Left/List/Item/Name10">
+                <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,54},{0,20},{0,156},{0,47}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/WearGroupButton" Name="TheWearFieldGuide/Back/Left/List/Item7">
+              <Property Name="UnifiedAreaRect" Value="{{0,1},{0,342},{0,159},{0,398}}" />
+              <Window Type="TaharezLook/ItemCell" Name="TheWearFieldGuide/Back/Left/List/Item/Cell7">
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0.0642853,0},{0,53},{0.0642853,48}}" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TheWearFieldGuide/Back/Left/List/Item/Name7">
+                <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,54},{0,20},{0,156},{0,47.3004}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+            </Window>
+          </AutoWindow>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="TheWearFieldGuide/Back/Right">
+        <Property Name="UnifiedAreaRect" Value="{{0.33042,0},{0.0139665,0},{0.326956,380},{0.00906526,184}}" />
+        <Window Type="TaharezLook/StaticImage" Name="TheWearFieldGuide/Back/Right/List/Item1">
+          <Property Name="Image" Value="set:MainControl image:ExchangeBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,165},{0,55}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,165},{0,55}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,17},{0.142857,0},{0,182},{0.05,72}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="TheWearFieldGuide/Back/Right/List/Item/Cell1">
+            <Property Name="UnifiedAreaRect" Value="{{0.0121212,0},{0,3},{0.30303,0},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="TheWearFieldGuide/Back/Right/List/Item/Name1">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.321212,0},{0,6},{0.993939,0},{0,25}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="TheWearFieldGuide/Back/Right/List/Item/Num1">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,45},{0.05,27},{0.05,147},{0.05,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="TheWearFieldGuide/Back/Right/List/Item2">
+          <Property Name="Image" Value="set:MainControl image:ExchangeBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,165},{0,55}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,165},{0,55}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,198},{0.142857,0},{0,363},{0.0899999,65}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="TheWearFieldGuide/Back/Right/List/Item/Cell2">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="TheWearFieldGuide/Back/Right/List/Item/Name2">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.321212,0},{0,6},{0.993939,0},{0,25}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="TheWearFieldGuide/Back/Right/List/Item/Num2">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,45},{0.05,27},{0.05,147},{0.05,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="TheWearFieldGuide/Back/Right/List/Item3">
+          <Property Name="Image" Value="set:MainControl image:ExchangeBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,165},{0,55}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,165},{0,55}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,17},{0.472527,0},{0.0732984,154},{0.15,114}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="TheWearFieldGuide/Back/Right/List/Item/Cell3">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="TheWearFieldGuide/Back/Right/List/Item/Name3">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.321212,0},{0,6},{0.993939,0},{0,25}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="TheWearFieldGuide/Back/Right/List/Item/Num3">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,45},{0.05,25},{0.05,147},{0.05,44}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="TheWearFieldGuide/Back/Right/List/Item4">
+          <Property Name="Image" Value="set:MainControl image:ExchangeBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,165},{0,55}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,165},{0,55}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,198},{0.472527,0},{0,363},{0.17,110}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="TheWearFieldGuide/Back/Right/List/Item/Cell4">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="TheWearFieldGuide/Back/Right/List/Item/Name4">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.327273,0},{0,7},{1,0},{0,26}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="TheWearFieldGuide/Back/Right/List/Item/Num4">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,45},{0.05,26},{0.05,147},{0.05,45}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="TheWearFieldGuide/Back/Right/W">
+          <Property Name="Text" Value="合成需要的材料：" />
+          <Property Name="HorzExtent" Value="104" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003679" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0185185,0},{0.0274725,0},{0.296296,0},{0.137363,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="TheWearFieldGuide/Back/Right/W1">
+          <Property Name="Text">小贴士：
+配饰合成后会拥有可观的基本属性哦（和配饰颜色有关）。</Property>
+          <Property Name="HorzExtent" Value="338" />
+          <Property Name="VertExtent" Value="31.2378" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003679" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0132275,0},{0.758242,0},{0.997355,0},{0.978022,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="TheWearFieldGuide/Back/Bot">
+        <Property Name="UnifiedAreaRect" Value="{{0.33042,0},{0.527933,0},{0.326956,380},{0.97486,0}}" />
+        <Window Type="TaharezLook/StaticImage" Name="TheWearFieldGuide/Back/Bot/Image">
+          <Property Name="Image" Value="set:MainControl6 image:PetPropertyBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,126},{0,125}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,126},{0,125}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0952381,0},{0.15625,0},{0.428571,0},{0.9375,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="TheWearFieldGuide/Back/Bot/Image/Role">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0396825,0},{0,93},{0.992063,0},{0,129}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Figure1" Name="TheWearFieldGuide/Back/Bot/Title">
+          <Property Name="UnifiedAreaRect" Value="{{0.0873016,0},{0.025,0},{0.431217,0},{0.0125,22}}" />
+          <Window Type="TaharezLook/StaticText" Name="TheWearFieldGuide/Back/Right/W2">
+            <Property Name="Text" Value="效果预览" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,32},{0.05,0},{0.05,92},{0.05,20}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Figure1" Name="TheWearFieldGuide/Back/Bot/Title1">
+          <Property Name="UnifiedAreaRect" Value="{{0.587302,0},{0.025,0},{0.931217,0},{-0.00625,25}}" />
+          <Window Type="TaharezLook/StaticText" Name="TheWearFieldGuide/Back/Right/W21">
+            <Property Name="Text" Value="产出道具" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,32},{0.05,0},{0.05,92},{0.05,20}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="TheWearFieldGuide/Back/Bot/CellBack">
+          <Property Name="Image" Value="set:MainControl3 image:LuckyWheelMiddleBox" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,66},{0,68}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,66},{0,68}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.679894,0},{0.2625,0},{0.854497,0},{0.6875,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="TheWearFieldGuide/Back/Bot/CellBack/Cell">
+            <Property Name="UnifiedAreaRect" Value="{{0.136364,0},{0.147059,0},{0.3,37},{0.3,38}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Button" Name="TheWearFieldGuide/Back/Bot/Button">
+          <Property Name="Text" Value="合     成" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.679894,0},{0.79375,0},{0.680117,68},{0.79375,24}}" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

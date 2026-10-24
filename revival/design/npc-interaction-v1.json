@@ -1,0 +1,17 @@
+{
+  "revision": "2026-10-23.npc-interaction.1",
+  "scope": "startup-frozen server NPC interaction distance, selected by original map/placement/NPC identity",
+  "provenance": "designed; original NPC placement and collision data are client_verified, original interaction radius remains unknown",
+  "research": "evidence/BLOODMARK_INTERACTION_DISTANCE_RESEARCH.md",
+  "default_radius": 32,
+  "unit": "logical map pixels; inclusive squared Euclidean distance from current authoritative role position to current authoritative NPC position",
+  "overrides": [
+    {"map_id": 1006, "placement_id": 13, "npc_id": 10498, "radius": 48, "original_x": 1668, "original_y": 970, "provenance": "designed radius; client_verified original placement"}
+  ],
+  "reason": "original mask1 has no clear integer point within32 of bloodmark placement; nearest clear point is38 away; radius48 admits an independently checked DDA movement witness without changing placement or collision",
+  "startup": "strictly validate this revision, default and exact override identity against original placements/definitions, freeze once before map owners start; invalid, duplicate, unknown, bool/non-integer values reject",
+  "authority": "owning full MapAddress and map generation; current entity binding, current role location/position version/lease and active state remain mandatory; client packets cannot select a radius",
+  "shared_check": "NpcScene and NpcLifecycle use the same frozen radius selection; new menu/service/task admission re-proves the current NPC through that same map-owned Interface",
+  "compatibility": "all other NPCs/placements retain32, including another placement of NPC10498; unchanged native visit packet and original placement coordinates; no role migration or asset/quest completion authorization",
+  "activation": "source implementation and isolated natural-flow verification authorized; publication and native GUI require separate evidence"
+}

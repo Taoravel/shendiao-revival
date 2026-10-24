@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="Greenchannel">
+    <Property Name="Font" Value="msyh-16" />
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,288},{0,130},{0,562},{0,440}}" />
+    <Window Type="TaharezLook/StaticImage" Name="Greenchannel/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,162},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,162},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.280292,0},{0.0331399,0},{0.871533,0},{0.120237,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="Greenchannel/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="快速购买" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFF9600 br:FFFF9600" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,60},{0,1},{0,144},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="Greenchannel/back">
+      <Property Name="UnifiedAreaRect" Value="{{0.060584,0},{0.136774,0},{0.060584,239},{0.116968,225.875}}" />
+      <Window Type="TaharezLook/ItemCell" Name="Greenchannel/Icon">
+        <Property Name="UnifiedAreaRect" Value="{{0.05,-1.11711},{0.05,6.90855},{0.05,46.8829},{0.05,54.9086}}" />
+      </Window>
+      <Window Type="TaharezLook/RadioButton" Name="Greenchannel/Xianjin">
+        <Property Name="Text" Value="用银两购买" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,0.97497},{0.05,78.9442},{0.05,107.975},{0.05,98.9442}}" />
+      </Window>
+      <Window Type="TaharezLook/RadioButton" Name="Greenchannel/Xianjin1">
+        <Property Name="Text" Value="用元宝购买" />
+        <Property Name="UnifiedAreaRect" Value="{{0,120.925},{0.05,78.9442},{0,210.925},{0.05,98.9442}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="Greenchannel/Num">
+        <Property Name="Text" Value="购买数量" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,0.97497},{0.05,99.9442},{0.05,70.975},{0.05,119.945}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Combobox" Name="Greenchannel/Number">
+        <Property Name="Text" Value="1" />
+        <Property Name="CaratIndex" Value="1" />
+        <Property Name="UnifiedAreaRect" Value="{{0,74.925},{0,109.738},{0,123.925},{0,211.738}}" />
+        <Property Name="MaxEditTextLength" Value="2147483647" />
+        <Property Name="EditSelectionStart" Value="1" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="Greenchannel/Price">
+        <Property Name="Text" Value="道具单价" />
+        <Property Name="Tooltip" Value="当前元宝交易平台上最便宜的元宝单价" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,0.97497},{0.05,123.945},{0.05,62.975},{0.05,143.945}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="Greenchannel/MoneyBack1">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,73.925},{0,133.738},{0,219.72},{0,153.738}}" />
+        <Window Type="TaharezLook/StaticImage" Name="Greenchannel/MoneyBack1/Money1">
+          <Property Name="Image" Value="set:MainControl image:Xianjin" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,-0.20001},{0,0.39999},{0,18.8},{0,19.4}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Greenchannel/Pricenum">
+          <Property Name="Tooltip" Value="当前元宝交易平台上最便宜的元宝单价" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,21},{0,0},{0,141.465},{0,20}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="Greenchannel/Total">
+        <Property Name="Text" Value="支付总额" />
+        <Property Name="Tooltip" Value="所需要支付的游戏币总量" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,0.97497},{0.05,146.945},{0.05,56.975},{0.05,166.945}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="Greenchannel/MoneyBack11">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,73.925},{0,157.738},{0,219.72},{0,177.738}}" />
+        <Window Type="TaharezLook/StaticImage" Name="Greenchannel/MoneyBack1/Money11">
+          <Property Name="Image" Value="set:MainControl image:Xianjin" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,19},{0,19}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Greenchannel/Totalnum">
+          <Property Name="Tooltip" Value="需要支付的总游戏币" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,20},{0,-1},{0,140.465},{0,19}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="Greenchannel/TIPS">
+        <Property Name="Text" Value="说明：&quot;用银两购买&quot;是借助元宝交易平台购得元宝，再购买道具的方法" />
+        <Property Name="HorzExtent" Value="207" />
+        <Property Name="VertExtent" Value="31.2378" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,0.97497},{0.05,167.075},{0.05,211.975},{0.05,211.075}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="Greenchannel/Cancel">
+        <Property Name="Text" Value="取消" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,117.075},{0,223.868},{0.05,195.075},{0,245.868}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="Greenchannel/OK">
+        <Property Name="Text" Value="确定" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="click.ogg" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,30.9246},{0,223.868},{0,108.925},{0,245.868}}" />
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="Greenchannel/back/Info">
+        <Property Name="UnifiedAreaRect" Value="{{0.27633,0},{0.0246945,0},{0.966707,0},{0.397634,0}}" />
+        <Window Type="TaharezLook/RichEditbox" Name="Greenchannel/Describe">
+          <Property Name="ReadOnly" Value="True" />
+          <Property Name="LineSpace" Value="1" />
+          <Property Name="BlinkCaret" Value="True" />
+          <Property Name="MaxTextLength" Value="2147483647" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0284849,0},{0.0195121,0},{0.986061,0},{0.934146,0}}" />
+          <Property Name="BackGroundEnable" Value="False" />
+          <Property Name="BlinkCaretTimeout" Value="0.5" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

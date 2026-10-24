@@ -1,0 +1,17 @@
+Standards：硬违规0；heuristic可行动发现0。
+
+方法：实际使用code-review逐hunk核对全部6输入/635行，逐项判断12种Fowler smell；以codebase-design追踪Map/Role/Connection的Module、Interface与Seam。依据AGENTS、ARCHITECTURE“单写者/启动只读配置/有界队列/旧世代失效”、DESIGN_AUTHORITY来源分级；未找到额外CONTRIBUTING/CODING_STANDARDS。
+
+证据：game_runtime.py:203–225、253–263在地图邮箱内撤销/确认/同步推进上下文与位置；runtime_movement.py:62–130绑定不可变Location、map/context generation及唯一pending。game_runtime.py:1003–1017、1200–1221在当前连接write/drain前后复核精确身份；离开/交接清理旧上下文。runtime_storage.py:131–133启动冻结政策及不可变maze，实际工厂注入，无新增全局串行器或跨所有者可变状态。world_movement.py:56–82保持legacy默认合同并显式选择native_current。政策将normal0与特殊归一标为designed，没有冒充客户端ACK。
+
+固定文件比较，无Git/提交列表；审前后6候选/4非空BASE SHA均匹配scope，两新文件无BASE，候选亦逐项匹配release/source；diff SHA：1245a7f81e4c12ef1861027c30abf0c9da4f3f444adbf9d64803d57d9e7077bc。release manifest及candidate记录SHA匹配scope；记录绑定seal：3d953497ca9293f57135aabbba26e3b1d176ebaf12dd5d61ff46379f538e57bd。
+
+候选SHA256（完整BASE值见已复核scope.json）：
+- game_runtime.py 4ff8b224d5ea4d18e1daddeb2211752f9c1fceeb34b7eb20ddaf4027cd44fe61
+- runtime_movement.py 342459e727d5dbd2524aaa7f7dbc6b6cfe41d22111c106b470c58450e4a002dc
+- runtime_storage.py d23d811cfaa24fb5250fba1683c4ff3b14c199620d9d0ca7ba8f9a3fb7ce7187
+- world_movement.py 34ad13f25e9a7ea412e0e885b07ea37714ac02ad4695e40d22f64c4388145f30
+- world_owner.py 51cd7090cb8215231d3be9bafc68a170ced635bd339f68a291dc77f05057b438
+- design/world-movement-state-v1.json fb1a3a89f745df805f88559eb77be345ef8033dde93d6eeb33f7c51877662f93
+
+仅静态源码/依赖审查；未读Spec轴结论，未运行测试、DB、服务、GUI或真实战斗。未证明实际网络调度、302图回归、客户端可见或容量；独立执行证据由root负责。

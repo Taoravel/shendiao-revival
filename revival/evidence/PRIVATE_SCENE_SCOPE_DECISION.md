@@ -1,0 +1,23 @@
+# 私有地图的当前频道范围
+
+2026-10-23，主策划。实现私有角色完整地址、RoleSnapshot场景字段或当前频道分组时读本文和ARCHITECTURE。当前静态路径为RoleOwner.snapshot将position.value[0]模板传给scene_id，GameRuntime.index与social_owner当前频道都据此分组；只修地图工厂仍不能隔离同模板的私有频道。本页裁定公开Interface，不声称已实际验证私有聊天。
+
+保留RoleSnapshot原scene_id模板整数及原七参数调用；新增末尾可选不可变scene_scope，默认None。scene_scope为(map_id,instance_id,partition_id)精确三元tuple，各项严格整数、非bool、signed63，map/instance>0、partition>=0，且map_id==scene_id。只有一处scene_key属性决定分组：None或显式公共(map,map,0)返回原模板int；私有或非零partition返回完整tuple。这个public归一化使旧调用方和新完整地址调用方能在同一公共频道交互，私有键与公共int不能相等。
+
+社交窗口维护RoleSnapshot、scene_key与CURRENT_CHANNEL的Publish键；分组键是服务端不透明值，不序列化为原线场景ID，也不从客户端聊天包指定。Publish类型合同须容纳该不可变int/tuple键。门派、世界等频道保留各自既有范围，不转为地图Owner串行处理。
+
+主集成维护RoleOwner真实完整归属、给snapshot提供其address tuple、GameRuntime.index统一使用scene_key，以及新旧成员切换/恢复的删除和重建。私有角色必须有可信完整地址，缺目录或归属按世界合同拒绝；不能以scene_scope=None退回公共模板。角色等待跨Owner响应时继续核epoch/connection/位置归属，不能持有SQL或地图邮箱等待其它Owner。
+
+## 延迟投递与连接队列
+
+Publish分区正确还不能证明收件时范围仍正确。当前频道fanout生成的Delivery必须携带当时原Publish的scene_key；新增可选仅关键字字段，默认None，保持原四位置参数及GuildWake/FamilyWake/GroupDelivery等继承构造兼容。key严格使用同一public int/private完整tuple归一化及类型范围，不由线包指定；其它频道/关系投递仍None。
+
+社交窗口单写Delivery字段/验证及SocialEndpoint消费：带key先与当前snapshot.scene_key比对，过滤后经原收件人关系检查，再调用共享异步Interface `runtime.offer_scene_channel(snapshot, delivery)`。旧范围、未知/畸形键均不能掉回无范围的target.offer；缺共享hook时带key投递明确拒绝/计数，不借通用投递绕开。None保留原渠道路径。social_runtime只交此精确增量，不把未审组织initial/其它模块顺带合入。
+
+主集成单写Publish fanout填key及offer_scene_channel。该Interface等待前后核当前权威角色完整地址/scene_key、租约、connection generation和scene_token；私有投递先登记地图SceneDeliveryTicket并持ProjectionUse，贯穿连接排队、真实drain成功/明确丢弃/取消及对应finish终止。公共同图当前频道也保留连接发送前的场景身份围栏，避免排队后换图仍发送旧范围；公共图不因此启用私有投影池。scene_token的换图/重入代次由角色Owner维护，不以每步移动版本代替，普通行走不应无故令当前消息过期。已发网络字节无法追回，此合同保证发送前的可判定围栏，不声称撤销远端已显示内容。
+
+完成标准增加：真实SocialEndpoint迟到Delivery到达不同实例时不交共享hook；同key当前投递精确交hook；None的世界/门派等保持旧路径；畸形key拒绝、所有继承构造不破坏。共享另以受控慢drain/旧连接/队列满/close队余/场景切换验证原场景投递被丢弃且准确清ticket/pin，不用本小hunk声称完整连接链已验收。
+
+完成标准：公开旧七参数及显式公共scope得到相同key；同模板不同instance/partition的key不同；可变、bool、模板不符、越界拒绝；实际SocialOwner/Runtime的当前频道Publish和成员分区采用同一key。共享接入后用两个实际私有角色验证当前频道不串，并验证公共同图互通、重登和换图清旧成员。世界/门派等其它频道不借本变更改变权限或可见范围。
+
+codebase-design将范围规范化集中于快照的小Interface，调用方不分别推断同一身份；writing-for-agents将兼容、两窗口归属和可判定验收共置。社交窗口已接实现请求，主集成继续完整地址片；当前未证明该Interface已实现、真实私有入场或GUI。本次不改运行服。

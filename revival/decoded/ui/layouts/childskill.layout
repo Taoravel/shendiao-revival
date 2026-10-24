@@ -1,0 +1,524 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/HouseFrameWindow" Name="ChildSkill">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="open.ogg" />
+    <Property Name="ClippedByParent" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.128906,0},{0.0845356,0},{0.0926561,619},{0.0845356,450}}" />
+    <Property Name="CloseSoundResource" Value="close.ogg" />
+    <Window Type="DefaultWindow" Name="ChildSkill/eat">
+      <Property Name="UnifiedAreaRect" Value="{{0.0677966,0},{0.12,0},{0.0666667,519},{0.10303,380}}" />
+      <Window Type="TaharezLook/CommonCaseHouse" Name="ChildSkill/eat/back">
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0.00537634,0},{0.0464396,306},{0.00473934,370}}" />
+        <Window Type="TaharezLook/Figure" Name="ChildSkill/eat/back/image1">
+          <Property Name="UnifiedAreaRect" Value="{{0.321212,0},{0.0243243,0},{0.666667,0},{0.0648649,0}}" />
+          <Window Type="TaharezLook/StaticText" Name="ChildSkill/eat/back/image1/txt">
+            <Property Name="Text" Value="参战技能" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.27193,0},{-0.2,0},{0.754386,0},{1.06667,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="ChildSkill/eat/back/battle">
+          <Property Name="UnifiedAreaRect" Value="{{0.0484848,0},{0.0702703,0},{0.0242424,303},{0.210811,0}}" />
+          <Window Type="TaharezLook/SkillBox" Name="ChildSkill/eat/back/battle/item1">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0169492,0},{0.0769231,0},{0.0159236,44},{0.291667,33}}" />
+          </Window>
+          <Window Type="TaharezLook/SkillBox" Name="ChildSkill/eat/back/battle/item2">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0159236,48},{0.0769231,0},{0.0159236,92},{0.349359,30}}" />
+          </Window>
+          <Window Type="TaharezLook/SkillBox" Name="ChildSkill/eat/back/battle/item3">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0159236,96},{0.0769231,0},{0.0159236,140},{0.407052,27}}" />
+          </Window>
+          <Window Type="TaharezLook/SkillBox" Name="ChildSkill/eat/back/battle/item4">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0159236,144},{0.0769231,0},{0.0159236,188},{0.407052,27}}" />
+          </Window>
+          <Window Type="TaharezLook/SkillBox" Name="ChildSkill/eat/back/battle/item5">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0159236,192},{0.0769231,0},{0.0159236,236},{0.426282,26}}" />
+          </Window>
+          <Window Type="TaharezLook/SkillBox" Name="ChildSkill/eat/back/battle/item6">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0159236,240},{0.0769231,0},{0.0159236,284},{0.445513,25}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ChildSkill/eat/back/battle/item1/select">
+            <Property Name="Image" Value="set:BaseControl image:green" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0169492,0},{0.0576923,0},{0.05,34},{0.163636,40}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Figure" Name="ChildSkill/eat/back/image2">
+          <Property Name="UnifiedAreaRect" Value="{{0.321212,0},{0.221622,0},{0.654545,0},{0.262162,0}}" />
+          <Window Type="TaharezLook/StaticText" Name="ChildSkill/eat/back/image2/txt">
+            <Property Name="Text" Value="技能库" />
+            <Property Name="HorzExtent" Value="39" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.318182,0},{-0.2,0},{0.672727,0},{1.06667,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="ChildSkill/eat/back/all">
+          <Property Name="UnifiedAreaRect" Value="{{0.0454545,0},{0.327027,0},{0.0242424,302},{0.289655,115}}" />
+          <Window Type="TaharezLook/SkillBox" Name="ChildSkill/eat/back/all/item1">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.020339,0},{0.049505,0},{0.0125338,46},{0.0129032,48}}" />
+            <Window Type="TaharezLook/StaticImage" Name="ChildSkill/eat/back/all/item1/use1">
+              <Property Name="Image" Value="set:MainControl28 image:Use" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{-0.136364,0},{-0.113636,0},{-0.104166,42},{-0.104167,34}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/SkillBox" Name="ChildSkill/eat/back/all/item2">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0159236,49},{0.049505,0},{0.0159236,93},{0.0129032,48}}" />
+            <Window Type="TaharezLook/StaticImage" Name="ChildSkill/eat/back/all/item1/use2">
+              <Property Name="Image" Value="set:MainControl28 image:Use" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{-0.159091,0},{-0.113636,0},{-0.054166,38},{-0.054167,31}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/SkillBox" Name="ChildSkill/eat/back/all/item3">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0159236,97},{0.049505,0},{0.0159236,141},{0.0129032,48}}" />
+            <Window Type="TaharezLook/StaticImage" Name="ChildSkill/eat/back/all/item1/use3">
+              <Property Name="Image" Value="set:MainControl28 image:Use" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{-0.181818,0},{-0.159091,0},{-0.00416601,35},{-0.00416699,27}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/SkillBox" Name="ChildSkill/eat/back/all/item4">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0159236,145},{0.049505,0},{0.0159236,189},{0.0129032,48}}" />
+            <Window Type="TaharezLook/StaticImage" Name="ChildSkill/eat/back/all/item1/use4">
+              <Property Name="Image" Value="set:MainControl28 image:Use" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{-0.113636,0},{-0.181818,0},{0.045834,36},{0.045833,24}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/SkillBox" Name="ChildSkill/eat/back/all/item5">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0159236,193},{0.049505,0},{0.0159236,237},{0.0129032,48}}" />
+            <Window Type="TaharezLook/StaticImage" Name="ChildSkill/eat/back/all/item1/use5">
+              <Property Name="Image" Value="set:MainControl28 image:Use" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{-0.136364,0},{-0.204545,0},{0.095834,33},{0.095833,21}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/SkillBox" Name="ChildSkill/eat/back/all/item6">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0159236,241},{0.049505,0},{0.0159236,285},{0.0129032,48}}" />
+            <Window Type="TaharezLook/StaticImage" Name="ChildSkill/eat/back/all/item1/use6">
+              <Property Name="Image" Value="set:MainControl28 image:Use" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{-0.136364,0},{-0.204545,0},{0.145834,31},{0.145833,19}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/SkillBox" Name="ChildSkill/eat/back/all/item7">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.020339,0},{0.291667,23},{0.059308,33},{0.291667,67}}" />
+            <Window Type="TaharezLook/StaticImage" Name="ChildSkill/eat/back/all/item1/use7">
+              <Property Name="Image" Value="set:MainControl28 image:Use" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{-0.113636,0},{-0.159091,0},{0.195834,29},{0.195833,18}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/SkillBox" Name="ChildSkill/eat/back/all/item8">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0159236,49},{0.291667,23},{-0.0423463,110},{0.291667,67}}" />
+            <Window Type="TaharezLook/StaticImage" Name="ChildSkill/eat/back/all/item1/use8">
+              <Property Name="Image" Value="set:MainControl28 image:Use" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{-0.113636,0},{-0.181818,0},{0.245834,27},{0.245833,15}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/SkillBox" Name="ChildSkill/eat/back/all/item9">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0159236,97},{0.291667,23},{-0.150411,190},{0.291667,67}}" />
+            <Window Type="TaharezLook/StaticImage" Name="ChildSkill/eat/back/all/item1/use9">
+              <Property Name="Image" Value="set:MainControl28 image:Use" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{-0.113636,0},{-0.159091,0},{0.295834,25},{0.295833,14}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/SkillBox" Name="ChildSkill/eat/back/all/item10">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0159236,145},{0.291667,23},{-0.264927,272},{0.291667,67}}" />
+            <Window Type="TaharezLook/StaticImage" Name="ChildSkill/eat/back/all/item1/use10">
+              <Property Name="Image" Value="set:MainControl28 image:Use" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{-0.0681818,0},{-0.227273,0},{0.345834,25},{0.345833,9}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/SkillBox" Name="ChildSkill/eat/back/all/item11">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0159236,193},{0.291667,23},{-0.372991,352},{0.291667,67}}" />
+            <Window Type="TaharezLook/StaticImage" Name="ChildSkill/eat/back/all/item1/use11">
+              <Property Name="Image" Value="set:MainControl28 image:Use" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{-0.136364,0},{-0.181818,0},{0.395834,20},{0.395833,9}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/SkillBox" Name="ChildSkill/eat/back/all/item12">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0159236,241},{0.291667,23},{0.0159236,285},{0.291667,67}}" />
+            <Window Type="TaharezLook/StaticImage" Name="ChildSkill/eat/back/all/item1/use12">
+              <Property Name="Image" Value="set:MainControl28 image:Use" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,43},{0,34}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,43},{0,34}}" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{-0.113636,0},{-0.181818,0},{0.445834,18},{0.445833,6}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ChildSkill/eat/back/all/select">
+            <Property Name="Image" Value="set:BaseControl image:green" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.020339,0},{0.039604,0},{0.05,35},{0.05,44}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/GroupButton" Name="ChildSkill/eat/back/button1">
+          <Property Name="Text" Value="全部" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0575758,0},{0.27027,0},{0.193939,0},{0.324324,0}}" />
+        </Window>
+        <Window Type="TaharezLook/GroupButton" Name="ChildSkill/eat/back/button2">
+          <Property Name="Text" Value="被动" />
+          <Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.27027,0},{0.336364,0},{0.324324,0}}" />
+        </Window>
+        <Window Type="TaharezLook/GroupButton" Name="ChildSkill/eat/back/button3">
+          <Property Name="Text" Value="主动" />
+          <Property Name="UnifiedAreaRect" Value="{{0.342424,0},{0.27027,0},{0.478788,0},{0.324324,0}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ChildSkill/eat/back/up">
+          <Property Name="Text" Value="上   页" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.233333,0},{0.608108,0},{0.412121,0},{0.672973,0}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ChildSkill/eat/back/up1">
+          <Property Name="Text" Value="下   页" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.539394,0},{0.608108,0},{0.718182,0},{0.672973,0}}" />
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="ChildSkill/eat/back/info">
+          <Property Name="UnifiedAreaRect" Value="{{0.0424242,0},{0.689189,0},{0.948485,0},{0.975676,0}}" />
+          <Window Type="TaharezLook/StaticText" Name="ChildSkill/eat/back/info/txt1">
+            <Property Name="Text" Value="注意事项" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.408027,0},{0.0188679,0},{0.595318,0},{0.198113,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ChildSkill/eat/back/info/txt11">
+            <Property Name="Text">1.右键点击技能可设置或取消技能参战。
+2.只有参战技能才会生效。
+3.左键点击可选择需要学习和升级的技能。
+4.娃娃亲可找临安红娘设置，小伙伴可找临安情义
+    考验人设置。</Property>
+            <Property Name="HorzExtent" Value="286" />
+            <Property Name="VertExtent" Value="78.0945" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0200669,0},{0.198113,0},{0.986622,0},{0.981132,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseHouse" Name="ChildSkill/eat/back1">
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,304},{0.00268817,0},{0.05,484},{0.00473934,369}}" />
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="ChildSkill/eat/back/window">
+          <Property Name="UnifiedAreaRect" Value="{{0,21},{0,104},{0,159},{0,336}}" />
+          <Window Type="TaharezLook/StaticImage" Name="ChildSkill/eat/back/window/item1">
+            <Property Name="Image" Value="set:MainControl image:SellItemBack" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,127},{0,55}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,127},{0,55}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,-1},{0.0214592,0},{0.05,126},{0.05,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="ChildSkill/eat/back/window/item1/item">
+              <Property Name="UnifiedAreaRect" Value="{{0.00787402,0},{0.0727273,0},{0.299213,11},{0.309091,35}}" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="ChildSkill/eat/back/window/item1/name">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.401575,0},{0.109091,0},{0.96063,0},{0.436364,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="ChildSkill/eat/back/window/item1/num">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.417323,0},{0.527273,0},{0.976378,0},{0.854545,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ChildSkill/eat/back/window/item3">
+            <Property Name="Image" Value="set:MainControl image:SellItemBack" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,127},{0,55}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,127},{0,55}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.15,-16},{0,117},{0.15,111},{0,172}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="ChildSkill/eat/back/window/item3/item">
+              <Property Name="UnifiedAreaRect" Value="{{0.00787402,0},{0.0727273,0},{0.299213,11},{0.309091,35}}" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="ChildSkill/eat/back/window/item3/name">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.401575,0},{0.109091,0},{0.96063,0},{0.436364,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="ChildSkill/eat/back/window/item3/num">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.417323,0},{0.527273,0},{0.976378,0},{0.854545,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ChildSkill/eat/back/window/item2">
+            <Property Name="Image" Value="set:MainControl image:SellItemBack" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,127},{0,55}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,127},{0,55}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.15,-16},{0.261803,0},{0.15,111},{0.15,81}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="ChildSkill/eat/back/window/item2/item">
+              <Property Name="UnifiedAreaRect" Value="{{0.00787402,0},{0.0727273,0},{0.299213,11},{0.309091,35}}" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="ChildSkill/eat/back/window/item2/name">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.401575,0},{0.109091,0},{0.96063,0},{0.436364,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="ChildSkill/eat/back/window/item2/num">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.417323,0},{0.527273,0},{0.976378,0},{0.854545,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ChildSkill/eat/back/window/item4">
+            <Property Name="Image" Value="set:MainControl image:SellItemBack" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,127},{0,55}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,127},{0,55}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.15,-16},{0.15,138},{0.324452,87},{0.15,193}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="ChildSkill/eat/back/window/item4/item">
+              <Property Name="UnifiedAreaRect" Value="{{0.00787402,0},{0.0727273,0},{0.299213,11},{0.309091,35}}" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="ChildSkill/eat/back/window/item4/name">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.401575,0},{0.109091,0},{0.96063,0},{0.436364,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="ChildSkill/eat/back/window/item4/num">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.417323,0},{0.527273,0},{0.976378,0},{0.854545,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Figure" Name="ChildSkill/eat/back1/image1">
+          <Property Name="UnifiedAreaRect" Value="{{0.183333,0},{0,8},{0.183333,114},{0,23}}" />
+          <Window Type="TaharezLook/StaticText" Name="ChildSkill/eat/back1/image1/txt">
+            <Property Name="Text" Value="技能学习" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.27193,0},{-0.2,0},{0.754386,0},{1.06667,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="ChildSkill/eat/back1/battle">
+          <Property Name="UnifiedAreaRect" Value="{{0.0944444,0},{0,27},{0.0916667,147},{0,80}}" />
+          <Window Type="TaharezLook/SkillBox" Name="ChildSkill/eat/back1/battle/item">
+            <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0340136,0},{0.0754717,0},{0.0159236,47},{0.291667,33}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ChildSkill/eat/back1/battle/txt">
+            <Property Name="Text" Value="升级进度" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,63},{0.566038,0},{0.05,118},{0.05,44}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/ProgressBar" Name="ChildSkill/eat/back1/battle/bar">
+            <Property Name="StepSize" Value="0.01" />
+            <Property Name="FrameEnable" Value="True" />
+            <Property Name="CurrentProgress" Value="1" />
+            <Property Name="UnifiedAreaRect" Value="{{0.346939,0},{0.150943,0},{0.972789,0},{0.150943,17}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Figure" Name="ChildSkill/eat/back1/image2">
+          <Property Name="UnifiedAreaRect" Value="{{0.194444,0},{0,84},{0.194444,110},{0,99}}" />
+          <Window Type="TaharezLook/StaticText" Name="ChildSkill/eat/back1/image2/txt">
+            <Property Name="Text" Value="所需材料" />
+            <Property Name="HorzExtent" Value="53" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.172727,0},{-0.2,0},{0.672727,0},{1.06667,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ChildSkill/eat/back/ok">
+          <Property Name="Text" Value="学习技能" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0833334,0},{0.05,320},{0.297222,27},{0.05,344}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ChildSkill/eat/back/auto">
+          <Property Name="Text" Value="自动学习" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.55,0},{0.1,302},{0.347222,102},{0.1,326}}" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ChildSkill/title/name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="子女技能" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="68" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,-223},{0.0444444,0},{0.05,-131},{0.05,16}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+  </Window>
+</GUILayout>

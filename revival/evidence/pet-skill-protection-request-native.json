@@ -1,0 +1,110 @@
+{
+  "source_status": "client_verified",
+  "original_ui": "142d6f5..142d784 stops before transport",
+  "original_message": "CPetLearnSkillByBook c07ff, ctor dbc7a0 marshal e53610 decoder dbc880",
+  "fields": [
+    "pet instance key",
+    "book instance key",
+    "basic certification item instance key or -1",
+    "advanced certification item instance key or -1",
+    "selected protected skill ID or -1",
+    "second selected protected skill ID or -1"
+  ],
+  "template_gates": {
+    "basic": {
+      "id": 31254,
+      "gate": "142edab cmp item template,0x7a16",
+      "name": "初级认证符"
+    },
+    "advanced": {
+      "id": 31255,
+      "gate": "142eeeb cmp item template,0x7a17",
+      "name": "高级认证符"
+    }
+  },
+  "skill_identity_proof": [
+    "142a1c8..142a1df supplies actual learned ID to shared 12d8120",
+    "12d8151..12d8154 passes skill ID to 4d3a90, which stores widget+590",
+    "142d48d..142d4ba reads 4d3aa0 (widget+590) and passes it to selected widget ID setter 464dd0",
+    "142d6f5..142d780 reads selected widget+26c into request; 12 sentinel becomes -1"
+  ],
+  "cases": [
+    {
+      "widget_values": [
+        0,
+        0,
+        12,
+        12
+      ],
+      "wire_values": [
+        7,
+        93,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "wire_hex": "000000070000005dffffffffffffffffffffffffffffffff",
+      "server_acceptance_proven": false
+    },
+    {
+      "widget_values": [
+        91,
+        0,
+        200091,
+        12
+      ],
+      "wire_values": [
+        7,
+        93,
+        91,
+        -1,
+        200091,
+        -1
+      ],
+      "wire_hex": "000000070000005d0000005bffffffff00030d9bffffffff",
+      "server_acceptance_proven": false
+    },
+    {
+      "widget_values": [
+        91,
+        92,
+        200091,
+        200061
+      ],
+      "wire_values": [
+        7,
+        93,
+        91,
+        92,
+        200091,
+        200061
+      ],
+      "wire_hex": "000000070000005d0000005b0000005c00030d9b00030d7d",
+      "server_acceptance_proven": false
+    },
+    {
+      "widget_values": [
+        0,
+        92,
+        12,
+        200061
+      ],
+      "wire_values": [
+        7,
+        93,
+        -1,
+        92,
+        -1,
+        200061
+      ],
+      "wire_hex": "000000070000005dffffffff0000005cffffffff00030d7d",
+      "server_acceptance_proven": false
+    }
+  ],
+  "limits": [
+    "Original UI sender does not prove server validation; invalid advanced-only shape was captured intentionally",
+    "Protection probability, exact failures/consumption and progress still require policy recovery",
+    "Runtime parser still only accepts all four -1; unchanged during freeze"
+  ]
+}

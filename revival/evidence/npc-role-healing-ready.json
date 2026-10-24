@@ -1,0 +1,30 @@
+{
+  "status": "deployed_and_independently_verified",
+  "deployed_release": "npc-role-healing-20261023T125539Z",
+  "deployed_pid": 36632,
+  "deployment_evidence": "npc-role-healing-deployment-verification.json",
+  "independent_npc_evidence": "npc-role-healing-deployment-npc-verification.json",
+  "candidate_release": "npc-role-healing-20261023T125539Z",
+  "candidate_evidence": "npc-role-healing-candidate-audit.json",
+  "candidate_manifest_inputs": 1429,
+  "candidate_shared_sha256": "7089408b929b8b730cf99e14e1c8d8e750b41d91dd3e405cde202a1c70f2fd6f",
+  "base_release": "npc-bound-shop-20261023T115742Z",
+  "base_pid": 39796,
+  "files": {
+    "npc_gameplay.py": "7212aa304509721bf82c4e5d6545212a5cc8c21b26bfbbf3901ed3c946c83387",
+    "npc_role_healing.py": "1f9e6a594e666545d51db37806ffa6f2c5ec513e80aa0eab6da6ae014f95e160",
+    "design/npc-role-healing-v1.json": "6f232df5c36dbb0f37aa2530670d2f7c38c65e6fbfc065bff116e24dacbbbaff",
+    "role_resource_plan.py": "bc70cadabe5d214b95691e75cce2d7295f9781f56909d53200324e95305820c8",
+    "design/role-resources-v1.json": "8be230cb69403f4eeefc2c72610e628035e802ab7777beaf3296abb8c4ff67a8",
+    "design/currency-v1.json": "6a702ba9831a6ec99254ac4d4732f8d6c62ac4a6835157ead5df9de9c286e1cb"
+  },
+  "domain_review": "reviews/npc-role-healing-20261023/REVIEW.md",
+  "resource_review": "reviews/npc-heal-resource-20261023/REVIEW.md",
+  "actual_wire_check": "verify_npc_role_healing_runtime.py",
+  "actual_wire_status": "basic3_and_supplementary7_passed",
+  "supplementary_wire_check": "verify_npc_role_healing_guards.py",
+  "shared_change": "import npc_role_healing plus handler role.heal returning await self.io(settle,accounts,inventory,command)",
+  "shared_change_owner": "original integration chat",
+  "live_database_modified": false,
+  "native_gui_verified": false
+}

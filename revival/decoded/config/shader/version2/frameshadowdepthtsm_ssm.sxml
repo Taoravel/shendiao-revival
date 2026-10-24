@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shaderTemplate>
+  <shaderFramework name="ShadowDepthColorTSM_SSM">
+    <inputDeclaration>
+      
+      struct VS_INPUT
+      {
+          float4 Position  : POSITION;
+          #ifdef Declare_BlendIndices
+            float4 BoneIndex : BLENDINDICES; //在骨骼调色板中的索引	
+          #endif
+          #ifdef Declare_BlendWeight
+	          float4 BoneWeight: BLENDWEIGHT; //上面按照0-3每个骨骼的权重
+          #endif
+          #ifdef DeclareInputUV0 
+            float4 UV0       : TEXCOORD0;
+          #endif
+		    #ifdef DeclareInputUV1 
+		    float4 UV1       :TEXCOORD1; 
+		    #endif 
+
+	        #ifdef DeclareNormal //植被的顶点渲染有些数据从法线中取出
+	          float4 Normal        : NORMAL; 
+          #endif
+      };
+	  
+    </inputDeclaration>
+    <outputDeclaration>
+      
+		   struct VS_OUTPUT 
+		   {
+		       float4 Position : POSITION;
+		       #ifdef DeclareOutputUV0
+		         float4 UV0      : TEXCOORD0; 
+		       #endif
+		       #ifdef DeclareOutputUV1
+		         float4 UV1      : TEXCOORD1;
+		       #endif
+	     };
+		
+    </outputDeclaration>
+    <pixelOutputDeclaration>
+      
+	    struct PS_OUTPUT
+	    {
+	        float4 Color : COLOR;
+	    };
+	    
+    </pixelOutputDeclaration>
+    <shaderInfo type="VS">
+      <functionEntry>
+      
+		VS_OUTPUT VS(VS_INPUT input)
+		{
+		    VS_OUTPUT output = (VS_OUTPUT)0;
+	    
+      </functionEntry>
+      <returnCode>
+      
+		return output;
+		}
+	    
+      </returnCode>
+      <macro name="SS_Vertex_Calculate_LocalPosNormal" />
+      <macro name="SS_Vertex_Calculate_WorldPosNormal" />
+      <macro name="SS_Vertex_Output_UVTex" />
+      <macro name="SS_Vertex_Output_Position" />
+      <macro name="SS_Vertex_Output_ShadowDepth" />
+    </shaderInfo>
+    <shaderInfo type="PS">
+      <functionEntry>
+      
+		PS_OUTPUT PS(VS_OUTPUT input)
+		{
+		PS_OUTPUT output = (PS_OUTPUT)0;
+	    
+      </functionEntry>
+      <returnCode>
+      
+		return output;
+		}
+	    
+      </returnCode>
+      <initCode>
+        output.Color.r = 1.0f;
+      </initCode>
+      <macro name="SS_Pixel_DiffuseAlphaClip" />
+      <macro name="SS_Pixel_Output_ShadowDepth" />
+    </shaderInfo>
+  </shaderFramework>
+</shaderTemplate>

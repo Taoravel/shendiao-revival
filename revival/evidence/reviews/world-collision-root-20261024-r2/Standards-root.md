@@ -1,0 +1,13 @@
+Standards：硬违规0；heuristic可行动发现0。
+
+方法：沿用完整code-review/codebase-design，以固定文件差异而非Git核对6输入/652行，并逐hunk复审r1→r2全部38行；对照Module、Interface、Seam及完整12项Fowler启发逐项判断，项目明确规则优先。未读Spec结论。
+
+依据：AGENTS、ARCHITECTURE“单写者、启动只读配置、有界队列、旧世代失效”、DESIGN_AUTHORITY及WORLD_MOVEMENT_STATE_DECISION。未发现额外CONTRIBUTING/CODING_STANDARDS。
+
+r2证据：game_runtime.py:435–438在后续保存/战斗关闭等待前请求地图撤销上下文；568–571仅新完成evidence产生移动声明，符合task_newbie_chapter.py:294–316的paid返回None合同，历史回放不恢复权限；1211–1229要求精确barrier类型和排队(kind,body)匹配，原连接/租约/地图pending检查及drain后确认保留。
+
+其余5文件与r1逐字节相同；复核地图单写、不可变声明、位置与上下文同owner推进、leave清理及启动maze/policy注入，未见退化、新全局串行器或跨所有者可变对象。
+
+审前后：6候选、6previous、4非空BASE及2空BASE均匹配scope；6候选亦匹配真正release/source。manifest/candidate记录均匹配scope。新game_runtime SHA256：e6f8fc93ba9763803e602436e289e3bc2713f5a741317a8cebb744f98b0fc540；其余完整值见scope.json。完整diff：5fbb0c9f1b24d2cc5bc531def881f80d7ff1ea4c1727fa95506847606047d2fd；增量diff：20e425abb786e2156eb45e4efcbd5dc49937ddd935ac8bbf468302cddd26df7d。候选记录绑定seal：e958c9086490a2ad2bdeaaf7d4f73c3d1301260db0abaf078b4cec0b9a5b2733。
+
+只做静态源码/依赖审查；未执行测试、DB、服务、GUI、联网角色或实际战斗，不据此证明真实调度、302图正常移动、客户端可见或容量。只新增本报告。

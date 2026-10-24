@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="NewDepot">
+    <Property Name="Font" Value="simhei-12" />
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,116.74},{0,76.7999},{0,674.74},{0,467.8}}" />
+    <Window Type="TaharezLook/TabControl" Name="NewDepot/tab">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="TabHeight" Value="{0,18}" />
+      <Property Name="TabPanePosition" Value="Top" />
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,44},{0,539},{0,372}}" />
+      <Window Type="DefaultWindow" Name="NewDepot/tab/Tab 1">
+        <Property Name="Text" Value="   物品仓库   " />
+        <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,0},{0,520},{0,330}}" />
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="NewDepot/tab/Tab 1/Back1">
+          <Property Name="UnifiedAreaRect" Value="{{0,7},{0,22},{0,262},{0,304}}" />
+          <Window Type="TaharezLook/Figure1" Name="NewDepot/tab/Tab 1/Back1/Title">
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,31},{0,-20},{0,157},{0,-1}}" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Window Type="TaharezLook/StaticText" Name="NewDepot/tab/Tab 1/deportTitle">
+              <Property Name="Font" Value="simhei-12" />
+              <Property Name="Text" Value="我的仓库" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0,19},{0,1},{0,83},{0,21}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="DefaultColourEnable" Value="True" />
+              <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/TabControl" Name="NewDepot/tab/Tab 1/deportTab">
+            <Property Name="TabHeight" Value="{0,18}" />
+            <Property Name="TabPanePosition" Value="Top" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0235294,0},{0,13},{0.0125523,245},{0,277}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="NewDepot/tab/Tab 1/Back2">
+          <Property Name="UnifiedAreaRect" Value="{{0,263},{0,22},{0,518},{0,304}}" />
+          <Window Type="TaharezLook/Figure1" Name="NewDepot/tab/Tab 1/Back2/Title">
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,31},{0,-20},{0,157},{0,-1}}" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Window Type="TaharezLook/StaticText" Name="NewDepot/tab/Tab 1/deportTitle1">
+              <Property Name="Font" Value="simhei-12" />
+              <Property Name="Text" Value="我的包裹" />
+              <Property Name="HorzExtent" Value="53" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0,19},{0,1},{0,83},{0,21}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="DefaultColourEnable" Value="True" />
+              <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/TabControl" Name="NewDepot/tab/Tab 1/packTab">
+            <Property Name="TabHeight" Value="{0,18}" />
+            <Property Name="TabPanePosition" Value="Top" />
+            <Property Name="UnifiedAreaRect" Value="{{0.027451,0},{0,13},{0.0164739,245},{0,277}}" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="NewDepot/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,214},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,214},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,153},{0,10},{0,367},{0,37}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="NewDepot/Title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="仓  库" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="46" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,87},{0,1},{0,156},{0,25}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

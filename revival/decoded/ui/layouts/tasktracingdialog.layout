@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="TaskTracingDialog">
+    <Property Name="UnifiedAreaRect" Value="{{1,-200},{0,157},{1.0025,0},{0,316}}" />
+    <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    <Window Type="TaharezLook/StaticImage" Name="back">
+      <Property Name="Image" Value="set:MainControl image:TaskTrackBack" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.00495049,0},{-0.0125786,0},{0.995049,0},{1,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/SpecialTree" Name="TaskTracingDialog/tree">
+        <Property Name="Font" Value="simsun" />
+        <Property Name="UnifiedAreaRect" Value="{{0.035,0},{0,6},{0.975,0},{1.02484,0}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/TaskTitleCase" Name="TaskTracingDialog/title">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,-7},{0,-32},{1,0},{0,0}}" />
+      <Window Type="TaharezLook/ImageButton" Name="TaskTracingDialog/btn">
+        <Property Name="Tooltip" Value="收起/打开任务追踪" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:component image:TreeListOpenedHover1" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="NormalImage" Value="set:component image:TreeListOpenedNormal1" />
+        <Property Name="PushedImage" Value="set:component image:TreeListOpenedPushed1" />
+        <Property Name="UnifiedMaxSize" Value="{{0,13},{0,13}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,13},{0,13}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.889952,0},{0.34375,0},{0.952153,0},{0.75,0}}" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="TaskTracingDialog/acceptbtn">
+        <Property Name="Tooltip" Value="打开/关闭可接任务栏" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl37 image:kjhov" />
+        <Property Name="NormalImage" Value="set:MainControl37 image:kjnor" />
+        <Property Name="PushedImage" Value="set:MainControl37 image:kjpus" />
+        <Property Name="UnifiedMaxSize" Value="{{0,51},{0,17}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,51},{0,17}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.631579,0},{0.375,0},{0.875598,0},{0.90625,0}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="TaskTracingDialog/title/Name">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="任务追踪" />
+        <Property Name="HorzExtent" Value="60" />
+        <Property Name="VertExtent" Value="17.1936" />
+        <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+        <Property Name="BorderColour" Value="FF5F4100" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.062201,0},{0.34375,0},{0.382775,0},{0.4,13}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="TaskTracingDialog/tuijianbtn">
+        <Property Name="Tooltip" Value="打开/关闭推荐任务" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl37 image:tjhov" />
+        <Property Name="NormalImage" Value="set:MainControl37 image:tjnor" />
+        <Property Name="PushedImage" Value="set:MainControl37 image:tjpus" />
+        <Property Name="UnifiedMaxSize" Value="{{0,51},{0,17}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,51},{0,17}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.382775,0},{0.375,0},{0.626794,0},{0.90625,0}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="TaskTracingDialog/NewTask">
+      <Property Name="Image" Value="set:MainControl image:TradeBack" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,200},{0,16}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,200},{0,16}}" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{-0.00495049,0},{0,-46},{0.985148,0},{0,-30}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticText" Name="TaskTracingDialog/NewTask/Text">
+        <Property Name="Text" Value="激活" />
+        <Property Name="HorzExtent" Value="26" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.125,0},{0.125,0},{0.275,0},{1.0625,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="TaskTracingDialog/NewTask/Name">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="天尊任务" />
+        <Property Name="HorzExtent" Value="60" />
+        <Property Name="VertExtent" Value="17.1936" />
+        <Property Name="TextColours" Value="tl:FF48FB61 tr:FF48FB61 bl:FF48FB61 br:FF48FB61" />
+        <Property Name="BorderColour" Value="FF042C01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.29,0},{-0.0625,0},{0.63,0},{1.125,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="TaskTracingDialog/NewTask/CheckBtn">
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl image:CheckHover" />
+        <Property Name="NormalImage" Value="set:MainControl image:CheckNormal" />
+        <Property Name="PushedImage" Value="set:MainControl image:CheckPushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,29},{0,15}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,29},{0,15}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.755,0},{0.0625,0},{0.9,0},{1,0}}" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

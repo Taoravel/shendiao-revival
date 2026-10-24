@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="haomajingpai">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.185,0},{0.299167,0},{0.185,514},{0.299167,251}}" />
+    <Window Type="TaharezLook/StaticImage" Name="haomajingpai/title">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="CentreAligned" />
+      <Property Name="UnifiedMaxSize" Value="{{0,214},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,214},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,88.4},{0,10.2},{0,302.4},{0,37.2}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="haomajingpai/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="竞  拍" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,91},{0,2},{0,170},{0,25}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/MultiColumnList" Name="haomajingpai/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0,16},{0,56},{0,301},{0,232}}" />
+      <Window Type="TaharezLook/MultiColumnList1" Name="haomajingpai/numberlist">
+        <Property Name="UnifiedAreaRect" Value="{{-1.21883e-005,0},{0,4},{0,283.785},{0,171}}" />
+        <Property Name="ColumnHeader" Value="text:号码 width:{0.2,0} id:0" />
+        <Property Name="ColumnHeader" Value="text:现价 width:{0.26,0} id:1" />
+        <Property Name="ColumnHeader" Value="text:出价最高 width:{1,-131} id:2" />
+      </Window>
+      <Window Type="TaharezLook/Figure1" Name="haomajingpai/Back/Title">
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0849228,0},{0,-18},{0.081414,144},{0.00568182,0}}" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Window Type="TaharezLook/StaticText" Name="haomajingpai/28">
+          <Property Name="Text" Value="待拍号码列表" />
+          <Property Name="HorzExtent" Value="79" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003E6F" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,73},{0,0},{0,161},{0,22}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="haomajingpai/Back2">
+      <Property Name="UnifiedAreaRect" Value="{{0,302},{0,44},{0,495},{0,232}}" />
+      <Window Type="TaharezLook/Combobox" Name="haomajingpai/1">
+        <Property Name="UnifiedAreaRect" Value="{{0,62},{0,6},{0,188},{0,87}}" />
+        <Property Name="MaxEditTextLength" Value="2147483647" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="haomajingpai/2">
+        <Property Name="Text" Value="选择商店" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,7},{0,7},{0,60},{0,27}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="haomajingpai/21">
+        <Property Name="Text" Value="已选号码" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,7},{0,30},{0,60},{0,50}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="haomajingpai/22">
+        <Property Name="Text" Value="底　　价" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,7},{0,51},{0,60},{0,71}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="haomajingpai/23">
+        <Property Name="Text" Value="当前价格" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,7},{0,72},{0,60},{0,92}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="haomajingpai/24">
+        <Property Name="Text" Value="出　　价" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,7},{0,94},{0,60},{0,114}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Combobox" Name="haomajingpai/11">
+        <Property Name="UnifiedAreaRect" Value="{{0,62},{0,92},{0,188},{0,198}}" />
+        <Property Name="MaxEditTextLength" Value="2147483647" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="haomajingpai/3">
+        <Property Name="Text" Value="竞   拍" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="UnifiedAreaRect" Value="{{0,100},{0,125},{0,174},{0,149}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="haomajingpai/31">
+        <Property Name="Text" Value="选择号码" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="UnifiedAreaRect" Value="{{0,18},{0,125},{0,92},{0,149}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="haomajingpai/32">
+        <Property Name="Text" Value="刷   新" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="UnifiedAreaRect" Value="{{0,18},{0,153},{0,92},{0,177}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="haomajingpai/33">
+        <Property Name="Text" Value="退   出" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="UnifiedAreaRect" Value="{{0,100},{0,153},{0,174},{0,177}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="haomajingpai/Back2/MoneyBack1">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,62},{0,50},{0,188},{0,70}}" />
+        <Window Type="TaharezLook/StaticImage" Name="haomajingpai/Back2/MoneyBack1/Money">
+          <Property Name="Image" Value="set:MainControl image:Xianjin" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,106},{0,0},{0,125},{0,19}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="haomajingpai/26">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,6},{0.0797636,0},{0,104},{0.0797636,20}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="haomajingpai/Back2/MoneyBack2">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,62},{0,29},{0,188},{0,49}}" />
+        <Window Type="TaharezLook/StaticText" Name="haomajingpai/25">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.047448,0},{0.0199351,0},{0,120.457},{0.0199351,20}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="haomajingpai/Back2/MoneyBack3">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,62},{0,71},{0,188},{0,91}}" />
+        <Window Type="TaharezLook/StaticImage" Name="haomajingpai/Back2/MoneyBack3/Money3">
+          <Property Name="Image" Value="set:MainControl image:Xianjin" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.843397,0},{0,0},{0.994191,0},{0,19}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="haomajingpai/27">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,6},{0.00442881,0},{0,102},{0.00442881,20}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

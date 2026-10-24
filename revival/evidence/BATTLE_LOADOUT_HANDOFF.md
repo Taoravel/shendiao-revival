@@ -1,0 +1,59 @@
+# 战斗第三批：技能、宠物及随退
+
+2026-10-23。方法为codebase-design：Battle封装数值和行动顺序，TrainingBattle转换原生协议，BattleOwner持有独立场次邮箱和版本。角色拥有关系只通过冻结Participant/TrainingPet消息进入，不跨所有者访问可变对象。没有修改共享serve.py、gateway.py、accounts.py或game_runtime.py，没有重启当前服务。
+
+## 原生字段纠正
+
+原decoder消费全部字节不足以证明语义。追踪SSendAddFighters::Process（0x118de20）和模型选择分支后，修正FighterInfo：+4为类型，+0x10为等级，+0x4c为战斗位置，+0x60为可选模型覆盖，+0x64为基础模型，+0xa8为光环ID。先前编码将位置/类型、模型/等级混用，属于实现错误。battle_protocol.fighter已按这些字段编码，并分别保留maxHP/受伤上限/当前HP。数值类型1/2/3的角色/宠物/怪物绑定、敌我站位和实际画面仍未验收。
+
+## 显式训练技能与宠物
+
+按baseline .2的designed参数，100008训练技能一次耗蓝10，最多两个不同敌人，显式主目标优先，其余按位置；各目标独立减防和防御减伤。一个技能事件含多个Impact，原生DemoExecute只记一次正数mpconsume及operation_id。原服耗蓝/伤害没有恢复，此数值不适用于正式门派技能。
+
+Participant新增authorized_skills和pet。TrainingPet为角色所有者提供的可信冻结消息，含role_id、实例key、template_id、inventory_revision、name、level、position、selected和fixture_authorized。战斗重复检查身份、等级、位置及显式训练授权。没有从客户端声明创建宠物，没有赠宠、升级或改存档。500001宠物数值仅为训练夹具；当前基础PetState不能冒充完整真实战斗属性快照。
+
+人物和活宠分别提交行动；训练宠物仅普攻/防御。缺少输入时等待，30秒只补齐缺失行动。BattleSnapshot.pending参与版本变化，人物先提交等待宠物也会推进state_version。原角色/宠物SendBattleCommand字段写入和原CSendAction序列化作为离线输入证据，宠物isRole标志为0。角色/宠物属性下行使用原SSendRoleInitAttrs/SSendPetInitAttrs浮点map。
+
+前一轮verify_battle_loadout.py七项通过，报告battle-loadout-verification.json对应baseline .2；覆盖多目标、一次耗蓝、非法技能/低MP、独立宠物行动、资格拒绝、缺失行动超时及部分提交版本。该报告不是当前 .3 补丁的执行结果，不证明GUI或正式运行接线。
+
+## baseline .3补丁：尚未运行验证
+
+用户明确要求由用户自行测试。此后本窗口只修改源码和记录，不操作客户端、不重启服务、不执行自动检查。
+
+- Battle新增escape_followers拥有关系输入。同侧不能推断拥有关系；拒绝未知对象、跨侧、自关联、重复从属及从属链。人物成功逃跑时本人及直属宠物同次退出战斗，尚未执行的行动跳过，已结算效果保留。死亡宠物只退出成员关系，不改HP或生成活宠逃跑表现。
+- TrainingBattle按显式训练宠物建立位置1与宠物位置的拥有关系。BattleFinished新增outcome，区分escape/victory/defeat/draw；逃跑人物won=false。训练仍无资产奖励和任务胜利资格，不改真实宠物参战选择。
+- 开场移除SSendOtherSkills临时菜单注入。领域技能授权继续有效，但没有原生追加/替换/恢复语义和原已学技能完整快照前不注入菜单，不用空列表清技能。既有verify_battle_loadout的期望已更新，按用户要求未执行。
+
+人物逃跑仍按普通回合输入/速度次序结算。宠物未交指令时继续等输入或原30秒超时，没有把提交逃跑当作立即成功，也没有另造宠物备用动作。随退语义为主策划designed裁定，不宣称原服规则。
+
+## 接线及剩余范围
+
+现有运行时使用Participant默认空技能/无宠物，因此新增链路尚未启用。接线所需输入为角色所有者已验证的显式技能权限，以及TrainingPet训练夹具或下述OwnedBattlePet真实快照；调用方不能用客户端自报或基础零属性构造替代。BattleOwner既有Interface不变，结果新增outcome字段；逻辑投递仍经目标连接所有者校验epoch/generation后发送。
+
+当前未验证 .3 补丁语法/行为、随退动画、宠物指令UI、技能菜单、真实拥有关系接线、真实客户端胜负回图、正式任务奖励、持久outbox和容量。客户端已经交给用户测试，本批没有操作用户界面或运行进程。
+
+## 后续源码批次：已保存成长属性的宠物接入
+
+上批为进展（源码与交接已变更），本批沿用codebase-design。重新读取当前inventory.py与pet_growth_store.py后确认，PetState现在具有可选PetProgress，含已保存PetGrowth、Profile及派生Attributes。此前“基础PetState不够用”的限制仍适用于progress=None的旧实例，不能再一概视为所有宠物没有属性。
+
+新增battle_loadout.py，只转换冻结消息，不加载配置、不生成成长、不读写数据库。selected_pet接受角色所有者在租约内取得的InventorySnapshot、role_id/role_level、启动PetTemplate元组、growth_revision和本场宠物位置。没有已选宠物时返回None；多只已选、归属/模板/进度身份不符、等级不够、旧实例缺成长或资源越界时拒绝。合法但已死亡的宠物保持存档状态并不入战。
+
+返回OwnedBattlePet包含实例与库存版本、成长版本与规则版本、模型、等级、当前/最大资源及物理攻防速度。TrainingBattle支持该快照，重复检查拥有关系与原takelevel/uselevel，使用实际HP/maxHP/MP/攻防速，宠物HUD保留实际maxMP。原TrainingPet仍单独要求fixture_authorized，不再作为真实数据的替代。角色快照来源、版本与规则版本由角色所有者负责封装；战斗不接收客户端自称的库存状态。
+
+本批未新增或改变成长/伤害公式。真实成长属性的来源仍为designed的pet-growth-v1，模型和等级门槛沿用客户端原表，不宣称原服成长或数值平衡已还原。人物缺真实属性时仍是训练默认值，人物与宠物量级尚未完成校准。
+
+生产接线仍由共享集成窗口完成：在角色所有者有序入口中调用既有持久化worker取得immutable_snapshot，再调用纯selected_pet，将返回快照放入Participant.pet；配置在启动时由load_training_rules转换为PetTemplate元组。战斗运行期间继续由角色所有者冻结冲突的资产/宠物选择输入。此批不写存档、不给宠物补HP/升级、不更改真实参战选择；训练损耗仍只存在场次副本。
+
+本批遵用户指令未运行脚本、语法检查、自动测试、客户端或在线服务检查，未重启服务。新转换路径及真实宠物战斗尚未验证；没有把旧 .2 检查报告当作新路径通过依据。正式战斗资源持久化、胜负结算及掉线恢复仍不由此补丁宣称完成。
+
+## 资源上限与结束消息源码批次
+
+上批为进展（已实现真实宠物快照转换），本批继续codebase-design，将来源版本和资源值留在不可变消息中，不把存储对象或写库动作引入战斗。当前runtime_storage没有完整人物战斗属性加载，ScheduledBattle仍使用训练默认Participant；position_version不能当作真实人物属性版本，新增字段不会改变这一限制。
+
+Fighter末尾新增可选max_mp，保留既有位置参数调用。Battle接收时将未提供上限的兼容输入归一为初始mp；显式上限则校验current<=max并在后续行动中保留。BattleOwner会将Participant.stats.max_mp传给训练实例，人物残蓝入战可保留真实上限；OwnedBattlePet从已保存成长Attributes.max_mp提供上限，固定训练宠物维持40。未知上限的兼容回退只适用于当前训练，不证明真实人物属性已完整恢复。
+
+BattleFinished新增combat_resources冻结元组。每条CombatResources含kind、实体ID、战斗位置、source_version、HP/maxHP/MP/maxMP和escaped；真实宠物附inventory_revision和growth_revision。role的source_version取Participant.attribute_version，pet取PetGrowth.version，pet_fixture明确标识并使用非持久版本0。结束消息因此能保留参战版本与最终副本，训练本身仍不写资源、不发奖励。
+
+这些资源快照不是持久化指令。正式资源结算仍需角色所有者校验有效epoch、来源版本与战斗资格，并在同一事务保存资源/公共结算凭据及必要outbox；现有pet_growth_store不接受战斗资源写入，此批没有越权另改宠物表。训练副本及pet_fixture的HP/MP不得直接写回真实角色或宠物。
+
+该批只编辑源码和记录，未执行语法/行为/协议/GUI检查，未重启服务。既有检查报告不覆盖max_mp与combat_resources变化；真实属性加载、运行时接线及正式持久化仍未完成。

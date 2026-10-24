@@ -1,0 +1,33 @@
+{
+  "revision": "2026-10-23.role-equipment.2",
+  "attribute_policy": "2026-10-23.attributes.1",
+  "scope": "ordinary six-slot non-godweapon templates with nonempty fully-known flat base effects and explicit clean instances",
+  "research": ["evidence/ORDINARY_EQUIPMENT_ATTRIBUTE_RESEARCH.md", "evidence/ORDINARY_EQUIPMENT_ELIGIBILITY_AUDIT.md"],
+  "flat_mapping": {"81":80,"101":100,"111":110,"121":120,"131":130,"141":140,"151":150,"811":810,"821":820,"1231":1230,"1241":1240},
+  "mapping_provenance": "client_verified unique cattributedesconfig numid links; not subtract-one inference",
+  "templates": "intersect citemattr with cequipeffect; itemtype low nibble8 and slot nibble0..5; exclude explicit cgodweapon; require nonempty base effects and known flat IDs; only extra zero tail values may be trimmed",
+  "expected_templates": 973,
+  "expected_suiting_deferred":212,
+  "suiting":"preserve original metadata; nonzero is pending unverified set semantics and refuses final projection, even for a clean instance; do not infer inactive set effects from prefix/score",
+  "excluded": {"empty_base_lists":64,"percentage_formula_unknown":1},
+  "composition": "designed current naked growth plus actual current equipped original flat totals; no incremental double addition; zero durability contributes no effects",
+  "eligibility": {
+    "slot": "client_verified itemtype nibble and original equipment dispatch",
+    "characters": "client_verified slot0 roleNeed empty unrestricted, nonempty OR of original character IDs; nonweapon dispatcher does not apply roleNeed; preserve original20/21 values even though current ten characters cannot match",
+    "sex": "client_verified sexNeed0 unrestricted, otherwise exact original role sex; original shape remainder1..5 ->1, remainder0/6..9 ->2",
+    "minimum_level": "designed server enforcement role level>=original citemattr.needLevel, preserving existing Inventory policy; generic client use compares needLevel but direct equipment dispatch does not prove original server enforcement",
+    "instance": "designed restricted clean profile: identified1, prefix_quality1, score0, exact original base_properties, condition color1, known durability; quality modifiers absent"
+  },
+  "sealing_basis": {
+    "new_restoration_role_strength":0,
+    "new_restoration_role_resistance":0,
+    "growth_per_level":0,
+    "provenance":"designed; old roles require explicit known strength and resistance; missing resistance is unknown, never default0"
+  },
+  "resources": "requires role-resources-v1 single carrier and explicit resource-aware totals/composition; legacy mixed projection is refused; equip/wear/repair never heal and lower caps clip",
+  "display": {"resistance_key":1240,"entry_32i_index":15,"ordinary_total_keys":21,"bounds":"nonnegative signed32 exactly representable float32"},
+  "unsupported": ["percentage effects", "empty base lists", "advanced prefix or score", "enhancement", "gems", "sets", "godweapons", "unknown instance modifiers", "original combat balance or sealing success formula"],
+  "activation":"explicit loader and basis policy only; default v1 loader unchanged; no automatic old basis/resource profile migration; shared activation and six-slot runtime require separate verification",
+  "native_gui_verified":false,
+  "live_server_changed":false
+}

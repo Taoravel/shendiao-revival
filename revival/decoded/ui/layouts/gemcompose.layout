@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="GemCompose">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,159},{0,110},{0,450},{0,497}}" />
+    <Window Type="TaharezLook/StaticText" Name="GemCompose/phyneed">
+      <Property Name="Text" Value="需要体力" />
+      <Property Name="HorzExtent" Value="52" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,37},{0,347},{0,92},{0,369}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="GemCompose/phynum">
+      <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0,93},{0,349},{0,177},{0,367}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GemCompose/compose">
+      <Property Name="Text" Value="合成" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0,183},{0,346},{0,255},{0,370}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="GemCompose/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,214},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,214},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,148},{0,12},{0,362},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="GemCompose/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="合成宝石" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,58},{0,1},{0,149},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="GemCompose/Case">
+      <Property Name="UnifiedAreaRect" Value="{{0,13},{0,37},{0.948454,0},{0,344}}" />
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="GemCompose/part1">
+        <Property Name="UnifiedAreaRect" Value="{{0.0186312,0},{0.00814338,0},{0.05,244.95},{0.05,95.551}}" />
+        <Window Type="TaharezLook/StaticText" Name="GemCompose/part1/info1">
+          <Property Name="Text" Value="宝石" />
+          <Property Name="HorzExtent" Value="26" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.444653,0},{0,8},{0.444653,28},{0,30}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="GemCompose/part1/gem1">
+          <Property Name="UnifiedAreaRect" Value="{{0.407096,0},{0,33},{0.41105,44},{0,78}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="GemCompose/part1/gem2">
+          <Property Name="Visible" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,164},{0,32},{0,209},{0,77}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GemCompose/part1/gem1name">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,88.5},{0,81},{0,162.5},{0,103}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GemCompose/part1/gem2name">
+          <Property Name="Visible" Value="False" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,148.75},{0,80},{0,222.75},{0,102}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GemCompose/part1/info2">
+          <Property Name="Text" Value="宝石" />
+          <Property Name="Visible" Value="False" />
+          <Property Name="HorzExtent" Value="26" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,172.5},{0,7},{0,204.5},{0,29}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="GemCompose/part2">
+        <Property Name="UnifiedAreaRect" Value="{{0.0186312,0},{0.05,99.401},{0.0461977,245.95},{0.05,191.401}}" />
+        <Window Type="TaharezLook/RichEditbox" Name="GemCompose/part2/info">
+          <Property Name="LineSpace" Value="1" />
+          <Property Name="BlinkCaret" Value="True" />
+          <Property Name="MaxTextLength" Value="2147483647" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,-8.63502},{0.05,-1.22701},{0.05,237.365},{0.05,80.7729}}" />
+          <Property Name="BackGroundEnable" Value="False" />
+          <Property Name="BlinkCaretTimeout" Value="0.5" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="GemCompose/part3">
+        <Property Name="UnifiedAreaRect" Value="{{0.0186312,0},{0.05,193.401},{0.05,244.95},{0.05,288.401}}" />
+        <Window Type="TaharezLook/StaticText" Name="GemCompose/part3/successrate">
+          <Property Name="Text" Value="基础成功率：" />
+          <Property Name="HorzExtent" Value="78" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,12.2012},{0,10.9461},{0,92.2012},{0,32.9461}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GemCompose/part3/successnum">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,87.2012},{0,11.9461},{0,144.201},{0,33.9461}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GemCompose/part3/Additional">
+          <Property Name="Text" Value="附加成功率：" />
+          <Property Name="HorzExtent" Value="78" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF33FF33 tr:FF33FF33 bl:FF33FF33 br:FF33FF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,12.2012},{0,35.9461},{0,92.2012},{0,57.9461}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GemCompose/part3/rate">
+          <Property Name="TextColours" Value="tl:FF33FF33 tr:FF33FF33 bl:FF33FF33 br:FF33FF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,87.2012},{0,35.9461},{0,132.201},{0,57.9461}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GemCompose/part3/Final">
+          <Property Name="Text" Value="最终成功率：" />
+          <Property Name="HorzExtent" Value="78" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,12.2012},{0,60.9461},{0,92.2012},{0,82.9461}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GemCompose/part3/Finalrate">
+          <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,87.2012},{0,61.9461},{0,144.201},{0,83.9461}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GemCompose/part3/rate1">
+          <Property Name="Text" Value="     级                  技能" />
+          <Property Name="HorzExtent" Value="108" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF33FF33 tr:FF33FF33 bl:FF33FF33 br:FF33FF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,116.724},{0,35.9461},{0.05,227.724},{0,57.9461}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticText" Name="GemCompose/part3/rate1/Level">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.00270215,0},{0.0272727,0},{0.128828,0},{0.3,14}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/LinkText" Name="GemCompose/part3/rate1/Skill">
+            <Property Name="Text" Value="宝石合成" />
+            <Property Name="UserID" Value="53606" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.254955,0},{0.0727274,0},{0.254955,0},{0.3,15.0003}}" />
+          </Window>
+          <Window Type="TaharezLook/LinkText" Name="GemCompose/part3/rate1/Skill1">
+            <Property Name="Text" Value="宝石合成" />
+            <Property Name="UserID" Value="53606" />
+            <Property Name="UnifiedAreaRect" Value="{{0.25991,0},{0.122727,0},{0.755405,0},{0.35,15.0003}}" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

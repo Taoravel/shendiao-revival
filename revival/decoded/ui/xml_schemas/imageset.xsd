@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Imageset" type="ImagesetType" />
+  <xs:complexType name="ImagesetType">
+    <xs:sequence>
+      <xs:element name="Image" type="ImageType" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="Imagefile" type="xsd:string" use="required" />
+    <xs:attribute name="ResourceGroup" type="xsd:string" use="optional" default="" />
+    <xs:attribute name="Name" type="xsd:string" use="required" />
+    <xs:attribute name="NativeHorzRes" type="xsd:nonNegativeInteger" use="optional" default="640" />
+    <xs:attribute name="NativeVertRes" type="xsd:nonNegativeInteger" use="optional" default="480" />
+    <xs:attribute name="AutoScaled" type="xsd:boolean" use="optional" default="false" />
+  </xs:complexType>
+  <xs:complexType name="ImageType">
+    <xs:attribute name="Name" type="xsd:string" use="required" />
+    <xs:attribute name="XPos" type="xsd:nonNegativeInteger" use="required" />
+    <xs:attribute name="YPos" type="xsd:nonNegativeInteger" use="required" />
+    <xs:attribute name="Width" type="xsd:nonNegativeInteger" use="required" />
+    <xs:attribute name="Height" type="xsd:nonNegativeInteger" use="required" />
+    <xs:attribute name="XOffset" type="xsd:integer" use="optional" default="0" />
+    <xs:attribute name="YOffset" type="xsd:integer" use="optional" default="0" />
+  </xs:complexType>
+</xs:schema>

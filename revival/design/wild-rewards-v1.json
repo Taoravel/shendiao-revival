@@ -1,0 +1,24 @@
+{
+  "revision": "wild-rewards-v1",
+  "source_status": "designed",
+  "scope": "single_role_single_enemy_normal_wild_victory",
+  "experience": {"reference": "scene_min_level_nextexp", "numerator": 1, "denominator": 100, "minimum": 1},
+  "overlevel_no_reward_above_scene": 10,
+  "currency": "bound_silver",
+  "silver_per_scene_level": 2,
+  "drops": [
+    {"item_id": 33001, "quantity": 1, "binding": 1, "weight": 1000},
+    {"item_id": 33013, "quantity": 1, "binding": 1, "weight": 1000}
+  ],
+  "drop_draw_range": 10000,
+  "empty_weight": 8000,
+  "pet_experience": "pending_separate_recipient_and_combat_resource_settlement",
+  "notes": [
+    "Original item IDs/names and nextexp values are client_verified; all reward formulas and probabilities here are designed.",
+    "Only victory after playback acknowledgement awards. Escape, defeat, draw and abort award zero.",
+    "Drop roll is derived once from server-generated encounter/battle IDs and persisted at admission; retries never reroll.",
+    "Bag full, unknown wallet, overflow or any failed channel rolls back the entire reward transaction; the admission plan remains pending for retry.",
+    "Existing growth policy controls automatic/manual level-up; no invented experience curve.",
+    "No double-time, team distribution, rare drops or death penalties are implied."
+  ]
+}

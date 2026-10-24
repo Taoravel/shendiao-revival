@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/HouseFrameWindow" Name="ChooseTime">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.29,0},{0.20811,0},{0.07375,510},{0.0633334,333}}" />
+    <Window Type="TaharezLook/StaticText" Name="ChooseTime/name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="选 择 时 间" />
+      <Property Name="HorzExtent" Value="86" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+      <Property Name="BorderColour" Value="FF280B03" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,291},{0.0853659,0},{0.05,479},{0.05,30}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="ChooseTime/close">
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:component image:CloseButtonHover" />
+      <Property Name="NormalImage" Value="set:component image:CloseButtonNormal" />
+      <Property Name="PushedImage" Value="set:component image:CloseButtonPressed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,21},{0,19}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,21},{0,19}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,724},{0.0934959,0},{0.05,745},{0.05,30}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ChooseTime/time1">
+      <Property Name="Text" Value="周六20:00~22:00" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.20178,0},{0.333333,0},{0.795252,0},{0.487805,0}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ChooseTime/time2">
+      <Property Name="Text" Value="周日20:00~22:00" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.20178,0},{0.605691,0},{0.795252,0},{0.760163,0}}" />
+    </Window>
+  </Window>
+</GUILayout>

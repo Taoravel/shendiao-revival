@@ -1,0 +1,11 @@
+Standards：硬违规0；heuristic可行动发现0。
+
+方法：实际应用code-review逐hunk审唯一新增ADDENDUM，逐项判断完整12种Fowler启发；codebase-design核连接状态与codec的单写者/Interface/Seam；diagnosing-bugs用于追踪冻结BASE等待边及判断所需反例，未越过只读限制声称完成动态复现。BASE无该文档，非Git、无commits。
+
+证据：冻结game_runtime.py:1232、1240确有send pump→RoleOwner等待。ADDENDUM:5将许可CAS交独立有界控制邮箱，处理同步且不等待任何owner/IO/send pump；只有该处理者写binding state，codec流程仅读不可变快照并仍独占RC4/MPPC与writer。因此没有新增第二绑定写者，设计上移除了Role→同send pump控制→Role的依赖环。符合ARCHITECTURE:7单写者/禁止跨owner持业务锁及22–25有界队列/连接编码所有权要求。
+
+第7行完整expected及空绑定仍单调control_revision防ABA，旧CAS失败不清新状态；满载/close/超时/取消不伪造成功、不回滚已完成CAS，符合ARCHITECTURE:26旧租约失效与取消不撤销已提交操作。第9行要求所有跨owner await结束后紧邻encode/write重核，pending拒发送且最终核对后无await；与成员裁定r2:27–29的撤销屏障和旧回复隔离一致。第11行把容量登记、真实环形等待、另一连接推进等设为实施验收，未把静态无锁当成并发证明。
+
+审前后4个source SHA及落盘diff全部匹配scope；新增文档SHA256=18ab88cd7f6d5320cf047b63a7e7001df62ebca86087e123e80494a74f9adbd7，BASE game_runtime=34f0b6dc6d7cf2d4fb1ddfb1e46be0ba3cad65ae9b61cff581dc33aba06a52bc，diff=12135f7608add8b894e1539dec386c5ae2db5eba5990cce576a5fb7b7e34f918。其余完整值见scope.json。
+
+仅静态设计审查，未运行测试、服务、DB、socket或GUI；真实deadlock复现、解除及队列满/close语义仍待main在固定实现中验证。不批准共享候选、部署或收费，只新增本报告。

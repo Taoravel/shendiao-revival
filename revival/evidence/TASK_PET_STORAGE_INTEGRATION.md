@@ -1,0 +1,15 @@
+# 任务宠物经验共享入口接线
+
+2026-10-23，原始复原集成窗口；领域契约见TASK_PET_EXPERIENCE_INTEGRATION.md，规则见TASK_PET_EXPERIENCE_DECISION.md。
+
+方法为codebase-design：规则仅启动加载并注入AccountStore/LeasedAccounts，完成事务及提交后重读隐藏在runtime_storage既有小Interface；固定接受者/资格和经验曲线留在TaskWorkflow/Inventory，不复制领域逻辑。diagnosing-bugs用于受控提交后读取失败反馈，不把存档接线当作GUI修复。
+
+prepare加载load_task_pet_experience_rules；schema继续由prepare_reward_storage统一准备，无热路径DDL。complete_conversation要求四组准备规则，显式传pet_experience_rules给complete_task_transaction。
+
+第一有效租约事务成功退出后，才在第二有效租约事务调用refresh_completion_pet：重读首次完成固定pet id的当前PetState及当前人物等级/经验，返回CommittedTask。RoleOwner原顺序邮箱覆盖这些步骤，随后acknowledge/publish及生成逻辑消息；连接仍拥有加密压缩/发送。不在提交前把current_pet标为可发，不选择现在参战宠。
+
+第一事务失败不刷新；第一已提交而第二失败不伪称回滚。可信同request_id重试复用奖励凭据、再读固定接受者当前状态；旧epoch不能发布。普通客户端新点击并不自动拥有相同内部键，重登恢复/界面验收另记。
+
+本窗口新增并运行verify_task_pet_storage.py，通过实际complete_conversation及临时原210002可信完成夹具：规则注入；独立SQLite读连接在后置hook确认task已completed，提交前结果current_pet为空；后置受控失败后宠XP10000仍提交；切宠并给原宠后来7XP，同键重试只支付一次，0xc07d6仍为原key/当前10007，当前参战宠不变。证据task-pet-storage-verification.json。未重复领域全回归，不执行任务战斗/GUI/真实端口。
+
+源码未部署，现场未操作。原包549条非零PetExpReward不表示549项玩法已恢复；旧completed无接受者、旧成长不明、缺失/放生等仍遵守pending契约。

@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="CEGUIConfig" type="CEGUIConfigType" />
+  <xs:complexType name="CEGUIConfigType">
+    <xs:sequence>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Logging" type="loggingType" />
+        <xs:element name="AutoLoad" type="autoLoadType" />
+        <xs:element name="ResourceDirectory" type="resourceDirectoryType" />
+        <xs:element name="DefaultResourceGroup" type="defaultResourceGroupType" />
+        <xs:element name="Scripting" type="scriptingType" />
+        <xs:element name="DefaultXMLParser" type="defaultObjectType" />
+        <xs:element name="DefaultImageCodec" type="defaultObjectType" />
+        <xs:element name="DefaultFont" type="defaultObjectType" />
+        <xs:element name="DefaultMouseCursor" type="defaultMouseCursorType" />
+        <xs:element name="DefaultTooltip" type="defaultObjectType" />
+        <xs:element name="DefaultGUISheet" type="defaultObjectType" />
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="loggingType">
+    <xs:simpleContent>
+      <xs:extension base="xsd:string">
+        <xs:attribute name="filename" type="xsd:string" use="optional" default="CEGUI.log" />
+        <xs:attribute name="level" type="logLevel" use="optional" default="Standard" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="autoLoadType">
+    <xs:simpleContent>
+      <xs:extension base="xsd:string">
+        <xs:attribute name="type" type="resourceType" use="required" />
+        <xs:attribute name="group" type="xsd:string" use="optional" default="" />
+        <xs:attribute name="pattern" type="xsd:string" use="optional" default="*" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="resourceDirectoryType">
+    <xs:simpleContent>
+      <xs:extension base="xsd:string">
+        <xs:attribute name="group" type="xsd:string" use="required" />
+        <xs:attribute name="directory" type="xsd:string" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="defaultResourceGroupType">
+    <xs:simpleContent>
+      <xs:extension base="xsd:string">
+        <xs:attribute name="type" type="resourceType" use="optional" default="Default" />
+        <xs:attribute name="group" type="xsd:string" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="scriptingType">
+    <xs:simpleContent>
+      <xs:extension base="xsd:string">
+        <xs:attribute name="initScript" type="xsd:string" use="optional" default="" />
+        <xs:attribute name="terminateScript" type="xsd:string" use="optional" default="" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="defaultObjectType">
+    <xs:simpleContent>
+      <xs:extension base="xsd:string">
+        <xs:attribute name="name" type="xsd:string" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="defaultMouseCursorType">
+    <xs:simpleContent>
+      <xs:extension base="xsd:string">
+        <xs:attribute name="imageset" type="xsd:string" use="required" />
+        <xs:attribute name="image" type="xsd:string" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:simpleType name="logLevel">
+    <xs:restriction base="xsd:string">
+      <xs:enumeration value="Errors" />
+      <xs:enumeration value="Standard" />
+      <xs:enumeration value="Informative" />
+      <xs:enumeration value="Insane" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="resourceType">
+    <xs:restriction base="xsd:string">
+      <xs:enumeration value="Imageset" />
+      <xs:enumeration value="Font" />
+      <xs:enumeration value="Scheme" />
+      <xs:enumeration value="LookNFeel" />
+      <xs:enumeration value="Layout" />
+      <xs:enumeration value="Script" />
+      <xs:enumeration value="XMLSchema" />
+      <xs:enumeration value="Default" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

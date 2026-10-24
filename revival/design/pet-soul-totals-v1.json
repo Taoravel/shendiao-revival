@@ -1,0 +1,16 @@
+{
+  "revision": "2026-10-24.pet-soul-totals.1",
+  "research": "evidence/PET_SOUL_FINAL_ATTRIBUTE_RESEARCH.md",
+  "source": "client_verified original14 mappings and exact raw values; composition/resources below designed",
+  "flat_mapping": {"81":"physical_attack","811":"magic_attack","101":"physical_defense","821":"magic_defense","151":"max_mp","141":"max_hp","131":"speed"},
+  "percent_mapping": {"112":110,"122":120},
+  "ratio_mapping": {"741":740,"1551":1550,"1561":1560,"1581":1580,"1591":1590},
+  "extra_ids": [110,120,740,1550,1560,1580,1590],
+  "composition_mode": "flat_add__percent_sum_floor__ratio_signed_add",
+  "ratio_bounds": [-1,1],
+  "resource_cause_mode": "absolute_clip_no_revive",
+  "composition": {"provenance":"designed", "flats":"canonical growth/blood/stone totals plus all equipped flat contributions exactly once", "hit_dodge":"floor(explicit baseline*(1+sum(original percent modifiers)))", "five_ratios":"explicit exact rational baseline plus sum(original numid ratios), preserving signs", "ratios_allowed":"-1..1, reject overflow/out-of-range, no silent clamp", "missing_extras":"reject; require complete explicit7-field immutable baseline; no per-level growth of these extras in this policy", "rounding":"exact Fraction internally; hit/dodge floor once after all contributions; all final integer fields signed31 nonnegative, hp_max and speed positive"},
+  "resources": {"provenance":"designed", "carrier":"inventory_pet_growth.state only; no duplicate HP/MP", "soul_change":"keep current absolute HP/MP, clip down to new caps, death remains0", "medicine":"explicit caller-owned resource update only, no revival", "combat":"consume-only actual values", "read_paid":"strict current source, no repair or historical replay"},
+  "activation":"explicit per-pet source adoption and selected growth totals rules; default old reader refuses adopted metadata; shared remains gated until all affected mutators/consumers dispatch this policy",
+  "native":"ordinary Pet absolute integer fields; hit/dodge integer map only after exact float32 representability; five fractional ratios never sent through known truncating generic float map; ratio UI scale and battle mechanics remain gates"
+}

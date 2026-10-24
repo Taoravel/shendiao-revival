@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="NpcTipsDialog">
+    <Property Name="SoundResource" Value="ciqi.ogg" />
+    <Property Name="UnifiedAreaRect" Value="{{0,204},{0,229},{0,704},{0,425}}" />
+    <Property Name="CloseSoundResource" Value="npcdlg.ogg" />
+    <Window Type="TaharezLook/StaticImage" Name="NpcTipsDialog/icon">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="Tiled" />
+      <Property Name="VertFormatting" Value="Tiled" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,-143},{0,-84},{0,113},{0,172}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticImage" Name="NpcTipsDialog/back/NPCNameBack">
+        <Property Name="Image" Value="set:MainControl image:NPCNameBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,272},{0,40}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,272},{0,40}}" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,28},{0,252},{0,300},{0,292}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="NpcTipsDialog/name">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="Text" Value="开心一刻一一一一" />
+          <Property Name="HorzExtent" Value="120" />
+          <Property Name="VertExtent" Value="17.1936" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,13},{0,9},{0,214},{0,29}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="NpcTipsDialog/back">
+      <Property Name="Image" Value="set:MainControl image:NPCtalk" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="Tiled" />
+      <Property Name="UnifiedMaxSize" Value="{{0,465},{0,177}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,465},{0,177}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,1},{0,465},{0,183}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/ImageButton" Name="NpcTipsDialog/closeBtn">
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:component image:CloseButtonHover" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="NormalImage" Value="set:component image:CloseButtonNormal" />
+        <Property Name="PushedImage" Value="set:component image:CloseButtonPressed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,21},{0,19}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,21},{0,19}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,433},{0,10},{0,452},{0,31}}" />
+      </Window>
+      <Window Type="TaharezLook/RichEditbox" Name="NpcTipsDialog/RichEditBox">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="ReadOnly" Value="True" />
+        <Property Name="LineSpace" Value="1" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="MaxTextLength" Value="1073741823" />
+        <Property Name="UnifiedAreaRect" Value="{{0,118},{0,16},{0,437},{0,161}}" />
+        <Property Name="BackGroundEnable" Value="False" />
+        <Property Name="BlinkCaretTimeout" Value="0.5" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="NpcTipsDialog/righticon">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,96},{0,93}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,96},{0,93}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.705651,0},{0.37149,0},{1.34096,0},{1.14137,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

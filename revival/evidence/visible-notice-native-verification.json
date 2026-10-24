@@ -1,0 +1,35 @@
+{
+  "passed": [
+    "pure immutable local notice matches original SSendChatMsg marshal with sender0, fixed system label, level0 and current channel2",
+    "complete original SSendChatMsg Process bypasses player blacklist for source0 and passes all six arguments to original ChatManager ingress",
+    "original constructor/unmarshal consumes the actual encoded bytes and its decoded object reaches original Process/ChatManager ingress intact",
+    "invalid or oversized plain notice text rejects before encoding"
+  ],
+  "image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+  "consumer_ingress": [
+    [
+      2,
+      0,
+      0,
+      0,
+      83890192,
+      83890228
+    ]
+  ],
+  "decoded_consumer_ingress": [
+    [
+      2,
+      0,
+      0,
+      "系统通知",
+      "当前角色资料尚未准备好，请稍后重试。"
+    ]
+  ],
+  "original_unmarshal_verified": true,
+  "designed_chat_fallback": true,
+  "native_system_notice_protocol_implemented": false,
+  "chat_manager_render_executed": false,
+  "native_gui_verified": false,
+  "live_server_changed": false,
+  "shared_entry_files_edited": false
+}

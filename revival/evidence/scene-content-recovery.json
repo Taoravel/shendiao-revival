@@ -1,0 +1,133 @@
+{
+  "summary": {
+    "configured_maps": 304,
+    "resource_directories": 308,
+    "maps_with_case_resolved_resources": 302,
+    "unconfigured_resource_directories": 6,
+    "maze_grids": 308,
+    "monster_region_grids": 44,
+    "static_npc_placements": 3443,
+    "scene_entity_placements": 7592,
+    "scene_bases": 251,
+    "monster_templates": 5635,
+    "npc_templates": 4127,
+    "walking_schedules": 1440
+  },
+  "issues": [
+    {
+      "resource": "leifengta1/monster.dat",
+      "issue": "monster region editor anomalies preserved",
+      "duplicates": 1,
+      "outside": 0
+    },
+    {
+      "resource": "leifengta2/monster.dat",
+      "issue": "monster region editor anomalies preserved",
+      "duplicates": 1,
+      "outside": 0
+    },
+    {
+      "resource": "leifengta3/monster.dat",
+      "issue": "monster region editor anomalies preserved",
+      "duplicates": 1,
+      "outside": 0
+    },
+    {
+      "resource": "leifengta4/monster.dat",
+      "issue": "monster region editor anomalies preserved",
+      "duplicates": 1,
+      "outside": 0
+    },
+    {
+      "resource": "leifengta5/monster.dat",
+      "issue": "monster region editor anomalies preserved",
+      "duplicates": 1,
+      "outside": 3024
+    },
+    {
+      "resource": "leifengta6/monster.dat",
+      "issue": "monster region editor anomalies preserved",
+      "duplicates": 1,
+      "outside": 3024
+    },
+    {
+      "resource": "leifengta7/monster.dat",
+      "issue": "monster region editor anomalies preserved",
+      "duplicates": 1,
+      "outside": 3024
+    },
+    {
+      "resource": "map_1015_taohuadaoyewai/monster.dat",
+      "issue": "monster region editor anomalies preserved",
+      "duplicates": 2,
+      "outside": 0
+    },
+    {
+      "resource": "map_1655_zhengjiuxueren1/monster.dat",
+      "issue": "monster region editor anomalies preserved",
+      "duplicates": 1,
+      "outside": 0
+    },
+    {
+      "resource": "xihushuidao2/monster.dat",
+      "issue": "monster region editor anomalies preserved",
+      "duplicates": 1,
+      "outside": 0
+    },
+    {
+      "resource": "xihushuidao3/monster.dat",
+      "issue": "monster region editor anomalies preserved",
+      "duplicates": 1,
+      "outside": 0
+    },
+    {
+      "resource": "xihushuidao4/monster.dat",
+      "issue": "monster region editor anomalies preserved",
+      "duplicates": 1,
+      "outside": 0
+    },
+    {
+      "map": "1302",
+      "resdir": "quanzhenjiaozhenwudian",
+      "issue": "missing configured RMP"
+    },
+    {
+      "map": "1307",
+      "resdir": "taohuadaoxuanjitang",
+      "issue": "missing configured RMP"
+    },
+    {
+      "map": "1412",
+      "requested": "map_1412_familyPK1/map.rmp",
+      "resolved": "map_1412_familypk1/map.rmp",
+      "issue": "path case mismatch"
+    },
+    {
+      "map": "1413",
+      "requested": "map_1413_familyPK2/map.rmp",
+      "resolved": "map_1413_familypk2/map.rmp",
+      "issue": "path case mismatch"
+    },
+    {
+      "monster": "25059",
+      "shape": "0",
+      "issue": "monster shape missing"
+    },
+    {
+      "monster": "26725",
+      "shape": "48009",
+      "issue": "monster shape missing"
+    },
+    {
+      "monster": "28307",
+      "shape": "146006",
+      "issue": "monster shape missing"
+    }
+  ],
+  "limits": [
+    "Grid byte semantics/monster encounter composition not yet native-verified",
+    "Scene entities may be scenery, timed or transparent; not all are monsters",
+    "Monster templates do not contain server spawn/HP/attack/drop tables"
+  ],
+  "runtime_verified": false
+}

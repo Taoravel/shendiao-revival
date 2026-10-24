@@ -1,0 +1,27 @@
+{
+  "revision": "2026-10-23.npc-shop-payments.1",
+  "scope": "ordinary positive-price NPC service2 purchases only",
+  "research": "evidence/NPC_SHOP_MODES_NATIVE_RESEARCH.md",
+  "decision": "evidence/NPC_SHOP_BOUND_PAYMENT_DECISION.md",
+  "provenance": {
+    "mode0_cash_and_mode1_bound_silver": "client_verified original radio controls and purchase dispatch",
+    "ordinary_price": "client_verified original citemattr.price; require positive integer and actual original shelf membership",
+    "mode1_price_and_binding": "designed same unit price, bound-silver-only expense and binding1 output; original complete server recipe unknown",
+    "quantity_limit": "designed integer1..99"
+  },
+  "modes": {
+    "0": {"currency": "cash", "purpose": "npc_shop", "binding": 0, "receipt": "preserve existing mode0 fingerprint and policy recipe byte-for-byte"},
+    "1": {"currency": "bound_silver", "purpose": "npc_shop_bound", "binding": 1, "receipt": "include payment mode, currency, binding and this payment policy in the new mode1 intent"}
+  },
+  "eligibility": "current trusted service2 ticket, exact full NPC instance and current map/location/generation/role lease; currently authorized ordinary shop and original stocked item; stock row alone is not original service authorization",
+  "cost": "original positive unit price multiplied by exact integer quantity; insufficient funds or overflow rejects the whole caller transaction",
+  "output": "actual inventory-owned instance factory; merge only compatible item and binding metadata; never merge mode1 goods into unbound goods",
+  "transaction": "one existing role-owner caller transaction covers wallet, bag, resource source synchronization, NPC/domain/common receipts and required reply encoding; module opens no independent connection or commit",
+  "replay": "same accepted command and identical intent applies once; conflicting reuse rejects; paid reply reads current wallet and inventory, never historical receipt balances",
+  "wire_identity": "original purchase packet has no request ID; distinct newly admitted identical packets are distinct purchases, while retrying an existing accepted command retains its stable internal ID",
+  "rejection": ["unknown wallet baseline", "zero/missing/noninteger price", "mode2..11", "cash substitution for mode1", "mixed payment", "automatic currency conversion", "bag full or incompatible stack", "stale or foreign authorization"],
+  "late_failure": "wallet, bag, source and all receipts roll back together; retry of the failed stable ID may succeed once",
+  "sellback": "existing binding-aware sale rules remain authoritative; bound purchase does not grant a new cash sellback or unbinding path",
+  "compatibility": "currency.1 adds only npc_shop_bound purpose; retain existing wallet balances, mode0 receipt fingerprints and paid records; no global npc policy bump or migration",
+  "activation": "wallet purpose only; NPC domain implementation, shared integration, fixed deployment and GUI each require their own evidence"
+}

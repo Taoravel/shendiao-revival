@@ -1,0 +1,87 @@
+{
+  "created_utc": "2026-10-23T19:54:58.098825+00:00",
+  "status": "asset_provider_ready_fixed_r2",
+  "scope": "explicit fixed clean unidentified ordinary carried equipment0->1, current transaction tips and additive cash-purpose; NPC owns authorization/price/fee/dedicated paid receipt",
+  "interfaces": {
+    "read": "equipment_identification_basis(db,key,epoch,*,expected_inventory_revision=None)",
+    "write": "identify_equipment_clean_transaction(db,basis,epoch,*,precommit=None)",
+    "current_tip": "equipment_tip_message(db,key,epoch)",
+    "current_bags": "equipment_bag_messages(db,epoch)"
+  },
+  "production_sha256": {
+    "inventory.py": "d66329dbb8976e6ed3642e7fcc5f26f6a6f5ad2d4ced56f9af4689c5081764d4",
+    "equipment_detail.py": "05f974a8d201da47b11c332e00bc4c9eaa402366b3f6c14596929541e941118a",
+    "design/currency-v1.json": "ed93b3f9a9d6902e4a3120dd52b3467f9347fe2598a2ebf326141aa46626f994"
+  },
+  "verification_sha256": {
+    "verify_equipment_identification_cas.py": "cba9b0fe1ba2b31be51930e8a3ee771f4d52f2ecc140c4c3192aef43e87374aa",
+    "verify_equipment_identification_currency.py": "55b9626ddc4b8d6811f730ef2f7619b4b97afb2d93527df13df33580400419f5",
+    "verify_equipment_identification_source.py": "058f9c8c4ae644e6f66a7457cb7d90981bdaa88e32ff2c7233adf5a2c9b62aeb",
+    "verify_equipment_identification_npc_compat.py": "a107e7c036f743efd5ac1fb7a6c9196dfac5a954922a20e019339b6ed4ea887f"
+  },
+  "fixed_review": {
+    "directory": "D:\\神雕侠侣\\revival\\evidence\\reviews\\equipment-identification-assets-20261024-r2",
+    "manifest_sha256": "b1575613bf8d4db5d237d11fde85533bde3abec9bfffdcfb6211613caf79b33a",
+    "diff_sha256": "8839a50cdc1669f84ce045721b1a3035ede1373fb55480121ebdac32c2b4b752",
+    "standards_report_sha256": "f889701a254c996d135c5da1e6789318c09643a23ec3a4e81531bc121afd4735",
+    "spec_report_sha256": "e22dd95d298853fbe5b5e0eb0957d1b8db7c8dab0461517cd8ef0b2240a48654",
+    "aggregate_sha256": "c755fb28aca5de86ee7923ecc0d0c9a23122e56842a819690067d13bbc75117b",
+    "snapshot_verifier_sha256": "25866556b5b39d68ca27787ea72d609fb2e8b60e92676e278abef63785fe4675",
+    "dependencies": 1272,
+    "standards_hard_findings": 0,
+    "standards_judgement_findings": 0,
+    "spec_findings": 0,
+    "r1_judgement": "P3 duplicated structural predicate resolved; read/write temporal fences kept",
+    "method": "code-review independent parallel axes, non-Git fixed-manifest adapter using verified exact earlier bytes, no fake commit/tracker"
+  },
+  "passed_checks": [
+    "verify_equipment_identification_cas.py",
+    "verify_equipment_identification_currency.py",
+    "verify_equipment_identification_source.py",
+    "verify_equipment_identification_npc_compat.py",
+    "verify_equipment_details.py",
+    "verify_equipment_condition.py",
+    "verify_equipment_eligibility.py",
+    "verify_equipment_events.py",
+    "verify_equipment_policy_selection.py",
+    "verify_currency.py",
+    "verify_currency_bound_shop.py",
+    "verify_currency_runtime.py",
+    "verify_inventory_resource_hook.py",
+    "verify_inventory_current_mutation_messages.py",
+    "verify_npc_identification_query.py",
+    "verify_npc_identification_dialogue.py",
+    "verify_npc_equipment_identification.py",
+    "verify_pet_stones.py",
+    "verify_pet_stones_runtime.py"
+  ],
+  "final_r2_rerun": [
+    "verify_equipment_identification_cas.py",
+    "verify_equipment_identification_currency.py",
+    "verify_equipment_identification_source.py",
+    "verify_equipment_identification_npc_compat.py",
+    "verify_equipment_details.py",
+    "verify_currency.py",
+    "verify_npc_equipment_identification.py"
+  ],
+  "reviewer_r2_reruns": "each independent reviewer actually ran all four new verification scripts in frozen dependency tree",
+  "cash_delta": {
+    "file": "design/currency-v1.json",
+    "revision_unchanged": "2026-10-23.currency.1",
+    "add_cash_spend_purpose": "npc_equipment_identify",
+    "other_currencies": false,
+    "old_balances_receipts_unchanged": true
+  },
+  "integration_cautions": [
+    "only reviewed identification diff is provider-ready; full inventory.py contains earlier pet evolution/stone work and must not be copied as an implicit activation of those systems",
+    "BASE for inventory reviewed delta is exact finalized pet-stones batch, other two production bases are exact private-story-20261023T190051Z release; main must compare actual release closure before integration",
+    "NPC production is a read-only frozen dependency of these tests, not changed by asset provider; NPC/shared independent final checks remain theirs",
+    "keep public interfaces and these three production hashes stable while NPC/root consume this ready; gem work here is separate read-only research, not mixed into identification"
+  ],
+  "shared_files_changed": false,
+  "shared_confirmation_or_registry_activated_by_this_batch": false,
+  "live_server_changed": false,
+  "native_gui_verified": false,
+  "full_restoration_goal": "active",
+  "passed_checks_note": "19 checks were executed successfully during this batch; final R2 production refactor was rechecked by listed7 plus both independent4-script frozen runs; no unexplained failures remain"
+}

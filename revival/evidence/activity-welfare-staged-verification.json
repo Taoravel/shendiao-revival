@@ -1,0 +1,86 @@
+{
+  "tests": 7,
+  "passed": true,
+  "goods": [
+    {
+      "item_id": 31000,
+      "name": "宠物粗粮",
+      "price": 2
+    },
+    {
+      "item_id": 32000,
+      "name": "馒头",
+      "price": 2
+    },
+    {
+      "item_id": 32024,
+      "name": "红桥明月夜经典版",
+      "price": 1300
+    },
+    {
+      "item_id": 32025,
+      "name": "玉笛听落梅经典版",
+      "price": 1300
+    },
+    {
+      "item_id": 33003,
+      "name": "当归",
+      "price": 1
+    },
+    {
+      "item_id": 33006,
+      "name": "桔梗",
+      "price": 1
+    },
+    {
+      "item_id": 36000,
+      "name": "飞行符",
+      "price": 6
+    },
+    {
+      "item_id": 36019,
+      "name": "迷魂香",
+      "price": 12
+    },
+    {
+      "item_id": 36091,
+      "name": "清心散",
+      "price": 6
+    },
+    {
+      "item_id": 36258,
+      "name": "小旗布",
+      "price": 60
+    }
+  ],
+  "source": [
+    {
+      "path": "autoconfig/knight.gsp.item.cactivenessitem.xml",
+      "sha256": "c2c7e8f56c0236576f63fe820aa9c2d365aadc1d5d3f119392a765420f882697",
+      "rows": 10,
+      "crc_verified": true
+    },
+    {
+      "path": "autoconfig/knight.gsp.item.citemattr.xml",
+      "sha256": "974a3b38049c5f5f7cdae418718ffadd2741d373a5846a40fb71289af25e726f",
+      "rows": 12280,
+      "crc_verified": true
+    }
+  ],
+  "native_purchase": {
+    "type": "0xc04cb",
+    "constructor": "0xd8dd10",
+    "marshal": "0xe4b9b0",
+    "unmarshal": "0xd8ddb0",
+    "shape": "BE32 item id, BE32 quantity; server accepted-command id is separate"
+  },
+  "native_star_consumer": "0x17cb360 lookup1380; original role map marshal/unmarshal and generic integer assignment",
+  "native_ui_tested": false,
+  "runtime_integrated": false,
+  "limitations": [
+    "No implicit historical baseline",
+    "Per-gameplay emitters still need to use this atomic seam",
+    "Binding and purchase batch/balance caps are designed",
+    "No welfare goods item-use restoration in this module"
+  ]
+}

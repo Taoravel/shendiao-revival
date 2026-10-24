@@ -1,0 +1,721 @@
+--- BASE/game_runtime.py
++++ private/game_runtime.py
+@@ -8,6 +8,7 @@
+ import uuid
+ from connection_codec import ConnectionCodec
+ from runtime_core import SerialOwner, BlockingIO, AsyncLog, Backpressure, StaleEpoch
++from runtime_story_maps import RuntimeStoryMaps
+ import runtime_storage
+ import world_transfer_storage
+ from role_protocol import (role_list,role_info,parse_create,parse_enter,parse_delete,load_exit_ui_message,
+@@ -86,25 +87,70 @@
+         return iter((self.kind,self.body))
+ 
+ 
++@dataclass(frozen=True)
++class SceneFence:
++    address: MapAddress
++    map_generation: str | None
++    role_id: int
++    epoch: object
++    connection_generation: int
++    scene_token: str
++
++
++@dataclass(frozen=True)
++class ScopedSceneMessage:
++    kind: int
++    body: bytes
++    barrier: object
++    delivery: object
++    fence: SceneFence
++
++    def __iter__(self):return iter((self.kind,self.body))
++
++
++def runtime_map_address(value):
++    """Trusted full server identity; integer callers select their public map."""
++    address=MapAddress(value,value,0) if type(value) is int else value
++    if (type(address) is not MapAddress
++            or type(address.map_id) is not int or not 0<address.map_id<2**63
++            or type(address.instance_id) is not int or not 0<address.instance_id<2**63
++            or type(address.partition_id) is not int or not 0<=address.partition_id<2**63):
++        raise ValueError('Explicit valid full runtime map address required')
++    return address
++
++
+ class MapOwner:
+-    def __init__(self, instance, catalog, npc_resources=None):
+-        self.instance, self.catalog, self.positions = instance, catalog, {}
+-        self.domain=WorldDomain(MapAddress(instance,instance,0),catalog,capacity=2048,
++    def __init__(self, instance, catalog, npc_resources=None,*,interaction_rules=None,story_rules=None):
++        address=runtime_map_address(instance)
++        template=address.map_id
++        self.instance, self.catalog, self.positions = address.instance_id, catalog, {}
++        self.domain=WorldDomain(address,catalog,capacity=story_rules.member_capacity if story_rules is not None else 2048,
+                                 transfer_capacity=128,mailbox_capacity=64)
+         self.npcs=None
+         self.spawn_packets=()
+         if npc_resources is not None:
+             placements,definitions=npc_resources
+-            self.npcs=NpcScene(self.domain.address,placements.get(instance,()),catalog,
+-                               interaction_radius=32,binding_capacity=4096)
+-            bindings=tuple(((instance<<32)|p.placement_id,p.placement_id)
+-                for p in placements.get(instance,()) if p.npc_id in definitions
+-                and 0<=p.x<min(catalog[instance]['width'],32768)
+-                and 0<=p.y<min(catalog[instance]['height'],32768))
++            self.npcs=NpcScene(self.domain.address,placements.get(template,()),catalog,
++                               interaction_radius=32,binding_capacity=4096,interaction_rules=interaction_rules)
++            bindings=tuple(((template<<32)|p.placement_id,p.placement_id)
++                for p in placements.get(template,()) if p.npc_id in definitions
++                and 0<=p.x<min(catalog[template]['width'],32768)
++                and 0<=p.y<min(catalog[template]['height'],32768))
+             self.spawn_packets=self.npcs.spawn(bindings,definitions,batch_size=64)
+-        self.mailbox = SerialOwner(('map',instance,0), self.handle)
++        if story_rules is not None:
++            self.domain.configure_lifecycle(scene_delivery_capacity=story_rules.scene_delivery_capacity,
++                actor_state='static_original')
++        self.mailbox = SerialOwner(('map',template,address.instance_id,address.partition_id), self.handle)
+ 
+     async def handle(self, cmd):
++        if cmd.operation=='inspect_lifecycle':return self.domain.inspect_lifecycle(*cmd.args)
++        if cmd.operation=='retire_idle':
++            snapshot,now_ms,minimum_idle_ms=cmd.args
++            return self.domain.retire_idle(snapshot,now_ms,minimum_idle_ms=minimum_idle_ms)
++        if cmd.operation=='begin_scene_delivery':
++            location,generation,request_id=cmd.args
++            return self.domain.begin_scene_delivery(location,connection_generation=generation,request_id=request_id)
++        if cmd.operation=='finish_scene_delivery':return self.domain.finish_scene_delivery(*cmd.args)
+         # Recovery has no online member in the new lease yet. Execute through
+         # the exact map owner before the ordinary membership guard below.
+         if cmd.operation=='inspect_transfer':
+@@ -216,6 +262,8 @@
+         self.rt, self.role, self.account_id, self.epoch = runtime, dict(role), account_id, epoch
+         self.id = role['id']
+         self.inventory = self.tasks = self.position = self.battle = None
++        self.map_address=None
++        self.scene_token=uuid.uuid4().hex
+         self.wild=None
+         self.pending_battle_delivery=None
+         self.snapshot_revision=0
+@@ -231,6 +279,7 @@
+         self.intro_ticket=None
+         self.master_dialogue_ticket=None
+         self.cart_dialogue_ticket=None
++        self.touch_dialogue_ticket=None
+         self.npc_depot_ticket=None
+         self.vigor_enabled=False
+         self.vigor_sync_at=time.monotonic()
+@@ -253,15 +302,23 @@
+         if self.newbie_pending and cmd.operation not in ('load','close','tick','receive'):
+             raise ValueError('Role writes wait for authorized intro completion')
+         if cmd.operation=='load':
+-            recovery=await self.io(runtime_storage.prepare_login_transfer_recovery,
++            recovered=await self.io(runtime_storage.prepare_login_map_recovery,
+                 self.rt.accounts,self.account_id,self.id,self.epoch)
+-            if recovery is not None:
+-                await self.retire_old_transfer(recovery)
++            if recovered.decision is not None:
++                await self.retire_old_transfer(recovered.decision)
+             self.inventory,self.tasks,pos,version = await self.io(runtime_storage.load_role,
+                 self.rt.accounts,self.account_id,self.id,self.epoch,self.rt.task_resources)
+             await self.io(wild_runtime_storage.recover,self.rt.accounts,self.account_id,self.id,self.epoch)
+             self.position = Position(self.id,self.epoch,pos,version,(pos[1]//16,pos[2]//16))
+-            self.position=await self.rt.map(pos[0]).mailbox.call('join',self.position)
++            checkpoint=recovered.checkpoint
++            if checkpoint is not None and (checkpoint.position,checkpoint.version)!=(pos,version):
++                raise ValueError('Role load changed the recovered exact map checkpoint')
++            if recovered.story_instance is not None:
++                target=await self.rt.story_maps.get_map(recovered.story_instance,request_id=cmd.request_id,
++                    deadline_ms=self.rt.story_maps.now()+10000)
++            else:target=self.rt.map(checkpoint.address if checkpoint is not None else pos[0])
++            self.map_address=target.domain.address
++            self.position=await target.mailbox.call('join',self.position)
+             self.conversation=TaskConversation(self.rt.task_resources,self.id,self.epoch)
+             profile=await self.io(runtime_storage.role_load_profile,
+                 self.rt.accounts,self.account_id,self.id,self.epoch)
+@@ -303,6 +360,8 @@
+             return await self.io(runtime_storage.commit_task,self.rt.accounts,self.account_id,self.id,self.epoch,
+                                  actor,plan,cmd.request_id)
+         if cmd.operation=='tick':
++            if self.touch_dialogue_ticket is not None and int(time.monotonic()*1000)>=self.touch_dialogue_ticket.intent.deadline_ms:
++                self.touch_dialogue_ticket=None
+             if self.newbie_pending:
+                 if self.intro_ticket is not None and int(time.time()*1000)>=self.intro_ticket.deadline_ms:
+                     self.intro_ticket=None  # Durable root remains pending until a new connection/resume.
+@@ -324,6 +383,7 @@
+                 self.intro_ticket=None
+                 self.master_dialogue_ticket=None
+                 self.cart_dialogue_ticket=None
++                self.touch_dialogue_ticket=None
+                 if self.joined and self.vigor_enabled:
+                     await self.io(role_vigor.checkpoint,self.rt.accounts,self.inventory,int(time.monotonic()*1000),True)
+                     self.vigor_enabled=False
+@@ -331,9 +391,11 @@
+                     receipt=self.transfer
+                     # Socket gone: release the committed loading member without
+                     # admitting any movement. A new login loads its durable target.
+-                    location=await self.rt.map(receipt.location.address.map_id).mailbox.call('ready',receipt.location)
++                    location=await self.rt.map(receipt.location.address).mailbox.call('ready',receipt.location)
+                     self.position=Position(self.id,self.epoch,location.position,location.version,
+                                            (location.x//16,location.y//16))
++                    self.map_address=location.address
++                    await self.rt.map(location.address).mailbox.call('retire_receipt',receipt)
+                     self.transfer=None
+                 if self.dirty: await self.checkpoint()
+                 if self.battle:
+@@ -351,7 +413,7 @@
+                 finally:
+                     self.pending_battle_delivery=None
+                     if self.position:
+-                        await self.rt.map(self.position.value[0]).mailbox.call('leave',self.id,self.epoch)
++                        await self.rt.map(self.map_address).mailbox.call('leave',self.id,self.epoch)
+         kind,body = cmd.args
+         if kind==npc_depot.CLOSE_DEPOT:
+             npc_depot.decode_close(body)
+@@ -377,7 +439,7 @@
+             # The original world reset disables both X and the system exit
+             # menu until this signed-mode notification initializes them.
+             spawn=[self.rt.exit_ui_message]
+-            spawn.extend(await self.rt.map(self.position.value[0]).mailbox.call('spawn',self.id,self.epoch))
++            spawn.extend(await self.rt.map(self.map_address).mailbox.call('spawn',self.id,self.epoch))
+             if vigor is not None:spawn.append(role_vigor.refresh(vigor))
+             spawn.append((S_REFRESH_USER_EXP,encode_user_experience(self.role['experience'])))
+             if profile.refresh is not None:
+@@ -401,12 +463,14 @@
+                                 reason='yuanbao_pair_outside_native_signed32_range')
+                 else:
+                     spawn.append(pair)
++            touch_messages=await self.io(runtime_storage.prologue_resume,self.rt.accounts,self.account_id,self.id,
++                self.epoch) if self.rt.prologue_touch else ()
+             actor,state=await self.io(runtime_storage.task_state,self.rt.accounts,self.account_id,self.id,self.epoch)
+             resumed=self.conversation.resume_messages(actor,state)
+             spawn.extend(resumed)
+             projected={decode_accept_scenario_quest(body).quest_id for kind,body in resumed
+                        if kind==S_ACCEPT_SCENARIO_QUEST}
+-            for message in profile.task_messages:
++            for message in profile.task_messages+touch_messages:
+                 kind_,body_=message
+                 ident=decode_accept_scenario_quest(body_).quest_id if kind_==S_ACCEPT_SCENARIO_QUEST else None
+                 if ident is None or ident not in projected:
+@@ -415,7 +479,7 @@
+             spawn.extend(resume_newbie_messages(self.newbie_chapter,state,already_projected=projected))
+             if self.newbie_pending:
+                 connection=self.rt.connections[self.id]
+-                location=await self.rt.map(self.position.value[0]).mailbox.call('location',self.id,self.epoch)
++                location=await self.rt.map(self.map_address).mailbox.call('location',self.id,self.epoch)
+                 try:
+                     playback=await self.io(runtime_storage.newbie_playback,self.rt.accounts,self.account_id,self.id,
+                         self.epoch,location,connection.generation,cmd.request_id,int(time.time()*1000),self.intro_ticket)
+@@ -436,7 +500,7 @@
+                     or len(body)!=4 or struct.unpack('>i',body)[0]<=0):
+                 raise ValueError('Invalid or unavailable intro completion')
+             connection=self.rt.connections[self.id]
+-            location=await self.rt.map(self.position.value[0]).mailbox.call('location',self.id,self.epoch)
++            location=await self.rt.map(self.map_address).mailbox.call('location',self.id,self.epoch)
+             committed=await self.io(runtime_storage.newbie_finish,self.rt.accounts,self.account_id,self.id,
+                 self.epoch,body,location,connection.generation,int(time.time()*1000),self.intro_ticket,self.inventory)
+             self.newbie_chapter=committed.action.chapter
+@@ -457,7 +521,7 @@
+             raise ValueError('Gameplay waits for matching committed scene send barrier')
+         if kind==C_GET_CARD_ITEM:
+             if not self.joined:raise ValueError('Card choice waits for world initialization')
+-            current=await self.rt.map(self.position.value[0]).mailbox.call('location',self.id,self.epoch)
++            current=await self.rt.map(self.map_address).mailbox.call('location',self.id,self.epoch)
+             connection=self.rt.connections[self.id]
+             committed=await self.io(runtime_storage.master_choose,self.rt.accounts,self.account_id,self.id,
+                 self.epoch,body,current,connection.generation,int(time.monotonic()*1000),self.inventory)
+@@ -482,15 +546,16 @@
+             self.conversation.cancel()
+             self.master_dialogue_ticket=None
+             self.cart_dialogue_ticket=None
++            self.touch_dialogue_ticket=None
+             self.npc_depot_ticket=None
+             if self.transfer: raise ValueError('Scene still loading')
+             if self.require_move_start:
+                 start,_,_=decode_movement(kind,body)
+                 if start!=self.position.value[1:]: raise ValueError('Movement does not start at committed target')
+                 if kind==0xc0fa1: self.require_move_start=False
+-            previous=Location(self.id,self.epoch,self.rt.map(self.position.value[0]).domain.address,
++            previous=Location(self.id,self.epoch,self.rt.map(self.map_address).domain.address,
+                 self.position.version,self.position.value[1],self.position.value[2])
+-            self.position, movement = await self.rt.map(self.position.value[0]).mailbox.call(
++            self.position, movement = await self.rt.map(self.map_address).mailbox.call(
+                 'move_for_encounter',self.id,self.epoch,self.position.version,kind,body,request_id=cmd.request_id,deadline=cmd.deadline)
+             offer=movement.offer
+             self.valid()
+@@ -510,7 +575,7 @@
+             elif sale:key,_=npc_shop_sales.decode_request(kind,body)
+             else:key,_,_=(npc_repairs.decode_repair(body) if kind==npc_repairs.REPAIR_EQUIPMENT
+                           else npc_gameplay.decode_purchase(body))
+-            proof,current=await self.rt.map(self.position.value[0]).mailbox.call('npc',
++            proof,current=await self.rt.map(self.map_address).mailbox.call('npc',
+                 self.id,self.epoch,self.position.version,struct.pack('>q',key),
+                 request_id=cmd.request_id,deadline=cmd.deadline)
+             if recovery:
+@@ -533,6 +598,7 @@
+             if not self.joined: raise ValueError('NPC interaction waits for world initialization')
+             self.master_dialogue_ticket=None
+             self.cart_dialogue_ticket=None
++            self.touch_dialogue_ticket=None
+             if kind==VISIT_NPC: self.npc_depot_ticket=None
+             if kind==NPC_SERVICE:
+                 key,service=read_npc_service(body)
+@@ -540,7 +606,7 @@
+             else:
+                 visit=body
+                 service=None
+-            proof,current=await self.rt.map(self.position.value[0]).mailbox.call('npc',
++            proof,current=await self.rt.map(self.map_address).mailbox.call('npc',
+                 self.id,self.epoch,self.position.version,visit,request_id=cmd.request_id,deadline=cmd.deadline)
+             # Native task entries use vector 2 and CCommit, not generic service IDs.
+             if service is not None:
+@@ -550,7 +616,7 @@
+                     return await self.depot_request(cmd,npc_depot.OPEN_DEPOT,visit)
+                 if command.handler=='transport.depart':
+                     target=npc_gameplay.transport_destination(self.rt.accounts.npc_gameplay,command,self.role['school'])
+-                    offer=await self.rt.map(self.position.value[0]).mailbox.call('scripted_transfer',
++                    offer=await self.rt.map(self.map_address).mailbox.call('scripted_transfer',
+                         self.id,self.epoch,self.position.version,target,request_id=cmd.request_id,deadline=cmd.deadline)
+                     self.npc_depot_ticket=None
+                     return await self.handoff(offer)
+@@ -578,6 +644,14 @@
+                 self.conversation.cancel()
+                 self.cart_dialogue_ticket=cart.ticket
+                 return list(cart.messages)
++            if self.rt.prologue_touch and (proof.address.map_id,proof.npc_id)==(1006,10498):
++                await self.checkpoint()
++                touch=await self.io(runtime_storage.prologue_dialogue,self.rt.accounts,self.account_id,self.id,
++                    self.epoch,proof,current,connection.generation,int(time.monotonic()*1000))
++                if touch is not None:
++                    self.conversation.cancel()
++                    self.touch_dialogue_ticket=touch
++                    return list(touch.messages)
+             actor,snapshot=await self.io(runtime_storage.task_state,self.rt.accounts,self.account_id,self.id,self.epoch)
+             messages=self.conversation.menu_messages(actor,snapshot,proof,current,
+                 now_ms=int(time.monotonic()*1000),deadline_ms=int(time.monotonic()*1000)+60000)
+@@ -585,7 +659,18 @@
+             return cache+npc_gameplay.merge_menu(self.rt.accounts.npc_gameplay,messages,proof,current)
+         if kind in TASK_INTENT_TYPES:
+             intent=decode_task_intent(kind,body)
+-            current=await self.rt.map(self.position.value[0]).mailbox.call('location',self.id,self.epoch)
++            current=await self.rt.map(self.map_address).mailbox.call('location',self.id,self.epoch)
++            if self.touch_dialogue_ticket is not None and intent.task_id==self.touch_dialogue_ticket.intent.task_id:
++                pending=self.touch_dialogue_ticket
++                connection=self.rt.connections[self.id]
++                proof,current=await self.rt.map(self.map_address).mailbox.call('npc',self.id,self.epoch,
++                    self.position.version,struct.pack('>q',intent.npc_key),request_id=cmd.request_id,deadline=cmd.deadline)
++                accepted=await self.io(runtime_storage.prologue_authorize,self.rt.accounts,self.account_id,self.id,
++                    self.epoch,pending.intent,intent,current,proof,connection.generation,int(time.monotonic()*1000))
++                await self.checkpoint()
++                offer=await self.rt.map(self.map_address).mailbox.call('authorized_transfer',self.id,self.epoch,
++                    accepted.source,accepted.target_position,accepted.deadline_ms,request_id=accepted.request_id)
++                return await self.handoff(offer,touch_intent=accepted,touch_record=pending.directory)
+             if self.cart_dialogue_ticket is not None and intent.task_id==self.cart_dialogue_ticket.task_id:
+                 connection=self.rt.connections[self.id]
+                 resolved=await self.io(runtime_storage.cart_authorize,self.rt.accounts,self.account_id,self.id,
+@@ -594,7 +679,7 @@
+                 # source, including its position version; no legacy lag option.
+                 await self.checkpoint()
+                 accepted=resolved.intent
+-                offer=await self.rt.map(self.position.value[0]).mailbox.call('authorized_transfer',
++                offer=await self.rt.map(self.map_address).mailbox.call('authorized_transfer',
+                     self.id,self.epoch,accepted.source,resolved.target_position,accepted.deadline_ms,
+                     request_id=accepted.request_id)
+                 return await self.handoff(offer,cart_intent=accepted)
+@@ -604,7 +689,7 @@
+                     self.epoch,self.master_dialogue_ticket,intent,current,connection.generation,int(time.monotonic()*1000)))
+             actor,snapshot=await self.io(runtime_storage.task_state,self.rt.accounts,self.account_id,self.id,self.epoch)
+             if kind==C_COMMIT_SCENARIO_QUEST and intent.task_id not in snapshot.active:
+-                proof,current=await self.rt.map(self.position.value[0]).mailbox.call('npc',self.id,self.epoch,
++                proof,current=await self.rt.map(self.map_address).mailbox.call('npc',self.id,self.epoch,
+                     self.position.version,struct.pack('>q',intent.npc_key),request_id=cmd.request_id,deadline=cmd.deadline)
+                 acceptance=self.conversation.plan_accept(actor,snapshot,intent,proof,current,
+                     now_ms=int(time.monotonic()*1000),deadline_ms=int(time.monotonic()*1000)+60000)
+@@ -616,13 +701,13 @@
+                             self.conversation.opening_messages())
+             plan=self.conversation.plan_finish(actor,snapshot,intent,current,now_ms=int(time.monotonic()*1000))
+             committed=await self.io(runtime_storage.complete_conversation,self.rt.accounts,self.account_id,self.id,
+-                self.epoch,actor,plan,cmd.request_id,self.rt.task_resources,self.inventory)
++                self.epoch,actor,plan,cmd.request_id,self.rt.task_resources,self.inventory,self.rt.prologue_touch)
+             completion=committed.completion
+             self.conversation.acknowledge(plan)
+             await self.publish_committed_role(committed.role)
+             self.rt.log(event='task_committed',role_id=self.id,task_id=plan.task_id,
+                         request_id=cmd.request_id,pending_channels=len(completion.rewards.pending))
+-            return list(completion_messages(completion))
++            return list(completion_messages(completion))+list(committed.extra_messages)
+         if kind in TASK_TYPES:
+             actor,snapshot=await self.io(runtime_storage.task_state,self.rt.accounts,self.account_id,self.id,self.epoch)
+             domain=TaskDomain(self.rt.task_resources)
+@@ -681,7 +766,7 @@
+             key=ticket.entity_key
+             if kind in npc_depot.MONEY_TYPES and npc_depot.decode_money(kind,body)[0]!=key:
+                 raise ValueError('Warehouse transfer NPC differs from current access')
+-        proof,current=await self.rt.map(self.position.value[0]).mailbox.call('npc',
++        proof,current=await self.rt.map(self.map_address).mailbox.call('npc',
+             self.id,self.epoch,self.position.version,struct.pack('>q',key),
+             request_id=cmd.request_id,deadline=cmd.deadline)
+         if not opening and (ticket.address,ticket.position_version,ticket.npc_id)!=(
+@@ -697,7 +782,11 @@
+ 
+     def snapshot(self):
+         r=self.role
+-        return RoleSnapshot(self.id,self.epoch,r['name'],r['level'],r['school'],r['shape'],self.position.value[0])
++        address=self.map_address
++        if address is None or address.map_id!=self.position.value[0]:
++            raise ValueError('Social snapshot requires the current full map identity')
++        return RoleSnapshot(self.id,self.epoch,r['name'],r['level'],r['school'],r['shape'],address.map_id,
++            (address.map_id,address.instance_id,address.partition_id))
+ 
+     @property
+     def newbie_pending(self):
+@@ -723,9 +812,19 @@
+             self.rt.index(snapshot,True)
+             await self.rt.social_runtime.publish(snapshot,self.snapshot_revision)
+ 
+-    async def handoff(self,offer,*,cart_intent=None):
+-        source=self.rt.map(offer.source.address.map_id)
+-        target=self.rt.map(offer.target_position[0])
++    async def handoff(self,offer,*,cart_intent=None,touch_intent=None,touch_record=None):
++        if cart_intent is not None and touch_intent is not None:raise ValueError('One task owns a scene transfer')
++        self.touch_dialogue_ticket=None
++        if (self.map_address,self.position.value,self.position.version)!=(
++                offer.source.address,offer.source.position,offer.source.version):
++            raise StaleEpoch('Transfer offer differs from the current complete source')
++        source=self.rt.map(offer.source.address)
++        if touch_intent is not None:
++            if touch_record is None or touch_record.address!=touch_intent.target_address or touch_record.role_id!=self.id:
++                raise ValueError('Touch transfer requires its exact committed directory identity')
++            target=await self.rt.story_maps.get_map(touch_record,request_id=touch_intent.request_id,
++                deadline_ms=self.rt.story_maps.now()+max(1,touch_intent.deadline_ms-int(time.monotonic()*1000)))
++        else:target=self.rt.map(offer.target_position[0])
+         reservation=frozen=receipt=None
+         await self.io(world_transfer_storage.begin,self.rt.accounts,self.account_id,self.id,self.epoch,offer)
+         try:
+@@ -740,6 +839,7 @@
+                     location=await source.mailbox.call('resume',cancellation)
+                     self.position=Position(self.id,self.epoch,location.position,location.version,
+                                            (location.x//16,location.y//16))
++                    self.map_address=location.address
+                 await target.mailbox.call('retire_receipt',cancellation)
+             else:
+                 await self.io(world_transfer_storage.cancel,self.rt.accounts,self.account_id,self.id,self.epoch,offer.transfer_id)
+@@ -747,12 +847,13 @@
+             raise
+         committed_cart=None
+         try:
+-            if cart_intent is None:
++            if cart_intent is None and touch_intent is None:
+                 await self.io(world_transfer_storage.commit,self.rt.accounts,self.account_id,self.id,self.epoch,receipt)
+             else:
+                 connection=self.rt.connections[self.id]
+-                committed_cart=await self.io(runtime_storage.complete_cart_transfer,self.rt.accounts,
+-                    self.account_id,self.id,self.epoch,cart_intent,receipt,self.inventory,
++                operation=runtime_storage.complete_prologue_transfer if touch_intent is not None else runtime_storage.complete_cart_transfer
++                committed_cart=await self.io(operation,self.rt.accounts,
++                    self.account_id,self.id,self.epoch,touch_intent if touch_intent is not None else cart_intent,receipt,self.inventory,
+                     connection.generation,int(time.monotonic()*1000))
+         except Exception:
+             self.poisoned=True
+@@ -769,7 +870,9 @@
+         if old: self.rt.index(old,False)
+         location=receipt.location
+         self.position=Position(self.id,self.epoch,location.position,location.version,(location.x//16,location.y//16))
++        self.map_address=location.address
+         self.transfer=receipt
++        self.scene_token=uuid.uuid4().hex
+         self.dirty=False
+         self.conversation.cancel()
+         self.master_dialogue_ticket=None
+@@ -830,17 +933,18 @@
+ 
+     async def scene_ready(self):
+         receipt=self.transfer
+-        location=await self.rt.map(self.position.value[0]).mailbox.call('ready',receipt.location)
++        location=await self.rt.map(self.map_address).mailbox.call('ready',receipt.location)
+         self.position=Position(self.id,self.epoch,location.position,location.version,(location.x//16,location.y//16))
++        self.map_address=location.address
+         await self.checkpoint()
+-        await self.rt.map(location.address.map_id).mailbox.call('retire_receipt',receipt)
++        await self.rt.map(location.address).mailbox.call('retire_receipt',receipt)
+         self.transfer=None
+         self.require_move_start=True
+         self.snapshot_revision+=1
+         self.rt.online[self.id]=self.snapshot()
+         self.rt.index(self.snapshot(),True)
+         await self.rt.social_runtime.join(self.snapshot(),self.snapshot_revision)
+-        return list(await self.rt.map(location.address.map_id).mailbox.call('spawn',self.id,self.epoch))
++        return list(await self.rt.map(location.address).mailbox.call('spawn',self.id,self.epoch))
+ 
+     async def finish_battle(self, finished):
+         if finished is not None:
+@@ -932,7 +1036,7 @@
+         self.rt.clients.add(self)
+         self.offer(None,self.codec.opening())
+ 
+-    def offer(self, kind, body, epoch=None, barrier=None):
++    def offer(self, kind, body, epoch=None, barrier=None,delivery=None,fence=None):
+         if self.closed or (epoch is not None and (epoch!=self.epoch or self.rt.connections.get(self.role_id) is not self)):
+             self.metrics['stale_delivery']+=1
+             return False
+@@ -942,19 +1046,37 @@
+             self.closed=True
+             self.writer.close()  # Disconnect slow target; never block a broadcaster.
+             return False
+-        self.queue.put_nowait((kind,bytes(body),epoch,size,barrier))
++        self.queue.put_nowait((kind,bytes(body),epoch,size,barrier,delivery,fence))
+         self.pending_bytes+=size
+         self.metrics['send_high_water']=max(self.metrics['send_high_water'],self.queue.qsize())
+         return True
+ 
++    async def offer_message(self,message,epoch):
++        kind,body=message
++        accepted=self.offer(kind,body,epoch,getattr(message,'barrier',None),
++            getattr(message,'delivery',None),getattr(message,'fence',None))
++        if not accepted and isinstance(message,ScopedSceneMessage):
++            await self.cleanup_delivery(message.delivery)
++        return accepted
++
++    async def cleanup_delivery(self,delivery):
++        if delivery is None:return
++        try:await self.rt.story_maps.finish_delivery(delivery)
++        except (ValueError,KeyError,TimeoutError,Backpressure):
++            self.metrics['scene_cleanup_failed']+=1
++            self.rt.log(event='scene_cleanup_requires_recovery',connection=self.id)
++
+     async def _send(self):
+         try:
+             while True:
+-                kind,body,epoch,size,barrier=await self.queue.get()
++                kind,body,epoch,size,barrier,delivery,fence=await self.queue.get()
+                 try:
+                     if self.closed: continue
+                     if epoch is not None and (epoch!=self.epoch or self.rt.connections.get(self.role_id) is not self):
+                         self.metrics['stale_delivery']+=1
++                        continue
++                    if fence is not None and not self.rt.scene_fence_current(self,fence):
++                        self.metrics['stale_scene_delivery']+=1
+                         continue
+                     packet=body if kind is None else self.codec.send(kind,body)
+                     self.writer.write(packet)
+@@ -964,10 +1086,14 @@
+                         if not owner or owner.epoch!=self.epoch: raise StaleEpoch('Scene owner expired')
+                         replies=await owner.mailbox.call('scene_sent',barrier)
+                         self.metrics['scene_send_barriers']+=1
+-                        for k,b in replies: self.offer(k,b,self.epoch)
++                        for message in await self.rt.scene_messages(owner,replies):
++                            await self.offer_message(message,self.epoch)
+                 finally:
+-                    self.pending_bytes-=size
+-                    self.queue.task_done()
++                    try:
++                        await self.cleanup_delivery(delivery)
++                    finally:
++                        self.pending_bytes-=size
++                        self.queue.task_done()
+         except (ConnectionError,TimeoutError,ValueError,Backpressure):
+             self.closed=True
+             self.writer.close()
+@@ -987,12 +1113,8 @@
+                 continue
+             replies=await self.rt.dispatch(self,kind,body)
+             for reply in replies:
+-                if isinstance(reply,SceneMessage):
+-                    self.scene_generation+=1
+-                    self.offer(reply.kind,reply.body,self.epoch,reply.barrier)
+-                else:
+-                    k,b=reply
+-                    self.offer(k,b,self.epoch)
++                if getattr(reply,'barrier',None) is not None:self.scene_generation+=1
++                await self.offer_message(reply,self.epoch)
+ 
+     async def run(self, reader):
+         self.rt.log(event='connected',connection=self.id)
+@@ -1004,7 +1126,9 @@
+                     if self.role_id:
+                         role=self.rt.roles.get(self.role_id)
+                         if role and role.epoch==self.epoch:
+-                            for k,b in await role.mailbox.call('tick'): self.offer(k,b,self.epoch)
++                            replies=await role.mailbox.call('tick')
++                            for message in await self.rt.scene_messages(role,replies):
++                                await self.offer_message(message,self.epoch)
+                     continue
+                 if not data: break
+                 self.last_input=time.monotonic()
+@@ -1024,6 +1148,12 @@
+             self.writer.close()
+             self.pump.cancel()
+             await asyncio.gather(self.pump,return_exceptions=True)
++            while not self.queue.empty():
++                _,_,_,size,_,delivery,_=self.queue.get_nowait()
++                try:await self.cleanup_delivery(delivery)
++                finally:
++                    self.pending_bytes-=size
++                    self.queue.task_done()
+             await self.rt.disconnect(self)
+         finally:
+             self.rt.clients.discard(self)
+@@ -1032,7 +1162,9 @@
+ 
+ 
+ class GameRuntime:
+-    def __init__(self, accounts, prepared, io=None, logger=None, training=False):
++    def __init__(self, accounts, prepared, io=None, logger=None, training=False,prologue_touch=False,story_clock=None):
++        if type(prologue_touch) is not bool:raise ValueError('Explicit prologue activation required')
++        self.prologue_touch=prologue_touch
+         self.exit_ui_message=load_exit_ui_message()
+         self.accounts=accounts
+         self.task_resources,self.social_store,policy,self.catalog=prepared
+@@ -1043,7 +1175,21 @@
+         self.channels={}
+         self.members={}
+         self.clients=set()
++        self.story_maps=RuntimeStoryMaps(accounts.story_instance_rules,self._create_story_map,
++            self._forget_story_map,clock=story_clock)
+         self.social_runtime=SocialRuntime(self)
++
++    def _create_story_map(self,record):
++        if self.registered_map(record.address) is not None:
++            raise ValueError('A private projection already exists outside its managed generation')
++        owner=MapOwner(record.address,self.catalog,self.accounts.npc_resources,
++            interaction_rules=self.accounts.npc_interaction_rules,story_rules=self.accounts.story_instance_rules)
++        self.maps[record.address]=owner
++        return owner
++
++    def _forget_story_map(self,address,owner):
++        if self.registered_map(address) is not owner:raise ValueError('Private projection registry generation changed')
++        del self.maps[address]
+ 
+     def log(self, **event):
+         if self.logger: self.logger.emit(**event)
+@@ -1051,7 +1197,7 @@
+     def online_snapshot(self): return MappingProxyType(dict(self.online))
+ 
+     def index(self, snapshot, add):
+-        keys=(('scene',snapshot.scene_id),('school',snapshot.school),('world',0))
++        keys=(('scene',snapshot.scene_key),('school',snapshot.school),('world',0))
+         for key in keys:
+             # Membership is split into fixed role-key partitions, not one world mailbox.
+             partition=(key,snapshot.role_id%16)
+@@ -1062,14 +1208,73 @@
+                 if not members: self.members.pop(partition,None)
+ 
+     def map(self, instance):
+-        key=(instance,0)
+-        if key not in self.maps: self.maps[key]=MapOwner(instance,self.catalog,getattr(self.accounts,'npc_resources',None))
+-        return self.maps[key]
++        address=runtime_map_address(instance)
++        if address not in self.maps:
++            if address.instance_id>=2**62:raise ValueError('Private map load requires its validated story directory record')
++            self.maps[address]=MapOwner(address,self.catalog,getattr(self.accounts,'npc_resources',None),
++                interaction_rules=getattr(self.accounts,'npc_interaction_rules',None),
++                story_rules=self.accounts.story_instance_rules if address.instance_id>=2**62 else None)
++        return self.maps[address]
+ 
+     def registered_map(self,address):
+         """Exact full-address lookup; recovery never creates a replacement map."""
+-        owner=self.maps.get((address.instance_id,address.partition_id))
+-        return owner if owner is not None and owner.domain.address==address else None
++        return self.maps.get(runtime_map_address(address))
++
++    def scene_fence_current(self,connection,fence):
++        owner=self.roles.get(fence.role_id)
++        target=self.registered_map(fence.address)
++        return (not connection.closed and self.connections.get(fence.role_id) is connection
++            and (connection.epoch,connection.generation)==(fence.epoch,fence.connection_generation)
++            and owner is not None and owner.epoch==fence.epoch and owner.map_address==fence.address
++            and not owner.poisoned and owner.scene_token==fence.scene_token and target is not None
++            and ((fence.address.instance_id<2**62 and fence.map_generation is None)
++                or (getattr(target,'story_handle',None) is not None
++                    and target.story_handle.map_generation==fence.map_generation)))
++
++    async def scene_messages(self,owner,replies):
++        """Track every private logical response before it reaches a send queue."""
++        if not replies or owner.map_address.instance_id<2**62:return replies
++        owner.valid()
++        connection=self.connections.get(owner.id)
++        if connection is None or connection.closed:return []
++        target=self.registered_map(owner.map_address)
++        if target is None or getattr(target,'story_handle',None) is None:
++            raise ValueError('Private scene response has no managed map generation')
++        fence=SceneFence(owner.map_address,target.story_handle.map_generation,owner.id,owner.epoch,
++            connection.generation,owner.scene_token)
++        messages=[]
++        try:
++            location=await target.mailbox.call('location',owner.id,owner.epoch)
++            for reply in replies:
++                kind,body=reply
++                delivery=await self.story_maps.begin_delivery(target,location,connection.generation)
++                message=ScopedSceneMessage(kind,body,getattr(reply,'barrier',None),delivery,fence)
++                messages.append(message)
++                if not self.scene_fence_current(connection,fence):raise StaleEpoch('Scene changed while preparing delivery')
++            return messages
++        except BaseException:
++            await asyncio.gather(*(self.story_maps.finish_delivery(message.delivery) for message in messages),
++                return_exceptions=True)
++            raise
++
++    async def offer_scene_channel(self,snapshot,delivery):
++        """Social recipient supplied a frozen, filtered current-channel delivery."""
++        if (delivery.scene_key is None or delivery.scene_key!=snapshot.scene_key
++                or (delivery.role_id,delivery.login_epoch)!=(snapshot.role_id,snapshot.login_epoch)):
++            return False
++        owner=self.roles.get(snapshot.role_id);connection=self.connections.get(snapshot.role_id)
++        if (owner is None or connection is None or connection.closed or owner.epoch!=snapshot.login_epoch
++                or not owner.joined or owner.transfer is not None
++                or owner.snapshot().scene_key!=snapshot.scene_key):
++            return False
++        if owner.map_address.instance_id>=2**62:
++            messages=await self.scene_messages(owner,[(delivery.kind,delivery.body)])
++            if not messages:return False
++            message=messages[0]
++        else:
++            fence=SceneFence(owner.map_address,None,owner.id,owner.epoch,connection.generation,owner.scene_token)
++            message=ScopedSceneMessage(delivery.kind,delivery.body,None,None,fence)
++        return await connection.offer_message(message,snapshot.login_epoch)
+ 
+     async def handle_socket(self, reader, writer):
+         await ConnectionOwner(self,writer).run(reader)
+@@ -1141,7 +1346,7 @@
+                     self.connections[rid]=connection
+                     replies=await owner.mailbox.call('load')
+                     c.state='world'
+-                    return replies
++                    return await self.scene_messages(owner,replies)
+                 except BaseException:
+                     if connection.role_id!=rid:
+                         self.roles.pop(rid,None)
+@@ -1150,7 +1355,9 @@
+         if c.state=='world':
+             owner=self.roles.get(connection.role_id)
+             if not owner or owner.epoch!=connection.epoch: raise StaleEpoch('Connection epoch expired')
+-            try: return await owner.mailbox.call('receive',kind,body)
++            try:
++                replies=await owner.mailbox.call('receive',kind,body)
++                return await self.scene_messages(owner,replies)
+             except (InventoryNotReady,ValueError) as exc:
+                 self.log(event='gameplay_rejected',role_id=owner.id,type=kind,reason=type(exc).__name__)
+                 return []
+@@ -1172,7 +1379,10 @@
+                             snapshots=tuple(self.members.get(membership_key,{}).values())
+                             for offset in range(0,len(snapshots),64):
+                                 for s in snapshots[offset:offset+64]:
+-                                    await self.effects((Delivery(s.role_id,s.login_epoch,event.kind,event.body),))
++                                    if event.scope=='scene':
++                                        packet=Delivery(s.role_id,s.login_epoch,event.kind,event.body,scene_key=event.partition_key)
++                                    else:packet=Delivery(s.role_id,s.login_epoch,event.kind,event.body)
++                                    await self.effects((packet,))
+                                 await asyncio.sleep(0)
+                             return None
+                         self.channels[key]=SerialOwner(('channel',key),publish)
+@@ -1208,7 +1418,9 @@
+         await self.presence(rid,False)
+ 
+     async def close(self):
++        await self.story_maps.stop()
+         for connection in tuple(self.clients): await connection.close()
++        await self.story_maps.close()
+         await self.social_runtime.close()
+         for owner in (*self.channels.values(),*(m.mailbox for m in self.maps.values())):
+             await owner.close()

@@ -1,0 +1,629 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/CommonCaseTui" Name="NewyearTrade">
+    <Property Name="UnifiedAreaRect" Value="{{0.5,-309},{0.5,-274},{0.5,309},{0.5,274}}" />
+    <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    <Window Type="TaharezLook/ImageButton" Name="NewyearTrade/close">
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:MainControl3 image:CloseHover" />
+      <Property Name="NormalImage" Value="set:MainControl3 image:CloseNormal" />
+      <Property Name="PushedImage" Value="set:MainControl3 image:ClosePushed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,42},{0,42}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,42},{0,42}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0.891586,0},{0.0218978,0},{0.959547,0},{0.0985401,0}}" />
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="NianshouTrade/figure0">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="UnifiedAreaRect" Value="{{0.100324,0},{0.0748175,0},{0.0730515,259},{0.0675182,140}}" />
+      <Window Type="TaharezLook/StaticImage" Name="NianshouTrade/figure0/itemkuang">
+        <Property Name="Image" Value="set:MainControl3 image:LuckyWheelCellx" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,66},{0,66}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,66},{0,66}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0619835,0},{0.05,7},{0.05,69},{0.05,73}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="NianshouTrade/figure0/itemkuang/cell">
+          <Property Name="UnifiedAreaRect" Value="{{0,9},{0,10},{0,57},{0,58}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="NianshouTrade/figure0/duihuanwan">
+        <Property Name="Image" Value="set:MainControl39 image:duihuanwan" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.309917,0},{0.588235,0},{0.644628,0},{0.933824,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="NianshouTrade/figure0/btn">
+        <Property Name="Text" Value="兑   换" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.326446,0},{0.661765,0},{0.657025,0},{0.875,0}}" />
+      </Window>
+      <Window Type="DefaultWindow" Name="NianshouTrade/figure0/text">
+        <Property Name="UnifiedAreaRect" Value="{{0.355372,0},{0.176471,0},{0.793388,0},{0.308824,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure0/text/0">
+          <Property Name="Text" Value="可兑换" />
+          <Property Name="HorzExtent" Value="39" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0188679,0},{-0.111111,0},{0.40566,0},{1.05556,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure0/text/1">
+          <Property Name="Text" Value="次" />
+          <Property Name="HorzExtent" Value="13" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.783019,0},{0.0555556,0},{0.981132,0},{0.888889,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure0/limit">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="10" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="32" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.533058,0},{0.169118,0},{0.694215,0},{0.308824,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="DefaultWindow" Name="NianshouTrade/figure0/text1">
+        <Property Name="UnifiedAreaRect" Value="{{0.359504,0},{0.382353,0},{0.954545,0},{0.514706,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure0/text1/0">
+          <Property Name="Text" Value="消耗" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0138889,0},{-0.111111,0},{0.236111,0},{1.05556,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure0/text1/1">
+          <Property Name="Text" Value="金猴福运" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.638889,0},{0.0555556,0},{1.02778,0},{0.888889,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure0/num">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="1288" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="64" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.446281,0},{0.375,0},{0.756198,0},{0.514706,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="NianshouTrade/figure1">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="UnifiedAreaRect" Value="{{0.504854,0},{0.0748175,0},{0.0730515,509},{0.0675182,140}}" />
+      <Window Type="TaharezLook/StaticImage" Name="NianshouTrade/figure1/itemkuang">
+        <Property Name="Image" Value="set:MainControl3 image:LuckyWheelCellx" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,66},{0,66}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,66},{0,66}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0619835,0},{0.05,7},{0.05,69},{0.05,73}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="NianshouTrade/figure1/itemkuang/cell">
+          <Property Name="UnifiedAreaRect" Value="{{0,9},{0,10},{0,57},{0,58}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="NianshouTrade/figure1/duihuanwan">
+        <Property Name="Image" Value="set:MainControl39 image:duihuanwan" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.309917,0},{0.588235,0},{0.644628,0},{0.933824,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="NianshouTrade/figure1/btn">
+        <Property Name="Text" Value="兑   换" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.326446,0},{0.661765,0},{0.657025,0},{0.875,0}}" />
+      </Window>
+      <Window Type="DefaultWindow" Name="NianshouTrade/figure1/text">
+        <Property Name="UnifiedAreaRect" Value="{{0.355372,0},{0.176471,0},{0.793388,0},{0.308824,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure1/text/0">
+          <Property Name="Text" Value="可兑换" />
+          <Property Name="HorzExtent" Value="39" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0188679,0},{-0.111111,0},{0.40566,0},{1.05556,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure1/text/1">
+          <Property Name="Text" Value="次" />
+          <Property Name="HorzExtent" Value="13" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.783019,0},{0.0555556,0},{0.981132,0},{0.888889,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure1/limit">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="10" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="32" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.533058,0},{0.169118,0},{0.694215,0},{0.308824,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="DefaultWindow" Name="NianshouTrade/figure1/text1">
+        <Property Name="UnifiedAreaRect" Value="{{0.355372,0},{0.382353,0},{0.950413,0},{0.514706,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure1/text1/0">
+          <Property Name="Text" Value="消耗" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0138889,0},{-0.111111,0},{0.236111,0},{1.05556,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure1/text1/1">
+          <Property Name="Text" Value="金猴福运" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.631944,0},{0.0555556,0},{1.02083,0},{0.888889,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure1/num">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="1288" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="64" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.446281,0},{0.375,0},{0.747934,0},{0.514706,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="NianshouTrade/figure2">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="UnifiedAreaRect" Value="{{0.100324,0},{0.330292,0},{0.0730515,259},{0.0675182,280}}" />
+      <Window Type="TaharezLook/StaticImage" Name="NianshouTrade/figure2/itemkuang">
+        <Property Name="Image" Value="set:MainControl3 image:LuckyWheelCellx" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,66},{0,66}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,66},{0,66}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0619835,0},{0.05,7},{0.05,69},{0.05,73}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="NianshouTrade/figure2/itemkuang/cell">
+          <Property Name="UnifiedAreaRect" Value="{{0,9},{0,10},{0,57},{0,58}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="NianshouTrade/figure2/duihuanwan">
+        <Property Name="Image" Value="set:MainControl39 image:duihuanwan" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.309917,0},{0.588235,0},{0.644628,0},{0.933824,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="NianshouTrade/figure2/btn">
+        <Property Name="Text" Value="兑   换" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.326446,0},{0.661765,0},{0.657025,0},{0.875,0}}" />
+      </Window>
+      <Window Type="DefaultWindow" Name="NianshouTrade/figure2/text">
+        <Property Name="UnifiedAreaRect" Value="{{0.355372,0},{0.176471,0},{0.793388,0},{0.308824,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure2/text/0">
+          <Property Name="Text" Value="可兑换" />
+          <Property Name="HorzExtent" Value="39" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0188679,0},{-0.111111,0},{0.40566,0},{1.05556,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure2/text/1">
+          <Property Name="Text" Value="次" />
+          <Property Name="HorzExtent" Value="13" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.783019,0},{0.0555556,0},{0.981132,0},{0.888889,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure2/limit">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="10" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="32" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.533058,0},{0.169118,0},{0.694215,0},{0.308824,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="DefaultWindow" Name="NianshouTrade/figure2/text1">
+        <Property Name="UnifiedAreaRect" Value="{{0.359504,0},{0.382353,0},{0.954545,0},{0.514706,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure2/text1/0">
+          <Property Name="Text" Value="消耗" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0138889,0},{-0.111111,0},{0.236111,0},{1.05556,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure2/text1/1">
+          <Property Name="Text" Value="金猴福运" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.625,0},{0.0555556,0},{1.01389,0},{0.888889,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure2/num">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="1288" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="64" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.454546,0},{0.375,0},{0.731405,0},{0.514706,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="NianshouTrade/figure3">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="UnifiedAreaRect" Value="{{0.504854,0},{0.330292,0},{0.0730515,509},{0.0675182,280}}" />
+      <Window Type="TaharezLook/StaticImage" Name="NianshouTrade/figure3/itemkuang">
+        <Property Name="Image" Value="set:MainControl3 image:LuckyWheelCellx" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,66},{0,66}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,66},{0,66}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0619835,0},{0.05,7},{0.05,69},{0.05,73}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="NianshouTrade/figure3/itemkuang/cell">
+          <Property Name="UnifiedAreaRect" Value="{{0,9},{0,10},{0,57},{0,58}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="NianshouTrade/figure3/duihuanwan">
+        <Property Name="Image" Value="set:MainControl39 image:duihuanwan" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.309917,0},{0.588235,0},{0.644628,0},{0.933824,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="NianshouTrade/figure3/btn">
+        <Property Name="Text" Value="兑   换" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.326446,0},{0.661765,0},{0.657025,0},{0.875,0}}" />
+      </Window>
+      <Window Type="DefaultWindow" Name="NianshouTrade/figure3/text">
+        <Property Name="UnifiedAreaRect" Value="{{0.355372,0},{0.176471,0},{0.793388,0},{0.308824,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure3/text/0">
+          <Property Name="Text" Value="可兑换" />
+          <Property Name="HorzExtent" Value="39" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0188679,0},{-0.111111,0},{0.40566,0},{1.05556,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure3/text/1">
+          <Property Name="Text" Value="次" />
+          <Property Name="HorzExtent" Value="13" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.783019,0},{0.0555556,0},{0.981132,0},{0.888889,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure3/limit">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="10" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="32" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.533058,0},{0.169118,0},{0.694215,0},{0.308824,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="DefaultWindow" Name="NianshouTrade/figure3/text1">
+        <Property Name="UnifiedAreaRect" Value="{{0.359504,0},{0.382353,0},{0.954545,0},{0.514706,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure3/text1/0">
+          <Property Name="Text" Value="消耗" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0138889,0},{-0.111111,0},{0.236111,0},{1.05556,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure3/text1/1">
+          <Property Name="Text" Value="金猴福运" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.645833,0},{0.0555556,0},{1.03472,0},{0.888889,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure3/num">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="1288" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="64" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.46281,0},{0.375,0},{0.739669,0},{0.514706,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="NianshouTrade/figure4">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="UnifiedAreaRect" Value="{{0.100324,0},{0.585766,0},{0.0730515,259},{0.0675181,420}}" />
+      <Window Type="TaharezLook/StaticImage" Name="NianshouTrade/figure4/itemkuang">
+        <Property Name="Image" Value="set:MainControl3 image:LuckyWheelCellx" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,66},{0,66}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,66},{0,66}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0619835,0},{0.05,7},{0.05,69},{0.05,73}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="NianshouTrade/figure4/itemkuang/cell">
+          <Property Name="UnifiedAreaRect" Value="{{0,9},{0,10},{0,57},{0,58}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="NianshouTrade/figure4/duihuanwan">
+        <Property Name="Image" Value="set:MainControl39 image:duihuanwan" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.309917,0},{0.588235,0},{0.644628,0},{0.933824,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="NianshouTrade/figure4/btn">
+        <Property Name="Text" Value="兑   换" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.326446,0},{0.661765,0},{0.657025,0},{0.875,0}}" />
+      </Window>
+      <Window Type="DefaultWindow" Name="NianshouTrade/figure4/text">
+        <Property Name="UnifiedAreaRect" Value="{{0.355372,0},{0.176471,0},{0.793388,0},{0.308824,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure4/text/0">
+          <Property Name="Text" Value="可兑换" />
+          <Property Name="HorzExtent" Value="39" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0188679,0},{-0.111111,0},{0.40566,0},{1.05556,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure4/text/1">
+          <Property Name="Text" Value="次" />
+          <Property Name="HorzExtent" Value="13" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.783019,0},{0.0555556,0},{0.981132,0},{0.888889,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure4/limit">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="10" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="32" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.533058,0},{0.169118,0},{0.694215,0},{0.308824,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="DefaultWindow" Name="NianshouTrade/figure4/text1">
+        <Property Name="UnifiedAreaRect" Value="{{0.359504,0},{0.382353,0},{0.954545,0},{0.514706,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure4/text1/0">
+          <Property Name="Text" Value="消耗" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0138889,0},{-0.111111,0},{0.236111,0},{1.05556,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure4/text1/1">
+          <Property Name="Text" Value="金猴福运" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.645833,0},{0.0555556,0},{1.03472,0},{0.888889,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure4/num">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="1288" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="64" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.450413,0},{0.375,0},{0.739669,0},{0.514706,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="NianshouTrade/figure5">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="UnifiedAreaRect" Value="{{0.504854,0},{0.585766,0},{0.0730515,509},{0.0675181,420}}" />
+      <Window Type="TaharezLook/StaticImage" Name="NianshouTrade/figure5/itemkuang">
+        <Property Name="Image" Value="set:MainControl3 image:LuckyWheelCellx" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,66},{0,66}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,66},{0,66}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0619835,0},{0.05,7},{0.05,69},{0.05,73}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="NianshouTrade/figure5/itemkuang/cell">
+          <Property Name="UnifiedAreaRect" Value="{{0,9},{0,10},{0,57},{0,58}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="NianshouTrade/figure5/duihuanwan">
+        <Property Name="Image" Value="set:MainControl39 image:duihuanwan" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.309917,0},{0.588235,0},{0.644628,0},{0.933824,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="NianshouTrade/figure5/btn">
+        <Property Name="Text" Value="兑   换" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.326446,0},{0.661765,0},{0.657025,0},{0.875,0}}" />
+      </Window>
+      <Window Type="DefaultWindow" Name="NianshouTrade/figure5/text">
+        <Property Name="UnifiedAreaRect" Value="{{0.355372,0},{0.176471,0},{0.793388,0},{0.308824,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure5/text/0">
+          <Property Name="Text" Value="可兑换" />
+          <Property Name="HorzExtent" Value="39" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0188679,0},{-0.111111,0},{0.40566,0},{1.05556,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure5/text/1">
+          <Property Name="Text" Value="次" />
+          <Property Name="HorzExtent" Value="13" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.783019,0},{0.0555556,0},{0.981132,0},{0.888889,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure5/limit">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="10" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="32" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.533058,0},{0.169118,0},{0.694215,0},{0.308824,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="DefaultWindow" Name="NianshouTrade/figure5/text1">
+        <Property Name="UnifiedAreaRect" Value="{{0.359504,0},{0.382353,0},{0.954545,0},{0.514706,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure5/text1/0">
+          <Property Name="Text" Value="消耗" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0138889,0},{-0.111111,0},{0.236111,0},{1.05556,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure5/text1/1">
+          <Property Name="Text" Value="金猴福运" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.631944,0},{0.0555556,0},{1.02083,0},{0.888889,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="NianshouTrade/figure5/num">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="1288" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="64" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.458678,0},{0.375,0},{0.731405,0},{0.514706,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/LittleButton" Name="NewyearTrade/pageup">
+      <Property Name="Text" Value="上一页" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.276699,0},{0.85219,0},{0.404531,0},{0.899635,0}}" />
+    </Window>
+    <Window Type="TaharezLook/LittleButton" Name="NewyearTrade/pagedown">
+      <Property Name="Text" Value="下一页" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.595469,0},{0.854015,0},{0.723301,0},{0.90146,0}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="NewyearTrade/page">
+      <Property Name="Text" Value="1/3" />
+      <Property Name="HorzExtent" Value="23" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.44822,0},{0.861314,0},{0.545307,0},{0.89781,0}}" />
+    </Window>
+  </Window>
+</GUILayout>

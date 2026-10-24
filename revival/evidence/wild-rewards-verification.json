@@ -1,0 +1,17 @@
+{
+  "checks": [
+    "victory atomically credits real XP, bound silver and bound original item; retry grants once",
+    "same battle with conflicting terminal result rejected",
+    "outer combat-resource failure rolls back all rewards and receipt; same admission can retry",
+    "full bag rolls back XP/money/items together; persisted drop is retained for retry",
+    "escape defeat and draw award nothing",
+    "overlevel suppression uses frozen admission level",
+    "unregistered battle, training scope and changed admission rejected",
+    "old login lease cannot replay even an existing receipt"
+  ],
+  "passed": 8,
+  "database": "disposable",
+  "live_server_changed": false,
+  "runtime_integrated": false,
+  "pet_experience_integrated": false
+}

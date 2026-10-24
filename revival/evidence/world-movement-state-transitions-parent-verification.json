@@ -1,0 +1,1043 @@
+{
+  "image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+  "script_sha256": "914710db7528b7e5811c748ccca8f0c5687a67eb1aadb1a15239ce04c5fccc26",
+  "base_harness_sha256": "3e8947a9fa6e33b6996503523d7acd20144df57579bec9c6f2d30e9338a1edf7",
+  "all_passed": true,
+  "case_count": 35,
+  "cases": [
+    {
+      "case": "CRoleJumpStop_codec",
+      "byte": 0,
+      "body_hex": "0008000800"
+    },
+    {
+      "case": "CRoleJumpStop_codec",
+      "byte": 1,
+      "body_hex": "0008000801"
+    },
+    {
+      "case": "CRoleJumpStop_codec",
+      "byte": 255,
+      "body_hex": "00080008ff"
+    },
+    {
+      "case": "setter_raw_byte",
+      "prior": 0,
+      "argument": 1,
+      "after": 1,
+      "writes": [
+        {
+          "pc": "0x1205c9d",
+          "address": "0x5001218",
+          "size": 1,
+          "value": 1
+        }
+      ],
+      "mask": 8
+    },
+    {
+      "case": "setter_raw_byte",
+      "prior": 1,
+      "argument": 0,
+      "after": 0,
+      "writes": [
+        {
+          "pc": "0x1205c9d",
+          "address": "0x5001218",
+          "size": 1,
+          "value": 0
+        }
+      ],
+      "mask": 1
+    },
+    {
+      "case": "setter_raw_byte",
+      "prior": 1,
+      "argument": 1,
+      "after": 1,
+      "writes": [],
+      "mask": 8
+    },
+    {
+      "case": "setter_raw_byte",
+      "prior": 0,
+      "argument": 2,
+      "after": 2,
+      "writes": [
+        {
+          "pc": "0x1205c9d",
+          "address": "0x5001218",
+          "size": 1,
+          "value": 2
+        }
+      ],
+      "mask": 8
+    },
+    {
+      "case": "setter_raw_byte",
+      "prior": 2,
+      "argument": 255,
+      "after": 255,
+      "writes": [
+        {
+          "pc": "0x1205c9d",
+          "address": "0x5001218",
+          "size": 1,
+          "value": 255
+        }
+      ],
+      "mask": 8
+    },
+    {
+      "case": "local_conversion_completion",
+      "prior": 0,
+      "world_tile_flags": 0,
+      "after": 1,
+      "mask": 8,
+      "queries": [
+        {
+          "x": 8,
+          "y": 8,
+          "flags": 0
+        }
+      ],
+      "writes": [
+        {
+          "pc": "0x1205c9d",
+          "address": "0x5001218",
+          "size": 1,
+          "value": 1
+        }
+      ],
+      "outbound": [
+        {
+          "type": "0xc0fcf",
+          "position": [
+            8,
+            8
+          ],
+          "byte": 1
+        }
+      ]
+    },
+    {
+      "case": "local_conversion_completion",
+      "prior": 0,
+      "world_tile_flags": 1,
+      "after": 1,
+      "mask": 8,
+      "queries": [
+        {
+          "x": 8,
+          "y": 8,
+          "flags": 1
+        }
+      ],
+      "writes": [
+        {
+          "pc": "0x1205c9d",
+          "address": "0x5001218",
+          "size": 1,
+          "value": 1
+        }
+      ],
+      "outbound": [
+        {
+          "type": "0xc0fcf",
+          "position": [
+            8,
+            8
+          ],
+          "byte": 1
+        }
+      ]
+    },
+    {
+      "case": "local_conversion_completion",
+      "prior": 0,
+      "world_tile_flags": 8,
+      "after": 0,
+      "mask": 1,
+      "queries": [
+        {
+          "x": 8,
+          "y": 8,
+          "flags": 8
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "flags": 8
+        }
+      ],
+      "writes": [],
+      "outbound": [
+        {
+          "type": "0xc0fcf",
+          "position": [
+            8,
+            8
+          ],
+          "byte": 1
+        }
+      ]
+    },
+    {
+      "case": "local_conversion_completion",
+      "prior": 0,
+      "world_tile_flags": 9,
+      "after": 0,
+      "mask": 1,
+      "queries": [
+        {
+          "x": 8,
+          "y": 8,
+          "flags": 9
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "flags": 9
+        }
+      ],
+      "writes": [],
+      "outbound": [
+        {
+          "type": "0xc0fcf",
+          "position": [
+            8,
+            8
+          ],
+          "byte": 1
+        }
+      ]
+    },
+    {
+      "case": "local_conversion_completion",
+      "prior": 1,
+      "world_tile_flags": 0,
+      "after": 1,
+      "mask": 8,
+      "queries": [
+        {
+          "x": 8,
+          "y": 8,
+          "flags": 0
+        }
+      ],
+      "writes": [],
+      "outbound": [
+        {
+          "type": "0xc0fcf",
+          "position": [
+            8,
+            8
+          ],
+          "byte": 1
+        }
+      ]
+    },
+    {
+      "case": "local_conversion_completion",
+      "prior": 1,
+      "world_tile_flags": 1,
+      "after": 1,
+      "mask": 8,
+      "queries": [
+        {
+          "x": 8,
+          "y": 8,
+          "flags": 1
+        }
+      ],
+      "writes": [],
+      "outbound": [
+        {
+          "type": "0xc0fcf",
+          "position": [
+            8,
+            8
+          ],
+          "byte": 1
+        }
+      ]
+    },
+    {
+      "case": "local_conversion_completion",
+      "prior": 1,
+      "world_tile_flags": 8,
+      "after": 0,
+      "mask": 1,
+      "queries": [
+        {
+          "x": 8,
+          "y": 8,
+          "flags": 8
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "flags": 8
+        }
+      ],
+      "writes": [
+        {
+          "pc": "0x1205c9d",
+          "address": "0x5001218",
+          "size": 1,
+          "value": 0
+        }
+      ],
+      "outbound": [
+        {
+          "type": "0xc0fcf",
+          "position": [
+            8,
+            8
+          ],
+          "byte": 1
+        }
+      ]
+    },
+    {
+      "case": "local_conversion_completion",
+      "prior": 1,
+      "world_tile_flags": 9,
+      "after": 1,
+      "mask": 8,
+      "queries": [
+        {
+          "x": 8,
+          "y": 8,
+          "flags": 9
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "flags": 9
+        }
+      ],
+      "writes": [],
+      "outbound": [
+        {
+          "type": "0xc0fcf",
+          "position": [
+            8,
+            8
+          ],
+          "byte": 1
+        }
+      ]
+    },
+    {
+      "case": "local_conversion_completion",
+      "prior": 2,
+      "world_tile_flags": 0,
+      "after": 1,
+      "mask": 8,
+      "queries": [
+        {
+          "x": 8,
+          "y": 8,
+          "flags": 0
+        }
+      ],
+      "writes": [
+        {
+          "pc": "0x1205c9d",
+          "address": "0x5001218",
+          "size": 1,
+          "value": 1
+        }
+      ],
+      "outbound": [
+        {
+          "type": "0xc0fcf",
+          "position": [
+            8,
+            8
+          ],
+          "byte": 1
+        }
+      ]
+    },
+    {
+      "case": "local_conversion_completion",
+      "prior": 2,
+      "world_tile_flags": 1,
+      "after": 1,
+      "mask": 8,
+      "queries": [
+        {
+          "x": 8,
+          "y": 8,
+          "flags": 1
+        }
+      ],
+      "writes": [
+        {
+          "pc": "0x1205c9d",
+          "address": "0x5001218",
+          "size": 1,
+          "value": 1
+        }
+      ],
+      "outbound": [
+        {
+          "type": "0xc0fcf",
+          "position": [
+            8,
+            8
+          ],
+          "byte": 1
+        }
+      ]
+    },
+    {
+      "case": "local_conversion_completion",
+      "prior": 2,
+      "world_tile_flags": 8,
+      "after": 0,
+      "mask": 1,
+      "queries": [
+        {
+          "x": 8,
+          "y": 8,
+          "flags": 8
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "flags": 8
+        }
+      ],
+      "writes": [
+        {
+          "pc": "0x1205c9d",
+          "address": "0x5001218",
+          "size": 1,
+          "value": 0
+        }
+      ],
+      "outbound": [
+        {
+          "type": "0xc0fcf",
+          "position": [
+            8,
+            8
+          ],
+          "byte": 1
+        }
+      ]
+    },
+    {
+      "case": "local_conversion_completion",
+      "prior": 2,
+      "world_tile_flags": 9,
+      "after": 2,
+      "mask": 8,
+      "queries": [
+        {
+          "x": 8,
+          "y": 8,
+          "flags": 9
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "flags": 9
+        }
+      ],
+      "writes": [],
+      "outbound": [
+        {
+          "type": "0xc0fcf",
+          "position": [
+            8,
+            8
+          ],
+          "byte": 1
+        }
+      ]
+    },
+    {
+      "case": "appearance_reapply_preserves",
+      "prior": 0,
+      "after": 0,
+      "writes": []
+    },
+    {
+      "case": "appearance_reapply_preserves",
+      "prior": 1,
+      "after": 1,
+      "writes": []
+    },
+    {
+      "case": "appearance_reapply_preserves",
+      "prior": 2,
+      "after": 2,
+      "writes": []
+    },
+    {
+      "case": "original_dense_loader_World_JumpStop",
+      "position": [
+        0,
+        0
+      ],
+      "raw_flags_u32": 0,
+      "prior": 2,
+      "after": 1,
+      "queries": [
+        {
+          "x": 0,
+          "y": 0,
+          "original_query": true
+        },
+        {
+          "x": 0,
+          "y": 0,
+          "original_query": true
+        }
+      ],
+      "outbound": [
+        {
+          "type": "0xc0fcf",
+          "position": [
+            0,
+            0
+          ],
+          "byte": 0
+        }
+      ],
+      "writes": [
+        {
+          "pc": "0x1205c9d",
+          "address": "0x5001218",
+          "size": 1,
+          "value": 1
+        }
+      ],
+      "original_6284f0_clear": {
+        "1": true,
+        "8": true
+      }
+    },
+    {
+      "case": "original_dense_loader_World_JumpStop",
+      "position": [
+        16,
+        0
+      ],
+      "raw_flags_u32": 1,
+      "prior": 2,
+      "after": 1,
+      "queries": [
+        {
+          "x": 16,
+          "y": 0,
+          "original_query": true
+        },
+        {
+          "x": 16,
+          "y": 0,
+          "original_query": true
+        }
+      ],
+      "outbound": [
+        {
+          "type": "0xc0fcf",
+          "position": [
+            16,
+            0
+          ],
+          "byte": 0
+        }
+      ],
+      "writes": [
+        {
+          "pc": "0x1205c9d",
+          "address": "0x5001218",
+          "size": 1,
+          "value": 1
+        }
+      ],
+      "original_6284f0_clear": {
+        "1": false,
+        "8": true
+      }
+    },
+    {
+      "case": "original_dense_loader_World_JumpStop",
+      "position": [
+        0,
+        16
+      ],
+      "raw_flags_u32": 8,
+      "prior": 2,
+      "after": 0,
+      "queries": [
+        {
+          "x": 0,
+          "y": 16,
+          "original_query": true
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "original_query": true
+        },
+        {
+          "x": 0,
+          "y": 16,
+          "original_query": true
+        }
+      ],
+      "outbound": [
+        {
+          "type": "0xc0fcf",
+          "position": [
+            0,
+            16
+          ],
+          "byte": 0
+        }
+      ],
+      "writes": [
+        {
+          "pc": "0x1205c9d",
+          "address": "0x5001218",
+          "size": 1,
+          "value": 0
+        }
+      ],
+      "original_6284f0_clear": {
+        "1": true,
+        "8": false
+      }
+    },
+    {
+      "case": "original_dense_loader_World_JumpStop",
+      "position": [
+        16,
+        16
+      ],
+      "raw_flags_u32": 9,
+      "prior": 2,
+      "after": 2,
+      "queries": [
+        {
+          "x": 16,
+          "y": 16,
+          "original_query": true
+        },
+        {
+          "x": 16,
+          "y": 16,
+          "original_query": true
+        },
+        {
+          "x": 16,
+          "y": 16,
+          "original_query": true
+        }
+      ],
+      "outbound": [
+        {
+          "type": "0xc0fcf",
+          "position": [
+            16,
+            16
+          ],
+          "byte": 0
+        }
+      ],
+      "writes": [],
+      "original_6284f0_clear": {
+        "1": false,
+        "8": false
+      }
+    },
+    {
+      "case": "original_dense_loader_World_JumpStop",
+      "position": [
+        -1,
+        0
+      ],
+      "raw_flags_u32": 0,
+      "prior": 2,
+      "after": 1,
+      "queries": [
+        {
+          "x": -1,
+          "y": 0,
+          "original_query": true
+        },
+        {
+          "x": -1,
+          "y": 0,
+          "original_query": true
+        }
+      ],
+      "outbound": [
+        {
+          "type": "0xc0fcf",
+          "position": [
+            -1,
+            0
+          ],
+          "byte": 0
+        }
+      ],
+      "writes": [
+        {
+          "pc": "0x1205c9d",
+          "address": "0x5001218",
+          "size": 1,
+          "value": 1
+        }
+      ],
+      "original_6284f0_clear": {
+        "1": true,
+        "8": true
+      }
+    },
+    {
+      "case": "original_dense_loader_World_JumpStop",
+      "position": [
+        -16,
+        0
+      ],
+      "raw_flags_u32": 4294967295,
+      "prior": 2,
+      "after": 2,
+      "queries": [
+        {
+          "x": -16,
+          "y": 0,
+          "original_query": true
+        },
+        {
+          "x": -16,
+          "y": 0,
+          "original_query": true
+        },
+        {
+          "x": -16,
+          "y": 0,
+          "original_query": true
+        }
+      ],
+      "outbound": [
+        {
+          "type": "0xc0fcf",
+          "position": [
+            -16,
+            0
+          ],
+          "byte": 0
+        }
+      ],
+      "writes": [],
+      "original_6284f0_clear": {
+        "1": false,
+        "8": false
+      }
+    },
+    {
+      "case": "original_dense_loader_World_JumpStop",
+      "position": [
+        32,
+        0
+      ],
+      "raw_flags_u32": 4294967295,
+      "prior": 2,
+      "after": 2,
+      "queries": [
+        {
+          "x": 32,
+          "y": 0,
+          "original_query": true
+        },
+        {
+          "x": 32,
+          "y": 0,
+          "original_query": true
+        },
+        {
+          "x": 32,
+          "y": 0,
+          "original_query": true
+        }
+      ],
+      "outbound": [
+        {
+          "type": "0xc0fcf",
+          "position": [
+            32,
+            0
+          ],
+          "byte": 0
+        }
+      ],
+      "writes": [],
+      "original_6284f0_clear": {
+        "1": false,
+        "8": false
+      }
+    },
+    {
+      "case": "original_dense_loader_World_JumpStop",
+      "position": [
+        0,
+        32
+      ],
+      "raw_flags_u32": 4294967295,
+      "prior": 2,
+      "after": 2,
+      "queries": [
+        {
+          "x": 0,
+          "y": 32,
+          "original_query": true
+        },
+        {
+          "x": 0,
+          "y": 32,
+          "original_query": true
+        },
+        {
+          "x": 0,
+          "y": 32,
+          "original_query": true
+        }
+      ],
+      "outbound": [
+        {
+          "type": "0xc0fcf",
+          "position": [
+            0,
+            32
+          ],
+          "byte": 0
+        }
+      ],
+      "writes": [],
+      "original_6284f0_clear": {
+        "1": false,
+        "8": false
+      }
+    },
+    {
+      "case": "original_missing_map_preserves",
+      "position": [
+        8,
+        8
+      ],
+      "raw_flags_u32": 4294967295,
+      "prior": 2,
+      "after": 2,
+      "queries": [
+        {
+          "x": 8,
+          "y": 8,
+          "original_query": true
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "original_query": true
+        },
+        {
+          "x": 8,
+          "y": 8,
+          "original_query": true
+        }
+      ],
+      "outbound": [
+        {
+          "type": "0xc0fcf",
+          "position": [
+            8,
+            8
+          ],
+          "byte": 0
+        }
+      ],
+      "writes": [],
+      "original_6284f0_clear": {
+        "1": true,
+        "8": true
+      }
+    },
+    {
+      "case": "fresh_PFS_1006_original_loader_World_JumpStop",
+      "entry": "map_1006_jiaxing/maze.dat",
+      "entry_sha256": "6f81a7407738d6ce9b7ca167c82c28849dea1db12e7f2aa7fe1285e747698351",
+      "position": [
+        360,
+        2264
+      ],
+      "raw_flags_u32": 8,
+      "prior": 2,
+      "after": 0,
+      "queries": [
+        {
+          "x": 360,
+          "y": 2264,
+          "original_query": true
+        },
+        {
+          "x": 360,
+          "y": 2264,
+          "original_query": true
+        },
+        {
+          "x": 360,
+          "y": 2264,
+          "original_query": true
+        }
+      ],
+      "outbound": [
+        {
+          "type": "0xc0fcf",
+          "position": [
+            360,
+            2264
+          ],
+          "byte": 0
+        }
+      ],
+      "writes": [
+        {
+          "pc": "0x1205c9d",
+          "address": "0x5001218",
+          "size": 1,
+          "value": 0
+        }
+      ],
+      "original_6284f0_clear": {
+        "1": true,
+        "8": false
+      }
+    },
+    {
+      "case": "fresh_PFS_1006_original_loader_World_JumpStop",
+      "entry": "map_1006_jiaxing/maze.dat",
+      "entry_sha256": "6f81a7407738d6ce9b7ca167c82c28849dea1db12e7f2aa7fe1285e747698351",
+      "position": [
+        361,
+        2264
+      ],
+      "raw_flags_u32": 8,
+      "prior": 2,
+      "after": 0,
+      "queries": [
+        {
+          "x": 361,
+          "y": 2264,
+          "original_query": true
+        },
+        {
+          "x": 361,
+          "y": 2264,
+          "original_query": true
+        },
+        {
+          "x": 361,
+          "y": 2264,
+          "original_query": true
+        }
+      ],
+      "outbound": [
+        {
+          "type": "0xc0fcf",
+          "position": [
+            361,
+            2264
+          ],
+          "byte": 0
+        }
+      ],
+      "writes": [
+        {
+          "pc": "0x1205c9d",
+          "address": "0x5001218",
+          "size": 1,
+          "value": 0
+        }
+      ],
+      "original_6284f0_clear": {
+        "1": true,
+        "8": false
+      }
+    },
+    {
+      "case": "fresh_PFS_1006_original_loader_World_JumpStop",
+      "entry": "map_1006_jiaxing/maze.dat",
+      "entry_sha256": "6f81a7407738d6ce9b7ca167c82c28849dea1db12e7f2aa7fe1285e747698351",
+      "position": [
+        1664,
+        960
+      ],
+      "raw_flags_u32": 11,
+      "prior": 2,
+      "after": 2,
+      "queries": [
+        {
+          "x": 1664,
+          "y": 960,
+          "original_query": true
+        },
+        {
+          "x": 1664,
+          "y": 960,
+          "original_query": true
+        },
+        {
+          "x": 1664,
+          "y": 960,
+          "original_query": true
+        }
+      ],
+      "outbound": [
+        {
+          "type": "0xc0fcf",
+          "position": [
+            1664,
+            960
+          ],
+          "byte": 0
+        }
+      ],
+      "writes": [],
+      "original_6284f0_clear": {
+        "1": false,
+        "8": false
+      }
+    }
+  ],
+  "adapters": [
+    "inherited Reconciliation presentation/CRT/actor fixture",
+    "historical 12 cases: World virtual+28 returns fixture tile flags",
+    "dense/fresh cases: original 672490 loader, 6036e0 World query, 11c5c00 and 6284f0 execute",
+    "host buffer source length/data and destination reserve/data ABI; CRT memcpy",
+    "sender captures original c0fcf object before wire encoding"
+  ],
+  "not_proven": [
+    "all writers exhausted",
+    "full conversion animation producer",
+    "c0fcf authoritative server meaning",
+    "full SEnterWorld model construction",
+    "1404/516023 special branch gameplay",
+    "GUI/runtime integration"
+  ],
+  "parent_independent_execution": true,
+  "actual_inputs_sha256": {
+    "D:\\神雕侠侣\\revival\\verify_world_movement_state_transitions_native.py": "914710db7528b7e5811c748ccca8f0c5687a67eb1aadb1a15239ce04c5fccc26",
+    "D:\\神雕侠侣\\revival\\evidence\\native-image.bin": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+    "D:\\神雕侠侣\\revival\\verify_world_movement_reconciliation_native.py": "3e8947a9fa6e33b6996503523d7acd20144df57579bec9c6f2d30e9338a1edf7"
+  },
+  "inputs_stable": true,
+  "live_server_changed": false,
+  "native_gui_verified": false
+}

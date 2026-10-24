@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="GangFightRealTime">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.114518,0},{0,100},{0.114518,628},{0,556}}" />
+    <Window Type="TaharezLook/StaticImage" Name="GangFightRealTime/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.194268,0},{0.0219298,0},{0.684714,0},{0.0811403,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="GangFightRealTime/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="战况查询" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,71},{0,1},{0,160},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="GangFightRealTime/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0286624,0},{0.0986842,0},{0.964968,0},{0.962719,0}}" />
+      <Window Type="TaharezLook/MultiColumnList" Name="GangFightRealTime/List1">
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0.00507614,0},{0,584},{0,106}}" />
+        <Property Name="ColumnHeader" Value="text:帮派名 width:{0.3,0} id:0" />
+        <Property Name="ColumnHeader" Value="text:场内总人数 width:{0.15,0} id:1" />
+        <Property Name="ColumnHeader" Value="text:大帐耐久 width:{0.27,0} id:2" />
+        <Property Name="ColumnHeader" Value="text:杀敌总人数 width:{1,-416} id:3" />
+      </Window>
+      <Window Type="TaharezLook/MultiColumnList" Name="GangFightRealTime/List2">
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,139},{0,584},{0,387}}" />
+        <Property Name="ColumnHeader" Value="text:排名 width:{0.1,0} id:0" />
+        <Property Name="ColumnHeader" Value="text:角色名 width:{0.2,0} id:1" />
+        <Property Name="ColumnHeader" Value="text:所属帮派 width:{0.2,0} id:2" />
+        <Property Name="ColumnHeader" Value="text:杀敌人数 width:{0.125,0} id:3" />
+        <Property Name="ColumnHeader" Value="text:建筑伤害 width:{0.125,0} id:4" />
+        <Property Name="ColumnHeader" Value="text:建筑维修 width:{0.125,0} id:5" />
+        <Property Name="ColumnHeader" Value="text:总积分 width:{1,-506} id:6" />
+      </Window>
+      <Window Type="TaharezLook/GroupButton" Name="GangFightRealTime/Back/selfside">
+        <Property Name="Text" Value="己方" />
+        <Property Name="UnifiedAreaRect" Value="{{0.29932,0},{0.294416,0},{0.414966,0},{0.352792,0}}" />
+      </Window>
+      <Window Type="TaharezLook/GroupButton" Name="GangFightRealTime/Back/All">
+        <Property Name="Text" Value="全部" />
+        <Property Name="UnifiedAreaRect" Value="{{0.414966,1},{0.294416,0},{0.52906,1.77807},{0.352792,0}}" />
+      </Window>
+      <Window Type="TaharezLook/GroupButton" Name="GangFightRealTime/Back/otherside">
+        <Property Name="Text" Value="敌方" />
+        <Property Name="UnifiedAreaRect" Value="{{0.52906,4},{0.294416,0},{0.643154,1.77806},{0.352792,0}}" />
+      </Window>
+      <Window Type="TaharezLook/GroupButton" Name="GangFightRealTime/Back/otherside1">
+        <Property Name="Text" Value="帮战说明" />
+        <Property Name="UnifiedAreaRect" Value="{{0.643154,3.99999},{0.294416,0},{0.757248,8.77851},{0.352792,0}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GangFightRealTime/Info">
+        <Property Name="Text">
+                                                                                                                                                                                         【帮战胜负】：摧毁对方的中军大帐则帮战获胜，如帮战时间到后，双方大帐仍然存在，则大帐耐久度高的一方获胜；
+【如何摧毁】：≥3人组队去攻城物资管理员处采集攻城物资，或从物资仓库处领取别人上交的攻城物资，携带物资后队长点击对方中军大帐，即可按照携带的物资类别扣除对方大帐耐久度，当耐久度降低为0时，帮战结束。
+【如何维修】：≥3人组队去维修物资管理员处采集维修物资，或从物资仓库处领取别人上交的维修物资，携带物资后队长点击本方中军大帐，即可按照携带的物资类别补充本方大帐耐久度。
+【个人奖励】：帮战过程中，进行如下行为均可获得帮战积分：从物资场获得资源、击杀对方成员、打掉对方大帐耐久、修复本方大帐耐久、击杀时抢夺到敌方的物资、帮战胜利，帮战结束后会按照帮战积分给予每个人经验、绑银等奖励。需要注意的是，被对方击杀时损失物资是会扣除个人积分的。
+【如何获胜】：帮战是一场全帮的总战斗，各司其职、综合调度非常重要。设置两个给力的主力，安排足够的人手采集、上交物资，组织击杀、进攻、维修，都是可以影响帮战胜负的关键。
+【箭塔说明】：注意不要进入对方的箭塔区域，否则有很大几率被箭塔攻击回本方安全区，3分钟后才可再次出场。</Property>
+        <Property Name="HorzExtent" Value="560" />
+        <Property Name="VertExtent" Value="249.902" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0156463,0},{0.353807,0},{0.991837,0},{1.00101,0}}" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

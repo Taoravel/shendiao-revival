@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/QuackFrameWindow" Name="MyTeam">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="dlgopen.mp3" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.5,-240},{0.5,-236},{0.5,240},{0.5,230}}" />
+    <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    <Window Type="TaharezLook/GroupButton" Name="MyTeam/group1">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="我的战队" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0541667,0},{-0.055794,0},{0.2625,0},{0,0}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="MyTeam/group2">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="战队排行" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.272917,0},{-0.055794,0},{0.48125,0},{0,0}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="MyTeam/team">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.06875,0},{0.0472103,0},{0.964583,0},{0.939914,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/CommonCaseBlue" Name="MyTeam/team/back">
+        <Property Name="UnifiedAreaRect" Value="{{0.0116279,0},{0.122596,0},{0.955814,0},{0.627404,0}}" />
+        <Window Type="TaharezLook/MultiColumnList1" Name="MyTeam/team/back/info">
+          <Property Name="UnifiedAreaRect" Value="{{0.00985222,0},{0.0142857,0},{0.0571429,378},{0.971429,0}}" />
+          <Property Name="ColumnHeader" Value="text:角色名 width:{0.29,0} id:0" />
+          <Property Name="ColumnHeader" Value="text:等级 width:{0.2,0} id:1" />
+          <Property Name="ColumnHeader" Value="text:门派 width:{0.2,0} id:2" />
+          <Property Name="ColumnHeader" Value="text:战队声望 width:{1,-242} id:3" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Button" Name="MyTeam/team/add">
+        <Property Name="Text" Value="邀请队员" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{1.34722,-569},{0.9375,0},{1.34722,-493},{1,0}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="MyTeam/team/out">
+        <Property Name="Text" Value="请离队员" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{1.52315,-564},{0.9375,0},{1.69908,-564},{1,0}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="MyTeam/team/leader">
+        <Property Name="Text" Value="设为队长" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{1.69908,-557},{0.9375,0},{1.69908,-481},{1,0}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="MyTeam/team/leave">
+        <Property Name="Text" Value="脱离战队" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{1.69908,-398},{0.9375,0},{1.69908,-322},{1,0}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="MyTeam/team/name">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="战队队名：" />
+        <Property Name="HorzExtent" Value="75" />
+        <Property Name="VertExtent" Value="17.1936" />
+        <Property Name="TextColours" Value="tl:FF1AE7FF tr:FF1AE7FF bl:FF1AE7FF br:FF1AE7FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0162791,0},{0.00961538,0},{0.188372,0},{0.0721154,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="MyTeam/team/level">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="所属等级：" />
+        <Property Name="HorzExtent" Value="75" />
+        <Property Name="VertExtent" Value="17.1936" />
+        <Property Name="TextColours" Value="tl:FF1AE7FF tr:FF1AE7FF bl:FF1AE7FF br:FF1AE7FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.413953,0},{0.00961538,0},{0.586047,0},{0.0721154,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="MyTeam/team/score">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="总  声  望：" />
+        <Property Name="HorzExtent" Value="76" />
+        <Property Name="VertExtent" Value="17.1936" />
+        <Property Name="TextColours" Value="tl:FF1AE7FF tr:FF1AE7FF bl:FF1AE7FF br:FF1AE7FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0162791,0},{0.0673077,0},{0.188372,0},{0.129808,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="MyTeam/team/tname">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="一二三四五" />
+        <Property Name="HorzExtent" Value="75" />
+        <Property Name="VertExtent" Value="17.1936" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF000000" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.00961538,0},{0.402326,0},{0.0721154,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="MyTeam/team/tlevel">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="110~129等级段" />
+        <Property Name="HorzExtent" Value="110" />
+        <Property Name="VertExtent" Value="17.1936" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF000000" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.586047,0},{0.00961538,0},{0.844186,0},{0.0721154,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="MyTeam/team/tscore">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="123456" />
+        <Property Name="HorzExtent" Value="54" />
+        <Property Name="VertExtent" Value="17.1936" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF000000" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.0673077,0},{0.544186,0},{0.129808,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/CommonCaseSimple" Name="MyTeam/team/text">
+        <Property Name="UnifiedAreaRect" Value="{{0.0116279,0},{0.639423,0},{0.95814,0},{0.920673,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="MyTeam/team/text/t1">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="Text" Value="战队规则" />
+          <Property Name="HorzExtent" Value="60" />
+          <Property Name="VertExtent" Value="17.1936" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.420147,0},{0.0769231,0},{0.572482,0},{0.307692,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyTeam/team/text/t2">
+          <Property Name="Text">1.战队声望：可在战队PK赛中获得。
+2.脱离本战队后，战队声望清空，请慎重操作。
+3.有≥5人等级不在本等级段内时，队长可更改等级段。
+4.战队可参加所属等级段内的战队PK赛。</Property>
+          <Property Name="HorzExtent" Value="319" />
+          <Property Name="VertExtent" Value="62.4756" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0909091,0},{0.307692,0},{0.965602,0},{0.91453,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Button" Name="MyTeam/team/change">
+        <Property Name="Text" Value="更改" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.853488,0},{0.00961538,0},{0.953488,0},{0.0649038,0}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="MyTeam/team/dissolution">
+        <Property Name="Text" Value="解散战队" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.595349,0},{0.9375,0},{0.762791,0},{1,0}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="MyTeam/rank">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0666667,0},{0.0429185,0},{0.94375,0},{0.94206,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/CommonCaseBlue" Name="MyTeam/rank/back">
+        <Property Name="UnifiedAreaRect" Value="{{0.0118765,0},{0.0883055,0},{0.983373,0},{0.646778,0}}" />
+        <Window Type="TaharezLook/MultiColumnList1" Name="MyTeam/rank/back/info">
+          <Property Name="UnifiedAreaRect" Value="{{0.00977995,0},{0.0128205,0},{0.99022,0},{0.970085,0}}" />
+          <Property Name="ColumnHeader" Value="text:排名 width:{0.12,0} id:0" />
+          <Property Name="ColumnHeader" Value="text:战队名 width:{0.26,0} id:1" />
+          <Property Name="ColumnHeader" Value="text:战力 width:{0.23,0} id:2" />
+          <Property Name="ColumnHeader" Value="text:队长 width:{0.3,0} id:3" />
+          <Property Name="ColumnHeader" Value="text:人数 width:{1,-363} id:4" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Button" Name="MyTeam/rank/up">
+        <Property Name="Text" Value="上一页" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.223278,0},{0.651551,0},{0.39905,0},{0.71599,0}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="MyTeam/rank/down">
+        <Property Name="Text" Value="下一页" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.603325,0},{0.651551,0},{0.779097,0},{0.71599,0}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="MyTeam/rank/page">
+        <Property Name="Text" Value="1/1" />
+        <Property Name="HorzExtent" Value="23" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.425178,0},{0.651551,0},{0.579572,0},{0.713604,0}}" />
+      </Window>
+      <Window Type="TaharezLook/CommonCaseSimple" Name="MyTeam/rank/text">
+        <Property Name="UnifiedAreaRect" Value="{{0.0142518,0},{0.72315,0},{0.980998,0},{0.928401,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="MyTeam/rank/text/t1">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="Text" Value="排行榜说明" />
+          <Property Name="HorzExtent" Value="75" />
+          <Property Name="VertExtent" Value="17.1936" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.407862,0},{0.0581395,0},{0.597052,0},{0.372093,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyTeam/rank/text/t2">
+          <Property Name="Text">1.初始排行榜按创建战队的先后顺序排名。
+2.战队更换等级段之后，排名清空。
+3.战力会在战队PK赛中刷新，创建时为0。</Property>
+          <Property Name="HorzExtent" Value="246" />
+          <Property Name="VertExtent" Value="46.8567" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0909091,0},{0.290698,0},{0.734644,0},{0.953488,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Button" Name="MyTeam/rank/look">
+        <Property Name="Text" Value="查看战队" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.244656,0},{0.937948,0},{0.425178,0},{1,0}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="MyTeam/rank/talk">
+        <Property Name="Text" Value="联系队长" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.565321,0},{0.937948,0},{0.745843,0},{1,0}}" />
+      </Window>
+      <Window Type="TaharezLook/RightGroupButton" Name="MyTeam/rank/level1">
+        <Property Name="Text" Value="50~69级" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.00712589,0},{0.026253,0},{0.052924,62},{0.0285203,23}}" />
+      </Window>
+      <Window Type="TaharezLook/RightGroupButton" Name="MyTeam/rank/level2">
+        <Property Name="Text" Value="70~89级" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,84},{0.026253,0},{0.0451306,146},{0.0285203,23}}" />
+      </Window>
+      <Window Type="TaharezLook/RightGroupButton" Name="MyTeam/rank/level3">
+        <Property Name="Text" Value="90~109级" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,165},{0.026253,0},{0.0451306,227},{0.0476134,15}}" />
+      </Window>
+      <Window Type="TaharezLook/RightGroupButton" Name="MyTeam/rank/level4">
+        <Property Name="Text" Value="110~129级" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,246},{0.026253,0},{0.0451306,308},{0.0476134,15}}" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

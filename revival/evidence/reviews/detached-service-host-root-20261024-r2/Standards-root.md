@@ -1,0 +1,13 @@
+Standards（本批3文件）：硬违规0；heuristic可行动发现0。
+
+方法：沿用完整code-review/codebase-design，对固定194行差异逐hunk核对，并逐项判断全部12种Fowler启发。沿批准记录→不可变副本→启动→有预算读取的Interface/Seam检查；依据AGENTS、ARCHITECTURE有界I/O/实体作用域及DESIGN_AUTHORITY发布最终哈希规则。无Git/提交列表，两个新helper为空BASE；未读Spec结论。
+
+原发现闭环：launch_detached_release.py:17–18、63–78、85–96、109–124使用显式require/raise；批准身份、manifest、runner/全部source、controlled实际结果、110表完整性、caller PID列表和最终startup身份等部署关键检查不再依赖可优化删除的assert。
+
+service_health_probe.py:5–14集中原两处重复读取，recv空值立即ConnectionError，每次接收使用总deadline剩余预算且读取后复核；launcher:100–115连接、challenge、sendall、heartbeat共享一个deadline，不因新阶段重置。verify_service_health_probe.py:11–12、27–53以显式raise/check保留EOF、分片、socket timeout、已过期及跨阶段总预算五组真实判定，-O不删除这些条件。此处为静态确认，未执行。
+
+原只读备份、占用端口拒绝、detached/breakaway、精确caller job PID排除、AnyJob独立记录及自有资源作用域未退化。无新全局玩法队列或第二服务owner。
+
+审前后candidate/workspace/BASE/diff均匹配scope：launcher=79c055364c0699005987cd3a7ce538dc4a582eb1cdeb211ce66da39b99ebd0c0；helper=1d032df865c6d9ae9ec7d1e5658c2eb842bf5c6b8f68b458b3372185526b8d33；verifier=e101a9d3baec0b90182f35c4925a307c4093c521e5a1dd3c123b9b7e3a0f00f2；diff=8a48c4ff6108bc126ef73b167353c3fbaebc0d2a0437f726da0d1647ade4ebce。unchanged b0 controlled probe及wire依赖SHA亦匹配scope。
+
+限制：b0自身assert未修改，本次不认证其-O下all_passed判定；部署方已显式核normal_died/detached_survived，不能只信all_passed。未启动服务/worker、访问DB/GUI或运行测试；跨tool/turn存活及真实故障恢复仍依独立执行证据。只新增本报告，未混入repair或gameplay源码。

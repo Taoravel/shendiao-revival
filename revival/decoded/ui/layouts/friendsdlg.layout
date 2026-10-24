@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="FriendsDlg">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="Foot_Leaves_HeelsRun10.ogg" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{1,-257},{0.5,-234},{1,-23},{0.5,235}}" />
+    <Property Name="CloseSoundResource" Value="Button.ogg" />
+    <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    <Window Type="TaharezLook/StaticImage" Name="FriendsDlg/HeadImage1">
+      <Property Name="Image" Value="set:MainControl image:FriendHeadBack" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,63},{0,64}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,63},{0,64}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,15},{0,38},{0,78},{0,102}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticImage" Name="FriendsDlg/HeadImage1/Back">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.126984,0},{0.125,0},{0.126984,50},{0.09375,52}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="FriendsDlg/HeadImage">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,50},{0,50.0001}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="FriendsDlg/Name">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,82},{0,41},{0,206},{0,61}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="DefaultBorderEnable" Value="True" />
+      <Property Name="DefaultColourEnable" Value="True" />
+    </Window>
+    <Window Type="TaharezLook/Combobox" Name="FriendsDlg/StateBox">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="在线" />
+      <Property Name="CaratIndex" Value="2" />
+      <Property Name="UnifiedAreaRect" Value="{{0,80},{0,77},{0,157},{0,161}}" />
+      <Property Name="MaxEditTextLength" Value="2147483647" />
+      <Property Name="EditSelectionStart" Value="2" />
+    </Window>
+    <Window Type="TaharezLook/LittleButton" Name="FriendsDlg/RechargeBtn">
+      <Property Name="Text" Value="充" />
+      <Property Name="Visible" Value="False" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0,166},{0,69},{0,191},{0,95}}" />
+    </Window>
+    <Window Type="TaharezLook/LittleButton" Name="FriendsDlg/ChatGroup">
+      <Property Name="Text" Value="群" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0,190},{0,69},{0,215},{0,95}}" />
+      <Property Name="NormalTextColour" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFB08945 br:FFB08945" />
+      <Property Name="ButtonBorderColour" Value="FF002B65" />
+      <Property Name="ButtonBorderEnable" Value="True" />
+      <Property Name="ButtonDefaultBorderEnable" Value="False" />
+      <Property Name="ButtonDefaultColourEnable" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/TabControl" Name="FriendsDlg/FriendsTab">
+      <Property Name="TabHeight" Value="{0,18}" />
+      <Property Name="TabPanePosition" Value="Top" />
+      <Property Name="UnifiedAreaRect" Value="{{0,16},{0,125},{0,215},{0,450}}" />
+      <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+      <Window Type="DefaultWindow" Name="FriendsDlg/FriendsTab/Tab 1">
+        <Property Name="Text" Value="好友" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,201},{0,308}}" />
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="FriendsDlg/FriendsTab/back">
+          <Property Name="Text" Value="Tab" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,0},{0,199},{0,305}}" />
+          <Window Type="TaharezLook/Tree" Name="FriendsDlg/FriendsTab/Tab 1/FriendsTree">
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,6},{0,193},{0,269}}" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="FriendsDlg/FriendSearchBtn">
+            <Property Name="Text" Value="查找" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,0},{0,277},{0,64.0005},{0,299}}" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="FriendsDlg/SystemMsg">
+            <Property Name="Text" Value="系统消息" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,65.0005},{0,277.239},{0,136.001},{0,299.239}}" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="FriendsDlg/Setting">
+            <Property Name="Text" Value="设置" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,137.001},{0,277.239},{0,191.001},{0,299.239}}" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="FriendsDlg/FriendsTab/Tab4">
+        <Property Name="Text" Value="亲朋" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,1},{1.16415e-009,0},{0,201},{1.16415e-009,308}}" />
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="FriendsDlg/FriendsTab/Tab4/back">
+          <Property Name="Text" Value="Tab" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,0},{0,199},{0,305}}" />
+          <Window Type="TaharezLook/Tree" Name="FriendsDlg/FriendsTab/Tab4/FriendsTree">
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,6},{0,191},{0,271}}" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="FriendsDlg/FriendsTab/Tab4/Mastaer">
+            <Property Name="Text" Value="找师傅" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,16},{0,279},{0,100},{0,301}}" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="FriendsDlg/FriendsTab/Tab4/Remove">
+            <Property Name="Text" Value="解除关系" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,101},{0,279},{0,185},{0,301}}" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="FriendsDlg/FriendsTab/Tab 2">
+        <Property Name="Text" Value="群组" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.00718998,0},{0,0},{0.00718998,200},{0,308}}" />
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="FriendsDlg/FriendsTab2/back">
+          <Property Name="Text" Value="Tab" />
+          <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,0},{0,199},{0,305}}" />
+          <Window Type="TaharezLook/Button" Name="FriendsDlg/FriendsTab/Tab 2/SearchGroupBtn">
+            <Property Name="Text" Value="查找群落" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,19},{0,279},{0,98},{0,301}}" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="FriendsDlg/FriendsTab/Tab 2/CreateGroupBtn">
+            <Property Name="Text" Value="创建新群" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,99},{0,279},{0,178},{0,301}}" />
+          </Window>
+          <Window Type="TaharezLook/Listbox" Name="FriendsDlg/FriendsTab/Tab 2/GroupList">
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0.0196721,0},{0,191.999},{0,273}}" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="FriendsDlg/FriendsTab/Tab 3">
+        <Property Name="Text" Value="最近" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,201},{0,308}}" />
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="FriendsDlg/FriendsTab3/back">
+          <Property Name="Text" Value="Tab" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,0},{0,199},{0,305}}" />
+          <Window Type="TaharezLook/Listbox" Name="FriendsDlg/FriendsTab/Tab 3/LastChat">
+            <Property Name="UnifiedAreaRect" Value="{{0,7.48053},{0,10},{0,195.48},{0,297}}" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Editbox" Name="FriendsDlg/LocalSearch">
+      <Property Name="Text" Value="输入名字搜索联系人" />
+      <Property Name="BlinkCaret" Value="True" />
+      <Property Name="MaxTextLength" Value="2147483647" />
+      <Property Name="UnifiedAreaRect" Value="{{0,15},{0,102},{0,215},{0,123}}" />
+      <Property Name="TextParsingEnabled" Value="False" />
+      <Window Type="TaharezLook/ImageButton" Name="FriendsDlg/ClearBtn">
+        <Property Name="Tooltip" Value="清空搜索框" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl image:FriendCloseHover" />
+        <Property Name="NormalImage" Value="set:MainControl image:FriendCloseNormal" />
+        <Property Name="PushedImage" Value="set:MainControl image:FriendClosePushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,16},{0,16}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,16},{0,16}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,165},{0,3},{0,181},{0,19}}" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="FriendsDlg/ChatBtn">
+        <Property Name="Tooltip" Value="开始聊天" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl image:FriendSendHover" />
+        <Property Name="NormalImage" Value="set:MainControl image:FriendSendNormal" />
+        <Property Name="PushedImage" Value="set:MainControl image:FriendSendPushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,15},{0,16}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,15},{0,16}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,182},{0,3},{0,197},{0,19}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Listbox" Name="FriendsDlg/LocalSearchList">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="UnifiedAreaRect" Value="{{0,15},{0,124},{0,181},{0,255}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="FriendsDlg/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,162},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,162},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,7},{0,12},{0,169},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="FriendsDlg/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="好友" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="34" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,83},{0,1},{0,129},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="FriendsDlg/haoyoushu">
+      <Property Name="Tooltip" Value="（已加好友/可加好友）" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,82},{0.05,34},{0,206},{0.05,54}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="DefaultBorderEnable" Value="True" />
+      <Property Name="DefaultColourEnable" Value="True" />
+    </Window>
+    <Window Type="TaharezLook/LittleButton" Name="FriendsDlg/zhaohui">
+      <Property Name="Text" Value="召" />
+      <Property Name="Visible" Value="True" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.696581,0},{0.147122,0},{0.803419,0},{0.200426,0}}" />
+    </Window>
+  </Window>
+</GUILayout>

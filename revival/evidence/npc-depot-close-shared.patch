@@ -1,0 +1,13 @@
+--- a/revival/game_runtime.py
++++ b/revival/game_runtime.py
+@@ -313,6 +313,10 @@
+                 await self.rt.map(self.position.value[0]).mailbox.call('leave',self.id,self.epoch)
+             return []
+         kind,body = cmd.args
++        if kind==npc_depot.CLOSE_DEPOT:
++            npc_depot.decode_close(body)
++            self.npc_depot_ticket=None
++            return []
+         if kind==AFTER_ENTER_WORLD and not body:
+             if self.transfer:
+                 raise ValueError('First-world acknowledgement cannot finish a general scene handoff')

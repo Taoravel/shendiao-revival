@@ -1,0 +1,11 @@
+Standards：硬违规0；heuristic可行动发现0。
+
+方法：实际应用code-review逐hunk审两份新增文档，完整12种Fowler启发逐项判断；codebase-design核Module所有权、Interface与Seam；domain-modeling按GLOSSARY-FORMAT核术语，并以同Location重入、失败/幂等join、freeze取消恢复和延迟撤销场景检验关系与许可的区别。只审指定两文档，BASE均不存在；无Git/提交列表。
+
+GLOSSARY.md:7–33仅定义地图模板、实例、成员关系、许可、投影、同屏和租约，没有类型字段、调用顺序或实现决策，符合domain-modeling“glossary无实现细节”。
+
+MEMBER_BINDING_DECISION.md:9–21把固定投影置于实际Domain单写者，拒绝旧代次；投影不成为第二位置权威，幂等/失败join保留前态，符合ARCHITECTURE状态所有权及旧回调失效规则。21、25行允许取消恢复当前位置但保留已推进许可世代；重新许可须可信新生命周期结果，不要求恢复旧权限或撤销已提交资产。27–29行要求精确CAS和实际队列屏障，明确已write不可撤回、drain非客户端ACK；可按连接所有者顺序实施，未要求跨所有者同步锁或全局执行器。3、5、35–39行区分designed、候选实现与部署/GUI验收，符合DESIGN_AUTHORITY来源与实施状态分层。
+
+封签说明：审前4个source SHA均匹配，但原scope把换行转换前字符串哈希登记为diff哈希，实际落盘为162817e8d5f6446f8bb4dabb3939e6789d9ca1a353408d36c295affb4ec14525。根保留原scope并新增scope-corrected.json；按corrected复核前后4输入及diff均匹配，源码未变。两新文档SHA为6f79390a41b697d46961ab5c60594734b237c699dd1c8f114b23d6e636ce15ca、11954d85d7a6a1b748ba5e82e4514afdb4dbe04590277f9040444ae438e8fd83。
+
+仅静态政策审查；未运行源码、测试、服务、正式/临时DB、socket或GUI，不批准共享接线或部署；实际实现及并发屏障效果仍须独立验证。只新增本报告。

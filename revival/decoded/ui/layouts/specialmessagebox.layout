@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/CommonBox" Name="SpecialMessageBox/Back">
+    <Property Name="UnifiedAreaRect" Value="{{0.34,0},{0.359167,0},{0.433189,181},{0.359167,167}}" />
+    <Window Type="TaharezLook/Button" Name="SpecialMessageBox/OK">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="确定" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,22},{0,127},{0,94},{0,151}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="SpecialMessageBox/Cancel">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="取消" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,92},{0,127},{0,164},{0,151}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="SpecialMessageBox/text">
+      <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="WordWrapCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,40},{0,239},{0,119}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="DefaultBorderEnable" Value="True" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="SpecialMessageBox/Cancel1">
+      <Property Name="Text" Value="稍后再说" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,162},{0,127},{0,234},{0,151}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="SpecialMessageBox/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,143.2},{0,15.455},{0,305.2},{0,40.455}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="SpecialMessageBox/title/text">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Title" Value="True" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{-0.04,0},{0,162},{0,23}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

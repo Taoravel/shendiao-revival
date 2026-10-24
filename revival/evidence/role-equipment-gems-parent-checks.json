@@ -1,0 +1,47 @@
+{
+  "created_utc": "2026-10-24T03:19:41.242967+00:00",
+  "checks": [
+    {
+      "script": "verify_equipment_gem_score_current.py",
+      "exit_code": 0,
+      "stdout": "PASS current known score at last valid gem version is readable without creating a next state\n",
+      "stderr": ""
+    },
+    {
+      "script": "verify_role_equipment_gems.py",
+      "exit_code": 0,
+      "stdout": "PASS all14 gem families/extra totals,215/130 caps, broken/repair/unequip, no double count and unknown/stale policy refusals\n",
+      "stderr": ""
+    },
+    {
+      "script": "verify_role_equipment_gem_storage.py",
+      "exit_code": 0,
+      "stdout": "PASS actual sole root carrier: HP caps100/148/203; no healing; downward clip; death preserved; 3 SQL faults and late caller rollback; strict paid readonly; stale lease refusal\n",
+      "stderr": ""
+    },
+    {
+      "script": "verify_role_equipment_gem_protocol.py",
+      "exit_code": 0,
+      "stdout": "PASS 27-field original marshal/unmarshal; all21 existing fields preserved; signed6 extras assigned by original generic branch; invalid/truncated refuses; no GUI claim\n",
+      "stderr": ""
+    },
+    {
+      "script": "verify_equipment_gem_score.py",
+      "exit_code": 0,
+      "stdout": "PASS designed score/native color, reversible baseline/no drift, preserved wear, unknown/stale/overflow refusals\n",
+      "stderr": ""
+    },
+    {
+      "script": "verify_equipment_gem_score_storage.py",
+      "exit_code": 0,
+      "stdout": "PASS known score baseline failure/outer rollback, immutable no-reset, readonly reopen and current lease guards\n",
+      "stderr": ""
+    },
+    {
+      "script": "verify_equipment_gem_presentation.py",
+      "exit_code": 0,
+      "stdout": "PASS paired score/color/gem CAS,3 actual write faults/late native rollback, immutable proof, readonly same-grade no-op and removal\n",
+      "stderr": ""
+    }
+  ]
+}

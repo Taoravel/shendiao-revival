@@ -1,0 +1,4349 @@
+{
+  "source_status": "client_verified",
+  "passed": 80,
+  "native_image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+  "source": {
+    "archive": "config.pfs",
+    "entry": "autoconfig/knight.gsp.pet.cpetxuemaiconfig.xml",
+    "bytes": 1058,
+    "crc32": "0x128f728",
+    "sha256": "d565990ea76cd2c4839f0752a38d5fa12685e1c954b12019a14418f37c94e462"
+  },
+  "rows": {
+    "1": {
+      "id": "1",
+      "colourrgb": "fffcfbfb",
+      "colourlvup": "750",
+      "maxloy": "100",
+      "skillnumber": "4",
+      "colournormal": "ff5d5d5d",
+      "colourhover": "ffffffff",
+      "hoverprojection": "ffbab6b6",
+      "maxstarnum": "3",
+      "tuibianmaxstarnum": "6"
+    },
+    "2": {
+      "id": "2",
+      "colourrgb": "ff32dc64",
+      "colourlvup": "300",
+      "maxloy": "100",
+      "skillnumber": "4",
+      "colournormal": "ff014e0a",
+      "colourhover": "ff42ef75",
+      "hoverprojection": "ff1dae2e",
+      "maxstarnum": "5",
+      "tuibianmaxstarnum": "10"
+    },
+    "3": {
+      "id": "3",
+      "colourrgb": "ff00beff",
+      "colourlvup": "200",
+      "maxloy": "125",
+      "skillnumber": "6",
+      "colournormal": "ff1826ac",
+      "colourhover": "ff62d7ff",
+      "hoverprojection": "ff7d89ff",
+      "maxstarnum": "7",
+      "tuibianmaxstarnum": "14"
+    },
+    "4": {
+      "id": "4",
+      "colourrgb": "ffc800c8",
+      "colourlvup": "180",
+      "maxloy": "200",
+      "skillnumber": "8",
+      "colournormal": "ff64075a",
+      "colourhover": "ffff64ff",
+      "hoverprojection": "ffc843ba",
+      "maxstarnum": "9",
+      "tuibianmaxstarnum": "18"
+    },
+    "5": {
+      "id": "5",
+      "colourrgb": "fff08723",
+      "colourlvup": "150",
+      "maxloy": "300",
+      "skillnumber": "10",
+      "colournormal": "ffb46b26",
+      "colourhover": "ffffa550",
+      "hoverprojection": "ffb46b26",
+      "maxstarnum": "12",
+      "tuibianmaxstarnum": "24"
+    },
+    "6": {
+      "id": "6",
+      "colourrgb": "ffffe600",
+      "colourlvup": "0",
+      "maxloy": "400",
+      "skillnumber": "12",
+      "colournormal": "ff7f5400",
+      "colourhover": "fffff175",
+      "hoverprojection": "ffd29e37",
+      "maxstarnum": "15",
+      "tuibianmaxstarnum": "30"
+    }
+  },
+  "cases": [
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 0,
+          "grade": 1,
+          "loyalty": 100,
+          "pet_wire_sha256": "e63376e999d177e9168cf5faa4abe001dfbe5b616082ee0dbbda3cff7a063f9f"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 0,
+      "native_subtotal": 0,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 100
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 0
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 0,
+          "native_remainder": 0,
+          "unit_fee": 45,
+          "contribution": 0
+        },
+        {
+          "native_sum_before_free_gate": 0
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 0,
+          "grade": 1,
+          "loyalty": 99,
+          "pet_wire_sha256": "e95258bd46abb7288e49decc2f4e393d868bda1c61d3f5f889158e13065cf929"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 45,
+      "native_subtotal": 45,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 99
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 0
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 0,
+          "unit_fee": 45,
+          "contribution": 45
+        },
+        {
+          "native_sum_before_free_gate": 45
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 0,
+          "grade": 1,
+          "loyalty": 80,
+          "pet_wire_sha256": "2050a9239c6908085f8edcc15ab8201bca82cac538795e4b30bf017db0756213"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 900,
+      "native_subtotal": 900,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 80
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 0
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 20,
+          "native_remainder": 0,
+          "unit_fee": 45,
+          "contribution": 900
+        },
+        {
+          "native_sum_before_free_gate": 900
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 0,
+          "grade": 1,
+          "loyalty": 0,
+          "pet_wire_sha256": "68d1817c8b3e1294ba1ac5bd358e5bbacd8203db3b3cfe7e93086ad8d66f6ba4"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 4500,
+      "native_subtotal": 4500,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 0
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 0
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 100,
+          "native_remainder": 0,
+          "unit_fee": 45,
+          "contribution": 4500
+        },
+        {
+          "native_sum_before_free_gate": 4500
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 1,
+          "grade": 1,
+          "loyalty": 100,
+          "pet_wire_sha256": "dbf08bd7b8fdf661cac36f3358ed47aa732b6bbdd71b638c5a487e4388614ef1"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 0,
+      "native_subtotal": 0,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 100
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 1
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 0,
+          "native_remainder": 1,
+          "unit_fee": 47,
+          "contribution": 0
+        },
+        {
+          "native_sum_before_free_gate": 0
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 1,
+          "grade": 1,
+          "loyalty": 99,
+          "pet_wire_sha256": "6274486075a772278a278ff9ef5b28a434b656ebe45bdfa64631d52b24df6478"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 47,
+      "native_subtotal": 47,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 99
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 1
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 1,
+          "unit_fee": 47,
+          "contribution": 47
+        },
+        {
+          "native_sum_before_free_gate": 47
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 1,
+          "grade": 1,
+          "loyalty": 80,
+          "pet_wire_sha256": "c37c6970ec55ef7280d1cde5841e36c7a4b7602486ad164a4d27436c40ceb809"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 940,
+      "native_subtotal": 940,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 80
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 1
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 20,
+          "native_remainder": 1,
+          "unit_fee": 47,
+          "contribution": 940
+        },
+        {
+          "native_sum_before_free_gate": 940
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 1,
+          "grade": 1,
+          "loyalty": 0,
+          "pet_wire_sha256": "000fc1d3d58e32eac8891754399810d92341c1299459362f8965ff5170c68607"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 4700,
+      "native_subtotal": 4700,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 0
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 1
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 100,
+          "native_remainder": 1,
+          "unit_fee": 47,
+          "contribution": 4700
+        },
+        {
+          "native_sum_before_free_gate": 4700
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 2,
+          "grade": 1,
+          "loyalty": 100,
+          "pet_wire_sha256": "9b8af533ccd2620b09702e0c58feead733e2ab3406e155789d9976cc481329a4"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 0,
+      "native_subtotal": 0,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 100
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 2
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 0,
+          "native_remainder": 2,
+          "unit_fee": 49,
+          "contribution": 0
+        },
+        {
+          "native_sum_before_free_gate": 0
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 2,
+          "grade": 1,
+          "loyalty": 99,
+          "pet_wire_sha256": "2bb7e57e5b3fae9d8ae5a1ce783a3a506dac65a745211980851d7373c47925a5"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 49,
+      "native_subtotal": 49,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 99
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 2
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 2,
+          "unit_fee": 49,
+          "contribution": 49
+        },
+        {
+          "native_sum_before_free_gate": 49
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 2,
+          "grade": 1,
+          "loyalty": 80,
+          "pet_wire_sha256": "7cc1ce834be90654344332d322e42d06a6cc26f022ba45c0bc4ceef6a310e771"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 980,
+      "native_subtotal": 980,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 80
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 2
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 20,
+          "native_remainder": 2,
+          "unit_fee": 49,
+          "contribution": 980
+        },
+        {
+          "native_sum_before_free_gate": 980
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 2,
+          "grade": 1,
+          "loyalty": 0,
+          "pet_wire_sha256": "96e7c7105ca1dc9a5a3f8d0ce5ccbde32bc436a828bd3bef81e95018ee5b4d78"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 4900,
+      "native_subtotal": 4900,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 0
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 2
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 100,
+          "native_remainder": 2,
+          "unit_fee": 49,
+          "contribution": 4900
+        },
+        {
+          "native_sum_before_free_gate": 4900
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 3,
+          "grade": 1,
+          "loyalty": 100,
+          "pet_wire_sha256": "274b32f12042789180f391405db9808f47a920f452f6f10dc12623450d853eae"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 0,
+      "native_subtotal": 0,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 100
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 3
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 0,
+          "native_remainder": 3,
+          "unit_fee": 51,
+          "contribution": 0
+        },
+        {
+          "native_sum_before_free_gate": 0
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 3,
+          "grade": 1,
+          "loyalty": 99,
+          "pet_wire_sha256": "66419e6328fa4da2aa704bffc18153e7716f9ad953201f7e365f9a050a0240c1"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 51,
+      "native_subtotal": 51,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 99
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 3
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 3,
+          "unit_fee": 51,
+          "contribution": 51
+        },
+        {
+          "native_sum_before_free_gate": 51
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 3,
+          "grade": 1,
+          "loyalty": 80,
+          "pet_wire_sha256": "56fc2b8ad082b6feb28fe438517d66a8c8c02b687712be5440f2d8444c24adca"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 1020,
+      "native_subtotal": 1020,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 80
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 3
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 20,
+          "native_remainder": 3,
+          "unit_fee": 51,
+          "contribution": 1020
+        },
+        {
+          "native_sum_before_free_gate": 1020
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 3,
+          "grade": 1,
+          "loyalty": 0,
+          "pet_wire_sha256": "48bc1a65a2ffaee09c768e8b7ef028f07cd4b4e700aafd277f1c301eb94e85a0"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 5100,
+      "native_subtotal": 5100,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 0
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 3
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 100,
+          "native_remainder": 3,
+          "unit_fee": 51,
+          "contribution": 5100
+        },
+        {
+          "native_sum_before_free_gate": 5100
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 4,
+          "grade": 1,
+          "loyalty": 100,
+          "pet_wire_sha256": "b7097a50c49b4c03d114e020bfacf6119465fa55eec8da606cd0375936433fa2"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 0,
+      "native_subtotal": 0,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 100
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 4
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 0,
+          "native_remainder": 4,
+          "unit_fee": 53,
+          "contribution": 0
+        },
+        {
+          "native_sum_before_free_gate": 0
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 4,
+          "grade": 1,
+          "loyalty": 99,
+          "pet_wire_sha256": "c1d6b2043769b0bedc5beda7aaeb6be4d5cb010c91af7e64fe28b855cb5b7fa2"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 53,
+      "native_subtotal": 53,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 99
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 4
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 4,
+          "unit_fee": 53,
+          "contribution": 53
+        },
+        {
+          "native_sum_before_free_gate": 53
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 4,
+          "grade": 1,
+          "loyalty": 80,
+          "pet_wire_sha256": "94c739f64ebc774aeb5c747dd71d2d7d2376b77bb672a42fed86196a0cf2a40a"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 1060,
+      "native_subtotal": 1060,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 80
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 4
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 20,
+          "native_remainder": 4,
+          "unit_fee": 53,
+          "contribution": 1060
+        },
+        {
+          "native_sum_before_free_gate": 1060
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 4,
+          "grade": 1,
+          "loyalty": 0,
+          "pet_wire_sha256": "e4a98096fffeb0072f9be90f39aec6fb666d8e747d5e211190da95cb37033a76"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 5300,
+      "native_subtotal": 5300,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 0
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 4
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 100,
+          "native_remainder": 4,
+          "unit_fee": 53,
+          "contribution": 5300
+        },
+        {
+          "native_sum_before_free_gate": 5300
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 5,
+          "grade": 1,
+          "loyalty": 100,
+          "pet_wire_sha256": "5159b49251667055ab87823ed190bf796282ae624971752753a39663a0456138"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 0,
+      "native_subtotal": 0,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 100
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 5
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 0,
+          "native_remainder": 5,
+          "unit_fee": 55,
+          "contribution": 0
+        },
+        {
+          "native_sum_before_free_gate": 0
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 5,
+          "grade": 1,
+          "loyalty": 99,
+          "pet_wire_sha256": "897d010e01a2dc1b7b776267b8161da302bb5d66c0962a5750e27ab52c7890ce"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 55,
+      "native_subtotal": 55,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 99
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 5
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 5,
+          "unit_fee": 55,
+          "contribution": 55
+        },
+        {
+          "native_sum_before_free_gate": 55
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 5,
+          "grade": 1,
+          "loyalty": 80,
+          "pet_wire_sha256": "ae263ad470b0cd0721d4c05140073fbb9de1d412f1a410ac65cad2905e045ed0"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 1100,
+      "native_subtotal": 1100,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 80
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 5
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 20,
+          "native_remainder": 5,
+          "unit_fee": 55,
+          "contribution": 1100
+        },
+        {
+          "native_sum_before_free_gate": 1100
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 5,
+          "grade": 1,
+          "loyalty": 0,
+          "pet_wire_sha256": "ec4a876e6bca969aff9cd1be0f48a67d13f657434a2317e56278c7470dad1be9"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 5500,
+      "native_subtotal": 5500,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 0
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 5
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 100,
+          "native_remainder": 5,
+          "unit_fee": 55,
+          "contribution": 5500
+        },
+        {
+          "native_sum_before_free_gate": 5500
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 6,
+          "grade": 1,
+          "loyalty": 100,
+          "pet_wire_sha256": "da23ee8be141ac02ca100816bb3404060f03cb517c9431445e9019c83824c9a8"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 0,
+      "native_subtotal": 0,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 100
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 6
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 0,
+          "native_remainder": 6,
+          "unit_fee": 57,
+          "contribution": 0
+        },
+        {
+          "native_sum_before_free_gate": 0
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 6,
+          "grade": 1,
+          "loyalty": 99,
+          "pet_wire_sha256": "fc8e980419a0a55c9897d89ad4261b5b20c5a9e78d25365f08f74549e7536265"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 57,
+      "native_subtotal": 57,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 99
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 6
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 6,
+          "unit_fee": 57,
+          "contribution": 57
+        },
+        {
+          "native_sum_before_free_gate": 57
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 6,
+          "grade": 1,
+          "loyalty": 80,
+          "pet_wire_sha256": "09006876e67264484035ef0ed35972c05d0065d545b0a6713e5a2e4924311430"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 1140,
+      "native_subtotal": 1140,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 80
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 6
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 20,
+          "native_remainder": 6,
+          "unit_fee": 57,
+          "contribution": 1140
+        },
+        {
+          "native_sum_before_free_gate": 1140
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 6,
+          "grade": 1,
+          "loyalty": 0,
+          "pet_wire_sha256": "994f8897fda5ad69acf5c557b5b4f0daf6f3626fdd85201d798c849644bf8fca"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 5700,
+      "native_subtotal": 5700,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 0
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 6
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 100,
+          "native_remainder": 6,
+          "unit_fee": 57,
+          "contribution": 5700
+        },
+        {
+          "native_sum_before_free_gate": 5700
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 7,
+          "grade": 1,
+          "loyalty": 100,
+          "pet_wire_sha256": "8c9ac946a4a559b0b504fba26b645d2205bbf9aa6ef497bf9f92b685a2bfbcde"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 0,
+      "native_subtotal": 0,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 100
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 7
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 0,
+          "native_remainder": 7,
+          "unit_fee": 59,
+          "contribution": 0
+        },
+        {
+          "native_sum_before_free_gate": 0
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 7,
+          "grade": 1,
+          "loyalty": 99,
+          "pet_wire_sha256": "da414960215d6e31154c05e4d8459ba42a4694794dffc2b7cc01a47629cde296"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 59,
+      "native_subtotal": 59,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 99
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 7
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 7,
+          "unit_fee": 59,
+          "contribution": 59
+        },
+        {
+          "native_sum_before_free_gate": 59
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 7,
+          "grade": 1,
+          "loyalty": 80,
+          "pet_wire_sha256": "a85085ccaf51c458883c21b752de4a3b575bb9712fb67515f771663385a63c9c"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 1180,
+      "native_subtotal": 1180,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 80
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 7
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 20,
+          "native_remainder": 7,
+          "unit_fee": 59,
+          "contribution": 1180
+        },
+        {
+          "native_sum_before_free_gate": 1180
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 7,
+          "grade": 1,
+          "loyalty": 0,
+          "pet_wire_sha256": "39ba035f99753b3fb783eb5809dfe34a5d7124dae067be6bfe844380d18be4b2"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 5900,
+      "native_subtotal": 5900,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 0
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 7
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 100,
+          "native_remainder": 7,
+          "unit_fee": 59,
+          "contribution": 5900
+        },
+        {
+          "native_sum_before_free_gate": 5900
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 8,
+          "grade": 1,
+          "loyalty": 100,
+          "pet_wire_sha256": "f3f4977b227947748019d57574892de4ca4a6ea9aadbe154a45ca7bbc33d8154"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 0,
+      "native_subtotal": 0,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 100
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 8
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 0,
+          "native_remainder": 8,
+          "unit_fee": 61,
+          "contribution": 0
+        },
+        {
+          "native_sum_before_free_gate": 0
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 8,
+          "grade": 1,
+          "loyalty": 99,
+          "pet_wire_sha256": "33638b7874e6f2dce66e20128c8e7a05e659d95c52d18471e536ecd46b08086c"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 61,
+      "native_subtotal": 61,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 99
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 8
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 8,
+          "unit_fee": 61,
+          "contribution": 61
+        },
+        {
+          "native_sum_before_free_gate": 61
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 8,
+          "grade": 1,
+          "loyalty": 80,
+          "pet_wire_sha256": "4cefc2f2df60554b045a7ab4386812c47be435f708f9ded38b32ce286f6dda76"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 1220,
+      "native_subtotal": 1220,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 80
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 8
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 20,
+          "native_remainder": 8,
+          "unit_fee": 61,
+          "contribution": 1220
+        },
+        {
+          "native_sum_before_free_gate": 1220
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 8,
+          "grade": 1,
+          "loyalty": 0,
+          "pet_wire_sha256": "c4835639be141c88ef011a0575e81f7ae72cc09ed327f8b9dd6a44521b6dfbe8"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 6100,
+      "native_subtotal": 6100,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 0
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 8
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 100,
+          "native_remainder": 8,
+          "unit_fee": 61,
+          "contribution": 6100
+        },
+        {
+          "native_sum_before_free_gate": 6100
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 1,
+          "loyalty": 100,
+          "pet_wire_sha256": "f2489b8d74a8283ad955d667753e7a9ad779e96aa56a606d86439d4c5f4080f0"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 0,
+      "native_subtotal": 0,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 100
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 0,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 0
+        },
+        {
+          "native_sum_before_free_gate": 0
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 1,
+          "loyalty": 99,
+          "pet_wire_sha256": "96b17f4620bcd5a1c8bc5d81e41c3eb32489fbd383c5e118a3f42c77e575dfaa"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 63,
+      "native_subtotal": 63,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 99
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 63
+        },
+        {
+          "native_sum_before_free_gate": 63
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 1,
+          "loyalty": 80,
+          "pet_wire_sha256": "f5e2d578577263cea0ef35c25a8eff40efa662ee71a1d0da99429d1f69f751d6"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 1260,
+      "native_subtotal": 1260,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 80
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 20,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 1260
+        },
+        {
+          "native_sum_before_free_gate": 1260
+        }
+      ]
+    },
+    {
+      "layer": "ones_digit_x_deficit",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 1,
+          "loyalty": 0,
+          "pet_wire_sha256": "e46753b528b1567fc5f90e668e1034e56421fe41a5216e003a1a4dbd111b0917"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 6300,
+      "native_subtotal": 6300,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 0
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 100,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 6300
+        },
+        {
+          "native_sum_before_free_gate": 6300
+        }
+      ]
+    },
+    {
+      "layer": "independent_colour_cap",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 1,
+          "loyalty": 99,
+          "pet_wire_sha256": "96b17f4620bcd5a1c8bc5d81e41c3eb32489fbd383c5e118a3f42c77e575dfaa"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 63,
+      "native_subtotal": 63,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 99
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 63
+        },
+        {
+          "native_sum_before_free_gate": 63
+        }
+      ]
+    },
+    {
+      "layer": "independent_colour_cap",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 2,
+          "loyalty": 99,
+          "pet_wire_sha256": "1917d957b0823e4f1d1951d428ed8479f19acd86e49d9ddc75e5d2897d1bc0df"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 63,
+      "native_subtotal": 63,
+      "lookups": [
+        {
+          "grade": 2,
+          "record_id": 2,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 99
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 63
+        },
+        {
+          "native_sum_before_free_gate": 63
+        }
+      ]
+    },
+    {
+      "layer": "independent_colour_cap",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 3,
+          "loyalty": 124,
+          "pet_wire_sha256": "2a9f2ecc03a83944a3ab9ff1ac98084d4a3c9a3a200fd93f5b0c67dacf1b44cb"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 63,
+      "native_subtotal": 63,
+      "lookups": [
+        {
+          "grade": 3,
+          "record_id": 3,
+          "maxloy": 125
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 124
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 63
+        },
+        {
+          "native_sum_before_free_gate": 63
+        }
+      ]
+    },
+    {
+      "layer": "independent_colour_cap",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 4,
+          "loyalty": 199,
+          "pet_wire_sha256": "ab5f77a10d992aaf951d28c5d4795cd002855b49209357ab02ee8f14ff52e8f2"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 63,
+      "native_subtotal": 63,
+      "lookups": [
+        {
+          "grade": 4,
+          "record_id": 4,
+          "maxloy": 200
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 199
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 63
+        },
+        {
+          "native_sum_before_free_gate": 63
+        }
+      ]
+    },
+    {
+      "layer": "independent_colour_cap",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 5,
+          "loyalty": 299,
+          "pet_wire_sha256": "60c3c58f112da131ac9b51d7f85aeecd033ccd85cf3406750589778e54e90f95"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 63,
+      "native_subtotal": 63,
+      "lookups": [
+        {
+          "grade": 5,
+          "record_id": 5,
+          "maxloy": 300
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 299
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 63
+        },
+        {
+          "native_sum_before_free_gate": 63
+        }
+      ]
+    },
+    {
+      "layer": "independent_colour_cap",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 6,
+          "loyalty": 399,
+          "pet_wire_sha256": "ca8549c0024c868a1faa48f7b938ad3cbec88a9598b7a86cf25b0399144ed060"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 63,
+      "native_subtotal": 63,
+      "lookups": [
+        {
+          "grade": 6,
+          "record_id": 6,
+          "maxloy": 400
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 399
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 63
+        },
+        {
+          "native_sum_before_free_gate": 63
+        }
+      ]
+    },
+    {
+      "layer": "power_not_blood_level",
+      "pets": [
+        {
+          "power": 63,
+          "grade": 6,
+          "loyalty": 399,
+          "pet_wire_sha256": "1602ff3205730581f135d32c5b0bef551f89ba2c4f138f75e20728a6d3796225"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 51,
+      "native_subtotal": 51,
+      "lookups": [
+        {
+          "grade": 6,
+          "record_id": 6,
+          "maxloy": 400
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 399
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 63
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 3,
+          "unit_fee": 51,
+          "contribution": 51
+        },
+        {
+          "native_sum_before_free_gate": 51
+        }
+      ]
+    },
+    {
+      "layer": "power_not_blood_level",
+      "pets": [
+        {
+          "power": 64,
+          "grade": 6,
+          "loyalty": 399,
+          "pet_wire_sha256": "2243538b037c5741fa2b491f2f4ff3f3816ec23190d5eaa9dfed1c9a83c02eb9"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 53,
+      "native_subtotal": 53,
+      "lookups": [
+        {
+          "grade": 6,
+          "record_id": 6,
+          "maxloy": 400
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 399
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 64
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 4,
+          "unit_fee": 53,
+          "contribution": 53
+        },
+        {
+          "native_sum_before_free_gate": 53
+        }
+      ]
+    },
+    {
+      "layer": "power_not_blood_level",
+      "pets": [
+        {
+          "power": 229,
+          "grade": 6,
+          "loyalty": 399,
+          "pet_wire_sha256": "f2b4b717defc9478d7926b5cc9d7c071cf2646fd9849f5d2e1fbb295d5904716"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 63,
+      "native_subtotal": 63,
+      "lookups": [
+        {
+          "grade": 6,
+          "record_id": 6,
+          "maxloy": 400
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 399
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 229
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 63
+        },
+        {
+          "native_sum_before_free_gate": 63
+        }
+      ]
+    },
+    {
+      "layer": "power_not_blood_level",
+      "pets": [
+        {
+          "power": 230,
+          "grade": 6,
+          "loyalty": 399,
+          "pet_wire_sha256": "ba3cf62ace3a8343d2b836d96a9048a7a2c3808a8397d68f186769398b206e79"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 45,
+      "native_subtotal": 45,
+      "lookups": [
+        {
+          "grade": 6,
+          "record_id": 6,
+          "maxloy": 400
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 399
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 230
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 0,
+          "unit_fee": 45,
+          "contribution": 45
+        },
+        {
+          "native_sum_before_free_gate": 45
+        }
+      ]
+    },
+    {
+      "layer": "power_not_blood_level",
+      "pets": [
+        {
+          "power": 1139,
+          "grade": 6,
+          "loyalty": 399,
+          "pet_wire_sha256": "57687277367f5f1cc7542605277950c784fd35477839cab07b92cb00c017c6af"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 63,
+      "native_subtotal": 63,
+      "lookups": [
+        {
+          "grade": 6,
+          "record_id": 6,
+          "maxloy": 400
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 399
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 1139
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 63
+        },
+        {
+          "native_sum_before_free_gate": 63
+        }
+      ]
+    },
+    {
+      "layer": "power_not_blood_level",
+      "pets": [
+        {
+          "power": 1140,
+          "grade": 6,
+          "loyalty": 399,
+          "pet_wire_sha256": "f90e124055fd6dc4c8a4fa87626be28a4981dfb3d188e820a55391352775f671"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 45,
+      "native_subtotal": 45,
+      "lookups": [
+        {
+          "grade": 6,
+          "record_id": 6,
+          "maxloy": 400
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 399
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 1140
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 0,
+          "unit_fee": 45,
+          "contribution": 45
+        },
+        {
+          "native_sum_before_free_gate": 45
+        }
+      ]
+    },
+    {
+      "layer": "power_not_blood_level",
+      "pets": [
+        {
+          "power": 2019,
+          "grade": 6,
+          "loyalty": 399,
+          "pet_wire_sha256": "b772895e704d8441018c8f4d8f46962501e032eaae2bf89d2aaf2744e962a5bb"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 63,
+      "native_subtotal": 63,
+      "lookups": [
+        {
+          "grade": 6,
+          "record_id": 6,
+          "maxloy": 400
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 399
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 2019
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 63
+        },
+        {
+          "native_sum_before_free_gate": 63
+        }
+      ]
+    },
+    {
+      "layer": "power_not_blood_level",
+      "pets": [
+        {
+          "power": 2020,
+          "grade": 6,
+          "loyalty": 399,
+          "pet_wire_sha256": "31993c46ab1abd26ca3ed0be926b954f5668b3271a0f6b5d9c91fce85413941e"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 45,
+      "native_subtotal": 45,
+      "lookups": [
+        {
+          "grade": 6,
+          "record_id": 6,
+          "maxloy": 400
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 399
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 2020
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 0,
+          "unit_fee": 45,
+          "contribution": 45
+        },
+        {
+          "native_sum_before_free_gate": 45
+        }
+      ]
+    },
+    {
+      "layer": "power_not_blood_level",
+      "pets": [
+        {
+          "power": 52610,
+          "grade": 6,
+          "loyalty": 399,
+          "pet_wire_sha256": "f06f509c05787e247fbdd86736879ae50e89486a4555629e0773a9967c3fe173"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 45,
+      "native_subtotal": 45,
+      "lookups": [
+        {
+          "grade": 6,
+          "record_id": 6,
+          "maxloy": 400
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 399
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 52610
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 0,
+          "unit_fee": 45,
+          "contribution": 45
+        },
+        {
+          "native_sum_before_free_gate": 45
+        }
+      ]
+    },
+    {
+      "layer": "power_not_blood_level",
+      "pets": [
+        {
+          "power": 52611,
+          "grade": 6,
+          "loyalty": 399,
+          "pet_wire_sha256": "98ce8f028cdf7fd00294c27a9c0b14fbe49a5cf26257464c9be8149efb4cd9a2"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 47,
+      "native_subtotal": 47,
+      "lookups": [
+        {
+          "grade": 6,
+          "record_id": 6,
+          "maxloy": 400
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 399
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 52611
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 1,
+          "unit_fee": 47,
+          "contribution": 47
+        },
+        {
+          "native_sum_before_free_gate": 47
+        }
+      ]
+    },
+    {
+      "layer": "free_gate_positive",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 1,
+          "loyalty": 80,
+          "pet_wire_sha256": "f5e2d578577263cea0ef35c25a8eff40efa662ee71a1d0da99429d1f69f751d6"
+        }
+      ],
+      "role_level": 0,
+      "native_return": -3,
+      "native_subtotal": 1260,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 80
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 0
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 20,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 1260
+        },
+        {
+          "native_sum_before_free_gate": 1260
+        }
+      ]
+    },
+    {
+      "layer": "free_gate_zero",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 1,
+          "loyalty": 100,
+          "pet_wire_sha256": "f2489b8d74a8283ad955d667753e7a9ad779e96aa56a606d86439d4c5f4080f0"
+        }
+      ],
+      "role_level": 0,
+      "native_return": 0,
+      "native_subtotal": 0,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 100
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 0,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 0
+        },
+        {
+          "native_sum_before_free_gate": 0
+        }
+      ]
+    },
+    {
+      "layer": "free_gate_positive",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 1,
+          "loyalty": 80,
+          "pet_wire_sha256": "f5e2d578577263cea0ef35c25a8eff40efa662ee71a1d0da99429d1f69f751d6"
+        }
+      ],
+      "role_level": 19,
+      "native_return": -3,
+      "native_subtotal": 1260,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 80
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 19
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 20,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 1260
+        },
+        {
+          "native_sum_before_free_gate": 1260
+        }
+      ]
+    },
+    {
+      "layer": "free_gate_zero",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 1,
+          "loyalty": 100,
+          "pet_wire_sha256": "f2489b8d74a8283ad955d667753e7a9ad779e96aa56a606d86439d4c5f4080f0"
+        }
+      ],
+      "role_level": 19,
+      "native_return": 0,
+      "native_subtotal": 0,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 100
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 0,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 0
+        },
+        {
+          "native_sum_before_free_gate": 0
+        }
+      ]
+    },
+    {
+      "layer": "free_gate_positive",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 1,
+          "loyalty": 80,
+          "pet_wire_sha256": "f5e2d578577263cea0ef35c25a8eff40efa662ee71a1d0da99429d1f69f751d6"
+        }
+      ],
+      "role_level": 20,
+      "native_return": -3,
+      "native_subtotal": 1260,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 80
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 20
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 20,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 1260
+        },
+        {
+          "native_sum_before_free_gate": 1260
+        }
+      ]
+    },
+    {
+      "layer": "free_gate_zero",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 1,
+          "loyalty": 100,
+          "pet_wire_sha256": "f2489b8d74a8283ad955d667753e7a9ad779e96aa56a606d86439d4c5f4080f0"
+        }
+      ],
+      "role_level": 20,
+      "native_return": 0,
+      "native_subtotal": 0,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 100
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 0,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 0
+        },
+        {
+          "native_sum_before_free_gate": 0
+        }
+      ]
+    },
+    {
+      "layer": "free_gate_positive",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 1,
+          "loyalty": 80,
+          "pet_wire_sha256": "f5e2d578577263cea0ef35c25a8eff40efa662ee71a1d0da99429d1f69f751d6"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 1260,
+      "native_subtotal": 1260,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 80
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 20,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 1260
+        },
+        {
+          "native_sum_before_free_gate": 1260
+        }
+      ]
+    },
+    {
+      "layer": "free_gate_zero",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 1,
+          "loyalty": 100,
+          "pet_wire_sha256": "f2489b8d74a8283ad955d667753e7a9ad779e96aa56a606d86439d4c5f4080f0"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 0,
+      "native_subtotal": 0,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 100
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 0,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 0
+        },
+        {
+          "native_sum_before_free_gate": 0
+        }
+      ]
+    },
+    {
+      "layer": "free_gate_positive",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 1,
+          "loyalty": 80,
+          "pet_wire_sha256": "f5e2d578577263cea0ef35c25a8eff40efa662ee71a1d0da99429d1f69f751d6"
+        }
+      ],
+      "role_level": 60,
+      "native_return": 1260,
+      "native_subtotal": 1260,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 80
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 60
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 20,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 1260
+        },
+        {
+          "native_sum_before_free_gate": 1260
+        }
+      ]
+    },
+    {
+      "layer": "free_gate_zero",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 1,
+          "loyalty": 100,
+          "pet_wire_sha256": "f2489b8d74a8283ad955d667753e7a9ad779e96aa56a606d86439d4c5f4080f0"
+        }
+      ],
+      "role_level": 60,
+      "native_return": 0,
+      "native_subtotal": 0,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 100
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 0,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 0
+        },
+        {
+          "native_sum_before_free_gate": 0
+        }
+      ]
+    },
+    {
+      "layer": "free_gate_positive",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 1,
+          "loyalty": 80,
+          "pet_wire_sha256": "f5e2d578577263cea0ef35c25a8eff40efa662ee71a1d0da99429d1f69f751d6"
+        }
+      ],
+      "role_level": 155,
+      "native_return": 1260,
+      "native_subtotal": 1260,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 80
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 155
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 20,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 1260
+        },
+        {
+          "native_sum_before_free_gate": 1260
+        }
+      ]
+    },
+    {
+      "layer": "free_gate_zero",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 1,
+          "loyalty": 100,
+          "pet_wire_sha256": "f2489b8d74a8283ad955d667753e7a9ad779e96aa56a606d86439d4c5f4080f0"
+        }
+      ],
+      "role_level": 155,
+      "native_return": 0,
+      "native_subtotal": 0,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 100
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 0,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 0
+        },
+        {
+          "native_sum_before_free_gate": 0
+        }
+      ]
+    },
+    {
+      "layer": "multi_pet_sum",
+      "pets": [
+        {
+          "power": 0,
+          "grade": 1,
+          "loyalty": 80,
+          "pet_wire_sha256": "2050a9239c6908085f8edcc15ab8201bca82cac538795e4b30bf017db0756213"
+        },
+        {
+          "power": 9,
+          "grade": 1,
+          "loyalty": 80,
+          "pet_wire_sha256": "f5e2d578577263cea0ef35c25a8eff40efa662ee71a1d0da99429d1f69f751d6"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 2160,
+      "native_subtotal": 2160,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        },
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 80
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 0
+        },
+        {
+          "map": "0x500503c",
+          "key": 510,
+          "value": 80
+        },
+        {
+          "map": "0x500503c",
+          "key": 1140,
+          "value": 9
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 20,
+          "native_remainder": 0,
+          "unit_fee": 45,
+          "contribution": 900
+        },
+        {
+          "node": "0x5005000",
+          "deficit": 20,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 1260
+        },
+        {
+          "native_sum_before_free_gate": 2160
+        }
+      ]
+    },
+    {
+      "layer": "multi_pet_sum",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 1,
+          "loyalty": 80,
+          "pet_wire_sha256": "f5e2d578577263cea0ef35c25a8eff40efa662ee71a1d0da99429d1f69f751d6"
+        },
+        {
+          "power": 0,
+          "grade": 1,
+          "loyalty": 80,
+          "pet_wire_sha256": "2050a9239c6908085f8edcc15ab8201bca82cac538795e4b30bf017db0756213"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 2160,
+      "native_subtotal": 2160,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        },
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 80
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        },
+        {
+          "map": "0x500503c",
+          "key": 510,
+          "value": 80
+        },
+        {
+          "map": "0x500503c",
+          "key": 1140,
+          "value": 0
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 20,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 1260
+        },
+        {
+          "node": "0x5005000",
+          "deficit": 20,
+          "native_remainder": 0,
+          "unit_fee": 45,
+          "contribution": 900
+        },
+        {
+          "native_sum_before_free_gate": 2160
+        }
+      ]
+    },
+    {
+      "layer": "multi_pet_sum",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 1,
+          "loyalty": 80,
+          "pet_wire_sha256": "f5e2d578577263cea0ef35c25a8eff40efa662ee71a1d0da99429d1f69f751d6"
+        },
+        {
+          "power": 52611,
+          "grade": 6,
+          "loyalty": 399,
+          "pet_wire_sha256": "98ce8f028cdf7fd00294c27a9c0b14fbe49a5cf26257464c9be8149efb4cd9a2"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 1307,
+      "native_subtotal": 1307,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        },
+        {
+          "grade": 6,
+          "record_id": 6,
+          "maxloy": 400
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 80
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        },
+        {
+          "map": "0x500503c",
+          "key": 510,
+          "value": 399
+        },
+        {
+          "map": "0x500503c",
+          "key": 1140,
+          "value": 52611
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 20,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 1260
+        },
+        {
+          "node": "0x5005000",
+          "deficit": 1,
+          "native_remainder": 1,
+          "unit_fee": 47,
+          "contribution": 47
+        },
+        {
+          "native_sum_before_free_gate": 1307
+        }
+      ]
+    },
+    {
+      "layer": "multi_pet_sum",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 1,
+          "loyalty": 100,
+          "pet_wire_sha256": "f2489b8d74a8283ad955d667753e7a9ad779e96aa56a606d86439d4c5f4080f0"
+        },
+        {
+          "power": 52611,
+          "grade": 6,
+          "loyalty": 399,
+          "pet_wire_sha256": "98ce8f028cdf7fd00294c27a9c0b14fbe49a5cf26257464c9be8149efb4cd9a2"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 47,
+      "native_subtotal": 47,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        },
+        {
+          "grade": 6,
+          "record_id": 6,
+          "maxloy": 400
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 100
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        },
+        {
+          "map": "0x500503c",
+          "key": 510,
+          "value": 399
+        },
+        {
+          "map": "0x500503c",
+          "key": 1140,
+          "value": 52611
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 0,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 0
+        },
+        {
+          "node": "0x5005000",
+          "deficit": 1,
+          "native_remainder": 1,
+          "unit_fee": 47,
+          "contribution": 47
+        },
+        {
+          "native_sum_before_free_gate": 47
+        }
+      ]
+    },
+    {
+      "layer": "multi_pet_sum",
+      "pets": [
+        {
+          "power": 0,
+          "grade": 1,
+          "loyalty": 80,
+          "pet_wire_sha256": "2050a9239c6908085f8edcc15ab8201bca82cac538795e4b30bf017db0756213"
+        },
+        {
+          "power": 1,
+          "grade": 1,
+          "loyalty": 99,
+          "pet_wire_sha256": "6274486075a772278a278ff9ef5b28a434b656ebe45bdfa64631d52b24df6478"
+        },
+        {
+          "power": 9,
+          "grade": 4,
+          "loyalty": 180,
+          "pet_wire_sha256": "f61391cf763be5cbb3775b0aa9c886cd70048ab9c6a2d614e85d3c1621cf4112"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 2207,
+      "native_subtotal": 2207,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        },
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        },
+        {
+          "grade": 4,
+          "record_id": 4,
+          "maxloy": 200
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 80
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 0
+        },
+        {
+          "map": "0x500503c",
+          "key": 510,
+          "value": 99
+        },
+        {
+          "map": "0x500503c",
+          "key": 1140,
+          "value": 1
+        },
+        {
+          "map": "0x500603c",
+          "key": 510,
+          "value": 180
+        },
+        {
+          "map": "0x500603c",
+          "key": 1140,
+          "value": 9
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 20,
+          "native_remainder": 0,
+          "unit_fee": 45,
+          "contribution": 900
+        },
+        {
+          "node": "0x5005000",
+          "deficit": 1,
+          "native_remainder": 1,
+          "unit_fee": 47,
+          "contribution": 47
+        },
+        {
+          "node": "0x5006000",
+          "deficit": 20,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 1260
+        },
+        {
+          "native_sum_before_free_gate": 2207
+        }
+      ]
+    },
+    {
+      "layer": "multi_pet_sum",
+      "pets": [
+        {
+          "power": 0,
+          "grade": 1,
+          "loyalty": 99,
+          "pet_wire_sha256": "e95258bd46abb7288e49decc2f4e393d868bda1c61d3f5f889158e13065cf929"
+        },
+        {
+          "power": 1,
+          "grade": 1,
+          "loyalty": 99,
+          "pet_wire_sha256": "6274486075a772278a278ff9ef5b28a434b656ebe45bdfa64631d52b24df6478"
+        },
+        {
+          "power": 2,
+          "grade": 1,
+          "loyalty": 99,
+          "pet_wire_sha256": "2bb7e57e5b3fae9d8ae5a1ce783a3a506dac65a745211980851d7373c47925a5"
+        },
+        {
+          "power": 3,
+          "grade": 1,
+          "loyalty": 99,
+          "pet_wire_sha256": "66419e6328fa4da2aa704bffc18153e7716f9ad953201f7e365f9a050a0240c1"
+        },
+        {
+          "power": 4,
+          "grade": 1,
+          "loyalty": 99,
+          "pet_wire_sha256": "c1d6b2043769b0bedc5beda7aaeb6be4d5cb010c91af7e64fe28b855cb5b7fa2"
+        },
+        {
+          "power": 5,
+          "grade": 1,
+          "loyalty": 99,
+          "pet_wire_sha256": "897d010e01a2dc1b7b776267b8161da302bb5d66c0962a5750e27ab52c7890ce"
+        },
+        {
+          "power": 6,
+          "grade": 1,
+          "loyalty": 99,
+          "pet_wire_sha256": "fc8e980419a0a55c9897d89ad4261b5b20c5a9e78d25365f08f74549e7536265"
+        },
+        {
+          "power": 7,
+          "grade": 1,
+          "loyalty": 99,
+          "pet_wire_sha256": "da414960215d6e31154c05e4d8459ba42a4694794dffc2b7cc01a47629cde296"
+        },
+        {
+          "power": 8,
+          "grade": 1,
+          "loyalty": 99,
+          "pet_wire_sha256": "33638b7874e6f2dce66e20128c8e7a05e659d95c52d18471e536ecd46b08086c"
+        },
+        {
+          "power": 9,
+          "grade": 1,
+          "loyalty": 99,
+          "pet_wire_sha256": "96b17f4620bcd5a1c8bc5d81e41c3eb32489fbd383c5e118a3f42c77e575dfaa"
+        }
+      ],
+      "role_level": 21,
+      "native_return": 540,
+      "native_subtotal": 540,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        },
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        },
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        },
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        },
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        },
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        },
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        },
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        },
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        },
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 99
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 0
+        },
+        {
+          "map": "0x500503c",
+          "key": 510,
+          "value": 99
+        },
+        {
+          "map": "0x500503c",
+          "key": 1140,
+          "value": 1
+        },
+        {
+          "map": "0x500603c",
+          "key": 510,
+          "value": 99
+        },
+        {
+          "map": "0x500603c",
+          "key": 1140,
+          "value": 2
+        },
+        {
+          "map": "0x500703c",
+          "key": 510,
+          "value": 99
+        },
+        {
+          "map": "0x500703c",
+          "key": 1140,
+          "value": 3
+        },
+        {
+          "map": "0x500803c",
+          "key": 510,
+          "value": 99
+        },
+        {
+          "map": "0x500803c",
+          "key": 1140,
+          "value": 4
+        },
+        {
+          "map": "0x500903c",
+          "key": 510,
+          "value": 99
+        },
+        {
+          "map": "0x500903c",
+          "key": 1140,
+          "value": 5
+        },
+        {
+          "map": "0x500a03c",
+          "key": 510,
+          "value": 99
+        },
+        {
+          "map": "0x500a03c",
+          "key": 1140,
+          "value": 6
+        },
+        {
+          "map": "0x500b03c",
+          "key": 510,
+          "value": 99
+        },
+        {
+          "map": "0x500b03c",
+          "key": 1140,
+          "value": 7
+        },
+        {
+          "map": "0x500c03c",
+          "key": 510,
+          "value": 99
+        },
+        {
+          "map": "0x500c03c",
+          "key": 1140,
+          "value": 8
+        },
+        {
+          "map": "0x500d03c",
+          "key": 510,
+          "value": 99
+        },
+        {
+          "map": "0x500d03c",
+          "key": 1140,
+          "value": 9
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 21
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 1,
+          "native_remainder": 0,
+          "unit_fee": 45,
+          "contribution": 45
+        },
+        {
+          "node": "0x5005000",
+          "deficit": 1,
+          "native_remainder": 1,
+          "unit_fee": 47,
+          "contribution": 47
+        },
+        {
+          "node": "0x5006000",
+          "deficit": 1,
+          "native_remainder": 2,
+          "unit_fee": 49,
+          "contribution": 49
+        },
+        {
+          "node": "0x5007000",
+          "deficit": 1,
+          "native_remainder": 3,
+          "unit_fee": 51,
+          "contribution": 51
+        },
+        {
+          "node": "0x5008000",
+          "deficit": 1,
+          "native_remainder": 4,
+          "unit_fee": 53,
+          "contribution": 53
+        },
+        {
+          "node": "0x5009000",
+          "deficit": 1,
+          "native_remainder": 5,
+          "unit_fee": 55,
+          "contribution": 55
+        },
+        {
+          "node": "0x500a000",
+          "deficit": 1,
+          "native_remainder": 6,
+          "unit_fee": 57,
+          "contribution": 57
+        },
+        {
+          "node": "0x500b000",
+          "deficit": 1,
+          "native_remainder": 7,
+          "unit_fee": 59,
+          "contribution": 59
+        },
+        {
+          "node": "0x500c000",
+          "deficit": 1,
+          "native_remainder": 8,
+          "unit_fee": 61,
+          "contribution": 61
+        },
+        {
+          "node": "0x500d000",
+          "deficit": 1,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 63
+        },
+        {
+          "native_sum_before_free_gate": 540
+        }
+      ]
+    },
+    {
+      "layer": "multi_pet_free",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 1,
+          "loyalty": 80,
+          "pet_wire_sha256": "f5e2d578577263cea0ef35c25a8eff40efa662ee71a1d0da99429d1f69f751d6"
+        },
+        {
+          "power": 52611,
+          "grade": 6,
+          "loyalty": 399,
+          "pet_wire_sha256": "98ce8f028cdf7fd00294c27a9c0b14fbe49a5cf26257464c9be8149efb4cd9a2"
+        }
+      ],
+      "role_level": 20,
+      "native_return": -3,
+      "native_subtotal": 1307,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        },
+        {
+          "grade": 6,
+          "record_id": 6,
+          "maxloy": 400
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 80
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        },
+        {
+          "map": "0x500503c",
+          "key": 510,
+          "value": 399
+        },
+        {
+          "map": "0x500503c",
+          "key": 1140,
+          "value": 52611
+        },
+        {
+          "map": "0x5001164",
+          "key": 490,
+          "value": 20
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": 20,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": 1260
+        },
+        {
+          "node": "0x5005000",
+          "deficit": 1,
+          "native_remainder": 1,
+          "unit_fee": 47,
+          "contribution": 47
+        },
+        {
+          "native_sum_before_free_gate": 1307
+        }
+      ]
+    },
+    {
+      "layer": "no_pets",
+      "pets": [],
+      "role_level": 0,
+      "native_return": -1,
+      "native_subtotal": 0,
+      "lookups": [],
+      "attribute_reads": [],
+      "arithmetic": []
+    },
+    {
+      "layer": "no_pets",
+      "pets": [],
+      "role_level": 20,
+      "native_return": -1,
+      "native_subtotal": 0,
+      "lookups": [],
+      "attribute_reads": [],
+      "arithmetic": []
+    },
+    {
+      "layer": "no_pets",
+      "pets": [],
+      "role_level": 21,
+      "native_return": -1,
+      "native_subtotal": 0,
+      "lookups": [],
+      "attribute_reads": [],
+      "arithmetic": []
+    },
+    {
+      "layer": "invalid_overfull_loyalty",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 1,
+          "loyalty": 101,
+          "pet_wire_sha256": "371cbb6190b0b89bf44c16e121a721a6aa3fbd3a32a7c91837a6cb926c5b16ff"
+        }
+      ],
+      "role_level": 21,
+      "native_return": -63,
+      "native_subtotal": -63,
+      "lookups": [
+        {
+          "grade": 1,
+          "record_id": 1,
+          "maxloy": 100
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 101
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": -1,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": -63
+        },
+        {
+          "native_sum_before_free_gate": -63
+        }
+      ]
+    },
+    {
+      "layer": "invalid_missing_colour_config",
+      "pets": [
+        {
+          "power": 9,
+          "grade": 7,
+          "loyalty": 1,
+          "pet_wire_sha256": "079dba63bef2f12f8c99589be24c1c5239f129aa443af2bbcbd9e2ffb671349e"
+        }
+      ],
+      "role_level": 21,
+      "native_return": -63,
+      "native_subtotal": -63,
+      "lookups": [
+        {
+          "grade": 7,
+          "record_id": -1,
+          "maxloy": null
+        }
+      ],
+      "attribute_reads": [
+        {
+          "map": "0x500403c",
+          "key": 510,
+          "value": 1
+        },
+        {
+          "map": "0x500403c",
+          "key": 1140,
+          "value": 9
+        }
+      ],
+      "arithmetic": [
+        {
+          "node": "0x5004000",
+          "deficit": -1,
+          "native_remainder": 9,
+          "unit_fee": 63,
+          "contribution": -63
+        },
+        {
+          "native_sum_before_free_gate": -63
+        }
+      ]
+    }
+  ],
+  "formula": "sum((maxloy(colour)-attr510)*(45+2*(attr1140 signed_remainder 10)))",
+  "free_gate": "positive subtotal and role attr490 <=20 returns native sentinel -3; no pets returns -1; zero sum returns0",
+  "field_source": {
+    "power": "Pet bean+0x30 -> original113532c..1135373 -> attr1140",
+    "colour": "Pet bean+0x3c -> original11354fb..113551c -> pet+0x2c -> list node+0x34",
+    "loyalty": "Pet bean+0x90 -> original113523c..113525f -> attr510",
+    "level": "role attr490 supplied scalar; threshold branch executes unchanged"
+  },
+  "adapters": [
+    "map operator[] cell storage only",
+    "precise original PFS row lookup only",
+    "original decoded scalar Pet copied into original refresh message layout",
+    "role level/map/list fixtures, not actual world ownership or asset import"
+  ],
+  "limits": [
+    "Original native quote, not original server debit rules",
+    "No original GUI, runtime, live DB or deployment",
+    "No blood-level lookup used in quote",
+    "Valid matrix only nonnegative power0..52611; negative power C++ remainder outside restored domain",
+    "Missing/overfull cases document native lack of validation, not permission"
+  ],
+  "production_changed": false,
+  "policy_changed": false
+}

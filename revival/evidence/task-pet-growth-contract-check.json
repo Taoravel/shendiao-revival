@@ -1,0 +1,14 @@
+{
+  "scope": "minimal disposable public Inventory pet-growth call; no task transaction or online state",
+  "loaded_blood_policy": "2026-10-23.pet-blood.1",
+  "saved_blood_policy": "2026-10-23.pet-blood.1",
+  "public_pet_read_succeeds": true,
+  "result": "resolved_by_inventory_owner_and_original_compound_recheck_passed",
+  "current_verification": "task-resource-growth-check.json: actual pet5000XP and delayed pending7000XP both passed through public Inventory.change_pet_growth",
+  "historical_result": "blocked_by_pet_growth_contract",
+  "historical_error": "Known blood requires prepared rules or explicit policy migration",
+  "historical_source_sha256": {
+    "inventory.py": "ed705ba0b813c601fb32e299e7604769202a0f07b62b9e008d20d543aad51a15",
+    "pet_growth_store.py": "00bc009e6d4754e729ebcef28346a0648f3125540d3cc1dda5ca5e3e5a767eac"
+  }
+}

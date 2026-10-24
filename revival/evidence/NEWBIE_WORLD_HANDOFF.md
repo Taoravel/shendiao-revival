@@ -1,0 +1,56 @@
+# 新手出生与剧情：世界侧接入契约
+
+2026-10-23。按用户“恢复新手出生地和整个流程”推进；本文件交付世界侧已验证资料与Interface，任务/资产状态和共享入口仍由各自Owner集成。启动政策唯一来源是design/newbie-opening-v1.json，领域裁定见NEWBIE_OPENING_DECISION.md。
+
+## 先完成启动检查
+
+原下行→解析/Start→受控Return/End→原CEnd以及原点地/自然STOP→实际持久/重连已补父独立执行，入口WORLD_FIRST_PLAYABLE_NATIVE_CHAIN.md。三个独立原生/Owner Seams按报文组合，场景恢复与真实输入/渲染仍未由此验收；旧角无章入口仍需单独修正。
+
+旧角色与新角必须另核客户端入场锁：当前无章节legacy发intro0却无CG，已用实际固定发布登录和原指令复现黑幕/拒绝移动，见WORLD_LEGACY_INTRO_ENTRY_BLOCKER。私有候选无章分支改1及两新章必要回归绿，尚需主策划/共享集成/发布与GUI；不能以本文件服务器STOP成功证明真实输入解锁。
+
+1. 启动时加载world_newbie.load_newbie_routes、world_catalog.maps/maze_grids、world_npcs.load_placements。43组合取原角色配置ID与门派ID，角色ID由TaskResources.shape_to_role_config转换，不拿玩家role_id作键。
+2. 调用world_newbie.validate_birth_sites(routes,catalog,grids,placements,state_byte=0,interaction_radius=32,max_visited=100000)。返回只读MappingProxyType，值为冻结BirthSiteCheck，含status、path、visited、placement_id、movement_mask。缺网格、键不一致、阻挡、缺NPC、无路径见证或预算耗尽均ValueError，避免创建时静默换到临安。该函数不读文件/数据库、不改角色。state0/mask1和半径32是本次明确采用的设计条件，不是黑态现场状态实读。
+3. 采用路线cinematic_endpoint为设计出生点；只对带独立创建来源、尚无持久位置的新角色兑现。已有角色和已提交重试保持当前位置。原坐标来自电影演员端点，原服务器出生坐标仍未知。
+
+audit_newbie_birth_sites.py通过全部43路线、10个不同地点。newbie-birth-sites-audit.json保存每条完整路径，独立复查所有点的范围/原maze与所有段的原DDA，终点在实际场景NPC摆放32逻辑像素内。坐标为渲染前逻辑像素，不能把原CNpcConfig格坐标直接当场景NPC像素，也不能对已是像素的scene placement再次乘16。见证只证明静态可走，不证明原客户端寻路、输入解锁或画面显示。
+
+## 开场与结束
+
+world_newbie.NewbieFlow校验43条原root/后继/角色/NPC匹配。initial_task_plans只产生原TaskDomain的offer/accept计划；start输出真实SStartPlayCG；finish将匹配当前角色、租约、位置版本、连接世代、电影ID与截止时间的CEnd转为TaskEvidence；committed仅在既有任务事务提交后释放本地ticket。successor_task_plans只选择当前角色的首师父分支，不自动完成它。
+
+这些是纯计划和连接期授权，**不是持久章节实现**。独立创建来源、阶段、播放日志、稳定完成回执、奖励与后继的同事务、断线恢复/重播由任务Owner按政策实现。CEnd本身没有nonce/终止原因，不能证明自然End或消除相同电影迟到报告。
+
+后续已提供NewbieFlow.from_ticket(resources,routes,ticket)：只接受结构合法的冻结IntroTicket及TaskActor/Location/NewbieRoute，重验原路线、源ID、请求ID、世代、位置范围和期限结构，保留原source_id/request_id；finish仍核当前租约/任务快照/位置/期限。RoleOwner只保存冻结ticket，每个存储事务恢复局部flow，用后丢弃；外部不读写_ticket，不共享可变flow。verify_world_newbie先失败后通过，verify_task_newbie_chapter对全部43组合的事务局部恢复、重试/回滚与错误凭据也已通过。任务模块已交task_newbie_chapter持久Interface，共享入口源码接线后，独立verify_newbie_runtime默认模式已通过实际Owner两派自然建角/各自CG/后继与重连，未使用可信任务或手动出生捷径。隔离源码通过不等于监听服部署或实机画面通过。
+
+world_protocol.world_snapshot(role,attribute_snapshot=None,*,intro_discriminator=0)现提供独立0/1输入。由持久章节Owner投影：待开场0、已完成1；这是本地设计，默认0保留兼容行为。真正经验独立写对象+f8，不能用XP/等级决定章节。verify_world_snapshot_experience_native对EXP0/150/4886718345各验证intro0和1共6例，均由原解码器确认；原零值构造基线仍274字节相同。
+
+黑幕与不能移动的共同机制、原解除调用分别见WORLD_INTRO_BLACK_NATIVE.md、MOVEMENT_INPUT_GATES.md。五分钟遮罩超时不会解除App输入门禁，恢复应走授权CG生命周期，不能把等待出图作为结束确认。电影临时Setmap/Return保留服务器原权威位置。
+
+## 见师父、选武器、装备、车夫
+
+依次集成，并分别设完成条件：
+
+1. 原首师父是type10且ScenarioInfoAnimationID为200xx；路由字段已统一为successor_card_effect_id，原数值保持，不再以movie命名。后置对白发送CQuestDialogEnd，专用武器卡下行SPlayCardEffect、选择上行CGetCardItem。200xx不当type50/开场CG。详见WORLD_MASTER_CARD_PROTOCOL.md、world_card_protocol.py及newbie-master-cards.json。
+2. 43张原卡共86个选项，对应49001..49010十种直接装备的师承武器、每件数量1；原card/item/effect/type各表的来源、CRC与哈希都在catalog。由合法任务/对白/角色的一次选择授权限定选项；资产事务发放与稳定回执一起提交，重复选择不能多发。原服发卡精确时机、实例绑定等未知部分按主策划补全，原表数量与模板原样保留。
+3. 后继type59检查实际装备。10390是打开包裹的虚拟UI配置，map0，不能生成世界NPC或以访问它完成任务。原CEquipement是物品实例key和slot，武器slot0已原生核验；角色Owner应根据提交后的实际装备快照/版本产生证据，不能把收包或领取当穿戴成功。关联这次选择实例的判定若采用须标designed；原type59精确predicate尚未知。见NEWBIE_EQUIPMENT_RESEARCH.md。
+4. 装备后的车夫任务有原RewardMapJumpType/RewardMapID/坐标及分支，现普通对白能力检查明确阻止直接完成这类特殊任务。其完成须与已有地图持久交接衔接，保留原嘉兴落点差异；不能清空传送字段来放行对话。MapOwner.prepare_transfer(expected,target_position,*,request_id,deadline_ms,now_ms)已提供受信任务/服务入口：RoleOwner先依据持久任务续行授权，源地图执行者重新核当前租约/位置/状态/范围，同请求幂等，不同挂起目的拒绝；返回注册的TransferOffer，后续复用reserve/freeze/activate/finalize/ready。准备阶段不移动、不冻结、不完成任务；运行时先持久记交接，再发包，原客户端目的字段不进入此入口。同图瞬移不在该Interface范围。verify_world_scripted_transfer已先失败后通过，原Owner和持久运行时换图回归均通过。再往后梦境1501与战斗是章节后段，不是出生点。完整333节点/366边见NEWBIE_CHAPTER_FLOW.mmd和newbie-origin-client.json。
+
+audit_newbie_world_continuations另查全部43分支“师父接近点→本派车夫”：10处独立路径均有原生可走见证。333章节点保留的50条RewardMapJump数据按配置坐标×16生成候选落点，50处均在范围且mask1清；该task专用坐标消费尚未原生证明，机器报告明确inferred及未应用传送政策，不能把静态通过升级为原服单位/剧情已接线证据。结果newbie-world-continuations-audit.json。
+
+## 实际验证与当前限制
+
+最新世界补充：10条车夫目标解析与实际任务/奖励/位置原子事务由task_cart_transfer组合世界公开commit_transfer_transaction，世界独立必要验证通过；不重复创建坐标转换政策。源位置默认精确检查点、完整offer/deadline重试身份、晚期回滚和不重奖/不倒退见WORLD_CART_TRANSFER_HANDOFF。新租约最终DB决定和按图旧成员退役已提供，见WORLD_TRANSFER_RECOVERY_HANDOFF；自然共享车夫/故障重登、发送屏障和GUI另验，不能用以下旧部署摘要推定已上线。
+
+最新部署状态另核：主集成已更新测试服务为PID31052，13:46启动并监听127.0.0.1:28993；其启动部署快照包含自然新手章接线。可以让用户用新角色验收门派出生/开场/移动，既有角色不隐式重置。世界窗口未重启该服务、未启动客户端；之后源码（例如以下装备入场投影）不因此自动上线，具体以主集成部署摘要为准。
+
+世界入场协议已消费role_attribute_protocol.role_detail_equipment_fields(role_id,snapshot)：仅显式EquipmentRoleSnapshot填32i的8/12/14，普通旧快照保持原兼容。verify_world_equipment_entry_native先证实装备总值被编码为0/0/0，再修改为同一最终投影的49/38/8；耐久耗尽回24/23/0，旧plain保持0/0/0。三例均执行原SEnterWorld decoder，生命80/110/110、真气46/106、EXP61和intro1均保留。该检查未证明共享角色Owner已采用装备组合快照，也未部署到上述服务。
+
+完整显式入场另提供world_snapshot(...,growth_snapshot=current_growth)：必须同时有当前attribute_snapshot，使用role_detail_profile的已确认32i、五个signed16和第一个后置i32潜能，其余未知槽保留0。外层role的ID/等级/经验须与growth一致；helper核属性/成长revision。verify_world_role_profile_native先失败后通过，原decoder确认五维(11,22,33,44,55)与潜能7，特别区分耐力/敏捷顺序；HP/MP、7项战斗槽、EXP61和intro1保留。装备组合+growth附加案例确认49/38/8、五维11各项和潜能5同源。无growth参数保留原兼容，不从角色等级临时造基线。共享GameRuntime传profile.growth仍由主集成单独接，世界窗口未改入口或部署。
+
+新增verify_newbie_world_entry.py：按实际三角色上限分15批独立临时库，通过全部43合法组合自然create_role→入场→开场前合法几何移动仍拒绝→匹配结束→沿原可走见证逐点行走→收到首师父真实key的SVisitNpc→重连无CG且保留已走位置。共1290个STOP位置更新，走到首NPC后的位置均实际检查持久表，连续RC4/原MPPC接受；没有直接INSERT角色或手动改出生点。结果newbie-world-entry-verification.json。它证明服务器输入门禁与角色/地图/存档/连接接线，不证明客户端输入、渲染、原寻路或GPU可见，也没有启用共享运行时的maze/state碰撞参数。未启动客户端或真实监听。
+
+- diagnosing-bugs以原黑图红绿与原指令单变量反事实分开判断；已定位共享门禁/遮罩机制，尚无本轮真实GUI修复验收。
+- codebase-design将启动资源、纯路径验证、连接期授权和持久角色事务分开；世界Module输出冻结快照/逻辑消息，不另建影子任务数据库。
+- tdd按路径绕阻挡/预算耗尽、整批启动拒绝、独立intro1编码三个切片先运行失败再实现通过。verify_world_newbie、audit_newbie_birth_sites、verify_world_snapshot_experience_native、verify_world_bootstrap均通过。
+- research后台原生武器卡16组、装备slot26组/codec3组及原表交叉已通过；writing-for-agents按启动→播放→提交→后续流程交付，保留每步完成条件。
+- 本批未修改serve/gateway/accounts/game_runtime/runtime_storage，未部署、重启、启动客户端、操作GUI或改真实角色。旧监听进程不等于当前源码；完整新手流程与全量世界目标仍未完成。

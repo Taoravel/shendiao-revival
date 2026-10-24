@@ -1,0 +1,524 @@
+{
+  "image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+  "route_catalog_sha256": "0e04f85f83fd539c2a4072de1d3ea1fc2dc1d481e04dee918a3fc38a1249da62",
+  "route_count": 43,
+  "source_movie_count": 10,
+  "resource_sources": [
+    {
+      "path": "movie/11001.txt",
+      "sha256": "f63fa3eb18d2b7a789cdb85e472f5d4aebc1ac91145327af1e6882d5426d8528",
+      "bytes": 46710,
+      "first_start_line": 12,
+      "prefix_lines": [
+        "Setmap id=1009 pos=15,137",
+        "MoveCam pos=15,137",
+        "",
+        "CreateNpc id=94 varname=QC3 pos=70,29 model=5101 npcname= title=huango dir=4",
+        "CreateNpc id=95 varname=QC3 pos=56,26 model=5102 npcname= title=huango dir=4",
+        "CreateNpc id=96 varname=QC3 pos=83,38 model=5103 npcname= title=huango dir=4",
+        "CreateNpc id=97 varname=QC3 pos=82,45 model=5104 npcname= title=huango dir=4",
+        "",
+        "PlaySound id=1 res=杀阵 repeat=0",
+        "",
+        "",
+        "Start"
+      ],
+      "roles": [
+        2,
+        5,
+        9,
+        10
+      ]
+    }
+  ],
+  "effect_path_source": {
+    "path": "autoconfig/knight.gsp.effectpath.ceffectpath.xml",
+    "sha256": "70680387a323a1bf0391ab37bbdcc86d565bc96f2b9b94ec2d9b4a5d24d73bbe",
+    "record": {
+      "id": "2004",
+      "Name": "杀阵",
+      "Patn": "/sound/music/huashanzhidian.ogg"
+    }
+  },
+  "cases": [
+    {
+      "movie_id": 11001,
+      "remove_start": false,
+      "manager_present": true,
+      "cold_ui": false,
+      "wire_body_hex": "00002af9",
+      "decoded_movie_id": 11001,
+      "decoder_consumed": 4,
+      "loaded_lines": 864,
+      "queued_sections": 688,
+      "first_sections": [
+        {
+          "vtable": "0x229ed48",
+          "param8_signed": 0
+        },
+        {
+          "vtable": "0x229edd4",
+          "param8_signed": -1
+        },
+        {
+          "vtable": "0x229edf0",
+          "param8_signed": 0
+        },
+        {
+          "vtable": "0x229edf0",
+          "param8_signed": 0
+        },
+        {
+          "vtable": "0x229edf0",
+          "param8_signed": 0
+        },
+        {
+          "vtable": "0x229edf0",
+          "param8_signed": 0
+        },
+        {
+          "vtable": "0x229eed0",
+          "param8_signed": 0
+        },
+        {
+          "vtable": "0x229ed80",
+          "param8_signed": 1500
+        },
+        {
+          "vtable": "0x229ee7c",
+          "param8_signed": 2000
+        }
+      ],
+      "initial": {
+        "intro_flag": 1,
+        "scene_effect": 305419896
+      },
+      "ticks": [
+        {
+          "tick": 1,
+          "intro_flag": 1,
+          "scene_effect": 305419896,
+          "current_vtable": "0x229edd4"
+        },
+        {
+          "tick": 2,
+          "intro_flag": 1,
+          "scene_effect": 305419896,
+          "current_vtable": "0x229edf0"
+        },
+        {
+          "tick": 3,
+          "intro_flag": 1,
+          "scene_effect": 305419896,
+          "current_vtable": "0x229edf0"
+        },
+        {
+          "tick": 4,
+          "intro_flag": 1,
+          "scene_effect": 305419896,
+          "current_vtable": "0x229edf0"
+        },
+        {
+          "tick": 5,
+          "intro_flag": 1,
+          "scene_effect": 305419896,
+          "current_vtable": "0x229edf0"
+        },
+        {
+          "tick": 6,
+          "intro_flag": 1,
+          "scene_effect": 305419896,
+          "current_vtable": "0x229eed0"
+        },
+        {
+          "tick": 7,
+          "intro_flag": 0,
+          "scene_effect": 0,
+          "current_vtable": "0x229ed80"
+        }
+      ],
+      "final": {
+        "intro_flag": 0,
+        "scene_effect": 0
+      },
+      "movie_active": 1,
+      "ordinary_input_allowed": false,
+      "skip_event_result": null,
+      "native_hits": {
+        "decoder": 1,
+        "process": 1,
+        "dispatch": 1,
+        "load_parse": 1,
+        "dispatch_line": 864,
+        "factory_start": 1,
+        "queue_tick": 7,
+        "play_sound": 1,
+        "section_start": 1,
+        "clear_intro": 1,
+        "clear_scene_effect": 1,
+        "ordinary_input_gate": 1
+      },
+      "events": [
+        {
+          "boundary": "0x11d8910"
+        },
+        {
+          "resource_stream": "/config/movie/11001.txt"
+        },
+        {
+          "scene_load": [
+            1009,
+            1100,
+            240,
+            2192
+          ]
+        },
+        {
+          "camera_move": [
+            360,
+            2192
+          ]
+        },
+        {
+          "scene_create_actor": [
+            94,
+            0,
+            "",
+            5101,
+            5101,
+            1120,
+            464,
+            4,
+            1
+          ]
+        },
+        {
+          "scene_create_actor": [
+            95,
+            0,
+            "",
+            5102,
+            5102,
+            896,
+            416,
+            4,
+            1
+          ]
+        },
+        {
+          "scene_create_actor": [
+            96,
+            0,
+            "",
+            5103,
+            5103,
+            1328,
+            608,
+            4,
+            1
+          ]
+        },
+        {
+          "scene_create_actor": [
+            97,
+            0,
+            "",
+            5104,
+            5104,
+            1312,
+            720,
+            4,
+            1
+          ]
+        },
+        {
+          "engine_audio_play": "/sound/music/huashanzhidian.ogg"
+        },
+        {
+          "native": "section_start",
+          "address": "0x12b9a10",
+          "caller_return": "0x12c0b4c",
+          "this": "0x52023e0"
+        },
+        {
+          "native": "clear_intro",
+          "address": "0x12bc870",
+          "caller_return": "0x12b9a1e",
+          "this": "0x5400000"
+        },
+        {
+          "native": "clear_scene_effect",
+          "address": "0x11d3a10",
+          "caller_return": "0x12b9a1e",
+          "this": "0x5401000"
+        },
+        {
+          "dispose_intro_effect": 305419896
+        }
+      ]
+    }
+  ],
+  "controls": [],
+  "cold_ui_and_skip_event": {
+    "movie_id": 11001,
+    "remove_start": false,
+    "manager_present": true,
+    "cold_ui": true,
+    "wire_body_hex": "00002af9",
+    "decoded_movie_id": 11001,
+    "decoder_consumed": 4,
+    "loaded_lines": 864,
+    "queued_sections": 688,
+    "first_sections": [
+      {
+        "vtable": "0x229ed48",
+        "param8_signed": 0
+      },
+      {
+        "vtable": "0x229edd4",
+        "param8_signed": -1
+      },
+      {
+        "vtable": "0x229edf0",
+        "param8_signed": 0
+      },
+      {
+        "vtable": "0x229edf0",
+        "param8_signed": 0
+      },
+      {
+        "vtable": "0x229edf0",
+        "param8_signed": 0
+      },
+      {
+        "vtable": "0x229edf0",
+        "param8_signed": 0
+      },
+      {
+        "vtable": "0x229eed0",
+        "param8_signed": 0
+      },
+      {
+        "vtable": "0x229ed80",
+        "param8_signed": 1500
+      },
+      {
+        "vtable": "0x229ee7c",
+        "param8_signed": 2000
+      }
+    ],
+    "initial": {
+      "intro_flag": 1,
+      "scene_effect": 305419896
+    },
+    "ticks": [
+      {
+        "tick": 1,
+        "intro_flag": 1,
+        "scene_effect": 305419896,
+        "current_vtable": "0x229edd4"
+      },
+      {
+        "tick": 2,
+        "intro_flag": 1,
+        "scene_effect": 305419896,
+        "current_vtable": "0x229edf0"
+      },
+      {
+        "tick": 3,
+        "intro_flag": 1,
+        "scene_effect": 305419896,
+        "current_vtable": "0x229edf0"
+      },
+      {
+        "tick": 4,
+        "intro_flag": 1,
+        "scene_effect": 305419896,
+        "current_vtable": "0x229edf0"
+      },
+      {
+        "tick": 5,
+        "intro_flag": 1,
+        "scene_effect": 305419896,
+        "current_vtable": "0x229edf0"
+      },
+      {
+        "tick": 6,
+        "intro_flag": 1,
+        "scene_effect": 305419896,
+        "current_vtable": "0x229eed0"
+      },
+      {
+        "tick": 7,
+        "intro_flag": 0,
+        "scene_effect": 0,
+        "current_vtable": "0x229ed80"
+      }
+    ],
+    "final": {
+      "intro_flag": 0,
+      "scene_effect": 0
+    },
+    "movie_active": 1,
+    "ordinary_input_allowed": false,
+    "skip_event_result": {
+      "event_entry": "0x123f160",
+      "event_id": "0x7b8a4",
+      "replacement_queue": [
+        "0x229ed64",
+        "0x229ed9c"
+      ],
+      "tick_deltas_ms": [
+        500,
+        1500
+      ],
+      "actual_end_type": 786456,
+      "actual_end_body_hex": "00002af9",
+      "movie_id": 11001,
+      "manager_3c_after": 0,
+      "ordinary_input_allowed": true
+    },
+    "native_hits": {
+      "decoder": 1,
+      "process": 1,
+      "dispatch": 1,
+      "load_parse": 1,
+      "dispatch_line": 864,
+      "factory_start": 1,
+      "queue_tick": 9,
+      "play_sound": 1,
+      "section_start": 1,
+      "clear_intro": 1,
+      "clear_scene_effect": 1,
+      "ordinary_input_gate": 2,
+      "event_dispatch": 1,
+      "skip_movie": 1,
+      "section_return": 1,
+      "section_end": 1,
+      "end_cleanup": 1
+    },
+    "events": [
+      {
+        "gui_load_layout": "SceneAniBack.layout"
+      },
+      {
+        "gui_find_window": "SceneAniBack/TopPanel"
+      },
+      {
+        "gui_find_window": "SceneAniBack/BottomPanel"
+      },
+      {
+        "boundary": "0x11d8910"
+      },
+      {
+        "resource_stream": "/config/movie/11001.txt"
+      },
+      {
+        "scene_load": [
+          1009,
+          1100,
+          240,
+          2192
+        ]
+      },
+      {
+        "camera_move": [
+          360,
+          2192
+        ]
+      },
+      {
+        "scene_create_actor": [
+          94,
+          0,
+          "",
+          5101,
+          5101,
+          1120,
+          464,
+          4,
+          1
+        ]
+      },
+      {
+        "scene_create_actor": [
+          95,
+          0,
+          "",
+          5102,
+          5102,
+          896,
+          416,
+          4,
+          1
+        ]
+      },
+      {
+        "scene_create_actor": [
+          96,
+          0,
+          "",
+          5103,
+          5103,
+          1328,
+          608,
+          4,
+          1
+        ]
+      },
+      {
+        "scene_create_actor": [
+          97,
+          0,
+          "",
+          5104,
+          5104,
+          1312,
+          720,
+          4,
+          1
+        ]
+      },
+      {
+        "engine_audio_play": "/sound/music/huashanzhidian.ogg"
+      },
+      {
+        "native": "section_start",
+        "address": "0x12b9a10",
+        "caller_return": "0x12c0b4c",
+        "this": "0x52023e0"
+      },
+      {
+        "native": "clear_intro",
+        "address": "0x12bc870",
+        "caller_return": "0x12b9a1e",
+        "this": "0x5400000"
+      },
+      {
+        "native": "clear_scene_effect",
+        "address": "0x11d3a10",
+        "caller_return": "0x12b9a1e",
+        "this": "0x5401000"
+      },
+      {
+        "dispose_intro_effect": 305419896
+      },
+      {
+        "scene_restore_request": 1009
+      },
+      {
+        "gui_panel_destroy": true
+      },
+      {
+        "native_end_send": {
+          "type": 786456,
+          "movie_id": 11001
+        }
+      },
+      {
+        "scene_restore_ui": true
+      }
+    ]
+  },
+  "scope": "Original decoder, Process, constructor, parser/factories and queue/Start/clear; external library, UI and world/engine adapters. No live client or full rendering."
+}

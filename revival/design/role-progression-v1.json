@@ -1,0 +1,61 @@
+{
+  "revision": "2026-10-23.role.1",
+  "provenance": "designed",
+  "scope": "explicit_ordinary_character_profile_only",
+  "activation": "module_integration_required; no live-character mutation by this policy file",
+  "research": "evidence/ROLE_PROGRESSION_RESEARCH.md",
+  "experience": {
+    "table": "knight.gsp.role.cresmoneyconfig",
+    "key": "current_display_level, ordinary phase only",
+    "cost_field": "nextexp",
+    "ordinary_level_min": 1,
+    "ordinary_level_cap": 155,
+    "terminal_zero": "do not level from a zero threshold; retain balance",
+    "special_keys_1001_to_1129": "preserve values, reject ordinary-profile use; no automatic stage inference",
+    "consume": "subtract current-level threshold once per successful level transition",
+    "available_balance": "role_progress.experience, shared spendable balance for future skill/meridian uses",
+    "credit_or_cost_overflow": "reject whole transaction; signed int64 nonnegative storage",
+    "missing_threshold_or_unknown_phase": "explicit pending/reject, never substitute zero or fit a curve",
+    "lifetime_earned": "separate optional audit ledger; spending must not decrease earned lifetime total"
+  },
+  "upgrade": {
+    "automatic_after_credit": "while current_level < 10 and threshold > 0 and balance >= threshold, advance one level; stop at level 10",
+    "manual": "one successful level per request; require sufficient current-level threshold and current_level < cap",
+    "request_kind": "CReqLevelUp 0xc32cd",
+    "body": "exactly one BE32 opaque field; only original constructor default 0 accepted by this restoration policy",
+    "nonzero_opaque": "unconfirmed mode; reject without spending or state changes",
+    "source_of_identity": "role owner's authenticated account/role/epoch; request field is never a target level or amount",
+    "historical_reference": "official historical guide supports manual leveling after level 10; low-level automatic boundary and request-mode use are designed",
+    "retry": "durable role/request intent fingerprint and receipt prevents repeat effects; action replies re-read current growth/attributes rather than publish historical receipt state; conflicting intent rejected",
+    "insufficient_experience": "unchanged level, balance and point ledger; return explicit rejection"
+  },
+  "potential": {
+    "per_level_total": 10,
+    "automatic_per_stat": 1,
+    "free_per_level": 5,
+    "stat_order": ["vitality", "inner_power", "strength", "endurance", "agility"],
+    "native_allocation_request": "client_verified CAddPointToAttr 0xc000c: five nonnegative BE i32 increments in vitality/inner_power/strength/agility/endurance order; no role id/version/retry token",
+    "native_allocation_adapter": "swap final two native fields into internal stat_order; never interpret fields as final stats or remaining points",
+    "zero_allocation": "designed rejection without mutation; native field validator itself permits all zero",
+    "basis": "historical 10-point total with automatic5/free5; equal automatic distribution and pre-10 behavior are designed",
+    "initial_profile": "earned ledger starts from explicitly recorded profile baseline; do not infer initial five stats or retroactively grant all past points",
+    "allocation": "nonnegative integer deltas, sum <= stored unspent free points; same role transaction and version check",
+    "respec": "not enabled by this policy; never silently redistribute existing allocations",
+    "client_coefficients": "retain cattrmoddata and original IDs; id110 is hit, not physical attack; id80 zero does not prove strength has no attack effect",
+    "derived_attributes": "not invented here; apply verified or separately versioned designed formulas through the role attribute owner",
+    "resource_refresh": "HP/MP changes require authoritative current/max snapshot; this level plan never fabricates or overwrites unknown vitals"
+  },
+  "transaction": {
+    "fields": ["role level", "experience balance", "earned automatic points", "free point balance", "allocated points", "progression revision", "request receipt"],
+    "reward_credit": "task completion, reward-channel receipt, XP credit and resulting automatic ordinary upgrades may join same owner transaction",
+    "lease": "fence role/account/login_epoch inside write transaction",
+    "failure": "rollback all changes and do not emit success messages",
+    "snapshot": "publish immutable level/points/balance snapshot only after commit",
+    "wire_refresh": "SRefreshUserExp is absolute balance; ordinary SRefreshRoleData 0xc32c8 carries verified level490/potential500/current stats; encode before commit, deliver after commit"
+  },
+  "migration": {
+    "new_role": "explicit ordinary profile at level1; no special-stage assumptions",
+    "existing_role": "explicit one-time initialization with recorded baseline level; preserve current level/XP and existing known allocations; never retroactively grant points",
+    "unknown_special_state": "preserve data and keep upgrade pending until stage mapping is confirmed"
+  }
+}

@@ -1,0 +1,1139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="ScoreBuy">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.00125,0},{0.16,0},{0.01,791},{0.154999,411}}" />
+    <Window Type="TaharezLook/Button" Name="ScoreBuy/BuyBtn">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="购买" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,688},{0.05,345},{0,778},{0.05,369}}" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="ScoreBuy/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0,19},{0,66},{0,779},{0,360}}" />
+      <Window Type="TaharezLook/StaticText" Name="ScoreBuy/PirceText1">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="数量" />
+        <Property Name="HorzExtent" Value="26" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,383},{0,268},{0,414},{0,288}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/Editbox" Name="ScoreBuy/Number">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="1073741823" />
+        <Property Name="UnifiedAreaRect" Value="{{0,414},{0,268},{0,464},{0,288}}" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ScoreBuy/PirceText2">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="总价" />
+        <Property Name="HorzExtent" Value="27" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,471},{0,268},{0,502},{0,288}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ScoreBuy/MoneyBack">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,502},{0,268},{0,599},{0,288}}" />
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/MoneyBack/Money">
+          <Property Name="Image" Value="set:MainControl image:TotalStar" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,2},{0.1,0},{0,21},{0,18}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ScoreBuy/MoneyBack/TotalPrice">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,20},{0.1,0},{0,90},{0,17}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="ScoreBuy/TableBack">
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,3},{0,759},{0,266}}" />
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item1">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0.00380228,0},{0,150},{0,54}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ScoreBuy/TableBack/Item1/Itemcell">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item1/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF3DA1B tr:FFF3DA1B bl:FFF3DA1B br:FFF3DA1B" />
+            <Property Name="BorderColour" Value="FF2C130F" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,149},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item1/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,148},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item1/PriceIcon">
+            <Property Name="Image" Value="set:MainControl image:TotalStar" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,72},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item2">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,150},{0.00380228,0},{0,300},{0,54}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ScoreBuy/TableBack/Item2/Itemcell">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item2/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF3DA1B tr:FFF3DA1B bl:FFF3DA1B br:FFF3DA1B" />
+            <Property Name="BorderColour" Value="FF2C130F" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,149},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item2/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,148},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item2/PriceIcon">
+            <Property Name="Image" Value="set:MainControl image:TotalStar" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,69},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item3">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,300},{0.00380228,0},{0,450},{0,54}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ScoreBuy/TableBack/Item3/Itemcell">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item3/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF3DA1B tr:FFF3DA1B bl:FFF3DA1B br:FFF3DA1B" />
+            <Property Name="BorderColour" Value="FF2C130F" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,149},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item3/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,148},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item3/PriceIcon">
+            <Property Name="Image" Value="set:MainControl image:TotalStar" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,69},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item4">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,450},{0.00380228,0},{0,600},{0,54}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ScoreBuy/TableBack/Item4/Itemcell">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item4/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF3DA1B tr:FFF3DA1B bl:FFF3DA1B br:FFF3DA1B" />
+            <Property Name="BorderColour" Value="FF2C130F" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,149},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item4/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,148},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item4/PriceIcon">
+            <Property Name="Image" Value="set:MainControl image:TotalStar" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,69},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item5">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,600},{0.00380228,0},{0,750},{0,54}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ScoreBuy/TableBack/Item5/Itemcell">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item5/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF3DA1B tr:FFF3DA1B bl:FFF3DA1B br:FFF3DA1B" />
+            <Property Name="BorderColour" Value="FF2C130F" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,149},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item5/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,148},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item5/PriceIcon">
+            <Property Name="Image" Value="set:MainControl image:TotalStar" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,69},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item6">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,53},{0,150},{0,106}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ScoreBuy/TableBack/Item6/Itemcell">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item6/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF3DA1B tr:FFF3DA1B bl:FFF3DA1B br:FFF3DA1B" />
+            <Property Name="BorderColour" Value="FF2C130F" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,149},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item6/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,148},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item6/PriceIcon">
+            <Property Name="Image" Value="set:MainControl image:TotalStar" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,69},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item7">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,150},{0,53},{0,300},{0,106}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ScoreBuy/TableBack/Item7/Itemcell">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item7/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF3DA1B tr:FFF3DA1B bl:FFF3DA1B br:FFF3DA1B" />
+            <Property Name="BorderColour" Value="FF2C130F" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,149},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item7/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,148},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item7/PriceIcon">
+            <Property Name="Image" Value="set:MainControl image:TotalStar" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,69},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item8">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,300},{0,53},{0,450},{0,106}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ScoreBuy/TableBack/Item8/Itemcell">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item8/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF3DA1B tr:FFF3DA1B bl:FFF3DA1B br:FFF3DA1B" />
+            <Property Name="BorderColour" Value="FF2C130F" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,149},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item8/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,148},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item8/PriceIcon">
+            <Property Name="Image" Value="set:MainControl image:TotalStar" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,69},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item9">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,450},{0,53},{0,600},{0,106}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ScoreBuy/TableBack/Item9/Itemcell">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item9/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF3DA1B tr:FFF3DA1B bl:FFF3DA1B br:FFF3DA1B" />
+            <Property Name="BorderColour" Value="FF2C130F" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,149},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item9/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,148},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item9/PriceIcon">
+            <Property Name="Image" Value="set:MainControl image:TotalStar" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,69},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item10">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,600},{0,53},{0,750},{0,106}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ScoreBuy/TableBack/Item10/Itemcell">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item10/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF3DA1B tr:FFF3DA1B bl:FFF3DA1B br:FFF3DA1B" />
+            <Property Name="BorderColour" Value="FF2C130F" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,149},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item10/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,148},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item10/PriceIcon">
+            <Property Name="Image" Value="set:MainControl image:TotalStar" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,69},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item11">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,105},{0,150},{0,158}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ScoreBuy/TableBack/Item11/Itemcell">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item11/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF3DA1B tr:FFF3DA1B bl:FFF3DA1B br:FFF3DA1B" />
+            <Property Name="BorderColour" Value="FF2C130F" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,149},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item11/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,148},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item11/PriceIcon">
+            <Property Name="Image" Value="set:MainControl image:TotalStar" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,69},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item12">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,150},{0,105},{0,300},{0,158}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ScoreBuy/TableBack/Item12/Itemcell">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item12/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF3DA1B tr:FFF3DA1B bl:FFF3DA1B br:FFF3DA1B" />
+            <Property Name="BorderColour" Value="FF2C130F" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,149},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item12/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,148},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item12/PriceIcon">
+            <Property Name="Image" Value="set:MainControl image:TotalStar" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,69},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item13">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,300},{0,105},{0,450},{0,158}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ScoreBuy/TableBack/Item13/Itemcell">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item13/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF3DA1B tr:FFF3DA1B bl:FFF3DA1B br:FFF3DA1B" />
+            <Property Name="BorderColour" Value="FF2C130F" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,149},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item13/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,148},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item13/PriceIcon">
+            <Property Name="Image" Value="set:MainControl image:TotalStar" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,69},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item14">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,450},{0,105},{0,600},{0,158}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ScoreBuy/TableBack/Item14/Itemcell">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item14/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF3DA1B tr:FFF3DA1B bl:FFF3DA1B br:FFF3DA1B" />
+            <Property Name="BorderColour" Value="FF2C130F" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,149},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item14/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,148},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item14/PriceIcon">
+            <Property Name="Image" Value="set:MainControl image:TotalStar" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,69},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item15">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,600},{0,105},{0,750},{0,158}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ScoreBuy/TableBack/Item15/Itemcell">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item15/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF3DA1B tr:FFF3DA1B bl:FFF3DA1B br:FFF3DA1B" />
+            <Property Name="BorderColour" Value="FF2C130F" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,149},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item15/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,148},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item15/PriceIcon">
+            <Property Name="Image" Value="set:MainControl image:TotalStar" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,69},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item16">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,157},{0,150},{0,210}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ScoreBuy/TableBack/Item16/Itemcell">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item16/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF3DA1B tr:FFF3DA1B bl:FFF3DA1B br:FFF3DA1B" />
+            <Property Name="BorderColour" Value="FF2C130F" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,149},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item16/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,148},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item16/PriceIcon">
+            <Property Name="Image" Value="set:MainControl image:TotalStar" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,69},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item17">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,150},{0,157},{0,300},{0,210}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ScoreBuy/TableBack/Item17/Itemcell">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item17/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF3DA1B tr:FFF3DA1B bl:FFF3DA1B br:FFF3DA1B" />
+            <Property Name="BorderColour" Value="FF2C130F" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,149},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item17/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,148},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item17/PriceIcon">
+            <Property Name="Image" Value="set:MainControl image:TotalStar" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,69},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item18">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,300},{0,157},{0,450},{0,210}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ScoreBuy/TableBack/Item18/Itemcell">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item18/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF3DA1B tr:FFF3DA1B bl:FFF3DA1B br:FFF3DA1B" />
+            <Property Name="BorderColour" Value="FF2C130F" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,149},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item18/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,148},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item18/PriceIcon">
+            <Property Name="Image" Value="set:MainControl image:TotalStar" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,69},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item19">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,450},{0,157},{0,600},{0,210}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ScoreBuy/TableBack/Item19/Itemcell">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item19/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF3DA1B tr:FFF3DA1B bl:FFF3DA1B br:FFF3DA1B" />
+            <Property Name="BorderColour" Value="FF2C130F" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,149},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item19/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,148},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item19/PriceIcon">
+            <Property Name="Image" Value="set:MainControl image:TotalStar" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,69},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item20">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,600},{0,157},{0,750},{0,210}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ScoreBuy/TableBack/Item20/Itemcell">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item20/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF3DA1B tr:FFF3DA1B bl:FFF3DA1B br:FFF3DA1B" />
+            <Property Name="BorderColour" Value="FF2C130F" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,149},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item20/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,148},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item20/PriceIcon">
+            <Property Name="Image" Value="set:MainControl image:TotalStar" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,69},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item21">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,209},{0,150},{0,262}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ScoreBuy/TableBack/Item21/Itemcell">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item21/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF3DA1B tr:FFF3DA1B bl:FFF3DA1B br:FFF3DA1B" />
+            <Property Name="BorderColour" Value="FF2C130F" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,149},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item21/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,148},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item21/PriceIcon">
+            <Property Name="Image" Value="set:MainControl image:TotalStar" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,69},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item22">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,150},{0,209},{0,300},{0,262}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ScoreBuy/TableBack/Item22/Itemcell">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item22/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF3DA1B tr:FFF3DA1B bl:FFF3DA1B br:FFF3DA1B" />
+            <Property Name="BorderColour" Value="FF2C130F" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,149},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item22/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,148},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item22/PriceIcon">
+            <Property Name="Image" Value="set:MainControl image:TotalStar" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,69},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item23">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,300},{0,209},{0,450},{0,262}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ScoreBuy/TableBack/Item23/Itemcell">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item23/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF3DA1B tr:FFF3DA1B bl:FFF3DA1B br:FFF3DA1B" />
+            <Property Name="BorderColour" Value="FF2C130F" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,149},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item23/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,148},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item23/PriceIcon">
+            <Property Name="Image" Value="set:MainControl image:TotalStar" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,69},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item24">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,450},{0,209},{0,600},{0,262}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ScoreBuy/TableBack/Item24/Itemcell">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item24/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF3DA1B tr:FFF3DA1B bl:FFF3DA1B br:FFF3DA1B" />
+            <Property Name="BorderColour" Value="FF2C130F" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,149},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item24/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,148},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item24/PriceIcon">
+            <Property Name="Image" Value="set:MainControl image:TotalStar" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,69},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/UnitHover">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Hover" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,148},{0,51}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,148},{0,51}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00132626,0},{0.0114063,0},{0.197613,0},{0.205321,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item25">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,600},{0,209},{0,750},{0,262}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ScoreBuy/TableBack/Item25/Itemcell">
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item25/Name">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFF3DA1B tr:FFF3DA1B bl:FFF3DA1B br:FFF3DA1B" />
+            <Property Name="BorderColour" Value="FF2C130F" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,5},{0,149},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ScoreBuy/TableBack/Item25/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,72},{0,30},{0,148},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/TableBack/Item25/PriceIcon">
+            <Property Name="Image" Value="set:MainControl image:TotalStar" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,30},{0,69},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ScoreBuy/MoneyBack1">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,626},{0.05,253},{0.05,713},{0.05,273}}" />
+        <Window Type="TaharezLook/StaticImage" Name="ScoreBuy/MoneyBack1/Money">
+          <Property Name="Image" Value="set:MainControl image:TotalStar" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,2},{0.1,0},{0,21},{0,18}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ScoreBuy/MoneyBack1/TotalPrice">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,20},{0.1,0},{0,83},{0,17}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ScoreBuy/PirceText21">
+        <Property Name="Text" Value="拥有积分" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,606},{0,268},{0,661},{0,288}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ScoreBuy/prePage">
+      <Property Name="Text" Value="上一页" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,466},{0.05,345},{0.05,529},{0.05,369}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ScoreBuy/counterIndex">
+      <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,531},{0.05,347},{0.05,583},{0.05,365}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ScoreBuy/nextPage">
+      <Property Name="Text" Value="下一页" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,585},{0.05,345},{0.05,648},{0.05,369}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ScoreBuy/Name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="积 分 商 城" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="86" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.5,0},{0.0343137,0},{0.750627,0},{0.0833333,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ScoreBuy/PirceText111">
+      <Property Name="Text" Value="注：通过积分兑换出来的物品将会绑定（华山论剑与跨服战队除外）" />
+      <Property Name="HorzExtent" Value="390" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0426065,0},{0.05,347},{0.05,396},{0.05,367}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="DefaultBorderEnable" Value="True" />
+      <Property Name="DefaultColourEnable" Value="True" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="ScoreBuy/type1">
+      <Property Name="Text" Value="华山论剑" />
+      <Property Name="UnifiedAreaRect" Value="{{0.650251,-263},{0.105392,0},{0.744236,-263},{0.161765,0}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="ScoreBuy/type2">
+      <Property Name="Text" Value="跨服战队" />
+      <Property Name="UnifiedAreaRect" Value="{{0.744236,-262},{0.105392,0},{0.838221,-262},{0.161765,0}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="ScoreBuy/type3">
+      <Property Name="Text" Value="万能积分" />
+      <Property Name="UnifiedAreaRect" Value="{{0.130326,0},{0.105392,0},{0.224311,0},{0.161765,0}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="ScoreBuy/type4">
+      <Property Name="Text" Value="传世积分" />
+      <Property Name="UnifiedAreaRect" Value="{{0.556266,-264},{0.105392,0},{0.650251,-264},{0.161765,0}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="ScoreBuy/type5">
+      <Property Name="Text" Value="元宝票积分" />
+      <Property Name="UnifiedAreaRect" Value="{{0.368296,-266},{0.105392,0},{0.462281,-266},{0.161765,0}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="ScoreBuy/type6">
+      <Property Name="Text" Value="互助积分" />
+      <Property Name="UnifiedAreaRect" Value="{{0.418296,74},{0.105392,0},{0.512281,74},{0.161765,0}}" />
+    </Window>
+  </Window>
+</GUILayout>

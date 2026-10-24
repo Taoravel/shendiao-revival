@@ -1,0 +1,83 @@
+{
+  "passed": [
+    "actual encrypted world initialization sends ordinary exit mode after world entry",
+    "actual emitted packet drives original decoder/Process and installed WndProc from no dialog to ordinary dialog",
+    "legacy, pending new intro and reconnect each initialize once before intro messages",
+    "original exit confirmation still cleans the current role and returns c0031"
+  ],
+  "native_cases": [
+    {
+      "wire_signed_i32": -1,
+      "before_initialization": {
+        "mode": -1,
+        "ui_calls": [],
+        "wndproc_return": 0
+      },
+      "after_native_decode_and_process": {
+        "mode": 0,
+        "ui_calls": [
+          "ordinary_exit_dialog"
+        ],
+        "wndproc_return": 0
+      },
+      "type": "0xc0039",
+      "wire_hex": "ffffffff"
+    },
+    {
+      "wire_signed_i32": -1,
+      "before_initialization": {
+        "mode": -1,
+        "ui_calls": [],
+        "wndproc_return": 0
+      },
+      "after_native_decode_and_process": {
+        "mode": 0,
+        "ui_calls": [
+          "ordinary_exit_dialog"
+        ],
+        "wndproc_return": 0
+      },
+      "type": "0xc0039",
+      "wire_hex": "ffffffff"
+    },
+    {
+      "wire_signed_i32": -1,
+      "before_initialization": {
+        "mode": -1,
+        "ui_calls": [],
+        "wndproc_return": 0
+      },
+      "after_native_decode_and_process": {
+        "mode": 0,
+        "ui_calls": [
+          "ordinary_exit_dialog"
+        ],
+        "wndproc_return": 0
+      },
+      "type": "0xc0039",
+      "wire_hex": "ffffffff"
+    },
+    {
+      "wire_signed_i32": -1,
+      "before_initialization": {
+        "mode": -1,
+        "ui_calls": [],
+        "wndproc_return": 0
+      },
+      "after_native_decode_and_process": {
+        "mode": 0,
+        "ui_calls": [
+          "ordinary_exit_dialog"
+        ],
+        "wndproc_return": 0
+      },
+      "type": "0xc0039",
+      "wire_hex": "ffffffff"
+    }
+  ],
+  "database": "disposable",
+  "native_gui_verified": false,
+  "live_server_changed": false,
+  "battle_executed": false,
+  "designed_policy": "ordinary ExitGameDialog only; original first-day exit business feature not restored"
+}

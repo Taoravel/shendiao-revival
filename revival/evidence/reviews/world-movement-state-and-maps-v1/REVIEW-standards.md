@@ -1,0 +1,1 @@
+Standards：硬规范违规0；判断性异味0。按固定7文件和真实base审查；实际只SELECT/authorizer finally、原地图及原buffer-loader范围明确。未重跑测试、编辑或启动服务。

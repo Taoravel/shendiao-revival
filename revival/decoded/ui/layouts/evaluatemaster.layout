@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="EvaluateMaster">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,238.831},{0,157.4},{0,638.831},{0,387.4}}" />
+    <Window Type="TaharezLook/Button" Name="EvaluateMaster/OKBtn">
+      <Property Name="Text" Value="确   定" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,144},{0,191},{0,212},{0,215}}" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="EvaluateMaster/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.188316,0},{0,11},{0.958316,0},{0,38}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="EvaluateMaster/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="评 价" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="43" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,70.5},{0,-0.405405},{0,130.5},{0,27.5946}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="EvaluateMaster/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,44},{0,380},{0,189}}" />
+      <Window Type="TaharezLook/StaticText" Name="EvaluateMaster/titleText">
+        <Property Name="Text" Value="       恭喜你，在师父的悉心帮助下，你升级了。请对你的师父做出一个评价，请在下面选项中选择：" />
+        <Property Name="HorzExtent" Value="346" />
+        <Property Name="VertExtent" Value="31.2378" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,353},{0,40}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/RadioButton" Name="EvaluateMaster/radio1">
+        <Property Name="Text" Value="是个非常棒的好师父（师父声望收益$num1$%）" />
+        <Property Name="UnifiedAreaRect" Value="{{0,10},{0,43},{0,342},{0,65}}" />
+      </Window>
+      <Window Type="TaharezLook/RadioButton" Name="EvaluateMaster/radio2">
+        <Property Name="Text" Value="还不错，但还要对我更多关心（师父声望收益$num2$%）" />
+        <Property Name="UnifiedAreaRect" Value="{{0,10},{0,68},{0,342},{0,90}}" />
+      </Window>
+      <Window Type="TaharezLook/RadioButton" Name="EvaluateMaster/radio3">
+        <Property Name="Text" Value="还算合格，不想多说啦（师父声望收益$num3$%）" />
+        <Property Name="UnifiedAreaRect" Value="{{0,10},{0,93},{0,342},{0,115}}" />
+      </Window>
+      <Window Type="TaharezLook/RadioButton" Name="EvaluateMaster/radio4">
+        <Property Name="Text" Value="根本不理我，是个不合格的导师（师父声望收益$num4$%）" />
+        <Property Name="UnifiedAreaRect" Value="{{0,10},{0,118},{0,362},{0,140}}" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,11 @@
+--- a/revival/game_runtime.py
++++ b/revival/game_runtime.py
+@@ -267,7 +267,7 @@
+             self.adopt_load_profile(profile)
+             self.newbie_chapter=await self.io(runtime_storage.newbie_state,
+                 self.rt.accounts,self.account_id,self.id,self.epoch)
+-            intro=0 if self.newbie_chapter is None else self.newbie_chapter.intro_discriminator
++            intro=1 if self.newbie_chapter is None else self.newbie_chapter.intro_discriminator
+             return [(ENTER_WORLD,world_snapshot(self.role,profile.attributes,intro_discriminator=intro,
+                                                growth_snapshot=profile.growth)),
+                     (0xc0007,struct.pack('>Q',int(time.time()*1000))), (ENTER_SCENE,scene_entry(pos))]

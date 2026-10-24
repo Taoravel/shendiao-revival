@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/SmallFrameWindow" Name="StallShowSetting">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,240.038},{0,231.486},{0,490.037},{0,385.486}}" />
+    <Window Type="TaharezLook/StaticImage" Name="StallShowSetting/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,162},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,162},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.455999,0},{0,9},{1.104,0},{0,36}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="StallShowSetting/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="摊位显示设置" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="102" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,60},{0,1},{0,184},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="StallShowSetting/back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0567002,0},{0.253052,0},{0.932704,0},{0.714091,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="StallShowSetting/Text">
+        <Property Name="Text">请选择优先显示给买家的商品类别
+
+</Property>
+        <Property Name="HorzExtent" Value="195" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+        <Property Name="BorderColour" Value="FF5F4100" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,14},{0,8},{0,212},{0,30}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+      <Window Type="TaharezLook/RadioButton" Name="StallShowSetting/ItemBox">
+        <Property Name="Text" Value="物品" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="UnifiedAreaRect" Value="{{0,47.6},{0,32},{0,103.6},{0,54}}" />
+      </Window>
+      <Window Type="TaharezLook/RadioButton" Name="StallShowSetting/PetBox">
+        <Property Name="Text" Value="宠物" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="UnifiedAreaRect" Value="{{0,132.7},{0,32},{0,184.7},{0,54}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="StallShowSetting/Ok">
+      <Property Name="Text" Value="确   定" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,43.6},{0,114},{0,111.6},{0,138}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="StallShowSetting/Cancel">
+      <Property Name="Text" Value="取   消" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,133.7},{0,114},{0,201.7},{0,138}}" />
+    </Window>
+  </Window>
+</GUILayout>

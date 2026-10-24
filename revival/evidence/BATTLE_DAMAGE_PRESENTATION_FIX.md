@@ -1,0 +1,31 @@
+# 攻击动画存在、伤害结果缺失：所属模块修复
+
+本次独立缺陷工作来自共享集成窗口转达的人类反馈：角色4、古墓派2级、太湖之滨127,56与小花猫战斗第二回合，攻击动画播放但没有伤害动画。原长期目标仍按用户要求暂停；本批不启动客户端、不执行在线战斗、不操作真人连接或重启服务。
+
+## 根因与最小改动
+
+旧TrainingBattle将每次命中的气血变化写为DemoAttr列表中的(1,-damage,0)。原SSendRoundScript decoder能够消费完整报文，但实际Process从NewDemoResult的另一个map读取hpchange。因此原生解码成功并不代表伤害被表现消费者接收。
+
+原映像SHA256：2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791。Process在0x11910df进入目标结果map遍历；0x1191147取map键、减1后经0x1192260表分派。key1分支0x119115d从节点+0x10取signed32值，写HP变化局部变量stack+0x348。该局部在原构造0x1164b00中初始为0。Debug文本也将此key标为hpchange。
+
+用旧冻结部署npc-role-healing-20261023T125539Z的serializer取得64字节样本：领域伤害-16，原decoder成功，原HP消费者读0。仅将同一伤害移到结果map后样本为60字节，原消费者读-16。verify_battle_damage_presentation.py在修复前实际红灯，修复后通过；旧样本作为负向回归保留，不通过修改客户端或补发属性包掩盖丢失。
+
+生产仅两文件：battle_protocol.py增加冻结TargetResult，将result values与DemoAttr明确分开；training_battle.py的一行命中转换改为HP_CHANGE/key1结果map。WildBattle沿用这条转换路径，不另造输出。无数值、目标选择、技能学习、持久结算或共享入口改变。
+
+## 离线证明范围
+
+research_battle_damage.consumed_target_hp先执行原constructor/decoder，再执行原目标结果分派0x11910df..0x1191821，捕获HP变化局部值。宿主只提供原生解码器已有的分配/CRT适配和正常关闭的debug开关；没有替代HP键分派逻辑。它证明原协议消费者接收到气血增量，不执行整个Process、fighter资源写入、受击动画调度、伤害数字绘制或GPU呈现。
+
+新增八项验证：旧可解码但无伤害的报文、真实训练普攻出包、防御减伤且无伪造目标、致死伤害按剩余HP截断、技能耗蓝保持一次、人物/宠物/敌人各自结果表、多目标独立结果、原太湖小花猫21102/6062的WildBattle前两回合。所有新行动经过原CSendAction sender输入；野外使用公开WildEncounters票据和WildBattle Interface，角色属性为明确离线夹具，不访问真实角色4。
+
+既有verify_battle.py的8行为/8原消息、verify_battle_loadout.py七项、verify_wild_encounters.py十四项及verify_wild_runtime.py的实际加密Owner/临时存档路径通过。没有调用监听端口或启动Windows客户端。后者包含断线伤害、持久终态重试、原子奖励及另一角色心跳等已有回归。
+
+## 发布边界
+
+工作区另含自动target0修复，属于另一批，不并入本最小候选。交接产物将training_battle.py从上述冻结基线只替换HP命中转换一行，保留工作区其他人的改动。battle-damage-minimal.patch及battle-damage-ready.json指定精确候选源文件及SHA；冻结完整运行目录、两轴审查与部署由集成方统一完成。
+
+最小候选源文件放在staging/battle-damage-owned-source。另在临时资源副本中执行同一八项新检查，生产导入明确锁定该目录两文件及冻结基线其他Module，排除了工作区自动target0改动；八项通过且候选输入哈希不变，见battle-damage-owned-candidate-verification.json。原基线源码/配置没有被修改。前述四套既有回归是在当前工作区通过，不能混称全部已在最小冻结候选上通过；集成方的完整冻结候选仍需自己的统一验收。
+
+GUI受击动作、飘字和血条仍待人类实际验证。本批不能宣称这些画面已经修复；也未核验额外命中/暴击/死亡flag语义，未凭猜测加入flag。
+
+方法：diagnosing-bugs用于先建立实际出包→原消费者的红色反馈，再做仅改变结果容器的反事实与修复回归；codebase-design用TargetResult隔离两个容易混淆的原生容器，数值/所有权/存储不进入codec。未宣称完成TDD或两轴代码审查。原wire与消费者来源为client_verified；训练/野外伤害公式来源保持原designed分类不变。

@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="GangConstruct">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.21875,0},{0.265,0},{0.21875,457},{0.266667,280}}" />
+    <Window Type="TaharezLook/StaticImage" Name="GangConstruct/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.299781,0},{0,12},{0.973742,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="GangConstruct/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="提升建筑等级" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="102" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,71},{0,1},{0,199},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="GangConstruct/s">
+      <Property Name="UnifiedAreaRect" Value="{{0.0371991,0},{0.145907,0},{0.958425,0},{0.854093,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="GangConstruct/Tips">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="当前正在建设的建筑是：" />
+        <Property Name="HorzExtent" Value="143" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0.0150754,0},{0,146},{0.020567,18}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GangConstruct/BuildingName">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="TextColours" Value="tl:FF80FD98 tr:FF80FD98 bl:FF47FF15 br:FF47FF15" />
+        <Property Name="BorderColour" Value="FF075F00" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,147},{0,2},{0,221},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/MultiColumnList" Name="GangConstruct/SlectList">
+        <Property Name="UnifiedAreaRect" Value="{{0.00475059,0},{0,22},{0,420},{0,113}}" />
+        <Property Name="ColumnHeader" Value="text:建筑名 width:{0.12,0} id:0" />
+        <Property Name="ColumnHeader" Value="text:当前等级 width:{0.16,0} id:1" />
+        <Property Name="ColumnHeader" Value="text:当前建设度 width:{0.17,0} id:2" />
+        <Property Name="ColumnHeader" Value="text:所需建设度 width:{0.17,0} id:3" />
+        <Property Name="ColumnHeader" Value="text:消耗帮派资金 width:{0.2,0} id:4" />
+        <Property Name="ColumnHeader" Value="text:消耗人气度 width:{1,-341} id:5" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GangConstruct/Tips1">
+        <Property Name="Text">聚义厅：增加帮派资金存储上限；
+
+工坊所：增加帮派资源刷新数量及存储上限；
+
+练功房：增加帮派技能研究速度
+</Property>
+        <Property Name="HorzExtent" Value="260" />
+        <Property Name="VertExtent" Value="46.8567" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003459" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,115},{0,414},{0,164}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GangConstruct/s/W">
+        <Property Name="Text" Value="提　示：请选择需要提升等级的建筑，若建设度满，则该建筑会自动升级，每次升级后建设任务会自动关闭" />
+        <Property Name="HorzExtent" Value="403" />
+        <Property Name="VertExtent" Value="31.2378" />
+        <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0,6},{0.81407,0},{0,414},{0.984925,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GangConstruct/OK">
+      <Property Name="Text" Value="选定提升" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,99},{0.05,228},{0.05,171},{0.05,252}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GangConstruct/Cancel">
+      <Property Name="Text" Value="取  消" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,252},{0.05,228},{0,324},{0.05,252}}" />
+    </Window>
+  </Window>
+</GUILayout>

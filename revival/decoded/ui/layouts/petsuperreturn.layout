@@ -1,0 +1,558 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="PetSuperReturn">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.211875,0},{0.125,0},{0.268125,378},{0.186667,381}}" />
+    <Window Type="TaharezLook/StaticImage" Name="PetSuperReturn/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,12},{0.711316,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/Title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="宠物超级还童" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="102" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.298701,0},{0,1},{0.948052,0},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="PetSuperReturn/back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0461894,0},{0,42},{0.0444089,386},{0,398}}" />
+      <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/back/Current">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="当前宠物" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,282},{0,134},{0,338},{0,152}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="PetSuperReturn/back/save">
+        <Property Name="Text" Value="保存方案" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.553247,0},{0.05,308},{0.72987,0},{0.05,332}}" />
+      </Window>
+      <Window Type="TaharezLook/Combobox" Name="PetSuperReturn/back/Choose">
+        <Property Name="UnifiedAreaRect" Value="{{0,247},{0,152},{0.281996,271},{0,277}}" />
+        <Property Name="MaxEditTextLength" Value="2147483647" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="PetSuperReturn/icon">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Image" Value="set:MainControl6 image:PetPropertyBack" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,126},{0,125}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,126},{0,125}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,251},{0,7},{0,377},{0,132}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/icon/type">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+          <Property Name="BorderColour" Value="FF5F4100" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,75},{0,2},{0,123},{0,32}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetSuperReturn/icon/Lock">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0632165,0},{0.0574939,0},{0.0632165,12},{0.0574939,19}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/effect">
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+          <Property Name="BorderColour" Value="FF5F4100" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,7},{0,4},{0,122},{0,119}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/level">
+          <Property Name="Text" Value="化境129级" />
+          <Property Name="HorzExtent" Value="64" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+          <Property Name="BorderColour" Value="FF5F4100" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,50},{0,100},{0,121},{0,120}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/xuemaidirt1">
+        <Property Name="Text" Value="参战    等级" />
+        <Property Name="HorzExtent" Value="65" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,231},{0.05,166},{0.05,299},{0.05,184}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/battlelevel">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,319},{0,183},{0,376},{0,201}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/dan">
+        <Property Name="Text" Value="超级还童丹            " />
+        <Property Name="Tooltip" Value="还童丹会使宠物返老还童到0级\n重新生成宠物的资质、属性和技能" />
+        <Property Name="HorzExtent" Value="101" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,230},{0,208},{0.05,300},{0,226}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/num">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,319},{0,207},{0,376},{0,225}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="PetSuperReturn/back/return">
+        <Property Name="Text" Value="超级还童" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.275325,0},{0.05,308},{0.451948,0},{0.05,332}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="PetSuperReturn/back/back1">
+        <Property Name="UnifiedAreaRect" Value="{{0.0207792,0},{0.733146,0},{0.979221,0},{0.907303,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/back/back1/introduce">
+          <Property Name="Font" Value="fzy4k-9" />
+          <Property Name="Text">1.使用超级还童丹后只改变宠物各项资质、悟性以及成长率。
+2.使用超级还童丹后已经食用的年糕将清零并可再次食用年糕。
+3.使用超级还童丹后可自行选择是否保存方案，超级还童后的
+    资质显示不包含食用年糕的部分。</Property>
+          <Property Name="HorzExtent" Value="335" />
+          <Property Name="VertExtent" Value="56.25" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0162602,0},{0.0483871,0},{0.98916,0},{0.967742,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/back/title">
+        <Property Name="Text" Value="超级还童丹使用说明" />
+        <Property Name="HorzExtent" Value="117" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.238961,0},{0.66573,0},{0.758442,0},{0.735955,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/CommonCase1" Name="PetSuperReturn/back/1111">
+        <Property Name="UnifiedAreaRect" Value="{{0.0103896,0},{0.011236,0},{0.638961,0},{0.660112,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/attackText5">
+          <Property Name="Text" Value="外功资质" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,-6},{0.021645,0},{0.05,51},{0.05,15}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/PetProProgressBar" Name="PetSuperReturn/attackApi">
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="CurrentProgress" Value="1" />
+          <Property Name="UnifiedAreaRect" Value="{{0,59},{0,3},{0,181},{0,23}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetSuperReturn/back/effect1">
+          <Property Name="Image" Value="set:MainControl image:Down" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,10},{0,10}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,10},{0,10}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,190},{0,8},{0,200},{0,18}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/back/text1">
+          <Property Name="TextColours" Value="tl:FF7FFF00 tr:FF7FFF00 bl:FF7FFF00 br:FF7FFF00" />
+          <Property Name="BorderColour" Value="FF006D4A" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,206},{0,7},{0,235},{0,18}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/attackText1">
+          <Property Name="Text" Value="防御资质" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,-6},{0.05,21},{0.05,51},{0.080303,36}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/PetProProgressBar" Name="PetSuperReturn/defenceApi">
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="CurrentProgress" Value="1" />
+          <Property Name="UnifiedAreaRect" Value="{{0,59},{0,34},{0,181},{0,54}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetSuperReturn/back/effect2">
+          <Property Name="Image" Value="set:MainControl image:Down" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,10},{0,10}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,10},{0,10}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,190},{0,36},{0,200},{0,46}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/back/text2">
+          <Property Name="TextColours" Value="tl:FF7FFF00 tr:FF7FFF00 bl:FF7FFF00 br:FF7FFF00" />
+          <Property Name="BorderColour" Value="FF006D4A" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,207},{0,37},{0,236},{0,48}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/attackText2">
+          <Property Name="Text" Value="体力资质" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,-6},{0.080303,42},{0.05,51},{0.110606,57}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/PetProProgressBar" Name="PetSuperReturn/tiliApi">
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="CurrentProgress" Value="1" />
+          <Property Name="UnifiedAreaRect" Value="{{0,59},{0,61},{0,181},{0,81}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetSuperReturn/back/effect3">
+          <Property Name="Image" Value="set:MainControl image:Down" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,10},{0,10}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,10},{0,10}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,190},{0,65},{0,200},{0,75}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/back/text3">
+          <Property Name="TextColours" Value="tl:FF7FFF00 tr:FF7FFF00 bl:FF7FFF00 br:FF7FFF00" />
+          <Property Name="BorderColour" Value="FF006D4A" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,211},{0,65},{0,240},{0,76}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/attackText3">
+          <Property Name="Text" Value="内功资质" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,-6},{0.110606,63},{0.05,51},{0.140909,78}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/PetProProgressBar" Name="PetSuperReturn/mpApi">
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="CurrentProgress" Value="1" />
+          <Property Name="UnifiedAreaRect" Value="{{0,59},{0,90},{0,181},{0,110}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetSuperReturn/back/effect4">
+          <Property Name="Image" Value="set:MainControl image:Down" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,10},{0,10}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,10},{0,10}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,190},{0,93},{0,200},{0,103}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/back/text4">
+          <Property Name="TextColours" Value="tl:FF7FFF00 tr:FF7FFF00 bl:FF7FFF00 br:FF7FFF00" />
+          <Property Name="BorderColour" Value="FF006D4A" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,207},{0,95},{0,236},{0,106}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/attackText4">
+          <Property Name="Text" Value="速度资质" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,-6},{0.140909,84},{0.05,51},{0.171212,99}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/PetProProgressBar" Name="PetSuperReturn/speedApi">
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="CurrentProgress" Value="1" />
+          <Property Name="UnifiedAreaRect" Value="{{0,59},{0,117},{0,181},{0,137}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetSuperReturn/back/effect5">
+          <Property Name="Image" Value="set:MainControl image:Down" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,10},{0,10}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,10},{0,10}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,190},{0,122},{0,200},{0,132}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/back/text5">
+          <Property Name="TextColours" Value="tl:FF7FFF00 tr:FF7FFF00 bl:FF7FFF00 br:FF7FFF00" />
+          <Property Name="BorderColour" Value="FF006D4A" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,209},{0,120},{0,238},{0,131}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/xuemaidirt22">
+          <Property Name="Text" Value="悟 　   性" />
+          <Property Name="Tooltip" Value="影响领悟技能几率" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,-6},{0.201515,126},{0.05,51},{0.231818,141}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/Wuxing">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0,62},{0,174},{0,133},{0,192}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetSuperReturn/back/effect6">
+          <Property Name="Image" Value="set:MainControl image:Down" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,10},{0,10}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,10},{0,10}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,190},{0,177},{0,200},{0,187}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/back/text6">
+          <Property Name="TextColours" Value="tl:FF7FFF00 tr:FF7FFF00 bl:FF7FFF00 br:FF7FFF00" />
+          <Property Name="BorderColour" Value="FF006D4A" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,207},{0,176},{0,236},{0,187}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/xuemaidirt2">
+          <Property Name="Text" Value="成  长  率" />
+          <Property Name="Tooltip" Value="成长率越高，宠物升级后属性提升越大" />
+          <Property Name="HorzExtent" Value="51" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,-6},{0.171212,105},{0.05,51},{0.201515,120}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/Num">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0,61},{0,147},{0,180},{0,165}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetSuperReturn/back/effect7">
+          <Property Name="Image" Value="set:MainControl image:Down" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,10},{0,10}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,10},{0,10}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,190},{0,149},{0,200},{0,159}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/back/text7">
+          <Property Name="TextColours" Value="tl:FF7FFF00 tr:FF7FFF00 bl:FF7FFF00 br:FF7FFF00" />
+          <Property Name="BorderColour" Value="FF006D4A" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,207},{0,149},{0,236},{0,160}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/xuemaidirt21">
+          <Property Name="Text" Value="评   　 分" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,-6},{0.231818,147},{0.05,51},{0.262121,162}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/Num1">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0,62},{0,203},{0,133},{0,221}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/liverate1">
+          <Property Name="Text" Value="B" />
+          <Property Name="HorzExtent" Value="9" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0,140},{0,203},{0,161},{0,221}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetSuperReturn/back/effect8">
+          <Property Name="Image" Value="set:MainControl image:Down" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,10},{0,10}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,10},{0,10}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,190},{0,207},{0,200},{0,217}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/back/text8">
+          <Property Name="TextColours" Value="tl:FF7FFF00 tr:FF7FFF00 bl:FF7FFF00 br:FF7FFF00" />
+          <Property Name="BorderColour" Value="FF006D4A" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,207},{0,206},{0,236},{0,217}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetSuperReturn/attackApi/Image">
+          <Property Name="Image" Value="set:component image:PetProGreen" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,50},{0.05,-7},{0.05,166},{0.05,9}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetSuperReturn/defenceApi/Image">
+          <Property Name="Image" Value="set:component image:PetProGreen" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,62},{0.05,24},{0,178},{0.05,40}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetSuperReturn/tiliApi/Image">
+          <Property Name="Image" Value="set:component image:PetProGreen" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,62},{0.05,51},{0,178},{0.05,67}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetSuperReturn/mpApi/Image">
+          <Property Name="Image" Value="set:component image:PetProGreen" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,61},{0.05,80},{0,177},{0.05,96}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetSuperReturn/speedApi/Image">
+          <Property Name="Image" Value="set:component image:PetProGreen" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,62},{0.05,107},{0,178},{0.05,123}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/attackApi/Image/Text">
+          <Property Name="Font" Value="tahoma-9" />
+          <Property Name="Text" Value="11111" />
+          <Property Name="HorzExtent" Value="40" />
+          <Property Name="VertExtent" Value="12.8813" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF000000" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,65},{0.05,-5},{0,181},{0.05,7}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/defenceApi/Image/Text">
+          <Property Name="Font" Value="tahoma-9" />
+          <Property Name="Text" Value="1111111" />
+          <Property Name="HorzExtent" Value="56" />
+          <Property Name="VertExtent" Value="12.8813" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF000000" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,65},{0,38},{0,181},{0,50}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/tiliApi/Image/Text">
+          <Property Name="Font" Value="tahoma-9" />
+          <Property Name="Text" Value="11111" />
+          <Property Name="HorzExtent" Value="40" />
+          <Property Name="VertExtent" Value="12.8813" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF000000" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,65},{0.277056,0},{0,176},{0.110606,50}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/mpApi/Image/Text">
+          <Property Name="Font" Value="tahoma-9" />
+          <Property Name="Text" Value="1111111" />
+          <Property Name="HorzExtent" Value="56" />
+          <Property Name="VertExtent" Value="12.8813" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF000000" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,65},{0,93},{0,181},{0,105}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSuperReturn/speedApi/Image/Text">
+          <Property Name="Font" Value="tahoma-9" />
+          <Property Name="Text" Value="111111" />
+          <Property Name="HorzExtent" Value="48" />
+          <Property Name="VertExtent" Value="12.8813" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF000000" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,65},{0,120},{0,181},{0,132}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

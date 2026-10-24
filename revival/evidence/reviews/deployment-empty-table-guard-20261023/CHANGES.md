@@ -1,0 +1,10 @@
+# 部署空表检查增量
+
+此目录current及manifest固定部署工具与metadata；修改前工具未另存独立before，故不将当前副本冒充原始基线。原工具此前要求before与after全表集合完全相等。本次首次实际预检因此拒绝已审新增空表，差分确认107旧表无变化、仅npc_role_healing_receipts空表新增后，加入以下明确规则。
+
+- master_ready_preflight.py新增verify_preserved_tables：每个旧表仍须存在且完整行哈希/行数相等；新增表必须在candidate.new_empty_tables显式列表内，且行数为0。当前列表精确单项npc_role_healing_receipts。
+- 原备份默认仍拒绝覆盖。显式--reuse-backup仅在旧备份的全表状态与本次当前只读事务snapshot完全相等时复用，不重写备份；任意差异拒绝。
+- verify_master_ready_deployment.py使用同一规则比较停机备份与启动后的当前数据，并明确记录added_empty_tables。所有旧表保存检查、quick_check、冻结源码/启动哈希及未认证601握手保留。
+- preflight原new_gameplay_included=false历史字段改为明确scope及unrelated_gameplay_included=false。该字段修正不改冻结生产源码或既有检查结果。
+
+verify_release_table_guards.py通过真实内存SQLite状态验证：唯一声明空表新增可接受；非空新增、未声明新增、旧行修改、删除旧表均拒绝。主集成及主策划分别独立执行绿。此次metadata仅声明新空表与部署状态/实际PID，7生产哈希不变。

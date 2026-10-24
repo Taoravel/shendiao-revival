@@ -1,0 +1,68 @@
+{
+  "revision": "2026-10-23.newbie.1",
+  "provenance": "designed",
+  "scope": "fresh_characters_created_with_explicit_newbie_creation_provenance",
+  "research": "evidence/NEW_CHARACTER_OPENING_RESEARCH.md",
+  "routes": {
+    "catalog": "catalogs/newbie-routes.json",
+    "key": ["character_config_id_from_shape", "school_id"],
+    "expected_count": 43,
+    "original_values": "home_map_id, intro_task_id, intro_movie_id, successor_task_id, successor_card_effect_id, first_npc_id",
+    "source_status": "client_verified"
+  },
+  "creation": {
+    "authorization": "record policy revision and exact immutable route in the same transaction as the new role; consume once under its current login lease",
+    "old_roles": "no automatic chapter initialization from level, experience, wallet origin, or a growth-only creation profile; explicit migration required",
+    "initial_task": "offer and accept only the route intro root; activate before playback; do not complete it at creation",
+    "task_sync": "authorized type50 root uses ScenarioQuestInfo state0/value1=0/value2=0/npc_key=0 before its explicit SStartPlayCG; native tracker0 is normal and2 is failure, while activation timing and zero opaque values remain designed",
+    "task_sync_correction": "previous designed state2 was falsified by actual GUI and original160daa0 tracker; state0 corrects presentation only, without changing persisted chapter/route identity",
+    "initial_level": "use the existing designed L1 growth profile; original root MinLevel0 MaxLevel0 uses the existing uncapped-zero requirement semantics",
+    "spawn": {
+      "source": "route cinematic_endpoint.logical_pixels in home_map_id",
+      "provenance": "designed_selection_of_client_verified_coordinates",
+      "original_server_spawn_confirmed": false,
+      "requirements": "startup validates map resource, signed16 logical bounds and mask1 walkability; initialize only fresh role without position; retain committed position on retries"
+    }
+  },
+  "chapter": {
+    "identity": "one durable chapter instance per role and creation provenance; independent of connection epoch",
+    "phases": ["authorized", "playing", "completed"],
+    "authorization": "persist intro task/movie, selected successor, home map and exact policy/route fingerprint; active task and chapter must agree",
+    "playback": "persist playback identity and current lease/connection generation; role owner holds only a frozen IntroTicket/location/version; each I/O transaction builds a local NewbieFlow through its public ticket-restoration Interface; emit only after first-world initialization",
+    "gameplay_gate": "while intro playback is pending, admit only matching movie completion and connection control traffic; world movement, NPC writes, growth, item use and transfer wait",
+    "completion": "matching CEndPlayCG validates current expected movie, epoch, generation, active root, location/version and deadline; complete root and activate only the selected original successor with reward receipts in one role transaction",
+    "resume": "after disconnect or expired playback, keep root active and authorize a new playback under the next valid connection; completed chapters retain tasks and position without replay",
+    "timeout_ms": 1800000,
+    "timeout_provenance": "designed_authorization_window_not_movie_duration",
+    "timeout_effect": "invalidate playback authorization and require reconnect or trusted explicit resume; never complete the task on timeout",
+    "receipt": "stable chapter completion key across playback attempts; historical receipts acknowledge once and return current task/assets, never restore historical values"
+  },
+  "native_adapter": {
+    "start_type": "0xc0017",
+    "end_type": "0xc0018",
+    "body": "exactly one positive signed32 big-endian movie_id",
+    "intro_discriminator": {
+      "source": "SEnterWorld outer object +0x48/+0x4c, independent of real EXP +0xf8/+0xfc",
+      "client_condition": "signed64 <= 0 enables intro gate; signed64 > 0 disables this entry gate",
+      "authorized_or_playing": 0,
+      "completed": 1,
+      "mapping_provenance": "designed_local_projection; positive1 is not a proven original server completion value",
+      "legacy_without_chapter": "retain existing compatibility behavior until explicit migration; do not infer completion from XP"
+    },
+    "temporary_cinematic_map": "client movie Setmap/Return does not change authoritative role position; real quest teleports use the existing map handoff",
+    "wire_limits": "CEnd has no task ID, playback nonce, epoch, version or termination cause; shared cleanup also emits it, so it is a completion declaration under current authorization and does not prove natural End or eliminate identical late replay",
+    "skip_policy": "accept a valid matching authorized CEnd as completion; this is designed and does not claim a restored original skip rule"
+  },
+  "acceptance": [
+    "all43 legal character/school combinations initialize their own original root and selected successor",
+    "fresh provenance activation and spawn are atomic, rollback leaves no partial chapter or task",
+    "unsolicited/wrong movie, old epoch, changed location/generation and expired playback refuse",
+    "completion, selected next task, rewards and receipt commit together; retries cannot repeat assets",
+    "reconnect pending chapter replays correctly; completed chapter preserves position/tasks and emits no intro",
+    "continuous native encrypted/compressed messages decode in the required initialization order",
+    "actual client naturally enters its school, plays intro, returns and can approach its first NPC; separately authorized GUI validation"
+  ],
+  "implementation_status": "task_transactions43_routes_and_shared_runtime_two_schools_independently_verified_in_disposable_storage; actual_GUI_and_deployment_pending",
+  "native_gui_verified": false,
+  "deployment_record": "evidence/latest-deployment-verification.json"
+}

@@ -1,0 +1,24 @@
+{
+  "revision": "2026-10-23.pet-presentation.1",
+  "scope": "known ordinary pet growth Profile and known PetCare blood-color grade",
+  "growth": {
+    "source": "persisted exact Profile.growth_raw integer; no reroll, state migration or attribute formula change",
+    "native": "Pet bean+ac float32 -> refresh1135303..1135310 internal pet+30; UI1130d35 multiplies original double1000 then19191e0 truncates",
+    "projection": "least binary32 >= raw/1000 whose original UI integer equals raw; reject if no exact integer projection",
+    "projection_provenance": "designed deterministic inverse of client_verified display arithmetic; not claimed original server float bit pattern",
+    "example": "raw996 nearest float32 is0.9959999918937683 and displays995; next float32 preserves996",
+    "limits": "actual int500..signed32max and exact inverse-display check; bool and unavailable knowledge rejected",
+    "independent_formula": "this /1000 is a wire display scale; pet-growth-v1 cumulative points still use exact growth_raw/100 and existing designed rules"
+  },
+  "blood_color": {
+    "source": "persisted PetCare.grade1..6; initial1 already designated by pet-care-v1",
+    "native": "Pet bean+3c i32 -> refresh11354fb pet+2c -> panel140df60..140df92 uses CPetXueMaiConfig via89e3b0",
+    "config_identity": "root+c1c vtable225ce24; original skillnumber parser886d20..886d49 stores row+28",
+    "skill_grid_caps": [4,4,6,8,10,12],
+    "provenance": "client_verified color field/lookup and existing designed initial grade; does not initialize, grant or implement skills"
+  },
+  "unknown_legacy": "missing Profile or PetCare remains unknown; existing constructor placeholders do not create authoritative state",
+  "transaction": "encode allocation or consumable pet refresh before committing its state changes; representation failure rolls back",
+  "evidence": "evidence/pet-presentation-native.json and pet-presentation-verification.json",
+  "native_gui_verified": false
+}

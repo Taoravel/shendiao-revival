@@ -1,0 +1,146 @@
+{
+  "image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+  "routine": "0x626b40",
+  "native_differential_cases": 4862,
+  "counterfactuals": {
+    "wall_between_clear_endpoints": {
+      "start": [
+        8,
+        8
+      ],
+      "end": [
+        56,
+        8
+      ],
+      "mask": 1,
+      "native_result": 1,
+      "samples": [
+        [
+          9,
+          8
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          11,
+          8
+        ],
+        [
+          12,
+          8
+        ],
+        [
+          13,
+          8
+        ],
+        [
+          14,
+          8
+        ],
+        [
+          15,
+          8
+        ],
+        [
+          16,
+          8
+        ]
+      ]
+    },
+    "same_point_blocked_cell": {
+      "start": [
+        8,
+        8
+      ],
+      "end": [
+        8,
+        8
+      ],
+      "mask": 1,
+      "native_result": 3,
+      "samples": []
+    },
+    "diagonal_side_cells_blocked": {
+      "start": [
+        8,
+        8
+      ],
+      "end": [
+        24,
+        24
+      ],
+      "mask": 1,
+      "native_result": 0,
+      "samples": [
+        [
+          9,
+          9
+        ],
+        [
+          10,
+          10
+        ],
+        [
+          11,
+          11
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          13,
+          13
+        ],
+        [
+          14,
+          14
+        ],
+        [
+          15,
+          15
+        ],
+        [
+          16,
+          16
+        ],
+        [
+          17,
+          17
+        ],
+        [
+          18,
+          18
+        ],
+        [
+          19,
+          19
+        ],
+        [
+          20,
+          20
+        ],
+        [
+          21,
+          21
+        ],
+        [
+          22,
+          22
+        ],
+        [
+          23,
+          23
+        ],
+        [
+          24,
+          24
+        ]
+      ]
+    }
+  },
+  "mode": "unmodified segment and point instructions; code hook observes samples only",
+  "wire_path_nodes_semantics": "check/stop copy role+0x34c; append/pop timing not fully established"
+}

@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="AddFriendConfirm">
+    <Property Name="Font" Value="msyh-16" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.296249,0},{0,202},{0.296249,320},{0,383}}" />
+    <Window Type="TaharezLook/StaticImage" Name="AddFriendConfirm/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,53},{0,12},{0,215},{0,38}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="AddFriendConfirm/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="对方需要认证消息" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="136" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,32},{0,1},{0,169},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="AddFriendConfirm/PlayerImage/Back">
+      <Property Name="Image" Value="set:MainControl image:FriendHeadBack" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,63},{0,64}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,63},{0,64}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,16},{0,40.585},{0,79},{0,104.585}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticImage" Name="AddFriendConfirm/PlayerImage">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,8},{0,7},{0,58},{0,57.3549}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="AddFriendConfirm/ApplyMsg">
+      <Property Name="TextColours" Value="tl:FFDCF6CE tr:FFDCF6CE bl:FF10BBD3 br:FF10BBD3" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="HorzFormatting" Value="WordWrapCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0,85},{0,43},{0,301},{0,111}}" />
+    </Window>
+    <Window Type="TaharezLook/Editbox" Name="AddFriendConfirm/Content">
+      <Property Name="BlinkCaret" Value="True" />
+      <Property Name="MaxTextLength" Value="2147483647" />
+      <Property Name="UnifiedAreaRect" Value="{{0,85},{0,112},{0,301},{0,134}}" />
+      <Property Name="TextParsingEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="AddFriendConfirm/PS">
+      <Property Name="Text" Value="附 言" />
+      <Property Name="HorzExtent" Value="29" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,50},{0,112},{0,84},{0,134}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="DefaultBorderEnable" Value="True" />
+      <Property Name="DefaultColourEnable" Value="True" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="AddFriendConfirm/Send">
+      <Property Name="Text">发   送
+
+
+
+</Property>
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,142.001},{0,140},{0,217.001},{0,164}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="AddFriendConfirm/Cancel">
+      <Property Name="Text">取   消
+
+
+
+</Property>
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,227.001},{0,140},{0,302.001},{0,164}}" />
+    </Window>
+  </Window>
+</GUILayout>

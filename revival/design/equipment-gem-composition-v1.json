@@ -1,0 +1,21 @@
+{
+  "revision": "2026-10-24.gem-composition.1",
+  "scope": "ordinary uncultivated gems only; excludes smelting, cultivated gems, celestial stones and sword souls",
+  "skill_id": 600005,
+  "skill_source": "client_verified original1361d51 immediate0x927c5; correction to prior research602053",
+  "stamina_attribute": 450,
+  "stamina_maximum_attribute": 630,
+  "restricted_flags_mask": 160,
+  "draw_range": 10000,
+  "decisions": {
+    "probability": "designed adoption of original displayed min(100,gem.successrate+skill.rate); trusted captured draw0..9999 succeeds iff draw<percent*100",
+    "failure": "designed deterministic loss of one from the second requested material; first retained; same key loses one; both outcomes consume full original displayed stamina",
+    "binding": "designed success bound if either material bound; failure leaves surviving material binding unchanged",
+    "flags": "only explicitly known zero nonbinding flags supported; original0xa0 refuses; other semantics remain unsupported",
+    "quality": "ordinary no-quality instances only; no invented sentinel or dropping quality",
+    "cash": "no cash debit; all210 original ordinary gem rows money0",
+    "output": "success next original genegemid, quantity1; failure no output; fixed original maxNum30",
+    "authority": "current role lease transaction; skill from caller's authoritative same-transaction reader, no implicit missing skill0; stamina450 independent from vigor440; current complete gem metadata required"
+  },
+  "evidence": ["evidence/EQUIPMENT_GEMS_SOURCE_RESEARCH.md", "evidence/GEM_COMPOSITION_RESOURCE_SOURCE.md"]
+}

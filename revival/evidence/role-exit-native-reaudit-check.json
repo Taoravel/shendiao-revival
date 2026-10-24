@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-23",
+  "native_image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+  "original_functions": {
+    "reset": "0x15f5230",
+    "constructor": "0xd53a00",
+    "marshal": "0xe40a00",
+    "unmarshal": "0xd53a90",
+    "process": "0x15f5500",
+    "installed_wndproc": "0x822490"
+  },
+  "cases": [
+    {
+      "wire_signed_i32": -1,
+      "before_initialization": {
+        "mode": -1,
+        "ui_calls": [],
+        "wndproc_return": 0
+      },
+      "after_native_decode_and_process": {
+        "mode": 0,
+        "ui_calls": [
+          "ordinary_exit_dialog"
+        ],
+        "wndproc_return": 0
+      },
+      "type": "0xc0039",
+      "wire_hex": "ffffffff"
+    },
+    {
+      "wire_signed_i32": -2147483648,
+      "before_initialization": {
+        "mode": -1,
+        "ui_calls": [],
+        "wndproc_return": 0
+      },
+      "after_native_decode_and_process": {
+        "mode": 0,
+        "ui_calls": [
+          "ordinary_exit_dialog"
+        ],
+        "wndproc_return": 0
+      },
+      "type": "0xc0039",
+      "wire_hex": "80000000"
+    },
+    {
+      "wire_signed_i32": 0,
+      "before_initialization": {
+        "mode": -1,
+        "ui_calls": [],
+        "wndproc_return": 0
+      },
+      "after_native_decode_and_process": {
+        "mode": 1,
+        "ui_calls": [
+          "first_day_exit_dialog"
+        ],
+        "wndproc_return": 0
+      },
+      "type": "0xc0039",
+      "wire_hex": "00000000"
+    },
+    {
+      "wire_signed_i32": 1,
+      "before_initialization": {
+        "mode": -1,
+        "ui_calls": [],
+        "wndproc_return": 0
+      },
+      "after_native_decode_and_process": {
+        "mode": 1,
+        "ui_calls": [
+          "first_day_exit_dialog"
+        ],
+        "wndproc_return": 0
+      },
+      "type": "0xc0039",
+      "wire_hex": "00000001"
+    },
+    {
+      "wire_signed_i32": 2147483647,
+      "before_initialization": {
+        "mode": -1,
+        "ui_calls": [],
+        "wndproc_return": 0
+      },
+      "after_native_decode_and_process": {
+        "mode": 1,
+        "ui_calls": [
+          "first_day_exit_dialog"
+        ],
+        "wndproc_return": 0
+      },
+      "type": "0xc0039",
+      "wire_hex": "7fffffff"
+    }
+  ],
+  "scope": "Original reset, wire codec, SFirstDayExitGame Process and installed WM_CLOSE WndProc execute offline; UI creation endpoints only record calls and return; world state2/null battle manager are explicit fixtures.",
+  "not_verified": [
+    "real GUI/resource rendering",
+    "actual client state",
+    "server delivery or deployment",
+    "original first-day business policy",
+    "battle exit branch"
+  ],
+  "no_live_client_or_os_window_calls": true
+}

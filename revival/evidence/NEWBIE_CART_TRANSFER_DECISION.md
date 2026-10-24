@@ -1,0 +1,31 @@
+# 新手车夫到嘉兴的提交裁定
+
+2026-10-23，主策划。参数单一来源为[新手车夫政策](../design/newbie-cart-transfer-v1.json)。实现十条原车夫分支的目标解析、任务完成或持久化交接前，先读本文、TASK_CART_BRANCH_INTEGRATION及ARCHITECTURE。当前共享源码已完成下述正常及故障恢复独立检查；部署和GUI仍未完成，结果见末段。
+
+原包确认十条任务各自的地图1006、原坐标36/221或71/242、唯一选项0和唯一后继。原生提交不携带目标，且缺精确坐标转换消费者。原数字直接作逻辑像素均受阻，乘16后两个目标均在范围内且mask1可走；同款端游官方剧情只支持“经门派车夫去嘉兴”，没有单位或精确落点证据。故cell单位解释是inferred，采用乘16的恢复配方是designed。正常移动state0按mask1校验，不外推mask8，不自动搜索附近点。
+
+采用原ActiveNpc真实地图实体、距离及当前冻结CartDialogueTicket授权；少林原BranchNpcID错配保持源数据，不据它改跳古墓NPC。只接受当前任务、实体key和option0的CCommit。原线包不能证明玩家读完两句对白，不增加CQuestDialogEnd前置。资格仍要求独立新手章节、选择卡凭据和精确获领实例装备任务已完成。
+
+世界Module提供加入调用方事务的持久化Interface；任务Module提供同事务车夫完成/原奖励/后继Interface。角色所有者先取得目标预留、源冻结和目标loading收据，再在一个当前租约事务写入目标位置、交接决定及上述任务资产，全部原生结果预编码后提交。提交后才发布角色快照、清源及通过现有精确发送屏障激活目标。双方不得复制对方SQL，也不得以两个各自提交的方法冒充原子。
+
+提交前失败不完成任务、不发奖，持久位置仍为源。目标已经进入内存loading而没有安全取消收据时，围栏该角色并按持久决定恢复，不能凭超时把源直接解冻造成双归属。提交后发送失败保持目标唯一权威，重连回读目标和既有凭据；后继只激活原一条，嘉兴60001标题对白仍须实际NPC交互。
+
+完成条件：十条原目标/选项解析通过；真实地图和角色所有者跨图；任务、资产与位置晚期失败一起回滚；提交后断线恢复目标且不重奖；旧租约/旧位置/错误选项拒绝；原场景包及下一任务可解码，目标发送屏障后可继续合法移动。真实客户端交互另验。
+
+本批research委派复查原包候选和端游官方窄来源，出处集中在TASK_CART_BRANCH_INTEGRATION来源附注；codebase-design将坐标解析、地图交接和任务结算保留在各自Module，通过调用方事务Seam组合；writing-for-agents将授权、时序和故障分支共置。产物为本文及政策；本次只裁定，不称实际车夫传送已实现/部署，未动8724发布、现场角色、GUI或战斗。
+
+政策已与原task-cart-target-candidates十行逐条比较：task集合、每条原坐标及乘16目标对应，两个目标均in_bounds/mask1 clear且mask8 blocked。root新增并实际运行`verify_newbie_cart_runtime.py --expect-missing`：自然师父前置、实际原碰撞见证路径报告到古墓车夫后100104仍active，只有c232a、无ready3，基线已保存。此模式退出0表示准确复现缺口；共享接口接齐后由同脚本默认模式验证，不把政策/候选存在当作已传送。
+
+## 当前接线与独立验证
+
+世界公开`commit_transfer_transaction`与任务公开`complete_cart_transfer_transaction`已由root独立跑verify_world_transfer_transaction及verify_task_cart_transfer通过：完整offer含deadline身份、当前lease/账号/源checkpoint、严格世界收据、十条真实章节/卡/精确装备前置、任务/资产/原0EXP/唯一后继与目标同事务，晚期背包/场景异常全部回滚，历史重试不倒退后续坐标。前者caller_probe、后者可信NPC点位夹具的范围分别保留。
+
+共享接入后，root独立运行并增强`verify_newbie_cart_runtime.py`默认模式转绿：自然intro→原师父卡→唯一获领武器→实际穿脱/type59→原mask1见证到古墓车夫→option0→嘉兴。实际输出喂原SRoleEnterScene decoder确认map/坐标/reason0；精确连接发送屏障后源成员清理、目标active，合法MOVE/STOP继续成功，重连保留后来的checkpoint及45/35/8，重复选择不重奖。此为连续原生加密/压缩和源码Owner流程，不是原客户端画面或完整速度验收。
+
+故障恢复另有root实际红反馈：SQL提交失败后数据库保源，但旧源frozen/目标loading残留使同Runtime重登报Role already in map。世界提供新lease下`prepare_transfer_recovery_transaction`读取最终持久决定、各精确MapOwner `inspect_transfer`/`retire_recovered_transfer`退役旧epoch，主集成于load前接入并按旧epoch清Adapter缓存、每await重验角色和连接。root独立`verify_transfer_failure_recovery.py`默认已转绿：回持久源、旧目标清理、可立即再过门户；新增`--after-commit`也独立通过真实commit后清源故障→目标重登→合法移动→第二次重连不被旧receipt拉回。没有用重建Runtime代替同进程恢复。
+
+root再独立`verify_cart_scene_atomic_runtime.py`通过自然车夫晚期真实scene_entry编码失败：目标、任务、奖励、所有资产/凭据一起回滚，只保留prepared交接和围栏；同Runtime新lease重登源，清旧目标后重新授权出发成功且任务/传送凭据只一份。对应报告明确same_runtime_reconnect_verified=true。所有检查均临时库，8724固定发布及真实角色/GUI/战斗未改。
+
+新增`verify_cart_committed_recovery_runtime.py`也由root独立通过自然链：真实cart目标/任务已commit后在公共source.finalize注入失败，旧源frozen/目标loading残留由新lease公开恢复清理（含Adapter.positions）；同Runtime回嘉兴active，唯一task receipt及45/35/8保持，重复旧选项不重奖/不回源。此故障是提交后清源失败，没有把它称为真实socket断网。
+
+后续嘉兴标题剧情也已root新`verify_newbie_jiaxing_runtime.py`自然通过：合法实际NPC CCommit委托原60001本地标题，只发一次state1；原120XP自然升L2/XP31/free5，穿装49/38/8，原entry同源，重复/重连无重奖/重播。不把服务器委托标题称为GUI已显示。继续恢复其余主线与商业容量，全目标未完成。

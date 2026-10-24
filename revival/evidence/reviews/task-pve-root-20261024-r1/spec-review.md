@@ -1,0 +1,13 @@
+# Task PVE 最终窄增量与宿主工具：Spec 独立复核
+
+Missing/partial：0；Extra：0；Wrong：0。原core预审P2闭合，仅就本次窄增量取代该项；其他结论沿用task-pve-shared-core-root-r1、已接受engine/Task及host-r2审查。非Git，以冻结文件no-index差异和SHA核对。
+
+accepted AI8001 policy:63要求同键重试读当前。最终task_pve_runtime_storage.py:442–448仅在`current is None and settlement.replayed`时省略原宠刷新；fresh缺宠仍抛错，当前宠存在但progress未知也仍拒绝，已存在合法宠继续发当前值。故“真胜并付→REST→FREE→paid public settle”的静态反例不再因释放旧宠失败；未放宽首次消费完整source CAS。其余六core与050244预审字节完全相同。Taskcompat确为已接受bf36/76a，Domain11f9及Task8a保持，不重报旧r1。
+
+工具launch_detached_scoped_release.py:63–73仍核accepted release/manifest/runner及全部source；:87–97将candidate的新表范围绑定approved manifest并核preflight表集，新增例外仅五个登记空表。:132–139经master_ready_preflight.verify_preserved_tables:25–35逐旧表比较行数/全行摘要，拒绝未知或非空新增表，并逐旧表SQL比较；不授权迁移旧行。Popen/breakaway/caller-job PID、隐藏启动、绝对health deadline和单owner不杀占用端口与approved79c055字节逻辑未变。仅静态检查，未执行工具。
+
+方法：沿用完整code-review/codebase-design及ARCH/DESIGN/资源与终态恢复约束，针对公开重试前后状态和启动只新增空表的不变量复核；未读另一轴。
+
+1454 source登记项及runner审前后全匹配。manifest SHA256=cb9692feee09f4601279ef1375679daa1f75c2a7f3ea2d2dcbb3e66042558ef6；candidate声明seal=af6709eb5ebd8bfb7564eeb0c7d258380e6b777e6d3caf7b1a0729a30c7ae01d。最终storage SHA=ef695b68e129a0e31d4d50810d6937374b5e8df524c5cc326b6435f27c529bf8；launcher=6f9147b259eba43b798d191283d1d08a5f3ad3642e8c69454daf9d1478a48045；schema diff=3fc8460fed161b35acd8128fa7078005fc7e18703bf2c67f85bea9c62a4fdf60。
+
+未验：未运行测试、DB、socket、服务、GUI或含宠场景；根方准确最终QA/preflight/实际启动另签。未批准activation/deploy，完整成长目标及GUI仍未完成。

@@ -1,0 +1,22 @@
+"""Shared organization request IDs and immutable recovery diagnostics."""
+JOIN_FAMILY=0xc55f7
+FAMILY_REVIEW=0xc55fe
+EXPEL_MEMBER=0xc55ff
+LEAVE_FAMILY=0xc5601
+FAMILY_POSITION=0xc5604
+FAMILY_NATIVE_TYPES=frozenset((JOIN_FAMILY,FAMILY_REVIEW,EXPEL_MEMBER,LEAVE_FAMILY,FAMILY_POSITION))
+REQUEST_FACTION=0xc560e
+FACTION_POSITION=0xc5621
+RESIGN_FACTION_OFFICE=0xc5622
+QUERY_GUILD_BUILDINGS=0xc5627
+GUILD_NATIVE_TYPES=frozenset((REQUEST_FACTION,FACTION_POSITION,RESIGN_FACTION_OFFICE,QUERY_GUILD_BUILDINGS))
+
+from dataclasses import dataclass
+
+
+@dataclass(frozen=True)
+class GuildRecoveryProblem:
+    guild: int
+    role: int
+    reservation: str
+    reason: str

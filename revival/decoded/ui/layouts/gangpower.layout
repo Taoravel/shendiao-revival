@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="GangPowerSetting">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.178333,0},{0.2,480},{0.178333,386}}" />
+    <Window Type="TaharezLook/Button" Name="GangPowerSetting/OK">
+      <Property Name="Text" Value="授予" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,56.113},{0,345},{0,176.113},{0,367}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GangPowerSetting/Recycle">
+      <Property Name="Text" Value="回收" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,181.113},{0,345},{0,301.113},{0,367}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GangPowerSetting/Cancel">
+      <Property Name="Text" Value="关闭" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,306.113},{0,345},{0,426.113},{0,367}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="GangPowerSetting/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.728126,0},{0.0250262,0},{1.36979,0},{0.0949744,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="GangPowerSetting/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="授予权限" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFF9600 br:FFFF9600" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,71},{0,1},{0,162},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="GangPowerSetting/Tips">
+      <Property Name="Text" Value="帮主可将下述权限授予副帮主，两者同时拥有该项权限" />
+      <Property Name="HorzExtent" Value="313" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,20},{0,324},{0,420},{0,346}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="DefaultBorderEnable" Value="True" />
+      <Property Name="DefaultColourEnable" Value="True" />
+    </Window>
+    <Window Type="TaharezLook/MultiColumnList" Name="GangPowerSetting/SlectList">
+      <Property Name="UnifiedAreaRect" Value="{{0,16},{0,42},{0,462},{0,324}}" />
+      <Property Name="ColumnHeader" Value="text:权限名 width:{0.16,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:                  说明 width:{1,-72} id:1" />
+    </Window>
+  </Window>
+</GUILayout>

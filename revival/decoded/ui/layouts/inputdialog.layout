@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/SmallFrameWindow" Name="InPutDialog">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.321874,0},{0.3575,0},{0.320624,286.001},{0.3575,171}}" />
+    <Window Type="TaharezLook/Button" Name="InPutDialog/OK">
+      <Property Name="Text" Value="确  认" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,51},{0.632593,24.3066},{0,121},{0.632593,48.3066}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="InPutDialog/Cancle">
+      <Property Name="Text" Value="取  消" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,165.708},{0.632593,24.3066},{0,235.708},{0.632593,48.3066}}" />
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="InPutDialog/back">
+      <Property Name="UnifiedAreaRect" Value="{{0,15},{0,39},{0.943856,0},{0.766082,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="InPutDialog/text">
+        <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+        <Property Name="BorderColour" Value="FF5F4100" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,10},{0,6},{0,250},{0,57}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Editbox" Name="InPutDialog/edit">
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="1073741823" />
+        <Property Name="UnifiedAreaRect" Value="{{0,8},{0.632593,5.69628},{0,247},{0.632593,25.6962}}" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="InPutDialog/Title">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Title" Value="True" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.3,0},{0.0660817,0},{1.00175,0},{0.183041,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+  </Window>
+</GUILayout>

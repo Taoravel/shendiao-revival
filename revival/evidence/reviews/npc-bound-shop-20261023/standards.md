@@ -1,0 +1,15 @@
+# Standards
+
+硬规则违背：0项。Fowler判断性问题：0项。
+
+范围：manifest固定的五文件base/current实际增量；无Git提交。已核对十个原始字节SHA256全部匹配。遵循AGENTS、ARCHITECTURE、DESIGN_AUTHORITY；沿用code-review、codebase-design，并读取tdd，以公开Interface行为及事务完整性审查，不以私有调用次数代替结果。
+
+模式配方启动加载并冻结；角色Owner沿既有购买事务调用钱包、库存及资源来源同步。mode0历史指纹保留，mode1增加支付配方版本；本批未新增共享执行器、独立领域提交或热路径配置解析。两种配方的Module具有实际用途，无充分依据报告基线味道问题。
+
+已逐项检查Mysterious Name、Duplicated Code、Feature Envy、Data Clumps、Primitive Obsession、Repeated Switches、Shotgun Surgery、Divergent Change、Speculative Generality、Message Chains、Middle Man、Refused Bequest，均为判断性启发式，未发现本增量中值得报告的实例。
+
+验证：current置导入路径首位、revival次之，通过runpy执行两个bound verifier，实际导入的npc_gameplay哈希为e5d70e181a18dd13ff29ed0c9302bb65f980e8b498160c5eb8a444a15d344bfa；运行时7项、资源来源6项报告全部通过，覆盖真实Owner加密路由、幂等与冲突、当前余额、实际旧版回执、晚期失败及满包回滚。使用临时数据库，报告输出为证据产物。
+
+最终补审：仅sources verifier增加ROOT导入、固定历史副本路径及原始SHA256断言，避免runner改变OUT后错误定位历史模块；生产实现哈希e5d70e…不变。更新manifest的十个字节哈希重新核对全部匹配；该测试最终捕获哈希e2d8078b29137870ab0e2b46d39995ca40cae1d248356352ed16b0c77a98b185，已从固定捕获重新运行，6项报告通过，实际历史模块仍为ea920c…。本增量无新增Standards问题。
+
+未验证：GUI、mode1发布、并发容量与完整普通商店行为。正式合入由主任务另行举证，本审查不将合入当发布。本审查未改生产源码、共享入口、政策或运行进程。本报告仅Standards轴，不代替Spec轴结论。

@@ -1,0 +1,17 @@
+# 普通移动状态声明与碰撞接线裁定
+
+2026-10-24。修改runtime地图工厂maze注入、成员移动状态、初次Scene/开场/战斗恢复或特殊地图碰撞前，读取单一规则 `design/world-movement-state-v1.json` 与本页。当前.2授权隔离实现，原特殊Scene到显式位置命令的消费者组合已补证；shared和302图回归仍未验，不能据此发布减少正常移动能力的版本。
+
+根已对准确线上private190051的完整1439/runner运行真实MapOwner+SerialOwner探针：同格clear和bounds控制正确，墙格1664/960仍被接受/version推进，默认安全检查exit1、精确缺口模式exit0。world另有真实加密Peer相同缺口；302图clear正例不覆盖墙内负例。main已在继承该缺口的最新loyalty BASE另复现。运行时须启动冻结原maze，选择原current-cell合同，不把舍入history当精确占据格。
+
+本地设计把state0定义为服务器明确选择的普通步行模式，并通过已证原Scene A0或SSetRoleLocation flag0消费者声明。它不是从客户端wire状态字节推断，更不是初始A0永远有效。地图所有者仅存每成员不可变上下文与一个未决声明，连接所有者在精确write/drain后回传不可变身份；重新核role/epoch/connection/fulladdress/mapgen/member/position/context generation和精确body，才安装state0。任何撤销增加context generation，旧回执不能复活权限。初次Scene也要此过程，普通换图沿已有精确屏障。
+
+开场CG开始撤销旧上下文；仅匹配CEnd的真实任务事务提交后，由服务器选择正常步行0，发当前权威位置的原13字节SSetRoleLocation并等精确发送终止。优先这一已有原消费者，不猜同场景A0的完整早退分支。战斗进入同样撤销，终局只有之前已知普通世界成员才可用新声明恢复；不是解除正式PVE暂停。归一不改持久位置、奖励、资源或任务，不发明客户端ready，也不声称该包清空全部历史/解除每种actor gate。
+
+原JumpStop35例证明状态会依同一maze flags变化，报告byte不等于最终state。未恢复的jump/state-changing输入须撤销上下文并拒绝，按现有断线/新租约重建；不能信byte切mask或等待任意时间复活0。合法跳跃仍是下一恢复项。Scene1404/reason516023跳过已证赋值链，不能假定0；.2采用随后单独显式SSetRoleLocation0声明普通步行，绑定相同当前role/fulladdress/位置与其独立精确发送终止。此为服务器设计，不声称特殊地图天然0或特殊玩法已恢复。
+
+该.2依据WORLD_MOVEMENT_STATE_LIFECYCLE_GATES：普通/1404/516023各prior0/1/2后再原location Process，9例均state0/mask1；位置gate两类共6例仍state0但actor坐标不改；缺role/Scene共6例保持原状态。根另独立原样执行完整28例，7输入SHA前后不变，world-movement-state-lifecycle-root-independent-20261024保存结果。初版.1未审快照保留其false门槛，当前执行文件取已补证的.2；位置声明并未升级成完整actor纠正或客户端成功ACK。已知server缺成员/过期场景一律不安装，实际客户端加载失败不可观察的限制仍明确保留。
+
+完成条件：原consumer组合及特殊/缺role/gate负例；初次、CG结束、普通换图/战斗恢复在drain前拒/精确drain后clear可走且wall拒；队列满/取消/断线/陈旧generation均不安装，跨角色与其他地图不阻塞；原302 available图所有正常微移/重连保持，1302/1307原缺资源仍拒绝；自然intro→师父→车夫→血印私图、聊天、忠诚及HP原消费完整回归。Source/config/harness准确副本审验后main唯一发布。根不操作真人或启停，参数未知与源码、部署、GUI分开举证。
+
+方法：diagnosing-bugs保留实际墙格RED和clear/bounds控制；research沿原Scene/角色setter/JumpStop消费；codebase-design把map成员权威、role生命周期和connection投递分成小Interface；writing-for-agents共置参数、暂未闭合分支及可判定发布门槛。本页创建时尚未实现新上下文，特殊归一/全可玩/商业容量未验。

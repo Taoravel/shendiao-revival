@@ -1,0 +1,29 @@
+{
+  "all_passed": true,
+  "passed": [
+    "actual prepared journal refuses SELECT confirmation without committing or cancelling it",
+    "integer epoch1 rejects whole-receipt bool/float aliases under SELECT-only authorizer",
+    "same-lease exact historical receipt/full checkpoint; foreign account, stale lease and wrong receipt refuse",
+    "later legitimate checkpoint remains current and historical target is never replayed",
+    "later same-template different-instance entry preserves exact full address and provenance",
+    "explicit ready-stage fixture confirms both historical and current-entry receipts without writes",
+    "13 explicit rolled-back missing/cancelled/corrupt historical or current-entry cases refuse without read-side writes",
+    "new current lease confirms old-epoch receipt; old lease remains fenced",
+    "caller transaction required; source files stable; no implicit transaction or connection"
+  ],
+  "source_sha256": {
+    "world_transfer_storage": "65e2709cd1967dcbecc1328f2346f35d3e38def7ce362a81fac12f9affe80aa4",
+    "world_owner": "51cd7090cb8215231d3be9bafc68a170ced635bd339f68a291dc77f05057b438",
+    "accounts": "2f9022a4b40aaecffbd2bb57491f8f1678980e4a6405f8fc28e78d0099db34ff",
+    "runtime_storage": "fed93ea03adac8b93f868558d68bb702e4264733e9be5cf7e7126465aefa1fcc",
+    "verify_world_committed_transfer_read": "de54099cd0797df86fbfe928614c633ed72ad42d98b86f150f433c9832a891f1"
+  },
+  "inputs_stable": true,
+  "explicit_initial_checkpoint_fixture": true,
+  "controlled_same_template_portal_fixture": true,
+  "corruptions_rolled_back": 13,
+  "sql_authorizer": "only SELECT/READ/FUNCTION allowed on all confirmation successes and refusals",
+  "caller_task_paid_integration_verified": false,
+  "gui_verified": false,
+  "live_server_changed": false
+}

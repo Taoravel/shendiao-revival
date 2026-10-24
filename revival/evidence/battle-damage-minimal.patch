@@ -1,0 +1,63 @@
+--- baseline/battle_protocol.py
++++ candidate/battle_protocol.py
+@@ -1,5 +1,6 @@
+ """Native 1.6.1 battle wire layouts. No inferred operation enum mapping here."""
+ import struct
++from dataclasses import dataclass
+ from wire import compact, octets, read_compact, NeedMoreData
+ 
+ BATTLE_START = 0xc1b59
+@@ -18,6 +19,15 @@
+ ROLE_INIT_ATTRS = 0xc1b6f
+ PET_INIT_ATTRS = 0xc1b70
+ OTHER_SKILLS = 0xc36c3
++HP_CHANGE = 1
++
++
++@dataclass(frozen=True)
++class TargetResult:
++    """Separate native result values from the unrelated DemoAttr collection."""
++    target: int
++    values: tuple = ()       # ((native result key, signed value), ...)
++    demo_attrs: tuple = ()   # raw DemoAttr triples; not HP/MP result values
+ 
+ 
+ def int_map(values):
+@@ -84,17 +94,20 @@
+ def round_script(executions):
+     """NewResultItem list, no AI/actions, summons or removals.
+ 
+-    Each tuple: nine DemoExecute scalars, then (target, DemoAttr triples) pairs.
+-    Attr triples are (type, value, extra). Values use signed i32 on the wire.
+-    This low-level codec deliberately leaves enum meaning to a verified caller.
++    Each tuple: nine DemoExecute scalars, then TargetResult objects. The native
++    result map carries hpchange/key1, mpchange/key2, etc. DemoAttr is a different
++    collection: putting HP there decodes successfully but the HP consumer sees0.
+     """
+     items=[]
+     for scalars,targets in executions:
+         if len(scalars)!=9: raise ValueError('DemoExecute needs nine scalars')
+         execute=struct.pack('>9i',*scalars)+b'\0' # empty attacker buff list
+         results=[]
+-        for target,attrs in targets:
+-            results.append(struct.pack('>i',target)+b'\0'+compact(len(attrs))
+-                           +b''.join(struct.pack('>iii',*a) for a in attrs)+b'\0')
++        for target in targets:
++            if not isinstance(target,TargetResult):raise ValueError('Explicit native TargetResult required')
++            values=dict(target.values)
++            if len(values)!=len(target.values):raise ValueError('Duplicate result key')
++            results.append(struct.pack('>i',target.target)+b'\0'+compact(len(target.demo_attrs))
++                           +b''.join(struct.pack('>iii',*a) for a in target.demo_attrs)+int_map(values))
+         items.append(execute+compact(len(results))+b''.join(results)+bytes(3))
+     return compact(len(items))+b''.join(items)+bytes(3)
+--- baseline/training_battle.py
++++ candidate/training_battle.py
+@@ -256,7 +256,7 @@
+         scripts=[]
+         for e in events:
+             op={'attack':p.ATTACK,'defend':p.DEFEND,'escape':p.ESCAPE,'skill':p.SKILL}[e.kind]
+-            targets=[(hit.target,[(1,hit.hp_change,0)]) for hit in e.impacts]
++            targets=[p.TargetResult(hit.target,((p.HP_CHANGE,hit.hp_change),)) for hit in e.impacts]
+             scripts.append(((e.actor,0,-e.mp_change,0,op,e.skill,0,0,0),targets))
+         packets=[(p.ROUND_SCRIPT,p.round_script(scripts))]
+         if self.authorized_skills or self.pet:packets.extend(self._vitals())

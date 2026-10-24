@@ -1,0 +1,33 @@
+{
+  "revision": "wild-encounters-v1",
+  "source_status": "designed",
+  "scope": "local_recovery_single_role_single_enemy",
+  "cell_pixels": 16,
+  "displacement_per_attempt_pixels": 64,
+  "chance_basis_points": 2000,
+  "spawn_grace_ms": 5000,
+  "post_battle_cooldown_ms": 10000,
+  "maximum_attempts_per_report": 1,
+  "enemy_count": 1,
+  "enemy": {
+    "hp_base": 40,
+    "hp_per_level": 4,
+    "mp": 0,
+    "attack_base": 8,
+    "attack_per_level": 1,
+    "defense_base": 2,
+    "defense_level_divisor": 3,
+    "speed_base": 5,
+    "speed_level_divisor": 2
+  },
+  "selection": "uniform_over_client_display_distribution",
+  "reward_policy": "no_asset_rewards_until_role_owner_atomic_settlement_is_integrated",
+  "notes": [
+    "Only accepted ordinary CHECK/STOP displacement counts. ROLE_MOVE is intention only.",
+    "Distance is floored Euclidean endpoint displacement, capped at 64 per report; it is not verified path length.",
+    "One check at most per accepted position version. Stationary reports and movement inside the same 16px cell do not add distance.",
+    "Safe maps, portal transfer offers, loading, dead actors, teams and special movement must be excluded by trusted host eligibility.",
+    "No original monster.dat region semantics, encounter probability, formation, level formula or enemy stats are claimed.",
+    "No catch operation or drop table is enabled by a template catchable flag."
+  ]
+}

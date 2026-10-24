@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="SkillStyle">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.30875,0},{0.25,0},{0.69125,0},{0.743333,0}}" />
+    <Window Type="TaharezLook/StaticText" Name="SkillStyle/Name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="技能标志及特效" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="119" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.20915,0},{0.0439189,0},{0.650327,0},{0.0750988,10}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="SkillStyle/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0588235,0},{0.233108,0},{0.924837,0},{0.932432,0}}" />
+      <Window Type="TaharezLook/Combobox" Name="SkillStyle/Back/Choose">
+        <Property Name="UnifiedAreaRect" Value="{{0.0490566,0},{0.454106,0},{0.679245,0},{0.94686,0}}" />
+        <Property Name="MaxEditTextLength" Value="2147483647" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="SkillStyle/Back/zi">
+        <Property Name="Text" Value=" 效 果 图" />
+        <Property Name="HorzExtent" Value="48" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.203774,0},{0.0386473,0},{0.615094,0},{0.397959,-57}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="SkillStyle/Back/zi1">
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0.683019,0},{0.463768,0},{0.94717,0},{0.550725,0}}" />
+        <Window Type="TaharezLook/StaticImage" Name="SkillStyle/Back/zi1/yuanbao">
+          <Property Name="Image" Value="set:MainControl image:yuanbao" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,16},{0,16}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,16},{0,16}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0285714,0},{0,0},{0.257143,0},{0.888889,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="SkillStyle/Back/zi1/Money">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.314286,0},{0,0},{0.885714,0},{0.888889,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Button" Name="SkillStyle/Back/Sure">
+        <Property Name="Text" Value="确定更换" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.128302,0},{0.821256,0},{0.467925,0},{0.19898,153}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="SkillStyle/Back/Cansel">
+        <Property Name="Text" Value="取消" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.550943,0},{0.821256,0},{0.890566,0},{0.2509,141}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="SkillStyle/Back/zi111">
+        <Property Name="Text" Value="注：使用期限均为30天，自购买时起开始计算，绿色字体代表无需再次购买可直接更换" />
+        <Property Name="HorzExtent" Value="251" />
+        <Property Name="VertExtent" Value="31.2378" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0264151,0},{0.545894,0},{0.984906,0},{0.811594,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="DefaultWindow" Name="SkillStyle/Back/skilleffect">
+        <Property Name="UnifiedAreaRect" Value="{{0.203774,0},{0.120773,0},{0.818868,0},{0.425121,0}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="SkillStyle/">
+      <Property Name="Text" Value="技能标志" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0947713,0},{0.148649,0},{0.313725,0},{0.229729,0}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="SkillStyle/1">
+      <Property Name="Text" Value="技能特效" />
+      <Property Name="UnifiedAreaRect" Value="{{0.317974,0},{0.147973,0},{0.536928,0},{0.229054,0}}" />
+    </Window>
+  </Window>
+</GUILayout>

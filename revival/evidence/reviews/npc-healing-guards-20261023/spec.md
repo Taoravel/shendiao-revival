@@ -1,0 +1,11 @@
+# Spec
+
+需求缺失：0项。额外范围：0项。错误实现：0项。
+
+按已读code-review Spec及架构要求，针对实际39796固定点只审两验证文件。base/current四个真实字节SHA匹配manifest；独立优先导入冻结current运行两脚本，均通过。
+
+治疗测试使用真实Peer及原dispatcher，首次付费身份由实际服务器receipt读取；复用该受理ID保留后来80/60，重新认证产生新lease后仍只读，新的原生请求再次收费至cash940/bound500。未知profile全状态不变且仍None，未迁移。battle/transfer占位及伤害明确标fixture，未冒称真实战斗或交接。
+
+传送仅将孤立位置正例fixture改用公开save_checkpoint同时写位置及版本，与诊断的Missing durable source checkpoint一致；生产半缺失checkpoint损坏guard未放宽。既有真实Peer目标提交、屏障及新runtime重载断言保留。
+
+方法影响：通过公开Interface及不可变差分区分fixture修正与生产行为变化；产物为本报告及两项独立复跑证据。未修改shared、政策、真实库或服务；GUI、真实战斗与商业容量未验证。

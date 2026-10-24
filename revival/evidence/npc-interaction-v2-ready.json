@@ -1,0 +1,39 @@
+{
+  "status": "reviewed_ready_for_minimal_static_runtime_candidate",
+  "minimal_static_runtime_files": {
+    "npc_interaction.py": "26fb6862a240ee42bcd57e2f18343a836ee2fa917b337b54d60e6978ddbeaf86",
+    "world_npcs.py": "177f55e34168229665586f9fef6ddee3fcdeef17c3c47fde716ad7353ac7d1c4",
+    "design/npc-interaction-v2.json": "d0f4081008982314f2b224b28cfe8d6c32701bc2835f11b063180c066d0951e1"
+  },
+  "separate_unactivated_lifecycle_domain": {
+    "npc_lifecycle.py": "41fabfad10e03aafa3248d2f4e10407de7acb107d5463a523da7cfd8e17a3f1f"
+  },
+  "reviewed_files": {
+    "npc_interaction.py": "26fb6862a240ee42bcd57e2f18343a836ee2fa917b337b54d60e6978ddbeaf86",
+    "world_npcs.py": "177f55e34168229665586f9fef6ddee3fcdeef17c3c47fde716ad7353ac7d1c4",
+    "npc_lifecycle.py": "41fabfad10e03aafa3248d2f4e10407de7acb107d5463a523da7cfd8e17a3f1f",
+    "verify_npc_interaction_rules.py": "5b68f738167e7eb0eef24e6be651fc99da16b0d33efd5066c4ecf2bafd72bfcf",
+    "verify_npc_cell_interaction.py": "2698d3ee1ef6a6c7f9118023415e54d9ec093a4cde5fcc3ff599389eba4b07e4",
+    "audit_npc_service_integration.py": "6536fe1683f42017d2f511af408962ba97779cb07eae76cd35d71f6cecd638fa"
+  },
+  "review": "reviews/npc-interaction-v2-20261023/REVIEW.md",
+  "review_result": {
+    "standards_hard": 0,
+    "standards_heuristic": 0,
+    "spec": 0
+  },
+  "checks": {
+    "verify_npc_cell_interaction": 8,
+    "verify_npc_interaction_rules_explicit_v1": 8,
+    "verify_world_npcs": "passed",
+    "verify_npc_lifecycle": 11,
+    "verify_npc_motion": 11,
+    "verify_npc_role_healing_runtime": 3,
+    "verify_npc_bound_shop_runtime": 7
+  },
+  "shared_required": "from36632 BASE only startup import+prepare and MapOwner constructor/rule injection; shared main only",
+  "excluded_from_minimal_runtime": "working private/pool/social/story changes, npc_lifecycle.py and motion activation",
+  "live_server_changed": false,
+  "native_gui_verified": false,
+  "unactivated_lifecycle_superseded_by": "npc-lifecycle-startup-ready.json"
+}

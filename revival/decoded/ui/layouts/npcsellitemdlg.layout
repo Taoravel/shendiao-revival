@@ -1,0 +1,504 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="NpcSellItem/sellDialog">
+    <Property Name="Font" Value="simhei-12" />
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,140},{0,108},{0,437},{0,515}}" />
+    <Window Type="TaharezLook/StaticText" Name="NpcSellItem/numText">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="数量" />
+      <Property Name="HorzExtent" Value="26" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,16.32},{0,338.817},{0,46.32},{0,358.817}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="NpcSellItem/moneyText">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="总价" />
+      <Property Name="HorzExtent" Value="27" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,16.32},{0,366.102},{0,46.32},{0,386.102}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/Editbox" Name="NpcSellItem/num">
+      <Property Name="BlinkCaret" Value="True" />
+      <Property Name="MaxTextLength" Value="2147483647" />
+      <Property Name="UnifiedAreaRect" Value="{{0,44.32},{0,339.817},{0,124.32},{0,358.817}}" />
+      <Property Name="TextParsingEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="NpcSellItem/buyBtn">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="购   买" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,209.32},{0,364.102},{0,277.32},{0,388.102}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="NpcSellItem/sellDialog/title">
+      <Property Name="Disabled" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="CentreAligned" />
+      <Property Name="UnifiedMaxSize" Value="{{0,214},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,214},{0,27}}" />
+      <Property Name="VertFormatting" Value="CentreAligned" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,83},{0,12},{0,297},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="NpcSellItem/sellDialog/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="购买" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="34" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{-0.308411,0},{0,1},{0,86},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="NpcSellItem/backimage">
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,17},{0,62},{0,279},{0,333}}" />
+      <Window Type="TaharezLook/StaticImage" Name="NpcSellItem/backimage/Item1">
+        <Property Name="Image" Value="set:MainControl image:SellItemBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,127},{0,55}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,127},{0,55}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,4},{0.0200863,0},{0,131},{0.223038,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="NpcSellItem/backimage/Item1/Icon">
+          <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NpcSellItem/backimage/Item1/name">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFE71C tr:FFFFE71C bl:FFFFE71C br:FFFFE71C" />
+          <Property Name="BorderColour" Value="FF2E0F07" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,51},{0,5},{0,124},{0,25}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="NpcSellItem/backimage/Item1/money">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.4,0},{0.525655,0},{0.549606,0},{0.87111,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NpcSellItem/backimage/Item1/Price">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,73},{0,30},{0,120},{0,50}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="NpcSellItem/backimage/Item2">
+        <Property Name="Image" Value="set:MainControl image:SellItemBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,127},{0,55}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,127},{0,55}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,131},{0.0200863,0},{0,258},{0.223038,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="NpcSellItem/backimage/Item2/Icon">
+          <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NpcSellItem/backimage/Item2/name">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFE71C tr:FFFFE71C bl:FFFFE71C br:FFFFE71C" />
+          <Property Name="BorderColour" Value="FF2E0F07" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,51},{0,5},{0,124},{0,25}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="NpcSellItem/backimage/Item2/money1">
+          <Property Name="Visible" Value="False" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.4,0},{0.543837,0},{0.549606,0},{0.889292,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NpcSellItem/backimage/Item2/Price">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,73},{0,30},{0,120},{0,50}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="NpcSellItem/backimage/Item2/money">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.4,0},{0.525655,0},{0.549606,0},{0.87111,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="NpcSellItem/backimage/Item3">
+        <Property Name="Image" Value="set:MainControl image:SellItemBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,127},{0,55}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,127},{0,55}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,4},{0.211716,0},{0,131},{0.414668,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="NpcSellItem/backimage/Item3/Icon">
+          <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NpcSellItem/backimage/Item3/name">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFE71C tr:FFFFE71C bl:FFFFE71C br:FFFFE71C" />
+          <Property Name="BorderColour" Value="FF2E0F07" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,51},{0,5},{0,124},{0,25}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="NpcSellItem/backimage/Item3/money">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.4,0},{0.525655,0},{0.549606,0},{0.87111,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NpcSellItem/backimage/Item3/Price">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,73},{0,30},{0,120},{0,50}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="NpcSellItem/backimage/Item4">
+        <Property Name="Image" Value="set:MainControl image:SellItemBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,127},{0,55}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,127},{0,55}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,131},{0.211716,0},{0,258},{0.414668,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="NpcSellItem/backimage/Item4/Icon">
+          <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NpcSellItem/backimage/Item4/name">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFE71C tr:FFFFE71C bl:FFFFE71C br:FFFFE71C" />
+          <Property Name="BorderColour" Value="FF2E0F07" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,51},{0,5},{0,124},{0,25}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="NpcSellItem/backimage/Item4/money">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.4,0},{0.525655,0},{0.549606,0},{0.87111,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NpcSellItem/backimage/Item4/Price">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,73},{0,30},{0,120},{0,50}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="NpcSellItem/backimage/Item5">
+        <Property Name="Image" Value="set:MainControl image:SellItemBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,127},{0,55}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,127},{0,55}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,4},{0.40326,0},{0,131},{0.606212,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="NpcSellItem/backimage/Item5/Icon">
+          <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NpcSellItem/backimage/Item5/name">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFE71C tr:FFFFE71C bl:FFFFE71C br:FFFFE71C" />
+          <Property Name="BorderColour" Value="FF2E0F07" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,51},{0,5},{0,124},{0,25}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="NpcSellItem/backimage/Item5/money">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.4,0},{0.525655,0},{0.549606,0},{0.87111,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NpcSellItem/backimage/Item5/Price">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,73},{0,30},{0,120},{0,50}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="NpcSellItem/backimage/Item6">
+        <Property Name="Image" Value="set:MainControl image:SellItemBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,127},{0,55}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,127},{0,55}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,131},{0.40326,0},{0,258},{0.606212,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="NpcSellItem/backimage/Item6/Icon">
+          <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NpcSellItem/backimage/Item6/name">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFE71C tr:FFFFE71C bl:FFFFE71C br:FFFFE71C" />
+          <Property Name="BorderColour" Value="FF2E0F07" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,51},{0,5},{0,124},{0,25}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="NpcSellItem/backimage/Item6/money">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.4,0},{0.525655,0},{0.549606,0},{0.87111,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NpcSellItem/backimage/Item6/Price">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,73},{0,30},{0,120},{0,50}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="NpcSellItem/backimage/Item7">
+        <Property Name="Image" Value="set:MainControl image:SellItemBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,127},{0,55}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,127},{0,55}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,4},{0.594976,0},{0,131},{0.797928,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="NpcSellItem/backimage/Item7/Icon">
+          <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NpcSellItem/backimage/Item7/name">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFE71C tr:FFFFE71C bl:FFFFE71C br:FFFFE71C" />
+          <Property Name="BorderColour" Value="FF2E0F07" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,51},{0,5},{0,124},{0,25}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="NpcSellItem/backimage/Item7/money">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.4,0},{0.525655,0},{0.549606,0},{0.87111,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NpcSellItem/backimage/Item7/Price">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,73},{0,30},{0,120},{0,50}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="NpcSellItem/backimage/Item8">
+        <Property Name="Image" Value="set:MainControl image:SellItemBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,127},{0,55}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,127},{0,55}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,131},{0.593272,0},{0,258},{0.796224,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="NpcSellItem/backimage/Item8/Icon">
+          <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NpcSellItem/backimage/Item8/name">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFE71C tr:FFFFE71C bl:FFFFE71C br:FFFFE71C" />
+          <Property Name="BorderColour" Value="FF2E0F07" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,51},{0,5},{0,124},{0,25}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="NpcSellItem/backimage/Item8/money">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.4,0},{0.525655,0},{0.549606,0},{0.87111,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NpcSellItem/backimage/Item8/Price">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,73},{0,30},{0,120},{0,50}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="NpcSellItem/backimage/Item9">
+        <Property Name="Image" Value="set:MainControl image:SellItemBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,127},{0,55}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,127},{0,55}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,4},{0.787368,0},{0,131},{0.99032,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="NpcSellItem/backimage/Item9/Icon">
+          <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NpcSellItem/backimage/Item9/name">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFE71C tr:FFFFE71C bl:FFFFE71C br:FFFFE71C" />
+          <Property Name="BorderColour" Value="FF2E0F07" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,51},{0,5},{0,124},{0,25}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="NpcSellItem/backimage/Item9/money">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.4,0},{0.525655,0},{0.549606,0},{0.87111,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NpcSellItem/backimage/Item9/Price">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,73},{0,30},{0,120},{0,50}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="NpcSellItem/backimage/Item10">
+        <Property Name="Image" Value="set:MainControl image:SellItemBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,127},{0,55}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,127},{0,55}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,131},{0.787368,0},{0,258},{0.99032,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="NpcSellItem/backimage/Item10/Icon">
+          <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,51},{0,51}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NpcSellItem/backimage/Item10/name">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFE71C tr:FFFFE71C bl:FFFFE71C br:FFFFE71C" />
+          <Property Name="BorderColour" Value="FF2E0F07" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,51},{0,5},{0,124},{0,25}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="NpcSellItem/backimage/Item10/money">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.4,0},{0.525655,0},{0.549606,0},{0.87111,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="NpcSellItem/backimage/Item10/Price">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,73},{0,30},{0,120},{0,50}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="NpcSellItem/SelectedImage">
+        <Property Name="Image" Value="set:MainControl image:SellItemHover" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,5},{0,131},{0,60}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="NpcSellItem/UpPage">
+        <Property Name="Text" Value="上页" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,179.77},{0,275.817},{0.05,212.77},{0,299.817}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="NpcSellItem/NextPage">
+        <Property Name="Text" Value="下页" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,213.77},{0,275.817},{0.05,246.77},{0,299.817}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="NpcSellItem/tab1">
+      <Property Name="Text" Value="购买" />
+      <Property Name="UnifiedAreaRect" Value="{{0,23},{0,41},{0,76},{0,63}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="NpcSellItem/tab11">
+      <Property Name="Text" Value="回购" />
+      <Property Name="UnifiedAreaRect" Value="{{0,76},{0,41},{0,129},{0,63}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="NpcSellItem/sellDialog/MoneyBack">
+      <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0,44.32},{0,365.102},{0,124.32},{0,386.102}}" />
+      <Window Type="TaharezLook/StaticImage" Name="NpcSellItem/sellDialog/MoneyBack/Money">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,20},{0,20}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="NpcSellItem/money">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,22},{0,1},{0,77},{0,19}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/RadioButton" Name="NpcSellItem/sellDialog/1">
+      <Property Name="Text" Value="银两购买" />
+      <Property Name="UnifiedAreaRect" Value="{{0.430976,0},{0,338.817},{0.683501,0},{0.05168,338.578}}" />
+      <Property Name="NormalTextColour" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+    </Window>
+    <Window Type="TaharezLook/RadioButton" Name="NpcSellItem/sellDialog/2">
+      <Property Name="Text" Value="绑银购买" />
+      <Property Name="UnifiedAreaRect" Value="{{0.432323,0},{0.90516,0},{0.684848,0},{0.942015,0}}" />
+      <Property Name="NormalTextColour" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="NpcSellItem/sellDialog/Activedegree">
+      <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,111.07},{0,365.102},{0.05,193.07},{0,386.102}}" />
+      <Window Type="TaharezLook/StaticImage" Name="NpcSellItem/sellDialog/Activedegree/Icon">
+        <Property Name="Image" Value="set:MainControl image:TotalStar" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,2},{0.047619,0},{0,21},{0,20}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="NpcSellItem/sellDialog/Activedegree/Total">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,22},{0,1},{0,83},{0,19}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="NpcSellItem/LeftStar">
+      <Property Name="Text" Value="剩余星星" />
+      <Property Name="HorzExtent" Value="52" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,112.07},{0,339.817},{0.05,176.07},{0,359.817}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+  </Window>
+</GUILayout>

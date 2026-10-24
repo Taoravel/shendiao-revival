@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="ConvokeChat">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.29,0},{0.173289,0},{0.724992,0},{0.173289,359}}" />
+    <Window Type="TaharezLook/StaticImage" Name="ConvokeChat/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,214},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,214},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.491379,0},{0,12},{1.10632,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="ConvokeChat/Title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="江湖召集令" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="85" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.299065,0},{0,1},{0.817757,0},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ConvokeChat/Leave">
+      <Property Name="Text" Value="离开队列" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0.100575,0},{0.883008,0},{0.100606,72},{0.882767,24}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ConvokeChat/Close">
+      <Property Name="Text" Value="关闭" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0.666667,0},{0.883008,0},{0.615762,90},{0.882767,24}}" />
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="ConvokeChat/Bigback">
+      <Property Name="UnifiedAreaRect" Value="{{0,17},{0,45},{0,330},{0,313}}" />
+      <Window Type="TaharezLook/StaticText" Name="ConvokeChat/Apply">
+        <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0347102,0},{0.281906,46.1822},{0.526723,0},{0.281906,66.1822}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ConvokeChat/Info">
+        <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0409129,0},{0,8},{0.510561,0},{0,28}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="ConvokeChat/Back">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.00877128,0},{0.081389,3.15083},{0.995992,0},{0.281906,14.2216}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="ConvokeChat/Head1">
+          <Property Name="Image" Value="set:MainControl image:FriendHeadBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,63},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,63},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{-0.00121464,0},{0.00688011,0},{0.202669,0},{0.990424,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="ConvokeChat/Head1/Icon">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,58},{0,58}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ConvokeChat/Head2">
+          <Property Name="Image" Value="set:MainControl image:FriendHeadBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,63},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,63},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.196295,0},{0.00688011,0},{0.167052,72.0361},{0.990424,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="ConvokeChat/Head2/Icon">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,58},{0,58}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ConvokeChat/Head3">
+          <Property Name="Image" Value="set:MainControl image:FriendHeadBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,63},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,63},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.167052,69.9781},{0.0194728,0},{0.167052,132.978},{1.00302,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="ConvokeChat/Head3/Icon">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,58},{0,58}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ConvokeChat/Head4">
+          <Property Name="Image" Value="set:MainControl image:FriendHeadBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,63},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,63},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.167052,130.978},{0.0194728,0},{0.167052,193.978},{1.00302,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="ConvokeChat/Head4/Icon">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,58},{0,58}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ConvokeChat/Head5">
+          <Property Name="Image" Value="set:MainControl image:FriendHeadBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,63},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,63},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.167052,191.978},{0,1},{0.167052,254.978},{0,65}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="ConvokeChat/Head5/Icon">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,58},{0,58}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Button" Name="ConvokeChat/Leader">
+        <Property Name="Text" Value="我来当队长" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0169386,0},{0.281906,15.1822},{0.0169386,80},{0.281906,39.1822}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="ConvokeChat/Chat">
+        <Property Name="Text" Value="开启聊天" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.334718,123.17},{0.281906,15.3773},{0.334718,195.17},{0.281906,39.3773}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="ConvokeChat/Chat2">
+        <Property Name="Text" Value="开启聊天" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.334718,124.17},{0.482424,81.6035},{0.334718,196.17},{0.482424,105.604}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="ConvokeChat/Back1">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.00581361,0},{0.281906,69.1822},{0.993034,0},{0.482423,80.253}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="ConvokeChat/Head6">
+          <Property Name="Image" Value="set:MainControl image:FriendHeadBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,63},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,63},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0019328,0},{-0.00138244,0},{0.205816,0},{0.982162,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="ConvokeChat/Head6/Icon">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,58},{0,58}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ConvokeChat/Head7">
+          <Property Name="Image" Value="set:MainControl image:FriendHeadBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,63},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,63},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.201282,0},{-0.00138244,0},{0.199016,63.7002},{0.982162,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="ConvokeChat/Head7/Icon">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,58},{0,58}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ConvokeChat/Head8">
+          <Property Name="Image" Value="set:MainControl image:FriendHeadBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,63},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,63},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.199016,61.5282},{0.0112104,0},{0.199016,124.528},{0.994755,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="ConvokeChat/Head8/Icon">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,58},{0,58}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ConvokeChat/Head9">
+          <Property Name="Image" Value="set:MainControl image:FriendHeadBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,63},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,63},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.199016,122.528},{0.0112104,0},{0.199016,185.528},{0.994755,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="ConvokeChat/Head9/Icon">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,58},{0,58}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ConvokeChat/Head10">
+          <Property Name="Image" Value="set:MainControl image:FriendHeadBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,63},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,63},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.199016,183.528},{0,1},{0.199016,246.528},{0,65}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="ConvokeChat/Head10/Icon">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,58},{0,58}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Button" Name="ConvokeChat/Leader2">
+        <Property Name="Text" Value="我来当队长" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0201335,0},{0.482424,83.2105},{0.0201335,80},{0.482424,107.211}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ConvokeChat/Wait">
+        <Property Name="Text" Value="等待队伍中，请等待……" />
+        <Property Name="HorzExtent" Value="143" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.036595,0},{0.482424,108.211},{0.812953,0},{0.482424,128.21}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ConvokeChat/Info1">
+        <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.533861,0},{0,9},{0.987535,0},{0,29}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ConvokeChat/Info11">
+        <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.533861,0},{0.281906,46.1822},{0.987535,0},{0.281906,66.1822}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="ConvokeChat/Textback">
+      <Property Name="UnifiedAreaRect" Value="{{0,17},{0,45},{0,330},{0,313}}" />
+      <Window Type="TaharezLook/StaticText" Name="ConvokeChat/text">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0296882,0},{0.05,6.2266},{0.0820476,280.38},{0.05,241.227}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/RichEditbox" Name="ConvokeChat/text/Rich">
+          <Property Name="ReadOnly" Value="True" />
+          <Property Name="LineSpace" Value="1" />
+          <Property Name="BlinkCaret" Value="True" />
+          <Property Name="MaxTextLength" Value="2147483647" />
+          <Property Name="UnifiedAreaRect" Value="{{-0.0101221,0},{0,6},{0,301},{0,208}}" />
+          <Property Name="BackGroundEnable" Value="False" />
+          <Property Name="BlinkCaretTimeout" Value="0.5" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ConvokeChat/text/waitingtip">
+          <Property Name="Text" Value="等待玩家加入队伍，请稍候。。。" />
+          <Property Name="HorzExtent" Value="195" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{7.60394e-009,0},{0,213},{0.910991,0},{0,233}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ConvokeChat/timetext">
+      <Property Name="Text" Value="已等待时间：" />
+      <Property Name="HorzExtent" Value="78" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0545977,0},{0.821727,0},{0.287356,0},{0.814084,25}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ConvokeChat/timetext1">
+      <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.275862,0},{0.821727,0},{0.5,0},{0.814084,25}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="ConvokeChat/small">
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:component image:MiniHover" />
+      <Property Name="NormalImage" Value="set:component image:MiniNormal" />
+      <Property Name="PushedImage" Value="set:component image:MiniPushed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,24},{0,24}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,24},{0,24}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0.83046,0},{0.0362117,0},{0.945402,0},{0.0974929,0}}" />
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,13 @@
+{
+  "kind": "captured actual pre-fix run, not a new rerun",
+  "command": "python -B -X utf8 revival/verify_task_battle_recovery.py",
+  "production_source": "revival\\evidence\\reviews\\task-battle-terminal-recovery-20261024-r1\\source\\task_battle.py",
+  "production_sha256": "a58a5c6c430a054e72a763c67dbb280fc15a63ceadeba35edb70fb65795811e0",
+  "negative_case": "Existing current SQLite TEXT lease represented by str(original_int_epoch), before any acquire_lease replacement",
+  "actual_exit_code": 1,
+  "actual_failure": "AssertionError: Invalid terminal recovery accepted",
+  "post_fix_source": "revival\\evidence\\reviews\\task-battle-terminal-recovery-20261024-r2\\source\\task_battle.py",
+  "post_fix_sha256": "8a78b9da2ce1cd144035c0b176c5485ef561d75afaa0ddf1bb033bdb6740d3f8",
+  "post_fix_six_contract_groups_passed": true,
+  "live_database_opened": false
+}

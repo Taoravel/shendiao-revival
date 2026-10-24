@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/StaticImage" Name="InstanceInfo">
+    <Property Name="Image" Value="set:MainControl23 image:EnchouBack" />
+    <Property Name="FrameEnabled" Value="False" />
+    <Property Name="UnifiedMaxSize" Value="{{0,400},{0,250}}" />
+    <Property Name="UnifiedMinSize" Value="{{0,400},{0,250}}" />
+    <Property Name="ImageSizeEnable" Value="False" />
+    <Property Name="UnifiedAreaRect" Value="{{0.29375,0},{0.291667,0},{0.83375,0},{0.835001,0}}" />
+    <Property Name="BackgroundEnabled" Value="False" />
+    <Window Type="TaharezLook/StaticText" Name="InstanceInfo/title">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="恩仇录" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="51" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{-0.475,0},{0.004,0},{0.0499999,59},{0.05,12}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="InstanceInfo/Close">
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:component image:CloseButtonHover" />
+      <Property Name="NormalImage" Value="set:component image:CloseButtonNormal" />
+      <Property Name="PushedImage" Value="set:component image:CloseButtonPressed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,21},{0,19}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,21},{0,19}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0.915,0},{0.02,0},{0.9675,0},{0.096,0}}" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="InstanceInfo/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0325,0},{0.12,0},{0.965,0},{0.952,0}}" />
+      <Window Type="TaharezLook/RichEditbox" Name="InstanceInfo/traceinfo">
+        <Property Name="ReadOnly" Value="True" />
+        <Property Name="LineSpace" Value="1" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0428954,0},{0.05,29},{0.05,285},{0.05,186}}" />
+        <Property Name="BackGroundEnable" Value="False" />
+        <Property Name="BlinkCaretTimeout" Value="0.5" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="InstanceInfo/instancename">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.353887,0},{0.0384615,0},{0.05,224},{0.05,16}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Figure" Name="InstanceInfo/Figure">
+        <Property Name="UnifiedAreaRect" Value="{{0.286863,0},{0.0480769,0},{0.713137,0},{0.120192,0}}" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

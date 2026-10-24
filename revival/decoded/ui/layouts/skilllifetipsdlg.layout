@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/RichEditbox1" Name="LifeSkillTips">
+    <Property Name="Font" Value="simhei-12" />
+    <Property Name="ReadOnly" Value="True" />
+    <Property Name="LineSpace" Value="1" />
+    <Property Name="BlinkCaret" Value="True" />
+    <Property Name="AlwaysOnTop" Value="True" />
+    <Property Name="MaxTextLength" Value="1073741823" />
+    <Property Name="UnifiedAreaRect" Value="{{0,78.7775},{0,48.1916},{0,267.777},{0,143.192}}" />
+    <Property Name="BlinkCaretTimeout" Value="0.5" />
+    <Property Name="TextParsingEnabled" Value="False" />
+    <Window Type="TaharezLook/StaticText" Name="LifeSkillTips/name">
+      <Property Name="Font" Value="msyh-16" />
+      <Property Name="Text" Value="生活技能" />
+      <Property Name="HorzExtent" Value="64" />
+      <Property Name="VertExtent" Value="18.75" />
+      <Property Name="TextColours" Value="tl:FFFFC000 tr:FFFFC000 bl:FFFFC000 br:FFFFC000" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,11},{0,7},{0,107},{0,29}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/ItemCell" Name="LifeSkillTips/icon">
+      <Property Name="UnifiedAreaRect" Value="{{1,-72},{0,7},{1,-24},{0,55}}" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="LifeSkillTips/closebtn">
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:component image:CloseButtonHover" />
+      <Property Name="NormalImage" Value="set:component image:CloseButtonNormal" />
+      <Property Name="PushedImage" Value="set:component image:CloseButtonPressed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,21},{0,19}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,21},{0,19}}" />
+      <Property Name="UnifiedAreaRect" Value="{{1,-24},{0.0315788,0},{0.978836,0},{0,23}}" />
+    </Window>
+  </Window>
+</GUILayout>

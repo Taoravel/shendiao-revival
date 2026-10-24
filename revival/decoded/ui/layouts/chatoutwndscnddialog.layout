@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/RichEditbox" Name="ChatOutWndScndDlg/Box">
+    <Property Name="Font" Value="simsun" />
+    <Property Name="ReadOnly" Value="True" />
+    <Property Name="LineSpace" Value="1" />
+    <Property Name="BlinkCaret" Value="True" />
+    <Property Name="EnableSound" Value="False" />
+    <Property Name="MaxTextLength" Value="1073741823" />
+    <Property Name="UnifiedAreaRect" Value="{{0.0025,0},{-0.0116667,0},{1.0025,0},{0.988333,0}}" />
+    <Property Name="BlinkCaretTimeout" Value="0.5" />
+    <Window Type="TaharezLook/StaticText" Name="ChatOutWndScndDlg/ControlPanel">
+      <Property Name="TextColours" Value="tl:FFDCF6CE tr:FFDCF6CE bl:FF10BBD3 br:FF10BBD3" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{1,-121},{1,-31},{1,-24},{1,-7}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/ImageButton" Name="ChatOutWndScndDlg/ChatOutputBox/ControlPanel/Switch">
+        <Property Name="Tooltip" Value="点击切换到\n内置聊天窗" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl image:SwitchHover" />
+        <Property Name="NormalImage" Value="set:MainControl image:SwitchNormal" />
+        <Property Name="PushedImage" Value="set:MainControl image:SwitchPushed" />
+        <Property Name="DisabledImage" Value="set:MainControl image:SwitchEnablel" />
+        <Property Name="UnifiedMaxSize" Value="{{0,16},{0,16}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,16},{0,16}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,1},{1,-17},{-0.472499,62.8324},{0.958333,0}}" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="ChatOutWndScndDlg/ChatOutputBox/ControlPanel/SwitchSearch">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Tooltip" Value="点击查询\n聊天记录" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl image:FindHover" />
+        <Property Name="NormalImage" Value="set:MainControl image:FindNormal" />
+        <Property Name="PushedImage" Value="set:MainControl image:FindPushed" />
+        <Property Name="DisabledImage" Value="set:MainControl image:FindEnable" />
+        <Property Name="UnifiedMaxSize" Value="{{0,16},{0,16}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,16},{0,16}}" />
+        <Property Name="UnifiedAreaRect" Value="{{-0.472499,64.8324},{1,-17},{-1.1475,146.307},{1,-1}}" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="ChatOutWndScndDlg/ChatOutputBox/ControlPanel/Lock">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Tooltip" Value="点击切换为锁屏" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl image:LockHover" />
+        <Property Name="NormalImage" Value="set:MainControl image:LockNormal" />
+        <Property Name="PushedImage" Value="image:LockPushed" />
+        <Property Name="DisabledImage" Value="image:LockEnable" />
+        <Property Name="UnifiedMaxSize" Value="{{0,16},{0,16}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,16},{0,16}}" />
+        <Property Name="UnifiedAreaRect" Value="{{-1.1475,148.308},{1,-17},{-0.972499,147.333},{1.08333,-2.99992}}" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="ChatOutWndScndDlg/ChatOutputBox/ControlPanel/Chanel">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Tooltip" Value="选择聊天窗\n显示频道" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl image:ChoiceHover" />
+        <Property Name="NormalImage" Value="set:MainControl image:ChoiceNormal" />
+        <Property Name="PushedImage" Value="set:MainControl image:ChoicePushed" />
+        <Property Name="DisabledImage" Value="set:MainControl image:ChoiceEnable" />
+        <Property Name="UnifiedMaxSize" Value="{{0,16},{0,16}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,16},{0,16}}" />
+        <Property Name="UnifiedAreaRect" Value="{{-0.972499,149.332},{1,-17},{-0.818332,150.378},{1,-1}}" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="ChatOutWndScndDlg/ChatOutputBox/ControlPanel/UnLock">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Tooltip" Value="点击切换\n为滚屏" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl image:UnLockHover" />
+        <Property Name="NormalImage" Value="set:MainControl image:UnLockNormal" />
+        <Property Name="PushedImage" Value="image:UnLockPushed" />
+        <Property Name="DisabledImage" Value="image:UnlockEnable" />
+        <Property Name="UnifiedMaxSize" Value="{{0,16},{0,16}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,16},{0,16}}" />
+        <Property Name="UnifiedAreaRect" Value="{{-1.1475,148.308},{1,-17},{-1.43876,192.56},{1.61538,-15.7691}}" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="ChatOutWndScndDlg/ChatOutputBox/ControlPanel/Seprate">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Tooltip" Value="点击\n分栏/合并\n窗口" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl image:SeparateHover" />
+        <Property Name="NormalImage" Value="set:MainControl image:SeparateNormal" />
+        <Property Name="PushedImage" Value="set:MainControl image:SeparatePushed" />
+        <Property Name="DisabledImage" Value="set:MainControl image:SeparateEnable" />
+        <Property Name="UnifiedMaxSize" Value="{{0,16},{0,16}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,16},{0,16}}" />
+        <Property Name="UnifiedAreaRect" Value="{{-0.818332,152.378},{1,-17},{-0.651665,152.211},{1.08333,-2.99992}}" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

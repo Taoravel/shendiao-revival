@@ -1,0 +1,11 @@
+# Standards
+
+硬规则违背：0项。Fowler判断性问题：0项。
+
+范围仅manifest固定两验证文件的增量，不重审人物治疗生产实现。沿用完整已读code-review、codebase-design、tdd方法，重读AGENTS、ARCHITECTURE、DESIGN_AUTHORITY及治疗裁定/接线文档和checkpoint诊断JSON。按完整12项Fowler启发式逐项检查，未发现值得报告的实例。
+
+guards通过真实Peer/Owner入口；paid身份取自实际结算记录，没有手造已付凭据或替换dispatcher。伤害使用公开资源事务；battle/transfer占用是明确标注的受控fixture，不能解释为真实战斗或场景交接。SQL只核对明确的无资产/凭据变化要求。车夫修正使用公开save_checkpoint完整保存位置及版本，没有修改生产半checkpoint保护。
+
+四个原始字节SHA256与manifest全部匹配。静态核对现有guards七项和transport五项结果及诊断证据；本次未再次运行会改写JSON产物的main，遵守仅写本评审报告的范围。未改源码、共享、政策、其它证据，未操作真实库、客户端或部署。
+
+未验证：本评审独立重跑、真实战斗/交接占用过程、GUI及发布；不把fixture或既有结果文件当作这些事项完成的证据。

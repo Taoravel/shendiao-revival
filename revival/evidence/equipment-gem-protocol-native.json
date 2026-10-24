@@ -1,0 +1,91 @@
+{
+  "source_status": "client_verified",
+  "passed": 8,
+  "cases": [
+    {
+      "message": "add",
+      "type": "0xc0425",
+      "values": [
+        701,
+        0,
+        901
+      ],
+      "wire": "000002bd0000000385"
+    },
+    {
+      "message": "add",
+      "type": "0xc0425",
+      "values": [
+        701,
+        1,
+        901
+      ],
+      "wire": "000002bd0100000385"
+    },
+    {
+      "message": "remove",
+      "type": "0xc04ea",
+      "values": [
+        35001,
+        701,
+        0
+      ],
+      "wire": "000088b9000002bd00"
+    },
+    {
+      "message": "remove",
+      "type": "0xc04ea",
+      "values": [
+        35001,
+        701,
+        1
+      ],
+      "wire": "000088b9000002bd01"
+    },
+    {
+      "message": "remove",
+      "type": "0xc04ea",
+      "values": [
+        -1,
+        701,
+        0
+      ],
+      "wire": "ffffffff000002bd00"
+    },
+    {
+      "message": "remove",
+      "type": "0xc04ea",
+      "values": [
+        -1,
+        701,
+        1
+      ],
+      "wire": "ffffffff000002bd01"
+    },
+    {
+      "message": "combine",
+      "type": "0xc0424",
+      "values": [
+        901,
+        902
+      ],
+      "wire": "0000038500000386"
+    },
+    {
+      "message": "combine",
+      "type": "0xc0424",
+      "values": [
+        901,
+        901
+      ],
+      "wire": "0000038500000385"
+    }
+  ],
+  "oracle": "actual allocating original factories, original marshalling/unmarshalling and decoded field/type checks",
+  "scope": "wire only; actual send/selection semantic evidence is EQUIPMENT_GEMS_SOURCE_RESEARCH.md; same-key combine still needs owned quantity>=2",
+  "not_ordinary": "CRemoveGem c0533 belongs another187xxx UI; not registered here",
+  "source_modes": "only actual source bytes0/1 exercised; business source-container interpretation still needs precise native/owner mapping",
+  "production_route_changed": false,
+  "live_server_changed": false,
+  "native_gui_verified": false
+}

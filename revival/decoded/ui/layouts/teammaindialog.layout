@@ -1,0 +1,2001 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="TeamMainDialog">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.015,0},{0.2225,0},{0.03,754},{0.406531,284}}" />
+    <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/FomationText">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="当前阵型" />
+      <Property Name="HorzExtent" Value="52" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,22},{0,44},{0,81},{0,64}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="DefaultBorderEnable" Value="True" />
+      <Property Name="DefaultColourEnable" Value="True" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/CurrentFormation">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="TextColours" Value="tl:FF77E8F9 tr:FF77E8F9 bl:FF77E8F9 br:FF77E8F9" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0,78},{0,43},{0,165},{0,63}}" />
+    </Window>
+    <Window Type="TaharezLook/LittleButton" Name="TeamMainDialog/FormationChange">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="阵型" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0,168},{0,42},{0,221},{0,64}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/LevelText">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="等级需求" />
+      <Property Name="HorzExtent" Value="52" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,492},{0,44},{0,549},{0,64}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="DefaultBorderEnable" Value="True" />
+      <Property Name="DefaultColourEnable" Value="True" />
+    </Window>
+    <Window Type="TaharezLook/LittleButton" Name="TeamMainDialog/LevelChange">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="确定" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,690},{0,43},{0,743},{0,63}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="TeamMainDialog/SetLeader">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="升为队长" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,16},{0,330},{0,102},{0,354}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="TeamMainDialog/CallBack">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="召唤队员" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,107},{0,330},{0,193},{0,354}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="TeamMainDialog/ExpelMember">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="请离队员" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,289},{0,330},{0,375},{0,354}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="TeamMainDialog/AbsentTeam">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="暂离队伍" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,198},{0,330},{0,284},{0,354}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="TeamMainDialog/QuitTeam">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="退出队伍" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,380},{0,330},{0,466},{0,354}}" />
+    </Window>
+    <Window Type="DefaultWindow" Name="TeamMainDialog/ApplyWindow">
+      <Property Name="UnifiedAreaRect" Value="{{0,592},{0,61},{0,745},{0,342}}" />
+      <Window Type="TaharezLook/LittleButton" Name="TeamMainDialog/ApplyWindow/Refuse">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="拒绝" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="UnifiedAreaRect" Value="{{0.405229,0},{0.914591,0},{0.379657,48},{0.989324,0}}" />
+        <Property Name="NormalTextColour" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="TeamMainDialog/ApplyWindow/Clear">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="清空" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="UnifiedAreaRect" Value="{{0.379657,49},{0.914591,0},{0.367157,95},{0.989324,0}}" />
+        <Property Name="NormalTextColour" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Figure" Name="TeamMainDialog/ApplyWindow/Title">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0915033,0},{0.0213523,0},{0,131},{-0.0254545,28}}" />
+        <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyText">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="申请者列表 " />
+          <Property Name="HorzExtent" Value="68" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.025641,0},{-0.0666667,0},{0.00260942,77},{0,19}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCase" Name="TeamMainDialog/ApplyBack">
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,21},{0,154},{0,255}}" />
+        <Window Type="TaharezLook/ScrollablePane" Name="TeamMainDialog/ApplyWindow/ApplyList">
+          <Property Name="ContentArea" Value="l:0 t:-6 r:131 b:672" />
+          <Property Name="HorzStepSize" Value="0.1" />
+          <Property Name="VertStepSize" Value="0.1" />
+          <Property Name="HorzOverlapSize" Value="0.01" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0196078,0},{0.00854701,0},{1.11112,0},{0.00756057,227}}" />
+          <Property Name="VertOverlapSize" Value="0.01" />
+          <Property Name="HorzScrollPosition" Value="0" />
+          <Property Name="VertScrollPosition" Value="0" />
+          <AutoWindow NameSuffix="__auto_container__">
+            <Property Name="ContentArea" Value="l:0 t:-6 r:131 b:672" />
+            <Property Name="ChildExtentsArea" Value="l:0 t:-6 r:131 b:672" />
+            <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar1">
+              <Property Name="Image" Value="set:MainControl14 image:TeamMarkLong" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,129},{0,48}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,129},{0,48}}" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,1},{-0.0265487,0},{0,130},{-0.0050732,43}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/name1">
+                <Property Name="Text" Value="申请列表申请列表" />
+                <Property Name="HorzExtent" Value="105" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.162791,0},{0.145833,0},{-0.00999999,134},{0.103953,20}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/level1">
+                <Property Name="Text" Value="化境20级" />
+                <Property Name="HorzExtent" Value="56" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="UnifiedAreaRect" Value="{{-0.01,62},{-0.00263324,25},{-0.01,130},{-0.00263324,43}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/School1">
+                <Property Name="Text" Value="百花谷" />
+                <Property Name="HorzExtent" Value="40" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="UnifiedAreaRect" Value="{{0.0387597,0},{-0.00263324,25},{0.193798,37},{-0.00263324,43}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar1/selected">
+                <Property Name="Image" Value="set:MainControl14 image:TeamChooseCase" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,2},{0,131},{0,45}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar1/GM">
+                <Property Name="Image" Value="set:MainControl25 image:GoBack" />
+                <Property Name="Tooltip" Value="老玩家回归标识，与其一起五绝、\n练功区战斗或副本时有5%经验加成。" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+                <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+                <Property Name="ImageSizeEnable" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0.125,0},{0.147287,0},{0.520833,0}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar2">
+              <Property Name="Image" Value="set:MainControl14 image:TeamMarkLong" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,129},{0,48}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,129},{0,48}}" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,1},{-0.00507321,40},{0,130},{-0.00507321,88}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/name2">
+                <Property Name="Text" Value="申请列表申请列表" />
+                <Property Name="HorzExtent" Value="105" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.162791,0},{0,7},{0.16279,112},{0,25}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/level2">
+                <Property Name="Text" Value="化境129级" />
+                <Property Name="HorzExtent" Value="64" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="UnifiedAreaRect" Value="{{-0.01,62},{0,26},{-0.01,130},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/School2">
+                <Property Name="Text" Value="白驼山庄" />
+                <Property Name="HorzExtent" Value="52" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="UnifiedAreaRect" Value="{{0.0387597,0},{0,26},{0.0155034,62},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar2/selected">
+                <Property Name="Image" Value="set:MainControl14 image:TeamChooseCase" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,2},{0,131},{0,45}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar2/GM">
+                <Property Name="Image" Value="set:MainControl25 image:GoBack" />
+                <Property Name="Tooltip" Value="老玩家回归标识，与其一起五绝、\n练功区战斗或副本时有5%经验加成。" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+                <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+                <Property Name="ImageSizeEnable" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,19},{0,24}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar3">
+              <Property Name="Image" Value="set:MainControl14 image:TeamMarkLong" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,129},{0,48}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,129},{0,48}}" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,2},{-0.00507321,85},{0,131},{-0.00507321,133}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/name3">
+                <Property Name="Text" Value="申请列表申请列表" />
+                <Property Name="HorzExtent" Value="105" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.162791,0},{0,7},{0.16279,112},{0,25}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/level3">
+                <Property Name="Text" Value="100级" />
+                <Property Name="HorzExtent" Value="38" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="UnifiedAreaRect" Value="{{-0.01,62},{0,26},{-0.01,130},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/School3">
+                <Property Name="Text" Value="白驼山庄" />
+                <Property Name="HorzExtent" Value="52" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="UnifiedAreaRect" Value="{{0.0387597,0},{0,26},{0.0155034,62},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar3/selected">
+                <Property Name="Image" Value="set:MainControl14 image:TeamChooseCase" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,2},{0,131},{0,45}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar3/GM">
+                <Property Name="Image" Value="set:MainControl25 image:GoBack" />
+                <Property Name="Tooltip" Value="老玩家回归标识，与其一起五绝、\n练功区战斗或副本时有5%经验加成。" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+                <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+                <Property Name="ClippedByParent" Value="False" />
+                <Property Name="ImageSizeEnable" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,19},{0,24}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar4">
+              <Property Name="Image" Value="set:MainControl14 image:TeamMarkLong" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,129},{0,48}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,129},{0,48}}" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,2},{-0.00507321,130},{0,131},{-0.00507321,178}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/name4">
+                <Property Name="Text" Value="申请列表申请列表" />
+                <Property Name="HorzExtent" Value="105" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.162791,0},{0,7},{0.16279,111},{0,25}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/level4">
+                <Property Name="Text" Value="化境1级" />
+                <Property Name="HorzExtent" Value="48" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="UnifiedAreaRect" Value="{{-0.01,62},{0,26},{-0.01,130},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/School4">
+                <Property Name="Text" Value="白驼山庄" />
+                <Property Name="HorzExtent" Value="52" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="UnifiedAreaRect" Value="{{0.0387597,0},{0,26},{0.0155034,62},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar4/selected">
+                <Property Name="Image" Value="set:MainControl14 image:TeamChooseCase" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,2},{0,131},{0,45}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar4/GM">
+                <Property Name="Image" Value="set:MainControl25 image:GoBack" />
+                <Property Name="Tooltip" Value="老玩家回归标识，与其一起五绝、\n练功区战斗或副本时有5%经验加成。" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+                <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+                <Property Name="ImageSizeEnable" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,19},{0,24}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar5">
+              <Property Name="Image" Value="set:MainControl14 image:TeamMarkLong" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,129},{0,48}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,129},{0,48}}" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,2},{-0.00507321,175},{0,131},{-0.00507321,223}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/name5">
+                <Property Name="Text" Value="申请列表申请列表" />
+                <Property Name="HorzExtent" Value="105" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0.162791,0},{0,7},{0.16279,112},{0,25}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/level5">
+                <Property Name="Text" Value="1级" />
+                <Property Name="HorzExtent" Value="22" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="UnifiedAreaRect" Value="{{-0.01,62},{0,26},{-0.01,130},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/School5">
+                <Property Name="Text" Value="百花谷" />
+                <Property Name="HorzExtent" Value="40" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="HorzFormatting" Value="HorzCentred" />
+                <Property Name="UnifiedAreaRect" Value="{{0.0387597,0},{0,26},{0.0155034,62},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar5/selected">
+                <Property Name="Image" Value="set:MainControl14 image:TeamChooseCase" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,2},{0,131},{0,45}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar5/GM">
+                <Property Name="Image" Value="set:MainControl25 image:GoBack" />
+                <Property Name="Tooltip" Value="老玩家回归标识，与其一起五绝、\n练功区战斗或副本时有5%经验加成。" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+                <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+                <Property Name="ImageSizeEnable" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,19},{0,24}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar6">
+              <Property Name="Image" Value="set:MainControl14 image:TeamMarkLong" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,129},{0,48}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,129},{0,48}}" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,2},{-0.00507321,220},{0,131},{-0.00507321,268}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/name6">
+                <Property Name="Text" Value="申请列表申请列表" />
+                <Property Name="HorzExtent" Value="105" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,25},{0,6},{0,137},{0,24}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/level6">
+                <Property Name="Text" Value="155级" />
+                <Property Name="HorzExtent" Value="38" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,85},{0,26},{0,123},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/School6">
+                <Property Name="Text" Value="白驼山庄" />
+                <Property Name="HorzExtent" Value="52" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,25},{0,26},{0,84},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar6/selected">
+                <Property Name="Image" Value="set:MainControl14 image:TeamChooseCase" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,2},{0,131},{0,45}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar6/GM">
+                <Property Name="Image" Value="set:MainControl25 image:GoBack" />
+                <Property Name="Tooltip" Value="老玩家回归标识，与其一起五绝、\n烧双或珍兽时有5%经验加成。" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+                <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+                <Property Name="ImageSizeEnable" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,19},{0,24}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar7">
+              <Property Name="Image" Value="set:MainControl14 image:TeamMarkLong" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,129},{0,48}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,129},{0,48}}" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,2},{-0.00507321,265},{0,131},{-0.00507321,313}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/name7">
+                <Property Name="Text" Value="申请列表申请列表" />
+                <Property Name="HorzExtent" Value="105" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,25},{0,6},{0,137},{0,24}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/level7">
+                <Property Name="Text" Value="155级" />
+                <Property Name="HorzExtent" Value="38" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,85},{0,26},{0,123},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/School7">
+                <Property Name="Text" Value="白驼山庄" />
+                <Property Name="HorzExtent" Value="52" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,25},{0,26},{0,84},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar7/selected">
+                <Property Name="Image" Value="set:MainControl14 image:TeamChooseCase" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,2},{0,131},{0,45}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar7/GM">
+                <Property Name="Image" Value="set:MainControl25 image:GoBack" />
+                <Property Name="Tooltip" Value="老玩家回归标识，与其一起五绝、\n烧双或珍兽时有5%经验加成。" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+                <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+                <Property Name="ImageSizeEnable" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,19},{0,24}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar8">
+              <Property Name="Image" Value="set:MainControl14 image:TeamMarkLong" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,129},{0,48}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,129},{0,48}}" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,2},{-0.00507321,310},{0,131},{-0.00507321,358}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/name8">
+                <Property Name="Text" Value="申请列表申请列表" />
+                <Property Name="HorzExtent" Value="105" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,25},{0,6},{0,137},{0,24}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/level8">
+                <Property Name="Text" Value="155级" />
+                <Property Name="HorzExtent" Value="38" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,85},{0,26},{0,123},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/School8">
+                <Property Name="Text" Value="白驼山庄" />
+                <Property Name="HorzExtent" Value="52" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,25},{0,26},{0,84},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar8/selected">
+                <Property Name="Image" Value="set:MainControl14 image:TeamChooseCase" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,2},{0,131},{0,45}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar8/GM">
+                <Property Name="Image" Value="set:MainControl25 image:GoBack" />
+                <Property Name="Tooltip" Value="老玩家回归标识，与其一起五绝、\n烧双或珍兽时有5%经验加成。" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+                <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+                <Property Name="ImageSizeEnable" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,19},{0,24}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar9">
+              <Property Name="Image" Value="set:MainControl14 image:TeamMarkLong" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,129},{0,48}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,129},{0,48}}" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,2},{-0.00507321,355},{0,131},{-0.00507321,403}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/name9">
+                <Property Name="Text" Value="申请列表申请列表" />
+                <Property Name="HorzExtent" Value="105" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,25},{0,6},{0,137},{0,24}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/level9">
+                <Property Name="Text" Value="155级" />
+                <Property Name="HorzExtent" Value="38" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,85},{0,26},{0,123},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/School9">
+                <Property Name="Text" Value="白驼山庄" />
+                <Property Name="HorzExtent" Value="52" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,25},{0,26},{0,84},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar9/selected">
+                <Property Name="Image" Value="set:MainControl14 image:TeamChooseCase" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,2},{0,131},{0,45}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar9/GM">
+                <Property Name="Image" Value="set:MainControl25 image:GoBack" />
+                <Property Name="Tooltip" Value="老玩家回归标识，与其一起五绝、\n烧双或珍兽时有5%经验加成。" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+                <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+                <Property Name="ImageSizeEnable" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,19},{0,24}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar10">
+              <Property Name="Image" Value="set:MainControl14 image:TeamMarkLong" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,129},{0,48}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,129},{0,48}}" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,2},{-0.00507321,400},{0,131},{-0.00507321,448}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/name10">
+                <Property Name="Text" Value="申请列表申请列表" />
+                <Property Name="HorzExtent" Value="105" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,25},{0,6},{0,137},{0,24}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/level10">
+                <Property Name="Text" Value="155级" />
+                <Property Name="HorzExtent" Value="38" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,85},{0,26},{0,123},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/School10">
+                <Property Name="Text" Value="白驼山庄" />
+                <Property Name="HorzExtent" Value="52" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,25},{0,26},{0,84},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar10/selected">
+                <Property Name="Image" Value="set:MainControl14 image:TeamChooseCase" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,2},{0,131},{0,45}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar10/GM">
+                <Property Name="Image" Value="set:MainControl25 image:GoBack" />
+                <Property Name="Tooltip" Value="老玩家回归标识，与其一起五绝、\n烧双或珍兽时有5%经验加成。" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+                <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+                <Property Name="ImageSizeEnable" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,19},{0,24}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar11">
+              <Property Name="Image" Value="set:MainControl14 image:TeamMarkLong" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,129},{0,48}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,129},{0,48}}" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,2},{-0.00507321,445},{0,131},{-0.00507321,493}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/name11">
+                <Property Name="Text" Value="申请列表申请列表" />
+                <Property Name="HorzExtent" Value="105" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,25},{0,6},{0,137},{0,24}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/level11">
+                <Property Name="Text" Value="155级" />
+                <Property Name="HorzExtent" Value="38" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,85},{0,26},{0,123},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/School11">
+                <Property Name="Text" Value="白驼山庄" />
+                <Property Name="HorzExtent" Value="52" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,25},{0,26},{0,84},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar11/selected">
+                <Property Name="Image" Value="set:MainControl14 image:TeamChooseCase" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,2},{0,131},{0,45}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar11/GM">
+                <Property Name="Image" Value="set:MainControl25 image:GoBack" />
+                <Property Name="Tooltip" Value="老玩家回归标识，与其一起五绝、\n烧双或珍兽时有5%经验加成。" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+                <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+                <Property Name="ImageSizeEnable" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,19},{0,24}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar12">
+              <Property Name="Image" Value="set:MainControl14 image:TeamMarkLong" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,129},{0,48}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,129},{0,48}}" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,2},{-0.00507321,490},{0,131},{-0.00507321,538}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/name12">
+                <Property Name="Text" Value="申请列表申请列表" />
+                <Property Name="HorzExtent" Value="105" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,25},{0,6},{0,137},{0,24}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/level12">
+                <Property Name="Text" Value="155级" />
+                <Property Name="HorzExtent" Value="38" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,85},{0,26},{0,123},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/School12">
+                <Property Name="Text" Value="白驼山庄" />
+                <Property Name="HorzExtent" Value="52" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,25},{0,26},{0,84},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar12/selected">
+                <Property Name="Image" Value="set:MainControl14 image:TeamChooseCase" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,2},{0,131},{0,45}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar12/GM">
+                <Property Name="Image" Value="set:MainControl25 image:GoBack" />
+                <Property Name="Tooltip" Value="老玩家回归标识，与其一起五绝、\n烧双或珍兽时有5%经验加成。" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+                <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+                <Property Name="ImageSizeEnable" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,19},{0,24}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar13">
+              <Property Name="Image" Value="set:MainControl14 image:TeamMarkLong" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,129},{0,48}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,129},{0,48}}" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,2},{-0.00507321,535},{0,131},{-0.00507321,583}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/name13">
+                <Property Name="Text" Value="申请列表申请列表" />
+                <Property Name="HorzExtent" Value="105" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,25},{0,6},{0,136},{0,24}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/level13">
+                <Property Name="Text" Value="155级" />
+                <Property Name="HorzExtent" Value="38" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,85},{0,26},{0,123},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/School13">
+                <Property Name="Text" Value="白驼山庄" />
+                <Property Name="HorzExtent" Value="52" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,25},{0,26},{0,84},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar13/selected">
+                <Property Name="Image" Value="set:MainControl14 image:TeamChooseCase" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,2},{0,131},{0,45}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar13/GM">
+                <Property Name="Image" Value="set:MainControl25 image:GoBack" />
+                <Property Name="Tooltip" Value="老玩家回归标识，与其一起五绝、\n烧双或珍兽时有5%经验加成。" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+                <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+                <Property Name="ImageSizeEnable" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,19},{0,24}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar14">
+              <Property Name="Image" Value="set:MainControl14 image:TeamMarkLong" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,129},{0,48}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,129},{0,48}}" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,2},{-0.00507321,580},{0,131},{-0.00507321,628}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/name14">
+                <Property Name="Text" Value="申请列表申请列表" />
+                <Property Name="HorzExtent" Value="105" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,25},{0,6},{0,137},{0,24}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/level14">
+                <Property Name="Text" Value="155级" />
+                <Property Name="HorzExtent" Value="38" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,85},{0,26},{0,123},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/School14">
+                <Property Name="Text" Value="白驼山庄" />
+                <Property Name="HorzExtent" Value="52" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,25},{0,26},{0,84},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar14/selected">
+                <Property Name="Image" Value="set:MainControl14 image:TeamChooseCase" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,2},{0,131},{0,45}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar14/GM">
+                <Property Name="Image" Value="set:MainControl25 image:GoBack" />
+                <Property Name="Tooltip" Value="老玩家回归标识，与其一起五绝、\n烧双或珍兽时有5%经验加成。" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+                <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+                <Property Name="ImageSizeEnable" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,19},{0,24}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar15">
+              <Property Name="Image" Value="set:MainControl14 image:TeamMarkLong" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,129},{0,48}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,129},{0,48}}" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,2},{-0.00507321,625},{0,131},{-0.00507321,673}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/name15">
+                <Property Name="Text" Value="申请列表申请列表" />
+                <Property Name="HorzExtent" Value="105" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,25},{0,6},{0,131},{0,24}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/level15">
+                <Property Name="Text" Value="155级" />
+                <Property Name="HorzExtent" Value="38" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,85},{0,26},{0,123},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/School15">
+                <Property Name="Text" Value="白驼山庄" />
+                <Property Name="HorzExtent" Value="52" />
+                <Property Name="VertExtent" Value="15.6189" />
+                <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+                <Property Name="BorderColour" Value="FF003454" />
+                <Property Name="BorderEnable" Value="True" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,25},{0,26},{0,84},{0,44}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar15/selected">
+                <Property Name="Image" Value="set:MainControl14 image:TeamChooseCase" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,2},{0,131},{0,47}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+              <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/ApplyWindow/ApplyList/Back/bar15/GM">
+                <Property Name="Image" Value="set:MainControl25 image:GoBack" />
+                <Property Name="Tooltip" Value="老玩家回归标识，与其一起五绝、\n烧双或珍兽时有5%经验加成。" />
+                <Property Name="FrameEnabled" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+                <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+                <Property Name="ImageSizeEnable" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,5},{0,19},{0,24}}" />
+                <Property Name="BackgroundEnabled" Value="False" />
+              </Window>
+            </Window>
+          </AutoWindow>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="TeamMainDialog/ApplyWindow/Accept">
+        <Property Name="Text" Value="接  受" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0130719,0},{0.914591,0},{0.398693,0},{0.989324,0}}" />
+        <Property Name="NormalTextColour" Value="FFF9C96D" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Spinner" Name="TeamMainDialog/MinLevel">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="StepSize" Value="1" />
+      <Property Name="CurrentValue" Value="0" />
+      <Property Name="MaximumValue" Value="32767" />
+      <Property Name="MinimumValue" Value="-32768" />
+      <Property Name="UnifiedAreaRect" Value="{{0,549},{0,43},{0,611},{0,63}}" />
+    </Window>
+    <Window Type="TaharezLook/Spinner" Name="TeamMainDialog/MaxLevel">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="StepSize" Value="1" />
+      <Property Name="CurrentValue" Value="0" />
+      <Property Name="MaximumValue" Value="32767" />
+      <Property Name="MinimumValue" Value="-32768" />
+      <Property Name="UnifiedAreaRect" Value="{{0,628},{0,43},{0,687},{0,63}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/titleback">
+      <Property Name="Disabled" Value="True" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="CentreAligned" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="VertFormatting" Value="CentreAligned" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,150},{0,11},{0,458},{0,38}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/titleback/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="队伍列表" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,185},{0,1},{0,314},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="TeamMainDialog/TeamBack">
+      <Property Name="UnifiedAreaRect" Value="{{0.0248042,0},{0.170051,0},{0.768929,0},{0.177277,258}}" />
+      <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member2/Model/StaticBack">
+        <Property Name="Image" Value="set:MainControl14 image:TeamBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,113},{0,192}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,113},{0,192}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,86},{0.05,-10},{0.05,199},{0.05,182}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member2/Model/StaticBack1">
+          <Property Name="Image" Value="set:MainControl14 image:TeamBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,113},{0,192}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,113},{0,192}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,116},{0.05,3},{0.05,229},{0.05,195}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="TeamMainDialog/Member2">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0,117},{0,3},{0,229},{0,261}}" />
+        <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member2/Model">
+          <Property Name="Image" Value="set:MainControl14 image:TeamRoleHover" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,113},{0,192}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,113},{0,192}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,0},{0,112},{0,192}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member2/Model/Status">
+            <Property Name="Image" Value="set:MainControl14 image:TeamFigure" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,107},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,107},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,25},{0,172},{0,97},{0,191}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member2/Model/Status/Offline">
+              <Property Name="Text" Value="在线" />
+              <Property Name="HorzExtent" Value="26" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF9D9D9D br:FF9D9D9D" />
+              <Property Name="BorderColour" Value="FF1B1B1C" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0.20187,0},{0.0526316,0},{0.3,21.9},{0,19}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="VerticalAlignment" Value="Centre" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member2/Model/selected">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,1},{0,112},{0,190}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member1/Model/selected/Num2">
+              <Property Name="Font" Value="msyh-16" />
+              <Property Name="Text">2
+
+
+
+
+</Property>
+              <Property Name="Tooltip" Value="阵法中的2号位" />
+              <Property Name="HorzExtent" Value="10" />
+              <Property Name="VertExtent" Value="18.75" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,4},{0,171},{0,28},{0,191}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member2/Model/Shadow">
+            <Property Name="Image" Value="set:MainControl14 image:TeamShadow" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,82},{0,20}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,82},{0,20}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,16},{0,140},{0,98},{0,160}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member2/Model/Word">
+            <Property Name="TextColours" Value="tl:FFD84A5C tr:FFD84A5C bl:FFD84A5C br:FFD84A5C" />
+            <Property Name="BorderColour" Value="FFFFFFFF" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="WordWrapCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,11},{0,50},{0,118},{0,151}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member2/name">
+          <Property Name="Text" Value="百战骑士团十二号" />
+          <Property Name="HorzExtent" Value="104" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{-0.0178571,0},{0,192},{-0.018025,112},{0,212}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member2/level">
+          <Property Name="Text" Value="22级" />
+          <Property Name="HorzExtent" Value="30" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{-0.0178571,0},{0,215},{-0.0202323,57},{0,235}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member2/school">
+          <Property Name="Text" Value="古墓派" />
+          <Property Name="HorzExtent" Value="40" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{-0.0178571,0},{0,237},{-0.0543171,75},{0,257}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member2/describe">
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF65F127 tr:FF65F127 bl:FF65F127 br:FF65F127" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{1,-5},{0,25}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member1/Tips2">
+          <Property Name="Image" Value="set:MainControl14 image:TeamMark" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,114},{0,2}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,114},{0,2}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,6},{0.825581,0},{0.05,120},{0.798317,9}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member1/Tips11">
+          <Property Name="Image" Value="set:MainControl14 image:TeamMark" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,114},{0,2}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,114},{0,2}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,9},{0.910853,0},{0,123},{0.894867,6}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member1/Model/StaicBack">
+        <Property Name="Image" Value="set:MainControl14 image:TeamBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,113},{0,192}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,113},{0,192}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.00526316,0},{0.05,-10},{0.05,87},{0.05,182}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="DefaultWindow" Name="TeamMainDialog/Member1">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,3},{0,116},{0,261}}" />
+        <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member1/name">
+          <Property Name="Text" Value="百战骑士团十一号" />
+          <Property Name="HorzExtent" Value="104" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF65F127 tr:FF65F127 bl:FF65F127 br:FF65F127" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,192},{0,113},{0,212}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member1/level">
+          <Property Name="Text" Value="222级" />
+          <Property Name="HorzExtent" Value="38" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF65F127 tr:FF65F127 bl:FF65F127 br:FF65F127" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,215},{0.00162939,57},{0,235}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member1/school">
+          <Property Name="Text" Value="白驼山庄" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF65F127 tr:FF65F127 bl:FF65F127 br:FF65F127" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0357143,0},{0,237},{0.00162939,75},{0,257}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member1/describe">
+          <Property Name="Text" Value="西湖水道一层" />
+          <Property Name="HorzExtent" Value="78" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF65F127 tr:FF65F127 bl:FF65F127 br:FF65F127" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.169643,0},{0,5},{0.910714,0},{0,25}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member1/Logo">
+          <Property Name="Tooltip" Value="队长" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,14},{0,14}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,14},{0,14}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0446429,0},{0.0271318,0},{0.169643,0},{0.0813954,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member1/Tips">
+          <Property Name="Image" Value="set:MainControl14 image:TeamMark" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,114},{0,2}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,114},{0,2}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0535714,0},{0.825581,0},{1.07143,0},{0.833333,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member1/Tips1">
+          <Property Name="Image" Value="set:MainControl14 image:TeamMark" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,114},{0,2}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,114},{0,2}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0625,0},{0.910853,0},{1.08036,0},{0.918605,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member1/Model">
+          <Property Name="Image" Value="set:MainControl14 image:TeamRoleHover" />
+          <Property Name="Tooltip" Value="队长加成：队长在练功区、珍兽、五绝、劫富济贫等玩法中\n获得经验、金钱、宠物经验均额外增加10%。" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,113},{0,192}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,113},{0,192}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{-0.00892857,0},{0,0},{0,112},{0,192}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member1/Model/Icon">
+            <Property Name="Image" Value="set:MainControl14 image:TeamLeader" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,14},{0,14}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,14},{0,14}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,7},{0,8},{0,21},{0,22}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member1/Model/selected">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,1},{0,112},{0,190}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member1/Model/selected/Num1">
+              <Property Name="Font" Value="msyh-16" />
+              <Property Name="Text">1
+
+
+
+</Property>
+              <Property Name="Tooltip" Value="阵法中的1号位" />
+              <Property Name="HorzExtent" Value="10" />
+              <Property Name="VertExtent" Value="18.75" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.0454545,0},{0.904762,0},{0.190909,0},{0.89,22.74}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member1/Model/Shadow">
+            <Property Name="Image" Value="set:MainControl14 image:TeamShadow" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,82},{0,20}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,82},{0,20}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.252336,0},{0,140},{1.01869,0},{0,160}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member1/Model/Word">
+            <Property Name="TextColours" Value="tl:FFD84A5C tr:FFD84A5C bl:FFD84A5C br:FFD84A5C" />
+            <Property Name="BorderColour" Value="FFFFFFFF" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="WordWrapCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.102804,0},{0.265957,0},{1.1028,0},{0.792554,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member1/Model/StaicBack1">
+        <Property Name="Image" Value="set:MainControl14 image:TeamBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,113},{0,192}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,113},{0,192}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.401754,0},{0.1,-23},{0.1,285},{0.1,169}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member1/Model/StaicBack11">
+        <Property Name="Image" Value="set:MainControl14 image:TeamBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,113},{0,192}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,113},{0,192}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.6,0},{0.15,-36},{0.15,369},{0.15,156}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member1/Model/StaicBack12">
+        <Property Name="Image" Value="set:MainControl14 image:TeamBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,113},{0,192}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,113},{0,192}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,426},{0.0114943,0},{0.05,539},{0.05,182}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="DefaultWindow" Name="TeamMainDialog/Member5">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0,456},{0,3},{0,568},{0,261}}" />
+        <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member5/Model">
+          <Property Name="Image" Value="set:MainControl14 image:TeamRoleHover" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,113},{0,192}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,113},{0,192}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,0},{0,112},{0,192}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member5/Model/Shadow">
+            <Property Name="Image" Value="set:MainControl14 image:TeamShadow" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,82},{0,20}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,82},{0,20}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,16},{0,140},{0,98},{0,160}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member5/Model/selected">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,1},{0,112},{0,190}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member1/Model/selected/Num5">
+              <Property Name="Font" Value="msyh-16" />
+              <Property Name="Text">5
+
+
+
+</Property>
+              <Property Name="Tooltip" Value="阵法中的5号位" />
+              <Property Name="HorzExtent" Value="10" />
+              <Property Name="VertExtent" Value="18.75" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,4},{0.904762,0},{0,28},{0.904762,20}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member5/Model/Status">
+            <Property Name="Image" Value="set:MainControl14 image:TeamFigure" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,107},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,107},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,25},{0,172},{0,132},{0,191}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member5/Model/Status/Offline">
+              <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF9D9D9D br:FF9D9D9D" />
+              <Property Name="BorderColour" Value="FF1B1B1C" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0.20187,0},{0,0},{0.3,21.9},{0,18}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="VerticalAlignment" Value="Centre" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member5/Model/Word">
+            <Property Name="TextColours" Value="tl:FFD84A5C tr:FFD84A5C bl:FFD84A5C br:FFD84A5C" />
+            <Property Name="BorderColour" Value="FFFFFFFF" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="WordWrapCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,11},{0,50},{0,118},{0,151}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member5/name">
+          <Property Name="Text" Value="百战骑士团十五号" />
+          <Property Name="HorzExtent" Value="104" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{-0.00892857,0},{0,192},{0.991071,0},{0,212}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member5/level">
+          <Property Name="Text" Value="66级" />
+          <Property Name="HorzExtent" Value="30" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{-0.00892857,0},{0,215},{-0.0112198,57},{0,235}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member5/school">
+          <Property Name="Text" Value="西域密宗" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{-0.00892857,0},{0,237},{-0.0453046,75},{0,257}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member5/describe">
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF65F127 tr:FF65F127 bl:FF65F127 br:FF65F127" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{1,-5},{0,25}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member1/Tips5">
+          <Property Name="Image" Value="set:MainControl14 image:TeamMark" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,114},{0,2}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,114},{0,2}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.2,-3},{0.910853,0},{0.2,111},{0.894867,6}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member1/Tips14">
+          <Property Name="Image" Value="set:MainControl14 image:TeamMark" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,114},{0,2}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,114},{0,2}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,6},{0.825581,0},{0,120},{0.804481,7}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="TeamMainDialog/Member4">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0,343},{0,3},{0,455},{0,261}}" />
+        <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member4/Model">
+          <Property Name="Image" Value="set:MainControl14 image:TeamRoleHover" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,113},{0,192}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,113},{0,192}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,0},{0,112},{0,192}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member4/Model/Shadow">
+            <Property Name="Image" Value="set:MainControl14 image:TeamShadow" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,82},{0,20}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,82},{0,20}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,16},{0,140},{0,98},{0,160}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member4/Model/selected">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0265487,0},{0.0104167,0},{0,113},{0,191}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member1/Model/selected/Num4">
+              <Property Name="Font" Value="msyh-16" />
+              <Property Name="Text">4
+
+
+
+</Property>
+              <Property Name="Tooltip" Value="阵法中的4号位" />
+              <Property Name="HorzExtent" Value="10" />
+              <Property Name="VertExtent" Value="18.75" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,4},{0.904762,0},{0,28},{0.904762,20}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member4/Model/Status">
+            <Property Name="Image" Value="set:MainControl14 image:TeamFigure" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,107},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,107},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,25},{0,172},{0,132},{0,191}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member4/Model/Status/Offline">
+              <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF9D9D9D br:FF9D9D9D" />
+              <Property Name="BorderColour" Value="FF1B1B1C" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0.20187,0},{0,0},{0.3,21.9},{0,18}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="VerticalAlignment" Value="Centre" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member4/Model/Word">
+            <Property Name="TextColours" Value="tl:FFD84A5C tr:FFD84A5C bl:FFD84A5C br:FFD84A5C" />
+            <Property Name="BorderColour" Value="FFFFFFFF" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="WordWrapCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,11},{0,50},{0,118},{0,151}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member4/name">
+          <Property Name="Text" Value="百战骑士团十四号" />
+          <Property Name="HorzExtent" Value="104" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,192},{0,111},{0,212}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member4/level">
+          <Property Name="Text" Value="55级" />
+          <Property Name="HorzExtent" Value="30" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,215},{-0.00220733,56},{0,235}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member4/school">
+          <Property Name="Text" Value="桃花岛" />
+          <Property Name="HorzExtent" Value="39" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,237},{-0.0362921,74},{0,257}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member4/describe">
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF65F127 tr:FF65F127 bl:FF65F127 br:FF65F127" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{1,-5},{0,25}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member1/Tips4">
+          <Property Name="Image" Value="set:MainControl14 image:TeamMark" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,114},{0,2}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,114},{0,2}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.15,2},{0.910853,0},{0.15,116},{0.894867,6}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member1/Tips13">
+          <Property Name="Image" Value="set:MainControl14 image:TeamMark" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,114},{0,2}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,114},{0,2}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,7},{0.825581,0},{0,121},{0.804481,7}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="TeamMainDialog/Member3">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0,230},{0,3},{0,342},{0,261}}" />
+        <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member3/Model">
+          <Property Name="Image" Value="set:MainControl14 image:TeamRoleHover" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,113},{0,192}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,113},{0,192}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,0},{0,112},{0,192}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member3/Model/Shadow">
+            <Property Name="Image" Value="set:MainControl14 image:TeamShadow" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,82},{0,20}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,82},{0,20}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,16},{0,140},{0,98},{0,160}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member3/Model/selected">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,1},{0,112},{0,190}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member1/Model/selected/Num3">
+              <Property Name="Font" Value="msyh-16" />
+              <Property Name="Text">3
+
+
+
+</Property>
+              <Property Name="Tooltip" Value="阵法中的3号位" />
+              <Property Name="HorzExtent" Value="10" />
+              <Property Name="VertExtent" Value="18.75" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,4},{0.904762,0},{0,28},{0.904762,20}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member3/Model/Status">
+            <Property Name="Image" Value="set:MainControl14 image:TeamFigure" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,107},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,107},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,25},{0,172},{0,132},{0,191}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member3/Model/Status/Offline">
+              <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF9D9D9D br:FF9D9D9D" />
+              <Property Name="BorderColour" Value="FF1B1B1C" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0.20187,0},{0,0},{0.3,21.9},{0,18}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="VerticalAlignment" Value="Centre" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member3/Model/Word">
+            <Property Name="TextColours" Value="tl:FFD84A5C tr:FFD84A5C bl:FFD84A5C br:FFD84A5C" />
+            <Property Name="BorderColour" Value="FFFFFFFF" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="WordWrapCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,11},{0,50},{0,118},{0,151}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member3/name">
+          <Property Name="Text" Value="百战骑士团十三号" />
+          <Property Name="HorzExtent" Value="104" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{-0.0267857,0},{0,192},{-0.0270374,112},{0,212}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member3/level">
+          <Property Name="Text" Value="22级" />
+          <Property Name="HorzExtent" Value="30" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{-0.0267857,0},{0,215},{-0.0276197,57},{0,235}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member3/school">
+          <Property Name="Text" Value="古墓派" />
+          <Property Name="HorzExtent" Value="40" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{-0.0267857,0},{0,237},{-0.0588233,75},{0,257}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Member3/describe">
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF65F127 tr:FF65F127 bl:FF65F127 br:FF65F127" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{1,-5},{0,24}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member1/Tips3">
+          <Property Name="Image" Value="set:MainControl14 image:TeamMark" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,114},{0,2}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,114},{0,2}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,7},{0.910853,0},{0,121},{0.894867,6}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Member1/Tips12">
+          <Property Name="Image" Value="set:MainControl14 image:TeamMark" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,114},{0,2}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,114},{0,2}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,7},{0.825581,0},{0,121},{0.804481,7}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Text1">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="级至" />
+      <Property Name="HorzExtent" Value="26" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,597},{0,44},{0,627},{0,64}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="DefaultBorderEnable" Value="True" />
+      <Property Name="DefaultColourEnable" Value="True" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/Text2">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="级" />
+      <Property Name="HorzExtent" Value="14" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,671},{0,44},{0,690},{0,64}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="DefaultBorderEnable" Value="True" />
+      <Property Name="DefaultColourEnable" Value="True" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="TeamMainDialog/Image">
+      <Property Name="Image" Value="set:MainControl14 image:TeamLeader" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,14},{0,14}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,14},{0,14}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.292428,0},{0.116751,0},{0.310705,0},{0.152284,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="TeamMainDialog/DismissTeam">
+      <Property Name="Text" Value="解散队伍" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,471},{0,330},{0,557},{0,354}}" />
+    </Window>
+    <Window Type="TaharezLook/LittleButton" Name="TeamMainDialog/Fast">
+      <Property Name="Text" Value="江湖召集令" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.527415,0},{0,42},{0.639687,0},{0.162437,0}}" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="TeamMainDialog/Hug">
+      <Property Name="Text" Value="相依相偎" />
+      <Property Name="Tooltip" Value="选择异性角色，点击按钮满足条件即可拥抱哦！" />
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:MainControl20 image:SchoolHover" />
+      <Property Name="NormalImage" Value="set:MainControl20 image:SchoolSelected" />
+      <Property Name="PushedImage" Value="set:MainControl20 image:SchoolPushed" />
+      <Property Name="DisabledImage" Value="set:MainControl20 image:SchoolDisbaled" />
+      <Property Name="UnifiedMaxSize" Value="{{0,74},{0,22}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,74},{0,22}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0.314621,0},{0.106599,0},{0.411227,0},{0.162437,0}}" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="TeamMainDialog/Ride">
+      <Property Name="Text" Value="同乘邀请" />
+      <Property Name="Tooltip" Value="队长骑乘双人坐骑，可以邀请2号位的角色进行同乘" />
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:MainControl20 image:SchoolHover" />
+      <Property Name="NormalImage" Value="set:MainControl20 image:SchoolSelected" />
+      <Property Name="PushedImage" Value="set:MainControl20 image:SchoolPushed" />
+      <Property Name="DisabledImage" Value="set:MainControl20 image:SchoolDisbaled" />
+      <Property Name="UnifiedMaxSize" Value="{{0,74},{0,22}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,74},{0,22}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0.421671,0},{0.106599,0},{0.518277,0},{0.162437,0}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/jiacheng">
+      <Property Name="Text" Value="组队额外经验加成：" />
+      <Property Name="Tooltip" Value="在练功区、五绝令、降服珍兽、五兽王\n等战斗和活动中享受该加成" />
+      <Property Name="HorzExtent" Value="117" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFFF00 tr:FFFFFF00 bl:FFFFFF00 br:FFFFFF00" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.04047,0},{0.906091,0},{0.189295,0},{0.956853,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/jiacheng1">
+      <Property Name="Tooltip" Value="在练功区、五绝令、降服珍兽、五兽王\n等战斗和活动中享受该加成" />
+      <Property Name="TextColours" Value="tl:FFFFFF00 tr:FFFFFF00 bl:FFFFFF00 br:FFFFFF00" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.197128,0},{0.906091,0},{0.259791,0},{0.898478,23}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/Checkbox" Name="TeamMainDialog/duizhang">
+      <Property Name="Tooltip" Value="队长享受10%的额外经验加成" />
+      <Property Name="UnifiedAreaRect" Value="{{0.349869,0},{0.906091,0},{0.373368,0},{0.890863,26}}" />
+    </Window>
+    <Window Type="TaharezLook/Checkbox" Name="TeamMainDialog/chengyuan">
+      <Property Name="Tooltip" Value="队伍中每拥有一名治疗门派（全真教、大理段氏）\n成员或一名封印门派（桃花岛、百花谷、绝情谷）\n成员，全队额外经验加成5%，最高加成10%\n珍兽任务中，每一名成员可提供额外加成10%，最高加成20%" />
+      <Property Name="UnifiedAreaRect" Value="{{0.490862,0},{0.906091,0},{0.51436,0},{0.956853,0}}" />
+    </Window>
+    <Window Type="TaharezLook/Checkbox" Name="TeamMainDialog/jiebai">
+      <Property Name="Tooltip" Value="队伍中每拥有一名与我结拜的好友，我与该好友\n额外经验分别加成1.25%，最高加成5%" />
+      <Property Name="UnifiedAreaRect" Value="{{0.734987,0},{0.906091,0},{0.759791,0},{0.992386,-14}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/duizhangText">
+      <Property Name="Text" Value="       我是队长" />
+      <Property Name="Tooltip" Value="队长享受10%的额外经验加成" />
+      <Property Name="HorzExtent" Value="73" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.345953,0},{0.911168,0},{0.449086,0},{0.956853,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/chengyuanText">
+      <Property Name="Text" Value="       拥有治疗/封印门派成员" />
+      <Property Name="Tooltip" Value="队伍中每拥有一名治疗门派（全真教、大理段氏）\n成员或一名封印门派（桃花岛、百花谷、绝情谷）\n成员，全队额外经验加成5%，最高加成10%\n珍兽任务中，每一名成员可提供额外加成10%，最高加成20%" />
+      <Property Name="HorzExtent" Value="159" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.486945,0},{0.911168,0},{0.711488,0},{0.911168,18}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TeamMainDialog/jiebaiText">
+      <Property Name="Text" Value="       拥有与我结拜的好友" />
+      <Property Name="Tooltip" Value="队伍中每拥有一名与我结拜的好友，我与该好友\n额外经验分别加成1.25%，最高加成5%" />
+      <Property Name="HorzExtent" Value="139" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.732376,0},{0.911168,0},{0.926893,0},{0.911168,18}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+  </Window>
+</GUILayout>

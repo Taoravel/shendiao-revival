@@ -1,0 +1,90 @@
+{
+  "source_status": "client_verified",
+  "cases": [
+    {
+      "count": 0,
+      "added": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "record_bytes": 235,
+      "attr_type": "0xc32c9",
+      "body": "0000000100000007060000078a0000000000000794000000000000079e00000000000007a800000000000007b200000000000007bc00000000"
+    },
+    {
+      "count": 1,
+      "added": [
+        50,
+        0,
+        0,
+        0,
+        0
+      ],
+      "record_bytes": 235,
+      "attr_type": "0xc32c9",
+      "body": "0000000100000007060000078a3f80000000000794424800000000079e00000000000007a800000000000007b200000000000007bc00000000"
+    },
+    {
+      "count": 1,
+      "added": [
+        0,
+        0,
+        0,
+        0,
+        50
+      ],
+      "record_bytes": 235,
+      "attr_type": "0xc32c9",
+      "body": "0000000100000007060000078a3f80000000000794000000000000079e00000000000007a800000000000007b200000000000007bc42480000"
+    },
+    {
+      "count": 2,
+      "added": [
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "record_bytes": 235,
+      "attr_type": "0xc32c9",
+      "body": "0000000100000007060000078a400000000000079441a000000000079e41a00000000007a841a00000000007b241a00000000007bc41a00000"
+    },
+    {
+      "count": 5,
+      "added": [
+        250,
+        0,
+        0,
+        0,
+        0
+      ],
+      "record_bytes": 235,
+      "attr_type": "0xc32c9",
+      "body": "0000000100000007060000078a40a0000000000794437a00000000079e00000000000007a800000000000007b200000000000007bc00000000"
+    },
+    {
+      "count": 0,
+      "added": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "record_bytes": 235,
+      "attr_type": "0xc32c9",
+      "body": "0000000100000007060000078a0000000000000794000000000000079e00000000000007a800000000000007b200000000000007bc00000000"
+    }
+  ],
+  "initial": "original Pet last field+134 map<int,float32>; original10c301c..10c317c six actual map lookups/ftol/store ->1930/1940..1980",
+  "refresh": "distinct attr::SRefreshPetData ctor ec30c0/typec32c9, marshalec3250/decoderec32f0; BE32 column1+BE32 pet key+compact float map; whole113daa0 map handler until before UI listeners writes six absolute attrs including explicit zeros",
+  "oracle": "original constructor/scalar/map codecs, balanced-tree traversal, original10c2300 lookups and original x87 conversion; only current pet lookup/owned attr slots and host allocation terminals",
+  "limits": [
+    "pet::SRefreshPetData c07d5 alone does not update these extras",
+    "no original server random algorithm/GUI or gameplay state changed"
+  ]
+}

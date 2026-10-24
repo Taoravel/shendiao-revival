@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="PetRulesDlg">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.2775,0},{0.284039,0},{0.2775,323},{0.7039,0}}" />
+    <Window Type="TaharezLook/StaticImage" Name="PetRulesDlg/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,214},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,214},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.504644,0},{0,12},{1.16718,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="PetRulesDlg/Title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="合成规则" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.3,0},{0,1},{0.697196,0},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="PetRulesDlg/back">
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,44},{0,303},{0,209}}" />
+      <Window Type="TaharezLook/StaticText" Name="PetRulesDlg/Text">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text">1. 合成完毕后主宠可能学会宠物之星上的0~2个技能，也有可能因为走火入魔遗忘掉自己的1个技能。
+2. 宠物之星技能个数越多或者品质（颜色）越高，主宠学会技能的概率越高。
+3. 放入保护符，并选中主宠一个技能，可以保证此技能在下一次合成宠物之星时绝对不会被遗忘。
+4. 放入幸运符，并选中宠物之星上记载的一个技能，可以提升主宠学会这个技能的概率。</Property>
+        <Property Name="HorzExtent" Value="268" />
+        <Property Name="VertExtent" Value="156.189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0366667,0},{0.05,-4.1},{0.05,266.902},{0.05,155.9}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="PetRulesDlg/OK">
+      <Property Name="Text" Value="我知道了" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.365945,0},{0,212},{0.365945,72},{0,236}}" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+  </Window>
+</GUILayout>

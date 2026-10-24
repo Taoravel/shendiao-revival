@@ -1,0 +1,9 @@
+# 当前频道延迟投递：固定候选收口
+
+2026-10-24。所属社交窗口上一turn已因额度限制明确failed/idle，非仍在运行；root接续其固定交付，不重启该聊天、不引入组织新代码。非Git，固定点/两份diff及排除的guild.initial见candidate.json、since-approved-scope.diff、since-36632.diff、workspace-excluded.diff。
+
+Standards-root与Spec-root两个独立轴均0项发现。两baseline、四candidate及规范hash匹配。范围为已审RoleSnapshot scope基础上Delivery keyword-only scene_key及SocialEndpoint当前范围/原过滤/异步共享hook；四位置参数和派生dataclass兼容，None旧路径，带key缺hook或拒绝不fallback。候选social_runtime的7fd13b5e…明确排除workspace组织initial。
+
+root从准确candidate/source优先、已发布治疗release/source次优先独立执行新8组和既有scope6组均绿。110个项目Python Module来源逐项确在上述两个目录，没有工作区未审组织依赖。四candidate/两baseline每项后hash一致，输出仅evidence/root-social-scene-delivery-20261024，结果social-scene-delivery-root-candidate-verification.json，不覆盖原作者results。规范hash与当前版本仍一致。
+
+已核验范围为真实收件人endpoint/mailbox、临时SQLite黑名单与旧epoch过滤及记录型共享hook/连接Adapter。未由本小片证明GameRuntime fanout、ticket/pin、连接drain/queue满/close/换图最终围栏；shared仍main单写，准确完整candidate另验。未启动服务、访问真人库或GUI/battle，也未部署本候选。当前服务恢复仍是旧已审治疗发布，不由此审查视为新版上线。

@@ -1,0 +1,185 @@
+{
+  "passed": [
+    {
+      "name": "CCreateFamily",
+      "type": "0xc55f1",
+      "serializer": "0xe44d60",
+      "bytes": 34
+    },
+    {
+      "name": "CResponseFamilyApply",
+      "type": "0xc55fe",
+      "serializer": "0xe454f0",
+      "bytes": 12
+    },
+    {
+      "name": "CChangeMemberPosition",
+      "type": "0xc5604",
+      "serializer": "0xe44ce0",
+      "bytes": 12
+    },
+    {
+      "name": "CAppointFactionMember",
+      "type": "0xc5621",
+      "serializer": "0xe44b70",
+      "bytes": 12
+    },
+    {
+      "name": "CExpelFamilyMember",
+      "type": "0xc55ff",
+      "serializer": "0xe44fd0",
+      "bytes": 8
+    },
+    {
+      "name": "CRequestFamilyInfo",
+      "type": "0xc5657",
+      "serializer": "0xe45350",
+      "bytes": 4
+    },
+    {
+      "name": "CJoinOtherFaction",
+      "type": "0xc5612",
+      "serializer": "0xe45160",
+      "bytes": 4
+    },
+    {
+      "name": "CResponseCreateFaction",
+      "type": "0xc5614",
+      "serializer": "0xe45390",
+      "bytes": 4
+    },
+    {
+      "name": "CResponseFactionApply",
+      "type": "0xc561e",
+      "serializer": "0xe454c0",
+      "bytes": 8
+    },
+    {
+      "name": "CLeaveFamily",
+      "type": "0xc5601",
+      "serializer": "0xd6d380",
+      "bytes": 0
+    },
+    {
+      "name": "CLeaveFaction",
+      "type": "0xc5615",
+      "serializer": "0xd6d290",
+      "bytes": 0
+    },
+    {
+      "name": "CRequestFactionData",
+      "type": "0xc560e",
+      "serializer": "0x837310",
+      "bytes": 0
+    },
+    {
+      "name": "FamilyData-known-fields",
+      "serializer": "0xed7340",
+      "bytes": 68
+    },
+    {
+      "name": "SUpdateFamilyData-known-fields",
+      "type": "0xc55f3",
+      "serializer": "0xed7cf0",
+      "bytes": 68
+    },
+    {
+      "name": "FamilyMemberData-leader",
+      "serializer": "0xe45d20",
+      "bytes": 76
+    },
+    {
+      "name": "SUpdateMemberData-leader",
+      "type": "0xc55fa",
+      "serializer": "0xd74260",
+      "bytes": 76
+    },
+    {
+      "name": "FamilyMemberData-deputy",
+      "serializer": "0xe45d20",
+      "bytes": 38
+    },
+    {
+      "name": "SUpdateMemberData-deputy",
+      "type": "0xc55fa",
+      "serializer": "0xd74260",
+      "bytes": 38
+    },
+    {
+      "name": "SAddFamilyMember-0",
+      "type": "0xc55f9",
+      "serializer": "0xe8c120",
+      "bytes": 1
+    },
+    {
+      "name": "SAddFamilyMember-1",
+      "type": "0xc55f9",
+      "serializer": "0xe8c120",
+      "bytes": 77
+    },
+    {
+      "name": "SAddFamilyMember-2",
+      "type": "0xc55f9",
+      "serializer": "0xe8c120",
+      "bytes": 115
+    },
+    {
+      "name": "SRemoveFamilyMember",
+      "type": "0xc55fc",
+      "serializer": "0xe464c0",
+      "bytes": 8
+    },
+    {
+      "name": "SExpelFamilyMember",
+      "type": "0xc564d",
+      "serializer": "0xe46000",
+      "bytes": 8
+    },
+    {
+      "name": "SLeaveFamily",
+      "type": "0xc5602",
+      "serializer": "0xd71de0",
+      "bytes": 0
+    },
+    {
+      "name": "SLeaveFaction",
+      "type": "0xc560c",
+      "serializer": "0xd71d00",
+      "bytes": 0
+    },
+    {
+      "name": "CJoinOtherFamily-two",
+      "type": "0xc55f7",
+      "serializer": "0xe6a4f0",
+      "bytes": 13
+    },
+    {
+      "name": "FamilyApplyData",
+      "serializer": "0xe8b3e0",
+      "bytes": 32
+    },
+    {
+      "name": "SAddFamilyApply-one",
+      "type": "0xc55fb",
+      "serializer": "0xe8b5e0",
+      "bytes": 33
+    },
+    {
+      "name": "SRemoveFamilyApply-one",
+      "type": "0xc55fd",
+      "serializer": "0xe6a980",
+      "bytes": 9
+    }
+  ],
+  "scope": "wire layouts only; raw enum/NPC-context semantics not bound",
+  "family_view": "name/level/funds/founder/purpose plus popularity pair and construction pair traced to original UI; identity/course vector retain defaults; source family management projection wired, GUI pending",
+  "family_roster": "position +3c -> cached +34; level +38 -> cached +30 -> original level formatter; prestige pair +30/+34 -> cached +28/+2c -> column 2; offline text +40 -> cached +38 -> column 3, empty=online; metadata/spending semantics unbound; source management roster wired, GUI pending",
+  "original_roster_lookup_passed": [
+    "leader 2 from cached roster",
+    "deputy 1 from cached roster",
+    "missing leader returns null",
+    "empty roster returns null"
+  ],
+  "live_client_verified": false,
+  "image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791"
+}

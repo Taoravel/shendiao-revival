@@ -1,0 +1,71 @@
+--- a/world_transfer_storage.py
++++ b/world_transfer_storage.py
+@@ -322,6 +322,68 @@
+         _decode_location(value['location']))
+ 
+ 
++def _check_receipt_epoch_types(receipt):
++    epochs=(receipt.frozen.reservation.offer.source.login_epoch,
++            receipt.frozen.source.login_epoch,receipt.location.login_epoch)
++    if any(not ((type(epoch) is int and epoch>0)
++            or (type(epoch) is str and 1<=len(epoch)<=128)) for epoch in epochs):
++        raise ValueError('Historical receipt requires exact integer or string epochs')
++
++
++def _read_committed_receipt(db,role_id,transfer_id):
++    if type(transfer_id) is not str or not 1<=len(transfer_id)<=128:
++        raise ValueError('Exact committed transfer identity required')
++    row=db.execute('SELECT role_id,epoch,stage,source,target,receipt,offer FROM world_handoffs '
++        'WHERE transfer_id=?',(transfer_id,)).fetchone()
++    if not row or row[0]!=role_id or row[2] not in ('committed','ready'):
++        raise ValueError('Committed transfer receipt not found')
++    try:
++        receipt=_decode_receipt(json.loads(row[5]))
++        offer,location=_receipt_scope(role_id,row[1],receipt)
++        _check_receipt_epoch_types(receipt)
++    except (ValueError,TypeError,KeyError,AttributeError) as error:
++        raise ValueError('Malformed committed transfer receipt') from error
++    if (offer.transfer_id!=transfer_id
++            or row[3]!=json.dumps(asdict(offer.source),sort_keys=True)
++            or row[4]!=json.dumps(offer.target_position)
++            or row[5]!=json.dumps(asdict(receipt),sort_keys=True)
++            or row[6]!=json.dumps(asdict(offer),sort_keys=True)):
++        raise ValueError('Committed transfer journal identity mismatch')
++    _instance_address(offer.source.address)
++    _instance_address(location.address)
++    return receipt
++
++
++def load_committed_transfer_transaction(db,account_id,role_id,current_epoch,expected_receipt):
++    """Pure SELECT confirmation of history plus the CURRENT full checkpoint.
++
++    Caller owns an already-open transaction and the current valid role lease.
++    The exact historical receipt retains its original epoch, even after a new
++    lease. Both its journal and current entry provenance must be committed or
++    ready. Legacy/unknown instance bindings are refused, never inferred.
++    Later walking or another committed instance is returned unchanged; this
++    neither replays the old transfer nor authorizes task/reward completion.
++    It does not connect, begin, commit, recover, cancel or perform any writes.
++    """
++    _owner(db,account_id,role_id,current_epoch)
++    if type(expected_receipt) is not TransferCommit or type(expected_receipt.location) is not Location:
++        raise ValueError('Exact historical transfer receipt required')
++    offer,location=_receipt_scope(role_id,expected_receipt.location.login_epoch,expected_receipt)
++    _check_receipt_epoch_types(expected_receipt)
++    historical=_read_committed_receipt(db,role_id,offer.transfer_id)
++    if json.dumps(asdict(historical),sort_keys=True)!=json.dumps(asdict(expected_receipt),sort_keys=True):
++        raise ValueError('Historical transfer receipt conflict')
++    current=_instance_checkpoint(db,role_id,current_epoch)
++    if current is None or current.entry_version<location.version:
++        raise ValueError('Committed transfer requires known current instance provenance')
++    entry=(historical if current.transfer_id==offer.transfer_id else
++           _read_committed_receipt(db,role_id,current.transfer_id))
++    if (entry.location.address!=current.address or entry.location.version!=current.entry_version
++            or (current.version==current.entry_version and current.position!=entry.location.position)):
++        raise ValueError('Current checkpoint and committed entry provenance disagree')
++    return historical,current
++
++
+ def prepare_transfer_recovery_transaction(db,account_id,role_id,new_epoch,transfer_id=None):
+     """Read the FINAL old-lease outcome under a newly acquired current lease.
+ 

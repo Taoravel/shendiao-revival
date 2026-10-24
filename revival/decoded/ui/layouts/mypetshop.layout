@@ -1,0 +1,507 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="MyPetShop">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.115,0},{0.0391667,0},{0.115,616},{0.0541667,551}}" />
+    <Window Type="TaharezLook/StaticImage" Name="MyPetShop/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.233766,0},{0,12},{0.733766,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="MyPetShop/Title/Name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="我的商店" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.298701,0},{0,1},{0.707792,0},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="MyPetShop/LeaveShop">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="离开商店" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,280},{0,513},{0,352},{0,537}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="MyPetShop/OtherShop">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="管理其他商店" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,172},{0,513},{0,270},{0,537}}" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="MyPetShop/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,45},{0,596},{0,513}}" />
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="MyPetShop/Back/Top">
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{0,573},{0,173}}" />
+        <Window Type="TaharezLook/Button" Name="MyPetShop/TakeOutMoney1">
+          <Property Name="Text" Value="修   改" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0,254},{0,140},{0,322},{0,164}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyPetShop/operateMoney">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0,66},{0,77},{0,187},{0,95}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyPetShop/packMoney">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0,66},{0,100},{0,187},{0,118}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyPetShop/shopName1">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="商店名称" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003679" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,8},{0,6},{0,66},{0,26}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyPetShop/shopName">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0,66},{0,6},{0,187},{0,24}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MyPetShop/changeNameBtn">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="更改名称" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0,210},{0,4},{0,282},{0,28}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyPetShop/openTime1">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="创店日期" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003679" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,8},{0,54},{0,66},{0,74}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyPetShop/openTime">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,66},{0,54},{0,187},{0,74}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyPetShop/CofCIndex1">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="商业指数" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+          <Property Name="BorderColour" Value="FF220B01" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,8},{0,123},{0,66},{0,143}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyPetShop/CofCIndex">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="105%" />
+          <Property Name="HorzExtent" Value="39" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,66},{0,123},{0,108},{0,143}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyPetShop/fareRate1">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="经营税率" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+          <Property Name="BorderColour" Value="FF220B01" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,8},{0,146},{0,66},{0,166}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyPetShop/fareRate">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="200%" />
+          <Property Name="HorzExtent" Value="39" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,65},{0,146},{0,108},{0,166}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyPetShop/operateMoney1">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="运营资金" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+          <Property Name="BorderColour" Value="FF220B01" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,8},{0,77},{0,66},{0,97}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyPetShop/packMoney1">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="银         两" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+          <Property Name="BorderColour" Value="FF220B01" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,8},{0,100},{0,66},{0,120}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MyPetShop/TakeOutMoney">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="取出资金" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0,210},{0,72},{0,282},{0,96}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MyPetShop/InvestBtn">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="投入资金" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0,210},{0,96},{0,282},{0,120}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MyPetShop/changeInfoBtn">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="更改商店介绍" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0,383},{0,139},{0,481},{0,163}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyPetShop/maintainMoney1">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="每日维护费用" />
+          <Property Name="HorzExtent" Value="78" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+          <Property Name="BorderColour" Value="FF220B01" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,111},{0,123},{0,189},{0,143}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyPetShop/maintainMoney">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,197},{0,121},{0,259},{0,141}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/LinkText" Name="MyPetShop/counterMoney1">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="每小时运营费用" />
+          <Property Name="UnifiedAreaRect" Value="{{0,110},{0,146},{0,206},{0,166}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyPetShop/counterMoney">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Tooltip" Value="基础运营费*商业指数*运营中柜台数，\n每小时扣除一次。" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,205},{0,143},{0,251},{0,163}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="MyPetShop/Back/Top/Infoback">
+          <Property Name="UnifiedAreaRect" Value="{{0,295},{0,6},{0,562},{0,134}}" />
+          <Window Type="TaharezLook/MultiLineEditbox" Name="MyPetShop/shopInfo">
+            <Property Name="Text">
+</Property>
+            <Property Name="MaxTextLength" Value="1073741823" />
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,4},{0,258},{0,123}}" />
+            <Property Name="BackGroundEnable" Value="False" />
+            <Property Name="TextParsingEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyPetShop/shopName11">
+          <Property Name="Text" Value="商店类型" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003679" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,-19},{0.05,21},{0.05,39},{0.05,41}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Combobox" Name="MyPetShop/Back/Top/Combobox">
+          <Property Name="ReadOnly" Value="True" />
+          <Property Name="UnifiedAreaRect" Value="{{0.116197,0},{0.166667,0},{0.329225,0},{1.05952,0}}" />
+          <Property Name="MaxEditTextLength" Value="2147483647" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MyPetShop/ChangeType">
+          <Property Name="Text" Value="更改类型" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,182},{0.05,19},{0.05,254},{0.05,43}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="MyPetShop/Back/Bottom">
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,175},{5.81425e-005,573},{-6.56545e-005,465}}" />
+        <Window Type="TaharezLook/Button" Name="MyPetShop/PutIntoShop">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="&lt;&lt;放入" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0,232},{0,158},{0,300},{0,182}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MyPetShop/TakeOut">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="取出&gt;&gt;" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0,232},{0,182},{0,300},{0,206}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MyPetShop/PauseBusiness">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="暂停营业" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0,150},{0,264},{0,218},{0,288}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MyPetShop/ExpandCounter">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="扩张柜台" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0,6},{0,264},{0,74},{0,288}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MyPetShop/CloseCounter">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="关闭柜台" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0,78},{0,264},{0,146},{0,288}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyPetShop/priceEdit1">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="单价" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+          <Property Name="BorderColour" Value="FF220B01" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,230},{0,265},{0,262},{0,285}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyPetShop/sellMoney1">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="总价" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+          <Property Name="BorderColour" Value="FF220B01" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.193491,273},{0,265},{0.193491,299},{0,285}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/TabControl" Name="MyPetShop/shopTC">
+          <Property Name="TabHeight" Value="{0,18}" />
+          <Property Name="TabPanePosition" Value="Top" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00704225,0},{0,7},{0.00704225,220},{0,261}}" />
+          <Window Type="TaharezLook/Listbox" Name="MyPetShop/List1">
+            <Property Name="Text" Value="1" />
+            <Property Name="UnifiedAreaRect" Value="{{0.00909091,0},{0,2},{0.00909091,216},{0,234}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MyPetShop/PetInfo">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="详细信息" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0,475},{0,115},{0,543},{0,139}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyPetShop/PetLevel">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,512},{0,94},{0,556},{0,114}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyPetShop/PetType">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,512},{0,73},{0,556},{0,93}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyPetShop/PetLevel1">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="等级：" />
+          <Property Name="HorzExtent" Value="39" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,477},{0,94},{0,512},{0,114}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="类型：" />
+          <Property Name="HorzExtent" Value="39" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,477},{0,73},{0,513},{0,93}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MyPetShop/up">
+          <Property Name="Text" Value="上    架" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0,232},{0,206},{0,300},{0,230}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MyPetShop/down">
+          <Property Name="Text" Value="下    架" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0,232},{0,230},{0,300},{0,254}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyPetShop/MoneyBack1">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0,259},{0,265},{0.193491,270},{0,283}}" />
+          <Window Type="TaharezLook/StaticImage" Name="MyPetShop/MoneyBack1/Money">
+            <Property Name="Image" Value="set:MainControl image:Xianjin" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,20},{0,19}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Editbox" Name="MyPetShop/priceEdit">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="BlinkCaret" Value="True" />
+            <Property Name="MaxTextLength" Value="2147483647" />
+            <Property Name="UnifiedAreaRect" Value="{{0.157025,0},{0,0},{0,111},{0.0243532,20}}" />
+            <Property Name="BackGroundEnable" Value="False" />
+            <Property Name="TextParsingEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyPetShop/MoneyBack11">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0.193491,301},{0,265},{0.386981,343},{0,283}}" />
+          <Window Type="TaharezLook/StaticImage" Name="MyPetShop/MoneyBack1/Money1">
+            <Property Name="Image" Value="set:MainControl image:Xianjin" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0},{0,20},{0,19}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="MyPetShop/sellMoney">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.144737,0},{0,0},{0,141},{0.0243533,20}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="MyPetShop/Back/Bottom/Pattern">
+          <Property Name="Image" Value="set:MainControl13 image:Commerce" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,59},{0,153}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,59},{0,153}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.413732,0},{0,5},{0.517606,0},{0.52617,5}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/MultiColumnList" Name="MyPetShop/packList">
+          <Property Name="UnifiedAreaRect" Value="{{0,308},{0,144},{0,562},{0,259}}" />
+          <Property Name="ColumnHeader" Value="text:宠物名称 width:{0.7,0} id:0" />
+          <Property Name="ColumnHeader" Value="text:等级 width:{0.29,0} id:1" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="MyPetShop/PetIcon">
+          <Property Name="Image" Value="set:MainControl6 image:PetPropertyBack" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,126},{0,125}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,126},{0,125}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.584507,0},{0,8},{0.806338,0},{1.875,-411}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/CommonCase" Name="MyPetShop/Back/Bottom/IconBack">
+          <Property Name="UnifiedAreaRect" Value="{{0.84331,0},{0.0172414,0},{0.842958,75},{0.0164913,61}}" />
+          <Window Type="TaharezLook/StaticImage" Name="MyPetShop/pethead">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.24,0},{0.163934,0},{0.127646,48},{0.0735272,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="MyPetShop/Record">
+      <Property Name="Text" Value="营业记录" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,362},{0,513},{0,434},{0,537}}" />
+    </Window>
+  </Window>
+</GUILayout>

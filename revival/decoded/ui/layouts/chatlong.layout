@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/StaticImage" Name="ChatLong">
+    <Property Name="FrameEnabled" Value="False" />
+    <Property Name="UnifiedAreaRect" Value="{{0,0},{1,-280},{0,311},{1,-255}}" />
+    <Property Name="BackgroundEnabled" Value="False" />
+    <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    <Window Type="TaharezLook/RichEditbox" Name="ChatLong/Name">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="ReadOnly" Value="True" />
+      <Property Name="LineSpace" Value="1" />
+      <Property Name="BlinkCaret" Value="True" />
+      <Property Name="MaxTextLength" Value="2147483647" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0.04,0},{0,169},{1.04,0}}" />
+      <Property Name="NormalTextColour" Value="ffff0000" />
+      <Property Name="BlinkCaretTimeout" Value="0.5" />
+      <Property Name="TextParsingEnabled" Value="False" />
+      <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="ChatLong/back">
+      <Property Name="Font" Value="msyh-16" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,170},{0.16,0},{1.02572,0},{1,0}}" />
+      <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+      <Window Type="TaharezLook/RichEditbox" Name="ChatLong/Text">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Tooltip" Value="点击可直接查看完整内容" />
+        <Property Name="ReadOnly" Value="True" />
+        <Property Name="LineSpace" Value="1" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0.142857,0},{1,0},{1.04762,0}}" />
+        <Property Name="BackGroundEnable" Value="False" />
+        <Property Name="NormalTextColour" Value="ffff0000" />
+        <Property Name="BlinkCaretTimeout" Value="0.5" />
+        <Property Name="TextParsingEnabled" Value="False" />
+        <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/RichEditbox1" Name="ChatLong/all">
+      <Property Name="Tooltip" Value="左键或右键点击可关闭" />
+      <Property Name="LineSpace" Value="1" />
+      <Property Name="BlinkCaret" Value="True" />
+      <Property Name="MaxTextLength" Value="2147483647" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.363344,0},{-3.52,0},{1.03215,0},{-0.04,0}}" />
+      <Property Name="BlinkCaretTimeout" Value="0.5" />
+      <Property Name="TextParsingEnabled" Value="False" />
+    </Window>
+  </Window>
+</GUILayout>

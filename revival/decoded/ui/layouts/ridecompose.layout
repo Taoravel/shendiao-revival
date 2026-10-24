@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="RideCompose">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.162368,0},{0.0977286,0},{0.885359,0},{0.867075,0}}" />
+    <Window Type="TaharezLook/StaticImage" Name="Back">
+      <Property Name="Image" Value="set:MainControl25 image:EquipDragon" />
+      <Property Name="UnifiedMaxSize" Value="{{0,293},{0,280}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,293},{0,280}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0294118,0},{0.0952381,0},{0.536332,0},{0.701299,0}}" />
+      <Window Type="TaharezLook/StaticImage" Name="Back/Cell">
+        <Property Name="Image" Value="set:MainControl3 image:LuckyWheelMiddleBox" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,66},{0,68}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,66},{0,68}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,114},{0,98},{0,180},{0,166}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="Back/ItemCell">
+          <Property Name="UnifiedAreaRect" Value="{{0.233902,0},{0.16661,0},{0.21875,47},{0.16661,46}}" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="Back/Cell1">
+        <Property Name="UnifiedAreaRect" Value="{{0.05,-1},{0.05,1},{0.05,48},{0.05,49}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="Back/Cell2">
+        <Property Name="UnifiedAreaRect" Value="{{0.788396,0},{0.05,0},{0.1,249},{0.1,34}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="Back/Cell3">
+        <Property Name="UnifiedAreaRect" Value="{{0.15,-31},{0.15,175},{0.15,18},{0.15,223}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="Back/Cell4">
+        <Property Name="UnifiedAreaRect" Value="{{0.2,174},{0.2,163},{0.2,223},{0.2,211}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="RideCompose/Title">
+      <Property Name="Disabled" Value="True" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="CentreAligned" />
+      <Property Name="UnifiedMaxSize" Value="{{0,214},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,214},{0,27}}" />
+      <Property Name="VertFormatting" Value="CentreAligned" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,49},{0,12},{0,263},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="RideCompose/Title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="坐骑天赋合成" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="102" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF361D08" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,98.4},{0,0.6},{0,205.4},{0,23.6}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="RideComposeCard">
+      <Property Name="Text" Value="坐骑符" />
+      <Property Name="UnifiedAreaRect" Value="{{0.553633,0},{0,48},{0.650519,0},{0,72}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="RideCompose/Money">
+      <Property Name="Text" Value="合成消耗银两" />
+      <Property Name="HorzExtent" Value="78" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0380623,0},{0.05,398},{0.05,82},{0.05,418}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="DefaultBorderEnable" Value="True" />
+      <Property Name="DefaultColourEnable" Value="True" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="RideCompose/MoneyNum">
+      <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0,105},{0,422},{0,234},{0,440}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="RideCompose/DefendNum">
+      <Property Name="Text">   
+
+
+
+1.天赋合成是指最多将4个同级的坐骑符合成为1个新的坐骑符；
+2.合成后的坐骑符造型会在所选用的坐骑符造型中随机；
+3.合成后的坐骑天赋会在所选用的坐骑符天赋及其对应的下一级天赋中随机。</Property>
+      <Property Name="HorzExtent" Value="441" />
+      <Property Name="VertExtent" Value="62.4756" />
+      <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0311419,0},{0,344},{0.029361,540},{0,418}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="RideComposeCardText">
+      <Property Name="Text" Value="请选择用于合成的坐骑符" />
+      <Property Name="HorzExtent" Value="143" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,411},{0,51},{0,567},{0,69}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="RideCompose/NextGiftRate">
+      <Property Name="Text" Value="下级天赋几率" />
+      <Property Name="HorzExtent" Value="78" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.427336,0},{0.35,260},{0.15,245},{0.35,280}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="DefaultBorderEnable" Value="True" />
+      <Property Name="DefaultColourEnable" Value="True" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="RideCompose/NextGiftRateNum">
+      <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0,337},{0,422},{0,477},{0,440}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="RideCompose/Control">
+      <Property Name="Text" Value="合成" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.1,432},{0.1,373},{0.1,500},{0.1,397}}" />
+      <Property Name="NormalTextColour" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFBE9857 br:FFBE9857" />
+      <Property Name="ButtonBorderColour" Value="FF002B65" />
+      <Property Name="ButtonBorderEnable" Value="True" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="RideCompose/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.544983,0},{0.155844,0},{0.963668,0},{0.701299,0}}" />
+      <Window Type="TaharezLook/ScrollablePane" Name="RideCompose/List">
+        <Property Name="ContentArea" Value="l:0 t:0 r:237 b:236" />
+        <Property Name="HorzStepSize" Value="0.1" />
+        <Property Name="VertStepSize" Value="0.1" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="HorzOverlapSize" Value="0.01" />
+        <Property Name="UnifiedAreaRect" Value="{{0.00413223,0},{0.0119048,0},{0,246},{0.0204975,238}}" />
+        <Property Name="VertOverlapSize" Value="0.01" />
+        <Property Name="HorzScrollPosition" Value="0" />
+        <Property Name="VertScrollPosition" Value="0" />
+        <AutoWindow NameSuffix="__auto_container__">
+          <Property Name="ContentArea" Value="l:0 t:0 r:237 b:236" />
+          <Property Name="ChildExtentsArea" Value="l:0 t:0 r:237 b:236" />
+          <Window Type="TaharezLook/ItemCell" Name="RideCompose/List/cell1">
+            <Property Name="UnifiedAreaRect" Value="{{0.00409836,0},{0,0},{-0.00363636,50},{0,48}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="RideCompose/List/cell2">
+            <Property Name="UnifiedAreaRect" Value="{{-0.00363636,49},{0,0},{-0.00363636,97},{-3.72529e-009,48}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="RideCompose/List/cell3">
+            <Property Name="UnifiedAreaRect" Value="{{-0.00363636,96},{0,0},{-0.00363636,144},{-3.72529e-009,48}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="RideCompose/List/cell4">
+            <Property Name="UnifiedAreaRect" Value="{{-0.00363636,143},{0,0},{-0.00363636,191},{-3.72529e-009,48}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="RideCompose/List/cell5">
+            <Property Name="UnifiedAreaRect" Value="{{-0.00363636,190},{0,0},{-0.00363636,238},{-3.72529e-009,48}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="RideCompose/List/cell6">
+            <Property Name="UnifiedAreaRect" Value="{{0.00409836,0},{0,47},{-0.00363636,50},{0,95}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="RideCompose/List/cell7">
+            <Property Name="UnifiedAreaRect" Value="{{-0.00363636,49},{0,47},{-0.00363636,97},{-7.45058e-009,95}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="RideCompose/List/cell8">
+            <Property Name="UnifiedAreaRect" Value="{{-0.00363636,96},{0,47},{-0.00363636,144},{-7.45058e-009,95}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="RideCompose/List/cell9">
+            <Property Name="UnifiedAreaRect" Value="{{-0.00363636,143},{0,47},{0.0890149,166},{-3.72529e-009,95}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="RideCompose/List/cell10">
+            <Property Name="UnifiedAreaRect" Value="{{-0.00363636,190},{0,47},{-0.00363636,238},{-3.72529e-009,95}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="RideCompose/List/cell11">
+            <Property Name="UnifiedAreaRect" Value="{{0.00409836,0},{0,94},{-0.00363636,50},{-3.72529e-009,142}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="RideCompose/List/cell12">
+            <Property Name="UnifiedAreaRect" Value="{{-0.00363636,49},{0,94},{-0.00363636,97},{-3.72529e-009,142}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="RideCompose/List/cell13">
+            <Property Name="UnifiedAreaRect" Value="{{-0.00363636,96},{0,94},{-0.00363636,144},{-3.72529e-009,142}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="RideCompose/List/cell14">
+            <Property Name="UnifiedAreaRect" Value="{{-0.00363636,143},{0,94},{-0.00363636,191},{-3.72529e-009,142}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="RideCompose/List/cell15">
+            <Property Name="UnifiedAreaRect" Value="{{-0.00363636,190},{0,94},{-0.00363636,238},{-3.72529e-009,142}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="RideCompose/List/cell16">
+            <Property Name="UnifiedAreaRect" Value="{{0.00409836,0},{-3.72529e-009,141},{-0.00363636,50},{-7.45058e-009,189}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="RideCompose/List/cell17">
+            <Property Name="UnifiedAreaRect" Value="{{-0.00363636,49},{-3.72529e-009,141},{-0.00363636,97},{-7.45058e-009,189}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="RideCompose/List/cell18">
+            <Property Name="UnifiedAreaRect" Value="{{-0.00363636,96},{-3.72529e-009,141},{-0.00363636,144},{-7.45058e-009,189}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="RideCompose/List/cell19">
+            <Property Name="UnifiedAreaRect" Value="{{-0.00363636,143},{-3.72529e-009,141},{-0.00363636,191},{-7.45058e-009,189}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="RideCompose/List/cell20">
+            <Property Name="UnifiedAreaRect" Value="{{-0.00363636,190},{-3.72529e-009,141},{-0.00363636,238},{-7.45058e-009,189}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="RideCompose/List/cell21">
+            <Property Name="UnifiedAreaRect" Value="{{0.00409836,0},{-7.45058e-009,188},{-0.00363636,50},{-1.11759e-008,236}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="RideCompose/List/cell22">
+            <Property Name="UnifiedAreaRect" Value="{{-0.00363636,49},{-7.45058e-009,188},{-0.00363636,97},{-1.11759e-008,236}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="RideCompose/List/cell23">
+            <Property Name="UnifiedAreaRect" Value="{{-0.00363636,96},{-7.45058e-009,188},{-0.00363636,144},{-1.11759e-008,236}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="RideCompose/List/cell24">
+            <Property Name="UnifiedAreaRect" Value="{{-0.00363636,143},{-7.45058e-009,188},{-0.00363636,191},{-1.11759e-008,236}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="RideCompose/List/cell25">
+            <Property Name="UnifiedAreaRect" Value="{{-0.00363636,190},{-7.45058e-009,188},{-0.00363636,238},{-1.11759e-008,236}}" />
+          </Window>
+        </AutoWindow>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="RideCompose/Growup">
+      <Property Name="Text" Value="合成说明" />
+      <Property Name="HorzExtent" Value="52" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.1,-34},{0.3,209},{0.192042,0},{0.3,227}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="DefaultBorderEnable" Value="True" />
+      <Property Name="DefaultColourEnable" Value="True" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="RideCompose/horse">
+      <Property Name="Image" Value="set:MainControl22 image:ridetitle" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,170},{0,52}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,170},{0,52}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0138408,0},{-0.00649351,0},{0.307958,0},{0.106061,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="RideCompose/Text">
+      <Property Name="Text" Value="推荐合成至紫色后，每日参与坐骑天赋任务积累天赋点数，让坐骑自动进阶至橙色及金色。" />
+      <Property Name="HorzExtent" Value="520" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+      <Property Name="BorderColour" Value="FF190400" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0536332,0},{0.701299,0},{0.951557,0},{0.746753,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+  </Window>
+</GUILayout>

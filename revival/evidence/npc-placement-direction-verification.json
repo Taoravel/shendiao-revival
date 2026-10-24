@@ -1,0 +1,36 @@
+{
+  "passed": [
+    "same original config keeps distinct placement directions7/1",
+    "current lifecycle snapshot preserves original placement directions",
+    "placement value rejects out-of-range and non-integer directions",
+    "all304 original maps and3443 placements preserve raw direction through native decoder",
+    "all13 original zero values retain native fallback sentinel",
+    "dynamic zero/replay/current snapshot retain their own direction values"
+  ],
+  "source_sha256": {
+    "world_npcs.py": "995834f5b44d95e832c01e4df42cd97f4e1e89ea02ecb9e16a35293b604feffd",
+    "npc_lifecycle.py": "ab2b900a0f6985ecd818ff1084ddcf961171f2faa28f5d1a29a0879726fc6d08",
+    "world_entity_protocol.py": "d4977aa707e2e0c3d1cbca6bb11ddafa39f678ef3457128d13f9e5db8d66f964",
+    "catalogs/world.json": "22d74787c6e43d66bb8aa04d4b7e91befb9fe8897b0e1db780d71219c65cade6",
+    "verify_world_entities_native.py": "94063020ed79571dea4e181c8517fd3546307171b8a095c7e48597236cffc065",
+    "native_gameplay_probe.py": "a585adc6522c8162ecaa8c87250eed240a49477ee57322f2950344a92bb7e24c",
+    "evidence/native-image.bin": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791"
+  },
+  "native_decoder_consumed_exact_public_payload": true,
+  "map_records_checked": 304,
+  "original_placements_checked": 3443,
+  "original_direction_distribution": {
+    "0": 13,
+    "1": 314,
+    "2": 40,
+    "3": 1273,
+    "4": 761,
+    "5": 757,
+    "6": 50,
+    "7": 235
+  },
+  "zero_mapping_changed": false,
+  "actual_shared_runtime_verified": false,
+  "live_server_changed": false,
+  "native_gui_verified": false
+}

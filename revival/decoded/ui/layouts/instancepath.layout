@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="InstancePath">
+    <Property Name="UnifiedAreaRect" Value="{{0,0},{0.5,-50},{0,140},{0.5,43}}" />
+    <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    <Window Type="TaharezLook/StaticImage" Name="InstancePath/Back">
+      <Property Name="Image" Value="set:MainControl25 image:PathBack" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,141},{0,85}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,141},{0,85}}" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,141},{0,85}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/ImageButton" Name="InstancePath/image">
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl25  image:PathHover" />
+        <Property Name="NormalImage" Value="set:MainControl25  image:PathNormal" />
+        <Property Name="PushedImage" Value="set:MainControl25  image:PathPushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,136},{0,40}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,136},{0,40}}" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,0},{-0.129412,0},{0.05,136},{0.341177,0}}" />
+      </Window>
+      <Window Type="TaharezLook/LinkText" Name="InstancePath/link">
+        <Property Name="Text" Value="直接寻路直接寻路" />
+        <Property Name="UnifiedAreaRect" Value="{{-0.0212766,0},{0,37},{0,108},{0,61}}" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

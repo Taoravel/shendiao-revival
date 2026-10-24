@@ -1,0 +1,37 @@
+{
+  "revision": "2026-10-23.role-equipment.1",
+  "provenance": "designed_flat_composition_using_client_verified_modifier_ids",
+  "research": "evidence/EQUIPMENT_ROLE_ATTRIBUTE_RESEARCH.md",
+  "scope": "unmodified ordinary starter weapons49001..49010 with explicit naked growth and sealing baselines",
+  "attribute_policy": "2026-10-23.attributes.1",
+  "template_ids": [49001,49002,49003,49004,49005,49006,49007,49008,49009,49010],
+  "flat_mapping": {"81": 80, "811": 810, "1231": 1230},
+  "mapping_provenance": "client_verified cattributedesconfig numid links and ordinary UI consumers; not a generic subtract-one rule",
+  "composition": "recompute current naked growth value plus current equipped original flat totals; never add a delta to a previous equipped total",
+  "naked_basis": "role-attributes-v1 explicitly excludes equipment; require exactly its plain RoleAttributeSnapshot and an independently recorded EquipmentAttributeBasis",
+  "sealing_basis": {
+    "new_restoration_role": 0,
+    "growth_per_level": 0,
+    "provenance": "designed; old nine-field attribute baseline did not define sealing",
+    "activation": "record once in the current role transaction using explicit creation provenance or trusted supplied legacy basis; no inference from level, XP or missing fields",
+    "legacy": "explicit known sealing value and source required; do not silently migrate old attributes to0"
+  },
+  "equipment": {
+    "source": "immutable current InventorySnapshot read in the same caller transaction as growth/basis; preserve its inventory revision",
+    "eligibility": "still owned, quantity1, weapon slot0, original roleNeed includes character config ID, known EquipmentCondition and identified clean EquipmentDetail with exactly original base_properties, no unimplemented quality modifier metadata",
+    "zero_durability": "exclude original baseEffect while current durability is0, following equipment-condition-v1 designed rule",
+    "unknown_durability": "reject projection; do not treat missing durability as positive",
+    "unsupported": "reject unknown equipped templates/modifiers/slots rather than silently erase their effect or guess percentage formulas"
+  },
+  "display": {
+    "ordinary_keys": [80,810,1230],
+    "entry_32i_indexes": {"80": 8, "810": 12, "1230": 14},
+    "values": "absolute final totals; share the same committed projection between ordinary refresh and entry",
+    "bounds": "nonnegative signed32 and exactly representable float32 before commit; overflow rolls back the asset command",
+    "vitals": "do not change HP, MP, wound maxima or their versions for these three weapon effects"
+  },
+  "unsupported_systems": ["percentage effects", "prefix score modifiers", "enhancement", "gems", "sets", "buffs", "other equipment templates", "combat damage or sealing success-rate formula"],
+  "implementation_status": "pure_projection_requires_explicit_basis_storage_and_shared_owner_integration",
+  "native_gui_verified": false,
+  "live_server_changed": false
+}

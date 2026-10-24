@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="GroupChatDlg">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.195625,0},{0.125833,0},{0.194375,488},{0.125833,449}}" />
+    <Window Type="TaharezLook/ImageButton" Name="GroupChatDlg/Emotion">
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:MainControl image:EmoteHover" />
+      <Property Name="NormalImage" Value="set:MainControl image:EmoteNormal" />
+      <Property Name="PushedImage" Value="set:MainControl image:EmotePushed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,22},{0,22}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,22},{0,22}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0,151},{0,408},{0,173},{0,430}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GroupChatDlg/GroupChatRecord">
+      <Property Name="Text" Value="聊天记录" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0,17},{0,408},{0,79},{0,432}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GroupChatDlg/Close">
+      <Property Name="Text" Value="关闭" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,174},{0,408},{0,239},{0,432}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GroupChatDlg/Send">
+      <Property Name="Text" Value="发送" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,239},{0,408},{0,306},{0,432}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="GroupChatDlg/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.178645,0},{0.0222717,0},{0.811088,0},{0.0824053,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="GroupChatDlg/title/NameTitle">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,-1},{0,1},{0,265},{0,25}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="GroupChatDlg/Text">
+      <Property Name="UnifiedAreaRect" Value="{{0.632444,0},{0.091314,0},{0.963039,0},{0.367483,0}}" />
+      <Window Type="TaharezLook/RichEditbox" Name="GroupChatDlg/GroupBoard">
+        <Property Name="Font" Value="fzy4k-9" />
+        <Property Name="LineSpace" Value="1" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,24},{0,157},{0,119}}" />
+        <Property Name="BackGroundEnable" Value="False" />
+        <Property Name="BlinkCaretTimeout" Value="0.5" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GroupChatDlg/text1">
+        <Property Name="Text" Value="群公告" />
+        <Property Name="HorzExtent" Value="40" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,13},{0,3},{0,55},{0,25}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="GroupChatDlg/GroupSetting">
+        <Property Name="Text" Value="群设置" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,-229},{0,367},{0,-159},{0,391}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="GroupChatDlg/Gname">
+      <Property Name="UnifiedAreaRect" Value="{{0.632444,0},{0.374165,0},{0.963039,0},{0.959911,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="GroupChatDlg/text11">
+        <Property Name="Text" Value="群成员" />
+        <Property Name="HorzExtent" Value="40" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,3},{0,53},{0,25}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GroupChatDlg/text12">
+        <Property Name="Text" Value="(1/9)" />
+        <Property Name="HorzExtent" Value="35" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,49},{0,3},{0,131},{0,25}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Listbox1" Name="GroupChatDlg/MemberList">
+        <Property Name="UnifiedAreaRect" Value="{{0,7},{0,44},{0,156},{0,261}}" />
+      </Window>
+      <Window Type="TaharezLook/Editbox" Name="GroupChatDlg/Gname/FindBox">
+        <Property Name="Text" Value="输入名字搜群成员" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0248447,0},{0.0874525,0},{0.975155,0},{0.171103,0}}" />
+        <Property Name="TextParsingEnabled" Value="False" />
+        <Window Type="TaharezLook/ImageButton" Name="GroupChatDlg/Gname/FindBox/Enter">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:FriendSendHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:FriendSendNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:FriendSendPushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,15},{0,16}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,15},{0,16}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.882353,0},{0.0909091,0},{0.980392,0},{0.818182,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="GroupChatDlg/Gname/FindBox/Close">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:FriendCloseHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:FriendCloseNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:FriendClosePushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,16},{0,16}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,16},{0,16}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.771242,0},{0.0909091,0},{0.875817,0},{0.818182,0}}" />
+        </Window>
+        <Window Type="TaharezLook/Listbox" Name="GroupChatDlg/Gname/FindBox/List">
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00653595,0},{1.04545,0},{0.777778,0},{10.6364,0}}" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="GroupChatDlg/Top">
+      <Property Name="UnifiedAreaRect" Value="{{0.0349076,0},{0.091314,0},{0.628337,0},{0.690423,0}}" />
+      <Window Type="TaharezLook/RichEditbox" Name="GroupChatDlg/ChatHistoryContent">
+        <Property Name="LineSpace" Value="1" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,3},{0,287},{0,266}}" />
+        <Property Name="BackGroundEnable" Value="False" />
+        <Property Name="BlinkCaretTimeout" Value="0.5" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="GroupChatDlg/Bot">
+      <Property Name="UnifiedAreaRect" Value="{{0.0349076,0},{0.694878,0},{0.628337,0},{0.906459,0}}" />
+      <Window Type="TaharezLook/RichEditbox" Name="GroupChatDlg/ChatInputBox">
+        <Property Name="LineSpace" Value="1" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{0,283},{0,95}}" />
+        <Property Name="BackGroundEnable" Value="False" />
+        <Property Name="BlinkCaretTimeout" Value="0.5" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="GroupChatDlg/Mini">
+      <Property Name="Tooltip" Value="最小化" />
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:component image:MiniHover" />
+      <Property Name="NormalImage" Value="set:component image:MiniNormal" />
+      <Property Name="PushedImage" Value="set:component image:MiniPushed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,24},{0,24}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,24},{0,24}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0.87885,0},{0.0267261,0},{0.928131,0},{0.0801782,0}}" />
+    </Window>
+  </Window>
+</GUILayout>

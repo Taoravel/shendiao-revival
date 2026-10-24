@@ -1,0 +1,164 @@
+[
+  {
+    "SPlayCardEffect": 20044,
+    "wire": "00004e4c",
+    "native_encode_decode": true
+  },
+  {
+    "CGetCardItem": [
+      20044,
+      49009
+    ],
+    "wire": "00004e4c0000bf71",
+    "native_encode_decode": true
+  },
+  {
+    "CGetCardItem": [
+      20044,
+      49006
+    ],
+    "wire": "00004e4c0000bf6e",
+    "native_encode_decode": true
+  },
+  {
+    "SPlayCardEffect": 20006,
+    "wire": "00004e26",
+    "native_encode_decode": true
+  },
+  {
+    "CGetCardItem": [
+      20006,
+      49009
+    ],
+    "wire": "00004e260000bf71",
+    "native_encode_decode": true
+  },
+  {
+    "CGetCardItem": [
+      20006,
+      49006
+    ],
+    "wire": "00004e260000bf6e",
+    "native_encode_decode": true
+  },
+  {
+    "original_SPlayCardEffect_Process": true,
+    "effect_id": 20044,
+    "calls": [
+      {
+        "card_UI_1744070_effect_id": 20044
+      }
+    ]
+  },
+  {
+    "original_button_callback": "0x1743990",
+    "calls": [
+      {
+        "sent_type": "0xc041f",
+        "effect_id": 20044,
+        "item_id": 49009
+      },
+      {
+        "card_ui_close_boundary": true
+      }
+    ]
+  },
+  {
+    "original_button_callback": "0x1743a10",
+    "calls": [
+      {
+        "sent_type": "0xc041f",
+        "effect_id": 20044,
+        "item_id": 49006
+      },
+      {
+        "card_ui_close_boundary": true
+      }
+    ]
+  },
+  {
+    "original_task_animation_function": "0x1255e70",
+    "effect_id": 20044,
+    "calls": [
+      {
+        "local_generic_effect_request": 20044
+      }
+    ],
+    "SPlayCardEffect_UI_not_called": true
+  },
+  {
+    "original_SPlayCardEffect_Process": true,
+    "effect_id": 20006,
+    "calls": [
+      {
+        "card_UI_1744070_effect_id": 20006
+      }
+    ]
+  },
+  {
+    "original_button_callback": "0x1743990",
+    "calls": [
+      {
+        "sent_type": "0xc041f",
+        "effect_id": 20006,
+        "item_id": 49009
+      },
+      {
+        "card_ui_close_boundary": true
+      }
+    ]
+  },
+  {
+    "original_button_callback": "0x1743a10",
+    "calls": [
+      {
+        "sent_type": "0xc041f",
+        "effect_id": 20006,
+        "item_id": 49006
+      },
+      {
+        "card_ui_close_boundary": true
+      }
+    ]
+  },
+  {
+    "original_task_animation_function": "0x1255e70",
+    "effect_id": 20006,
+    "calls": [
+      {
+        "local_generic_effect_request": 20006
+      }
+    ],
+    "SPlayCardEffect_UI_not_called": true
+  },
+  {
+    "original_finished_dialogue_span": "0x1644c1a..0x1644cf8",
+    "UI_stage_60": 3,
+    "quest_id": 103286,
+    "effect_id": 20044,
+    "calls": [
+      {
+        "local_generic_effect_request": 20044
+      },
+      {
+        "sent_type": "0xc4a52",
+        "quest_id": 103286
+      }
+    ]
+  },
+  {
+    "original_finished_dialogue_span": "0x1644c1a..0x1644cf8",
+    "UI_stage_60": 3,
+    "quest_id": 100186,
+    "effect_id": 20006,
+    "calls": [
+      {
+        "local_generic_effect_request": 20006
+      },
+      {
+        "sent_type": "0xc4a52",
+        "quest_id": 100186
+      }
+    ]
+  }
+]

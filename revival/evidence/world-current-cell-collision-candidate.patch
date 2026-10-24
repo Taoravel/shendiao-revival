@@ -1,0 +1,59 @@
+--- a/world_movement.py
++++ b/world_movement.py
+@@ -53,15 +53,22 @@
+     unavailable_portal: bool
+ 
+ 
+-def plan_movement(position, arrival_cell, kind, body, catalog, *, maze=None, movement_state=None):
++def plan_movement(position, arrival_cell, kind, body, catalog, *, maze=None, movement_state=None,
++                  collision_points='reported_nodes'):
+     """Pure decision for the map owner, with a preloaded read-only catalog.
+ 
+     A transfer target is a proposal: the runtime must reserve/freeze/handoff
+     before making it authoritative. This function performs no storage or send.
+     The caller validates role epoch, map ownership and position version first.
+-    Maze checks cover nodes only. SCENE_GRID_PROTOCOL's original quantization
+-    counterexample prevents treating integer history segments as exact travel.
++    Default collision checks retain the legacy reported-node contract. The
++    explicit native_current policy checks only the ordinary, unwrapped current
++    getter's cell; rounded history and intention targets are not arrivals.
++    It requires a supplied maze and trusted state, and proves no trajectory.
+     """
++    if collision_points not in ('reported_nodes', 'native_current'):
++        raise ValueError('Unknown movement collision point policy')
++    if collision_points == 'native_current' and maze is None:
++        raise ValueError('Native current policy requires an explicit maze')
+     current, points, _native_context = decode_movement(kind, body)
+     map_id = position[0]
+     if any(not valid_position((map_id, x, y), catalog) for x, y in points):
+@@ -70,7 +77,8 @@
+         if movement_state is None:
+             raise ValueError('Authoritative movement state required for maze query')
+         mask = character_movement_mask(movement_state)
+-        if any(not maze_clear(maze, x, y, mask=mask) for x, y in points):
++        checked = points if collision_points == 'reported_nodes' else (current,)
++        if any(not maze_clear(maze, x, y, mask=mask) for x, y in checked):
+             raise ValueError('Movement enters blocked maze cell')
+     checkpoint = kind != ROLE_MOVE
+     target = None
+--- a/world_owner.py
++++ b/world_owner.py
+@@ -42,6 +42,8 @@
+     body: bytes
+     # Trusted role-owner snapshot of native +0x218; never read from wire body.
+     movement_state: int | None = None
++    # Explicit trusted producer contract; legacy callers retain all-node checks.
++    collision_points: str = 'reported_nodes'
+ 
+ 
+ @dataclass(frozen=True)
+@@ -558,7 +560,8 @@
+         try:
+             plan = plan_movement(current.position, (current.x//16, current.y//16),
+                                  command.kind, command.body, self.catalog,
+-                                 maze=self.maze, movement_state=command.movement_state)
++                                 maze=self.maze, movement_state=command.movement_state,
++                                 collision_points=command.collision_points)
+         except ValueError as error:
+             return MoveResult(rejection=str(error)),None
+         if not plan.checkpoint:

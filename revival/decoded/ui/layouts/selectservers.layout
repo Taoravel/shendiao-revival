@@ -1,0 +1,759 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="SelectServers">
+    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{1,0},{1,0}}" />
+    <Property Name="HorizontalAlignment" Value="Centre" />
+    <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    <Window Type="TaharezLook/StaticImage" Name="SelectServers/back">
+      <Property Name="Image" Value="set:LoginBack image:Dikuang" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,768},{0,491}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,768},{0,491}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.5,-384},{0.5,-280},{0.5,385},{0.5,212}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/ImageButton" Name="SelectServers/gotogame">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl14 image:ServerChoiceHover" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="NormalImage" Value="set:MainControl14 image:ServerChoiceNormal" />
+        <Property Name="PushedImage" Value="set:MainControl14 image:ServerChoicePushed" />
+        <Property Name="SoundResource" Value="Switch_Toggle_Cockpit1.ogg" />
+        <Property Name="UnifiedMaxSize" Value="{{0,135},{0,52}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,135},{0,52}}" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.986079,-156},{0,482},{0.986079,-21},{-0.132059,599}}" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="SelectServers/back/Image">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.782552,0},{1.08147,0},{0.785156,0},{1.08758,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="SelectServers/back/statusText">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="TextColours" Value="tl:FFB1F3FF tr:FFB1F3FF bl:FFB1F3FF br:FFB1F3FF" />
+        <Property Name="BorderColour" Value="FF004986" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,376},{0.05,429},{0.05,723},{0.05,459}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="SelectServers/back/statusText/status1">
+          <Property Name="Text" Value="良好" />
+          <Property Name="Image" Value="set:MainControl14 image:GoodShort" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,91},{0,27}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,91},{0,27}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0605187,0},{0.0666667,0},{0.322767,0},{0,29}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="SelectServers/back/statusText/status2">
+          <Property Name="Text" Value="繁忙" />
+          <Property Name="Image" Value="set:MainControl14 image:BusyShort" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,91},{0,27}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,91},{0,27}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.270893,0},{0.0333333,0},{0.349164,64},{0.0333334,27}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="SelectServers/back/statusText/status3">
+          <Property Name="Text" Value="爆满" />
+          <Property Name="Image" Value="set:MainControl14 image:FullShort" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,91},{0,27}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,91},{0,27}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.349164,49},{0.0333333,0},{0.427904,113},{0.0333334,27}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="SelectServers/back/statusText/status4">
+          <Property Name="Text" Value="维护" />
+          <Property Name="Image" Value="set:MainControl14 image:MaintainShort" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,91},{0,27}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,91},{0,27}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.427904,96},{0,0},{0.506644,159},{0.133333,23}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="SelectServers/curserver">
+        <Property Name="Text" Value="电信一区-策划服" />
+        <Property Name="HorzExtent" Value="98" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFA4EEFC tr:FFA4EEFC bl:FFA4EEFC br:FFA4EEFC" />
+        <Property Name="BorderColour" Value="FF002660" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,62},{0.05,407},{0.05,289},{0.05,427}}" />
+      </Window>
+      <Window Type="TaharezLook/CommonCase1" Name="SelectServers/back/Top">
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.22526,0},{0.0977597,0},{0.22526,564},{0.494908,0}}" />
+        <Window Type="TaharezLook/ServerChoiceGroupButton" Name="SelectServers/area1">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="Text" Value="电信一区" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0124113,0},{0.184615,0},{0.0070922,138},{0.184615,28}}" />
+          <Property Name="NormalTextColour" Value="FFFFFFFF" />
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceGroupButton" Name="SelectServers/area2">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="Text" Value="电信二区" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,117},{0.184615,0},{0.05,252},{0.184615,28}}" />
+          <Property Name="NormalTextColour" Value="FFDFB14F" />
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceGroupButton" Name="SelectServers/area3">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="Text" Value="电信三区" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,255},{0.184615,0},{0.05,390},{0.184615,28}}" />
+          <Property Name="NormalTextColour" Value="FFDFB14F" />
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceGroupButton" Name="SelectServers/area4">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="Text" Value="电信四区" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,393},{0.184615,0},{0.05,528},{0.184615,28}}" />
+          <Property Name="NormalTextColour" Value="FFDFB14F" />
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceGroupButton" Name="SelectServers/area12">
+          <Property Name="Text" Value="网通二区" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,393},{0.04,106},{0.05,528},{0.04,134}}" />
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceGroupButton" Name="SelectServers/area8">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="Text" Value="电信八区" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,393},{0.04,67},{0.05,528},{0.04,95}}" />
+          <Property Name="NormalTextColour" Value="FFDFB14F" />
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceGroupButton" Name="SelectServers/area16">
+          <Property Name="Text" Value="网通六区" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,393},{0.04,145},{0.05,528},{0.04,173}}" />
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceGroupButton" Name="SelectServers/area15">
+          <Property Name="Text" Value="网通五区" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,255},{0.04,145},{0.05,390},{0.04,173}}" />
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceGroupButton" Name="SelectServers/area11">
+          <Property Name="Text" Value="网通一区" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,255},{0.04,106},{0.05,390},{0.04,134}}" />
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceGroupButton" Name="SelectServers/area7">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="Text" Value=" 电信七区" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,255},{0.04,67},{0.05,390},{0.04,95}}" />
+          <Property Name="NormalTextColour" Value="FFDFB14F" />
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceGroupButton" Name="SelectServers/area10">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="Text" Value="电信十区" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,117},{0.04,106},{0.05,252},{0.04,134}}" />
+          <Property Name="NormalTextColour" Value="FFDFB14F" />
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceGroupButton" Name="SelectServers/area6">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="Text" Value="电信六区" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,117},{0.04,67},{0.05,252},{0.04,95}}" />
+          <Property Name="NormalTextColour" Value="FFDFB14F" />
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceGroupButton" Name="SelectServers/area14">
+          <Property Name="Text" Value="网通四区" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,117},{0.04,145},{0.05,252},{0.04,173}}" />
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceGroupButton" Name="SelectServers/area13">
+          <Property Name="Text" Value="网通三区" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0124113,0},{0.04,145},{0.0070922,138},{0.04,173}}" />
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceGroupButton" Name="SelectServers/area9">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="Text" Value="电信九区" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0124113,0},{0.04,106},{0.0070922,138},{0.04,134}}" />
+          <Property Name="NormalTextColour" Value="FFDFB14F" />
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceGroupButton" Name="SelectServers/area5">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="Text" Value="电信五区" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0124113,0},{0.04,67},{0.0070922,138},{0.04,95}}" />
+          <Property Name="NormalTextColour" Value="FFDFB14F" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="SelectServers/back/Top/TopName">
+          <Property Name="Image" Value="set:component1 image:area" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,84},{0,19}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,84},{0,19}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.384752,0},{0.0512821,0},{0.533688,0},{0.148718,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCase1" Name="SelectServers/back/Bot">
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.22526,0},{0.498982,0},{0.22526,564},{0.873727,0}}" />
+        <Window Type="TaharezLook/ServerChoiceOtherGroupButton" Name="SelectServers/server1">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0177305,0},{0.211957,0},{0.0177305,132},{0.0543478,53}}" />
+          <Window Type="TaharezLook/StaticImage" Name="SelectServers/server1/Sign">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.0681818,0},{0,-7},{0,40},{0,30}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="SelectServers/load1">
+          <Property Name="Image" Value="set:MainControl14 image:FullLong" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,99},{0,7}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,99},{0,7}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,25},{0,68},{0,124},{0,75}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceOtherGroupButton" Name="SelectServers/server2">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,120},{0.211957,0},{0.05,252},{0.0543478,53}}" />
+          <Window Type="TaharezLook/StaticImage" Name="SelectServers/server2/Sign">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.0681818,0},{0,-7},{0,40},{0,30}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="SelectServers/load2">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,99},{0,7}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,99},{0,7}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,163},{0,68},{0,262},{0,75}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceOtherGroupButton" Name="SelectServers/server3">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,258},{0.211957,0},{0.05,390},{0.0543478,53}}" />
+          <Window Type="TaharezLook/StaticImage" Name="SelectServers/server3/Sign">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.0681818,0},{0,-7},{0,40},{0,30}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="SelectServers/load3">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,99},{0,7}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,99},{0,7}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,303},{0,68},{0,402},{0,75}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceOtherGroupButton" Name="SelectServers/server4">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,396},{0.211957,0},{0.05,528},{0.0543478,53}}" />
+          <Window Type="TaharezLook/StaticImage" Name="SelectServers/server4/Sign">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.0681818,0},{0,-7},{0,40},{0,30}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="SelectServers/load4">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,99},{0,7}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,99},{0,7}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,443},{0,68},{0,542},{0,75}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceOtherGroupButton" Name="SelectServers/server8">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,396},{0.05,79},{0.05,528},{0.05,103}}" />
+          <Window Type="TaharezLook/StaticImage" Name="SelectServers/server8/Sign">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.0681818,0},{0,-7},{0,40},{0,30}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="SelectServers/load8">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,99},{0,7}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,99},{0,7}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,444},{0,118},{0,543},{0,125}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceOtherGroupButton" Name="SelectServers/server12">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,396},{0.05,122},{0.05,528},{0.05,146}}" />
+          <Window Type="TaharezLook/StaticImage" Name="SelectServers/server12/Sign">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.0681818,0},{0,-7},{0,40},{0,30}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceOtherGroupButton" Name="SelectServers/server7">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,258},{0.05,79},{0.05,390},{0.05,103}}" />
+          <Window Type="TaharezLook/StaticImage" Name="SelectServers/server7/Sign">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.0681818,0},{0,-7},{0,40},{0,30}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="SelectServers/load7">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,99},{0,7}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,99},{0,7}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,304},{0,118},{0,403},{0,125}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceOtherGroupButton" Name="SelectServers/server11">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,258},{0.05,122},{0.05,390},{0.05,146}}" />
+          <Window Type="TaharezLook/StaticImage" Name="SelectServers/server11/Sign">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.0681818,0},{0,-7},{0,40},{0,30}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceOtherGroupButton" Name="SelectServers/server6">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,120},{0.05,79},{0.05,252},{0.05,103}}" />
+          <Window Type="TaharezLook/StaticImage" Name="SelectServers/server6/Sign">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.0681818,0},{0,-7},{0,40},{0,30}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="SelectServers/load6">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,99},{0,7}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,99},{0,7}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,164},{0,118},{0,263},{0,125}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceOtherGroupButton" Name="SelectServers/server10">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,120},{0.05,122},{0.05,252},{0.05,146}}" />
+          <Window Type="TaharezLook/StaticImage" Name="SelectServers/server10/Sign">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.0681818,0},{0,-7},{0,40},{0,30}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceOtherGroupButton" Name="SelectServers/server5">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0195035,0},{0.05,79},{0.0177305,133},{0.05,103}}" />
+          <Window Type="TaharezLook/StaticImage" Name="SelectServers/server5/Sign">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.0681818,0},{0,-7},{0,40},{0,30}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="SelectServers/load5">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,99},{0,7}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,99},{0,7}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,30},{0,118},{0,129},{0,125}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceOtherGroupButton" Name="SelectServers/server9">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0177305,0},{0.05,122},{0.0177305,132},{0.05,146}}" />
+          <Window Type="TaharezLook/StaticImage" Name="SelectServers/server9/Sign">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.0681818,0},{0,-7},{0,40},{0,30}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="SelectServers/load9">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,99},{0,7}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,99},{0,7}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,27},{0,162},{0,126},{0,169}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="SelectServers/load10">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,99},{0,7}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,99},{0,7}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,165},{0,162},{0,264},{0,169}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="SelectServers/load12">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,99},{0,7}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,99},{0,7}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,445},{0,162},{0,544},{0,169}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="SelectServers/load11">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,99},{0,7}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,99},{0,7}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,305},{0,162},{0,404},{0,169}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="SelectServers/back/Top/TopName1">
+          <Property Name="Image" Value="set:component1 image:server" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,105},{0,19}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,105},{0,19}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.434397,0},{0.0597826,0},{0.620567,0},{0.05,21}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="SelectServers/back/Recent">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="当前选择" />
+        <Property Name="HorzExtent" Value="60" />
+        <Property Name="VertExtent" Value="17.1936" />
+        <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+        <Property Name="BorderColour" Value="FF433C10" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0338542,0},{0.881874,0},{0.117188,0},{0.881874,18}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="SelectServers/Play">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl14 image:ReplayerHover" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="NormalImage" Value="set:MainControl14 image:ReplayerNormal" />
+        <Property Name="PushedImage" Value="set:MainControl14 image:ReplayerPushed" />
+        <Property Name="DisabledImage" Value="set:MainControl14 image:ReplayerDisable" />
+        <Property Name="SoundResource" Value="Switch_Toggle_Cockpit1.ogg" />
+        <Property Name="UnifiedMaxSize" Value="{{0,136},{0,52}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,136},{0,52}}" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,26},{0,482},{0,162},{0,534}}" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="SelectServers/return">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl14 image:ServerReturnHover" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="NormalImage" Value="set:MainControl14 image:ServerReturnNormal" />
+        <Property Name="PushedImage" Value="set:MainControl14 image:ServerReturnPushed" />
+        <Property Name="SoundResource" Value="Switch_Toggle_Cockpit1.ogg" />
+        <Property Name="UnifiedMaxSize" Value="{{0,135},{0,52}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,135},{0,52}}" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,427},{0,482},{0,562},{0,534}}" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="SelectServers/curserver1">
+        <Property Name="Text" Value="接入方式" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFA4EEFC tr:FFA4EEFC bl:FFA4EEFC br:FFA4EEFC" />
+        <Property Name="BorderColour" Value="FF002660" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,382},{0.1,385},{0.1,441},{0.1,405}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/RadioButton" Name="SelectServers/back/dianxin">
+        <Property Name="Text" Value="电信" />
+        <Property Name="UnifiedAreaRect" Value="{{0.674479,0},{0.1,384},{0.74349,0},{0.1,404}}" />
+      </Window>
+      <Window Type="TaharezLook/RadioButton" Name="SelectServers/back/wangtong">
+        <Property Name="Text" Value="网通" />
+        <Property Name="UnifiedAreaRect" Value="{{0.81901,0},{0.1,384},{0.888021,0},{0.146667,382}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="SelectServers/sp1">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF002660" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.15,454},{0.1,384},{0.15,510},{0.1,404}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="SelectServers/sp2">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF002660" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.2,527},{0.1,384},{0.2,583},{0.142222,387}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ServerCase" Name="SelectServers/back/Tuijian">
+        <Property Name="UnifiedAreaRect" Value="{{0.03125,0},{0.0977597,0},{0.03125,146},{0.873727,0}}" />
+        <Window Type="TaharezLook/ServerChoiceOtherGroupButton" Name="SelectServers/back/Tuijian/server1">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="Visible" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0479452,0},{0.0870872,23},{0.0630719,127},{0.0870872,47}}" />
+          <Window Type="TaharezLook/StaticImage" Name="SelectServers/back/Tuijian/server1/Sign">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.108527,0},{-0.25,0},{0,35},{-0.291667,38}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceOtherGroupButton" Name="SelectServers/back/Tuijian/server2">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="Visible" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0479452,0},{0.0870872,91},{0.119608,116},{0.0870872,115}}" />
+          <Window Type="TaharezLook/StaticImage" Name="SelectServers/back/Tuijian/server2/Sign">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.111111,0},{0,-6},{0,35},{0,31}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceOtherGroupButton" Name="SelectServers/back/Tuijian/server3">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="Visible" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0479452,0},{0.0870872,159},{0.156536,118},{0.0870872,183}}" />
+          <Window Type="TaharezLook/StaticImage" Name="SelectServers/back/Tuijian/server3/Sign">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.104478,0},{0,-6},{0,35},{0,31}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceOtherGroupButton" Name="SelectServers/back/Tuijian/server4">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="Visible" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0479452,0},{0.0870872,227},{0.173856,109},{0.0870872,251}}" />
+          <Window Type="TaharezLook/StaticImage" Name="SelectServers/back/Tuijian/server4/Sign">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,-14},{0,-6},{0,35},{0,31}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceOtherGroupButton" Name="SelectServers/back/Tuijian/server5">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="Visible" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0479452,0},{0.0870872,295},{0.269829,95},{0.0870872,319}}" />
+          <Window Type="TaharezLook/StaticImage" Name="SelectServers/back/Tuijian/server5/Sign">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.110236,0},{0,-6},{0,35},{0,31}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/ServerChoiceOtherGroupButton" Name="SelectServers/back/Tuijian/server6">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0479452,0},{0.0390391,390},{0.0479452,0},{0.0390391,390}}" />
+          <Window Type="TaharezLook/StaticImage" Name="SelectServers/back/Tuijian/server6/Sign">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{-1.#IND,0},{-1.#INF,0},{-1.#IND,-2.14748e+009},{-1.#IND,-2.14748e+009}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="SelectServers/back/Tuijian/area1">
+          <Property Name="Text" Value="风陵渡大区" />
+          <Property Name="Visible" Value="False" />
+          <Property Name="HorzExtent" Value="65" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+          <Property Name="BorderColour" Value="FF433C10" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0479452,0},{0.0892388,0},{0.958904,0},{0.0870872,16}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="SelectServers/back/Tuijian/area2">
+          <Property Name="Text" Value="风陵渡" />
+          <Property Name="Visible" Value="False" />
+          <Property Name="HorzExtent" Value="39" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+          <Property Name="BorderColour" Value="FF433C10" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0479452,0},{0.0870872,69},{0.958904,0},{0.0870872,87}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="SelectServers/back/Tuijian/area3">
+          <Property Name="Text" Value="临安" />
+          <Property Name="Visible" Value="False" />
+          <Property Name="HorzExtent" Value="26" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+          <Property Name="BorderColour" Value="FF433C10" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0479452,0},{0.0870872,137},{0.958904,0},{0.0870872,155}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="SelectServers/back/Tuijian/area4">
+          <Property Name="Text" Value="襄阳" />
+          <Property Name="Visible" Value="False" />
+          <Property Name="HorzExtent" Value="26" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+          <Property Name="BorderColour" Value="FF433C10" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0479452,0},{0.0870872,205},{0.958904,0},{0.0870872,223}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="SelectServers/back/Tuijian/area5">
+          <Property Name="Text" Value="太湖之滨" />
+          <Property Name="Visible" Value="False" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+          <Property Name="BorderColour" Value="FF433C10" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0479452,0},{0.0870872,273},{0.958904,0},{0.0870872,291}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="SelectServers/back/Tuijian/area6">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0479452,0},{0.0390391,372},{0.0479452,0},{0.0390391,372}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="SelectServers/back/Tuijian/load1">
+          <Property Name="Image" Value="set:MainControl14 image:FullLong" />
+          <Property Name="Visible" Value="False" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,99},{0,7}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,99},{0,7}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.164384,0},{0.0870872,51},{0.132913,104},{0.0870872,58}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="SelectServers/back/Tuijian/load2">
+          <Property Name="Image" Value="set:MainControl14 image:FullLong" />
+          <Property Name="Visible" Value="False" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,99},{0,7}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,99},{0,7}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.164384,0},{0.0870872,119},{0.112365,107},{0.0870872,126}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="SelectServers/back/Tuijian/load3">
+          <Property Name="Image" Value="set:MainControl14 image:FullLong" />
+          <Property Name="Visible" Value="False" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,99},{0,7}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,99},{0,7}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.164384,0},{0.0870872,187},{0.0712688,113},{0.0870872,194}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="SelectServers/back/Tuijian/load4">
+          <Property Name="Image" Value="set:MainControl14 image:FullLong" />
+          <Property Name="Visible" Value="False" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,99},{0,7}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,99},{0,7}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.164384,0},{0.0870872,255},{0.141284,102},{0.0870872,262}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="SelectServers/back/Tuijian/load5">
+          <Property Name="Image" Value="set:MainControl14 image:FullLong" />
+          <Property Name="Visible" Value="False" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,99},{0,7}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,99},{0,7}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.164384,0},{0.0870872,323},{0.0917241,110},{0.0870872,330}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="SelectServers/back/Tuijian/load6">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.109589,0},{0.0390391,368},{0.109589,0},{0.0390391,368}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="SelectServers/back/Title">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="服务器选择" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="85" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.200521,0},{0.0325866,0},{0.377604,0},{0.199593,-59}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="SelectServers/back/Recent1">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="上次登录" />
+        <Property Name="HorzExtent" Value="60" />
+        <Property Name="VertExtent" Value="17.1936" />
+        <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+        <Property Name="BorderColour" Value="FF433C10" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0338542,0},{0.9389,0},{0.117188,0},{0.931874,27}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="SelectServers/Info">
+        <Property Name="Text" Value="可登录完美通行证，在&quot;登录记录查询&quot;中查询" />
+        <Property Name="HorzExtent" Value="259" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFA4EEFC tr:FFA4EEFC bl:FFA4EEFC br:FFA4EEFC" />
+        <Property Name="BorderColour" Value="FF002660" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,26},{0.1,412},{0.1,358},{0.1,435}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/Button" Name="SelectServers/last/LastLog">
+          <Property Name="Text" Value="查询最近登录" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.71988,0},{0.0434783,0},{0.98494,0},{0.0500007,21}}" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="TianqiExamination">
+    <Property Name="Font" Value="msyh-16" />
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.12375,0},{0.265,0},{-0.00874998,674},{0.278333,315}}" />
+    <Window Type="TaharezLook/MultiColumnList" Name="TianqiExamination/TianqiExaminationFrame/TianqiExaminationMember">
+      <Property Name="UnifiedAreaRect" Value="{{0,20},{0.204334,0},{0,287},{0.204334,180}}" />
+      <Property Name="ColumnHeader" Value="text:战队 width:{0.5,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:胜场 width:{0.19,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:战力 width:{1,-184} id:2" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TianqiExamination/Info">
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0.508803,0},{0.142415,0},{0.963028,0},{0.851393,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="TianqiExamination/Info/Text">
+        <Property Name="Text">
+1、审核赛以挑战审核队伍积累胜场为比赛方式。用以磨合队伍，演练战术。
+2、审核队伍共40支，每取胜1次胜场数+1，失败不减少。
+3、八强候补榜仅取所有参赛队中获得胜场数最高的8支队伍，胜场数相同的以队伍战力高低排序，战力相同的以上榜时间排序。审核赛期间每天23点刷新。
+4、战力由榜单刷新时全队成员装备评分、最高宠物评分和最高坐骑评分总和计。
+5、审核赛期间可以不限次挑战，失败没有惩罚。一旦击败所有审核队伍（共40支）将无法再次进行挑战。</Property>
+        <Property Name="HorzExtent" Value="247" />
+        <Property Name="VertExtent" Value="203.046" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0232558,0},{0.0960699,0},{0.984496,0},{0.995633,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Figure" Name="TianqiExamination/Info/Title">
+        <Property Name="UnifiedAreaRect" Value="{{0.267442,0},{0.0218341,0},{0.810078,0},{0.026936,14}}" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Window Type="TaharezLook/StaticText" Name="TianqiExamination/Info/Title/Name">
+          <Property Name="Text" Value="候选审核赛规则" />
+          <Property Name="HorzExtent" Value="91" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+          <Property Name="BorderColour" Value="FF433C10" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.221429,0},{-0.0666667,0},{0.892857,0},{0,17}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="TianqiExamination/Start">
+      <Property Name="Text" Value="开始题名战斗" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.573944,0},{0.854489,0},{0.744718,0},{0.659499,87}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TianqiExamination/Name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="金榜题名赛" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="85" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.213028,0},{0.0371517,0},{0.565141,0},{0.200669,-30}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="TianqiExamination/Close">
+      <Property Name="Text" Value="关闭" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.744718,0},{0.801333,17},{0.90669,0},{0.659499,87}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TianqiExamination/Info/Title/Name1">
+      <Property Name="Font" Value="msyh-16" />
+      <Property Name="Text" Value="八强" />
+      <Property Name="HorzExtent" Value="32" />
+      <Property Name="VertExtent" Value="18.75" />
+      <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+      <Property Name="BorderColour" Value="FF433C10" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.183099,0},{0.142415,0},{0.05,170},{0.154882,17}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TianqiExamination/Left/Date">
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0492958,0},{0.05,259},{0.05,72},{0.05,277}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TianqiExamination/Left/Text">
+      <Property Name="Text" Value="截止日期" />
+      <Property Name="HorzExtent" Value="52" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+      <Property Name="BorderColour" Value="FF433C10" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,35},{0,253},{0,93},{0,271}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TianqiExamination/Middle/Text">
+      <Property Name="Text" Value="队伍战力" />
+      <Property Name="HorzExtent" Value="52" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+      <Property Name="BorderColour" Value="FF433C10" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,123},{0,253},{0,181},{0,271}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TianqiExamination/Middle/Combat">
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0,116},{0.05,259},{-0.00352113,190},{0.05,277}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TianqiExamination/Right/Text">
+      <Property Name="Text" Value="胜利场次" />
+      <Property Name="HorzExtent" Value="52" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+      <Property Name="BorderColour" Value="FF433C10" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,211},{0,253},{0,269},{0,271}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TianqiExamination/Left/Num">
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0,204},{0.05,259},{-0.00352113,278},{0.05,277}}" />
+    </Window>
+  </Window>
+</GUILayout>

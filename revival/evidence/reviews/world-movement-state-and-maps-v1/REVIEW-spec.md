@@ -1,0 +1,1 @@
+Spec P2：world_transfer_storage.py:363–368，expected receipt仅拓扑+dataclass数值相等；历史整数1可被三处True或1.0数值别名绕过。要求类型校验及保留类型规范编码比较、整数epoch alias负例。其他地图/原生研究范围无可行动问题。静态只读。

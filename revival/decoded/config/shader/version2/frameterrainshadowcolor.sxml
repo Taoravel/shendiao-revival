@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shaderTemplate>
+  <shaderFramework name="TerrainShadowColor">
+    <inputDeclaration>
+    
+		struct VS_INPUT
+		{
+		    float4 Position  : POSITION;
+        #ifdef DeclareColor
+		    float4 Color     : COLOR; 
+        #endif
+        #ifdef DeclareNormal
+		    float3 Normal    : NORMAL;
+        #endif
+		};
+		
+
+    </inputDeclaration>
+    <outputDeclaration>
+    
+		struct VS_OUTPUT 
+		{ 
+		    float4 Position      : POSITION;
+        #ifdef DeclareNormal
+		    float4 Normal        : TEXCOORD7; 
+        #endif
+        #ifdef DeclareColor
+		    float4 Color         : COLOR; 
+        #endif
+		    #ifdef DeclareOutputUV0 
+		    float4 UV0           : TEXCOORD0;
+		    #endif 
+		    #ifdef DeclareOutputUV1 
+		    float4 UV1           : TEXCOORD1; 
+		    #endif 
+		    #ifdef DeclareOutputUV2 
+		    float4 UV2           : TEXCOORD2; 
+		    #endif 
+		    #ifdef DeclareOutputUV3 
+		    float4 UV3           : TEXCOORD3; 
+		    #endif 
+		    #ifdef DeclareOutputUV4 
+		    float4 UV4           : TEXCOORD4; 
+		    #endif 
+		    #ifdef DeclareOutputUV5 
+		    float4 UV5           : TEXCOORD5; 
+		    #endif 
+		    #ifdef DeclareOutputUV6 
+		    float4 UV6           : TEXCOORD6; 
+		    #endif 
+	    };
+		
+
+    </outputDeclaration>
+    <pixelOutputDeclaration>
+    
+	  struct PS_OUTPUT
+	  {
+	    float4 Color : COLOR;
+	  };
+	  
+    </pixelOutputDeclaration>
+    <shaderInfo type="VS">
+      <functionEntry>
+      
+		VS_OUTPUT VS(VS_INPUT input)
+		{
+		    VS_OUTPUT output = (VS_OUTPUT)0;
+	    
+      </functionEntry>
+      <returnCode>
+      
+		return output;
+		}
+	    
+      </returnCode>
+      <macro name="SS_Vertex_Calculate_LocalPosNormal" />
+      <macro name="SS_Vertex_Calculate_WorldPosNormal" />
+      <macro name="SS_Vertex_Output_UVTex" />
+      <macro name="SS_Vertex_Output_Color" />
+      <macro name="SS_Vertex_Output_Normal" />
+      <macro name="SS_Vertex_Output_Position" />
+      <macro name="SS_Vertex_Output_ShadowMap" />
+      <macro name="SS_Vertex_Output_Terrain" />
+    </shaderInfo>
+    <shaderInfo type="PS">
+      <functionEntry>
+      
+		PS_OUTPUT PS(VS_OUTPUT input)
+		{
+		PS_OUTPUT output = (PS_OUTPUT)0;
+	    
+      </functionEntry>
+      <returnCode>
+      
+		return output;
+		}
+	    
+      </returnCode>
+      <initCode>
+	      output.Color = float4(1,1,1,1); //默认输出白色
+      </initCode>
+      <macro name="SS_Pixel_ShadowMap" />
+    </shaderInfo>
+  </shaderFramework>
+</shaderTemplate>

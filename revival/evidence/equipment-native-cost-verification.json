@@ -1,0 +1,15 @@
+{
+  "passed": [
+    "all original NPC repair level rows, colors1..6 and missing1..100 match original arithmetic",
+    "tier5 level60 25 missing preserves native1295 instead of naive1296"
+  ],
+  "comparisons": 10800,
+  "native_function": "0x10dbb20 ordinary branch",
+  "adapter": "configuration table manager/row lookup only; original getters power multiply and truncate execute",
+  "config_member_evidence": {
+    "npcrepair": "UTF16 2255a18 -> reader86b4c6 -> record+4",
+    "level": "UTF16 2251a44 -> CItemAttr reader86e95a -> record+24 -> wrapper+28"
+  },
+  "npc_repair_ui_tested": false,
+  "probability_semantics_proven": false
+}

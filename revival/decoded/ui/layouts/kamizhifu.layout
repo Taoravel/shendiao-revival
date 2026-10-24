@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="KamiZhifu">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.20875,0},{0.203333,0},{0.691251,0},{0.64,0}}" />
+    <Window Type="TaharezLook/StaticText" Name="KamiZhifu/title">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="卡密支付" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="68" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.272021,0},{0,13},{0.790155,0},{0,35}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="KamiZhifu/main">
+      <Property Name="UnifiedAreaRect" Value="{{0.0440415,0},{0.167939,0},{0.0440415,350},{0.755725,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="KamiZhifu/main/name">
+        <Property Name="Font" Value="msyh-16" />
+        <Property Name="Text" Value="完美一卡通快捷支付：" />
+        <Property Name="HorzExtent" Value="160" />
+        <Property Name="VertExtent" Value="18.75" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0285714,0},{0.0649351,0},{0.525714,0},{0.0458716,25}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="KamiZhifu/main/kahao">
+        <Property Name="Text" Value="卡 号" />
+        <Property Name="HorzExtent" Value="29" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.137143,0},{0.298701,0},{0.257143,0},{0.0958716,53}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="KamiZhifu/main/mima">
+        <Property Name="Text" Value="密 码" />
+        <Property Name="HorzExtent" Value="29" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.137143,0},{0.480519,0},{0.24,0},{0.145872,74}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Editbox" Name="KamiZhifu/main/kahaoid">
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0.294286,0},{0.311688,0},{0.865714,0},{0.192661,36}}" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Editbox" Name="KamiZhifu/main/mimaid">
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0.294286,0},{0.493506,0},{0.865714,0},{0.242661,57}}" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="KamiZhifu/main/ok">
+        <Property Name="Text" Value="确定充值" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.228571,0},{0.772727,0},{0.125392,108},{0.66242,41}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="KamiZhifu/main/ok1">
+        <Property Name="Text" Value="重  置" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.568571,0},{0.772727,0},{0.175392,210},{0.713375,33}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="KamiZhifu/shuoming">
+      <Property Name="Font" Value="fzy4k-9" />
+      <Property Name="Text">温馨提示：
+1.本次充值仅能针对当前账号，充值给其他账号请登录官方网站。
+2.充值成功后元宝可能延迟到账，这是正常现象，请耐心等待。</Property>
+      <Property Name="HorzExtent" Value="347" />
+      <Property Name="VertExtent" Value="42.1875" />
+      <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0492228,0},{0.755725,0},{0.948187,0},{0.950382,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+  </Window>
+</GUILayout>

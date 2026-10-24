@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="MultiExpTime">
+    <Property Name="Font" Value="msyh-16" />
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,152.237},{0,170.082},{0,639.237},{0,446.082}}" />
+    <Window Type="TaharezLook/StaticImage" Name="MultiExpTime/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.395072,0},{0,12},{1.02752,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="MultiExpTime/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="多倍时间" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,71},{0,1},{0,157},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/MultiColumnList" Name="MultiExpTime/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0,16},{0,43},{0,469},{0,179}}" />
+      <Property Name="ColumnHeader" Value="text:多倍时间类型 width:{0.35,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:剩余可领取时间 width:{0.25,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:操作按钮 width:{1,-271} id:2" />
+      <Window Type="TaharezLook/StaticText" Name="MultiExpTime/sysgift1">
+        <Property Name="Text" Value="双倍时间（每周3小时）" />
+        <Property Name="Tooltip" Value="可使用“双倍时间丹”获得，每周最多使用3个，每周一0点恢复使用" />
+        <Property Name="HorzExtent" Value="138" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,8},{0,76},{0,145},{0,96}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="MultiExpTime/sysgift2">
+        <Property Name="Text" Value="三倍时间（每周5小时）" />
+        <Property Name="Tooltip" Value="每周一0点清空，并恢复满5小时" />
+        <Property Name="HorzExtent" Value="138" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,8},{0,26},{0,145},{0,46}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="MultiExpTime/tripleTime1">
+        <Property Name="Text" Value="修为丹   （每周7小时）" />
+        <Property Name="Tooltip" Value="每周最多可增加7小时，每周一0点恢复使用修为丹" />
+        <Property Name="HorzExtent" Value="134" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,8},{0,51},{0,145},{0,71}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="MultiExpTime/doubleTime">
+        <Property Name="Text" Value="————" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,164},{0,76},{0,260},{0,96}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="MultiExpTime/tripleTime">
+        <Property Name="Text" Value="————" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,164},{0,26},{0,260},{0,46}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="MultiExpTime/excessTime">
+        <Property Name="Text" Value="————" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,164},{0,51},{0,260},{0,71}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="MultiExpTime/drawDouble">
+        <Property Name="Text" Value="领取1小时双倍" />
+        <Property Name="Tooltip">使用“双倍时间丹”可获得双倍时间，
+返还后可在此领取剩余的双倍时间</Property>
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="Menu_Click12.ogg" />
+        <Property Name="UnifiedAreaRect" Value="{{0,275},{0,76},{0,445},{0,100}}" />
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="MultiExpTime/drawTriple">
+        <Property Name="Text" Value="领取1小时三倍" />
+        <Property Name="Tooltip" Value="每周一0点，自动恢复到5小时" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="Menu_Click12.ogg" />
+        <Property Name="UnifiedAreaRect" Value="{{0,275},{0,26},{0,445},{0,50}}" />
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="MultiExpTime/drawExcess">
+        <Property Name="Text" Value="领取1小时修为丹三倍" />
+        <Property Name="Tooltip">使用道具“修为丹”可获得修为丹三倍时间，
+返还后可在此领取剩余修为丹三倍时间</Property>
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="Menu_Click12.ogg" />
+        <Property Name="UnifiedAreaRect" Value="{{0,275},{0,51},{0,445},{0,75}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="MultiExpTime/returnDouble">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="返还时间" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,364},{0,106},{0,445},{0,130}}" />
+        <Property Name="NormalTextColour" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+        <Property Name="ButtonBorderColour" Value="FF190400" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="MultiExpTime/BigBack/back">
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,180},{0,467},{-0.0223354,262.703}}" />
+      <Window Type="TaharezLook/StaticText" Name="MultiExpTime/1">
+        <Property Name="Text">多倍时间之间只能同时领取一种。
+每周最多可使用7个修为丹获得“修为丹三倍时间”。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Property>
+        <Property Name="HorzExtent" Value="308" />
+        <Property Name="VertExtent" Value="31.2378" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,40},{0,28},{0,410},{0,65}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="MultiExpTime/BigBack/back/2">
+        <Property Name="Text" Value="多倍时间说明：" />
+        <Property Name="HorzExtent" Value="91" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+        <Property Name="BorderColour" Value="FF190400" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.014932,0},{0.0604864,0},{0.224286,0},{0.0521292,15.4911}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

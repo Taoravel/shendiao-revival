@@ -1,0 +1,72 @@
+{
+  "source": [
+    {
+      "Path": "D:\\神雕侠侣\\revival\\world_owner.py",
+      "Hash": "A454134EC3D274E5C6203B66ADEA9364F10A42563BF7FBDC2C83ED1865A693AC"
+    },
+    {
+      "Path": "D:\\神雕侠侣\\revival\\world_roles.py",
+      "Hash": "5E15240CEFF3B0A02657B156B699A6776DC4CD4F940C39F7F7B96CF49FD8D341"
+    }
+  ],
+  "tests": [
+    {
+      "test": "verify_world_owner.py",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "0ff2db",
+        "wall_time_seconds": 0.7362181,
+        "exit_code": 0,
+        "original_token_count": 103,
+        "output": "PASS map owner fences stale epoch/version and expired commands\r\nPASS reserve/freeze/activate/finalize; loading fence; duplicate commit\r\nPASS cancelled reservations thaw source; commit cannot roll back\r\nPASS bounded independent mailboxes; dequeue rechecks version; no hot-path file access\r\nPASS timeout keeps source frozen until target cancellation\r\nPASS transfer receipt backpressure and explicit retirement\r\n"
+      }
+    },
+    {
+      "test": "verify_world_transfer_view.py",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "688258",
+        "wall_time_seconds": 0.4880107,
+        "exit_code": 0,
+        "original_token_count": 121,
+        "output": "{'passed': ['freeze/loading do not publish target player view', 'source finalize removes authority and original player view in one command', 'duplicate finalize does not repeat the removal', 'failed original entry encoding preserves loading; valid ready publishes reciprocal target view', 'accepted target movement keeps authority and projection synchronized'], 'durable_commit_tested': False, 'shared_runtime_integrated': False, 'gui_verified': False, 'live_server_changed': False}\r\n"
+      }
+    },
+    {
+      "test": "verify_world_member_metadata.py",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "0ee617",
+        "wall_time_seconds": 0.5875039,
+        "exit_code": 0,
+        "original_token_count": 94,
+        "output": "{\"all_passed\": true, \"groups\": [\"admission\", \"movement\", \"departure\", \"binding_issuance\", \"fencing\", \"metadata_never_authorizes_aoi\", \"transfer_lifecycle\", \"strict_identity_and_modes\", \"hot_path_no_io\", \"full_instance_identity\", \"domain_generation_ownership\", \"loading_ready_capacity\", \"retirement_and_rebuild\", \"paired_dequeue_preserves_admitted\"], \"inputs_stable\": true}\r\n"
+      }
+    },
+    {
+      "test": "verify_world_story_lifecycle.py",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "a3c036",
+        "wall_time_seconds": 6.7147597999999995,
+        "exit_code": 0,
+        "original_token_count": 624,
+        "output": "{'passed': ['actual empty owner retires only after60seconds and fences old joins/commands', 'legacy map owners remain non-retirable until explicit lifecycle opt-in', 'join-leave ABA invalidates old idle evidence and restarts a conservative timer', 'queued movement blocks retirement until drained', 'pending scene delivery survives leave and blocks retirement until exact completion', 'scene delivery replay is idempotent; foreign connection and owner generation refuse', 'dynamic actor mutation blocks unload without an in-memory pristine reset', 'reserved targets and frozen sources cannot retire', 'handoff receipts must be explicitly retired before idle countdown starts', '128 process slots include in-flight loads and reject a129th allocation', 'load cancellation retains its slot until exact loader cleanup confirmation and rejects late completion', 'pending operation pins block unload and stale replacement releases refuse', 'unload retry has a fresh attempt identity; old cancellation refuses', 'retiring projection refuses new acquisition until exact owner retirement', 'cold rebuild retains full address and changes runtime generation', 'live dynamic projections remain usable while uncheckpointed cold loads refuse', 'natural durable directory survives projection unload and cold owner rebuild with a fresh generation', '32 actual producer-vs-owner retirement races never accept a command on a retired owner'], 'process_slot_limit': 128, 'minimum_idle_ms': 60000, 'enqueue_retire_races': 32, 'race_outcomes': [(False, 'accepted'), (True, 'owner_retired')], 'durable_cycle': {'natural_roles': 1, 'durable_identity_preserved': True, 'fresh_owner_generation': True, 'scope': 'empty projection cycle of a naturally authorized directory; no bloodmark entry or actor render'}, 'source_sha256': {'world_owner.py': 'a454134ec3d274e5c6203b66adea9364f10a42563bf7fbdc2c83ed1865a693ac', 'world_story_projection_pool.py': '3fdedb540a7c1157c1e3b1984d0242fc96e22848903ef4f3897ee87fa5c2bd9b', 'world_story_instances.py': 'f8a817fb68aed25df3cfec580fe5731ce9659743aa252bdff538b2d0eb8b6268', 'verify_world_story_lifecycle.py': '1c7e935d2f9f3eca601115290ae04b21695c329e4714cdc9f36d3648d09baa27', 'design/story-instance-v1.json': '80490752053ce7b43209f3ad82de348eb6c43e482d797552a9ddd19c90f1d5a6'}, 'scope': 'published policy and actual MapOwner lifecycle; pool directory records are frozen controlled inputs', 'shared_runtime_integrated': False, 'gui_verified': False, 'live_server_changed': False}\r\n"
+      }
+    },
+    {
+      "test": "verify_world_scripted_transfer.py",
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "6f27ea",
+        "wall_time_seconds": 0.4367803,
+        "exit_code": 0,
+        "original_token_count": 21,
+        "output": "PASS trusted scripted offer: scope, bounds, retry, conflict and existing handoff\r\n"
+      }
+    }
+  ],
+  "all_passed": true,
+  "live_server_changed": false,
+  "gui_verified": false
+}

@@ -1,0 +1,874 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="Assistskillstudy">
+    <Property Name="Font" Value="msyh-16" />
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,211},{0.163333,0},{0,630},{0.163333,403}}" />
+    <Window Type="TaharezLook/CommonCase" Name="Assistskillstudy/Case">
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,190},{0,399},{0,362}}" />
+      <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/skilltips">
+        <Property Name="TextColours" Value="tl:FFDCF6CE tr:FFDCF6CE bl:FF10BBD3 br:FF10BBD3" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,3},{0,382},{0,75}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/skilltips/skillinfo1">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0,42.7062},{0,3.349},{0,369.706},{0,25.349}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="Assistskillstudy/skilltips/curSkillBox">
+          <Property Name="UnifiedMaxSize" Value="{{0,38},{0,38}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,38},{0,38}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,1.0881},{0,17.6939},{0,39.0881},{0,55.6939}}" />
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="Assistskillstudy/skilltips/Text">
+          <Property Name="UnifiedAreaRect" Value="{{0,42.7062},{0,26.349},{0,369.706},{0.638892,26.349}}" />
+          <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/skilltips/skillinfo2">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+            <Property Name="UnifiedAreaRect" Value="{{0,4.7062},{0,5.349},{0,329.706},{0,39.349}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/moneyneed">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="所需银两" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,76},{0,170},{0,98}}" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+        <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/moneyneed/need">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,76.5262},{0,2.16019},{0,158.526},{0,19.1602}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="Assistskillstudy/moneyneed/xianjin">
+          <Property Name="Image" Value="set:MainControl image:Xianjin" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.34625,0},{0,1},{1.56576,0},{0,20}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/bindmoney">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="当前绑银" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,99},{0,170},{0,121}}" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+        <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/bindmoney/have">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,76.5262},{0,3.59173},{0,167.526},{0,20.5917}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="Assistskillstudy/bindmoney/xianjin">
+          <Property Name="Image" Value="set:MainControl image:Chubeijin" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.356615,0},{0.0366667,0},{0.472469,0},{0.05,18.7067}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/exphave">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="当前经验" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0,211},{0,99},{0,375},{0,121}}" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+        <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/exphave/have">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,63.5885},{0,2.25175},{0,163.589},{0,19.2518}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/depositmoney">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="当前存款" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,145},{0,170},{0,167}}" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+        <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/depositmoney/have">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,76.5262},{0,1.97928},{0,167.526},{0,18.9793}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="Assistskillstudy/moneyneed/xianjin2">
+          <Property Name="Image" Value="set:MainControl image:Xianjin" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.356615,0},{0,1},{0.355794,19.1347},{0,20}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/expneed">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="所需经验" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0,211},{0,76},{0,375},{0,98}}" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+        <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/expneed/neednum">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,62.5262},{0,1.88255},{0,158.526},{0,18.8826}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/moneyhave">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="当前银两" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,122},{0,170},{0,144}}" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+        <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/moneyhave/have">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,75.5885},{0,1.58429},{0,163.589},{0,18.5843}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="Assistskillstudy/moneyhave/xianjin">
+          <Property Name="Image" Value="set:MainControl image:Xianjin" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,57},{0.0462794,0},{0,76},{0.05,18.9181}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/bindmoney1">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="所需人气" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0,211},{0,122},{0,375},{0,144}}" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+        <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/bindmoney/have1">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,62.5262},{0,1.59173},{0,158.526},{0,18.5917}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/depositmoney1">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="当前人气" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0,211},{0,145},{0,375},{0,167}}" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+        <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/depositmoney/have1">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,62.5262},{0,1.97931},{0,162.527},{0,18.9793}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="Assistskillstudy/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,123},{0,12},{0.05,431},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="生活技能学习" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="102" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,-62},{0,1},{0,39},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="Assistskillstudy/studybutton">
+      <Property Name="Text" Value="学习技能" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0.27685,0},{0,364},{0.277995,72},{0,388}}" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="Assistskillstudy/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,44},{0,399},{0,189}}" />
+      <Window Type="TaharezLook/ScrollablePane" Name="Assistskillstudy/skillshow">
+        <Property Name="ContentArea" Value="l:-106.5 t:0 r:265.5 b:319.5" />
+        <Property Name="HorzStepSize" Value="0.1" />
+        <Property Name="VertStepSize" Value="0.1" />
+        <Property Name="HorzOverlapSize" Value="0.01" />
+        <Property Name="UnifiedAreaRect" Value="{{0,3},{0,5},{0,397},{0,141}}" />
+        <Property Name="VertOverlapSize" Value="0.01" />
+        <Property Name="HorzScrollPosition" Value="0" />
+        <Property Name="VertScrollPosition" Value="0" />
+        <AutoWindow NameSuffix="__auto_container__">
+          <Property Name="ContentArea" Value="l:-106.5 t:0 r:265.5 b:319.5" />
+          <Property Name="ChildExtentsArea" Value="l:-106.5 t:0 r:265.5 b:319.5" />
+          <Window Type="TaharezLook/StaticImage" Name="Assistskillstudy/skillshow/skillbackground1">
+            <Property Name="Image" Value="set:MainControl image:SkillBackNormal" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,118},{0,46}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,118},{0,46}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,-106},{0,0},{0,12},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/skillshow/skillinfo1">
+              <Property Name="Font" Value="simhei-12" />
+              <Property Name="Text" Value="黯然销魂" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,50},{0,5},{0,109},{0,25}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="DefaultColourEnable" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ProgressBar" Name="Assistskillstudy/skillshow/jindu1">
+              <Property Name="StepSize" Value="0.01" />
+              <Property Name="FrameEnable" Value="True" />
+              <Property Name="CurrentProgress" Value="1" />
+              <Property Name="UnifiedAreaRect" Value="{{0,46},{0,26},{0,110},{0,42}}" />
+            </Window>
+            <Window Type="TaharezLook/SkillBox" Name="Assistskillstudy/skillshow/SkillBox1">
+              <Property Name="UnifiedMaxSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedAreaRect" Value="{{0,4.493},{0,4.147},{0,44.493},{0,44.147}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Assistskillstudy/skillshow/skillbackground2">
+            <Property Name="Image" Value="set:MainControl image:SkillBackNormal" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,118},{0,46}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,118},{0,46}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,14},{0,0},{0,132},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/skillshow/skillinfo2">
+              <Property Name="Font" Value="simhei-12" />
+              <Property Name="Text" Value="黯然销魂" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,50},{0,5},{0,109},{0,25}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="DefaultColourEnable" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ProgressBar" Name="Assistskillstudy/skillshow/jindu2">
+              <Property Name="StepSize" Value="0.01" />
+              <Property Name="FrameEnable" Value="True" />
+              <Property Name="CurrentProgress" Value="1" />
+              <Property Name="UnifiedAreaRect" Value="{{0,46},{0,26},{0,111},{0,42}}" />
+            </Window>
+            <Window Type="TaharezLook/SkillBox" Name="Assistskillstudy/skillshow/SkillBox2">
+              <Property Name="UnifiedMaxSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedAreaRect" Value="{{0,4.493},{0,4.147},{0,42.493},{0,42.147}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Assistskillstudy/skillshow/skillbackground3">
+            <Property Name="Image" Value="set:MainControl image:SkillBackNormal" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,118},{0,46}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,118},{0,46}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,134},{0,0},{0,252},{0,46}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/skillshow/skillinfo3">
+              <Property Name="Font" Value="simhei-12" />
+              <Property Name="Text" Value="黯然销魂" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,50},{0,5},{0,109},{0,25}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="DefaultColourEnable" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ProgressBar" Name="Assistskillstudy/skillshow/jindu3">
+              <Property Name="StepSize" Value="0.01" />
+              <Property Name="FrameEnable" Value="True" />
+              <Property Name="CurrentProgress" Value="1" />
+              <Property Name="UnifiedAreaRect" Value="{{0,46},{0,26},{0,110},{0,42}}" />
+            </Window>
+            <Window Type="TaharezLook/SkillBox" Name="Assistskillstudy/skillshow/SkillBox3">
+              <Property Name="UnifiedMaxSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,46},{0,42}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Assistskillstudy/skillshow/skillbackground4">
+            <Property Name="Image" Value="set:MainControl image:SkillBackNormal" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,118},{0,46}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,118},{0,46}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,-106},{0,44.5},{0,12},{0,90.5}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/skillshow/skillinfo4">
+              <Property Name="Font" Value="simhei-12" />
+              <Property Name="Text" Value="黯然销魂" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,50},{0,5},{0,109},{0,25}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="DefaultColourEnable" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ProgressBar" Name="Assistskillstudy/skillshow/jindu4">
+              <Property Name="StepSize" Value="0.01" />
+              <Property Name="FrameEnable" Value="True" />
+              <Property Name="CurrentProgress" Value="1" />
+              <Property Name="UnifiedAreaRect" Value="{{0,46},{0,26},{0,109},{0,42}}" />
+            </Window>
+            <Window Type="TaharezLook/SkillBox" Name="Assistskillstudy/skillshow/SkillBox4">
+              <Property Name="UnifiedMaxSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedAreaRect" Value="{{0,4.493},{0,3.5485},{0,42.493},{0,41.5485}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Assistskillstudy/skillshow/skillbackground5">
+            <Property Name="Image" Value="set:MainControl image:SkillBackNormal" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,118},{0,46}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,118},{0,46}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,14},{0,44.5},{0,132},{0,90.5}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/skillshow/skillinfo5">
+              <Property Name="Font" Value="simhei-12" />
+              <Property Name="Text" Value="黯然销魂" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,50},{0,5},{0,115},{0,25}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="DefaultColourEnable" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ProgressBar" Name="Assistskillstudy/skillshow/jindu5">
+              <Property Name="StepSize" Value="0.01" />
+              <Property Name="FrameEnable" Value="True" />
+              <Property Name="CurrentProgress" Value="1" />
+              <Property Name="UnifiedAreaRect" Value="{{0,46},{0,26},{0,111},{0,42}}" />
+            </Window>
+            <Window Type="TaharezLook/SkillBox" Name="Assistskillstudy/skillshow/SkillBox5">
+              <Property Name="UnifiedMaxSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedAreaRect" Value="{{0,4.493},{0,3.5485},{0,42.493},{0,41.5485}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Assistskillstudy/skillshow/skillbackground6">
+            <Property Name="Image" Value="set:MainControl image:SkillBackNormal" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,118},{0,46}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,118},{0,46}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,134},{0,44.5},{0,252},{0,90.5}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/skillshow/skillinfo6">
+              <Property Name="Font" Value="simhei-12" />
+              <Property Name="Text" Value="黯然销魂" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,50},{0,5},{0,115},{0,25}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="DefaultColourEnable" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ProgressBar" Name="Assistskillstudy/skillshow/jindu6">
+              <Property Name="StepSize" Value="0.01" />
+              <Property Name="FrameEnable" Value="True" />
+              <Property Name="CurrentProgress" Value="1" />
+              <Property Name="UnifiedAreaRect" Value="{{0,46},{0,26},{0,110},{0,42}}" />
+            </Window>
+            <Window Type="TaharezLook/SkillBox" Name="Assistskillstudy/skillshow/SkillBox6">
+              <Property Name="UnifiedMaxSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedAreaRect" Value="{{0,4},{0,3.5485},{0,42},{0,41.5485}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Assistskillstudy/skillshow/skillbackground7">
+            <Property Name="Image" Value="set:MainControl image:SkillBackNormal" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,118},{0,46}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,118},{0,46}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,-106},{0,89.5},{0,12},{0,135.5}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/skillshow/skillinfo7">
+              <Property Name="Font" Value="simhei-12" />
+              <Property Name="Text" Value="黯然销魂" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,50},{0,5},{0,109},{0,25}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="DefaultColourEnable" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ProgressBar" Name="Assistskillstudy/skillshow/jindu7">
+              <Property Name="StepSize" Value="0.01" />
+              <Property Name="FrameEnable" Value="True" />
+              <Property Name="CurrentProgress" Value="1" />
+              <Property Name="UnifiedAreaRect" Value="{{0,46},{0,26},{0,110},{0,42}}" />
+            </Window>
+            <Window Type="TaharezLook/SkillBox" Name="Assistskillstudy/skillshow/SkillBox7">
+              <Property Name="UnifiedMaxSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedAreaRect" Value="{{0,4.493},{0,3.5485},{0,42.493},{0,41.5485}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Assistskillstudy/skillshow/skillbackground8">
+            <Property Name="Image" Value="set:MainControl image:SkillBackNormal" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,118},{0,46}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,118},{0,46}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,14},{0,89.5},{0,132},{0,135.5}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/skillshow/skillinfo8">
+              <Property Name="Font" Value="simhei-12" />
+              <Property Name="Text" Value="黯然销魂" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,50},{0,5},{0,113},{0,25}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="DefaultColourEnable" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ProgressBar" Name="Assistskillstudy/skillshow/jindu8">
+              <Property Name="StepSize" Value="0.01" />
+              <Property Name="FrameEnable" Value="True" />
+              <Property Name="CurrentProgress" Value="1" />
+              <Property Name="UnifiedAreaRect" Value="{{0,46},{0,26},{0,110},{0,42}}" />
+            </Window>
+            <Window Type="TaharezLook/SkillBox" Name="Assistskillstudy/skillshow/SkillBox8">
+              <Property Name="UnifiedMaxSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedAreaRect" Value="{{0,4.493},{0,3.5485},{0,42.493},{0,41.5485}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Assistskillstudy/skillshow/skillbackground9">
+            <Property Name="Image" Value="set:MainControl image:SkillBackNormal" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,118},{0,46}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,118},{0,46}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,134},{0,89.5},{0,252},{0,135.5}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/skillshow/skillinfo9">
+              <Property Name="Font" Value="simhei-12" />
+              <Property Name="Text" Value="黯然销魂" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,50},{0,5},{0,114},{0,25}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="DefaultColourEnable" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ProgressBar" Name="Assistskillstudy/skillshow/jindu9">
+              <Property Name="StepSize" Value="0.01" />
+              <Property Name="FrameEnable" Value="True" />
+              <Property Name="CurrentProgress" Value="1" />
+              <Property Name="UnifiedAreaRect" Value="{{0,46},{0,26},{0,110},{0,42}}" />
+            </Window>
+            <Window Type="TaharezLook/SkillBox" Name="Assistskillstudy/skillshow/SkillBox9">
+              <Property Name="UnifiedMaxSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedAreaRect" Value="{{0,4},{0,3.5485},{0,42},{0,41.5485}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Assistskillstudy/skillshow/skillbackground10">
+            <Property Name="Image" Value="set:MainControl image:SkillBackNormal" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,118},{0,46}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,118},{0,46}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,-106.5},{0,134.5},{0,11.5},{0,180.5}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/skillshow/skillinfo10">
+              <Property Name="Text" Value="黯然销魂" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,50},{0,5},{0,109},{0,25}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="DefaultColourEnable" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ProgressBar" Name="Assistskillstudy/skillshow/jindu10">
+              <Property Name="StepSize" Value="0.01" />
+              <Property Name="FrameEnable" Value="True" />
+              <Property Name="CurrentProgress" Value="1" />
+              <Property Name="UnifiedAreaRect" Value="{{0,46},{0,26},{0,111},{0,42}}" />
+            </Window>
+            <Window Type="TaharezLook/SkillBox" Name="Assistskillstudy/skillshow/SkillBox10">
+              <Property Name="UnifiedMaxSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,45},{0,46}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Assistskillstudy/skillshow/skillbackground11">
+            <Property Name="Image" Value="set:MainControl image:SkillBackNormal" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,118},{0,46}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,118},{0,46}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,13.5},{0,134.5},{0,131.5},{0,180.5}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/skillshow/skillinfo11">
+              <Property Name="Text" Value="黯然销魂" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,50},{0,5},{0,114},{0,25}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="DefaultColourEnable" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ProgressBar" Name="Assistskillstudy/skillshow/jindu11">
+              <Property Name="StepSize" Value="0.01" />
+              <Property Name="FrameEnable" Value="True" />
+              <Property Name="CurrentProgress" Value="1" />
+              <Property Name="UnifiedAreaRect" Value="{{0,46},{0,26},{0,110},{0,42}}" />
+            </Window>
+            <Window Type="TaharezLook/SkillBox" Name="Assistskillstudy/skillshow/SkillBox11">
+              <Property Name="UnifiedMaxSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,46},{0,46}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Assistskillstudy/skillshow/skillbackground12">
+            <Property Name="Image" Value="set:MainControl image:SkillBackNormal" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,118},{0,46}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,118},{0,46}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,133.5},{0,134.5},{0,251.5},{0,180.5}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/skillshow/skillinfo12">
+              <Property Name="Text" Value="黯然销魂" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,50},{0,5},{0,114},{0,25}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="DefaultColourEnable" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ProgressBar" Name="Assistskillstudy/skillshow/jindu12">
+              <Property Name="StepSize" Value="0.01" />
+              <Property Name="FrameEnable" Value="True" />
+              <Property Name="CurrentProgress" Value="1" />
+              <Property Name="UnifiedAreaRect" Value="{{0,46},{0,26},{0,110},{0,42}}" />
+            </Window>
+            <Window Type="TaharezLook/SkillBox" Name="Assistskillstudy/skillshow/SkillBox12">
+              <Property Name="UnifiedMaxSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,46},{0,46}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Assistskillstudy/skillshow/skillbackground13">
+            <Property Name="Image" Value="set:MainControl image:SkillBackNormal" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,118},{0,46}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,118},{0,46}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,-105.5},{0,179.5},{0,12.5},{0,225.5}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/skillshow/skillinfo13">
+              <Property Name="Text" Value="黯然销魂" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,50},{0,5},{0,109},{0,25}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="DefaultColourEnable" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ProgressBar" Name="Assistskillstudy/skillshow/jindu13">
+              <Property Name="StepSize" Value="0.01" />
+              <Property Name="FrameEnable" Value="True" />
+              <Property Name="CurrentProgress" Value="1" />
+              <Property Name="UnifiedAreaRect" Value="{{0,46},{0,26},{0,110},{0,42}}" />
+            </Window>
+            <Window Type="TaharezLook/SkillBox" Name="Assistskillstudy/skillshow/SkillBox13">
+              <Property Name="UnifiedMaxSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,45},{0,45}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Assistskillstudy/skillshow/skillbackground14">
+            <Property Name="Image" Value="set:MainControl image:SkillBackNormal" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,118},{0,46}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,118},{0,46}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,14.5},{0,179.5},{0,132.5},{0,225.5}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/skillshow/skillinfo14">
+              <Property Name="Text" Value="黯然销魂" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,50},{0,5},{0,114},{0,25}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="DefaultColourEnable" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ProgressBar" Name="Assistskillstudy/skillshow/jindu14">
+              <Property Name="StepSize" Value="0.01" />
+              <Property Name="FrameEnable" Value="True" />
+              <Property Name="CurrentProgress" Value="1" />
+              <Property Name="UnifiedAreaRect" Value="{{0,49.688},{0,26},{0,113.688},{0,42}}" />
+            </Window>
+            <Window Type="TaharezLook/SkillBox" Name="Assistskillstudy/skillshow/SkillBox14">
+              <Property Name="UnifiedMaxSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,46},{0,45}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Assistskillstudy/skillshow/skillbackground15">
+            <Property Name="Image" Value="set:MainControl image:SkillBackNormal" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,118},{0,46}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,118},{0,46}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,134.5},{0,179.5},{0,252.5},{0,225.5}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/skillshow/skillinfo15">
+              <Property Name="Text" Value="黯然销魂" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,50},{0,5},{0,114},{0,25}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="DefaultBorderEnable" Value="True" />
+              <Property Name="DefaultColourEnable" Value="True" />
+            </Window>
+            <Window Type="TaharezLook/ProgressBar" Name="Assistskillstudy/skillshow/jindu15">
+              <Property Name="StepSize" Value="0.01" />
+              <Property Name="FrameEnable" Value="True" />
+              <Property Name="CurrentProgress" Value="1" />
+              <Property Name="UnifiedAreaRect" Value="{{0,46},{0,26},{0,110},{0,42}}" />
+            </Window>
+            <Window Type="TaharezLook/SkillBox" Name="Assistskillstudy/skillshow/SkillBox15">
+              <Property Name="UnifiedMaxSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,46},{0,45}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Assistskillstudy/skillshow/skillbackground16">
+            <Property Name="Image" Value="set:MainControl image:SkillBackNormal" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,118},{0,46}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,118},{0,46}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,-104.5},{0,273.5},{0,13.5},{0,319.5}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/skillshow/skillinfo16">
+              <Property Name="Text" Value="黯然销魂" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FFDCF6CE tr:FFDCF6CE bl:FF10BBD3 br:FF10BBD3" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,50},{0,5},{0,109},{0,25}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/ProgressBar" Name="Assistskillstudy/skillshow/jindu16">
+              <Property Name="StepSize" Value="0.01" />
+              <Property Name="FrameEnable" Value="True" />
+              <Property Name="CurrentProgress" Value="1" />
+              <Property Name="UnifiedAreaRect" Value="{{0,46},{0,26},{0,110},{0,42}}" />
+            </Window>
+            <Window Type="TaharezLook/SkillBox" Name="Assistskillstudy/skillshow/SkillBox16">
+              <Property Name="UnifiedMaxSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,45},{0,45}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Assistskillstudy/skillshow/skillbackground17">
+            <Property Name="Image" Value="set:MainControl image:SkillBackNormal" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,118},{0,46}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,118},{0,46}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,21.5},{0,273.5},{0,139.5},{0,319.5}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/skillshow/skillinfo17">
+              <Property Name="Text" Value="黯然销魂" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FFDCF6CE tr:FFDCF6CE bl:FF10BBD3 br:FF10BBD3" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,50},{0,5},{0,114},{0,25}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/ProgressBar" Name="Assistskillstudy/skillshow/jindu17">
+              <Property Name="StepSize" Value="0.01" />
+              <Property Name="FrameEnable" Value="True" />
+              <Property Name="CurrentProgress" Value="1" />
+              <Property Name="UnifiedAreaRect" Value="{{0,46},{0,26},{0,110},{0,42}}" />
+            </Window>
+            <Window Type="TaharezLook/SkillBox" Name="Assistskillstudy/skillshow/SkillBox17">
+              <Property Name="UnifiedMaxSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,46},{0,45}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Assistskillstudy/skillshow/skillbackground18">
+            <Property Name="Image" Value="set:MainControl image:SkillBackNormal" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,118},{0,46}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,118},{0,46}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,147.5},{0,273.5},{0,265.5},{0,319.5}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="Assistskillstudy/skillshow/skillinfo18">
+              <Property Name="Text" Value="黯然销魂" />
+              <Property Name="HorzExtent" Value="52" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FFDCF6CE tr:FFDCF6CE bl:FF10BBD3 br:FF10BBD3" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,50},{0,5},{0,114},{0,25}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/ProgressBar" Name="Assistskillstudy/skillshow/jindu18">
+              <Property Name="StepSize" Value="0.01" />
+              <Property Name="FrameEnable" Value="True" />
+              <Property Name="CurrentProgress" Value="1" />
+              <Property Name="UnifiedAreaRect" Value="{{0,46},{0,26},{0,110},{0,42}}" />
+            </Window>
+            <Window Type="TaharezLook/SkillBox" Name="Assistskillstudy/skillshow/SkillBox18">
+              <Property Name="UnifiedMaxSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,38},{0,38}}" />
+              <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,46},{0,45}}" />
+            </Window>
+          </Window>
+        </AutoWindow>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

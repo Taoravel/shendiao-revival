@@ -1,0 +1,630 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/YellowFrameWindow" Name="PetTrans">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="dlgopen.mp3" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.086875,0},{0.1525,0},{-0.021888,748},{0.0291684,491}}" />
+    <Window Type="TaharezLook/StaticImage" Name="PetTrans/title">
+      <Property Name="Image" Value="set:MainControl30 image:TitleBack" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{-0.0226929,0},{0.00479616,0},{0.0361446,1},{-0.00973237,375}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticText" Name="PetTrans/title/txt">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="血 脉 传 承" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="17" />
+        <Property Name="VertExtent" Value="121.297" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF90E8F2" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.275,0},{0.195122,0},{0.725,0},{0.531165,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0257186,0},{0.0455635,0},{0.930408,0},{0.942446,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/title">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="请选择传承宠物" />
+        <Property Name="HorzExtent" Value="105" />
+        <Property Name="VertExtent" Value="17.1936" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,43},{0.05,-10},{0.05,152},{0.05,12}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/title/left">
+          <Property Name="Image" Value="set:MainControl30 image:ShadingLeft" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,24}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,24}}" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{-0.422018,0},{-0.136364,0},{0.0183486,0},{0.954545,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/title/right">
+          <Property Name="Image" Value="set:MainControl30 image:ShadingRight" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,24}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,24}}" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.944954,0},{-0.136364,0},{1.38532,0},{0.954545,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="PetTrans/combine/up">
+        <Property Name="Text" Value="上一页" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0785953,0},{0.895722,0},{0.0668842,69},{0.897959,22}}" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="PetTrans/combine/down">
+        <Property Name="Text" Value="下一页" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.234114,0},{0.895722,0},{0.116884,133},{0.957219,0}}" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/line">
+        <Property Name="Image" Value="set:MainControl30 image:Straight" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.364549,0},{0,0},{0.419732,0},{0,370}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/CommonCaseBlue" Name="PetTrans/combine/right">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0.416388,0},{0.411765,0},{0.998328,0},{0.863636,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/right/w">
+          <Property Name="Text" Value="所需材料" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.166667,0},{0.0710059,0},{0.341954,0},{0.189349,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/right/w1">
+          <Property Name="Text" Value="传承说明" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.640805,0},{0.0710059,0},{0.816092,0},{0.189349,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/right/title1">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text">1.材料宠物的血脉值将覆盖到主宠物上，超出上限的部分将消失。           
+2.传承成功后，主宠物将被绑定。           
+3.材料宠物因血脉附加的潜能点数将被扣除。</Property>
+          <Property Name="HorzExtent" Value="144" />
+          <Property Name="VertExtent" Value="109.332" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,171},{0.05,16},{0.05,317},{0.05,159}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/right/equip1">
+          <Property Name="Image" Value="set:MainControl30 image:SellItemBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,167},{0,56}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,167},{0,56}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0344828,0},{0.05,31},{0.05,162},{0.05,87}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/right/equip1/item">
+            <Property Name="Image" Value="set:MainControl30 image:ItemInCell" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,50},{0,50}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,50},{0,50}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0179641,0},{0.0357143,0},{0.317365,0},{0.928571,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="PetTrans/combine/right/equip1/item/cell">
+              <Property Name="UnifiedAreaRect" Value="{{0.02,0},{0.02,0},{0.186667,40},{0.1875,40}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/right/equip1/name">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF000000" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.341317,0},{0.0714286,0},{0.976048,0},{0.428571,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/right/equip1/txt">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF000000" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.341317,0},{0.553571,0},{0.976048,0},{0.910714,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/right/equip2">
+          <Property Name="Image" Value="set:MainControl30 image:SellItemBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,167},{0,56}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,167},{0,56}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0344828,0},{0.1,87},{0.1,144},{0.1,143}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/right/equip2/item">
+            <Property Name="Image" Value="set:MainControl30 image:ItemInCell" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,50},{0,50}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,50},{0,50}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0179641,0},{0.0357143,0},{0.317365,0},{0.928571,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="PetTrans/combine/right/equip2/item/cell">
+              <Property Name="UnifiedAreaRect" Value="{{0.02,0},{0.02,0},{0.186667,40},{0.1875,40}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/right/equip2/name">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF000000" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.341317,0},{0.0714286,0},{0.976048,0},{0.428571,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/right/equip2/txt">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF000000" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.341317,0},{0.553571,0},{0.976048,0},{0.910714,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/image">
+        <Property Name="Image" Value="set:MainControl34 image:chuancheng" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,78},{0,57}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,78},{0,57}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,360},{0.0454545,0},{0.05,438},{0.05,55}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="PetTrans/combine/one">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="开 始 传 承" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.623746,0},{0.877005,0},{0.779264,0},{0.957219,0}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/d0">
+        <Property Name="Image" Value="set:MainControl37 image:xuemaidi" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,200},{0,73}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,200},{0,73}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0401338,0},{0.0935829,0},{0.374582,0},{0.28877,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/d/xuemai0">
+          <Property Name="Text" Value="血脉等级" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,68},{0.05,36},{0.05,128},{0.05,59}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/d/level0">
+          <Property Name="Text" Value="15+15" />
+          <Property Name="HorzExtent" Value="41" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,120},{0.05,36},{0.05,180},{0.05,59}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/d/name0">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="Text" Value="破阵" />
+          <Property Name="HorzExtent" Value="32" />
+          <Property Name="VertExtent" Value="18.75" />
+          <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+          <Property Name="BorderColour" Value="FFB7760F" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,74},{0.0958904,0},{0.05,172},{0.05,32}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/d/p0">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.005,0},{-0.0136986,0},{0.045,66},{0.0821918,67}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/d/p0/s0">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.108108,0},{0.05,4},{0.05,62},{0.05,64}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/d4">
+        <Property Name="Image" Value="set:MainControl37 image:xuemaidi2" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,72},{0,73}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,72},{0,73}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.483278,0},{0.05,-6},{0.603679,0},{0.05,67}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/d/xuemai4">
+          <Property Name="Text" Value="当前血脉等级" />
+          <Property Name="HorzExtent" Value="79" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,-31},{0.05,92},{0.05,52},{0.05,115}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/d/level4">
+          <Property Name="Text" Value="15+15" />
+          <Property Name="HorzExtent" Value="41" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+          <Property Name="BorderColour" Value="FFB7760F" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,44},{0.05,92},{0.05,104},{0.05,115}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/d/name4">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="Text" Value="破阵" />
+          <Property Name="HorzExtent" Value="32" />
+          <Property Name="VertExtent" Value="18.75" />
+          <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+          <Property Name="BorderColour" Value="FFB7760F" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,-19},{0.05,67},{0.05,79},{0.05,96}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/d/p4">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0138889,0},{0,-2},{0,75},{0,72}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/d/p4/s4">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,66},{0,68}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/d5">
+        <Property Name="Image" Value="set:MainControl37 image:xuemaidi2" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,72},{0,73}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,72},{0,73}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.811037,0},{0.05,-7},{0.931438,0},{0.05,66}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/d/xuemai5">
+          <Property Name="Text" Value="当前血脉等级" />
+          <Property Name="HorzExtent" Value="79" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,-37},{0.05,92},{0.05,54},{0.05,115}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/d/level5">
+          <Property Name="Text" Value="15+15" />
+          <Property Name="HorzExtent" Value="41" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+          <Property Name="BorderColour" Value="FFB7760F" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,46},{0.05,92},{0.05,106},{0.05,115}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/d/name5">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="Text" Value="破阵" />
+          <Property Name="HorzExtent" Value="32" />
+          <Property Name="VertExtent" Value="18.75" />
+          <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+          <Property Name="BorderColour" Value="FFB7760F" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,-19},{0.05,67},{0.05,79},{0.05,96}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/d/p5">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0138889,0},{0,-1},{0,75},{0,73}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/d/p5/s5">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,66},{0,68}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/d1">
+        <Property Name="Image" Value="set:MainControl37 image:xuemaidi" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,200},{0,73}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,200},{0,73}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0401338,0},{0.28877,1},{0.374582,0},{0.483957,1}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/d/xuemai1">
+          <Property Name="Text" Value="血脉等级" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,68},{0.05,36},{0.05,128},{0.05,59}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/d/level1">
+          <Property Name="Text" Value="15+15" />
+          <Property Name="HorzExtent" Value="41" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,120},{0.05,36},{0.05,180},{0.05,59}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/d/name1">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="Text" Value="破阵" />
+          <Property Name="HorzExtent" Value="32" />
+          <Property Name="VertExtent" Value="18.75" />
+          <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+          <Property Name="BorderColour" Value="FFB7760F" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,74},{0.0958904,0},{0.05,172},{0.05,32}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/d/p1">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.005,0},{0,-1},{0,75},{0,73}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/d/p1/s1">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,66},{0,68}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/d2">
+        <Property Name="Image" Value="set:MainControl37 image:xuemaidi" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,200},{0,73}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,200},{0,73}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0401338,0},{0.4774,4},{0.374582,0},{0.672587,4}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/d/xuemai2">
+          <Property Name="Text" Value="血脉等级" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,68},{0.05,36},{0.05,128},{0.05,59}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/d/level2">
+          <Property Name="Text" Value="15+15" />
+          <Property Name="HorzExtent" Value="41" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,120},{0.05,36},{0.05,180},{0.05,59}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/d/name2">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="Text" Value="破阵" />
+          <Property Name="HorzExtent" Value="32" />
+          <Property Name="VertExtent" Value="18.75" />
+          <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+          <Property Name="BorderColour" Value="FFB7760F" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,74},{0.0958904,0},{0.05,172},{0.05,32}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/d/p2">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.005,0},{0,-1},{0,75},{0,73}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/d/p2/s2">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,66},{0,68}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/d3">
+        <Property Name="Image" Value="set:MainControl37 image:xuemaidi" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,200},{0,73}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,200},{0,73}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0401338,0},{0.66603,8},{0.374582,0},{0.861217,8}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/d/xuemai3">
+          <Property Name="Text" Value="血脉等级" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,68},{0.05,36},{0.05,128},{0.05,59}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/d/level3">
+          <Property Name="Text" Value="15+15" />
+          <Property Name="HorzExtent" Value="41" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,120},{0.05,36},{0.05,180},{0.05,59}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/d/name3">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="Text" Value="破阵" />
+          <Property Name="HorzExtent" Value="32" />
+          <Property Name="VertExtent" Value="18.75" />
+          <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+          <Property Name="BorderColour" Value="FFB7760F" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,74},{0.0958904,0},{0.05,172},{0.05,32}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/d/p3">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.005,0},{0,-1},{0,75},{0,73}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="PetTrans/combine/d/p3/s3">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,8},{0,66},{0,68}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/w1">
+        <Property Name="Text" Value="血脉等级上限" />
+        <Property Name="HorzExtent" Value="79" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,232},{0.05,112},{0.05,315},{0.05,135}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/w1/1">
+          <Property Name="Text" Value="15+15" />
+          <Property Name="HorzExtent" Value="41" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+          <Property Name="BorderColour" Value="FFB7760F" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.1,67},{0.05,-2},{0.1,127},{0.05,21}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/w2">
+        <Property Name="Text" Value="血脉等级上限" />
+        <Property Name="HorzExtent" Value="79" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,396},{0.05,112},{0.1,479},{0.05,135}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="PetTrans/combine/w2/1">
+          <Property Name="Text" Value="15+15" />
+          <Property Name="HorzExtent" Value="41" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+          <Property Name="BorderColour" Value="FFB7760F" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.15,67},{0.1,-2},{0.15,127},{0.1,21}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

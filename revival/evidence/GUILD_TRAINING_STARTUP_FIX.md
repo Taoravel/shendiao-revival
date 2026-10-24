@@ -1,0 +1,11 @@
+# 组织修炼规则启动兼容修复
+
+本窗口已修复guild_training.rules的invalid_guild_training_policy启动误拒。只改所属guild_training.py与针对验证，没有修改runtime_storage、game_runtime、accounts、serve或gateway，也没有操作PID8724。
+
+真实失败链为runtime_storage.prepare → SQLiteSocialStore.initialize → OrganizationStore → rules。组织政策在social_owner.py启动时把顶层list冻结为tuple；新规则比较initial_open_practices != []，因此JSON原字典能通过，而实际启动的空元组被拒。
+
+已运行原始反馈：临时AccountStore直接runtime_storage.prepare出现同一异常；缩小为实际SQLiteSocialStore.initialize仍红。随后verify_guild_training_policy.py保留同一真实启动路径，修复前红、修复后绿。修复只接受空list或空tuple，非空初始技能仍拒绝，原配置值与只读快照生成相同冻结规则。
+
+修复后重新运行完整runtime_storage.prepare（新临时库）通过；针对启动检查3项通过，见guild-training-policy-verification.json。组织研究/修炼开关及费用随后通过10组检查，见GUILD_TRAINING_RUNTIME.md；未部署，个人修炼及完整NPC/GUI也未完成。
+
+方法：diagnosing-bugs以真实启动异常建立反馈，再缩小到实际社交初始化；容器转换为首要假设，字段取值漂移、配置路径漂移为备选；原JSON直接通过、冻结快照失败与normalize后实际prepare通过区分了三者。TDD先保留该公共初始化回归再修所属Module。

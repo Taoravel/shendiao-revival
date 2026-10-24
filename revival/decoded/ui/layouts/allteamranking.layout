@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/HouseFrameWindow" Name="AllTeamRanking">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="open.ogg" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.030625,0},{0,32},{0.144375,662},{0,536}}" />
+    <Property Name="CloseSoundResource" Value="close.ogg" />
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="AllTeamRanking/PersonalInfo/rightback">
+      <Property Name="UnifiedAreaRect" Value="{{0,35},{0,54},{0.266932,0},{0,302}}" />
+      <Window Type="TaharezLook/GroupBtnTree" Name="AllTeamRanking/tree">
+        <Property Name="UnifiedAreaRect" Value="{{0.144578,0},{0.0201613,0},{1.09639,0},{0.979839,0}}" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="AllTeamRanking/titleimage">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.353254,0},{0,18},{0.762284,0},{0,45}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="AllTeamRanking/titlename">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="全服战队排行榜" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="119" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,120},{0,1},{0,252},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/MultiColumnList" Name="AllTeamRanking/PersonalInfo/list">
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,204},{0,52},{0,719},{0,450}}" />
+      <Property Name="ColumnHeader" Value="text:排名 width:{0.11,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:战队名 width:{0.24,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:战力 width:{0.18,0} id:2" />
+      <Property Name="ColumnHeader" Value="text:服务器 width:{0.16,0} id:3" />
+      <Property Name="ColumnHeader" Value="text:周六 width:{0.14,0} id:4" />
+      <Property Name="ColumnHeader" Value="text:周日 width:{1,-427} id:5" />
+    </Window>
+    <Window Type="TaharezLook/LittleButton" Name="AllTeamRanking/button">
+      <Property Name="Text" Value="约    战" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.74502,0},{0.900794,0},{0.840637,0},{0.952381,0}}" />
+    </Window>
+    <Window Type="TaharezLook/LittleButton" Name="AllTeamRanking/button1">
+      <Property Name="Text" Value="我的排名" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.847278,0},{0.900794,0},{0.942895,0},{0.952381,0}}" />
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="AllTeamRanking/txt">
+      <Property Name="UnifiedAreaRect" Value="{{0,36},{0.607143,0},{0.26826,0},{0.952381,0}}" />
+      <Window Type="TaharezLook/Figure" Name="AllTeamRanking/txt/figure">
+        <Property Name="UnifiedAreaRect" Value="{{0.246988,0},{0.045977,0},{0.73494,0},{0.132184,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="AllTeamRanking/txt/figure/title">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="Text" Value="说明" />
+          <Property Name="HorzExtent" Value="30" />
+          <Property Name="VertExtent" Value="17.1936" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.308642,0},{-0.0666667,0},{0.777778,0},{1.13333,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="AllTeamRanking/txt/info">
+        <Property Name="Text">1.报名时间:
+每周四12:30~周五23:00
+2.比赛时间:
+每周六周日20:00~22:00
+3.领奖时间:
+每周一00:00~周二23:59
+4.比赛期间不能更换战队队员，比赛结束后可以取消跨服状态。</Property>
+        <Property Name="HorzExtent" Value="157" />
+        <Property Name="VertExtent" Value="140.57" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0301205,0},{0.16092,0},{0.975904,0},{0.971264,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/LittleButton" Name="AllTeamRanking/shua">
+      <Property Name="Text" Value="刷    新" />
+      <Property Name="Tooltip" Value="点击可刷新当前约战信息" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.273572,0},{0.900794,0},{0.36919,0},{0.952381,0}}" />
+    </Window>
+  </Window>
+</GUILayout>

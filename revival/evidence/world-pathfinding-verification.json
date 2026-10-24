@@ -1,0 +1,18 @@
+{
+  "passed": [
+    "original clear-grid path and target-before-pop behavior",
+    "original around-wall path and expansion count",
+    "original pixel compression keeps cell-center search target; direct shortcut keeps exact requested pixel",
+    "pixel same-point and original DDA corner shortcut are distinct from kernel behavior",
+    "conservative DDA work budget refuses both before search and during smoothing without a partial route",
+    "closed wall and kernel diagonal-corner refusal",
+    "native blocked-start behavior retained; blocked-goal and same-cell return no route",
+    "explicit mask changes actual maze flags",
+    "expansion and node caps return no partial route; fresh retry has no shared residue",
+    "invalid masks/budgets and incomplete/oversized grids refused",
+    "no search file I/O"
+  ],
+  "shared_runtime_integrated": false,
+  "gui_verified": false,
+  "live_server_changed": false
+}

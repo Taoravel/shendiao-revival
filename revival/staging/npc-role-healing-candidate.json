@@ -1,0 +1,62 @@
+{
+  "release": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z",
+  "base_release": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-bound-shop-20261023T115742Z",
+  "base_pid_at_staging": 39796,
+  "changed_modules": {
+    "npc_gameplay.py": "7212aa304509721bf82c4e5d6545212a5cc8c21b26bfbbf3901ed3c946c83387",
+    "npc_role_healing.py": "1f9e6a594e666545d51db37806ffa6f2c5ec513e80aa0eab6da6ae014f95e160",
+    "design/npc-role-healing-v1.json": "6f232df5c36dbb0f37aa2530670d2f7c38c65e6fbfc065bff116e24dacbbbaff",
+    "role_resource_plan.py": "bc70cadabe5d214b95691e75cce2d7295f9781f56909d53200324e95305820c8",
+    "design/role-resources-v1.json": "8be230cb69403f4eeefc2c72610e628035e802ab7777beaf3296abb8c4ff67a8",
+    "design/currency-v1.json": "6a702ba9831a6ec99254ac4d4732f8d6c62ac4a6835157ead5df9de9c286e1cb",
+    "game_runtime.py": "7089408b929b8b730cf99e14e1c8d8e750b41d91dd3e405cde202a1c70f2fd6f"
+  },
+  "file_count": 1429,
+  "started": true,
+  "scope": "dedicated ordinary NPC10380 service294 healing with explicit known resource profile and cash fee only",
+  "checks_required": [
+    "verify_role_resource_healing.py",
+    "verify_npc_role_healing.py",
+    "verify_npc_role_healing_runtime.py",
+    "verify_npc_role_healing_guards.py",
+    "verify_npc_bound_shop_runtime.py",
+    "verify_npc_bound_shop_sources.py",
+    "verify_npc_transport_runtime.py",
+    "verify_master_commit_card_runtime.py",
+    "verify_exit_initialization_runtime.py",
+    "verify_npc_pet_recovery_runtime.py"
+  ],
+  "verification_name": "npc-role-healing",
+  "harness_sources": {
+    "verify_role_resource_healing.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\harness\\verify_role_resource_healing.py",
+    "verify_npc_role_healing.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\harness\\verify_npc_role_healing.py",
+    "verify_npc_role_healing_runtime.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\harness\\verify_npc_role_healing_runtime.py",
+    "verify_npc_role_healing_guards.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\harness\\verify_npc_role_healing_guards.py",
+    "verify_npc_bound_shop_runtime.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\harness\\verify_npc_bound_shop_runtime.py",
+    "verify_npc_bound_shop_sources.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\harness\\verify_npc_bound_shop_sources.py",
+    "verify_npc_transport_runtime.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\harness\\verify_npc_transport_runtime.py",
+    "verify_master_commit_card_runtime.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\harness\\verify_master_commit_card_runtime.py",
+    "verify_exit_initialization_runtime.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\harness\\verify_exit_initialization_runtime.py",
+    "verify_npc_pet_recovery_runtime.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\harness\\verify_npc_pet_recovery_runtime.py"
+  },
+  "harness_sha256": {
+    "verify_role_resource_healing.py": "334cdfe896ab3cab2f393267dac92fb95dee9816f0f401fbab96cd75fb02dc9d",
+    "verify_npc_role_healing.py": "0bafef0d36e64d5ea2c83e1ebbd8f810c0d981bdc598831e4aac262b3e6f92c6",
+    "verify_npc_role_healing_runtime.py": "499bbe2589169efa262408d1f6fdeceb1677e5bdb726708e2ff1c341d73d3c90",
+    "verify_npc_role_healing_guards.py": "c3f692a0243cbef01a7382023118cf1d2bd919890e770f4c8e007dd3e27763f0",
+    "verify_npc_bound_shop_runtime.py": "17152b8c24d87acee7ef4287bcb10b715b97fc9d1fad0e1ce1493a7ecc04e94e",
+    "verify_npc_bound_shop_sources.py": "e2d8078b29137870ab0e2b46d39995ca40cae1d248356352ed16b0c77a98b185",
+    "verify_npc_transport_runtime.py": "0ccd6a9484d3abdc346212caa958d26eced0013f770ad672e0ec9ad16b669667",
+    "verify_master_commit_card_runtime.py": "c86732d038be41158a98a4122add604ca6dbfb44ccfb8ede4b8192ee6e3e4caa",
+    "verify_exit_initialization_runtime.py": "e3433b911f645b86e71d6c022796488520ad5762e92a0d7b6c00f221834fd02e",
+    "verify_npc_pet_recovery_runtime.py": "9aeeb5a20d5fbd3316c25cfa00ef59658308154e3ada898f758635392c4e7cd6"
+  },
+  "game_runtime_derived_from_frozen_base": true,
+  "native_gui_verified": false,
+  "excluded": "private factory/role/story/touch/lifecycle/NPC interaction distance/social scene scope/care/creation/v2 and all other workspace changes",
+  "new_empty_tables": [
+    "npc_role_healing_receipts"
+  ],
+  "status": "deployed",
+  "pid": 36632
+}

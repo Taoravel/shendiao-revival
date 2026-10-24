@@ -1,0 +1,168 @@
+{
+  "status": "ready_for_integration_freeze_and_review",
+  "recorded_utc": "2026-10-23T18:11:36.524041+00:00",
+  "base_release": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z",
+  "production_files": {
+    "battle_protocol.py": {
+      "path": "D:\\神雕侠侣\\revival\\staging\\battle-damage-owned-source\\battle_protocol.py",
+      "sha256": "1a472edf4f1a9db20d8c08ba05eb5516b56b723b87b2b2c80ca0c0a60c75cd22",
+      "baseline_sha256": "dca9640e8f8a1dad9aab5a2b2ea4fe86dba4a7246a6b5311097d020ba0df75dd"
+    },
+    "training_battle.py": {
+      "path": "D:\\神雕侠侣\\revival\\staging\\battle-damage-owned-source\\training_battle.py",
+      "sha256": "0eff784921f509c3f173de8ebd9aeab2a539f098b9a26fed1d5e1a675e91b127",
+      "baseline_sha256": "3d45a14a1f8614d4cc9bf36b136a3679456a17d53bbf406571f94f2c6dfe9e9f"
+    }
+  },
+  "production_file_count": 2,
+  "minimal_patch": {
+    "path": "D:\\神雕侠侣\\revival\\evidence\\battle-damage-minimal.patch",
+    "sha256": "d54f70b94d391735b4810f2af24bc5b69c9cc2d2ebe5b7e3c93f7a8e3e25188f"
+  },
+  "excluded_changes": [
+    "automatic target0 selection",
+    "new skill or pet permissions",
+    "balance formulas",
+    "shared runtime wiring",
+    "live deployment"
+  ],
+  "native_proof": {
+    "image": {
+      "path": "D:\\神雕侠侣\\revival\\evidence\\native-image.bin",
+      "sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791"
+    },
+    "decoder": "0xff1240",
+    "consumer_start": "0x11910df",
+    "consumer_end": "0x1191821",
+    "target_result_map_offset": "0x20",
+    "hp_result_key": 1,
+    "captured_hp_local_offset": "stack+0x348",
+    "old_decodable_packet_hp": 0,
+    "corrected_same_damage_hp": -16,
+    "proved": [
+      "actual training/wild output reaches original HP-result map consumer",
+      "signed and clamped damage matches domain state",
+      "separate role/pet/enemy/multiple target results"
+    ],
+    "not_proved": [
+      "whole SSendRoundScript Process execution",
+      "native fighter resource write",
+      "hit-reaction animation dispatch",
+      "floating damage text",
+      "GPU or GUI presentation"
+    ]
+  },
+  "verification": {
+    "isolated_minimal_candidate": {
+      "path": "D:\\神雕侠侣\\revival\\evidence\\battle-damage-owned-candidate-verification.json",
+      "sha256": "632626e828bf2701eb8bcb3dbfa8d4b42293fe9e6caf4bf91be209c9bb2cebdd"
+    },
+    "isolated_candidate_native_checks": 8,
+    "legacy_bad_packet_negative_regression": true,
+    "workspace_regressions": {
+      "verify_battle.py": "8 behavior + 8 native codecs passed",
+      "verify_battle_loadout.py": "7 passed",
+      "verify_wild_encounters.py": "14 passed",
+      "verify_wild_runtime.py": "passed disposable actual encrypted Owner/storage path"
+    },
+    "workspace_regressions_are_not_frozen_candidate_full_acceptance": true
+  },
+  "harness_files": {
+    "research_battle_damage.py": {
+      "path": "D:\\神雕侠侣\\revival\\research_battle_damage.py",
+      "sha256": "b67d896d9867cd90a203cca780991c11f363d08937cd2e5de49441e026fce5eb"
+    },
+    "verify_battle_damage_presentation.py": {
+      "path": "D:\\神雕侠侣\\revival\\verify_battle_damage_presentation.py",
+      "sha256": "fe6ce1e51a92c166d96f3a3e7a9fc0e5ce5ea533f45dba7aaca9134e8b6a9fb4"
+    },
+    "verify_battle.py": {
+      "path": "D:\\神雕侠侣\\revival\\verify_battle.py",
+      "sha256": "d5dd82b5201b90bc07fa0a356ba5b9dfe705a77287d89ccdf1a5266ec220de13"
+    }
+  },
+  "existing_baseline_harness_and_module_dependencies": {
+    "research_battle.py": {
+      "path": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\source\\research_battle.py",
+      "sha256": "4aa276ece9ea4a9f13d9c4f9a0de2900f97cf77ff3783aeecc92e7d5f3a47b45"
+    },
+    "research_battle_commands.py": {
+      "path": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\source\\research_battle_commands.py",
+      "sha256": "ced33492c33b33c43763a2eb9a7f8da3f47b7ba0e427272cd5d97103b5b582c7"
+    },
+    "native_inspect.py": {
+      "path": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\source\\native_inspect.py",
+      "sha256": "0793e525a8e06fe8e6a216b3509202244463dc4bd469c7e87950edb03810b6a0"
+    },
+    "inspect_client.py": {
+      "path": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\source\\inspect_client.py",
+      "sha256": "a7efdeec98f4d5b0b3e4980e73b2a7e2f0973c2a0c20bcfdc587b1b481f382fa"
+    },
+    "wire.py": {
+      "path": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\source\\wire.py",
+      "sha256": "3b6369a332b05f061866090aba312956d3804c0b577b06c7860e61fce51de050"
+    },
+    "battle.py": {
+      "path": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\source\\battle.py",
+      "sha256": "763466f54076e029e7ed926f9f4754f5389e4e6296719a0f317e28c5b0204753"
+    },
+    "battle_loadout.py": {
+      "path": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\source\\battle_loadout.py",
+      "sha256": "08a407d81da2db7f82c3e39c9c4e893db0c3864df6e095fa2fc462673e0d468b"
+    },
+    "battle_owner.py": {
+      "path": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\source\\battle_owner.py",
+      "sha256": "07f2faa4de11190b054045869282fbf0063b3640ed57355e7b93716fdf0535ba"
+    },
+    "wild_battle.py": {
+      "path": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\source\\wild_battle.py",
+      "sha256": "93083267f76b8134a05e065b6f5061e902ecc1403fd5b7a53ef9db9940f562af"
+    },
+    "wild_encounters.py": {
+      "path": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\source\\wild_encounters.py",
+      "sha256": "91590c5f42e0488114b85f3ccf29e49165dbd4d3c7140fe1fa4df1834138f378"
+    },
+    "world_owner.py": {
+      "path": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\source\\world_owner.py",
+      "sha256": "ac74e14610267a43bf1f04b6bbb76965e8eefbd21ab969448818aa5c8472c320"
+    },
+    "world_movement.py": {
+      "path": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\source\\world_movement.py",
+      "sha256": "debede0da0fd574920e894a1398de884f28225ffcc5916d48ff608e79c670cfb"
+    },
+    "world_catalog.py": {
+      "path": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\source\\world_catalog.py",
+      "sha256": "f0194f55b1ee59e234155fd41a7e890555376e360955be0081895577f1f788dc"
+    },
+    "pfs.py": {
+      "path": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\source\\pfs.py",
+      "sha256": "d4c9a5f6080276ab51886fdd4f1d7e7c1618715f870cbce84c916cf03b163352"
+    },
+    "bxml.py": {
+      "path": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\source\\bxml.py",
+      "sha256": "ba61810a10fede4305075efd7120429fb165af90fdbb4fb94697862a30c8b66d"
+    }
+  },
+  "resources": [
+    "frozen design/recovery-baseline.json",
+    "frozen catalogs/knight.gsp.pet.cpetattr.json",
+    "frozen design/wild-encounters-v1.json",
+    "frozen catalogs/wild-encounters.json",
+    "world catalogs required by world_catalog.maps",
+    "original native-image.bin with exact SHA above"
+  ],
+  "third_party_dependencies": [
+    "Unicorn x86 emulation",
+    "Capstone from existing configured .deps path"
+  ],
+  "dual_axis_review": {
+    "performed_in_this_window": false,
+    "fixed_review_snapshot": null,
+    "owner": "integration freezes complete candidate for planner Standards and Spec review"
+  },
+  "long_term_goal_resumed": false,
+  "live_client_opened": false,
+  "live_battle_executed": false,
+  "live_service_changed": false,
+  "native_gui_verified": false
+}

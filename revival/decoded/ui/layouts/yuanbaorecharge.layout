@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="YuanBaoRecharge">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.234375,0},{0.173333,0},{0.234375,425},{0.173333,391}}" />
+    <Window Type="TaharezLook/StaticImage" Name="YuanBaoRecharge/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0658824,0},{0.0255754,0},{0.790588,0},{0.0946292,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="YuanBaoRecharge/Title/Name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="快捷支付" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.298701,0},{0,1},{0.584416,0},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="YuanBaoRecharge/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0447059,0},{0.11509,0},{0.0404763,387},{0.105,246}}" />
+      <Window Type="TaharezLook/StaticText" Name="YuanBaoRecharge/Back/Name">
+        <Property Name="Text" Value="尊敬的                                     您选择了快捷支付：" />
+        <Property Name="HorzExtent" Value="267" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.038961,0},{0.0413223,0},{0.745455,0},{0.042562,20}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="YuanBaoRecharge/Back/Name/Role">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.150735,0},{0,0},{0.558824,0},{0,20}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="YuanBaoRecharge/Back/Total">
+        <Property Name="Text" Value="充值种类：" />
+        <Property Name="HorzExtent" Value="65" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.038961,0},{0.3,-40},{0.205195,0},{0.363636,-37}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="YuanBaoRecharge/Back/Area">
+        <Property Name="Text" Value="您所充值的大区：" />
+        <Property Name="HorzExtent" Value="104" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.038961,0},{0.57716,-6},{0.309091,0},{0.57716,14}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="YuanBaoRecharge/Back/Mode">
+        <Property Name="Text" Value="请选择支付方式：" />
+        <Property Name="HorzExtent" Value="104" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.038961,0},{0.609282,10},{0.314286,0},{0.609282,30}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Combobox" Name="YuanBaoRecharge/Back/Alipay">
+        <Property Name="UnifiedAreaRect" Value="{{0.301299,0},{0.609282,10},{0.690909,0},{0.609282,91}}" />
+        <Property Name="MaxEditTextLength" Value="2147483647" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="YuanBaoRecharge/Back/Pay">
+        <Property Name="Text" Value="支付金额：" />
+        <Property Name="HorzExtent" Value="65" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFF9C96F tr:FFF9C96F bl:FFF9C96F br:FFF9C96F" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.275325,0},{0.683524,17},{0.444156,0},{0.683524,37}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="YuanBaoRecharge/Back/Money">
+        <Property Name="Text" Value="100000" />
+        <Property Name="HorzExtent" Value="48" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.441558,0},{0.683524,17},{0.864935,0},{0.683524,37}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="YuanBaoRecharge/Back/Recharge">
+        <Property Name="Text" Value="立即充值" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.290909,0},{0.734888,26},{0.496104,0},{0.734888,50}}" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="YuanBaoRecharge/Back/Info">
+        <Property Name="Text" Value="（1元=100元宝）" />
+        <Property Name="HorzExtent" Value="106" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.625974,0},{0.847107,0},{0.903896,0},{0.602924,86}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="YuanBaoRecharge/Back/AreaName">
+        <Property Name="Text" Value="测试大区——亲友测试" />
+        <Property Name="HorzExtent" Value="131" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.311688,0},{0.57716,-6},{0.677922,0},{0.57716,14}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="YuanBaoRecharge/Back/Tatol1">
+        <Property Name="TextColours" Value="tl:FFFF3333 tr:FFFF3333 bl:FFFF3333 br:FFFF3333" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0.698701,0},{0.64876,0},{0.841558,0},{0.353509,93}}" />
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="YuanBaoRecharge/Back/Yuanbao">
+        <Property Name="UnifiedAreaRect" Value="{{0.202597,0},{0.252066,0},{0.896104,0},{0.254132,70}}" />
+        <Window Type="TaharezLook/RadioButton" Name="YuanBaoRecharge/Back/1000">
+          <Property Name="Text" Value="1000元宝" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,-5},{0.05,3},{0.05,79},{0.05,23}}" />
+        </Window>
+        <Window Type="TaharezLook/RadioButton" Name="YuanBaoRecharge/Back/2000">
+          <Property Name="Text" Value="2000元宝" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,-5},{0,30},{0.05,79},{0,50}}" />
+        </Window>
+        <Window Type="TaharezLook/RadioButton" Name="YuanBaoRecharge/Back/3000">
+          <Property Name="Text" Value="3000元宝" />
+          <Property Name="UnifiedAreaRect" Value="{{0,97},{0.05,3},{0,181},{0.05,23}}" />
+        </Window>
+        <Window Type="TaharezLook/RadioButton" Name="YuanBaoRecharge/Back/Other">
+          <Property Name="Text" Value="其它                          元宝" />
+          <Property Name="UnifiedAreaRect" Value="{{0,97},{0,29},{0,251},{0,51}}" />
+          <Window Type="TaharezLook/Editbox" Name="YuanBaoRecharge/Back/Other/Number">
+            <Property Name="Text" Value="100000" />
+            <Property Name="BlinkCaret" Value="True" />
+            <Property Name="MaxTextLength" Value="2147483647" />
+            <Property Name="UnifiedAreaRect" Value="{{0.301299,0},{0.0454546,0},{0.781818,0},{9.31323e-008,21}}" />
+            <Property Name="BlinkCaretTimeout" Value="0.5" />
+            <Property Name="TextParsingEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/GroupButton" Name="YuanBaoRecharge/Back/YuanbaoRecharge">
+        <Property Name="Text" Value="购买元宝" />
+        <Property Name="UnifiedAreaRect" Value="{{0.215584,0},{0.161157,0},{0.415584,0},{0.161157,22}}" />
+      </Window>
+      <Window Type="TaharezLook/GroupButton" Name="YuanBaoRecharge/Back/RmbRecharge">
+        <Property Name="Text" Value="人民币直充" />
+        <Property Name="UnifiedAreaRect" Value="{{0.415584,0},{0.161157,0},{0.615584,0},{0.160123,22}}" />
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="YuanBaoRecharge/Back/Yuanbao1">
+        <Property Name="UnifiedAreaRect" Value="{{0.202597,0},{0.252066,0},{0.896104,0},{0.253099,70}}" />
+        <Window Type="TaharezLook/RadioButton" Name="YuanBaoRecharge/Back/10001">
+          <Property Name="Text" Value="10元" />
+          <Property Name="UnifiedAreaRect" Value="{{0,8},{0.05,3},{0,92},{0.05,23}}" />
+        </Window>
+        <Window Type="TaharezLook/RadioButton" Name="YuanBaoRecharge/Back/20001">
+          <Property Name="Text" Value="20元" />
+          <Property Name="UnifiedAreaRect" Value="{{0,8},{0,30},{0,92},{0,50}}" />
+        </Window>
+        <Window Type="TaharezLook/RadioButton" Name="YuanBaoRecharge/Back/30001">
+          <Property Name="Text" Value="30元" />
+          <Property Name="UnifiedAreaRect" Value="{{0,97},{0.05,3},{0,181},{0.05,23}}" />
+        </Window>
+        <Window Type="TaharezLook/RadioButton" Name="YuanBaoRecharge/Back/Other1">
+          <Property Name="Text" Value="其它                          元" />
+          <Property Name="UnifiedAreaRect" Value="{{0,97},{0,30},{0,239},{0,50}}" />
+          <Window Type="TaharezLook/Editbox" Name="YuanBaoRecharge/Back/Other/Number1">
+            <Property Name="Text" Value="100000" />
+            <Property Name="BlinkCaret" Value="True" />
+            <Property Name="MaxTextLength" Value="2147483647" />
+            <Property Name="UnifiedAreaRect" Value="{{0.333803,0},{1.04308e-007,0},{0.833802,0},{-0.0999999,22}}" />
+            <Property Name="BlinkCaretTimeout" Value="0.5" />
+            <Property Name="TextParsingEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="YuanBaoRecharge/Back/Reminder">
+      <Property Name="Text">温馨提示：
+
+1.每次充值必须为100的倍数，单次充值金额不小于600元宝，不大于100000元宝。
+2.若出现已成功充值的提示，但元宝未到账，请耐心等待，可能是网络或系统繁忙导致，我们会在2个工作日内核对后为你充值。</Property>
+      <Property Name="HorzExtent" Value="373" />
+      <Property Name="VertExtent" Value="78.0945" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+      <Property Name="VertFormatting" Value="TopAligned" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0588235,0},{0.05,272},{0.0582353,374},{0.05,369}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,224 @@
+{
+  "passed": [
+    {
+      "name": "level one has zero open slots",
+      "handler": "0x14e0700",
+      "packets": [],
+      "first_warning_string_ids": [
+        2269
+      ]
+    },
+    {
+      "name": "level two first practice opens",
+      "handler": "0x14e0700",
+      "packets": [
+        [
+          808509,
+          [
+            123,
+            256,
+            360001,
+            1
+          ]
+        ]
+      ],
+      "first_warning_string_ids": []
+    },
+    {
+      "name": "level three second practice opens",
+      "handler": "0x14e0700",
+      "packets": [
+        [
+          808509,
+          [
+            123,
+            256,
+            360001,
+            1
+          ]
+        ]
+      ],
+      "first_warning_string_ids": []
+    },
+    {
+      "name": "level three third practice exceeds level minus one slots",
+      "handler": "0x14e0700",
+      "packets": [],
+      "first_warning_string_ids": [
+        2269
+      ]
+    },
+    {
+      "name": "already open rejects",
+      "handler": "0x14e0700",
+      "packets": [],
+      "first_warning_string_ids": [
+        2267
+      ]
+    },
+    {
+      "name": "closing active practice emits zero flag",
+      "handler": "0x14e09d0",
+      "packets": [
+        [
+          808509,
+          [
+            123,
+            256,
+            360001,
+            0
+          ]
+        ]
+      ],
+      "first_warning_string_ids": []
+    },
+    {
+      "name": "already closed rejects",
+      "handler": "0x14e09d0",
+      "packets": [],
+      "first_warning_string_ids": [
+        2271
+      ]
+    },
+    {
+      "name": "open requires selected row",
+      "handler": "0x14e0700",
+      "packets": [],
+      "first_warning_string_ids": [
+        2270
+      ]
+    },
+    {
+      "name": "close requires selected row",
+      "handler": "0x14e09d0",
+      "packets": [],
+      "first_warning_string_ids": [
+        2272
+      ]
+    },
+    {
+      "name": "research selected furniture skill",
+      "handler": "0x14e1600",
+      "packets": [
+        [
+          808507,
+          [
+            123,
+            256,
+            310103
+          ]
+        ]
+      ],
+      "first_warning_string_ids": []
+    },
+    {
+      "name": "research duplicate selection rejects",
+      "handler": "0x14e1600",
+      "packets": [],
+      "first_warning_string_ids": [
+        2273
+      ]
+    },
+    {
+      "name": "CFactionSetPractice",
+      "type": "0xc5655",
+      "serializer": "0xe450b0",
+      "wire": "000001000000007b00057e4100000001"
+    },
+    {
+      "name": "CSetFactionPracticeOpen",
+      "type": "0xc563d",
+      "serializer": "0xe45700",
+      "wire": "000001000000007b00057e4100000001"
+    },
+    {
+      "name": "CSetFactionResearchSkill",
+      "type": "0xc563b",
+      "serializer": "0xe45740",
+      "wire": "000001000000007b0004bb57"
+    },
+    {
+      "name": "CPractiseSkill raw mode 0",
+      "type": "0xc36cc",
+      "serializer": "0xe56770",
+      "wire": "000001000000007b00057e4100"
+    },
+    {
+      "name": "CPractiseSkill raw mode 1",
+      "type": "0xc36cc",
+      "serializer": "0xe56770",
+      "wire": "000001000000007b00057e4101"
+    },
+    {
+      "name": "CPractiseSkill raw mode 2",
+      "type": "0xc36cc",
+      "serializer": "0xe56770",
+      "wire": "000001000000007b00057e4102"
+    },
+    {
+      "name": "CPractiseSkill raw mode 3",
+      "type": "0xc36cc",
+      "serializer": "0xe56770",
+      "wire": "000001000000007b00057e4103"
+    },
+    {
+      "name": "CPractiseSkill raw mode 4",
+      "type": "0xc36cc",
+      "serializer": "0xe56770",
+      "wire": "000001000000007b00057e4104"
+    },
+    {
+      "name": "CUpdaetAssistSkillLevel raw mode 0",
+      "type": "0xc36b6",
+      "serializer": "0xe56880",
+      "wire": "000001000000007b00057e4100"
+    },
+    {
+      "name": "CUpdaetAssistSkillLevel raw mode 1",
+      "type": "0xc36b6",
+      "serializer": "0xe56880",
+      "wire": "000001000000007b00057e4101"
+    },
+    {
+      "name": "CUpdaetAssistSkillLevel raw mode 2",
+      "type": "0xc36b6",
+      "serializer": "0xe56880",
+      "wire": "000001000000007b00057e4102"
+    },
+    {
+      "name": "CUpdaetAssistSkillLevel raw mode 3",
+      "type": "0xc36b6",
+      "serializer": "0xe56880",
+      "wire": "000001000000007b00057e4103"
+    },
+    {
+      "name": "CUpdaetAssistSkillLevel raw mode 4",
+      "type": "0xc36b6",
+      "serializer": "0xe56880",
+      "wire": "000001000000007b00057e4104"
+    },
+    {
+      "name": "FactionPractice and SFactionSetPracticeOK id/status int pair",
+      "serializers": [
+        "0xe91320",
+        "0xe46060"
+      ]
+    }
+  ],
+  "image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+  "native_gui_verified": false,
+  "runtime_integrated": false,
+  "scope": "offline original settings handlers and native serializers; UI selection/network/dialog edges adapted; seven-node active list uses original lookup/count routines",
+  "conclusions": [
+    "legacy FactionData +40 is guild level cached at manager +280; legacy open count cannot exceed level minus one",
+    "SRefreshFactionPracticeData c563c entries copy skill id and nonzero-as-boolean into active list",
+    "settings, enable and individual practice are distinct requests",
+    "request Q business context and individual raw modes remain unbound"
+  ],
+  "catalog_checks": [
+    "research ids match original bCanStudy=1 rows",
+    "seven current practice ids are original life-skill rows",
+    "opening fee 3000000 and current minimum funds 6000000 match original success/failure messages"
+  ],
+  "current_seven_type_capacity_source": "inferred from verified legacy level-minus-one path"
+}

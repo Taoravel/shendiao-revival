@@ -1,0 +1,504 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="RideInfo">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.21375,0},{0.091622,0},{0.2125,474},{0.163333,433}}" />
+    <Window Type="TaharezLook/StaticImage" Name="RideInfo/Back">
+      <Property Name="Image" Value="set:MainControl22 image:rideback" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0422833,0},{0.0966387,0},{0.953488,0},{0.111639,402}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticImage" Name="RideInfo/RideInfoModel">
+        <Property Name="Image" Value="set:MainControl22 image:ridemodel" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,134},{0,134}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,134},{0,134}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0208817,0},{0.0171149,0},{0.331787,0},{0.344743,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="RideInfo/RideInfoModel/food">
+          <Property Name="Text" Value="饱食" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+          <Property Name="BorderColour" Value="FF5F4100" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="VertFormatting" Value="TopAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,70},{0.0447761,0},{0.05,96},{0.156716,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="RideInfo/RideInfoModel/foodnum">
+          <Property Name="Text" Value="100" />
+          <Property Name="HorzExtent" Value="24" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+          <Property Name="BorderColour" Value="FF5F4100" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="VertFormatting" Value="TopAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0.1,92},{0.1,-7},{0.1,116},{0.141791,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="RideInfo/RideInfoModel/level">
+          <Property Name="Text" Value="级" />
+          <Property Name="HorzExtent" Value="14" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+          <Property Name="BorderColour" Value="FF5F4100" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="VertFormatting" Value="TopAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0.1,90},{0.843284,0},{0.1,116},{0.955224,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="RideInfo/RideInfoModel/levelnum">
+          <Property Name="Text">160
+</Property>
+          <Property Name="HorzExtent" Value="24" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+          <Property Name="BorderColour" Value="FF5F4100" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="VertFormatting" Value="TopAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0.15,69},{0.843284,0},{0.15,93},{0.940298,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="RideInfo/AccessCell1">
+        <Property Name="UnifiedAreaRect" Value="{{0.338747,0},{0.0122249,0},{0.338747,46},{0.0122249,46}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="RideInfo/AccessCell2">
+        <Property Name="UnifiedAreaRect" Value="{{0.338747,0},{0.127139,0},{0.338747,46},{0.127139,46}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="RideInfo/AccessCell3">
+        <Property Name="UnifiedAreaRect" Value="{{0.338747,0},{0.242054,0},{0.338747,46},{0.242054,46}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="RideInfo/Title">
+        <Property Name="Disabled" Value="True" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="CentreAligned" />
+        <Property Name="UnifiedMaxSize" Value="{{0,214},{0,27}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,214},{0,27}}" />
+        <Property Name="VertFormatting" Value="CentreAligned" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,49},{0,12},{0,263},{0,39}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+      <Window Type="TaharezLook/GroupButton" Name="RideInfo/RideInfoSkill">
+        <Property Name="Text" Value="天赋技能" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0301624,0},{0,254},{0.197216,0},{0,276}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/Attack">
+        <Property Name="Text" Value="外功" />
+        <Property Name="Tooltip" Value="坐骑的外功成长潜力\n影响所有外功项坐骑技能的效果" />
+        <Property Name="HorzExtent" Value="26" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.477958,0},{0.05,256},{0.477958,37},{0.05,276}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/AttackNum">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,239},{0.05,257},{0,306},{0.05,277}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/Defend">
+        <Property Name="Text" Value="防御" />
+        <Property Name="Tooltip" Value="坐骑的防御成长潜力\n影响所有防御项坐骑技能的效果" />
+        <Property Name="HorzExtent" Value="26" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.477958,0},{0.05,283},{0.477958,37},{0.05,303}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/DefendNum">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,239},{0.05,283},{0,306},{0.05,303}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/Defend1">
+        <Property Name="Text" Value="体力" />
+        <Property Name="Tooltip" Value="坐骑的体力成长潜力\n影响所有生命项坐骑技能的效果" />
+        <Property Name="HorzExtent" Value="26" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.477958,0},{0.05,310},{0.477958,37},{0.05,330}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/EnergyNum">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,239},{0.05,310},{0,306},{0.05,330}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/Magic">
+        <Property Name="Text" Value="内功" />
+        <Property Name="Tooltip" Value="坐骑的内功成长潜力\n影响所有内功项坐骑技能的效果" />
+        <Property Name="HorzExtent" Value="26" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,299},{0.05,257},{0.05,336},{0.05,277}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/MagicNum">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,354},{0.05,257},{0,421},{0.05,277}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/Rate">
+        <Property Name="Text" Value="速度" />
+        <Property Name="Tooltip" Value="坐骑的速度成长潜力\n影响坐骑移动速度、宠物战斗内速度等坐骑技能效果" />
+        <Property Name="HorzExtent" Value="26" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,299},{0.05,283},{0.05,336},{0.05,303}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/RateNum">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,354},{0.05,310},{0,421},{0.05,330}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/Growup">
+        <Property Name="Text" Value="成长" />
+        <Property Name="Tooltip" Value="坐骑的综合成长\n影响所有坐骑技能的效果" />
+        <Property Name="HorzExtent" Value="26" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,299},{0.05,309},{0.05,336},{0.05,329}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/GrowupNum">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,354},{0.05,283},{0,421},{0.05,303}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/State">
+        <Property Name="Text" Value="境界" />
+        <Property Name="Tooltip" Value="坐骑的成长境界，影响坐骑的造型\n提升境界还可增加坐骑的成长" />
+        <Property Name="HorzExtent" Value="27" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.477958,0},{0.05,337},{0.477958,37},{0.05,357}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/StateNum">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,239},{0.05,337},{0,423},{0.05,357}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="RideInfo/SkillBox">
+        <Property Name="UnifiedAreaRect" Value="{{0.0232019,0},{0.672372,0},{0.457077,0},{0.797066,0}}" />
+        <Window Type="TaharezLook/SkillBox" Name="RideInfo/SkillBox/Cell1">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.026738,0},{0.0784314,0},{0.262032,0},{0.941176,0}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="RideInfo/SkillBox/Cell2">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.26738,0},{0.0784314,0},{0.502674,0},{0.941176,0}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="RideInfo/SkillBox/Cell3">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.508021,0},{0.0784314,0},{0.743316,0},{0.941176,0}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="RideInfo/SkillBox/Cell4">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.748663,0},{0.0784314,0},{0.983957,0},{0.941176,0}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/Name">
+        <Property Name="Text" Value="坐骑名称" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0301624,0},{0.376528,0},{0.07,42},{0.425428,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/Belong">
+        <Property Name="Text" Value="坐骑归属" />
+        <Property Name="Tooltip" Value="坐骑归属的玩家名" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0301624,0},{0.435208,0},{0.0537587,49},{0.433803,21}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/Gift">
+        <Property Name="Text" Value="坐骑天赋" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0301624,0},{0.433803,25},{0.0537587,49},{0.433803,45}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/Type">
+        <Property Name="Text" Value="坐骑种类" />
+        <Property Name="Tooltip" Value="坐骑天生的造型名" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0301624,0},{0.433803,49},{0.0514385,50},{0.433803,69}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/NameText">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0.157773,0},{0.376528,0},{0.11125,147},{0.425428,0}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/BelongText">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0.157773,0},{0.435208,0},{0.0950087,154},{0.433803,21}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/TypeText">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0.157773,0},{0.433803,49},{0.0926885,155},{0.433803,69}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/GiftText">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0.157773,0},{0.433803,25},{0.0950087,154},{0.433803,45}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="RideInfo/FiveBack">
+        <Property Name="Image" Value="set:MainControl9 image:FiveBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,228},{0,218}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,228},{0,218}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.461717,0},{0.00977995,0},{0.990719,0},{0.542787,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="RideInfo/Radar">
+          <Property Name="Image" Value="set:MainControl9 image:Five" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,143},{0,143}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,143},{0,143}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,31},{0.05,34},{0.05,174},{0.05,177}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="RideInfo/Radar/5">
+            <Property Name="Image" Value="set:MainControl9 image:ridef" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,56},{0,56}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,56},{0,56}}" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.328671,0},{0,9},{0.0629371,0},{0,65}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="RideInfo/Radar/3">
+            <Property Name="Image" Value="set:MainControl9 image:riden" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,56},{0,56}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,56},{0,56}}" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.678322,0},{0.853147,0},{1.06993,0},{1.24476,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="RideInfo/Radar/4">
+            <Property Name="Image" Value="set:MainControl9 image:ridet" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,56},{0,56}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,56},{0,56}}" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.0839161,0},{0.825175,0},{0.307692,0},{1.21678,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="RideInfo/Radar/2">
+            <Property Name="Image" Value="set:MainControl9 image:rides" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,56},{0,56}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,56},{0,56}}" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.916084,0},{0,8},{1.30769,0},{0,64}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="RideInfo/Radar/1">
+            <Property Name="Image" Value="set:MainControl9 image:ridew" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,56},{0,56}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,56},{0,56}}" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.293706,0},{-0.321678,0},{0.685315,0},{0.0699301,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/Score">
+        <Property Name="Text" Value="坐骑评分" />
+        <Property Name="Tooltip" Value="坐骑的综合评分" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.475638,0},{0.483803,28},{0.101438,220},{0.483803,48}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/ScoreText">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0.62645,0},{0.483803,28},{0.142688,336},{0.483803,48}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/RankText">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0.62645,0},{0.483803,52},{0.192688,314},{0.483803,72}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/Rank">
+        <Property Name="Text" Value="坐骑排名" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.475638,0},{0.483803,52},{0.103759,219},{0.483803,72}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="RideInfo/Control">
+        <Property Name="Text" Value="统御宠物" />
+        <Property Name="Tooltip" Value="坐骑的成长境界，影响坐骑的造型\n提升境界还可增加坐骑的成长" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.477958,0},{0.1,342},{0.918793,0},{0.1,362}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+        <Window Type="TaharezLook/StaticText" Name="RideInfo/Control/back">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.289474,0},{-0.05,0},{0.157773,153},{0.05,18}}" />
+          <Window Type="TaharezLook/LinkText" Name="RideInfo/Control/back/pet1">
+            <Property Name="Text" Value="熊猫武圣" />
+            <Property Name="UnifiedAreaRect" Value="{{0.046875,0},{0.15,0},{0.507813,0},{1,0}}" />
+          </Window>
+          <Window Type="TaharezLook/LinkText" Name="RideInfo/Control/back/pet11">
+            <Property Name="Text" Value="熊猫武圣" />
+            <Property Name="UnifiedAreaRect" Value="{{0.53125,0},{0.15,0},{0.992188,0},{1,0}}" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/GroupButton" Name="RideInfo/RideInfoSkill1">
+        <Property Name="Text" Value="后天技能" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0301624,0},{0.05,310},{0.197216,0},{0.05,332}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="RideInfo/SkillBox1">
+        <Property Name="UnifiedAreaRect" Value="{{0.0232019,0},{0.858191,0},{0.457077,0},{0.982885,0}}" />
+        <Window Type="TaharezLook/SkillBox" Name="RideInfo/SkillBox1/Cell1">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.026738,0},{0.0784314,0},{0.262032,0},{0.941176,0}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="RideInfo/SkillBox1/Cell2">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.26738,0},{0.0784314,0},{0.502674,0},{0.941176,0}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="RideInfo/SkillBox1/Cell3">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.508021,0},{0.0784314,0},{0.743316,0},{0.941176,0}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="RideInfo/SkillBox1/Cell4">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.748663,0},{0.0784314,0},{0.983957,0},{0.941176,0}}" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="RideInfo/Title/name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="坐骑信息" />
+      <Property Name="Title" Value="True" />
+      <Property Name="Disabled" Value="True" />
+      <Property Name="HorzExtent" Value="68" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF361D08" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,153},{0.05,-11},{0.05,260},{0.05,12}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="RideInfo/horse">
+      <Property Name="Image" Value="set:MainControl22 image:ridetitle" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,170},{0,52}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,170},{0,52}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.02537,0},{0.05,-29},{0.05,158},{0.05,23}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+  </Window>
+</GUILayout>

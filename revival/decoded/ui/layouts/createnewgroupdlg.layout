@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/SmallFrameWindow" Name="CreateNewGroupDlg">
+    <Property Name="Font" Value="simhei-12" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.35875,0},{0.379167,0},{0.35875,226},{0.379167,145}}" />
+    <Window Type="TaharezLook/Button" Name="CreateNewGroupDlg/Ok">
+      <Property Name="Text" Value="确   定" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,38},{0,109},{0,106},{0,133}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="CreateNewGroupDlg/Cancel">
+      <Property Name="Text" Value="取   消" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,116},{0,109},{0,184},{0,133}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="CreateNewGroupDlg/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,84.8},{0,10.12},{0,216.8},{0,33.12}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="CreateNewGroupDlg/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="创建新群" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,59.7},{-0.0468711,0},{0,139.7},{0,22.659}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="CreateNewGroupDlg/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0696685,0},{0.283682,0},{0.928076,0},{0.725061,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="CreateNewGroupDlg/text">
+        <Property Name="Text" Value="请输入群名称：" />
+        <Property Name="HorzExtent" Value="91" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,11},{0,7},{0,113},{0,29}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/Editbox" Name="CreateNewGroupDlg/NameBox">
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0,10},{0,33},{0,184},{0,55}}" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

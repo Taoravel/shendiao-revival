@@ -1,0 +1,105 @@
+{
+  "batch": 11,
+  "created_utc": "2026-10-23T12:10:44.401365+00:00",
+  "previous_goal_turn": "progress: cash practice reservation/settlement/compensation and original NPC-mode evidence implemented",
+  "goal_status": "active",
+  "complete": false,
+  "methods": [
+    "codebase-design",
+    "tdd",
+    "writing-for-agents"
+  ],
+  "source_sha256": {
+    "role_practice.py": "c6bff759fdd62f6c813b1a871f0652bad19328c29daa3acb57c22799c6429710",
+    "guild_practice.py": "ffb9163f0904cd0631e3cc85cacdf0bc66ee95ca45bce97e54c9d53828a7345b",
+    "practice_npc.py": "6d46baa8a2556d4e55ac16d28e37376b3988e9ef270b169c77d87ff710189428",
+    "practice_protocol.py": "9b90c2444cbea5b3d03d958d3d67228e2d8af93d1d595ca4104c1b6d63f47bda",
+    "faction_domain.py": "08c015b0522564950de9e7ad362a70f8d6b67b57b780f8271e463dd4b34b6681",
+    "guild_projection.py": "8e183f9e399ef813617f1cfe56cbafafce9aef297dff01b51e5e48687eb2a527",
+    "guild_training.py": "b94d6de9de1dbcb5fafd0abd7e16b6f8bce34074e042c529612393fbaf01204c",
+    "guild_runtime.py": "605c104706c782ff7197a57676beaea09fcbf6f13aa370ad3b1d6c82c113afd1",
+    "social_runtime.py": "9ddd31df5be84308b2116bd58f8aca927e074de26ef10959d32bac0d6fbdf865",
+    "recover_social_inventory.py": "4bf0ae82e7cee51be0788c1e4725d2e1b9b9c14deceec070e1777c0b4930c002",
+    "verify_role_pill_practice.py": "ca000a5e5c365817045a19212792bc29c9130bc0d2e713b85a4b4010f1d3540f",
+    "verify_role_practice_native.py": "b8f903c30b8768c5e6623dc11e759f5a80464aa7c71265c97442f18f3f8ba159",
+    "verify_practice_npc.py": "cedf178c7689608e9cef338ffed1f8605c5596683c148c0747a273d9ae65654a",
+    "verify_practice_login.py": "9a227933962c6ff35efd22557e74fb029d366f7435856901c3b1fe0ddfaa3728",
+    "design/recovery-baseline.json": "280532fc3e1eca8f57430912044ad0a08478a391291edce39c98173abd415156"
+  },
+  "checks": {
+    "role-pill-practice-verification.json": {
+      "passed_groups": 7,
+      "sha256": "81d9db892fdd23ab33e8042a5e116758dc66a20e7ba026f0a82b95a3fd7e4597"
+    },
+    "practice-npc-verification.json": {
+      "passed_groups": 5,
+      "sha256": "3a94bd5bbf98dae019a98e80699deb641098b8798689581fd28b3532a1b1de5e"
+    },
+    "practice-login-verification.json": {
+      "passed_groups": 5,
+      "sha256": "ed9b9927e8f065d965c6056b3230517acde13f0eaf84b90027d20224c4c660f9"
+    },
+    "role-practice-native-verification.json": {
+      "passed_groups": 8,
+      "sha256": "d45f9b1772e7d9490a669b4ddfe74df7b6809ca00035e404d49fbac478b94f9f"
+    },
+    "role-practice-verification.json": {
+      "passed_groups": 12,
+      "sha256": "880ca7598ab87cf1340af5bc56b3653d193dd91d53dab1b0ddf73c1ac38f6a5f"
+    },
+    "guild-management-verification.json": {
+      "passed_groups": 11,
+      "sha256": "75ec9cde7b7c9d4174f0510a7664e00e1db6cee98f56419e330b9fa9daad3d1a"
+    },
+    "guild-tcp-verification.json": {
+      "passed_groups": 7,
+      "sha256": "bf248014d54847d4e212f271645c3b54c814a38f9cadf05e953e1a9c5f591bc4"
+    },
+    "guild-training-verification.json": {
+      "passed_groups": 10,
+      "sha256": "b89d074bbcb7b3ec5a1a5337bbf1e8c31c979783e2a01ac4fc2e4452c93df7ff"
+    },
+    "guild-training-policy-verification.json": {
+      "passed_groups": 3,
+      "sha256": "a775910b9bd8a0f63d652a9f80a1932a1924cc98886a8f1bd6ad453c9eb44b59"
+    },
+    "guild-projection-verification.json": {
+      "passed_groups": 5,
+      "sha256": "ebfc32856ea48bc27161be037608b9e73f99e24c31ac6d8030a79bcbaf918fa9"
+    },
+    "faction-runtime-verification.json": {
+      "passed_groups": 11,
+      "sha256": "0c6f67e5ed2e256fd11366b8dc5705dfec558dd1d1f3e89af3bd56ab769708a9"
+    },
+    "social-runtime-verification.json": {
+      "passed_groups": 8,
+      "sha256": "cf8a1e2bc7c1fbb24320e5fd880e927c9ade2451cb31bff0cc6e6f74df1277a5"
+    }
+  },
+  "stdout_checks": {
+    "verify_runtime_io_order.py": {
+      "same_role_storage_overtook_timed_out_write": false,
+      "role_fenced_until_outcome_recovery": true,
+      "database": "disposable"
+    }
+  },
+  "source_integrated": [
+    "pill mode1 item-XP-common receipt transaction and precommit callback",
+    "known skill login packets through recipient-owned streams",
+    "bounded previous-epoch/expired reservation recovery through guild owners",
+    "trusted NPC open/prepare/finish Interface; registry not changed"
+  ],
+  "handoff": "evidence/GUILD_PRACTICE_NPC_RUNTIME.md",
+  "native_gui_verified": false,
+  "live_npc_registry_changed": false,
+  "shared_entry_files_edited": false,
+  "this_batch_deployed_or_restarted_service": false,
+  "real_role_or_user_store_changed": false,
+  "remaining": [
+    "real NPC registry/shared purchase dispatch and battle/loading gates",
+    "managed resource/source precommit integration and full price/cap responses",
+    "original-client purchase/reconnect/disconnect acceptance",
+    "property/life/inscription/special-stage and battle effects",
+    "guild research progression/maintenance/building/production/activities and full social systems"
+  ]
+}

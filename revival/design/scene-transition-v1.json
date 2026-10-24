@@ -1,0 +1,38 @@
+{
+  "revision": "2026-10-23.scene.1",
+  "provenance": "designed_protocol_adapter",
+  "scope": "ordinary_scene_change_with_current_native_client",
+  "activation": "integration_requires_send_barrier_and_input_guards_together",
+  "research": "evidence/SCENE_READY_RESEARCH.md",
+  "native_constraints": {
+    "general_ready_packet": "not_found_in_examined_native_paths; do not invent one",
+    "after_enter_world": "first-entry branch only, never generic handoff-ready",
+    "quest_or_special_packets": "only under verified matching native conditions",
+    "local_500ms_timers": "local callbacks, not a network acknowledgement"
+  },
+  "handoff": {
+    "before_commit": "reserve target, freeze source, keep source authoritative until durable decision",
+    "commit": "record target position/version and unique handoff decision in same role transaction; finalize source once committed",
+    "send_barrier": "target connection owner writes and drains the exact ordered SRoleEnterScene for this committed transfer, then emits an immutable server-side barrier event with role/epoch/connection generation/transfer ID/target version",
+    "activation": "target map owner verifies the barrier against the committed transfer and may release loading state; this is server delivery activation, not proof of client loading or visible pixels",
+    "failure_before_commit": "cancel reservation and thaw source via matching cancellation receipt",
+    "failure_after_commit": "retain committed target as sole durable authority; close failed connection and recover target on next valid login; never roll back an already committed handoff solely for a send timeout",
+    "retries": "matching receipt is idempotent; stale/foreign transfer barrier rejected"
+  },
+  "input_guards": {
+    "same_read_batch": "tag decoded input with ingress batch/version; discard remaining gameplay intents from the pre-transfer batch and queued old-version intents",
+    "loading": "reject gameplay writes until matching server send barrier; first-world ACK does not release ordinary loading",
+    "post_barrier": "attach server current map/position version to newly admitted commands; validate expected start position, bounded continuous movement and target-map collision/speed rules where verified",
+    "npc": "entity key, map instance, position version and distance must match new map; old NPC tickets invalidated",
+    "protocol_limit": "the native movement wire lacks a scene-generation token. Transport barrier alone cannot identify every delayed byte; observationally identical old/new requests cannot be perfectly distinguished. Do not claim complete native acknowledgement or universal stale-packet detection",
+    "unsupported_validation": "record remaining collision/speed gaps explicitly; do not label bounds-only movement as fully cheat-resistant"
+  },
+  "acceptance": [
+    "no source and target simultaneous authority after commit",
+    "old batch intents and old epoch/transfer/version barriers refused",
+    "movement stays blocked before exact send barrier, continues after matching barrier",
+    "send failure after commit reconnects at durable target without reward or position rollback",
+    "continuous native encrypted scene packet decode preserved",
+    "actual native client can cross and keep walking; separately inspect visual loading"
+  ]
+}

@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="HuzhuHistory">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.2275,0},{0.274167,0},{0.185,424},{0.299167,236}}" />
+    <Window Type="TaharezLook/StaticImage" Name="HuzhuHistory/title">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="CentreAligned" />
+      <Property Name="UnifiedMaxSize" Value="{{0,214},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,214},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,111},{0.0358566,0},{0,325},{0,36}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="HuzhuHistory/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="我的互助状态" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="102" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,57},{0,2},{0,170},{0,25}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/MultiColumnList" Name="HuzhuHistory/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0666667,0},{0,55},{0.0974359,326},{0,231}}" />
+      <Window Type="TaharezLook/MultiColumnList1" Name="HuzhuHistory/numberlist">
+        <Property Name="UnifiedAreaRect" Value="{{0.00443787,0},{0.0170455,0},{-0.000113065,337},{0,170}}" />
+        <Property Name="ColumnHeader" Value="text:绑定中的玩家 width:{0.4,0} id:0" />
+        <Property Name="ColumnHeader" Value="text:等级 width:{0.13,0} id:1" />
+        <Property Name="ColumnHeader" Value="text:累计消费 width:{0.24,0} id:2" />
+        <Property Name="ColumnHeader" Value="text:回馈我的积分 width:{1,-223} id:3" />
+      </Window>
+      <Window Type="TaharezLook/Figure1" Name="HuzhuHistory/Back/Title">
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0710059,0},{0,-18},{0.081414,173},{0.00568182,0}}" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Window Type="TaharezLook/StaticText" Name="HuzhuHistory/28">
+          <Property Name="Text" Value="绑定中的玩家列表" />
+          <Property Name="HorzExtent" Value="105" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003E6F" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,73},{0,0},{0,184},{0,22}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

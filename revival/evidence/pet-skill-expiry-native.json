@@ -1,0 +1,287 @@
+{
+  "source_status": "client_verified",
+  "field": "Pet+c4 map<i32,i64> -> internal Pet+4c, skill ID -> absolute expiry in original client clock units",
+  "original_refresh": "11353c9..1135429, actual learned list and map copy",
+  "original_clock_getter": "813850, globals2945088/294508c; unit not yet proven",
+  "original_ui": "140dfb2..140e0ed, actual tree lookup/64-bit comparison/list traversal",
+  "placeholder": {
+    "skill_id": 200534,
+    "name": "技能空",
+    "description": "造型特效消失了，留下了个空空的技能格，可以学习一个其他的宠物技能。"
+  },
+  "cases": [
+    {
+      "expiry": 0,
+      "clock": 0,
+      "icon_arguments": [
+        [
+          1610612737,
+          200091,
+          0,
+          0
+        ],
+        [
+          1610612738,
+          200061,
+          0,
+          0
+        ]
+      ],
+      "expired": false
+    },
+    {
+      "expiry": 0,
+      "clock": 1,
+      "icon_arguments": [
+        [
+          1610612737,
+          200534,
+          0,
+          0
+        ],
+        [
+          1610612738,
+          200061,
+          0,
+          0
+        ]
+      ],
+      "expired": true
+    },
+    {
+      "expiry": 1000,
+      "clock": 999,
+      "icon_arguments": [
+        [
+          1610612737,
+          200091,
+          1000,
+          0
+        ],
+        [
+          1610612738,
+          200061,
+          0,
+          0
+        ]
+      ],
+      "expired": false
+    },
+    {
+      "expiry": 1000,
+      "clock": 1000,
+      "icon_arguments": [
+        [
+          1610612737,
+          200091,
+          1000,
+          0
+        ],
+        [
+          1610612738,
+          200061,
+          0,
+          0
+        ]
+      ],
+      "expired": false
+    },
+    {
+      "expiry": 1000,
+      "clock": 1001,
+      "icon_arguments": [
+        [
+          1610612737,
+          200534,
+          0,
+          0
+        ],
+        [
+          1610612738,
+          200061,
+          0,
+          0
+        ]
+      ],
+      "expired": true
+    },
+    {
+      "expiry": 4294967295,
+      "clock": 4294967294,
+      "icon_arguments": [
+        [
+          1610612737,
+          200091,
+          4294967295,
+          0
+        ],
+        [
+          1610612738,
+          200061,
+          0,
+          0
+        ]
+      ],
+      "expired": false
+    },
+    {
+      "expiry": 4294967295,
+      "clock": 4294967295,
+      "icon_arguments": [
+        [
+          1610612737,
+          200091,
+          4294967295,
+          0
+        ],
+        [
+          1610612738,
+          200061,
+          0,
+          0
+        ]
+      ],
+      "expired": false
+    },
+    {
+      "expiry": 4294967295,
+      "clock": 4294967296,
+      "icon_arguments": [
+        [
+          1610612737,
+          200534,
+          0,
+          0
+        ],
+        [
+          1610612738,
+          200061,
+          0,
+          0
+        ]
+      ],
+      "expired": true
+    },
+    {
+      "expiry": 4294968296,
+      "clock": 4294968295,
+      "icon_arguments": [
+        [
+          1610612737,
+          200091,
+          1000,
+          1
+        ],
+        [
+          1610612738,
+          200061,
+          0,
+          0
+        ]
+      ],
+      "expired": false
+    },
+    {
+      "expiry": 4294968296,
+      "clock": 4294968296,
+      "icon_arguments": [
+        [
+          1610612737,
+          200091,
+          1000,
+          1
+        ],
+        [
+          1610612738,
+          200061,
+          0,
+          0
+        ]
+      ],
+      "expired": false
+    },
+    {
+      "expiry": 4294968296,
+      "clock": 4294968297,
+      "icon_arguments": [
+        [
+          1610612737,
+          200534,
+          0,
+          0
+        ],
+        [
+          1610612738,
+          200061,
+          0,
+          0
+        ]
+      ],
+      "expired": true
+    },
+    {
+      "expiry": 281474976711433,
+      "clock": 281474976711432,
+      "icon_arguments": [
+        [
+          1610612737,
+          200091,
+          777,
+          65536
+        ],
+        [
+          1610612738,
+          200061,
+          0,
+          0
+        ]
+      ],
+      "expired": false
+    },
+    {
+      "expiry": 281474976711433,
+      "clock": 281474976711433,
+      "icon_arguments": [
+        [
+          1610612737,
+          200091,
+          777,
+          65536
+        ],
+        [
+          1610612738,
+          200061,
+          0,
+          0
+        ]
+      ],
+      "expired": false
+    },
+    {
+      "expiry": 281474976711433,
+      "clock": 281474976711434,
+      "icon_arguments": [
+        [
+          1610612737,
+          200534,
+          0,
+          0
+        ],
+        [
+          1610612738,
+          200061,
+          0,
+          0
+        ]
+      ],
+      "expired": true
+    }
+  ],
+  "passed": 14,
+  "limits": [
+    "GUI terminal calls observed, not rendered",
+    "Clock units and server grant/expiry rules unknown",
+    "This map proves expiry display, not skill protection semantics",
+    "Offline only; runtime source and policy frozen"
+  ]
+}

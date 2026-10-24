@@ -1,0 +1,1185 @@
+{
+  "image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+  "sources": {
+    "autoconfig/knight.gsp.npc.cnpcserverconfig.xml": {
+      "crc32": "0x67481f85",
+      "length": 420722,
+      "sha256": "c6db03275d0d63106623e339742318a38b33d229bc73894d46136e8b9901aa26"
+    },
+    "autoconfig/knight.gsp.item.cequiprepairconfig.xml": {
+      "crc32": "0xfe52018",
+      "length": 812,
+      "sha256": "72a532daa7d4635b462d1d218db708c0595629519b48a4ce54b6b0bf62867d84"
+    },
+    "autoconfig/knight.gsp.item.citemattr.xml": {
+      "crc32": "0xa3add081",
+      "length": 4096369,
+      "sha256": "974a3b38049c5f5f7cdae418718ffadd2741d373a5846a40fb71289af25e726f"
+    },
+    "autoconfig/knight.gsp.item.cequipeffect.xml": {
+      "crc32": "0xe354a76d",
+      "length": 467441,
+      "sha256": "8ef1aacae8d016f875a37a8cf907b16a077b89fa522a87e349dd54d320572fe8"
+    }
+  },
+  "labels": {
+    "93": {
+      "id": "93",
+      "icon": "0",
+      "severStr": "我要修理装备"
+    },
+    "160": {
+      "id": "160",
+      "icon": "0",
+      "severStr": "我要修理装(已废弃)"
+    },
+    "513": {
+      "id": "513",
+      "icon": "0",
+      "severStr": "修理装备"
+    },
+    "855": {
+      "id": "855",
+      "icon": "0",
+      "severStr": "我要修理配饰"
+    }
+  },
+  "verticals": [
+    {
+      "service": 93,
+      "column": 1,
+      "events": [
+        {
+          "open_args": [
+            1,
+            147,
+            305419896
+          ]
+        },
+        {
+          "stored_method": 1,
+          "stored_npc": 1311768464867721363
+        },
+        {
+          "sent": [
+            1,
+            1311768464867721363,
+            1,
+            91
+          ]
+        }
+      ],
+      "wire": "000000011234567800000093000000010000005b"
+    },
+    {
+      "service": 93,
+      "column": 4,
+      "events": [
+        {
+          "open_args": [
+            1,
+            147,
+            305419896
+          ]
+        },
+        {
+          "stored_method": 1,
+          "stored_npc": 1311768464867721363
+        },
+        {
+          "sent": [
+            1,
+            1311768464867721363,
+            4,
+            91
+          ]
+        }
+      ],
+      "wire": "000000011234567800000093000000040000005b"
+    },
+    {
+      "service": 160,
+      "column": 1,
+      "events": [
+        {
+          "open_args": [
+            0,
+            147,
+            305419896
+          ]
+        },
+        {
+          "stored_method": 0,
+          "stored_npc": 1311768464867721363
+        },
+        {
+          "sent": [
+            0,
+            1311768464867721363,
+            1,
+            91
+          ]
+        }
+      ],
+      "wire": "000000001234567800000093000000010000005b"
+    },
+    {
+      "service": 160,
+      "column": 4,
+      "events": [
+        {
+          "open_args": [
+            0,
+            147,
+            305419896
+          ]
+        },
+        {
+          "stored_method": 0,
+          "stored_npc": 1311768464867721363
+        },
+        {
+          "sent": [
+            0,
+            1311768464867721363,
+            4,
+            91
+          ]
+        }
+      ],
+      "wire": "000000001234567800000093000000040000005b"
+    },
+    {
+      "service": 855,
+      "column": 1,
+      "events": [
+        {
+          "open_args": [
+            2,
+            147,
+            305419896
+          ]
+        },
+        {
+          "stored_method": 2,
+          "stored_npc": 1311768464867721363
+        },
+        {
+          "sent": [
+            2,
+            1311768464867721363,
+            1,
+            91
+          ]
+        }
+      ],
+      "wire": "000000021234567800000093000000010000005b"
+    },
+    {
+      "service": 855,
+      "column": 4,
+      "events": [
+        {
+          "open_args": [
+            2,
+            147,
+            305419896
+          ]
+        },
+        {
+          "stored_method": 2,
+          "stored_npc": 1311768464867721363
+        },
+        {
+          "sent": [
+            2,
+            1311768464867721363,
+            4,
+            91
+          ]
+        }
+      ],
+      "wire": "000000021234567800000093000000040000005b"
+    },
+    {
+      "service": 93,
+      "enabled": 0,
+      "mismatch": 0,
+      "events": [
+        {
+          "gate_rejected": true
+        }
+      ]
+    },
+    {
+      "service": 93,
+      "enabled": 1,
+      "mismatch": 1,
+      "events": [
+        {
+          "gate_rejected": true
+        }
+      ]
+    },
+    {
+      "service": 93,
+      "enabled": 1,
+      "mismatch": 2,
+      "events": [
+        {
+          "gate_rejected": true
+        }
+      ]
+    }
+  ],
+  "native_cost_cases": [
+    {
+      "level": 1,
+      "method": 0,
+      "member": "skillrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 40
+    },
+    {
+      "level": 1,
+      "method": 1,
+      "member": "familyrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 40
+    },
+    {
+      "level": 1,
+      "method": 2,
+      "member": "npcrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 40
+    },
+    {
+      "level": 10,
+      "method": 0,
+      "member": "skillrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 60
+    },
+    {
+      "level": 10,
+      "method": 1,
+      "member": "familyrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 80
+    },
+    {
+      "level": 10,
+      "method": 2,
+      "member": "npcrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 80
+    },
+    {
+      "level": 16,
+      "method": 0,
+      "member": "skillrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 100
+    },
+    {
+      "level": 16,
+      "method": 1,
+      "member": "familyrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 120
+    },
+    {
+      "level": 16,
+      "method": 2,
+      "member": "npcrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 120
+    },
+    {
+      "level": 18,
+      "method": 0,
+      "member": "skillrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 140
+    },
+    {
+      "level": 18,
+      "method": 1,
+      "member": "familyrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 160
+    },
+    {
+      "level": 18,
+      "method": 2,
+      "member": "npcrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 160
+    },
+    {
+      "level": 20,
+      "method": 0,
+      "member": "skillrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 180
+    },
+    {
+      "level": 20,
+      "method": 1,
+      "member": "familyrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 220
+    },
+    {
+      "level": 20,
+      "method": 2,
+      "member": "npcrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 200
+    },
+    {
+      "level": 30,
+      "method": 0,
+      "member": "skillrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 220
+    },
+    {
+      "level": 30,
+      "method": 1,
+      "member": "familyrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 260
+    },
+    {
+      "level": 30,
+      "method": 2,
+      "member": "npcrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 240
+    },
+    {
+      "level": 40,
+      "method": 0,
+      "member": "skillrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 360
+    },
+    {
+      "level": 40,
+      "method": 1,
+      "member": "familyrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 440
+    },
+    {
+      "level": 40,
+      "method": 2,
+      "member": "npcrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 400
+    },
+    {
+      "level": 50,
+      "method": 0,
+      "member": "skillrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 400
+    },
+    {
+      "level": 50,
+      "method": 1,
+      "member": "familyrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 480
+    },
+    {
+      "level": 50,
+      "method": 2,
+      "member": "npcrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 440
+    },
+    {
+      "level": 60,
+      "method": 0,
+      "member": "skillrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 460
+    },
+    {
+      "level": 60,
+      "method": 1,
+      "member": "familyrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 540
+    },
+    {
+      "level": 60,
+      "method": 2,
+      "member": "npcrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 500
+    },
+    {
+      "level": 70,
+      "method": 0,
+      "member": "skillrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 580
+    },
+    {
+      "level": 70,
+      "method": 1,
+      "member": "familyrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 700
+    },
+    {
+      "level": 70,
+      "method": 2,
+      "member": "npcrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 640
+    },
+    {
+      "level": 80,
+      "method": 0,
+      "member": "skillrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 620
+    },
+    {
+      "level": 80,
+      "method": 1,
+      "member": "familyrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 740
+    },
+    {
+      "level": 80,
+      "method": 2,
+      "member": "npcrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 680
+    },
+    {
+      "level": 90,
+      "method": 0,
+      "member": "skillrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 640
+    },
+    {
+      "level": 90,
+      "method": 1,
+      "member": "familyrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 780
+    },
+    {
+      "level": 90,
+      "method": 2,
+      "member": "npcrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 720
+    },
+    {
+      "level": 100,
+      "method": 0,
+      "member": "skillrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 1440
+    },
+    {
+      "level": 100,
+      "method": 1,
+      "member": "familyrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 1760
+    },
+    {
+      "level": 100,
+      "method": 2,
+      "member": "npcrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 1600
+    },
+    {
+      "level": 110,
+      "method": 0,
+      "member": "skillrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 1480
+    },
+    {
+      "level": 110,
+      "method": 1,
+      "member": "familyrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 1800
+    },
+    {
+      "level": 110,
+      "method": 2,
+      "member": "npcrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 1640
+    },
+    {
+      "level": 120,
+      "method": 0,
+      "member": "skillrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 1520
+    },
+    {
+      "level": 120,
+      "method": 1,
+      "member": "familyrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 1840
+    },
+    {
+      "level": 120,
+      "method": 2,
+      "member": "npcrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 1680
+    },
+    {
+      "level": 130,
+      "method": 0,
+      "member": "skillrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 1540
+    },
+    {
+      "level": 130,
+      "method": 1,
+      "member": "familyrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 1880
+    },
+    {
+      "level": 130,
+      "method": 2,
+      "member": "npcrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 1720
+    },
+    {
+      "level": 140,
+      "method": 0,
+      "member": "skillrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 1580
+    },
+    {
+      "level": 140,
+      "method": 1,
+      "member": "familyrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 1920
+    },
+    {
+      "level": 140,
+      "method": 2,
+      "member": "npcrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 1760
+    },
+    {
+      "level": 150,
+      "method": 0,
+      "member": "skillrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 1620
+    },
+    {
+      "level": 150,
+      "method": 1,
+      "member": "familyrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 1980
+    },
+    {
+      "level": 150,
+      "method": 2,
+      "member": "npcrepair",
+      "missing": 20,
+      "color": 1,
+      "cost": 1800
+    }
+  ],
+  "payment_display_controlled": [
+    {
+      "role_level": 59,
+      "item_level": 59,
+      "cash": 8589934609,
+      "bound_silver": 4294967551,
+      "quote_fixture": 6442450944,
+      "wallet_reads": [
+        {
+          "offset": "0xc8",
+          "size": 4
+        },
+        {
+          "offset": "0xcc",
+          "size": 4
+        }
+      ],
+      "events": [
+        {
+          "loaded_balance": 4294967551,
+          "label_id": "0xc4c6"
+        },
+        {
+          "quote_color": "0xffff0000"
+        },
+        {
+          "sent": [
+            1,
+            1311768464867721363,
+            4,
+            91
+          ]
+        }
+      ],
+      "wire": "000000011234567800000093000000040000005b",
+      "quote_adapter": true,
+      "text_render_skipped": true,
+      "currency_in_wire": false
+    },
+    {
+      "role_level": 59,
+      "item_level": 60,
+      "cash": 8589934609,
+      "bound_silver": 4294967551,
+      "quote_fixture": 6442450944,
+      "wallet_reads": [
+        {
+          "offset": "0xb0",
+          "size": 4
+        },
+        {
+          "offset": "0xb4",
+          "size": 4
+        }
+      ],
+      "events": [
+        {
+          "loaded_balance": 8589934609,
+          "label_id": "0xc37e"
+        },
+        {
+          "quote_color": "0xff00ff00"
+        },
+        {
+          "sent": [
+            1,
+            1311768464867721363,
+            4,
+            91
+          ]
+        }
+      ],
+      "wire": "000000011234567800000093000000040000005b",
+      "quote_adapter": true,
+      "text_render_skipped": true,
+      "currency_in_wire": false
+    },
+    {
+      "role_level": 60,
+      "item_level": 59,
+      "cash": 8589934609,
+      "bound_silver": 4294967551,
+      "quote_fixture": 6442450944,
+      "wallet_reads": [
+        {
+          "offset": "0xb0",
+          "size": 4
+        },
+        {
+          "offset": "0xb4",
+          "size": 4
+        }
+      ],
+      "events": [
+        {
+          "loaded_balance": 8589934609,
+          "label_id": "0xc37e"
+        },
+        {
+          "quote_color": "0xff00ff00"
+        },
+        {
+          "sent": [
+            1,
+            1311768464867721363,
+            4,
+            91
+          ]
+        }
+      ],
+      "wire": "000000011234567800000093000000040000005b",
+      "quote_adapter": true,
+      "text_render_skipped": true,
+      "currency_in_wire": false
+    },
+    {
+      "role_level": 60,
+      "item_level": 60,
+      "cash": 8589934609,
+      "bound_silver": 4294967551,
+      "quote_fixture": 6442450944,
+      "wallet_reads": [
+        {
+          "offset": "0xb0",
+          "size": 4
+        },
+        {
+          "offset": "0xb4",
+          "size": 4
+        }
+      ],
+      "events": [
+        {
+          "loaded_balance": 8589934609,
+          "label_id": "0xc37e"
+        },
+        {
+          "quote_color": "0xff00ff00"
+        },
+        {
+          "sent": [
+            1,
+            1311768464867721363,
+            4,
+            91
+          ]
+        }
+      ],
+      "wire": "000000011234567800000093000000040000005b",
+      "quote_adapter": true,
+      "text_render_skipped": true,
+      "currency_in_wire": false
+    }
+  ],
+  "raw_tag_branch_controlled": [
+    {
+      "artificial_tag": 0,
+      "first_dependency": "0x89d550",
+      "branch": "ordinary",
+      "real_item_mapping_verified": false,
+      "getter_replaced": false
+    },
+    {
+      "artificial_tag": 1,
+      "first_dependency": "0x89d550",
+      "branch": "ordinary",
+      "real_item_mapping_verified": false,
+      "getter_replaced": false
+    },
+    {
+      "artificial_tag": 2,
+      "first_dependency": "0x89d550",
+      "branch": "ordinary",
+      "real_item_mapping_verified": false,
+      "getter_replaced": false
+    },
+    {
+      "artificial_tag": 3,
+      "first_dependency": "0x89d550",
+      "branch": "ordinary",
+      "real_item_mapping_verified": false,
+      "getter_replaced": false
+    },
+    {
+      "artificial_tag": 4,
+      "first_dependency": "0x89d550",
+      "branch": "ordinary",
+      "real_item_mapping_verified": false,
+      "getter_replaced": false
+    },
+    {
+      "artificial_tag": 5,
+      "first_dependency": "0x89d550",
+      "branch": "ordinary",
+      "real_item_mapping_verified": false,
+      "getter_replaced": false
+    },
+    {
+      "artificial_tag": 6,
+      "first_dependency": "0x1073090",
+      "branch": "special",
+      "real_item_mapping_verified": false,
+      "getter_replaced": false
+    },
+    {
+      "artificial_tag": 7,
+      "first_dependency": "0x1073090",
+      "branch": "special",
+      "real_item_mapping_verified": false,
+      "getter_replaced": false
+    },
+    {
+      "artificial_tag": 8,
+      "first_dependency": "0x1073090",
+      "branch": "special",
+      "real_item_mapping_verified": false,
+      "getter_replaced": false
+    },
+    {
+      "artificial_tag": 9,
+      "first_dependency": "0x1073090",
+      "branch": "special",
+      "real_item_mapping_verified": false,
+      "getter_replaced": false
+    },
+    {
+      "artificial_tag": 10,
+      "first_dependency": "0x1073090",
+      "branch": "special",
+      "real_item_mapping_verified": false,
+      "getter_replaced": false
+    },
+    {
+      "artificial_tag": 11,
+      "first_dependency": "0x1073090",
+      "branch": "special",
+      "real_item_mapping_verified": false,
+      "getter_replaced": false
+    },
+    {
+      "artificial_tag": 12,
+      "first_dependency": "0x89d550",
+      "branch": "ordinary",
+      "real_item_mapping_verified": false,
+      "getter_replaced": false
+    },
+    {
+      "artificial_tag": 13,
+      "first_dependency": "0x89d550",
+      "branch": "ordinary",
+      "real_item_mapping_verified": false,
+      "getter_replaced": false
+    },
+    {
+      "artificial_tag": 14,
+      "first_dependency": "0x89d550",
+      "branch": "ordinary",
+      "real_item_mapping_verified": false,
+      "getter_replaced": false
+    },
+    {
+      "artificial_tag": 15,
+      "first_dependency": "0x89d550",
+      "branch": "ordinary",
+      "real_item_mapping_verified": false,
+      "getter_replaced": false
+    }
+  ],
+  "kind6_11_original_type_mapping": "original row fields through native initializer/copy prefix",
+  "real_config_type_prefix": [
+    {
+      "id": 47000,
+      "name": "乌纱帽",
+      "itemtypeid": 104,
+      "tag": 6,
+      "events": [
+        {
+          "copied_id": 47000,
+          "copied_itemtypeid": 104
+        },
+        {
+          "fee_branch_dependency": "0x1073090"
+        }
+      ],
+      "copy_scope": "id and type prefix only; before string copy",
+      "getter_replaced": false,
+      "current_ordinary_guard": false
+    },
+    {
+      "id": 47001,
+      "name": "铜钱乌纱帽",
+      "itemtypeid": 104,
+      "tag": 6,
+      "events": [
+        {
+          "copied_id": 47001,
+          "copied_itemtypeid": 104
+        },
+        {
+          "fee_branch_dependency": "0x1073090"
+        }
+      ],
+      "copy_scope": "id and type prefix only; before string copy",
+      "getter_replaced": false,
+      "current_ordinary_guard": false
+    },
+    {
+      "id": 47036,
+      "name": "倾城之恋（30天）",
+      "itemtypeid": 120,
+      "tag": 7,
+      "events": [
+        {
+          "copied_id": 47036,
+          "copied_itemtypeid": 120
+        },
+        {
+          "fee_branch_dependency": "0x1073090"
+        }
+      ],
+      "copy_scope": "id and type prefix only; before string copy",
+      "getter_replaced": false,
+      "current_ordinary_guard": false
+    },
+    {
+      "id": 47037,
+      "name": "倾城之恋（30天）",
+      "itemtypeid": 120,
+      "tag": 7,
+      "events": [
+        {
+          "copied_id": 47037,
+          "copied_itemtypeid": 120
+        },
+        {
+          "fee_branch_dependency": "0x1073090"
+        }
+      ],
+      "copy_scope": "id and type prefix only; before string copy",
+      "getter_replaced": false,
+      "current_ordinary_guard": false
+    },
+    {
+      "id": 47005,
+      "name": "框镜",
+      "itemtypeid": 136,
+      "tag": 8,
+      "events": [
+        {
+          "copied_id": 47005,
+          "copied_itemtypeid": 136
+        },
+        {
+          "fee_branch_dependency": "0x1073090"
+        }
+      ],
+      "copy_scope": "id and type prefix only; before string copy",
+      "getter_replaced": false,
+      "current_ordinary_guard": false
+    },
+    {
+      "id": 47006,
+      "name": "墨镜（3天）",
+      "itemtypeid": 136,
+      "tag": 8,
+      "events": [
+        {
+          "copied_id": 47006,
+          "copied_itemtypeid": 136
+        },
+        {
+          "fee_branch_dependency": "0x1073090"
+        }
+      ],
+      "copy_scope": "id and type prefix only; before string copy",
+      "getter_replaced": false,
+      "current_ordinary_guard": false
+    },
+    {
+      "id": 47007,
+      "name": "桃心口罩",
+      "itemtypeid": 152,
+      "tag": 9,
+      "events": [
+        {
+          "copied_id": 47007,
+          "copied_itemtypeid": 152
+        },
+        {
+          "fee_branch_dependency": "0x1073090"
+        }
+      ],
+      "copy_scope": "id and type prefix only; before string copy",
+      "getter_replaced": false,
+      "current_ordinary_guard": false
+    },
+    {
+      "id": 47008,
+      "name": "麦秆",
+      "itemtypeid": 152,
+      "tag": 9,
+      "events": [
+        {
+          "copied_id": 47008,
+          "copied_itemtypeid": 152
+        },
+        {
+          "fee_branch_dependency": "0x1073090"
+        }
+      ],
+      "copy_scope": "id and type prefix only; before string copy",
+      "getter_replaced": false,
+      "current_ordinary_guard": false
+    },
+    {
+      "id": 47003,
+      "name": "花猫面具",
+      "itemtypeid": 168,
+      "tag": 10,
+      "events": [
+        {
+          "copied_id": 47003,
+          "copied_itemtypeid": 168
+        },
+        {
+          "fee_branch_dependency": "0x1073090"
+        }
+      ],
+      "copy_scope": "id and type prefix only; before string copy",
+      "getter_replaced": false,
+      "current_ordinary_guard": false
+    },
+    {
+      "id": 47004,
+      "name": "脸谱",
+      "itemtypeid": 168,
+      "tag": 10,
+      "events": [
+        {
+          "copied_id": 47004,
+          "copied_itemtypeid": 168
+        },
+        {
+          "fee_branch_dependency": "0x1073090"
+        }
+      ],
+      "copy_scope": "id and type prefix only; before string copy",
+      "getter_replaced": false,
+      "current_ordinary_guard": false
+    },
+    {
+      "id": 48010,
+      "name": "王侯将相（3天）",
+      "itemtypeid": 184,
+      "tag": 11,
+      "events": [
+        {
+          "copied_id": 48010,
+          "copied_itemtypeid": 184
+        },
+        {
+          "fee_branch_dependency": "0x1073090"
+        }
+      ],
+      "copy_scope": "id and type prefix only; before string copy",
+      "getter_replaced": false,
+      "current_ordinary_guard": false
+    },
+    {
+      "id": 48020,
+      "name": "暹罗之恋（3天）",
+      "itemtypeid": 184,
+      "tag": 11,
+      "events": [
+        {
+          "copied_id": 48020,
+          "copied_itemtypeid": 184
+        },
+        {
+          "fee_branch_dependency": "0x1073090"
+        }
+      ],
+      "copy_scope": "id and type prefix only; before string copy",
+      "getter_replaced": false,
+      "current_ordinary_guard": false
+    },
+    {
+      "id": 49009,
+      "name": "师承的油纸伞",
+      "itemtypeid": 2312,
+      "tag": 0,
+      "events": [
+        {
+          "copied_id": 49009,
+          "copied_itemtypeid": 2312
+        },
+        {
+          "fee_branch_dependency": "0x89d550"
+        }
+      ],
+      "copy_scope": "id and type prefix only; before string copy",
+      "getter_replaced": false,
+      "current_ordinary_guard": true
+    }
+  ],
+  "original_type_counts": {
+    "6": 79,
+    "7": 73,
+    "8": 38,
+    "9": 21,
+    "10": 6,
+    "11": 112
+  },
+  "native_gui_verified": false,
+  "server_eligibility_proven": false,
+  "runtime_changed": false
+}

@@ -1,0 +1,438 @@
+{
+  "passed": [
+    "original c36b6 raw0..4 marshals match current codec and c36b7 updates life/practice in shared+74 while preserving OtherSkills+40",
+    "original c36b5 full constructor/decoder/Process replaces shared+74 and removes omitted practice, proving a life-only list is unsafe",
+    "original c36b8 fourteen-map marshal matches current codec; full ctor/unmarshal consumes121 bytes and Process copies NPC Q/caps before GUI",
+    "original cost copy and three numeric readers bind silver, role experience and reputation display at target1/40/155",
+    "original service121 switch executes role-level29/30 and current guild64 scene checks",
+    "original full guild learning button checks research cap, role XP, individual popularity, total money, wallet10000 and local deposit prompt"
+  ],
+  "request": {
+    "raw_mode_wires": [
+      "00010000000005730004944500",
+      "00010000000005730004944501",
+      "00010000000005730004944502",
+      "00010000000005730004944503",
+      "00010000000005730004944504"
+    ],
+    "skills_updated_in_original_shared_map": [
+      300101,
+      360001
+    ],
+    "other_skills_sentinel_unchanged": true,
+    "business_mode_bound_by_guild_button": 0
+  },
+  "full_snapshot_replacement": {
+    "before": {
+      "360001": [
+        3,
+        27
+      ]
+    },
+    "after": {
+      "300101": [
+        11,
+        123
+      ]
+    },
+    "original_full_snapshot_removed_prior_practice": true
+  },
+  "panel": {
+    "bytes": 121,
+    "wire_hex": "00010000000005720e0004944500000014000494a9000000150004950d000000160004bb55000000170004bb57000000180004bbb9000000190004e2650000001a0004e2660000001b0004e2670000001c0004e2680000001d000509750000001e000509760000001f00050977000000200005a55100000021",
+    "maximums": [
+      [
+        300101,
+        20
+      ],
+      [
+        300201,
+        21
+      ],
+      [
+        300301,
+        22
+      ],
+      [
+        310101,
+        23
+      ],
+      [
+        310103,
+        24
+      ],
+      [
+        310201,
+        25
+      ],
+      [
+        320101,
+        26
+      ],
+      [
+        320102,
+        27
+      ],
+      [
+        320103,
+        28
+      ],
+      [
+        320104,
+        29
+      ],
+      [
+        330101,
+        30
+      ],
+      [
+        330102,
+        31
+      ],
+      [
+        330103,
+        32
+      ],
+      [
+        370001,
+        33
+      ]
+    ],
+    "original_decoder_consumed": 121,
+    "original_process_stop": "0x1351f99",
+    "npc_registration": [
+      [
+        1394,
+        65536,
+        1,
+        83894276,
+        13
+      ]
+    ]
+  },
+  "cost_readers": [
+    {
+      "target": 1,
+      "formatter_arguments": {
+        "inMoneyCost": 3,
+        "inExpCost": 16,
+        "inBG": 1
+      }
+    },
+    {
+      "target": 40,
+      "formatter_arguments": {
+        "inMoneyCost": 2104,
+        "inExpCost": 24535,
+        "inBG": 40
+      }
+    },
+    {
+      "target": 155,
+      "formatter_arguments": {
+        "inMoneyCost": 695472,
+        "inExpCost": 22060446,
+        "inBG": 155
+      }
+    }
+  ],
+  "service_gate": [
+    {
+      "level": 29,
+      "correct_guild_scene": true,
+      "outcome": "low_level"
+    },
+    {
+      "level": 30,
+      "correct_guild_scene": false,
+      "outcome": "wrong_scene"
+    },
+    {
+      "level": 30,
+      "correct_guild_scene": true,
+      "outcome": "service121"
+    }
+  ],
+  "purchase_boundaries": [
+    {
+      "target": 1,
+      "cost": 3,
+      "cash": 0,
+      "bound_silver": 0,
+      "deposit": 10000,
+      "options": {},
+      "outcome": [
+        "minimum_wallet",
+        142514
+      ]
+    },
+    {
+      "target": 1,
+      "cost": 3,
+      "cash": 1,
+      "bound_silver": 0,
+      "deposit": 10000,
+      "options": {},
+      "outcome": [
+        "minimum_wallet",
+        142514
+      ]
+    },
+    {
+      "target": 1,
+      "cost": 3,
+      "cash": 2,
+      "bound_silver": 0,
+      "deposit": 10000,
+      "options": {},
+      "outcome": [
+        "minimum_wallet",
+        142514
+      ]
+    },
+    {
+      "target": 1,
+      "cost": 3,
+      "cash": 3,
+      "bound_silver": 0,
+      "deposit": 0,
+      "options": {},
+      "outcome": [
+        "minimum_wallet",
+        142514
+      ]
+    },
+    {
+      "target": 1,
+      "cost": 3,
+      "cash": 0,
+      "bound_silver": 3,
+      "deposit": 0,
+      "options": {},
+      "outcome": [
+        "minimum_wallet",
+        142514
+      ]
+    },
+    {
+      "target": 1,
+      "cost": 3,
+      "cash": 9999,
+      "bound_silver": 0,
+      "deposit": 0,
+      "options": {},
+      "outcome": [
+        "minimum_wallet",
+        142514
+      ]
+    },
+    {
+      "target": 1,
+      "cost": 3,
+      "cash": 10000,
+      "bound_silver": 0,
+      "deposit": 0,
+      "options": {},
+      "outcome": [
+        "send",
+        800438,
+        1394,
+        256,
+        300101,
+        0
+      ]
+    },
+    {
+      "target": 1,
+      "cost": 3,
+      "cash": 0,
+      "bound_silver": 10000,
+      "deposit": 0,
+      "options": {},
+      "outcome": [
+        "send",
+        800438,
+        1394,
+        256,
+        300101,
+        0
+      ]
+    },
+    {
+      "target": 1,
+      "cost": 3,
+      "cash": 0,
+      "bound_silver": 0,
+      "deposit": 2,
+      "options": {},
+      "outcome": [
+        "warning",
+        140419
+      ]
+    },
+    {
+      "target": 155,
+      "cost": 695472,
+      "cash": 9999,
+      "bound_silver": 0,
+      "deposit": 10000000,
+      "options": {},
+      "outcome": [
+        "minimum_wallet",
+        142514
+      ]
+    },
+    {
+      "target": 155,
+      "cost": 695472,
+      "cash": 10000,
+      "bound_silver": 0,
+      "deposit": 10000000,
+      "options": {},
+      "outcome": [
+        "warning",
+        141620
+      ]
+    },
+    {
+      "target": 155,
+      "cost": 695472,
+      "cash": 10000,
+      "bound_silver": 0,
+      "deposit": 10000000,
+      "options": {
+        "prompted": true
+      },
+      "outcome": [
+        "send",
+        800438,
+        1394,
+        256,
+        300101,
+        0
+      ]
+    },
+    {
+      "target": 155,
+      "cost": 695472,
+      "cash": 695471,
+      "bound_silver": 0,
+      "deposit": 0,
+      "options": {},
+      "outcome": [
+        "warning",
+        140419
+      ]
+    },
+    {
+      "target": 155,
+      "cost": 695472,
+      "cash": 695472,
+      "bound_silver": 0,
+      "deposit": 0,
+      "options": {},
+      "outcome": [
+        "send",
+        800438,
+        1394,
+        256,
+        300101,
+        0
+      ]
+    },
+    {
+      "target": 155,
+      "cost": 695472,
+      "cash": 10000000,
+      "bound_silver": 0,
+      "deposit": 0,
+      "options": {
+        "maximum": 154
+      },
+      "outcome": [
+        "warning",
+        140421
+      ]
+    },
+    {
+      "target": 155,
+      "cost": 695472,
+      "cash": 10000000,
+      "bound_silver": 0,
+      "deposit": 0,
+      "options": {
+        "xp": 22060445
+      },
+      "outcome": [
+        "warning",
+        140424
+      ]
+    },
+    {
+      "target": 1,
+      "cost": 3,
+      "cash": 10000,
+      "bound_silver": 0,
+      "deposit": 0,
+      "options": {
+        "popularity": 11
+      },
+      "outcome": [
+        "warning",
+        140418
+      ]
+    },
+    {
+      "target": 1,
+      "cost": 3,
+      "cash": 10000,
+      "bound_silver": 0,
+      "deposit": 0,
+      "options": {
+        "popularity": 12
+      },
+      "outcome": [
+        "send",
+        800438,
+        1394,
+        256,
+        300101,
+        0
+      ]
+    }
+  ],
+  "native_image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+  "source_root": "D:\\神雕侠侣\\revival",
+  "resource_root": "D:\\神雕侠侣\\revival",
+  "source_sha256": {
+    "verify_guild_member_learning_native.py": "0cd324c03dd9b768126eb0c4628020195c6ff7340473b165ff99c5dd827e58fe",
+    "life_skill_protocol.py": "9acb6ebaaa28d2126f54cf1ca74fe52c92059d13182310127b1df2d8d1768ca2",
+    "role_life_skills.py": "c7784ed22bd9ee0fb267b478f4015f36b86e7a40be835b4b91457254651558f9",
+    "verify_family_donation_native.py": "c9a16c862f5f56f16b15a4e78672c787578995c35326b7d20469e9687109c1cb",
+    "verify_social_native.py": "a5e85ff5ec786c461a55af075b5ecd5c6d40b57da41c6f84bf9116596cae1a80",
+    "research_battle.py": "4aa276ece9ea4a9f13d9c4f9a0de2900f97cf77ff3783aeecc92e7d5f3a47b45"
+  },
+  "resource_sha256": {
+    "catalogs/knight.gsp.skill.clifeskill.json": "f7bddc6e74ae9ee7f91b16854cdfa378ced3f01288b8adf390492a1377b54bac",
+    "catalogs/knight.gsp.skill.clifeskillcost.json": "517f76b0a3f4af5c1028b97f5cecf0ee886707e3f32b890f920772414d92a07a",
+    "decoded/ui/layouts/assistskillstudyinfaction.layout": "ccfd84fdd57a47be0f18e6104329c15e8036c2b5d5e9957b2f52ca5f9da16e05"
+  },
+  "method": "research executes primary native consumers; codebase-design confines controlled external Adapters to this verification Module",
+  "adapters": [
+    "existing Native allocation/CRT/cookie helpers; synthetic original-layout attribute, wallet and map fixtures",
+    "configuration getter and row lookup return actual catalog target rows; original cfbbe0 copy and comparisons execute",
+    "message lookup stops at original message ID; transport stops after original complete request construction",
+    "c36b5 manager reset notification uses an empty callback; original list/tree decoding and replacement execute",
+    "c36b8 window factory and NPC registration adapted, stopping at1351f99 before GUI refresh",
+    "cost formatter intercepted at1016030 before string/UI work; service stopped at1627be0 request-helper entry"
+  ],
+  "unknown": [
+    "original server debits/priority/refunds, inBG actual debit, inBangGongNeed/inBR business rules",
+    "proficiency upgrade consumption, full maxlevel derivation, real NPC/MapAddress authorization and GUI"
+  ],
+  "original_full_guild_button_to_observation_executed": true,
+  "full_panel_process_executed": false,
+  "complete_production_details_mapper_implemented": false,
+  "native_gui_verified": false,
+  "live_server_changed": false
+}

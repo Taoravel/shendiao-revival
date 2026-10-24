@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="DiaoPayBtn">
+    <Property Name="DragMoveEnable" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,42},{0,100},{0,112},{0,200}}" />
+    <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    <Window Type="TaharezLook/StaticImage" Name="DiaoPayBtn/bar">
+      <Property Name="Image" Value="set:MainControl3 image:ZGift" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="DragMoveEnable" Value="True" />
+      <Property Name="UnifiedAreaRect" Value="{{0.071429,0},{0,56},{0,67},{0,69}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="DiaoPayBtn/num">
+      <Property Name="Font" Value="msyh-16" />
+      <Property Name="Text" Value="20" />
+      <Property Name="Tooltip" Value="限购所剩个数" />
+      <Property Name="HorzExtent" Value="20" />
+      <Property Name="VertExtent" Value="18.75" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="DragMoveEnable" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,50},{0,25},{0,75}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="DiaoPayBtn/btn">
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="HoverImage" Value="set:MainControl39 image:DaDiaohover" />
+      <Property Name="NormalImage" Value="set:MainControl39 image:DaDiaonormal" />
+      <Property Name="PushedImage" Value="set:MainControl39 image:DaDiaopushed" />
+      <Property Name="DragMoveEnable" Value="True" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,70},{0,69}}" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="RankingList">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="open.ogg" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.12625,0},{0,28},{0.125,601},{0,517}}" />
+    <Property Name="CloseSoundResource" Value="close.ogg" />
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="RankingList/PersonalInfo/rightback">
+      <Property Name="UnifiedAreaRect" Value="{{0,15},{0,41},{0.296667,0},{0,439}}" />
+      <Window Type="TaharezLook/GroupBtnTree" Name="RankingList/tree">
+        <Property Name="UnifiedAreaRect" Value="{{0.116564,0},{0.0150754,0},{1.07975,0},{0.982412,0}}" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="RankingList/titleimage">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.29,0},{0,12},{0.803333,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="RankingList/titlename">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="等级排行榜" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="85" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,49},{0,1},{0,252},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/MultiColumnList" Name="RankingList/PersonalInfo/list">
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,180},{0,41},{0,585},{0,439}}" />
+      <Property Name="ColumnHeader" Value="text:排名 width:{0.11,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:名称 width:{0.3,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:门派 width:{0.22,0} id:2" />
+      <Property Name="ColumnHeader" Value="text:等级 width:{1,-254} id:3" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="RankingList/refresh">
+      <Property Name="Text" Value="刷新榜单" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0266667,0},{0.903885,0},{0.22,0},{0.900027,33}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="RankingList/personalrank">
+      <Property Name="Text" Value="你没有上榜，继续加油吧！" />
+      <Property Name="HorzExtent" Value="156" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.231667,0},{0.912065,0},{0.53,0},{0.892275,29}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="RankingList/value">
+      <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.641667,0},{0.91411,0},{0.941667,0},{0.95501,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="RankingList/LookAnitiqueSelf">
+      <Property Name="Text" Value="我的藏宝阁" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.685,0},{0.903885,0},{0.826667,0},{0.900027,33}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="RankingList/LookAnitiqueOther">
+      <Property Name="Text" Value="他的藏宝阁" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.828333,0},{0.903885,0},{0.97,0},{0.900027,33}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="RankingList/personalrank2">
+      <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.516667,0},{0.93456,0},{0.97,0},{0.942275,16}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="RankingList/Award">
+      <Property Name="Text" Value="领取奖励" />
+      <Property Name="Tooltip" Value="周鲜花榜冠军可获得额外奖励" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.851667,0},{0.903885,0},{0.97,0},{0.96728,0}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="RankingList/name">
+      <Property Name="Font" Value="fzy4k-9" />
+      <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+      <Property Name="BorderColour" Value="FF190400" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.488333,0},{0.901841,0},{0.05,481},{0.05,446}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="RankingList/allservertime">
+      <Property Name="Tooltip" Value="全服鲜花榜每5分钟刷新一次榜单" />
+      <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.488333,0},{0.89775,0},{0.971667,0},{0.93865,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+  </Window>
+</GUILayout>

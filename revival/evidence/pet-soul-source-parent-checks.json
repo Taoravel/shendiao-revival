@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-10-24T03:33:25.903216+00:00",
+  "checks": [
+    {
+      "script": "verify_pet_souls.py",
+      "exit_code": 0,
+      "stdout": "PASS28 original XP boundaries;24 original template/skill/flag caps;3 exact-ID duplicates; 420 rational scalars, negative fractions and raw fields preserved; known removal38045; unknown refuses\n",
+      "stderr": ""
+    },
+    {
+      "script": "verify_pet_soul_protocol.py",
+      "exit_code": 0,
+      "stdout": "PASS original6-field bean, signed raw values, empty/two/five-slot full map marshal+fresh decoder contents, c0805 request; no incremental create/delete, server asset or GUI claim\n",
+      "stderr": ""
+    },
+    {
+      "script": "verify_pet_soul_storage.py",
+      "exit_code": 0,
+      "stdout": "PASS explicit complete pet soul map persistence/current CAS, unknown!=empty, readonly import retry/no reset, 2 SQL faults and encoded caller rollback, stale before/lease refusal; no paid asset action claim\n",
+      "stderr": ""
+    }
+  ]
+}

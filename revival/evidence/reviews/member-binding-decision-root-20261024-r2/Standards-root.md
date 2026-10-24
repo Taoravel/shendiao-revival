@@ -1,0 +1,11 @@
+Standards：硬违规0；heuristic可行动发现0。
+
+方法：沿用完整code-review、codebase-design、domain-modeling及12项Fowler判断基线；只审固定r1→r2两处hunk，复核未变术语及规范SHA。以单写者、Interface前置条件和freeze失败/取消/成功三个场景检查可实施性；不读取另一轴结论，不将启发当硬规则。
+
+MEMBER_BINDING_DECISION.md:17明确受控freeze例外：先精确fence，原Domain冻结期间拒签，最后active投影不能授权；取消用resume_with_view同步，成功用finalize_with_view清源。这与ARCHITECTURE单地图权威、分阶段交接、旧事件不覆盖新位置一致；不要求虚构freeze_with_view或第二位置写者。19、21行仍要求当前active完整身份及已推进许可世代，取消不会复活旧许可；25–29行保留角色流程受控、连接CAS和实际撤销屏障，不因例外放宽旧排队回复或跨所有者持锁。原纯Domain的freeze/resume/finalize契约静态核对可支持这种受控例外；新成员接线仍待实现验收。
+
+第3行仅标候选r2，不把设计或草案当部署批准，符合DESIGN_AUTHORITY来源/实施分层。GLOSSARY未变，仍无实现细节；未见新增可行动smell。
+
+审前后4个source输入及落盘diff均匹配scope.json；新decision SHA256=482be66d276a7ae6b647dc83726dc225538940dec0918ed11e5ec053cf455d29，diff=23a392faaee04c8980e30f3c31df45278fe9ac07ff5509d5dad9f55d64ce20e6。其余3输入与r1相同，r1报告未覆盖；本批无Git/提交列表。
+
+仅静态政策及既有契约核对，未执行测试、源码、服务、DB、socket或GUI，不批准共享集成/部署。实际fence、恢复及连接队列屏障效果未验证；只新增本报告。

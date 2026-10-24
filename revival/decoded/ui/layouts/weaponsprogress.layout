@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="WeaponsProgress">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="open.ogg" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.22125,0},{0.111623,0},{0.22125,446},{0.111623,480}}" />
+    <Property Name="CloseSoundResource" Value="close.ogg" />
+    <Window Type="TaharezLook/StaticImage" Name="WeaponsProgress/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.737668,0},{0,12},{1.42825,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="WeaponsProgress/Title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="装备进阶" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFF9600 br:FFFF9600" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.298701,0},{0,1},{0.597402,0},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="WeaponsProgress/RefineEquip/back">
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0426009,0},{0.0916667,0},{0,426},{0,458}}" />
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="WeaponsProgress/RefineEquip/back/pagback">
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{0,402},{0,106}}" />
+        <Window Type="TaharezLook/ScrollablePane" Name="WeaponsProgress/RefineEquip/back/pagback/List">
+          <Property Name="ContentArea" Value="l:0 t:0 r:378 b:142" />
+          <Property Name="HorzStepSize" Value="0.1" />
+          <Property Name="VertStepSize" Value="0.1" />
+          <Property Name="HorzOverlapSize" Value="0.01" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00755668,0},{0.029703,0},{0.00654919,413},{0.0204974,97}}" />
+          <Property Name="VertOverlapSize" Value="0.01" />
+          <Property Name="HorzScrollPosition" Value="0" />
+          <Property Name="VertScrollPosition" Value="0" />
+          <AutoWindow NameSuffix="__auto_container__">
+            <Property Name="ContentArea" Value="l:0 t:0 r:378 b:142" />
+            <Property Name="ChildExtentsArea" Value="l:0 t:0 r:378 b:142" />
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/pagback/List/cell1">
+              <Property Name="UnifiedAreaRect" Value="{{0.00253807,0},{0,0},{0,49},{0,48}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/pagback/List/cell2">
+              <Property Name="UnifiedAreaRect" Value="{{0,48},{0,0},{0,96},{0,48}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/pagback/List/cell3">
+              <Property Name="UnifiedAreaRect" Value="{{0,95},{0,0},{0,143},{0,48}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/pagback/List/cell4">
+              <Property Name="UnifiedAreaRect" Value="{{0,142},{0,0},{0,190},{0,48}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/pagback/List/cell5">
+              <Property Name="UnifiedAreaRect" Value="{{0,189},{0,0},{0,237},{0,48}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/pagback/List/cell6">
+              <Property Name="UnifiedAreaRect" Value="{{0,236},{0,0},{0,284},{0,48}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/pagback/List/cell7">
+              <Property Name="UnifiedAreaRect" Value="{{0,283},{0,0},{0,331},{0,48}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/pagback/List/cell8">
+              <Property Name="UnifiedAreaRect" Value="{{0,330},{0,0},{0,378},{0,48}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/pagback/List/cell9">
+              <Property Name="UnifiedAreaRect" Value="{{0,0},{0,47},{-0.000250744,49},{0,95}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/pagback/List/cell10">
+              <Property Name="UnifiedAreaRect" Value="{{0,48},{0,47},{0,96},{0,95}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/pagback/List/cell11">
+              <Property Name="UnifiedAreaRect" Value="{{0,95},{0,47},{0,143},{0,95}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/pagback/List/cell12">
+              <Property Name="UnifiedAreaRect" Value="{{0,142},{0,47},{0,190},{0,95}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/pagback/List/cell13">
+              <Property Name="UnifiedAreaRect" Value="{{0,189},{0,47},{0,237},{0,95}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/pagback/List/cell14">
+              <Property Name="UnifiedAreaRect" Value="{{0,236},{0,47},{0,284},{0,95}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/pagback/List/cell15">
+              <Property Name="UnifiedAreaRect" Value="{{0,283},{0,47},{0,331},{0,95}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/pagback/List/cell16">
+              <Property Name="UnifiedAreaRect" Value="{{0,330},{0,47},{0,378},{0,95}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/pagback/List/cell17">
+              <Property Name="UnifiedAreaRect" Value="{{0,0},{0,94},{-0.000250744,49},{0,142}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/pagback/List/cell18">
+              <Property Name="UnifiedAreaRect" Value="{{0,48},{0,94},{0,96},{0,142}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/pagback/List/cell19">
+              <Property Name="UnifiedAreaRect" Value="{{0,95},{0,94},{0,143},{0,142}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/pagback/List/cell20">
+              <Property Name="UnifiedAreaRect" Value="{{0,142},{0,94},{0,190},{0,142}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/pagback/List/cell21">
+              <Property Name="UnifiedAreaRect" Value="{{0,189},{0,94},{0,237},{0,142}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/pagback/List/cell22">
+              <Property Name="UnifiedAreaRect" Value="{{0,236},{0,94},{0,284},{0,142}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/pagback/List/cell23">
+              <Property Name="UnifiedAreaRect" Value="{{0,283},{0,94},{0,331},{0,142}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/pagback/List/cell24">
+              <Property Name="UnifiedAreaRect" Value="{{0,330},{0,94},{0,378},{0,142}}" />
+            </Window>
+          </AutoWindow>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Button" Name="WeaponsProgress/RefineEquip/back/button">
+        <Property Name="Text" Value="进   阶" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0,335},{0,387},{0,403},{0,411}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="WeaponsProgress/RefineEquip/back/MoneyBack">
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,240},{0,389},{0,326},{-0.586073,651}}" />
+        <Window Type="TaharezLook/StaticImage" Name="WeaponsProgress/RefineEquip/back/MoneyBack/Xianjin">
+          <Property Name="Image" Value="set:MainControl image:Xianjin" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.77907,0},{0,0},{1,0},{1,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="WeaponsProgress/RefineEquip/back/NeedMoney">
+        <Property Name="Text" Value="需要银两" />
+        <Property Name="Tooltip" Value="当幸运值达到满值时，\n下次进阶必定成功。\n进阶过程中有一定\n几率提前进阶成功。" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,185},{0,389},{0,240},{-0.738356,717}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="WeaponsProgress/RefineEquip/back/lucky">
+        <Property Name="Text" Value="装备幸运值" />
+        <Property Name="Tooltip" Value="当幸运值达到满值时，\n下次进阶必定成功。\n进阶过程中有一定\n几率提前进阶成功。" />
+        <Property Name="HorzExtent" Value="65" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,9},{0,389},{0,76},{0,409}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="WeaponsProgress/RefineEquip/back/green">
+        <Property Name="Image" Value="set:MainControl25 image:EquipDragon" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.240786,0},{0.449275,0},{0.771499,0},{0.934783,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/EquipCase" Name="WeaponsProgress/RefineEquip/back/jinjieback">
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,-94},{0,-77},{0,305},{0,198}}" />
+          <Window Type="TaharezLook/StaticImage" Name="WeaponsProgress/RefineEquip/back/jinjieback/back">
+            <Property Name="Image" Value="set:MainControl3 image:LuckyWheelMiddleBox" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,66},{0,68}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,66},{0,68}}" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.417293,0},{0.05,127},{0.463046,48},{0.05,195}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/jinjieback/back/item">
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.227273,0},{0.147059,0},{0.212121,49},{0.161765,46}}" />
+              <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="WeaponsProgress/RefineEquip/back/jinjieback/Name4">
+            <Property Name="Text" Value="一二三四五六七八" />
+            <Property Name="HorzExtent" Value="104" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.661654,0},{0,235},{0.661654,121},{0,255}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/jinjieback/data1">
+            <Property Name="UnifiedAreaRect" Value="{{0.146617,0},{0.374545,0},{0.266917,0},{0.549091,0}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/jinjieback/data3">
+            <Property Name="UnifiedAreaRect" Value="{{0.146617,0},{0.669091,0},{0.432331,-66},{0.843636,0}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/jinjieback/data4">
+            <Property Name="UnifiedAreaRect" Value="{{0.755639,0},{0.669091,0},{0.447368,171},{0.843636,0}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="WeaponsProgress/RefineEquip/back/jinjieback/data2">
+            <Property Name="UnifiedAreaRect" Value="{{0.755639,0},{0.374545,0},{0.43985,174},{0.549091,0}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="WeaponsProgress/RefineEquip/back/jinjieback/Name2">
+            <Property Name="Text" Value="一二三四五六七八" />
+            <Property Name="HorzExtent" Value="104" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.972431,-122},{0.1,126},{0.661654,121},{0.1,146}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="WeaponsProgress/RefineEquip/back/jinjieback/Name1">
+            <Property Name="Text" Value="一二三四五六七八" />
+            <Property Name="HorzExtent" Value="104" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0601504,0},{0.1,126},{0.348371,6},{0.1,146}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="WeaponsProgress/RefineEquip/back/jinjieback/Name">
+            <Property Name="Text" Value="一二三四五六七八" />
+            <Property Name="HorzExtent" Value="104" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.349624,0},{0.1,184},{0.650376,0},{0.1,204}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="WeaponsProgress/RefineEquip/back/jinjieback/Name3">
+            <Property Name="Text" Value="一二三四五六七八" />
+            <Property Name="HorzExtent" Value="104" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0601504,0},{0,235},{0.144956,87},{0,255}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Checkbox" Name="WeaponsProgress/RefineEquip/back/develop">
+            <Property Name="Text" Value="提升装备品质" />
+            <Property Name="UnifiedAreaRect" Value="{{0,13},{0,18},{0,113},{0,41}}" />
+            <Property Name="NormalTextColour" Value="ffffff00" />
+          </Window>
+          <Window Type="TaharezLook/Checkbox" Name="WeaponsProgress/RefineEquip/back/expand">
+            <Property Name="Text" Value="扩展附加属性" />
+            <Property Name="UnifiedAreaRect" Value="{{0,13},{0,38},{0.238095,16},{0,61}}" />
+            <Property Name="NormalTextColour" Value="ffffff00" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="WeaponsProgress/RefineEquip/back/description2">
+            <Property Name="Text">1.可使用同等级同部位材料对主装备进行进阶。
+2.进阶后四周放入的材料装备消失。
+3.幸运值积累满时主装备附加属性增加一条。
+4.附加属性扩展时原有附加属性效果不会变化。
+5.最高可将主装备提升至3条附加属性。
+6.有无双技能的卓越品质装备无法进阶。</Property>
+            <Property Name="HorzExtent" Value="272" />
+            <Property Name="VertExtent" Value="93.7134" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF075F00" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,104},{0.05,-12},{0.05,379},{0.05,93}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="WeaponsProgress/RefineEquip/back/description1">
+            <Property Name="Text">1.可使用同等级同部位材料对主装备进行进阶。
+2.进阶后四周放入的材料装备消失。
+3.幸运值积累满时主装备品质提升一级。
+4.品质提升时基础属性将根据品质重新生成。
+5.最高可将主装备升级至卓越品质。
+6.有无双技能的装备最高只能提升至无瑕品质。</Property>
+            <Property Name="HorzExtent" Value="272" />
+            <Property Name="VertExtent" Value="93.7134" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FFFFFFFF" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,124},{0.0181818,0},{0,399},{0,105}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/ProgressBar" Name="WeaponsProgress/RefineEquip/back/luckyprogress">
+        <Property Name="StepSize" Value="0.01" />
+        <Property Name="FrameEnable" Value="True" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="CurrentProgress" Value="1" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,60},{0.05,368},{0.05,160},{0.05,385}}" />
+        <Window Type="TaharezLook/ProgressBar" Name="WeaponsProgress/RefineEquip/back/progressbar321">
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="CurrentProgress" Value="0" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,100},{0,17}}" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

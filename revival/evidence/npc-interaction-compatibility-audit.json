@@ -1,0 +1,391 @@
+{
+  "image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+  "npc_placement": {
+    "map_id": 1006,
+    "placement_id": 13,
+    "npc_id": 10498,
+    "logical": [
+      1668,
+      970
+    ]
+  },
+  "actor_logical": [
+    1668,
+    1032
+  ],
+  "actor_mask1_clear": true,
+  "squared_distance": 3844,
+  "logical_distance": 62.0,
+  "original_setter_entry": "0x11f6480",
+  "setter_capture_seam": "entity.vt+0xcc",
+  "npc_model_from_original_setter": [
+    2502,
+    970
+  ],
+  "actor_model_from_original_setter": [
+    2502,
+    1032
+  ],
+  "original_approach_entry": "0x1215790",
+  "integer_cell_distance": 4,
+  "raw_cell_points": [
+    [
+      104.0,
+      60.0
+    ],
+    [
+      104.0,
+      64.0
+    ]
+  ],
+  "native_events": [
+    {
+      "model_position_adapter": "actor",
+      "point": [
+        2502,
+        1032
+      ]
+    },
+    {
+      "model_position_adapter": "npc",
+      "point": [
+        2502,
+        970
+      ]
+    },
+    {
+      "distance_float_points": [
+        [
+          104.0,
+          60.0
+        ],
+        [
+          104.0,
+          64.0
+        ]
+      ]
+    },
+    {
+      "integer_distance_compare": 4,
+      "limit": 13
+    },
+    {
+      "visit_ctor": "0x120eea0",
+      "key_words": [
+        1,
+        1007
+      ]
+    },
+    {
+      "visit_send": "0xc2329",
+      "npc_key": 4325032067073
+    }
+  ],
+  "original_approach_error": null,
+  "original_exit": "0x500a000",
+  "server": [
+    {
+      "mode": "legacy32",
+      "accepted": false,
+      "error": "NPC out of interaction range"
+    },
+    {
+      "mode": "approved_local48",
+      "accepted": false,
+      "error": "NPC out of interaction range"
+    }
+  ],
+  "native_driver": "research_npc_approach.inspect_approach with public absolute model-point arguments; no source rewrite",
+  "native_probe_source_sha256": "85dd432ad1312f80ca99508d2d5417fa4f9b42b7a92e322cd37156300b3d2f67",
+  "network_body_hex": "000003ef00000001",
+  "fixture_entity_key": 4325032067073,
+  "entity_key_note": "Original isolated probe key is opaque and separately bound to exact placement13 in both server scenes; no map bits semantics inferred.",
+  "native_gui_verified": false,
+  "native_server_rule_verified": false,
+  "live_client_accessed": false,
+  "runtime_changed": false,
+  "extension_from_approved48_witness": {
+    "start": [
+      1656,
+      1016
+    ],
+    "end": [
+      1668,
+      1032
+    ],
+    "mask": 1,
+    "segment_clear": true
+  },
+  "sources": {
+    "map_1006_jiaxing/npc.xml": {
+      "length": 3571,
+      "crc32": "51217023",
+      "sha256": "72b66cc70e41d78997fb8369c74c5f21a69f500e790797718a41d56ff857752c"
+    },
+    "map_1006_jiaxing/maze.dat": {
+      "length": 113676,
+      "crc32": "cda771b4",
+      "sha256": "6f81a7407738d6ce9b7ca167c82c28849dea1db12e7f2aa7fe1285e747698351"
+    },
+    "fubenjiaxing/npc.xml": {
+      "length": 888,
+      "crc32": "06370594",
+      "sha256": "3e96b678f8213459052fcf8c9fccc9c1eb7222ac33672d2a966600513f7b32fa",
+      "matching_original_placements": [
+        [
+          10,
+          {
+            "id": "10908",
+            "posx": "1049",
+            "posy": "1559",
+            "dir": "5"
+          }
+        ]
+      ]
+    },
+    "map_1007_linan/npc.xml": {
+      "length": 11666,
+      "crc32": "1d815d03",
+      "sha256": "ad14d17f41bcbcf706420ab139e6bb43a4878b439220d47794278cf9c9f54aaa",
+      "matching_original_placements": [
+        [
+          34,
+          {
+            "id": "10380",
+            "posx": "1996",
+            "posy": "3963",
+            "dir": "3"
+          }
+        ]
+      ]
+    }
+  },
+  "server_source_sha256": {
+    "revival/world_npcs.py": "c8978e888f0a02c44d1b9cfa555cd29ceb369423cf43509257acdba2212e39fc",
+    "revival/npc_interaction.py": "7a7797cc8b5fabc710b4486d3b63dbfd6b991b877c8667031320b914d5bf7e73",
+    "revival/design/npc-interaction-v1.json": "567a59076caa9143c21ba342f7553467239834690d245f9adb0f6281dbe303e0"
+  },
+  "ordinary_cases": [
+    {
+      "npc_id": 10908,
+      "map_id": 1501,
+      "placement_id": 10,
+      "npc_logical": [
+        1049,
+        1559
+      ],
+      "actor_logical": [
+        1049,
+        1623
+      ],
+      "actor_mask1_clear": true,
+      "logical_distance": 64,
+      "npc_model_from_original_setter": [
+        1574,
+        1559
+      ],
+      "actor_model_from_original_setter": [
+        1574,
+        1623
+      ],
+      "integer_cell_distance": 4,
+      "native_events": [
+        {
+          "model_position_adapter": "npc",
+          "point": [
+            1574,
+            1559
+          ]
+        },
+        {
+          "fpu_compare": "0x11f6561",
+          "instruction": "fcomp qword ptr [0x224ebe0]"
+        },
+        {
+          "model_position_adapter": "npc",
+          "point": [
+            1574,
+            1559
+          ]
+        },
+        {
+          "model_position_adapter": "npc",
+          "point": [
+            1574,
+            1559
+          ]
+        },
+        {
+          "collision_query": [
+            1049,
+            1559,
+            8
+          ],
+          "adapter_result": 1
+        },
+        {
+          "model_position_adapter": "actor",
+          "point": [
+            1574,
+            1623
+          ]
+        },
+        {
+          "model_position_adapter": "npc",
+          "point": [
+            1574,
+            1559
+          ]
+        },
+        {
+          "distance_float_points": [
+            [
+              65.0,
+              97.0
+            ],
+            [
+              65.0,
+              101.0
+            ]
+          ]
+        },
+        {
+          "integer_distance_compare": 4,
+          "limit": 13
+        },
+        {
+          "visit_ctor": "0x120eea0",
+          "key_words": [
+            1,
+            1007
+          ]
+        },
+        {
+          "visit_send": "0xc2329",
+          "npc_key": 4325032067073
+        }
+      ],
+      "native_exit": "0x500a000",
+      "native_error": null,
+      "server": {
+        "radius": 32,
+        "accepted": false,
+        "error": "NPC out of interaction range"
+      },
+      "collision_adapter_result": 1,
+      "real_collision_or_path_verified": false,
+      "key": 4325032067073
+    },
+    {
+      "npc_id": 10380,
+      "map_id": 1007,
+      "placement_id": 34,
+      "npc_logical": [
+        1996,
+        3963
+      ],
+      "actor_logical": [
+        1996,
+        4027
+      ],
+      "actor_mask1_clear": true,
+      "logical_distance": 64,
+      "npc_model_from_original_setter": [
+        2994,
+        3963
+      ],
+      "actor_model_from_original_setter": [
+        2994,
+        4027
+      ],
+      "integer_cell_distance": 4,
+      "native_events": [
+        {
+          "model_position_adapter": "npc",
+          "point": [
+            2994,
+            3963
+          ]
+        },
+        {
+          "fpu_compare": "0x11f6561",
+          "instruction": "fcomp qword ptr [0x224ebe0]"
+        },
+        {
+          "model_position_adapter": "npc",
+          "point": [
+            2994,
+            3963
+          ]
+        },
+        {
+          "model_position_adapter": "npc",
+          "point": [
+            2994,
+            3963
+          ]
+        },
+        {
+          "collision_query": [
+            1996,
+            3963,
+            8
+          ],
+          "adapter_result": 1
+        },
+        {
+          "model_position_adapter": "actor",
+          "point": [
+            2994,
+            4027
+          ]
+        },
+        {
+          "model_position_adapter": "npc",
+          "point": [
+            2994,
+            3963
+          ]
+        },
+        {
+          "distance_float_points": [
+            [
+              124.0,
+              247.0
+            ],
+            [
+              124.0,
+              251.0
+            ]
+          ]
+        },
+        {
+          "integer_distance_compare": 4,
+          "limit": 13
+        },
+        {
+          "visit_ctor": "0x120eea0",
+          "key_words": [
+            1,
+            1007
+          ]
+        },
+        {
+          "visit_send": "0xc2329",
+          "npc_key": 4325032067073
+        }
+      ],
+      "native_exit": "0x500a000",
+      "native_error": null,
+      "server": {
+        "radius": 32,
+        "accepted": false,
+        "error": "NPC out of interaction range"
+      },
+      "collision_adapter_result": 1,
+      "real_collision_or_path_verified": false,
+      "key": 4325032067073
+    }
+  ],
+  "ordinary_case_scope": "Two ordinary templates execute shared distance/ctor/sender with target collision query explicitly adapted to1. Standing mask1 only; no claim real target collision or travel path."
+}

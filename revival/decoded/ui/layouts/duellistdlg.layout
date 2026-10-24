@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="DuelListDlg">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.335625,0},{0.316667,0},{0.335625,264},{0.316667,220}}" />
+    <Window Type="TaharezLook/Listbox" Name="DuelListDlg/list">
+      <Property Name="UnifiedAreaRect" Value="{{0,16},{0,44},{0,246},{0,175}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="DuelListDlg/agree">
+      <Property Name="Text" Value="接受决斗" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,54},{0,178},{0,126},{0,202}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="DuelListDlg/cancle">
+      <Property Name="Text" Value="等等再来" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,136},{0,178},{0,208},{0,202}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="DuelListDlg/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,162},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,162},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.282954,0},{0,12},{0.89659,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="DuelListDlg/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="决斗书" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="51" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,59.7},{0,0},{0,132.7},{0,26}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

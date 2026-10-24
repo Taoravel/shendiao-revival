@@ -1,0 +1,14 @@
+{
+  "passed": [
+    "unwear lowHP10/200 then wear200 retains10; caps cycling grants no heal",
+    "numeric cap changes increment one resource version each; lower caps clip180/75 to100/50",
+    "ordinary growth keeps missing amounts using final caps; deadHP stays0",
+    "medicine/rest use final200/80 caps; overflow and ordinary medicine revival refuse",
+    "staged known legacy70/40 migrates without heal; source-only update retains resource version and no-op retains state",
+    "inventory_change updates only current asset provenance; numeric caps, growth changes and rewound sources refuse",
+    "foreign/rewound/mixed-source transitions, mutable rules, inexact native caps and exhausted versions reject"
+  ],
+  "scope": "pure policy; not storage, consumer migration or six-slot runtime activation",
+  "native_gui_verified": false,
+  "live_server_changed": false
+}

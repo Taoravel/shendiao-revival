@@ -1,0 +1,14 @@
+{
+  "revision": "2026-10-24.pet-soul-items.1",
+  "soul_policy": "2026-10-24.pet-souls-source.1",
+  "source": "evidence/PET_SOUL_ITEM_SOURCE_RESEARCH.md",
+  "wire_fields": ["cumulative_exp","soul_skill_id","raw5","raw4"],
+  "maximum_quantity": 1,
+  "nonbinding_flags_mask": 4294967294,
+  "native_status": "client_verified28 nonstacking original145 items, separate16-byte orb tips and worn6-field map; signed opaque fields and raw6 exact history remain separate",
+  "provenance": "explicit complete known instance only, original scalar values and uint32 nonbinding flags supplied; absent record is unknown, not implicit zeros",
+  "retained_raw6": "explicit signed32 when known from prior worn history; explicit None records supplied absence of that history and is not zero or permission to infer/construct raw6",
+  "mutation": "designed source metadata CAS only, next version/full before/current role lease/same caller transaction; immutable source_ref,flags and retained_raw6; actual inventory revision advances",
+  "physical_changes": "generic template/role/quantity/binding/quality update or delete invalidates provenance, including ABA back to old values; trusted future asset exchange must establish a new complete source in its own transaction",
+  "activation": "optional owned metadata source and current tips only; no implicit old/new-role import, equip/remove/fusion authority, material/fee/receipt settlement, resource hook, shared route, deployment or GUI"
+}

@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="YuanBaoRechargeAgain">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.3675,0},{0.261667,0},{0.3675,235},{0.261667,225}}" />
+    <Window Type="TaharezLook/StaticImage" Name="YuanBaoRechargeAgain/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,162},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,162},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.277448,0},{0,10},{0.96681,0},{0.164444,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="YuanBaoRechargeAgain/Title/Name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="快捷支付" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.396296,0},{0,1},{0.920987,0},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="YuanBaoRechargeAgain/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0723405,0},{0.188889,0},{0.0243903,211.928},{0.188889,160}}" />
+      <Window Type="TaharezLook/StaticText" Name="YuanBaoRechargeAgain/Back/Top">
+        <Property Name="Text">6位数字确认码短信已经免费发送到您的手机。
+
+请按照短信提示完成充值。</Property>
+        <Property Name="HorzExtent" Value="164" />
+        <Property Name="VertExtent" Value="46.8567" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0791332,0},{0.08625,0},{0.930185,0},{0.56125,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="YuanBaoRechargeAgain/Back/Top/TelNumber">
+          <Property Name="Text" Value="130XXXXXXXX" />
+          <Property Name="Visible" Value="False" />
+          <Property Name="HorzExtent" Value="88" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.364328,0},{0.378947,0},{0.925732,0},{0.3,25.9984}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="YuanBaoRechargeAgain/Back/Bot">
+        <Property Name="Text" Value="如果在1分钟内没有收到校检码，请点击按钮重新获取。" />
+        <Property Name="HorzExtent" Value="165" />
+        <Property Name="VertExtent" Value="31.2378" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0791332,0},{0.40375,0},{0.930185,0},{0.61625,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="YuanBaoRechargeAgain/Back/Send">
+        <Property Name="Text" Value="重发短信校检码（600）" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0791332,0},{0.658751,0},{0.880416,0},{0.62,29.89}}" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="YuanBaoRechargeAgain/Back/Back">
+        <Property Name="Text" Value="返回（30）" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0791332,0},{0.82,0},{0.880416,0},{0.771765,31.3318}}" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

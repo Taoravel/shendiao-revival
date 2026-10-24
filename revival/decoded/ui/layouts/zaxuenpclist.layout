@@ -1,0 +1,448 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="ZaxueNPCList">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.17125,0},{0.131666,0},{0.17,526},{0.0933334,463}}" />
+    <Window Type="TaharezLook/StaticImage" Name="ZaxueNPCList/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.380952,0},{0,10},{0.967619,0},{0.0840909,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="ZaxueNPCList/Title/Name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="江湖人物" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.298701,0},{0,0},{0.948052,0},{0,23}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="ZaxueNPCList/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0304762,0},{0.0954545,0},{0.0304762,490},{0.0954546,385}}" />
+      <Window Type="TaharezLook/MultiColumnList" Name="ZaxueNPCList/Back/BasicBack">
+        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,3},{0,151},{0,379}}" />
+        <Property Name="ColumnHeader" Value="text:名    称 width:{0.95,0} id:0" />
+      </Window>
+      <Window Type="TaharezLook/CommonCase" Name="ZaxueNPCList/Back/Skill">
+        <Property Name="UnifiedAreaRect" Value="{{0.310204,0},{0.522078,0},{0.301679,340},{0.522082,178}}" />
+        <Window Type="TaharezLook/StaticImage" Name="ZaxueNPCList/Back/Skill/Skill1">
+          <Property Name="Image" Value="set:MainControl13 image:SkillNameBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,165},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,165},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00892857,0},{0.0224719,0},{0.5,0},{0.292135,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/SkillBox" Name="ZaxueNPCList/Back/Skill/Skill1/Cell">
+            <Property Name="UnifiedMaxSize" Value="{{0,40},{0,40}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,40},{0,40}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0363636,0},{0.0833333,0},{0.278788,0},{0.916667,0}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ZaxueNPCList/Back/Skill/Skill1/Name">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.30303,0},{0.291667,0},{0.963636,0},{0.291667,20}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ZaxueNPCList/Back/Skill/Skill2">
+          <Property Name="Image" Value="set:MainControl13 image:SkillNameBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,165},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,165},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.502976,0},{0.0224719,0},{0.994048,0},{0.152332,25}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/SkillBox" Name="ZaxueNPCList/Back/Skill/Skill2/Cell">
+            <Property Name="UnifiedMaxSize" Value="{{0,40},{0,40}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,40},{0,40}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0363636,0},{0.0833333,0},{0.278788,0},{0.916667,0}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ZaxueNPCList/Back/Skill/Skill2/Name">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.30303,0},{0.291667,0},{0.963636,0},{0.291667,20}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ZaxueNPCList/Back/Skill/Skill3">
+          <Property Name="Image" Value="set:MainControl13 image:SkillNameBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,165},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,165},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00892857,0},{0.269023,5},{0.5,0},{0.393698,31}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/SkillBox" Name="ZaxueNPCList/Back/Skill/Skill3/Cell">
+            <Property Name="UnifiedMaxSize" Value="{{0,40},{0,40}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,40},{0,40}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0363636,0},{0.0833333,0},{0.278788,0},{0.916667,0}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ZaxueNPCList/Back/Skill/Skill3/Name">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.30303,0},{0.291667,0},{0.963636,0},{0.291667,20}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ZaxueNPCList/Back/Skill/Skill4">
+          <Property Name="Image" Value="set:MainControl13 image:SkillNameBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,165},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,165},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.502976,0},{0.152332,26},{0.994048,0},{0.277008,52}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/SkillBox" Name="ZaxueNPCList/Back/Skill/Skill4/Cell">
+            <Property Name="UnifiedMaxSize" Value="{{0,40},{0,40}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,40},{0,40}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0363636,0},{0.0833333,0},{0.278788,0},{0.916667,0}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ZaxueNPCList/Back/Skill/Skill4/Name">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.30303,0},{0.291667,0},{0.963636,0},{0.291667,20}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ZaxueNPCList/Back/Skill/Skill5">
+          <Property Name="Image" Value="set:MainControl13 image:SkillNameBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,165},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,165},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00892857,0},{0.393698,32},{0.5,0},{0.518373,58}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/SkillBox" Name="ZaxueNPCList/Back/Skill/Skill5/Cell">
+            <Property Name="UnifiedMaxSize" Value="{{0,40},{0,40}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,40},{0,40}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0363636,0},{0.0833333,0},{0.278788,0},{0.916667,0}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ZaxueNPCList/Back/Skill/Skill5/Name">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.30303,0},{0.291667,0},{0.963636,0},{0.291667,20}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ZaxueNPCList/Back/Skill/Skill6">
+          <Property Name="Image" Value="set:MainControl13 image:SkillNameBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,165},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,165},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.502976,0},{0.277008,53},{0.994048,0},{0.401683,79}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/SkillBox" Name="ZaxueNPCList/Back/Skill/Skill6/Cell">
+            <Property Name="UnifiedMaxSize" Value="{{0,40},{0,40}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,40},{0,40}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0363636,0},{0.0833333,0},{0.278788,0},{0.916667,0}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ZaxueNPCList/Back/Skill/Skill6/Name">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.30303,0},{0.291667,0},{0.963636,0},{0.291667,20}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ZaxueNPCList/Back/Skill/Up">
+          <Property Name="Text" Value="上一页" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.553571,0},{0.848315,0},{0.761905,0},{0.845991,22}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ZaxueNPCList/Back/Skill/Up1">
+          <Property Name="Text" Value="下一页" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.770833,0},{0.848315,0},{0.979167,0},{0.845991,22}}" />
+        </Window>
+        <Window Type="TaharezLook/Figure" Name="ZaxueNPCList/Back/NPCInfomation11">
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,92},{0.05,-26},{0.05,192},{0.05,-11}}" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+          <Window Type="TaharezLook/StaticText" Name="ZaxueNPCList/Back/NPCInfomation/Name11">
+            <Property Name="Text" Value="杂学技能" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.72,0},{-0.133333,0},{1.35,0},{0,18}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCase" Name="ZaxueNPCList/Back/Top">
+        <Property Name="UnifiedAreaRect" Value="{{0.310204,0},{0.012987,0},{0.311444,334},{0.0277521,171}}" />
+        <Window Type="TaharezLook/StaticImage" Name="ZaxueNPCList/Back/NpcHead">
+          <Property Name="Image" Value="set:MainControl6 image:PetPropertyBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,126},{0,125}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,126},{0,125}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.041791,0},{0.0112994,0},{0.05,123},{0.05,118}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="ZaxueNPCList/Back/NpcHead/Head">
+            <Property Name="Image" Value="set:RoleAndMonster5 image:9021" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0555556,0},{0,5},{0.0714286,113},{0,120}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="ZaxueNPCList/Back/Basic">
+          <Property Name="UnifiedAreaRect" Value="{{0.05,149},{0.0225989,0},{0.05,315},{0.0186434,171}}" />
+          <Window Type="TaharezLook/StaticText" Name="ZaxueNPCList/Back/Basic/Fame">
+            <Property Name="Text" Value="侠名" />
+            <Property Name="HorzExtent" Value="26" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0722892,0},{0,42},{0.259036,0},{0,62}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ZaxueNPCList/Back/Basic/Notoriety">
+            <Property Name="Text" Value="恶名" />
+            <Property Name="HorzExtent" Value="26" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0722892,0},{0,63},{0.259036,0},{0,83}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ZaxueNPCList/Back/Basic/Power">
+            <Property Name="Text">所属势力
+</Property>
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0722892,0},{0,3},{0.415663,0},{0,20}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ZaxueNPCList/Back/Basic/Intimacy">
+            <Property Name="Text" Value="亲密度" />
+            <Property Name="HorzExtent" Value="39" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0722892,0},{0,21},{0.337349,0},{0,41}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ZaxueNPCList/Back/Basic/PowerName">
+            <Property Name="Text" Value="丐帮" />
+            <Property Name="HorzExtent" Value="26" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.403614,0},{0,3},{0.903614,0},{0,20}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/ProgressBar" Name="ZaxueNPCList/Back/Basic/ProgressBar">
+            <Property Name="StepSize" Value="0.01" />
+            <Property Name="CurrentProgress" Value="1" />
+            <Property Name="UnifiedAreaRect" Value="{{0.331325,0},{0,23},{0.963855,0},{0,39}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ZaxueNPCList/Back/Basic/mingsheng">
+            <Property Name="Image" Value="set:MainControl image:GoodnameProgressBarBack" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,88},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,88},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,45},{0,43},{0,133},{0,59}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticImage" Name="ZaxueNPCList/Back/Basic/mingsheng/StaticImage">
+              <Property Name="Image" Value="set:MainControl image:GoodnameProgressBar" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,86},{0,14}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,86},{0,14}}" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,87},{0,15}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ZaxueNPCList/Back/Basic/eming">
+            <Property Name="Image" Value="set:MainControl image:BadnameProgressBarBack" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,88},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,88},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,45},{0,64},{0,133},{0,80}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticImage" Name="ZaxueNPCList/Back/Basic/eming/StaticImage">
+              <Property Name="Image" Value="set:MainControl image:BadnameProgressBar" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,86},{0,14}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,86},{0,14}}" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,87},{0,15}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ZaxueNPCList/Back/Basic/Notoriety1">
+            <Property Name="Text" Value="酒量" />
+            <Property Name="HorzExtent" Value="26" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0722892,0},{0,147},{0.259036,0},{0,167}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ZaxueNPCList/Back/Basic/Notoriety2">
+            <Property Name="Text" Value="农业" />
+            <Property Name="HorzExtent" Value="26" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0722892,0},{0,105},{0.259036,0},{0,125}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ZaxueNPCList/Back/Basic/Notoriety3">
+            <Property Name="Text" Value="地理" />
+            <Property Name="HorzExtent" Value="26" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0722892,0},{0,84},{0.259036,0},{0,104}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ZaxueNPCList/Back/Basic/Notoriety4">
+            <Property Name="Text" Value="兵法" />
+            <Property Name="HorzExtent" Value="26" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0722892,0},{0,126},{0.259036,0},{0,146}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ZaxueNPCList/Back/Basic/jiuliang">
+            <Property Name="Image" Value="set:MainControl image:JiuliangProgressBarBack" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,106},{0,23}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,106},{0,23}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,45},{0,144},{0,151},{0,167}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticImage" Name="ZaxueNPCList/Back/Basic/jiuliang/Image">
+              <Property Name="Image" Value="set:MainControl image:JiuliangProgressBar" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,106},{0,23}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,106},{0,23}}" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,101},{0,17}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ZaxueNPCList/Back/Basic/nongxue">
+            <Property Name="Image" Value="set:MainControl image:NongxueProgressBarBack" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,106},{0,23}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,106},{0,23}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,45},{0,102},{0,151},{0,125}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticImage" Name="ZaxueNPCList/Back/Basic/nongxue/StaticImage">
+              <Property Name="Image" Value="set:MainControl image:NongxueProgressBar" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,106},{0,23}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,106},{0,23}}" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,102},{0,19}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ZaxueNPCList/Back/Basic/dili">
+            <Property Name="Image" Value="set:MainControl image:DiliProgressBarBack" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,106},{0,23}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,106},{0,23}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,45},{0,81},{0,151},{0,104}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticImage" Name="ZaxueNPCList/Back/Basic/dili/StaticImage">
+              <Property Name="Image" Value="set:MainControl image:DiliProgressBar" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,106},{0,23}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,106},{0,23}}" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,96},{0,14}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="ZaxueNPCList/Back/Basic/bingfa">
+            <Property Name="Image" Value="set:MainControl image:BingfaProgressBarBack" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,106},{0,23}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,106},{0,23}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,45},{0,124},{0,151},{0,147}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticImage" Name="ZaxueNPCList/Back/Basic/bingfa/StaticImage">
+              <Property Name="Image" Value="set:MainControl image:BingfaProgressBar" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,106},{0,23}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,106},{0,23}}" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,96},{0,17}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Figure1" Name="ZaxueNPCList/Back/Top/Pattern">
+          <Property Name="UnifiedAreaRect" Value="{{0.080597,0},{0.706215,0},{0.39403,0},{0.706215,19}}" />
+          <Window Type="TaharezLook/StaticText" Name="ZaxueNPCList/Back/NPCInfomation/Name">
+            <Property Name="Text" Value="黄蓉" />
+            <Property Name="HorzExtent" Value="27" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,59},{0.05,0},{0.05,137},{0.05,20}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/RichEditbox" Name="ZaxueNPCList/Back/Top/Position">
+          <Property Name="Text" Value="华山山道一层（100,100）" />
+          <Property Name="LineSpace" Value="1" />
+          <Property Name="BlinkCaret" Value="True" />
+          <Property Name="MaxTextLength" Value="2147483647" />
+          <Property Name="UnifiedAreaRect" Value="{{0.00895522,0},{0.830508,0},{0.480597,0},{0.864087,20}}" />
+          <Property Name="BackGroundEnable" Value="False" />
+          <Property Name="BlinkCaretTimeout" Value="0.5" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/CommonCaseTui" Name="ShijieBossMain">
+    <Property Name="UnifiedAreaRect" Value="{{0.5,-325},{0.5,-211},{0.5,323},{0.5,211}}" />
+    <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    <Window Type="TaharezLook/LittleButton" Name="ShijieBossMain/back/joinbtn">
+      <Property Name="Text" Value="点击挑战" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.535494,0},{0.796209,0},{0.658951,0},{0.872038,0}}" />
+    </Window>
+    <Window Type="TaharezLook/LittleButton" Name="ShijieBossMain/back/myrankbtn">
+      <Property Name="Text" Value="我的排名" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.79321,0},{0.796209,0},{0.916667,0},{0.872038,0}}" />
+    </Window>
+    <Window Type="TaharezLook/RadioButton" Name="ShijieBossMain/back/radiobtn">
+      <Property Name="Text" Value="显示本队伍信息" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0925926,0},{0.182464,0},{0.273148,0},{0.255924,0}}" />
+    </Window>
+    <Window Type="TaharezLook/RadioButton" Name="ShijieBossMain/back/">
+      <Property Name="Text" Value="显示全部战斗信息" />
+      <Property Name="UnifiedAreaRect" Value="{{0.314815,0},{0.182464,0},{0.510802,0},{0.255924,0}}" />
+    </Window>
+    <Window Type="TaharezLook/ProgressBar" Name="ShijieBossMain/back/xie">
+      <Property Name="StepSize" Value="0.01" />
+      <Property Name="FrameEnable" Value="True" />
+      <Property Name="CurrentProgress" Value="1" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0925926,0},{0.104265,0},{0.509259,0},{0.165877,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="ShijieBossMain/back/xie/num">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="500000/500000（100%）" />
+        <Property Name="HorzExtent" Value="188" />
+        <Property Name="VertExtent" Value="17.1936" />
+        <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.133333,0},{0.153846,0},{0.9,0},{0.923077,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseBlue" Name="ShijieBossMain/back/msgbar">
+      <Property Name="UnifiedAreaRect" Value="{{0.0941358,0},{0.272512,0},{0.503086,0},{0.78673,0}}" />
+      <Window Type="TaharezLook/RichEditbox" Name="ShijieBossMain/back/msgbar/list">
+        <Property Name="LineSpace" Value="1" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0188679,0},{0.0230415,0},{0.977359,0},{0.97235,0}}" />
+        <Property Name="BackGroundEnable" Value="False" />
+        <Property Name="BlinkCaretTimeout" Value="0.5" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ShijieBossMain/back/text">
+      <Property Name="Text" Value="我的伤害：" />
+      <Property Name="HorzExtent" Value="65" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0925926,0},{0.808057,0},{0.188272,0},{0.86019,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ShijieBossMain/back/damage">
+      <Property Name="Text" Value="999999" />
+      <Property Name="HorzExtent" Value="48" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.182099,0},{0.810427,0},{0.33642,0},{0.862559,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/LinkText" Name="ShijieBossMain/back/shuoming">
+      <Property Name="Text" Value="玩法说明" />
+      <Property Name="UnifiedAreaRect" Value="{{0.421296,0},{0.817536,0},{0.512346,0},{0.864929,0}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="ShijieBossMain/title">
+      <Property Name="Image" Value="set:MainControl41 image:ShijieBossTxt" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,95},{0,24}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,95},{0,24}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.433642,0},{0.0118483,0},{0.580247,0},{0.0687204,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/CommonCaseBlue" Name="ShijieBossMain/back">
+      <Property Name="UnifiedAreaRect" Value="{{0.537037,0},{0.109005,0},{0.908951,0},{0.779621,0}}" />
+      <Window Type="TaharezLook/MultiColumnList1" Name="ShijieBossMain/back/rank">
+        <Property Name="UnifiedAreaRect" Value="{{0.0373444,0},{0.0212014,0},{0.970954,0},{0.968198,0}}" />
+        <Property Name="ColumnHeader" Value="text:排名 width:{0.15,0} id:0" />
+        <Property Name="ColumnHeader" Value="text:玩家 width:{0.5,0} id:1" />
+        <Property Name="ColumnHeader" Value="text:伤害 width:{1,-157} id:2" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="ShijieBossMain/close">
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="HoverImage" Value="set:MainControl3 image:CloseHover" />
+      <Property Name="NormalImage" Value="set:MainControl3 image:CloseNormal" />
+      <Property Name="PushedImage" Value="set:MainControl3 image:ClosePushed" />
+      <Property Name="UnifiedAreaRect" Value="{{0.899691,0},{0.0189573,0},{0.959877,0},{0.106635,0}}" />
+    </Window>
+  </Window>
+</GUILayout>

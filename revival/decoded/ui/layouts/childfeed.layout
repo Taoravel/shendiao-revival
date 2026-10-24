@@ -1,0 +1,444 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/HouseFrameWindow" Name="ChildFeed">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="open.ogg" />
+    <Property Name="ClippedByParent" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.188906,0},{0.124262,0},{0.208906,472},{0.0925839,429}}" />
+    <Property Name="CloseSoundResource" Value="close.ogg" />
+    <Window Type="DefaultWindow" Name="ChildFeed/feed">
+      <Property Name="UnifiedAreaRect" Value="{{0.0819672,0},{0.146341,0},{0.2275,335},{0.125,330}}" />
+      <Window Type="TaharezLook/CommonCaseHouse" Name="ChildFeed/feed/back">
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{-0.00738916,0},{-0.00623053,0},{0,410},{0,325}}" />
+        <Window Type="TaharezLook/Figure" Name="ChildFeed/feed/back/title">
+          <Property Name="UnifiedAreaRect" Value="{{0.346247,0},{0,7},{0.35086,120},{0,24}}" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back/title/name">
+            <Property Name="Text" Value="请选择物品" />
+            <Property Name="HorzExtent" Value="65" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.229508,0},{-0.117647,0},{0.827869,0},{0,18}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="ChildFeed/feed/back/pagback">
+          <Property Name="UnifiedAreaRect" Value="{{0.0169492,0},{0,25},{0.983051,0},{0,127}}" />
+          <Window Type="TaharezLook/ScrollablePane" Name="ChildFeed/feed/back/pagback/List">
+            <Property Name="ContentArea" Value="l:-21 t:-5 r:357 b:132" />
+            <Property Name="HorzStepSize" Value="0.1" />
+            <Property Name="VertStepSize" Value="0.1" />
+            <Property Name="HorzOverlapSize" Value="0.01" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0075188,0},{0.0196079,0},{0.00673583,412},{0.0179958,96}}" />
+            <Property Name="VertOverlapSize" Value="0.01" />
+            <Property Name="HorzScrollPosition" Value="0" />
+            <Property Name="VertScrollPosition" Value="0" />
+            <AutoWindow NameSuffix="__auto_container__">
+              <Property Name="ContentArea" Value="l:-21 t:-5 r:357 b:132" />
+              <Property Name="ChildExtentsArea" Value="l:-21 t:-5 r:357 b:132" />
+              <Window Type="TaharezLook/ItemCell" Name="ChildFeed/feed/back/pagback/List/cell1">
+                <Property Name="UnifiedAreaRect" Value="{{0,-21},{0,-5},{0,27},{0,43}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildFeed/feed/back/pagback/List/cell2">
+                <Property Name="UnifiedAreaRect" Value="{{0,26},{0,-5},{0,74},{0,43}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildFeed/feed/back/pagback/List/cell3">
+                <Property Name="UnifiedAreaRect" Value="{{0,73},{0,-5},{0,121},{0,43}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildFeed/feed/back/pagback/List/cell4">
+                <Property Name="UnifiedAreaRect" Value="{{0,120},{0,-5},{0,168},{0,43}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildFeed/feed/back/pagback/List/cell5">
+                <Property Name="UnifiedAreaRect" Value="{{0,167},{0,-5},{0,215},{0,43}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildFeed/feed/back/pagback/List/cell6">
+                <Property Name="UnifiedAreaRect" Value="{{0,214},{0,-5},{0,262},{0,43}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildFeed/feed/back/pagback/List/cell7">
+                <Property Name="UnifiedAreaRect" Value="{{0,261},{0,-5},{0,309},{0,43}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildFeed/feed/back/pagback/List/cell8">
+                <Property Name="UnifiedAreaRect" Value="{{0,308},{0,-5},{0,356},{0,43}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildFeed/feed/back/pagback/List/cell9">
+                <Property Name="UnifiedAreaRect" Value="{{0,-21},{0,44},{0,27},{0,92}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildFeed/feed/back/pagback/List/cell10">
+                <Property Name="UnifiedAreaRect" Value="{{0,26},{0,44},{0,74},{0,92}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildFeed/feed/back/pagback/List/cell11">
+                <Property Name="UnifiedAreaRect" Value="{{0,73},{0,44},{0,121},{0,92}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildFeed/feed/back/pagback/List/cell12">
+                <Property Name="UnifiedAreaRect" Value="{{0,120},{0,44},{0,168},{0,92}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildFeed/feed/back/pagback/List/cell13">
+                <Property Name="UnifiedAreaRect" Value="{{0,167},{0,44},{0,215},{0,92}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildFeed/feed/back/pagback/List/cell14">
+                <Property Name="UnifiedAreaRect" Value="{{0,214},{0,44},{0,262},{0,92}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildFeed/feed/back/pagback/List/cell15">
+                <Property Name="UnifiedAreaRect" Value="{{0,261},{0,44},{0,309},{0,92}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildFeed/feed/back/pagback/List/cell16">
+                <Property Name="UnifiedAreaRect" Value="{{0,308},{0,44},{0,356},{0,92}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildFeed/feed/back/pagback/List/cell17">
+                <Property Name="UnifiedAreaRect" Value="{{-0.0534351,0},{0.978947,0},{0.501222,-170},{0.505263,93}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildFeed/feed/back/pagback/List/cell18">
+                <Property Name="UnifiedAreaRect" Value="{{0.0661578,0},{0.978947,0},{0.551222,-143},{0.555263,88}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildFeed/feed/back/pagback/List/cell19">
+                <Property Name="UnifiedAreaRect" Value="{{0.185751,0},{0.978947,0},{0.601222,-115},{0.605263,84}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildFeed/feed/back/pagback/List/cell20">
+                <Property Name="UnifiedAreaRect" Value="{{0.304453,0},{0.976315,0},{0.651222,-88},{0.655263,79}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildFeed/feed/back/pagback/List/cell21">
+                <Property Name="UnifiedAreaRect" Value="{{0.4257,0},{0.98421,0},{0.701222,-60},{0.705263,75}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildFeed/feed/back/pagback/List/cell22">
+                <Property Name="UnifiedAreaRect" Value="{{0.544402,0},{0.981578,0},{0.751222,-33},{0.755263,70}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildFeed/feed/back/pagback/List/cell23">
+                <Property Name="UnifiedAreaRect" Value="{{0.663104,0},{0.978946,0},{0.801222,-6},{0.805263,65}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildFeed/feed/back/pagback/List/cell24">
+                <Property Name="UnifiedAreaRect" Value="{{0.784351,0},{0.976314,0},{0.851222,22},{0.855263,60}}" />
+              </Window>
+            </AutoWindow>
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back/food">
+          <Property Name="Text" Value="放入物品" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+          <Property Name="BorderColour" Value="FF280B03" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,294},{0.05,117},{0.05,350},{0.05,137}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ChildFeed/feed/back/back1">
+          <Property Name="Image" Value="set:MainControl3 image:LuckyWheelMiddleBox" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,66},{0,68}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,66},{0,68}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,287},{0.05,138},{0.05,353},{0.05,206}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ChildFeed/feed/back/back1/item">
+            <Property Name="UnifiedAreaRect" Value="{{0.136364,0},{0.132353,0},{0.30303,37},{0.294118,37}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back/name">
+          <Property Name="Text" Value="啦啦啦" />
+          <Property Name="HorzExtent" Value="39" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.690072,0},{0.682668,0},{0.96368,0},{0.747568,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ChildFeed/feed/back/ok">
+          <Property Name="Text" Value="正常培养" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.736078,0},{0.824051,0},{0.920097,0},{0.903562,-3}}" />
+        </Window>
+        <Window Type="TaharezLook/Combobox" Name="ChildFeed/feed/back/choose">
+          <Property Name="UnifiedAreaRect" Value="{{0.174334,0},{0.413245,0},{0.467312,0},{0.679239,0}}" />
+          <Property Name="MaxEditTextLength" Value="2147483647" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back/txt">
+          <Property Name="Text" Value="当前子女" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+          <Property Name="BorderColour" Value="FF5F4100" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0242131,0},{0.419979,0},{0.162228,0},{0.487319,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Figure1" Name="ChildFeed/feed/back/figure1">
+          <Property Name="UnifiedAreaRect" Value="{{0.0508475,0},{0.490996,0},{0.302663,0},{0.554969,0}}" />
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back/figure1/name">
+            <Property Name="Text" Value="培养前" />
+            <Property Name="HorzExtent" Value="39" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.317308,0},{0.105263,0},{0.75,0},{1,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Figure1" Name="ChildFeed/feed/back/figure2">
+          <Property Name="UnifiedAreaRect" Value="{{0.384988,0},{0.490996,0},{0.636804,0},{0.554969,0}}" />
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back/figure2/name">
+            <Property Name="Text" Value="培养后" />
+            <Property Name="HorzExtent" Value="39" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.317308,0},{0.105263,0},{0.75,0},{1,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCase" Name="ChildFeed/feed/back1">
+          <Property Name="UnifiedAreaRect" Value="{{0.0193705,0},{0.562321,0},{0.0173418,128},{0.562321,134}}" />
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back1/txt1">
+            <Property Name="Text" Value="体质" />
+            <Property Name="HorzExtent" Value="26" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0472441,0},{0.0223881,0},{0.283465,0},{0.186567,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back1/txt2">
+            <Property Name="Text" Value="内力" />
+            <Property Name="HorzExtent" Value="26" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0472441,0},{0.179104,0},{0.283465,0},{0.343284,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back1/txt3">
+            <Property Name="Text" Value="力量" />
+            <Property Name="HorzExtent" Value="26" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0472441,0},{0.343284,0},{0.283465,0},{0.507463,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back1/txt4">
+            <Property Name="Text" Value="耐力" />
+            <Property Name="HorzExtent" Value="26" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0472441,0},{0.5,0},{0.283465,0},{0.664179,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back1/txt5">
+            <Property Name="Text" Value="敏捷" />
+            <Property Name="HorzExtent" Value="27" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0472441,0},{0.656716,0},{0.283465,0},{0.820895,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back1/num1">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="UnifiedAreaRect" Value="{{0.409449,0},{0.0373134,0},{0.944882,0},{0.171642,0}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back1/num2">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="UnifiedAreaRect" Value="{{0.409449,0},{0.213675,-3},{0.944882,0},{0.374389,-7}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back1/num3">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="UnifiedAreaRect" Value="{{0.409449,0},{0.384615,-5},{0.944882,0},{0.54533,-9}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back1/num4">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="UnifiedAreaRect" Value="{{0.409449,0},{0.555556,-6},{0.944882,0},{0.71627,-11}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back1/num5">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="UnifiedAreaRect" Value="{{0.409449,0},{0.726496,-8},{0.944882,0},{0.88721,-12}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back1/txt6">
+            <Property Name="Text" Value="成长度" />
+            <Property Name="HorzExtent" Value="39" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0472441,0},{0.813433,0},{0.0551181,39},{0.977612,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back1/num6">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="UnifiedAreaRect" Value="{{0.409449,0},{0.776496,7},{0.944882,0},{0.962687,0}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCase" Name="ChildFeed/feed/back2">
+          <Property Name="UnifiedAreaRect" Value="{{0.355932,0},{0.562321,0},{0.356325,127},{0.562321,134}}" />
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back2/txt1">
+            <Property Name="Text" Value="体质" />
+            <Property Name="HorzExtent" Value="26" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0472441,0},{0.0223881,0},{0.283465,0},{0.186567,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back2/txt2">
+            <Property Name="Text" Value="内力" />
+            <Property Name="HorzExtent" Value="26" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0472441,0},{0.179104,0},{0.283465,0},{0.343284,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back2/txt3">
+            <Property Name="Text" Value="力量" />
+            <Property Name="HorzExtent" Value="26" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0472441,0},{0.343284,0},{0.283465,0},{0.507463,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back2/txt4">
+            <Property Name="Text" Value="耐力" />
+            <Property Name="HorzExtent" Value="26" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0472441,0},{0.5,0},{0.283465,0},{0.664179,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back2/txt5">
+            <Property Name="Text" Value="敏捷" />
+            <Property Name="HorzExtent" Value="27" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0472441,0},{0.656716,0},{0.283465,0},{0.820895,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back2/num1">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="UnifiedAreaRect" Value="{{0.409449,0},{0.0373134,0},{0.944882,0},{0.171642,0}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back2/txt51">
+            <Property Name="Text" Value="成长度" />
+            <Property Name="HorzExtent" Value="39" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0472441,0},{0.813433,0},{0.0472441,40},{0.977612,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back2/num51">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="UnifiedAreaRect" Value="{{0.409449,0},{0.776496,8},{0.944882,0},{0.970149,0}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back2/num2">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="UnifiedAreaRect" Value="{{0.409449,0},{0.19403,0},{0.944882,0},{0.328358,0}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back2/num3">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="UnifiedAreaRect" Value="{{0.409449,0},{0.350746,0},{0.944882,0},{0.485075,0}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back2/num4">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="UnifiedAreaRect" Value="{{0.409449,0},{0.514925,0},{0.944882,0},{0.649254,0}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back2/num5">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="UnifiedAreaRect" Value="{{0.409449,0},{0.679105,0},{0.944882,0},{0.813433,0}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back/name1">
+          <Property Name="Text" Value="可补培养：" />
+          <Property Name="HorzExtent" Value="65" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.691646,0},{0.744901,0},{0.84661,0},{0.8098,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back/name2">
+          <Property Name="Text" Value="次" />
+          <Property Name="HorzExtent" Value="13" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.901453,0},{0.745972,0},{0.961985,0},{0.810871,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ChildFeed/feed/back/num">
+          <Property Name="Text" Value="999" />
+          <Property Name="HorzExtent" Value="24" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.842493,0},{0.747043,0},{0.903026,0},{0.811942,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ChildFeed/feed/back/ok2">
+          <Property Name="Text" Value="补充培养" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.736078,0},{0.901574,0},{0.920097,0},{0.97191,0}}" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ChildFeed/Title/name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="子女培养" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="69" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,-165},{0.05,1},{0.05,-73},{0.05,24}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+  </Window>
+</GUILayout>

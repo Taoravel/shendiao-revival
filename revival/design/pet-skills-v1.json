@@ -1,0 +1,35 @@
+{
+  "revision": "2026-10-23.pet-skills.1",
+  "scope": "ordinary learned skill-ID list and unprotected skill-book operations; pet binding follows separate pet-flags-v1; passive/battle effects remain separate",
+  "generation": {
+    "provenance": "designed deterministic restoration baseline",
+    "selection": "first up to2 distinct positive original cpetattr.skillid entries, preserving source order; zero placeholders ignored",
+    "maximum_initial_skills": 2,
+    "legacy": "never initialize unknown old skills from the template; trusted one-time known full learned-ID list required"
+  },
+  "book_learning": {
+    "status": "legacy first restoration baseline below; current probability/certification/progress governed by pet-skill-learning-v3",
+    "provenance": "designed missing original server rules; exact item-to-skill values and blood-color caps are client_verified",
+    "mapping": "original cpetitemeffect.petskillid, cross-checked with cpetskillconfig.itemid/canbenid and citemattr itemtype49",
+    "duplicate_or_weaker": "reject without consuming",
+    "family_and_rank": "designed grouping by skillID//10 and rank skillID%10 for known ordinary book skills",
+    "same_family_upgrade": "replace the single known weaker family member in its original position",
+    "append_success_per_mille": 250,
+    "draw_upper_exclusive": 1000,
+    "new_family": "when below current original color skillnumber cap, append if expansion_draw<append_success_per_mille; otherwise replace learned[replacement_draw%count]; empty list always receives first skill",
+    "draws": "two trusted server draws0..999, fixed once per admitted request and included in intent fingerprint; never client supplied or regenerated on committed retry",
+    "fee": "consume exactly1 owned carried book for one valid learning action; no additional currency or XP fee in this designed baseline",
+    "binding": "petbangding1 requires known complete pet flags under pet-flags-v1 and binds atomically on successful learning; unknown old flags reject before spending",
+    "unavailable": "certification options, timed skill expiry and adjacent containers require their own state/protocol recovery; reject unsupported request options before spending",
+    "progress_table": "cpetskillsuccessconfig.progress retained as source evidence, not falsely treated as a recovered chance formula"
+  },
+  "wire": "ordinary Pet bean+b8 compact-count ordered BE32 skill IDs; c07ff request has six BE32 fields; only canonical last4=-1 unprotected branch supported by the context Adapter",
+  "transaction": "current role lease, owned live pet, known growth/care/skills, expected skill version; book debit, skill version, inventory revision and receipt share caller transaction; stage current refresh and bag before commit",
+  "replay": "receipt acknowledges old before/after only; refresh reads current learned IDs/resources/cash, never restores historical skill state",
+  "sources": [
+    "https://sdxl.wanmei.com/info/qita/pet/20120729/133549.shtml",
+    "https://sdxl.wanmei.com/news/gamenews/20121231/139075.shtml"
+  ],
+  "guide_limit": "2012 PC guides support named pet skills and learning beyond default skills; exact initial random selection, expansion/replacement chance, binding/protection and target-version battle formulas remain unproved",
+  "native_gui_verified": false
+}

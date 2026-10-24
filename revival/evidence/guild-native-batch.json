@@ -1,0 +1,76 @@
+{
+  "batch": 9,
+  "created_utc": "2026-10-23T10:43:27.644368+00:00",
+  "goal_status": "active",
+  "complete": false,
+  "methods": [
+    "codebase-design",
+    "tdd",
+    "diagnosing-bugs",
+    "writing-for-agents"
+  ],
+  "native_requests": [
+    "0xc560e",
+    "0xc5621",
+    "0xc5622"
+  ],
+  "source_sha256": {
+    "guild_protocol.py": "24a8f6081a4b155fe1182bdf942c44c198362954de584435ee1dbe2f2beefad3",
+    "guild_projection.py": "33e2358c319a5575e85dd8f6109465008691f937bd85481a1a20de37fd849fd1",
+    "guild_runtime.py": "913d8aaea1e374967cd6199483a9363fb5697f40970a44efc96a8f9689657fb8",
+    "guild_offices.py": "f781d6f71860cdb3aa68da41a2d8a8b0616b3c14f2c4aab397066baa6296090e",
+    "faction_domain.py": "6ff19ce5f53ab1fdae0584f6e6ab99a98a5810d69de173a32b07de88a53b18ed",
+    "faction_protocol.py": "9d9a95607e2a50666fc8f27ab3d6789b7b23a3c72ba44688e7aa4ebaf027d3b4",
+    "faction_types.py": "019836f5218284960e0c7a7c2f3b18dc2ea3506b624fb8af9eaf04a4b312cc84",
+    "faction_runtime.py": "252e4e8539bdf04388ad17079b9d7600901c31adb468e1a3220c9649bc29fed6",
+    "family_projection.py": "9a81e074b079a633dbf8647f1a8cc7564d4f72547f456a3806af49d8828b0473",
+    "family_runtime.py": "d37d44d7081d9c491cadfbc03066a639a7504b392542688d8c145523d4c6df43",
+    "social_protocol.py": "8a7b13bdc957d11663410d263fb4c20dcd8017a9a6ce8e7180677f73a493d88c",
+    "social_runtime.py": "7afecf6e05aa01df139e11d5eb66fba95c2d8791e82ed4a47b7e5da1b4c59fa9",
+    "recover_social_inventory.py": "eeb0cb09f0c33812eb20f94099ed81192da7b651bf5903ea5ce1e6c660af407e",
+    "design/recovery-baseline.json": "55377d3613c9bbfa75dd5e07189c213ae3034ee4c54b3e04629b2a4451d35844",
+    "verify_guild_native.py": "89b3ac2d062afc297260b5570f5c474208d20a45cacbc8678de7870a66deb9a8",
+    "verify_guild_projection.py": "e7335954206195baf4b2ba14f328923044aedd623063687e3ffa35b57208b6a7",
+    "verify_guild_management.py": "a8e774387c88037474b12fffeb6e828f8c13fe000511f2129904603652c6bce2",
+    "verify_guild_tcp.py": "f5f99c1e3f991f26567d0ab2295761eeaa8661e9c662d59e9839027cff45c060",
+    "verify_guild_offices.py": "8ead428c99ebb3153d7421e779f031cbab968aa2ed74dbc80cc58153e4e428b5",
+    "verify_faction_runtime.py": "176dd759d237499e8d09c226c07bd5fb78c57322bff1ee7f2f2dc1921258a172"
+  },
+  "checks": {
+    "guild-native-verification.json": {
+      "passed_groups": 9,
+      "sha256": "4fb617f7642dcf7b63455c73373c051f0f9e704eca13826a6d79a90c90589f3a"
+    },
+    "guild-projection-verification.json": {
+      "passed_groups": 5,
+      "sha256": "ebfc32856ea48bc27161be037608b9e73f99e24c31ac6d8030a79bcbaf918fa9"
+    },
+    "guild-management-verification.json": {
+      "passed_groups": 11,
+      "sha256": "75ec9cde7b7c9d4174f0510a7664e00e1db6cee98f56419e330b9fa9daad3d1a"
+    },
+    "guild-tcp-verification.json": {
+      "passed_groups": 7,
+      "sha256": "bf248014d54847d4e212f271645c3b54c814a38f9cadf05e953e1a9c5f591bc4"
+    },
+    "guild-offices-verification.json": {
+      "passed_groups": 10,
+      "sha256": "2e403e14429e2b89b5d3752583bea974e13ddff42a8dffbd8724ff37ef39dc39"
+    },
+    "family-tcp-verification.json": {
+      "passed_groups": 6,
+      "sha256": "bdef59002e05f976c4a67ac2e088e7aac3e72195513274abdd61a6e87ae96077"
+    }
+  },
+  "native_gui_verified": false,
+  "this_window_deployed_or_restarted_service": false,
+  "live_role_or_store_changed_by_checks": false,
+  "shared_entry_files_edited_by_this_batch": false,
+  "remaining": [
+    "full guild detail/management and native NPC creation/authority/research/practice",
+    "individual learning and practice payments/experience/effects",
+    "research progression/maintenance/construction/production/activities",
+    "original client GUI and capacity acceptance"
+  ],
+  "handoff": "evidence/GUILD_NATIVE_RUNTIME.md"
+}

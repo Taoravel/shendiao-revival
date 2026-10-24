@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/HouseFrameWindow" Name="PKRanking">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="open.ogg" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.210625,0},{0.08,0},{0.144375,516},{0.08,504}}" />
+    <Property Name="CloseSoundResource" Value="close.ogg" />
+    <Window Type="TaharezLook/StaticImage" Name="PKRanking/titleimage">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.574514,0},{0,18},{1.23974,0},{0,45}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="PKRanking/titlename">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="元素争夺战昨日排行榜" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="170" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,72},{0,1},{0,252},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/MultiColumnList" Name="PKRanking/PersonalInfo/list">
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,38},{0,52},{0,429},{0,450}}" />
+      <Property Name="ColumnHeader" Value="text:排名 width:{0.1,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:玩家 width:{0.27,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:门派 width:{0.15,0} id:2" />
+      <Property Name="ColumnHeader" Value="text:等级 width:{0.09,0} id:3" />
+      <Property Name="ColumnHeader" Value="text:荣誉值 width:{0.13,0} id:4" />
+      <Property Name="ColumnHeader" Value="text:称谓 width:{1,-288} id:5" />
+    </Window>
+    <Window Type="TaharezLook/LittleButton" Name="PKRanking/button1">
+      <Property Name="Text" Value="我的排名" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.317494,0},{0.902778,0},{0.473002,0},{0.954365,0}}" />
+    </Window>
+    <Window Type="TaharezLook/LittleButton" Name="PKRanking/button11">
+      <Property Name="Text" Value="领取奖励" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.103672,0},{0.902778,0},{0.259179,0},{0.954365,0}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="PKRanking/number">
+      <Property Name="Text" Value="当前我的荣誉值：" />
+      <Property Name="HorzExtent" Value="104" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.593953,0},{0.906746,0},{0.926566,0},{0.956349,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticText" Name="PKRanking/number/num">
+        <Property Name="Text" Value="2222" />
+        <Property Name="HorzExtent" Value="32" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0.649351,0},{0.16,0},{0.915584,0},{0.88,0}}" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

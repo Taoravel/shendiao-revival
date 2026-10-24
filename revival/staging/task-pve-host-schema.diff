@@ -1,0 +1,55 @@
+--- approved-host-r2
++++ schema-scoped-host
+@@ -10,7 +10,7 @@
+ import hashlib,json,os
+ from pathlib import Path
+ import socket,sqlite3,struct,subprocess,sys,time
+-from master_ready_preflight import table_state
++from master_ready_preflight import table_state,verify_preserved_tables
+ from service_health_probe import read_frames
+ 
+ ROOT=Path(__file__).resolve().parents[1]
+@@ -84,7 +84,18 @@
+         db.execute('BEGIN');before=table_state(db)
+         require(db.execute('PRAGMA quick_check').fetchone()==('ok',),'Formal database integrity failed')
+         with sqlite3.connect(recovery/'accounts-before.sqlite3') as saved:db.backup(saved)
+-    require(len(before)==110,'Unexpected formal schema; no migration authorized')
++    candidate=json.loads((release/'candidate.json').read_text(encoding='utf-8'))
++    preflight=json.loads((release/'preflight.json').read_text(encoding='utf-8'))
++    require(candidate['release']==str(release),'Schema candidate identity mismatch')
++    require(candidate['new_empty_tables']==manifest['new_empty_tables'],
++        'New empty-table scope differs from the approved manifest')
++    require(set(before)==set(preflight['tables']) and
++        preflight['candidate_hashes_verified']==len(manifest['sha256']),
++        'Formal table set differs from the exact candidate preflight')
++    with sqlite3.connect(recovery/'accounts-before.sqlite3') as saved:
++        before_schema={name:sql for name,sql in saved.execute(
++            "SELECT name,sql FROM sqlite_master WHERE type='table'")}
++
+     flags=0x01000000|subprocess.DETACHED_PROCESS|subprocess.CREATE_NEW_PROCESS_GROUP
+     command=[sys.executable,'-B',str(release/'run_release.py')]
+     with (recovery/'server-stdout.log').open('ab',buffering=0) as out, (recovery/'server-stderr.log').open('ab',buffering=0) as err:
+@@ -119,7 +130,11 @@
+     require(startup['pid']==process.pid and startup['source_sha256_at_startup']==expected,
+         'Actual startup identity or complete source hash set mismatch')
+     with sqlite3.connect((ROOT/'runtime/accounts.sqlite3').as_uri()+'?mode=ro',uri=True) as db:
+-        require(table_state(db)==before,'Recovery changed formal rows')
++        added_empty_tables=verify_preserved_tables(before,table_state(db),candidate)
++        after_schema={name:sql for name,sql in db.execute(
++            "SELECT name,sql FROM sqlite_master WHERE type='table'")}
++        require(all(after_schema.get(name)==sql for name,sql in before_schema.items()),
++            'Startup changed an existing table schema')
+         require(db.execute('PRAGMA quick_check').fetchone()==('ok',),'Recovered database integrity failed')
+     verify_source()
+     result=dict(recovery=str(recovery),release=str(release),pid=process.pid,
+@@ -130,7 +145,9 @@
+         target_in_caller_job=False,controlled_job_close_proof=proof,
+         source_files_verified=len(manifest['sha256']),startup_python_hashes=len(expected),
+         source_hashes_match=True,version=version,unauthenticated_heartbeat=True,
+-        before_tables=before,all110_table_rows_unchanged=True,quick_check='ok',
++        before_tables=before,all_preexisting_table_rows_unchanged=True,
++        preexisting_table_count=len(before),added_empty_tables=added_empty_tables,
++        preexisting_table_schema_unchanged=True,quick_check='ok',
+         formal_database_read_only=True,real_authentication=False,native_gui_verified=False,
+         scheduled_task_or_service_installed=False,job_limits_modified=False)
+     for path in (recovery/'recovery.json',ROOT/'evidence/detached-service-recovery.json'):

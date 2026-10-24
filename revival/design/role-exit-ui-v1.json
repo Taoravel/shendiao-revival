@@ -1,0 +1,17 @@
+{
+  "revision": "2026-10-23.role-exit-ui.1",
+  "scope": "initialize native ordinary exit dialog for every accepted world entry; first-day exit business is not implemented",
+  "provenance": "client_verified message and signed mode mapping; designed negative adapter value selecting ordinary exit",
+  "message_type": 786489,
+  "message_name": "SFirstDayExitGame",
+  "wire": "one BE signed32",
+  "value": -1,
+  "native_result": "negative decoded value sets local exit mode0; value0 or positive selects first-day mode1",
+  "send_when": "each accepted ordinary role world entry, including reconnect and returning from role list after client reset",
+  "delivery": "frozen startup logical packet via the current ConnectionOwner codec/send ordering before interactive world responses",
+  "mutation": "no account, role, task, resource or currency mutation",
+  "first_day_exit_policy": "unknown; do not send zero as ordinary-exit default or grant any first-day reward/task",
+  "source": "evidence/ROLE_EXIT_NATIVE_REAUDIT.md; verify_role_exit_native.py and evidence/role-exit-native-reaudit-check.json",
+  "native_gui_verified": false,
+  "live_server_changed": false
+}

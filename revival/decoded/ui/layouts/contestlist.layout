@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="ContestList">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.17375,0},{0.146667,0},{0.17375,536},{0.211667,321}}" />
+    <Window Type="TaharezLook/StaticText" Name="ContestList/Name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="武林大会积分" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="102" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.341418,0},{0.0333333,0},{0.714552,0},{0.0972222,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="ContestList/Left">
+      <Property Name="UnifiedAreaRect" Value="{{0.0335821,0},{0.125,0},{0.028409,157},{0.672222,0}}" />
+      <Window Type="TaharezLook/ListGroupButton" Name="ContestList/Left/gbtn1">
+        <Property Name="Text" Value="人" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0194805,0},{0.0203046,0},{0.116993,129},{0.05,16}}" />
+      </Window>
+      <Window Type="TaharezLook/ListGroupButton" Name="ContestList/Left/gbtn2">
+        <Property Name="Text" Value="黄" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0194805,0},{0.05,18},{0.116993,129},{0.05,40}}" />
+      </Window>
+      <Window Type="TaharezLook/ListGroupButton" Name="ContestList/Left/gbtn3">
+        <Property Name="Text" Value="玄" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0194805,0},{0.05,42},{0.116993,129},{0.05,64}}" />
+      </Window>
+      <Window Type="TaharezLook/ListGroupButton" Name="ContestList/Left/gbtn4">
+        <Property Name="Text" Value="地" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0194805,0},{0.05,66},{0.116993,129},{0.05,88}}" />
+      </Window>
+      <Window Type="TaharezLook/ListGroupButton" Name="ContestList/Left/gbtn5">
+        <Property Name="Text" Value="天" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0194805,0},{0.05,90},{0.116993,129},{0.05,112}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/MultiColumnList" Name="ContestList/Right/Name">
+      <Property Name="UnifiedAreaRect" Value="{{0.322761,0},{0.172222,0},{0.962687,0},{0.888889,0}}" />
+      <Property Name="ColumnHeader" Value="text:排名 width:{0.15,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:名称 width:{0.35,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:历史积分 width:{0.25,0} id:2" />
+      <Property Name="ColumnHeader" Value="text:当前积分 width:{1,-257} id:3" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ContestList/Right/Hand">
+      <Property Name="Font" Value="fzy4k-11" />
+      <Property Name="Text" Value="十大高手榜" />
+      <Property Name="HorzExtent" Value="75" />
+      <Property Name="VertExtent" Value="17.1936" />
+      <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.326493,0},{0.113889,0},{0.947761,0},{0.0142857,56}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ContestList/Right/Word">
+      <Property Name="Font" Value="fzy4k-11" />
+      <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0447761,0},{0.05,304},{0.05,484},{0.05,324}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticText" Name="ContestList/Right/Word/lishi">
+        <Property Name="Text" Value="我的历史积分：" />
+        <Property Name="HorzExtent" Value="91" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{-0.00205339,0},{0,0},{0.184805,0},{0.3,14}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ContestList/Right/Word/Last">
+        <Property Name="TextColours" Value="tl:FF80FD98 tr:FF80FD98 bl:FF47FF15 br:FF47FF15" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.178645,0},{0,0},{0.262834,0},{0.25,15}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ContestList/Right/Word/Last1">
+        <Property Name="Text" Value="我的当前积分：" />
+        <Property Name="HorzExtent" Value="91" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.367556,0},{0,0},{0.550308,0},{0.25,15}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ContestList/Right/Word/Recent">
+        <Property Name="TextColours" Value="tl:FF80FD98 tr:FF80FD98 bl:FF47FF15 br:FF47FF15" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.544148,0},{0,0},{0.616016,0},{0.15,17}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ContestList/Right/Word/Last11">
+        <Property Name="Text" Value="我的排名：" />
+        <Property Name="HorzExtent" Value="65" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,277},{0,0},{0.05,341},{0.4,12}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ContestList/Right/Word/Contest1">
+        <Property Name="TextColours" Value="tl:FF80FD98 tr:FF80FD98 bl:FF47FF15 br:FF47FF15" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,339},{0,0},{0.05,363},{0.35,13}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ContestList/Right/Word/Contest2">
+        <Property Name="Text" Value="阶第" />
+        <Property Name="HorzExtent" Value="26" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.1,339},{0,0},{0.1,365},{0.35,13}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ContestList/Right/Word/Contest3">
+        <Property Name="TextColours" Value="tl:FF80FD98 tr:FF80FD98 bl:FF47FF15 br:FF47FF15" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.15,346},{0,0},{0.15,374},{0.35,13}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ContestList/Right/Word/Contest4">
+        <Property Name="Text" Value="名" />
+        <Property Name="HorzExtent" Value="13" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.2,339},{0,0},{0.2,393},{0.35,13}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="ContestList/left1">
+      <Property Name="UnifiedAreaRect" Value="{{0.0335821,0},{0.677778,0},{0.028409,157},{0.888889,0}}" />
+      <Window Type="TaharezLook/RadioButton" Name="ContestList/now">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="   历史排行" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,13},{0.05,5},{0.05,130},{0.05,31}}" />
+      </Window>
+      <Window Type="TaharezLook/RadioButton" Name="ContestList/all">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="   本届排行" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,13},{0.05,38},{0.05,130},{0.05,64}}" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

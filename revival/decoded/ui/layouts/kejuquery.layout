@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="KejuQuery">
+    <Property Name="Font" Value="msyh-16" />
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.13125,0},{0.245,0},{0.0487499,654},{0.243333,345}}" />
+    <Window Type="TaharezLook/MultiColumnList" Name="KejuQuery/KejuQueryFrame/KejuQueryMember">
+      <Property Name="UnifiedAreaRect" Value="{{0,19},{0,45},{0,566},{0,282}}" />
+      <Property Name="ColumnHeader" Value="text:日     期 width:{0.25,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:状     元 width:{0.25,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:榜     眼 width:{0.25,0} id:2" />
+      <Property Name="ColumnHeader" Value="text:探     花 width:{0.25,0} id:3" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="KejuQuery/Name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="科举查询榜" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="85" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.501701,0},{0.0377907,0},{0.69898,0},{0.101744,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="KejuQuery/Up">
+      <Property Name="Text" Value="上一页" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.357143,0},{0.869186,0},{0.469388,0},{0.2,254}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="KejuQuery/Up1">
+      <Property Name="Text" Value="下一页" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.528912,0},{0.869186,0},{0.641156,0},{0.253731,236}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="KejuQuery/Info">
+      <Property Name="Text" Value="数据互通后，列表中会出现多个玩家并列获得前三甲的情况，此情况属于正常现象。" />
+      <Property Name="HorzExtent" Value="481" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0357143,0},{0.819767,0},{0.855442,0},{0.4,162}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+  </Window>
+</GUILayout>

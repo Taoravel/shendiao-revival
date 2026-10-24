@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="TaskDialog">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="open.ogg" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,121},{0,110},{0,686},{0,511}}" />
+    <Property Name="CloseSoundResource" Value="close.ogg" />
+    <Window Type="TaharezLook/TabControl" Name="TaskDialog/tabcontrol">
+      <Property Name="TabHeight" Value="{0,18}" />
+      <Property Name="TabPanePosition" Value="Top" />
+      <Property Name="UnifiedAreaRect" Value="{{0,19},{0,45},{0,542},{0,379}}" />
+      <Window Type="DefaultWindow" Name="TaskDialog/Tab 1">
+        <Property Name="Text" Value="当前任务" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,528},{0,316}}" />
+        <Window Type="TaharezLook/Button" Name="TaskDialog/abandonBtn">
+          <Property Name="Text" Value="放弃任务" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="click.ogg" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,261.822},{0,287.88},{0,333.822},{0,311.88}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="TaskDialog/tracebtn">
+          <Property Name="Text" Value="添加追踪" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="click.ogg" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,379.956},{0,287.88},{0,451.956},{0,311.88}}" />
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="TaskDialog/Tab 1/TaskBackRight">
+          <Property Name="UnifiedAreaRect" Value="{{0,202},{0,4},{0,520},{0,283}}" />
+          <Window Type="TaharezLook/RichEditbox" Name="TaskDialog/ctaskinfo">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="LineSpace" Value="1" />
+            <Property Name="BlinkCaret" Value="True" />
+            <Property Name="MaxTextLength" Value="2147483647" />
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,5},{0,314},{0,277}}" />
+            <Property Name="BackGroundEnable" Value="False" />
+            <Property Name="BlinkCaretTimeout" Value="0.5" />
+            <Property Name="TextParsingEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="TaskDialog/Tab 1/lefttime">
+            <Property Name="Text" Value="（剩余30分）" />
+            <Property Name="HorzExtent" Value="81" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,65},{0,43},{0,156},{0,63}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="TaskDialog/Tab 1/TaskBackLeft">
+          <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,201},{0,313}}" />
+          <Window Type="TaharezLook/Tree" Name="TaskDialog/ctree">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,5},{0,191},{0,305}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="TaskDialog/Tab 1/TaskFinish">
+          <Property Name="Image" Value="set:MainControl image:TaskFinish" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,80},{0,65}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,80},{0,65}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.825,0},{0.035443,0},{0.976515,0},{0.241139,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="TaskDialog/Tab 1/Zudui">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl14 image:TeamSmallHover" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="NormalImage" Value="set:MainControl14 image:TeamSmallNormal" />
+          <Property Name="PushedImage" Value="set:MainControl14 image:TeamSmallushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,40},{0,40}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,40},{0,40}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,375},{0.05,-3},{0.05,420},{0.05,42}}" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="TaskDialog/Tab 2">
+        <Property Name="Text" Value="可接任务" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,528},{0,316}}" />
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="TaskDialog/Tab 2/TaskBackLeft">
+          <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,201},{0,313}}" />
+          <Window Type="TaharezLook/Tree" Name="TaskDialog/tree">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,5},{0,191},{0,305}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="TaskDialog/Tab 2/TaskBackRight">
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="UnifiedAreaRect" Value="{{0,202},{0,4},{0,520},{0,283}}" />
+          <Window Type="TaharezLook/RichEditbox" Name="TaskDialog/taskinfo">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="ReadOnly" Value="True" />
+            <Property Name="LineSpace" Value="1" />
+            <Property Name="BlinkCaret" Value="True" />
+            <Property Name="MaxTextLength" Value="2147483647" />
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,5},{0,314},{0,275}}" />
+            <Property Name="BackGroundEnable" Value="False" />
+            <Property Name="BlinkCaretTimeout" Value="0.5" />
+            <Property Name="TextParsingEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="TaskDialog/Tab3">
+        <Property Name="Text" Value="活动提醒" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,528},{0,323}}" />
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="TaskDialog/Tab3/TaskBackLeft">
+          <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,201},{0,313}}" />
+          <Window Type="TaharezLook/Tree" Name="TaskDialog/Tab3/tree">
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,5},{0,191},{0,305}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="TaskDialog/Tab3/TaskBackRight">
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="UnifiedAreaRect" Value="{{0,202},{0,4},{0,520},{0,283}}" />
+          <Window Type="TaharezLook/RichEditbox" Name="TaskDialog/Tab3/taskinfo">
+            <Property Name="ReadOnly" Value="True" />
+            <Property Name="LineSpace" Value="1" />
+            <Property Name="BlinkCaret" Value="True" />
+            <Property Name="MaxTextLength" Value="2147483647" />
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,5},{0,314},{0,275}}" />
+            <Property Name="BackGroundEnable" Value="False" />
+            <Property Name="BlinkCaretTimeout" Value="0.5" />
+            <Property Name="TextParsingEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="TaskDialog/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,154},{0,12},{0,462},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="TaskDialog/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="任务手册" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,78},{0,1},{0,155},{0,23}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

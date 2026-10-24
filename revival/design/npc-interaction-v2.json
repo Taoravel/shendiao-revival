@@ -1,0 +1,21 @@
+{
+  "revision": "2026-10-23.npc-interaction.2",
+  "scope": "server admission for current map-owned original CNpc bindings, shared by NpcScene and NpcLifecycle",
+  "provenance": "client_verified discrete distance in the captured common CNpc visit path; adopting it as server admission remains designed because original server rules are unknown",
+  "research": ["evidence/NPC_APPROACH_NATIVE_RESEARCH.md", "evidence/NPC_INTERACTION_COMPATIBILITY_AUDIT.md"],
+  "distance_mode": "logical_cell_euclidean",
+  "logical_pixels_per_cell": 16,
+  "cell_distance_limit_exclusive": 13,
+  "cell_squared_distance_limit_exclusive": 169,
+  "coordinate_rule": "current nonnegative integer logical x/y each floor-divided by16; subtract NPC and role cell coordinates; accept dx*dx+dy*dy<169; map bounds/position ownership remain enforced separately",
+  "native_mapping": "original setter11f6480 converts logical x through1.5 and signed rounding to model x, y unchanged; original getters and11c5ba0 convert model x/24,y/16 to cells. For valid nonnegative integer logical map coordinates the resulting cells equal logical x//16,y//16",
+  "default": "all current original CNpc bindings use the same discrete predicate; no NPC/placement distance exception and no scalar logical-pixel radius",
+  "reason": "actual original sends at bloodmark distance62 and ordinary storyteller/doctor distance64 are rejected by previous32/48 circles; fixing only the bloodmark would leave the same confirmed distance compatibility issue on ordinary NPCs",
+  "identity_and_authority": "only the owning full MapAddress and current map generation, existing entity binding, exact current role lease/position version/active state may prove interaction; packet key is opaque and grants no map or radius authority",
+  "collision_scope": "role positions must come from normal authoritative movement/collision. This policy only replaces distance admission, not collision or movement. Original ordinary target collision/region predicates are not independently restored by this policy; bloodmark skips those original client queries",
+  "startup": "strictly validate this revision/mode/16/13/169 and current original resources; freeze once before map owners start; noninteger/bool, unknown mode or unsupported recipe rejects; no hot policy file reads",
+  "shared_predicate": "Scene, Lifecycle, task/service fresh proof and offline movement-witness goal all consume the same frozen distance predicate; witnesses do not substitute a208-pixel circle or old radius_for",
+  "compatibility": "v1 remains an explicit legacy fixture/archive, not the default of this candidate. Preserve original placements, native visit packet, task/asset rules and real role data. Existing menu invalidation/current proof rules remain mandatory",
+  "security": "this supplies proximity only, never service/quest/guild membership/battle/transfer/reward authority; strict cell boundary rejects distance13 even when its logical-pixel distance is below208",
+  "activation": "new isolated implementation and explicit shared startup selection authorized; current immutable36632 remains unchanged. Deployment/GUI and original mouse-to-navigation full chain require separate evidence"
+}

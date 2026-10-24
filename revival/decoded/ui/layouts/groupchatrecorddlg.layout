@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="GroupChatRecord">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.270625,0},{0.1775,0},{0.270625,367},{0.1775,397}}" />
+    <Window Type="TaharezLook/StaticImage" Name="GroupChatRecord/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,10},{0.839237,0},{0.093199,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="GroupChatRecord/back">
+      <Property Name="UnifiedAreaRect" Value="{{0,19},{0,46},{0,345},{0,349}}" />
+      <Window Type="TaharezLook/RichEditbox" Name="GroupChatRecord/RecordBox">
+        <Property Name="LineSpace" Value="1" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,-11},{0.05,-10},{0.05,315},{0.05,281}}" />
+        <Property Name="BackGroundEnable" Value="False" />
+        <Property Name="BlinkCaretTimeout" Value="0.5" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GroupChatRecord/Button">
+      <Property Name="Text" Value="关闭" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.550409,33},{0.88665,0},{0.741144,33},{0.30102,256}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GroupChatRecord/Up">
+      <Property Name="Text" Value="上一页" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.177112,0},{0.88665,0},{0.367847,0},{0.30102,256}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GroupChatRecord/Down">
+      <Property Name="Text" Value="下一页" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.359673,18},{0.88665,0},{0.550409,18},{0.30102,256}}" />
+    </Window>
+  </Window>
+</GUILayout>

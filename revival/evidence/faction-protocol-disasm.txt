@@ -1,0 +1,78 @@
+CCreateFamily vtable 0x2272620 marshal 0xe44d60
+ ID dword ptr [esi + 4], 0xc55f1
+0xe44d6b mov eax, dword ptr [ebp + 0xc]
+0xe44d6e mov ecx, dword ptr [ebp + 8]
+0xe44d76 call 0x7709b0
+0xe44d7b mov edx, dword ptr [ebp + 0x10]
+0xe44d81 call 0x770960
+0xe44d86 cmp dword ptr [ebp + 0x2c], 8
+0xe44d8a mov eax, dword ptr [ebp + 0x28]
+0xe44d8f mov ecx, dword ptr [ebp + 0x18]
+0xe44d98 lea edx, [ebp + 0x18]
+0xe44da2 lea eax, [esi + 0xc]
+0xe44de5 call 0x770a30
+0xe44ded lea eax, [esi + 8]
+0xe44e05 cmp dword ptr [ebp + 0x48], 8
+0xe44e09 mov eax, dword ptr [ebp + 0x44]
+0xe44e0e mov ecx, dword ptr [ebp + 0x34]
+0xe44e17 lea edx, [ebp + 0x34]
+0xe44e21 lea eax, [esi + 0xc]
+0xe44e63 call 0x770a30
+0xe44e6b lea eax, [esi + 8]
+0xe44e84 mov ecx, dword ptr [ebp + 0x4c]
+0xe44e8a call 0x770960
+CJoinOtherFamily vtable 0x228139c marshal 0xe6a4f0
+ ID dword ptr [eax + 4], 0xc55f7
+0xe6a517 cmp dword ptr [edi + 0x18], 0
+0xe6a532 lea ecx, [edi + 8]
+0xe6a558 mov ecx, dword ptr [edi + 0x18]
+0xe6a55e call 0x770960
+CResponseFamilyApply vtable 0x2272bf8 marshal 0xe454f0
+ ID dword ptr [eax + 4], 0xc55fe
+0xe454f3 mov eax, dword ptr [esi + 0xc]
+0xe454f6 mov ecx, dword ptr [esi + 8]
+0xe45502 call 0x7709b0
+0xe45507 mov edx, dword ptr [esi + 0x10]
+0xe4550d call 0x770960
+CLeaveFamily vtable 0x2272998 marshal 0xd6d380
+ ID dword ptr [eax + 4], 0xc5601
+CChangeMemberPosition vtable 0x227259c marshal 0xe44ce0
+ ID dword ptr [eax + 4], 0xc5604
+0xe44ce3 mov eax, dword ptr [esi + 0xc]
+0xe44ce6 mov ecx, dword ptr [esi + 8]
+0xe44cf2 call 0x7709b0
+0xe44cf7 mov edx, dword ptr [esi + 0x10]
+0xe44cfd call 0x770960
+CExpelFamilyMember vtable 0x2272780 marshal 0xe44fd0
+ ID dword ptr [eax + 4], 0xc55ff
+0xe44fdf call 0x7709b0
+CRequestFamilyInfo vtable 0x2272af0 marshal 0xe45350
+ ID dword ptr [eax + 4], 0xc5657
+0xe4535b call 0x770960
+CRequestFactionData vtable 0x224de78 marshal 0x837310
+ ID dword ptr [eax + 4], 0xc560e
+CResponseCreateFaction vtable 0x2272b74 marshal 0xe45390
+ ID dword ptr [eax + 4], 0xc5614
+0xe4539b call 0x770960
+CJoinOtherFaction vtable 0x2272938 marshal 0xe45160
+ ID dword ptr [eax + 4], 0xc5612
+0xe4516b call 0x770960
+CResponseFactionApply vtable 0x2272bcc marshal 0xe454c0
+ ID dword ptr [eax + 4], 0xc561e
+0xe454c3 mov eax, dword ptr [esi + 8]
+0xe454ce call 0x770960
+0xe454d3 mov ecx, dword ptr [esi + 0xc]
+0xe454d9 call 0x770960
+CLeaveFaction vtable 0x227296c marshal 0xd6d290
+ ID dword ptr [eax + 4], 0xc5615
+CAppointFactionMember vtable 0x22724e4 marshal 0xe44b70
+ ID dword ptr [eax + 4], 0xc5621
+0xe44b73 mov eax, dword ptr [esi + 0xc]
+0xe44b76 mov ecx, dword ptr [esi + 8]
+0xe44b82 call 0x7709b0
+0xe44b87 mov edx, dword ptr [esi + 0x10]
+0xe44b8d call 0x770960
+SLeaveFamily vtable 0x2273060 marshal 0xd71de0
+ ID dword ptr [eax + 4], 0xc5602
+SLeaveFaction vtable 0x2273034 marshal 0xd71d00
+ ID dword ptr [eax + 4], 0xc560c

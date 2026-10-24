@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="GemBuyDialog">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.265625,0},{0.332215,0},{0.266875,419},{0.332215,230}}" />
+    <Window Type="TaharezLook/StaticText" Name="GemBuyDialog/pricetext">
+      <Property Name="Text" Value="宝石、元魂珠价格" />
+      <Property Name="HorzExtent" Value="105" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0404762,0},{0.735425,22},{0.0404763,107},{0.735425,42}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="DefaultBorderEnable" Value="True" />
+      <Property Name="DefaultColourEnable" Value="True" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="GemBuyDialog/numtext">
+      <Property Name="Text" Value="购买数量" />
+      <Property Name="HorzExtent" Value="52" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0404763,185},{0.735425,22},{0.0404763,241},{0.735425,42}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="DefaultBorderEnable" Value="True" />
+      <Property Name="DefaultColourEnable" Value="True" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GemBuyDialog/buybtn">
+      <Property Name="Text" Value="购买" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0404763,318},{0.735425,21},{0.0404763,383},{0.735425,43}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="GemBuyDialog/buynum">
+      <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0404763,242},{0.735425,22},{0.0404763,313},{0.735425,42}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="GemBuyDialog/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,162},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,162},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.261905,0},{0,12},{0.647619,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="GemBuyDialog/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="购买宝石、元魂珠" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="136" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,60},{0,1},{0,219},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="GemBuyDialog/Back">
+      <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0404763,110},{0.735425,22},{0.0404763,181},{0.735425,42}}" />
+      <Window Type="TaharezLook/StaticText" Name="GemBuyDialog/price">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.28169,0},{0,0},{0,68},{0,20}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="GemBuyDialog/Back/Money">
+        <Property Name="Image" Value="set:MainControl image:Xianjin" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,19},{0,19}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="GemBuyDialog/back">
+      <Property Name="UnifiedAreaRect" Value="{{0,15},{0.178261,0},{0,403},{0.176783,55}}" />
+      <Window Type="TaharezLook/ItemCell" Name="GemBuyDialog/GemCell1">
+        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,4},{0,54},{0,52}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="GemBuyDialog/GemCell2">
+        <Property Name="UnifiedAreaRect" Value="{{0,53},{0,4},{0,101},{0,52}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="GemBuyDialog/GemCell3">
+        <Property Name="UnifiedAreaRect" Value="{{0,100},{0,4},{0,148},{0,52}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="GemBuyDialog/GemCell4">
+        <Property Name="UnifiedAreaRect" Value="{{0,147},{0,4},{0,195},{0,52}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="GemBuyDialog/GemCell5">
+        <Property Name="UnifiedAreaRect" Value="{{0,194},{0,4},{0,242},{0,52}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="GemBuyDialog/GemCell6">
+        <Property Name="UnifiedAreaRect" Value="{{0,241},{0,4},{0,289},{0,52}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="GemBuyDialog/GemCell7">
+        <Property Name="UnifiedAreaRect" Value="{{0,288},{0,4},{0,336},{0,52}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="GemBuyDialog/GemCell8">
+        <Property Name="UnifiedAreaRect" Value="{{0,335},{0,4},{0,383},{0,52}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="GemBuyDialog/Info">
+      <Property Name="Text">1.出售宝石、元魂珠种类数量每15分钟刷新一次，每次共刷新6种。
+2.同类宝石、元魂珠每出售一颗，价格上涨一次。
+3.每次刷新后，所有宝石、元魂珠价格会有一定的降低。
+4.点击                            、                               。
+</Property>
+      <Property Name="HorzExtent" Value="387" />
+      <Property Name="VertExtent" Value="62.4756" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003679" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0404762,0},{0.434783,0},{0.988095,0},{0.726087,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/LinkText" Name="GemBuyDialog/Info/link">
+        <Property Name="Text" Value="查看宝石种类" />
+        <Property Name="UserID" Value="53601" />
+        <Property Name="UnifiedAreaRect" Value="{{0,41},{0.731343,0},{0,128},{0.970149,0}}" />
+      </Window>
+      <Window Type="TaharezLook/LinkText" Name="GemBuyDialog/Info/link1">
+        <Property Name="Text" Value="查看元魂珠种类" />
+        <Property Name="UserID" Value="36036" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,114},{0.731343,0},{0.05,209},{0.970149,0}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="GemBuyDialog/LeftTime">
+      <Property Name="Text" Value="00:00" />
+      <Property Name="HorzExtent" Value="36" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.380952,0},{0.726729,2},{0.578571,0},{0.735425,20}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="GemBuyDialog/LeftTime1">
+      <Property Name="Text" Value="距离下次刷新剩余时间：" />
+      <Property Name="HorzExtent" Value="143" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0404762,0},{0.726729,2},{0.371429,0},{0.735425,20}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+  </Window>
+</GUILayout>

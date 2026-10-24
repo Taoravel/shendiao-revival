@@ -1,0 +1,23 @@
+{
+  "expected": {
+    "4303557230646": 7,
+    "4303557230647": 1
+  },
+  "actual": {
+    "4303557230646": 0,
+    "4303557230647": 0
+  },
+  "source_sha256": {
+    "world_npcs.py": "177f55e34168229665586f9fef6ddee3fcdeef17c3c47fde716ad7353ac7d1c4",
+    "npc_lifecycle.py": "8a0cd6313c761828c6acf5b483edbf96f72b043d307ae60bd20dc506fb8edf8a",
+    "world_entity_protocol.py": "d4977aa707e2e0c3d1cbca6bb11ddafa39f678ef3457128d13f9e5db8d66f964",
+    "catalogs/world.json": "22d74787c6e43d66bb8aa04d4b7e91befb9fe8897b0e1db780d71219c65cade6",
+    "verify_world_entities_native.py": "94063020ed79571dea4e181c8517fd3546307171b8a095c7e48597236cffc065",
+    "native_gameplay_probe.py": "a585adc6522c8162ecaa8c87250eed240a49477ee57322f2950344a92bb7e24c",
+    "evidence/native-image.bin": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791"
+  },
+  "failure": "Original per-placement dir is lost before native NpcBasic.field48",
+  "seam": "public NpcScene.spawn -> actual original SAddUserScreen decoder",
+  "live_server_changed": false,
+  "native_gui_verified": false
+}

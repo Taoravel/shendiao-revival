@@ -1,0 +1,368 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/StaticImage" Name="ScenicSpotDlg">
+    <Property Name="Image" Value="set:MainControl3 image:ScenicBack" />
+    <Property Name="FrameEnabled" Value="False" />
+    <Property Name="UnifiedMaxSize" Value="{{0,638},{0,482}}" />
+    <Property Name="UnifiedMinSize" Value="{{0,638},{0,482}}" />
+    <Property Name="ImageSizeEnable" Value="False" />
+    <Property Name="UnifiedAreaRect" Value="{{0.001875,0},{0.0925001,0},{0.295625,294},{0.104167,468}}" />
+    <Property Name="BackgroundEnabled" Value="False" />
+    <Window Type="TaharezLook/Button" Name="ScenicSpotDlg/Up">
+      <Property Name="Text" Value="上一页" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="HoverImage" Value="set:MainControl3 image:ScenicPageHover" />
+      <Property Name="NormalImage" Value="set:MainControl3 image:ScenicPageNormal" />
+      <Property Name="PushedImage" Value="set:MainControl3 image:ScenicPagePushed" />
+      <Property Name="DisabledImage" Value="set:MainControl3 image:ScenicPageDisable" />
+      <Property Name="UnifiedAreaRect" Value="{{0.558835,0},{0.847798,0},{0.451455,129.981},{0.849873,22.9991}}" />
+      <Property Name="NormalTextColour" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF9D9D9D br:FF9D9D9D" />
+      <Property Name="ButtonBorderColour" Value="FF1B1B1C" />
+      <Property Name="ButtonBorderEnable" Value="True" />
+      <Property Name="ButtonDefaultBorderEnable" Value="False" />
+      <Property Name="ButtonDefaultColourEnable" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ScenicSpotDlg/Down">
+      <Property Name="Text" Value="下一页" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="HoverImage" Value="set:MainControl3 image:ScenicPageHover" />
+      <Property Name="NormalImage" Value="set:MainControl3 image:ScenicPageNormal" />
+      <Property Name="PushedImage" Value="set:MainControl3 image:ScenicPagePushed" />
+      <Property Name="DisabledImage" Value="set:MainControl3 image:ScenicPageDisable" />
+      <Property Name="UnifiedAreaRect" Value="{{1.01561,-150.342},{0.847798,0},{1.11199,-150.341},{0.849873,22.9991}}" />
+      <Property Name="NormalTextColour" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF9D9D9D br:FF9D9D9D" />
+      <Property Name="ButtonBorderColour" Value="FF1B1B1C" />
+      <Property Name="ButtonBorderEnable" Value="True" />
+      <Property Name="ButtonDefaultBorderEnable" Value="False" />
+      <Property Name="ButtonDefaultColourEnable" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ScenicSpotDlg/Page">
+      <Property Name="Text" Value="100/100" />
+      <Property Name="HorzExtent" Value="55" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003679" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.134325,0},{0.850588,0},{0.503774,-172.634},{0.848513,21.0009}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ScenicSpotDlg/Page1">
+      <Property Name="Text" Value="已点亮" />
+      <Property Name="HorzExtent" Value="40" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+      <Property Name="BorderColour" Value="FF1B1B1C" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0650573,0},{0.850588,0},{0.893396,-484.276},{0.848513,21.0009}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ScenicSpotDlg/PageBag">
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003679" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.451455,138.845},{0.851948,0},{1.01561,-152.238},{0.849873,21.003}}" />
+    </Window>
+    <Window Type="TaharezLook/ScenicGroupButton" Name="ScenicSpotDlg/Type1">
+      <Property Name="Text" Value="石   刻" />
+      <Property Name="UnifiedAreaRect" Value="{{0.101936,0},{0,183},{0.101936,107},{0,221}}" />
+    </Window>
+    <Window Type="TaharezLook/ScenicGroupButton" Name="ScenicSpotDlg/Type2">
+      <Property Name="Text" Value="器    物" />
+      <Property Name="UnifiedAreaRect" Value="{{0.101936,0},{0,226},{0.101936,107},{0,264}}" />
+    </Window>
+    <Window Type="TaharezLook/ScenicGroupButton" Name="ScenicSpotDlg/Type3">
+      <Property Name="Text" Value="风    景" />
+      <Property Name="UnifiedAreaRect" Value="{{0.101936,0},{0,269},{0.101936,107},{0,307}}" />
+    </Window>
+    <Window Type="TaharezLook/ScenicGroupButton" Name="ScenicSpotDlg/Type4">
+      <Property Name="Text" Value="秘    境" />
+      <Property Name="UnifiedAreaRect" Value="{{0.101936,0},{0,312},{0.101936,107},{0,350}}" />
+    </Window>
+    <Window Type="TaharezLook/ScenicGroupButton" Name="ScenicSpotDlg/Type5">
+      <Property Name="Text" Value="建    筑" />
+      <Property Name="UnifiedAreaRect" Value="{{0.101936,0},{0,355},{0.101936,107},{0,393}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="ScenicSpotCard">
+      <Property Name="Image" Value="set:MainControl3 image:ScenicSmallBack" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,169},{0,446}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,169},{0,446}}" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.984112,0},{0.0446242,0},{1.249,0},{0.104167,417.3}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/ImageButton" Name="ScenicSpotCard/Close">
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:component image:CloseButtonHover" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="NormalImage" Value="set:component image:CloseButtonNormal" />
+        <Property Name="PushedImage" Value="set:component image:CloseButtonPressed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,19},{0,21}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,19},{0,21}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.845861,0},{0.0101836,0},{0.958287,0},{0.0572688,0}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="ScenicSpotCard/Back/Card">
+        <Property Name="Image" Value="set:MainControl3 image:ScentSmall" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,116},{0,164}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,116},{0,164}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,20},{0,27},{0.05,136},{0,191}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="ScenicSpotCard/Back/Card/Image">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0791667,0},{0.0433389,0},{0.0958333,100.066},{0.0854799,116.758}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ScenicSpotCard/Back/Card/Name">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="TextColours" Value="tl:FF273543 tr:FF273543 bl:FF273543 br:FF273543" />
+          <Property Name="BorderColour" Value="FF5F4100" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.102083,0},{0.831319,0},{0.852083,0},{0.813026,23.0009}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Button" Name="ScenicSpotCard/Back/button">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="碑帖" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="HoverImage" Value="set:MainControl3 image:ScenicPageHover" />
+        <Property Name="NormalImage" Value="set:MainControl3 image:ScenicPageNormal" />
+        <Property Name="PushedImage" Value="set:MainControl3 image:ScenicPagePushed" />
+        <Property Name="DisabledImage" Value="set:MainControl3 image:ScenicPageDisable" />
+        <Property Name="UnifiedAreaRect" Value="{{0,53},{0,196},{0,133},{0,218}}" />
+        <Property Name="NormalTextColour" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFCF87F br:FFFCF87F" />
+        <Property Name="ButtonBorderColour" Value="FF5A5A59" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ScenicSpotCard/Back/Info">
+        <Property Name="TextColours" Value="tl:FF273543 tr:FF273543 bl:FF273543 br:FF273543" />
+        <Property Name="BorderColour" Value="FFFFFFFF" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0,72},{0,198},{0,201.006},{0,422}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="ScenicSpotDlg/Back/Cell1">
+      <Property Name="Image" Value="set:MainControl3 image:ScentSmall" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,116},{0,164}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,116},{0,164}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.297405,0},{0.104941,0},{0.1175,230.779},{0.0983333,167.185}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticImage" Name="ScenicSpotDlg/Back/Cell/Image1">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0647125,0},{0.0284032,0},{0.0560918,101},{0.0345007,124}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ScenicSpotDlg/Back/Cell/Name1">
+        <Property Name="Font" Value="msyh-16" />
+        <Property Name="TextColours" Value="tl:FF273543 tr:FF273543 bl:FF273543 br:FF273543" />
+        <Property Name="BorderColour" Value="FF5F4100" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.00226283,0},{0.82791,0},{0.786746,0},{0.82791,20}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="ScenicSpotDlg/Back/Cell2">
+      <Property Name="Image" Value="set:MainControl3 image:ScentSmall" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,116},{0,164}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,116},{0,164}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.1175,243},{0.104941,0},{0.0333579,412.683},{0.0983333,167.185}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticImage" Name="ScenicSpotDlg/Back/Cell/Image2">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,7},{0,6},{0,107},{0,131}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ScenicSpotDlg/Back/Cell/Name2">
+        <Property Name="Font" Value="msyh-16" />
+        <Property Name="TextColours" Value="tl:FF273543 tr:FF273543 bl:FF273543 br:FF273543" />
+        <Property Name="BorderColour" Value="FF5F4100" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,136},{0.783333,10.1354},{0,156}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="ScenicSpotDlg/Back/Cell3">
+      <Property Name="Image" Value="set:MainControl3 image:ScentSmall" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,116},{0,164}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,116},{0,164}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0333579,425},{0.104941,0},{-0.0507849,594.683},{0.0983333,167.185}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticImage" Name="ScenicSpotDlg/Back/Cell/Image3">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,7},{0,6},{0,107},{0,131}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ScenicSpotDlg/Back/Cell/Name3">
+        <Property Name="Font" Value="msyh-16" />
+        <Property Name="TextColours" Value="tl:FF273543 tr:FF273543 bl:FF273543 br:FF273543" />
+        <Property Name="BorderColour" Value="FF5F4100" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,3},{0,136},{0.783333,7.13536},{0,156}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="ScenicSpotDlg/Back/Cell6">
+      <Property Name="Image" Value="set:MainControl3 image:ScentSmall" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,116},{0,164}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,116},{0,164}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.00467674,443},{0.504504,0},{-0.161992,665.335},{0.257809,282.907}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticImage" Name="ScenicSpotDlg/Back/Cell/Image6">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,7},{0,6},{0,107},{0,131}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ScenicSpotDlg/Back/Cell/Name6">
+        <Property Name="Font" Value="msyh-16" />
+        <Property Name="TextColours" Value="tl:FF273543 tr:FF273543 bl:FF273543 br:FF273543" />
+        <Property Name="BorderColour" Value="FF5F4100" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,3},{0,136},{0.783333,7.13536},{0,156}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="ScenicSpotDlg/Back/Cell5">
+      <Property Name="Image" Value="set:MainControl3 image:ScentSmall" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,116},{0,164}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,116},{0,164}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.105,251},{0.504504,0},{0.00467674,431.006},{0.376752,225.576}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticImage" Name="ScenicSpotDlg/Back/Cell/Image5">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,7},{0,6},{0,107},{0,131}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ScenicSpotDlg/Back/Cell/Name5">
+        <Property Name="Font" Value="msyh-16" />
+        <Property Name="TextColours" Value="tl:FF273543 tr:FF273543 bl:FF273543 br:FF273543" />
+        <Property Name="BorderColour" Value="FF5F4100" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,3},{0,136},{0.783333,7.13536},{0,156}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="ScenicSpotDlg/Back/Cell4">
+      <Property Name="Image" Value="set:MainControl3 image:ScentSmall" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,116},{0,164}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,116},{0,164}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.296232,0},{0.504504,0},{0.105,238.006},{0.376752,225.576}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticImage" Name="ScenicSpotDlg/Back/Cell/Image4">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,7},{0,6},{0,107},{0,131}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ScenicSpotDlg/Back/Cell/Name4">
+        <Property Name="Font" Value="msyh-16" />
+        <Property Name="TextColours" Value="tl:FF273543 tr:FF273543 bl:FF273543 br:FF273543" />
+        <Property Name="BorderColour" Value="FF5F4100" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,3},{0,136},{0.783333,7.13536},{0,156}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="ScenicSpotDlg/Name">
+      <Property Name="Image" Value="set:MainControl3 image:ScenicName" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,106},{0,105}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,106},{0,105}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.103243,0},{0.120179,0},{0.269387,0},{0.338021,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="ScenicSpotDlg/Close">
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:component image:CloseButtonHover" />
+      <Property Name="NormalImage" Value="set:component image:CloseButtonNormal" />
+      <Property Name="PushedImage" Value="set:component image:CloseButtonPressed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,21},{0,19}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,21},{0,19}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0.916415,0},{0.0571407,0},{0.94933,0},{0.0965598,0}}" />
+    </Window>
+    <Window Type="TaharezLook/MingshengGroupButton" Name="ScenicSpotDlg/Back/Cell/GroupButton1">
+      <Property Name="Visible" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.295712,0},{0.0947852,0},{0.284741,123.991},{0.101009,171}}" />
+    </Window>
+    <Window Type="TaharezLook/MingshengGroupButton" Name="ScenicSpotDlg/Back/Cell/GroupButton2">
+      <Property Name="Visible" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.499687,0},{0.0947852,0},{0.482446,127.991},{0.0968599,173}}" />
+    </Window>
+    <Window Type="TaharezLook/MingshengGroupButton" Name="ScenicSpotDlg/Back/Cell/GroupButton3">
+      <Property Name="Visible" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.698911,0},{0.0947852,0},{0.882297,0},{0.455781,0}}" />
+    </Window>
+    <Window Type="TaharezLook/MingshengGroupButton" Name="ScenicSpotDlg/Back/Cell/GroupButton4">
+      <Property Name="Visible" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.295227,0},{0.495759,0},{0.202751,175.991},{0.501983,171}}" />
+    </Window>
+    <Window Type="TaharezLook/MingshengGroupButton" Name="ScenicSpotDlg/Back/Cell/GroupButton5">
+      <Property Name="Visible" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.49812,0},{0.495759,0},{0.415048,170},{0.501983,171}}" />
+    </Window>
+    <Window Type="TaharezLook/MingshengGroupButton" Name="ScenicSpotDlg/Back/Cell/GroupButton6">
+      <Property Name="Visible" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.697344,0},{0.495759,0},{0.625243,163.009},{0.501983,171}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ScenicSpotDlg/Mage">
+      <Property Name="Text" Value="收藏积分" />
+      <Property Name="HorzExtent" Value="53" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+      <Property Name="BorderColour" Value="FF1B1B1C" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.242017,0},{0.850588,0},{0.126029,132.605},{0.892082,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ScenicSpotDlg/PageNum">
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003679" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.327115,0},{0.850588,0},{0.148432,175.617},{0.846438,22.0018}}" />
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/StaticText" Name="ReadTimeProgressDlg">
+    <Property Name="TextColours" Value="tl:FFDCF6CE tr:FFDCF6CE bl:FF10BBD3 br:FF10BBD3" />
+    <Property Name="BorderColour" Value="FF003454" />
+    <Property Name="FrameEnabled" Value="False" />
+    <Property Name="UnifiedAreaRect" Value="{{0.5,-110},{0.5,-10},{0.5,80},{0.5,10}}" />
+    <Property Name="BackgroundEnabled" Value="False" />
+    <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    <Window Type="TaharezLook/StaticImage" Name="ReadTimeProgressDlg/Back">
+      <Property Name="Image" Value="set:component1 image:ProgressBarBack" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,200},{0,30}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,200},{0,30}}" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,200},{0,30}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/HeadProgressBar" Name="ReadTimeProgressDlg/ReadTimeBar">
+        <Property Name="StepSize" Value="0.01" />
+        <Property Name="CurrentProgress" Value="1" />
+        <Property Name="UnifiedAreaRect" Value="{{0,13},{0.166667,0},{0,187},{0,25}}" />
+        <Window Type="TaharezLook/StaticText" Name="ReadTimeProgressDlg/ReadTimeBar/Text">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFC9FF95 tr:FFC9FF95 bl:FFC9FF95 br:FFC9FF95" />
+          <Property Name="BorderColour" Value="FF001407" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.194717,0},{0,0},{1.05104,0},{0,20}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="ReadTimeProgressDlg/Back/Head">
+        <Property Name="Visible" Value="False" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,34},{0,0},{0,34},{0,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

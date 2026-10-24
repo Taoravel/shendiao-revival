@@ -1,0 +1,40 @@
+{
+  "revision": "2026-10-23.attributes.1",
+  "provenance": "designed_composition_using_client_coefficients",
+  "growth_policy": "2026-10-23.role.1",
+  "scope": "explicit_ordinary_growth_baseline_only",
+  "source": "evidence/ROLE_PROGRESSION_RESEARCH.md",
+  "activation": "role-owner integration required; no implicit migration of live characters",
+  "stat_order": ["vitality", "inner_power", "strength", "endurance", "agility"],
+  "coefficient_denominator": 10,
+  "increment_coefficients": {
+    "hp_max": [100,0,0,0,0],
+    "mp_max": [0,60,0,0,0],
+    "physical_attack": [0,0,20,0,0],
+    "physical_defense": [0,0,0,30,0],
+    "hit": [0,0,40,0,0],
+    "dodge": [0,0,0,0,20],
+    "speed": [1,0,1,1,7],
+    "magic_attack": [6,14,8,4,0],
+    "magic_defense": [6,14,8,4,0]
+  },
+  "extra_per_level": {"physical_attack": 2},
+  "coefficient_provenance": "Except physical_attack, vectors retain client cattrmoddata numbers, but applying them as growth deltas is designed. Client id80 zero is not a complete attack formula; physical_attack +2 per strength and +2 per level are designed.",
+  "new_role_designed_baseline": {
+    "level": 1,
+    "free_points": 0,
+    "five_stats": [10,10,10,10,10],
+    "hp_max": 100, "mp_max": 100,
+    "physical_attack": 20, "physical_defense": 5,
+    "hit": 40, "dodge": 20, "speed": 10,
+    "magic_attack": 20, "magic_defense": 5
+  },
+  "existing_role": "requires supplied, versioned baseline stats and derived values; never silently use new-role baseline",
+  "arithmetic": "baseline + floor(dot(growth automatic+allocated point deltas, vector)/denominator) + extra_per_level * level_delta; floor once per attribute; integer arithmetic only",
+  "limits": "reject invalid or >2147483647 values; no wraparound or silent saturation; explicit ordinary five stats must also fit native entry signed16 0..32767 before committing growth/point actions",
+  "vitals_after_growth": "preserve missing HP/MP; living HP remains at least1, dead HP stays0; publish only through caller's versioned transaction",
+  "ordinary_display": "role_attribute_protocol uses original ordinary map 0xc32c8: level490, potential500, known five stats/derived/current/max values; validate exact float32 representation before committing assets",
+  "unimplemented_injury_cap": "designed explicit ordinary restoration profile only: wound limit640 equals current maxHP; this does not heal missing HP and is not a recovered original injury algorithm; injury-enabled profiles require a separate authoritative cap before integration",
+  "modifiers": "equipment, skills, meridians, buffs and special stages are separate verified/versioned modifiers, not included here",
+  "balance": "restoration baseline, not recovered original combat balance; verify role/pet scale before deployment"
+}

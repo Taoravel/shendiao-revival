@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="GroupSettingManager">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.3,0},{0.311667,0},{0.3,326},{0.311667,231}}" />
+    <Window Type="TaharezLook/TabControl" Name="GroupSettingManager/Tab">
+      <Property Name="TabHeight" Value="{0,18}" />
+      <Property Name="TabPanePosition" Value="Top" />
+      <Property Name="UnifiedAreaRect" Value="{{0,17},{0,41},{0,307},{0,190}}" />
+      <Window Type="DefaultWindow" Name="GroupSettingManager/Tab/Tab 1">
+        <Property Name="Text" Value="群设置" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,295},{0,130}}" />
+        <Window Type="TaharezLook/CommonCase" Name="GroupSettingManager/Tab/Tab 1/back">
+          <Property Name="UnifiedAreaRect" Value="{{-0.00620753,0},{0,-2},{-0.00620753,295},{0,133}}" />
+          <Window Type="TaharezLook/Checkbox" Name="GroupSettingManager/Tab/Tab 1/MsgTips">
+            <Property Name="Text" Value="开启群消息提示" />
+            <Property Name="Selected" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,23},{0,25},{0,151},{0,45}}" />
+          </Window>
+          <Window Type="TaharezLook/Checkbox" Name="GroupSettingManager/Tab/Tab 1/AllowAddMember">
+            <Property Name="Text" Value="允许他人加入群" />
+            <Property Name="Selected" Value="True" />
+            <Property Name="UnifiedAreaRect" Value="{{0,22.2739},{0,55},{0,150.274},{0,75}}" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="GroupSettingManager/Tab/Tab 1/ExitGroup">
+            <Property Name="Text" Value="退出群" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,194},{0,85},{0,264},{0,107}}" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="GroupSettingManager/Tab/Tab 2">
+        <Property Name="Text" Value="群公告" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,295},{0,130}}" />
+        <Window Type="TaharezLook/CommonCase" Name="GroupSettingManager/Tab/Tab 2/bak">
+          <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,-2},{0,293},{0,133}}" />
+          <Window Type="TaharezLook/StaticText" Name="GroupSettingManager/Tab/Tab 2/Text1">
+            <Property Name="Text" Value="修改群公告:" />
+            <Property Name="HorzExtent" Value="69" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+            <Property Name="BorderColour" Value="FF5F4100" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,12.94},{0,12.2344},{0,88.94},{0,33.2344}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/CommonCaseFigure" Name="GroupSettingManager/Tab/Tab 2/bak/back">
+            <Property Name="UnifiedAreaRect" Value="{{0.0287501,0},{0.199111,0},{0.974513,0},{0.91763,0}}" />
+            <Window Type="TaharezLook/RichEditbox" Name="GroupSettingManager/Tab/Tab 2/GroupBoardEdit">
+              <Property Name="LineSpace" Value="1" />
+              <Property Name="BlinkCaret" Value="True" />
+              <Property Name="MaxTextLength" Value="2147483647" />
+              <Property Name="UnifiedAreaRect" Value="{{0,9.8133},{0,12.2394},{0,268.813},{0,84.239}}" />
+              <Property Name="BackGroundEnable" Value="False" />
+              <Property Name="BlinkCaretTimeout" Value="0.5" />
+              <Property Name="TextParsingEnabled" Value="False" />
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="GroupSettingManager/Tab/Tab 3">
+        <Property Name="Text" Value="成员管理" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,295},{0,130}}" />
+        <Window Type="TaharezLook/CommonCase" Name="GroupSettingManager/Tab/Tab 3/back">
+          <Property Name="UnifiedAreaRect" Value="{{0,-2},{0,-2},{0,293},{0,133}}" />
+          <Window Type="TaharezLook/RadioButton" Name="GroupSettingManager/Tab/Tab 3/InviteRole">
+            <Property Name="Text" Value="邀请加入的玩家ID" />
+            <Property Name="UnifiedAreaRect" Value="{{0,14},{0,12},{0,154},{0,32}}" />
+          </Window>
+          <Window Type="TaharezLook/Editbox" Name="GroupSettingManager/Tab/Tab 3/InviteRoleIDEdit">
+            <Property Name="BlinkCaret" Value="True" />
+            <Property Name="MaxTextLength" Value="2147483647" />
+            <Property Name="UnifiedAreaRect" Value="{{0,156},{0,12},{0,280},{0,32}}" />
+            <Property Name="TextParsingEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/RadioButton" Name="GroupSettingManager/Tab/Tab 3/DelRole">
+            <Property Name="Text" Value="驱逐出群的玩家ID" />
+            <Property Name="UnifiedAreaRect" Value="{{0,14.0617},{0,39},{0,154.062},{0,59}}" />
+          </Window>
+          <Window Type="TaharezLook/Editbox" Name="GroupSettingManager/Tab/Tab 3/DelRoleIDEdit">
+            <Property Name="BlinkCaret" Value="True" />
+            <Property Name="MaxTextLength" Value="2147483647" />
+            <Property Name="UnifiedAreaRect" Value="{{0,156},{0,39},{0,280},{0,59}}" />
+            <Property Name="TextParsingEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/RadioButton" Name="GroupSettingManager/Tab/Tab 3/NewManagerRole">
+            <Property Name="Text" Value="定为管理员的玩家ID" />
+            <Property Name="UnifiedAreaRect" Value="{{0,14.0617},{0,66},{0,154.062},{0,86}}" />
+          </Window>
+          <Window Type="TaharezLook/Editbox" Name="GroupSettingManager/Tab/Tab 3/NewManagerIDEdit">
+            <Property Name="BlinkCaret" Value="True" />
+            <Property Name="MaxTextLength" Value="2147483647" />
+            <Property Name="UnifiedAreaRect" Value="{{0,156},{0,66},{0,280},{0,86}}" />
+            <Property Name="TextParsingEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/RadioButton" Name="GroupSettingManager/Tab/Tab 3/CancelManager">
+            <Property Name="Text" Value="取消管理员的玩家ID" />
+            <Property Name="UnifiedAreaRect" Value="{{0,14.0617},{0,93},{0,154.062},{0,113}}" />
+          </Window>
+          <Window Type="TaharezLook/Editbox" Name="GroupSettingManager/Tab/Tab 3/CancelManagerEdit">
+            <Property Name="BlinkCaret" Value="True" />
+            <Property Name="MaxTextLength" Value="2147483647" />
+            <Property Name="UnifiedAreaRect" Value="{{0,156},{0,93},{0,280},{0,113}}" />
+            <Property Name="TextParsingEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GroupSettingManager/OkBtn">
+      <Property Name="Text" Value="确   定" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,46.5001},{0,192.335},{0,116.5},{0,216.335}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GroupSettingManager/Cancel">
+      <Property Name="Text" Value="取   消" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,126.5},{0,192.335},{0,196.5},{0,216.335}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GroupSettingManager/Apply">
+      <Property Name="Text" Value="应   用" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,206.5},{0,192.335},{0,276.5},{0,216.335}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="GroupSettingManager/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,214},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,214},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,128},{0,12},{0,342},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="GroupSettingManager/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="群设置" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="51" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,1},{0,133},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

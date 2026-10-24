@@ -1,0 +1,33 @@
+# 原摆放对应的NPC交互距离
+
+本文是v1局部32/48规则的历史交单，已由[NPC_INTERACTION_CELL_INTEGRATION.md](NPC_INTERACTION_CELL_INTEGRATION.md)及主策划v2离散格政策取代。下文Interface和自然链结果仅对应旧冻结输入；当前默认prepare选v2，radius_for不再适用于新候选。36632尚未加载这两版距离增量。
+
+接入局部半径或生成血手印接近见证时，读NPC_INTERACTION_DISTANCE_DECISION.md及唯一政策design/npc-interaction-v1.json。原半径未知；32/48为designed。原placement、导航坐标、碰撞数据分别保留。
+
+## 领域Interface
+
+npc_interaction.prepare(accounts)只在启动、原NPC资源加载后调用，返回并挂accounts.npc_interaction_rules；accounts.npc_resources原二元tuple保持。load_npc_interaction_rules(placements,definitions,path=None)可直接用于离线见证启动。规则为冻结NpcInteractionRules，overrides由冻结行tuple持有；radius_for(map_id,placement_id,npc_id)按三重身份返回整数半径。
+
+启动严格接受当前revision/default32/唯一原1006/placement13/NPC10498/radius48/1668,970配方；拒绝未知/重复、bool/非整数、缺字段、原摆放缺失/重复/换坐标、定义缺失/ID不一致。更改配方需显式实现审查。加载后，地图交互不读取政策文件。
+
+NpcScene和NpcLifecycle的构造均新增可选interaction_rules关键字。现有显式interaction_radius调用保持兼容；传rules时必须等于冻结default32。两者交互按当前实体placement三重身份调用同一radius_for，包含边界的平方距离判断；地址/角色租约/位置版本/current/active/现存绑定等围栏保留。Lifecycle新spawn获得新placement，不能继承原13的例外。
+
+## 共享接线（main唯一写者）
+
+runtime_storage启动准备在accounts.npc_resources可用后调用npc_interaction.prepare(accounts)，处于现有启动I/O阶段、地图创建之前。无需改npc_gameplay和资源tuple。MapOwner创建NpcScene时注入interaction_rules=accounts.npc_interaction_rules，interaction_radius读取同rules.default_radius；未来替换NpcLifecycle时使用同一冻结对象。地图catalog继续按template读取，实际访问权限继续完整MapAddress。
+
+main已在工作区runtime_storage启动准备及MapOwner构造注入同一规则。血手印见证生成器读取已启动规则radius_for(1006,13,10498)，实际interact消费同一对象。main、root及NPC窗口分别完成无接近夹具的实际Peer自然流程：intro→首师父→选武器→装备→车夫→嘉兴说书人→血手印，提前提交拒绝，设计3000ms后原提交进入私有1501，原type40后继保持active且无战斗，重新认证仍同私有地址。
+
+294治疗六输入及固定候选125539Z均未改变。main应在独立实例/局部距离候选接本规则，不能把这些工作区文件自动混入治疗最小发布。运行服与GUI分别验收。
+
+## 领域验证及范围
+
+verify_npc_interaction_rules.py首先真实NpcScene在原10498边界48红，再接冻结规则转绿；接着同原实体NpcLifecycle边界48红，再消费同规则转绿；追加错误definition.id真实红后补精确ID guard转绿。两个最初baseline保留。
+
+当前8组通过：边界48/实际clear点距离38；49和超48对角拒绝、位置改变重验；其它地图/placement/NPC保持含边界32；实例/分区/租约/版本/loading围栏；旧generation控制拒绝、删后不可访问、新spawn不继承例外；严格政策/原资料拒绝；冻结和构造default一致；启动资源tuple对象不变。替代身份为明确受控fixture，不冒原摆放授权。
+
+必要既有verify_world_npcs、verify_npc_lifecycle(11组)、verify_npc_motion(11组)均通过。冻结四文件与实际39796比较，reviews/npc-interaction-20261023/REVIEW.md两轴分别0项，两个独立审查者均核八哈希并优先导入冻结current执行八组及Scene/Lifecycle回归绿。root另独立原样八组及五文件前后哈希稳定，见npc-interaction-root-verification.json。NPC自然流程独立check(approach_fixture=False)四项绿、七输入前后SHA稳定，证据npc-bloodmark-natural-runtime.json；原移动报告为碰撞可走见证，不是原客户端自动寻路/GUI执行。完整pool/hooks、动态生命周期、发布及GUI仍继续验收。
+
+后续primary研究research_npc_approach.py已独立复跑48例，见NPC_APPROACH_NATIVE_RESEARCH.md：原目标访问将模型坐标转格点后按截断欧氏距离<13判断，10498跳过部分目标点/场景分区查询，1501说书人10908不获得该特例。它仍未证明原自动行走停点或服务器允许距离，不能将13格/模型比例直接改成全服半径；当前32/48继续明确designed。
+
+方法：tdd沿Scene/Lifecycle公开Interface逐个真实红→绿，补充guard不冒充所有项都曾先红；codebase-design将唯一半径选择集中为小Interface，由两个地图Module共同消费；code-review固定原字节两轴；writing-for-agents集中启动顺序、兼容条件和完成标准。未操作真人库、客户端或服务进程。

@@ -1,0 +1,341 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="PetSoulskill">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.155625,0},{0.115833,0},{0.155625,520},{0.115833,442}}" />
+    <Window Type="TaharezLook/StaticText" Name="PetSoulskill/Title">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="元魂珠魂技提升" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="119" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.244231,0},{0.0294118,0},{0.628846,0},{0.081448,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="PetSoulskill/left">
+      <Property Name="UnifiedAreaRect" Value="{{0.0365385,0},{0.10181,0},{0.419231,0},{0.121053,367}}" />
+      <Window Type="TaharezLook/StaticImage" Name="PetSoulskill/left/PetBack">
+        <Property Name="Image" Value="set:MainControl6 image:PetPropertyBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,126},{0,125}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,126},{0,125}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.211055,0},{0.0398936,0},{0.844221,0},{0.37234,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="PetSoulskill/left/PetBack/name">
+          <Property Name="Text" Value="宝宝绑定" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="31.2378" />
+          <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+          <Property Name="BorderColour" Value="FF5F4100" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+          <Property Name="VertFormatting" Value="TopAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0.65873,0},{0.04,0},{0.952381,0},{0.304,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetSoulskill/left/PetBack/lock">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0555556,0},{0.048,0},{0.0396825,14},{0.04,20}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSoulskill/left/PetBack/level">
+          <Property Name="Text" Value="155级" />
+          <Property Name="HorzExtent" Value="38" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+          <Property Name="BorderColour" Value="FF5F4100" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0.595238,0},{0.824,0},{0.952381,0},{0.968,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Combobox" Name="PetSoulskill/left/recent">
+        <Property Name="ReadOnly" Value="True" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.316583,0},{0.406915,0},{0.974874,0},{0.803191,0}}" />
+        <Property Name="MaxEditTextLength" Value="2147483647" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetSoulskill/left/re">
+        <Property Name="Text" Value="当前宠物" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+        <Property Name="BorderColour" Value="FF5F4100" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0351759,0},{0.406915,0},{0.356784,0},{0.468085,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="PetSoulskill/Upgrade/back/drop1">
+        <Property Name="UnifiedAreaRect" Value="{{0.0351759,0},{0.05,159},{0.05,183},{0.05,352}}" />
+        <Window Type="TaharezLook/StaticText" Name="PetSoulskill/Upgrade/back/drop/Need1">
+          <Property Name="Text">1.包裹内或宠物身上的元魂珠都可以作为主元魂珠。
+2.辅元魂珠需要与主元魂珠的类型、魂技相同。
+3.提升成功后，辅元魂珠的所有魂技等级和80%的经验会增加到主元魂珠上。</Property>
+          <Property Name="HorzExtent" Value="169" />
+          <Property Name="VertExtent" Value="109.332" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="VertFormatting" Value="TopAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0430108,0},{0.0207254,0},{0,179},{0,184}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="PetSoulskill/Upgrade/back">
+      <Property Name="UnifiedAreaRect" Value="{{0.421154,0},{0.10181,0},{0.397459,292},{0.118912,368}}" />
+      <Window Type="TaharezLook/Figure" Name="PetSoulskill/Upgrade/back/title">
+        <Property Name="UnifiedAreaRect" Value="{{0.285714,0},{0,7},{0.273464,189},{0,22}}" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Window Type="TaharezLook/StaticText" Name="PetSoulskill/Upgrade/back/title/name">
+          <Property Name="Text" Value="请选择宠物身上元魂珠" />
+          <Property Name="HorzExtent" Value="131" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003679" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.311828,0},{-0.133333,0},{1.05376,0},{0,18}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="PetSoulskill/Upgrade/back/pagback">
+        <Property Name="UnifiedAreaRect" Value="{{0.0285714,0},{0,114},{0.0258065,266},{0,216}}" />
+        <Window Type="TaharezLook/ScrollablePane" Name="PetSoulskill/Upgrade/back/pagback/List">
+          <Property Name="ContentArea" Value="l:-1 t:0 r:235 b:189" />
+          <Property Name="HorzStepSize" Value="0.1" />
+          <Property Name="VertStepSize" Value="0.1" />
+          <Property Name="HorzOverlapSize" Value="0.01" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0188679,0},{0.0294118,0},{0.0170068,275},{0.0144231,97}}" />
+          <Property Name="VertOverlapSize" Value="0.01" />
+          <Property Name="HorzScrollPosition" Value="0" />
+          <Property Name="VertScrollPosition" Value="0" />
+          <AutoWindow NameSuffix="__auto_container__">
+            <Property Name="ContentArea" Value="l:-1 t:0 r:235 b:189" />
+            <Property Name="ChildExtentsArea" Value="l:-1 t:0 r:235 b:189" />
+            <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/pagback/List/Item0">
+              <Property Name="UnifiedAreaRect" Value="{{-0.00390625,0},{0,0},{0.0104167,44},{0.033708,45}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/pagback/List/Item1">
+              <Property Name="UnifiedAreaRect" Value="{{0.0104167,43},{0,0},{0.0104167,91},{0,48}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/pagback/List/Item2">
+              <Property Name="UnifiedAreaRect" Value="{{0.0104167,90},{0,0},{0.0104167,138},{0,48}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/pagback/List/Item3">
+              <Property Name="UnifiedAreaRect" Value="{{0.0104167,137},{0,0},{0.0104167,185},{0,48}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/pagback/List/Item4">
+              <Property Name="UnifiedAreaRect" Value="{{0.0104167,184},{0,0},{0.0104167,232},{0,48}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/pagback/List/Item5">
+              <Property Name="UnifiedAreaRect" Value="{{-0.00390625,0},{0.033708,44},{0.263622,-20},{0.033708,92}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/pagback/List/Item6">
+              <Property Name="UnifiedAreaRect" Value="{{0.0104167,43},{0.033708,44},{0.0104167,91},{0.033708,92}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/pagback/List/Item7">
+              <Property Name="UnifiedAreaRect" Value="{{0.0104167,90},{0.033708,44},{0.0104167,138},{0.033708,92}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/pagback/List/Item8">
+              <Property Name="UnifiedAreaRect" Value="{{0.0104167,137},{0.033708,44},{0.0104167,185},{0.033708,92}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/pagback/List/Item9">
+              <Property Name="UnifiedAreaRect" Value="{{0.0104167,184},{0.033708,44},{0.0104167,232},{0.033708,92}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/pagback/List/Item10">
+              <Property Name="UnifiedAreaRect" Value="{{-0.00390625,0},{0.033708,91},{0.516827,-85},{0.033708,139}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/pagback/List/Item11">
+              <Property Name="UnifiedAreaRect" Value="{{0.0104167,43},{0.033708,91},{0.397757,-8},{0.033708,139}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/pagback/List/Item13">
+              <Property Name="UnifiedAreaRect" Value="{{0.0104167,137},{0.033708,91},{0.0104167,185},{0.033708,139}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/pagback/List/Item14">
+              <Property Name="UnifiedAreaRect" Value="{{0.0104167,184},{0.033708,91},{0.0104167,232},{0.033708,139}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/pagback/List/Item15">
+              <Property Name="UnifiedAreaRect" Value="{{-0.00390625,0},{0.033708,138},{0.770032,-150},{0.033708,186}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/pagback/List/Item16">
+              <Property Name="UnifiedAreaRect" Value="{{0.0104167,43},{0.033708,138},{0.0104167,91},{0.033708,186}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/pagback/List/Item17">
+              <Property Name="UnifiedAreaRect" Value="{{0.0104167,90},{0.033708,138},{0.0104167,138},{0.033708,186}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/pagback/List/Item18">
+              <Property Name="UnifiedAreaRect" Value="{{0.0104167,137},{0.033708,138},{0.408921,83},{0.033708,186}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/pagback/List/Item19">
+              <Property Name="UnifiedAreaRect" Value="{{0.0104167,184},{0.033708,138},{0.0104167,232},{0.033708,186}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/pagback/List/Item12">
+              <Property Name="UnifiedAreaRect" Value="{{0.0104167,90},{0.033708,91},{0.0104167,138},{0.033708,139}}" />
+            </Window>
+          </AutoWindow>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="PetSoulskill/Upgrade/back/Current/back">
+        <Property Name="Image" Value="set:MainControl3 image:LuckyWheelMiddleBox" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,66},{0,68}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,66},{0,68}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,17},{0,232},{0,83},{0,300}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/Current/back/item">
+          <Property Name="UnifiedAreaRect" Value="{{0.227273,0},{0.161765,0},{0.21875,47},{0.16661,46}}" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="PetSoulskill/Upgrade/back/pagback1">
+        <Property Name="UnifiedAreaRect" Value="{{0.025,0},{0,27},{0.0225806,266},{0,85}}" />
+        <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/pagback1/List/Item0">
+          <Property Name="UnifiedAreaRect" Value="{{0.05,-9},{0.05,1},{0.05,39},{0.05,49}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/pagback1/List/Item1">
+          <Property Name="UnifiedAreaRect" Value="{{0.05,39},{0.05,1},{0.05,87},{0.05,49}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/pagback1/List/Item2">
+          <Property Name="UnifiedAreaRect" Value="{{0.05,87},{0.05,1},{0.05,135},{0.05,49}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/pagback1/List/Item3">
+          <Property Name="UnifiedAreaRect" Value="{{0.05,135},{0.05,1},{0.05,183},{0.05,49}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/pagback1/List/Item4">
+          <Property Name="UnifiedAreaRect" Value="{{0.05,183},{0.05,1},{0.05,231},{0.05,49}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetSoulskill/Upgrade/back/pagback1/13">
+          <Property Name="Image" Value="set:MainControl13 image:01" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,21},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,21},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.916981,0},{0.0517241,0},{0.996226,0},{0.87931,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetSoulskill/Upgrade/back/Current/Name">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.00714286,0},{0,303},{0,98},{0,321}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="PetSoulskill/Upgrade/back/Materialback/button">
+        <Property Name="Text" Value="提     升" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,193},{0.05,320},{0.05,261},{0.05,344}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetSoulskill/Upgrade/back/NeedMoney">
+        <Property Name="Text" Value="需要银两" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.196429,0},{0,341},{0.392857,0},{0,362}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetSoulskill/Upgrade/back/MoneyBack">
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0.4,0},{0,342},{0.721429,0},{0,360}}" />
+        <Window Type="TaharezLook/StaticImage" Name="PetSoulskill/Upgrade/back/MoneyBack/Xianjin">
+          <Property Name="Image" Value="set:MainControl image:Xianjin" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.744444,0},{-0.0555556,0},{0.955556,0},{1,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="PetSoulskill/Upgrade/back/Current/back1">
+        <Property Name="Image" Value="set:MainControl3 image:LuckyWheelMiddleBox" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,66},{0,68}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,66},{0,68}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,184},{0,230},{0.05,250},{0,298}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="PetSoulskill/Upgrade/back/Current/back/item1">
+          <Property Name="UnifiedAreaRect" Value="{{0.227273,0},{0.161765,0},{0.21875,47},{0.16661,46}}" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetSoulskill/Upgrade/back/Current/Name1">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,173},{0,303},{0.0241936,276},{0,321}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="PetSoulskill/Upgrade/back/showpic">
+        <Property Name="Image" Value="set:MainControl2 image:Preview" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,115},{0,38}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,115},{0,38}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.296429,0},{0,246},{0.707143,0},{0,284}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Figure" Name="PetSoulskill/Upgrade/back/title1">
+        <Property Name="UnifiedAreaRect" Value="{{0.135714,0},{0.05,76},{0.323464,133},{0.05,91}}" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Window Type="TaharezLook/StaticText" Name="PetSoulskill/Upgrade/back/title/name1">
+          <Property Name="Text" Value="请选择包裹内的元魂珠" />
+          <Property Name="HorzExtent" Value="131" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003679" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,92},{-0.2,0},{0,230},{0,17}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetSoulskill/Upgrade/back/Current/Name2">
+        <Property Name="Font" Value="fzy4k-9" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,74},{0.05,259},{0.05,181},{0.05,287}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetSoulskill/Upgrade/back/Current/Name3">
+        <Property Name="Font" Value="fzy4k-9" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,74},{0.05,203},{0.05,181},{0.05,231}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

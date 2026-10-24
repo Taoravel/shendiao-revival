@@ -1,0 +1,82 @@
+{
+  "created_utc": "2026-10-23T12:28:54.817869+00:00",
+  "verified_existing_contracts": [
+    "guild_scope validates lease and returns guild/family token/member token",
+    "snapshot returns a fresh organization dict and member tuple; it is not a frozen admission grant",
+    "family-only member approval changes guild membership without changing guild organization revision",
+    "legacy seven-argument callers retain public template route; explicit full scopes emit distinct instance keys"
+  ],
+  "organization_revision_before": 3,
+  "organization_revision_after": 3,
+  "member_counts": [
+    18,
+    19
+  ],
+  "role_snapshot_fields": [
+    "role_id",
+    "login_epoch",
+    "name",
+    "level",
+    "school",
+    "shape",
+    "scene_id",
+    "scene_scope"
+  ],
+  "npc_service_command_fields": [
+    "request_id",
+    "deadline_ms",
+    "role_id",
+    "login_epoch",
+    "address",
+    "position_version",
+    "entity_key",
+    "npc_id",
+    "placement_id",
+    "service_id",
+    "handler",
+    "source_status",
+    "evidence"
+  ],
+  "current_channel_keys": [
+    [
+      "scene",
+      1394
+    ],
+    [
+      "scene",
+      1394
+    ]
+  ],
+  "explicit_scene_scope_keys": [
+    [
+      1394,
+      70001,
+      0
+    ],
+    [
+      1394,
+      70002,
+      0
+    ]
+  ],
+  "scene_scope_planner_verified": true,
+  "full_organization_scene_authorization_verified": false,
+  "private_channel_instance_isolation_verified": false,
+  "scope": "public storage and social-planner audit in disposable fixtures; no live private-instance admission/chat, no new policy/backend",
+  "source_sha256": {
+    "faction_domain.py": "08c015b0522564950de9e7ad362a70f8d6b67b57b780f8271e463dd4b34b6681",
+    "guild_projection.py": "8e183f9e399ef813617f1cfe56cbafafce9aef297dff01b51e5e48687eb2a527",
+    "guild_offices.py": "df59e4eca04bb86fc66eb4ceba4bcb6f319da1a6fe4dc4c2b679dde7600eeed3",
+    "practice_npc.py": "6d46baa8a2556d4e55ac16d28e37376b3988e9ef270b169c77d87ff710189428",
+    "role_practice.py": "c6bff759fdd62f6c813b1a871f0652bad19328c29daa3acb57c22799c6429710",
+    "guild_practice.py": "ffb9163f0904cd0631e3cc85cacdf0bc66ee95ca45bce97e54c9d53828a7345b",
+    "social_owner.py": "2fa52148624f11b79e82818c59d8afe814bdc504a795e10848e6620cb394b075",
+    "social_runtime.py": "9ddd31df5be84308b2116bd58f8aca927e074de26ef10959d32bac0d6fbdf865",
+    "game_runtime.py": "3abc9743e9023b8d1406e3318ee18bb8450c24ce4ca3ba071f29a4ce4a8a22a8",
+    "world_owner.py": "3a893ec87feab966adf4f07f1917779296669f143177cb78da580758c3ef4d5b",
+    "world_npcs.py": "ca46d6960e3fc98d4adbb74d0d5f0421a1660c37c0c1459f64ba4d643a560d78",
+    "npc_services.py": "e1e21f6cfea2af0bf66452b7d173fce4f3deb3aaab879166f80add745b768087"
+  },
+  "live_server_changed": false,
+  "native_gui_verified": false
+}

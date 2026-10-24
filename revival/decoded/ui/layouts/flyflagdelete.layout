@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="FlyFlagDelete">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.0925,0},{0.0716667,0},{0.941251,0},{0.874999,0}}" />
+    <Window Type="TaharezLook/StaticText" Name="FlyFlagDelete/text">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="多余坐标" />
+      <Property Name="HorzExtent" Value="53" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,20},{1,-41},{0,78},{1,-19}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="DefaultBorderEnable" Value="True" />
+      <Property Name="DefaultColourEnable" Value="True" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="FlyFlagDelete/Leftcount">
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0,75},{1,-41},{0,115},{1,-19}}" />
+      <Property Name="DefaultBorderEnable" Value="True" />
+      <Property Name="DefaultColourEnable" Value="True" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="FlyFlagDelete/Confirm">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="确定合成" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{1,-256},{1,-43},{1,-181},{1,-19}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="FlyFlagDelete/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.250368,0},{0,10},{0.703976,0},{0.0767635,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="FlyFlagDelete/Title/Name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="飞行旗" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="51" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.298701,0},{0,1},{1.30519,0},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="FlyFlagDelete/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0,17},{0,44},{1,-18},{1,-43}}" />
+      <Window Type="TaharezLook/StaticImage" Name="FlyFlagDelete/MiniMap">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,7},{0,4},{1,-1},{0.98481,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ImageButton" Name="FlyFlagDelete/MiniMap/Point1">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:FlagHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:FlagNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:FlagPushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.273585,0},{0.272727,0},{0.300314,0},{0.324675,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="FlyFlagDelete/MiniMap/Point2">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:FlagHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:FlagNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:FlagPushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.319182,0},{0.316883,0},{0.345912,0},{0.368831,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="FlyFlagDelete/MiniMap/Point3">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:FlagHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:FlagNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:FlagPushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.363208,0},{0.363636,0},{0.389937,0},{0.415584,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="FlyFlagDelete/MiniMap/Point4">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:FlagHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:FlagNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:FlagPushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.408805,0},{0.407792,0},{0.435535,0},{0.45974,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="FlyFlagDelete/MiniMap/Point5">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:FlagHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:FlagNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:FlagPushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,17},{0,20}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,17},{0,20}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.454403,0},{0.454545,0},{0.481132,0},{0.506494,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="FlyFlagDelete/MiniMap/Point6">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:FlagHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:FlagNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:FlagPushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.454403,0},{0.454545,0},{0.481132,0},{0.506494,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="FlyFlagDelete/MiniMap/Point7">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:FlageHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:FlagNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:FlagPushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.454403,0},{0.454545,0},{0.481132,0},{0.506494,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="FlyFlagDelete/MiniMap/Point8">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:FlagHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:FlagNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:FlagPushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.454403,0},{0.454545,0},{0.481132,0},{0.506494,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="FlyFlagDelete/MiniMap/Point9">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:FlagHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:FlagNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:FlagPushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.454403,0},{0.454545,0},{0.481132,0},{0.506494,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="FlyFlagDelete/MiniMap/Point10">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:FlagHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:FlagNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:FlagPushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.454403,0},{0.454545,0},{0.481132,0},{0.506494,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="FlyFlagDelete/MiniMap/Point11">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:FlagHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:FlagNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:FlagPushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.454403,0},{0.454545,0},{0.481132,0},{0.506494,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="FlyFlagDelete/MiniMap/Point12">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:FlagHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:FlagNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:FlagPushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.454403,0},{0.454545,0},{0.481132,0},{0.506494,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="FlyFlagDelete/MiniMap/Point13">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:FlagHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:FlagNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:FlagPushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.454403,0},{0.454545,0},{0.481132,0},{0.506494,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="FlyFlagDelete/MiniMap/Point14">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:FlagHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:FlagNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:FlagPushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.454403,0},{0.454545,0},{0.481132,0},{0.506494,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="FlyFlagDelete/MiniMap/Point15">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:FlagHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:FlagNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:FlagPushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.454403,0},{0.454545,0},{0.481132,0},{0.506494,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="FlyFlagDelete/MiniMap/Point16">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:FlagHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:FlagNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:FlagPushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.454403,0},{0.454545,0},{0.481132,0},{0.506494,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="FlyFlagDelete/MiniMap/Point17">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:FlagHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:FlagNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:FlagPushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.454403,0},{0.454545,0},{0.481132,0},{0.506494,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="FlyFlagDelete/MiniMap/Point18">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:FlagHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:FlagNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:FlagPushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.454403,0},{0.454545,0},{0.481132,0},{0.506494,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="FlyFlagDelete/MiniMap/Point19">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:FlagHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:FlagNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:FlagPushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.454403,0},{0.454545,0},{0.481132,0},{0.506494,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="FlyFlagDelete/MiniMap/Point20">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:FlagHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:FlagNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:FlagPushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.454403,0},{0.454545,0},{0.481132,0},{0.506494,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="FlyFlagDelete/MiniMap/Point21">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:FlagHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:FlagNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:FlagPushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,22},{0,26}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.454403,0},{0.454545,0},{0.481132,0},{0.506494,0}}" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="FlyFlagDelete/Delete">
+      <Property Name="Text" Value="删除" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{1,-332},{1.05,-67},{1,-257},{1.05,-43}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="FlyFlagDelete/text1">
+      <Property Name="Text" Value="选中要删除的坐标，再点击删除操作。" />
+      <Property Name="HorzExtent" Value="221" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,83},{1,-41},{0.05,303},{1,-19}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="DefaultBorderEnable" Value="True" />
+      <Property Name="DefaultColourEnable" Value="True" />
+    </Window>
+  </Window>
+</GUILayout>

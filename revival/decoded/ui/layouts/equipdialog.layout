@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="EquipDialog">
+    <Property Name="Font" Value="simhei-12" />
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="blank.ogg" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,126},{0,110},{0,434},{0,510}}" />
+    <Property Name="CloseSoundResource" Value="close.ogg" />
+    <Window Type="TaharezLook/StaticImage" Name="EquipDialog/Name">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="CentreAligned" />
+      <Property Name="UnifiedMaxSize" Value="{{0,162},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,162},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,61},{0,12},{0,223},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/Name/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="装备栏" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="51" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,59},{0,1},{0,126},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="EquipDialog/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,41},{0,288},{0,278}}" />
+      <Window Type="TaharezLook/StaticImage" Name="EquipDialog/Back/Pattern">
+        <Property Name="Image" Value="set:MainControl19 image:EquipBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,190},{0,192}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,190},{0,192}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,34},{0.0364559,0},{0,224},{0.846582,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Window Type="TaharezLook/StaticText" Name="EquipDialog/point">
+          <Property Name="Text">装备总评分
+ 500</Property>
+          <Property Name="HorzExtent" Value="66" />
+          <Property Name="VertExtent" Value="31.2378" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FFFCDC6E tr:FFFCDC6E bl:FFFFB500 br:FFFFB500" />
+          <Property Name="BorderColour" Value="FF220B01" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,62},{0,168},{0,133},{0,212}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="EquipDialog/point1">
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FFFCDC6E tr:FFFCDC6E bl:FFFFB500 br:FFFFB500" />
+          <Property Name="BorderColour" Value="FF220B01" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,72},{0.1,116.25},{0,121},{0.1,137.25}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="EquipDialog/Back/Pattern/Left">
+          <Property Name="Visible" Value="False" />
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl20 image:LeftHover" />
+          <Property Name="NormalImage" Value="set:MainControl20 image:LeftNormal" />
+          <Property Name="PushedImage" Value="set:MainControl20 image:LeftPushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,34},{0,55}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,34},{0,55}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.11579,0},{0.665625,0},{0.294737,0},{0.952083,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="EquipDialog/Back/Pattern/Left1">
+          <Property Name="Visible" Value="False" />
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl20 image:RightHover" />
+          <Property Name="NormalImage" Value="set:MainControl20 image:RightNormal" />
+          <Property Name="PushedImage" Value="set:MainControl20 image:RightPushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,34},{0,55}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,34},{0,55}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.702632,0},{0.665625,0},{0.881579,0},{0.952083,0}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="EquipDialog/fashion">
+          <Property Name="UnifiedMaxSize" Value="{{0,46},{0,46}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,46},{0,46}}" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,122},{-0.0229167,0},{0.05,168},{0.05,32}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="EquipDialog/adorn">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedMaxSize" Value="{{0,46},{0,46}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,46},{0,46}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5.254},{0,95},{0,51.254},{0,141}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="EquipDialog/arms">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedMaxSize" Value="{{0,46},{0,46}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,46},{0,46}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5.254},{0,140},{0,51.254},{0,186}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="EquipDialog/cuff">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedMaxSize" Value="{{0,46},{0,46}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,46},{0,46}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,219},{0,95},{0,265},{0,141}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="EquipDialog/waistband">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedMaxSize" Value="{{0,46},{0,46}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,46},{0,46}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5.254},{0,185},{0,51.254},{0,231}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="EquipDialog/tire">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedMaxSize" Value="{{0,46},{0,46}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,46},{0,46}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5.254},{0,5},{0,51.254},{0,51}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="EquipDialog/kitbag">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedMaxSize" Value="{{0,46},{0,46}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,46},{0,46}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5.254},{0,50},{0,51.254},{0,96}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="EquipDialog/loricae">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedMaxSize" Value="{{0,46},{0,46}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,46},{0,46}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,219},{0,140},{0,265},{0,186}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="EquipDialog/boot">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedMaxSize" Value="{{0,46},{0,46}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,46},{0,46}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,219},{0,185},{0,265},{0,231}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="EquipDialog/mask">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedMaxSize" Value="{{0,46},{0,46}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,46},{0,46}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,219},{0,5},{0,265},{0,51}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCell" Name="EquipDialog/mask1">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedMaxSize" Value="{{0,46},{0,46}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,46},{0,46}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,219},{0,50},{0,265},{0.00176392,95.5819}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="EquipDialog/spriteBack">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,84},{0,68},{0,184},{0,173}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Window Type="DefaultWindow" Name="EquipDialog/Back/SpriteEffectTop">
+          <Property Name="UnifiedAreaRect" Value="{{0,1},{0,-1},{0,101},{0,104}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/RichEditbox" Name="EquipDialog/Back/Sar">
+        <Property Name="ReadOnly" Value="True" />
+        <Property Name="LineSpace" Value="1" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0.196296,0},{0.0341772,0},{0.196296,24},{0.0341772,24}}" />
+        <Property Name="BackGroundEnable" Value="False" />
+        <Property Name="BlinkCaretTimeout" Value="0.5" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="EquipDialog/Back/Soul">
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl25 image:SoulHover" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="NormalImage" Value="set:MainControl25 image:SoulNormal" />
+        <Property Name="PushedImage" Value="set:MainControl25 image:SoulPushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,20},{0,20}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,20},{0,20}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,105},{0,10},{0,125},{0,30}}" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="EquipDialog/Back/Decoration">
+        <Property Name="Tooltip" Value="配饰时装显示设置" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl5 image:hatHover" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="NormalImage" Value="set:MainControl5 image:hatNormal" />
+        <Property Name="PushedImage" Value="set:MainControl5 image:hatPushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,20},{0,20}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,20},{0,20}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.292592,0},{0,10},{0.366667,0},{0.0843882,10}}" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="EquipDialog/Back/Bao">
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl28 image:YuHover" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="NormalImage" Value="set:MainControl28 image:YuNormal" />
+        <Property Name="PushedImage" Value="set:MainControl28 image:YuPushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,20},{0,20}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,20},{0,20}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,117},{0.0415612,0},{0.05,137},{0.05,18}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCellClean" Name="EquipDialog/Back/junzijian">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedMaxSize" Value="{{0,46},{0,46}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,46},{0,46}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,55.254},{0,185},{0,101.254},{0,231}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemCellClean" Name="EquipDialog/Back/shunvjian">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedMaxSize" Value="{{0,46},{0,46}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,46},{0,46}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,175.254},{0,185},{0,221.254},{0,231}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="EquipDialog/Ability">
+      <Property Name="Text" Value="实战能力" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Biaoqian.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,25},{0,280},{0,148},{0,301}}" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="EquipDialog/Case/Advance">
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,301},{0,288},{0,385}}" />
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/hpText6">
+        <Property Name="Text" Value="加强封印" />
+        <Property Name="Tooltip" Value="影响封印命中率，加强封印值越大，封印命中率越高" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0221836,0},{0,4},{0.0221836,52},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/seal">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,4},{0,134},{0,22}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/hpText41">
+        <Property Name="Text" Value="封印抗性" />
+        <Property Name="Tooltip" Value="影响封印抵抗率，封印抗性值越大，封印抵抗率越高" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="SoundResource" Value="影响封印抗性，封印抗性值越大，封印抵抗率越高" />
+        <Property Name="UnifiedAreaRect" Value="{{0,138},{0,4},{0,190},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/resis">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,194},{0,4},{0,264},{0,22}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/hpText21">
+        <Property Name="Text" Value="外暴等级" />
+        <Property Name="Tooltip" Value="影响外功暴击率，外功暴击等级越大，外功暴击率越高" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0221836,0},{0,23},{0.0214913,51.5385},{0,43}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/hit1">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,23},{0,134},{0,41}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/agility1">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,194},{0,23},{0,264},{0,41}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/hpText31">
+        <Property Name="Text" Value="暴击抗性" />
+        <Property Name="Tooltip" Value="影响外功暴击和内功暴击抵抗率，暴击抗性越大，暴击抵抗率越高" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,138},{0,23},{0,191},{0,43}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/hpText51">
+        <Property Name="Text" Value="内暴等级" />
+        <Property Name="Tooltip" Value="影响内功暴击率，内功暴击等级越大，内功暴击率越高" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0221836,0},{0,42},{0.0240545,53.4847},{0,62}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/defence1">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,42},{0,134},{0,60}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/damage1">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,244},{0,114},{0,314},{0,132}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/hpText11">
+        <Property Name="Text" Value="外暴抗性" />
+        <Property Name="Tooltip" Value="影响外功暴击抵抗率，外功暴击抗性越大，外功暴击抵抗率越高" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,126},{0,106},{0,179},{0,126}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="EquipDialog/AddAbility">
+      <Property Name="Text" Value="进阶能力" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Biaoqian.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,149},{0,280},{0.414894,150},{0,301}}" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="EquipDialog/Case/back">
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,302},{0,288},{0,386}}" />
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/hpText">
+        <Property Name="Text" Value="生 命" />
+        <Property Name="Tooltip" Value="【如何提升生命上限？】\n1.增加体质属性点的分配\n2.镶嵌绿松石至衣服或腰带上\n3.找【临安-尹克西】学习“健身术”技能" />
+        <Property Name="HorzExtent" Value="29" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0221835,0},{0,4},{0.05,30.22},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/hp">
+        <Property Name="Text" Value="10000/10000" />
+        <Property Name="HorzExtent" Value="87" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,37},{0,4},{0,134},{0,22}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/hpText4">
+        <Property Name="Text" Value="真 气" />
+        <Property Name="Tooltip" Value="【如何提升真气上限？】\n1.增加内力属性点的分配\n2.找【临安-尹克西】学习“吐纳术”技能" />
+        <Property Name="HorzExtent" Value="30" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0221835,0},{0,23},{0.05,30.22},{0,43}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/mp">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,37},{0,23},{0,134},{0,41}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/hpText2">
+        <Property Name="Text" Value="命 中" />
+        <Property Name="Tooltip" Value="【如何提升命中？】\n1.增加力量属性点的分配\n2.镶嵌月光石至武器或护腕上" />
+        <Property Name="HorzExtent" Value="29" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0221835,0},{0,42},{0.05,30.22},{0,62}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/hit">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,37},{0,42},{0,134},{0,60}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/hpText61">
+        <Property Name="Text" Value="速 度" />
+        <Property Name="Tooltip" Value="【如何提升速度？】\n1.增加敏捷属性点的分配\n2.镶嵌玛瑙石至鞋子或腰带上" />
+        <Property Name="HorzExtent" Value="29" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0221835,0},{0,61},{0.05,30.22},{0,81}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/speed">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,37},{0,61},{0,134},{0,79}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/Neigongfangyu1">
+        <Property Name="Text" Value="内功防御" />
+        <Property Name="Tooltip" Value="【如何提升内功防御？】\n1.增加内力属性点的分配\n2.镶嵌蓝萤石至项链或衣服上" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,138},{0,61},{0,191},{0,81}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/Neigongfangyu">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,194},{0,61},{0,264},{0,79}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/agility">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,194},{0,42},{0,264},{0,60}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/hpText3">
+        <Property Name="Text" Value="内功伤害" />
+        <Property Name="Tooltip" Value="【如何提升内功伤害？】\n1.增加内力属性点的分配\n2.镶嵌龙血石至武器或项链上" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,138},{0,42},{0,191},{0,62}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/hpText5">
+        <Property Name="Text" Value="外功防御" />
+        <Property Name="Tooltip" Value="【如何提升外功防御？】\n1.增加耐力属性点的分配\n2.镶嵌金刚石至衣服或护腕上" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,138},{0,23},{0,191},{0,43}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/defence">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,194},{0,23},{0,264},{0,41}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/damage">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,194},{0,4},{0,264},{0,22}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="EquipDialog/hpText1">
+        <Property Name="Text" Value="外功伤害" />
+        <Property Name="Tooltip" Value="【如何提升外功伤害？】\n1.增加力量属性点的分配\n2.镶嵌猫眼石至武器或护腕上" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,138},{0,4},{0,191},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

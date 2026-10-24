@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="SceneMovieNpcSpeak">
+    <Property Name="UnifiedAreaRect" Value="{{0,0},{0.85,0},{1,1},{1,0}}" />
+    <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    <Window Type="TaharezLook/StaticText" Name="SceneMovieNpcSpeak/Name">
+      <Property Name="Font" Value="msyh-16" />
+      <Property Name="Text" Value="测试对话测试对话" />
+      <Property Name="HorzExtent" Value="128" />
+      <Property Name="VertExtent" Value="18.75" />
+      <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+      <Property Name="BorderColour" Value="FF5F4100" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,258},{0.0555556,0},{0,434},{0,25}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="SceneMovieNpcSpeak/Head">
+      <Property Name="Image" Value="set:RoleAndMonster0 image:9000" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,256},{0,256}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,256},{0,256}}" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,5},{1,-256},{0,261},{1,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/AnimateText" Name="SceneMovieNpcSpeak/Content">
+      <Property Name="Font" Value="msyh-16" />
+      <Property Name="UnifiedAreaRect" Value="{{0,258},{0,31},{0.99375,0},{0.988889,0}}" />
+      <Window Type="TaharezLook/AnimationButton" Name="SceneMovieNpcSpeak/Content/Ani">
+        <Property Name="ImageName" Value="MovieSpeakArrow" />
+        <Property Name="AnimationSpeed" Value="2" />
+        <Property Name="UnifiedAreaRect" Value="{{1,-50},{1,-44},{1,-8},{1,-4}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="SceneMovieNpcSpeak/textsss">
+      <Property Name="Text" Value="点击鼠标左键继续" />
+      <Property Name="HorzExtent" Value="104" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="TextColours" Value="tl:FFFFFF00 tr:FFFFFF00 bl:FFFFFF00 br:FFFFFF00" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{1,-162},{1,-29},{1,-49},{1,-9}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="WulinQuery">
+    <Property Name="Font" Value="msyh-16" />
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.0225,0},{0.185833,0},{0.0524998,740},{0.255833,350}}" />
+    <Window Type="TaharezLook/MultiColumnList" Name="WulinQuery/WulinQueryFrame/WulinQueryMember">
+      <Property Name="UnifiedAreaRect" Value="{{0,19},{0,45},{0,743},{0,330}}" />
+      <Property Name="ColumnHeader" Value="text:日期 width:{0.15,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:人阶状元 width:{0.17,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:黄阶状元 width:{0.17,0} id:2" />
+      <Property Name="ColumnHeader" Value="text:玄阶状元 width:{0.17,0} id:3" />
+      <Property Name="ColumnHeader" Value="text:地阶状元 width:{0.17,0} id:4" />
+      <Property Name="ColumnHeader" Value="text:天阶状元 width:{1,-628} id:5" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="WulinQuery/Name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="武林大会状元查询榜" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="153" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.386126,0},{0.0331633,0},{0.626963,0},{0.0892857,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="WulinQuery/Up">
+      <Property Name="Text" Value="上一页" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.384817,0},{0.887755,0},{0.497382,0},{0.2,294}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="WulinQuery/Up1">
+      <Property Name="Text" Value="下一页" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.517016,0},{0.887755,0},{0.629581,0},{0.248536,275}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="WulinQuery/Info">
+      <Property Name="Text" Value="数据互通后，会出现多个玩家并列为状元的情况，此情况属于正常现象。" />
+      <Property Name="HorzExtent" Value="416" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.026178,0},{0.841837,0},{0.569372,0},{0.846939,16}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+  </Window>
+</GUILayout>

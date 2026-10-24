@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-10-24T14:21:13.772370+08:00",
+  "copied_file_hashes_checked": 9508,
+  "copy_hash_errors": [],
+  "python_files_compiled_in_memory": 891,
+  "python_syntax_errors": [],
+  "json_files_parsed": 1722,
+  "json_parse_errors": [],
+  "forbidden_publication_files": [],
+  "credential_signature_matches_at_copy": [],
+  "checks": [
+    {
+      "command": "python revival/verify_role_growth.py",
+      "exit_code": 0,
+      "stdout": "{\"passed\": [\"original threshold examples 150->L2/61 and 270->L2/181\", \"automatic advancement stops at 10; original L10 cost 5781 consumed once manually\", \"automatic five-stat increments/free points and versioned allocation\", \"successful request replay after allocation does not replay upgrades\", \"potential request replay after later allocation returns current state; changed deltas reject without reallocation\", \"unknown mode/insufficient XP/baseline reset rejected; caller rollback preserves ledger\", \"uninitialized role preserves level and old experience-bank behavior\"], \"policy\": \"designed ordinary phase only\", \"live_client_tested\": false}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python revival/verify_world_pathfinding.py",
+      "exit_code": 0,
+      "stdout": "{'passed': ['original clear-grid path and target-before-pop behavior', 'original around-wall path and expansion count', 'original pixel compression keeps cell-center search target; direct shortcut keeps exact requested pixel', 'pixel same-point and original DDA corner shortcut are distinct from kernel behavior', 'conservative DDA work budget refuses both before search and during smoothing without a partial route', 'closed wall and kernel diagonal-corner refusal', 'native blocked-start behavior retained; blocked-goal and same-cell return no route', 'explicit mask changes actual maze flags', 'expansion and node caps return no partial route; fresh retry has no shared residue', 'invalid masks/budgets and incomplete/oversized grids refused', 'no search file I/O'], 'shared_runtime_integrated': False, 'gui_verified': False, 'live_server_changed': False}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python revival/verify_group_quotas.py",
+      "exit_code": 0,
+      "stdout": "{\"passed\": [\"concurrent approvals in different groups respect one shared derived role quota\", \"failed approval rolls back membership and preserves application\", \"level-20 create/join combined quota is two\", \"invalid name rolls back and leaves valid creation window usable\"], \"native_gui_verified\": false}\n",
+      "stderr": ""
+    },
+    {
+      "command": "python -m unittest discover -s revival -p verify_battle.py -v",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_dead_actor_cannot_attack_and_tie_uses_position (verify_battle.BattleChecks.test_dead_actor_cannot_attack_and_tie_uses_position) ... ok\ntest_escape_and_disconnect (verify_battle.BattleChecks.test_escape_and_disconnect) ... ok\ntest_gateway_dispatch_and_world_lock (verify_battle.BattleChecks.test_gateway_dispatch_and_world_lock) ... ok\ntest_guard_and_timeout (verify_battle.BattleChecks.test_guard_and_timeout) ... ok\ntest_invalid_target_and_unsupported_commands_leave_turn_open (verify_battle.BattleChecks.test_invalid_target_and_unsupported_commands_leave_turn_open) ... ok\ntest_round_cap_and_late_command (verify_battle.BattleChecks.test_round_cap_and_late_command) ... ok\ntest_skill_validation_self_heal_and_mp (verify_battle.BattleChecks.test_skill_validation_self_heal_and_mp) ... ok\ntest_training_victory_and_playback_barrier (verify_battle.BattleChecks.test_training_victory_and_playback_barrier) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.171s\n\nOK\n"
+    }
+  ],
+  "all_selected_checks_passed": true,
+  "live_server_started": false,
+  "live_accounts_modified": false,
+  "native_gui_verified": false,
+  "full_integration_verified": false,
+  "native_x86_differential_checks_run": false,
+  "credential_scan_limit": "Known token/private-key signatures and excluded private directories; not a proof of absence of every possible secret."
+}

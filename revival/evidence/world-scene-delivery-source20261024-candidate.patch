@@ -1,0 +1,55 @@
+--- a/revival/game_runtime.py
++++ b/revival/game_runtime.py
+@@ -1059,6 +1059,21 @@
+             await self.cleanup_delivery(message.delivery)
+         return accepted
+ 
++    async def _offer_batch(self,messages,*,advance_scene=False):
++        # Each consumed item is owned by its queue or offer_message cleanup.
++        # Only the unconsumed suffix remains the batch caller's responsibility.
++        remaining=iter(messages)
++        try:
++            for message in remaining:
++                if advance_scene and getattr(message,'barrier',None) is not None:
++                    self.scene_generation+=1
++                await self.offer_message(message,self.epoch)
++        finally:
++            cleanup=tuple(self.cleanup_delivery(getattr(message,'delivery',None))
++                for message in remaining)
++            if cleanup:
++                await asyncio.shield(asyncio.gather(*cleanup,return_exceptions=True))
++
+     async def cleanup_delivery(self,delivery):
+         if delivery is None:return
+         try:await self.rt.story_maps.finish_delivery(delivery)
+@@ -1086,8 +1101,7 @@
+                         if not owner or owner.epoch!=self.epoch: raise StaleEpoch('Scene owner expired')
+                         replies=await owner.mailbox.call('scene_sent',barrier)
+                         self.metrics['scene_send_barriers']+=1
+-                        for message in await self.rt.scene_messages(owner,replies):
+-                            await self.offer_message(message,self.epoch)
++                        await self._offer_batch(await self.rt.scene_messages(owner,replies))
+                 finally:
+                     try:
+                         await self.cleanup_delivery(delivery)
+@@ -1112,9 +1126,7 @@
+                 self.metrics['old_scene_batch_rejected']+=1
+                 continue
+             replies=await self.rt.dispatch(self,kind,body)
+-            for reply in replies:
+-                if getattr(reply,'barrier',None) is not None:self.scene_generation+=1
+-                await self.offer_message(reply,self.epoch)
++            await self._offer_batch(replies,advance_scene=True)
+ 
+     async def run(self, reader):
+         self.rt.log(event='connected',connection=self.id)
+@@ -1127,8 +1139,7 @@
+                         role=self.rt.roles.get(self.role_id)
+                         if role and role.epoch==self.epoch:
+                             replies=await role.mailbox.call('tick')
+-                            for message in await self.rt.scene_messages(role,replies):
+-                                await self.offer_message(message,self.epoch)
++                            await self._offer_batch(await self.rt.scene_messages(role,replies))
+                     continue
+                 if not data: break
+                 self.last_input=time.monotonic()

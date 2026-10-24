@@ -1,0 +1,387 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/YellowFrameWindow" Name="GrowUpFund">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="dlgopen.mp3" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.0587501,0},{0.088331,0},{0.24375,552},{0.093331,497}}" />
+    <Window Type="TaharezLook/StaticImage" Name="GrowUpFund/title">
+      <Property Name="Image" Value="set:MainControl30 image:TitleBack" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{-0.0214286,0},{0.004,0},{0.0361446,1},{-0.00973237,376}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticText" Name="GrowUpFund/title/txt">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="成 长 基 金" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="17" />
+        <Property Name="VertExtent" Value="121.297" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF90E8F2" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.268293,0},{0.0921409,0},{0.707317,0},{0.615176,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="GrowUpFund/chongzhi">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,0},{0.03,0},{0.95,0},{0.996,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/LittleButton" Name="GrowUpFund/chongzhi/up">
+        <Property Name="Text" Value="上一页" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.371429,0},{0.865424,0},{0.120852,220},{0.915114,0}}" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="GrowUpFund/chongzhi/down">
+        <Property Name="Text" Value="下一页" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.530159,0},{0.867495,0},{-0.115656,468},{0.917184,0}}" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/CommonCaseBlue" Name="GrowUpFund/chongzhi/right0">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0047619,0},{0,130},{0.0730515,267},{0,220}}" />
+        <Window Type="TaharezLook/StaticText" Name="GrowUpFund/chongzhi/right0/txt">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="Text" Value="购买奖励成长基金" />
+          <Property Name="HorzExtent" Value="128" />
+          <Property Name="VertExtent" Value="18.75" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.274194,0},{0.255556,0},{0.703226,0},{0.744444,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GrowUpFund/chongzhi/right0/itemkuang">
+          <Property Name="Image" Value="set:MainControl3 image:LuckyWheelNormalBox" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,64},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,64},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0387097,0},{0.05,7},{0.05,60},{0.05,71}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="GrowUpFund/chongzhi/right0/itemkuang/cell">
+            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,10},{0,57},{0,58}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="GrowUpFund/chongzhi/right0/buy">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl37 image:redlqhover" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="NormalImage" Value="set:MainControl37 image:redlqnormal" />
+          <Property Name="PushedImage" Value="set:MainControl37 image:redlqpushed" />
+          <Property Name="DisabledImage" Value="set:MainControl38 image:redlqdisabled" />
+          <Property Name="UnifiedMaxSize" Value="{{0,79},{0,29}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,79},{0,29}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.706452,0},{0.773835,-22},{0.706452,79},{0.855556,0}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GrowUpFund/chongzhi/right0/ylq">
+          <Property Name="Image" Value="set:MainControl37 image:renylq" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.709677,0},{0.333333,0},{0.5,148},{0.5,32}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseBlue" Name="GrowUpFund/chongzhi/right1">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0047619,0},{0.0301508,209},{0.00481541,310},{0.0301508,299}}" />
+        <Window Type="TaharezLook/StaticText" Name="GrowUpFund/chongzhi/right1/txt">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="Text" Value="购买10" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="18.75" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.274194,0},{-0.373119,57},{0.265625,136},{-0.373119,101}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GrowUpFund/chongzhi/right1/itemkuang">
+          <Property Name="Image" Value="set:MainControl3 image:LuckyWheelNormalBox" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,64},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,64},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0387097,0},{0.1,3},{0.0375,64},{0.1,67}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="GrowUpFund/chongzhi/right1/itemkuang/cell">
+            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,10},{0,57},{0,58}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="GrowUpFund/chongzhi/right1/buy">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl37 image:redlqhover" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="NormalImage" Value="set:MainControl37 image:redlqnormal" />
+          <Property Name="PushedImage" Value="set:MainControl37 image:redlqpushed" />
+          <Property Name="DisabledImage" Value="set:MainControl38 image:redlqdisabled" />
+          <Property Name="UnifiedMaxSize" Value="{{0,79},{0,29}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,79},{0,29}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.706452,0},{-0.393728,84},{0.715625,76},{-0.393728,113}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GrowUpFund/chongzhi/right1/ylq">
+          <Property Name="Image" Value="set:MainControl37 image:renylq" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.709677,0},{-0.393728,64},{0.709677,83},{-0.393728,111}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseBlue" Name="GrowUpFund/chongzhi/right2">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0047619,0},{-0.123116,374},{0.00481541,310},{-0.123116,464}}" />
+        <Window Type="TaharezLook/StaticText" Name="GrowUpFund/chongzhi/right2/txt">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="Text" Value="购买10" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="18.75" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.274194,0},{0.872938,-54},{0.265625,136},{0.766667,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GrowUpFund/chongzhi/right2/itemkuang">
+          <Property Name="Image" Value="set:MainControl3 image:LuckyWheelNormalBox" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,64},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,64},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0387097,0},{0.166667,0},{0.0375,64},{0.127778,67}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="GrowUpFund/chongzhi/right2/itemkuang/cell">
+            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,10},{0,57},{0,58}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="GrowUpFund/chongzhi/right2/buy">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl37 image:redlqhover" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="NormalImage" Value="set:MainControl37 image:redlqnormal" />
+          <Property Name="PushedImage" Value="set:MainControl37 image:redlqpushed" />
+          <Property Name="DisabledImage" Value="set:MainControl38 image:redlqdisabled" />
+          <Property Name="UnifiedMaxSize" Value="{{0,79},{0,29}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,79},{0,29}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.706452,0},{0.568996,-2},{0.7125,77},{0.866667,0}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GrowUpFund/chongzhi/right2/ylq">
+          <Property Name="Image" Value="set:MainControl37 image:renylq" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.709677,0},{0.568996,-22},{0.709677,83},{0.568996,25}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseBlue" Name="GrowUpFund/chongzhi/right3">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0.00321027,313},{0,130},{-0.463884,917},{0,220}}" />
+        <Window Type="TaharezLook/StaticText" Name="GrowUpFund/chongzhi/right3/txt">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="Text" Value="购买奖励成长基金" />
+          <Property Name="HorzExtent" Value="128" />
+          <Property Name="VertExtent" Value="18.75" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.274194,0},{0.255556,0},{0.703226,0},{0.744444,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GrowUpFund/chongzhi/right3/itemkuang">
+          <Property Name="Image" Value="set:MainControl3 image:LuckyWheelNormalBox" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,64},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,64},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0387097,0},{0.05,7},{0.05,60},{0.05,71}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="GrowUpFund/chongzhi/right3/itemkuang/cell">
+            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,10},{0,57},{0,58}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="GrowUpFund/chongzhi/right3/buy">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl37 image:redlqhover" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="NormalImage" Value="set:MainControl37 image:redlqnormal" />
+          <Property Name="PushedImage" Value="set:MainControl37 image:redlqpushed" />
+          <Property Name="DisabledImage" Value="set:MainControl38 image:redlqdisabled" />
+          <Property Name="UnifiedMaxSize" Value="{{0,79},{0,29}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,79},{0,29}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.706452,0},{0.773835,-22},{0.730973,71},{0.855556,0}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GrowUpFund/chongzhi/right3/ylq">
+          <Property Name="Image" Value="set:MainControl37 image:renylq" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.706452,0},{0.333333,0},{0.706452,83},{0.333333,47}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseBlue" Name="GrowUpFund/chongzhi/right4">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0.00321027,313},{0.0301508,209},{-0.536419,963},{0.0301508,299}}" />
+        <Window Type="TaharezLook/StaticText" Name="GrowUpFund/chongzhi/right4/txt">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="Text" Value="购买10" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="18.75" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.274194,0},{-0.373119,57},{0.265625,136},{-0.373119,101}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GrowUpFund/chongzhi/right4/itemkuang">
+          <Property Name="Image" Value="set:MainControl3 image:LuckyWheelNormalBox" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,64},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,64},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0387097,0},{0.1,3},{0.0375,64},{0.1,67}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="GrowUpFund/chongzhi/right4/itemkuang/cell">
+            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,10},{0,57},{0,58}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="GrowUpFund/chongzhi/right4/buy">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl37 image:redlqhover" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="NormalImage" Value="set:MainControl37 image:redlqnormal" />
+          <Property Name="PushedImage" Value="set:MainControl37 image:redlqpushed" />
+          <Property Name="DisabledImage" Value="set:MainControl38 image:redlqdisabled" />
+          <Property Name="UnifiedMaxSize" Value="{{0,79},{0,29}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,79},{0,29}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.706452,0},{-0.393728,80},{0.715625,76},{-0.393728,109}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GrowUpFund/chongzhi/right4/ylq">
+          <Property Name="Image" Value="set:MainControl37 image:renylq" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.706452,0},{-0.393728,64},{0.706452,83},{-0.393728,111}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseBlue" Name="GrowUpFund/chongzhi/right5">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0.00321027,313},{-0.123116,374},{-0.568165,983},{-0.123116,464}}" />
+        <Window Type="TaharezLook/StaticText" Name="GrowUpFund/chongzhi/right5/txt">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="Text" Value="购买10" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="18.75" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.274194,0},{0.872938,-54},{0.265625,136},{0.766667,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GrowUpFund/chongzhi/right5/itemkuang">
+          <Property Name="Image" Value="set:MainControl3 image:LuckyWheelNormalBox" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,64},{0,64}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,64},{0,64}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0387097,0},{0.166667,0},{0.0375,64},{0.15,65}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="GrowUpFund/chongzhi/right5/itemkuang/cell">
+            <Property Name="UnifiedAreaRect" Value="{{0,9},{0,10},{0,57},{0,58}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="GrowUpFund/chongzhi/right5/buy">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl37 image:redlqhover" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="NormalImage" Value="set:MainControl37 image:redlqnormal" />
+          <Property Name="PushedImage" Value="set:MainControl37 image:redlqpushed" />
+          <Property Name="DisabledImage" Value="set:MainControl38 image:redlqdisabled" />
+          <Property Name="UnifiedMaxSize" Value="{{0,79},{0,29}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,79},{0,29}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.706452,0},{0.568996,-2},{0.7125,77},{0.866667,0}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GrowUpFund/chongzhi/right5/ylq">
+          <Property Name="Image" Value="set:MainControl37 image:renylq" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.706452,0},{0.568996,-22},{0.706452,83},{0.568996,25}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseBlue" Name="GrowUpFund/chongzhi/right">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0532103,293},{0.0455487,0},{-0.413884,753},{0.0801511,88}}" />
+        <Window Type="TaharezLook/ImageButton" Name="GrowUpFund/chongzhi/right0/buy31">
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl37 image:redbuyhover" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="NormalImage" Value="set:MainControl37 image:redbuynormal" />
+          <Property Name="PushedImage" Value="set:MainControl37 image:redbuypushed" />
+          <Property Name="DisabledImage" Value="set:MainControl38 image:redbuydisabled" />
+          <Property Name="UnifiedMaxSize" Value="{{0,79},{0,29}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,79},{0,29}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.337349,0},{0.773835,-17},{0.813253,0},{0.885714,0}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GrowUpFund/xiangou/item0/itemkuang">
+          <Property Name="Image" Value="set:MainControl30 image:ItemInCell" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,50},{0,50}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,50},{0,50}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,5},{0.05,6},{0.05,55},{0.05,56}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="GrowUpFund/xiangou/item0/itemkuang/cell">
+            <Property Name="UnifiedAreaRect" Value="{{0.02,0},{0,0},{0.186667,40},{0.1875,39}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GrowUpFund/xiangou/money">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,60},{0.05,23},{0.05,137},{0.05,40}}" />
+          <Window Type="TaharezLook/StaticImage" Name="GrowUpFund/xiangou/money/yuanbao">
+            <Property Name="Image" Value="set:MainControl image:bangdingyuanbao" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,16},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,16},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0649351,0},{0,-1},{0.05,17},{0,15}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GrowUpFund/xiangou/num">
+            <Property Name="Text" Value="10000" />
+            <Property Name="HorzExtent" Value="40" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.311688,0},{0,0},{0,98},{0,17}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="GrowUpFund/chongzhi/czimage1">
+        <Property Name="Image" Value="set:MainControl37 image:czjjrw" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.8,0},{0.0351967,0},{0.730159,168},{0.0310558,117}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="GrowUpFund/chongzhi/czimage2">
+        <Property Name="Image" Value="set:MainControl37 image:czjjsm" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.00634921,0},{0.047619,0},{0.0380953,299},{0.0434782,104}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,28 @@
+{
+  "revision": "2026-10-23.currency.1",
+  "provenance": "designed_business_mapping",
+  "scope": "explicit_restoration_wallet_profile",
+  "activation": "owner initialization and startup migration required; four UI display slots verified separately from designed task mapping",
+  "research": "evidence/CURRENCY_RESEARCH.md",
+  "currencies": ["cash", "bound_silver", "yuanbao", "bound_yuanbao"],
+  "task_fields": {"MoneyReward": "cash", "SMoney": "bound_silver"},
+  "mapping_status": "designed, not client_verified; preserve original field, amount and policy in receipts",
+  "initial_balances": "explicit baseline only; no startup grant, no implicit reset of existing wallet",
+  "spend_purposes": {
+    "cash": ["npc_shop", "npc_depot_transfer", "skill_training", "equipment_repair", "player_trade", "family_create", "family_aim_update", "guild_create", "npc_role_heal", "npc_equipment_identify"],
+    "bound_silver": ["npc_shop_bound"],
+    "yuanbao": [],
+    "bound_yuanbao": []
+  },
+  "bound_silver_spending": "npc_shop_bound only, under design/npc-shop-payments-v1.json; this additive purpose does not activate a shared NPC route or change existing balances/receipts",
+  "transfers": "cash only, via cross-role transaction owner; this local module does not implement cross-role transfer",
+  "npc_depot_transfer": "designed additive cash expense purpose: same-role cash wallet to explicit NPC depot cash, or reverse; no fee, no conversion, no cross-role operation; both balances and journal/common receipts must share one role lease transaction",
+  "npc_equipment_identify": "designed additive cash-only purpose for design/npc-equipment-identification-v1.json fixed clean result; NPC exact original level quote, public Inventory CAS, fee/source/dedicated receipt and current reply encoding share one current-lease transaction. No other currency, legacy reset, default unidentified generation or shared route activation. Existing currency revision/fingerprints/receipts remain unchanged.",
+  "conversion": "no automatic exchange or substitution between currencies",
+  "balance_limit": 9223372036854775807,
+  "overflow_or_insufficient": "reject whole caller transaction without partial spending",
+  "idempotency": "role_id + settlement_id, fingerprint includes policy/purpose/source/deltas; conflicting reuse rejected",
+  "unknown_channels": "PetExpReward and ShengWang remain separate; do not convert them into money",
+  "wire_bridge": "currency_protocol: cash -> SRefreshMoney.kind1; bound_silver -> SRefSmoney; encode_yuanbao_balances requires both current yuanbao then bound_yuanbao in one response, each 0..2147483647; never zero-fill an unknown sibling; always current absolute balances",
+  "later_mapping_change": "explicit ledger migration with original receipts preserved; never replay already settled rewards into a second currency"
+}

@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/StaticImage" Name="TianqiMember">
+    <Property Name="Image" Value="set:MainControl3 image:ScenicBack" />
+    <Property Name="FrameEnabled" Value="False" />
+    <Property Name="UnifiedAreaRect" Value="{{0.5,-279},{0.5,-147},{0.5,281},{0.5,143}}" />
+    <Property Name="BackgroundEnabled" Value="False" />
+    <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    <Window Type="TaharezLook/StaticImage" Name="TianqiMember/title">
+      <Property Name="Image" Value="set:MainControl2 image:continuetitle" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,230},{0,55}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,230},{0,55}}" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.296429,0},{-0.037931,0},{0.707143,0},{0.151724,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/CommonCaseBlue" Name="TianqiMember/TianqiMemberFrame">
+      <Property Name="UnifiedAreaRect" Value="{{0.0625,0},{0.248276,0},{0.551785,0},{0.872415,0}}" />
+    </Window>
+    <Window Type="TaharezLook/MultiColumnList1" Name="TianqiMember/TianqiMemberFrame/TianqiMemberMember">
+      <Property Name="UnifiedAreaRect" Value="{{0,41},{0.265517,0},{0.542857,0},{0.837931,0}}" />
+      <Property Name="ColumnHeader" Value="text:角色名 width:{0.5,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:等级 width:{0.2,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:门派 width:{1,-184} id:2" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="TianqiMember/Check1">
+      <Property Name="Text" Value="确认创建" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.685714,0},{0.810345,0},{0.825,0},{0.896552,0}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TianqiMember/S">
+      <Property Name="Font" Value="fzy4k-11" />
+      <Property Name="Text" Value="队名：" />
+      <Property Name="HorzExtent" Value="45" />
+      <Property Name="VertExtent" Value="17.1936" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0803571,0},{0.158621,0},{0.158929,0},{0.251724,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/CommonCaseBlue" Name="TianqiMember/Info">
+      <Property Name="UnifiedAreaRect" Value="{{0.557143,0},{0.148276,0},{0.944643,0},{0.810345,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="TianqiMember/Info/Text">
+        <Property Name="Text">1.每队需最少5名，最多8名成员，
+    排第1位者为队长。
+2.若队长退队，则由战队声望最高
+    者担任队长。
+3.每人仅限参加一个战队。
+4.等级超过本战队等级段上限的队
+    员，无法参加任何战队相关比赛。
+5.创建战队需花费10万银两。
+6.创建战队需所有成员等级符合对
+    应等级段。</Property>
+        <Property Name="HorzExtent" Value="207" />
+        <Property Name="VertExtent" Value="156.189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.046083,0},{0.140625,0},{0.967742,0},{0.96875,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Figure" Name="TianqiMember/Info/Title">
+        <Property Name="UnifiedAreaRect" Value="{{0.239631,0},{0.046875,0},{0.764977,0},{0.130208,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="TianqiMember/Info/Title/Name">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="Text" Value="创建规则" />
+          <Property Name="HorzExtent" Value="60" />
+          <Property Name="VertExtent" Value="17.1936" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.219298,0},{-0.125,0},{0.221278,63},{0.05,16}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TianqiMember/Name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="创建日常战队" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="102" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,177},{0.05,-14},{0.05,297},{0.05,8}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/Editbox" Name="TianqiMember/TeamName">
+      <Property Name="BlinkCaret" Value="True" />
+      <Property Name="MaxTextLength" Value="2147483647" />
+      <Property Name="UnifiedAreaRect" Value="{{0.151786,0},{0.175862,0},{0.364286,0},{0.175258,20}}" />
+      <Property Name="TextParsingEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/LittleButton" Name="TianqiMember/Check">
+      <Property Name="Text" Value="确    定" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.385714,0},{0.158621,0},{0.514286,0},{0.248276,0}}" />
+    </Window>
+  </Window>
+</GUILayout>

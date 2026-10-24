@@ -1,0 +1,83 @@
+{
+  "created_utc": "2026-10-23T20:23:55.073305+00:00",
+  "status": "reviewed_domain_pending_shared",
+  "scope": "NPC fixed clean identification only; no random generation or default/old-profile migration",
+  "npc_production_sha256": {
+    "npc_equipment_identification.py": "07d0729d81489ae4eab7bef324357515b9b873617d03f67cf2c75e152bd747a6"
+  },
+  "npc_verification_sha256": {
+    "verify_npc_identification_dialogue.py": "6e9e4b231c8bcaede89d203cdbebf5dd0e814b504da49df97afb302fa8e668f5",
+    "verify_npc_equipment_identification.py": "26a64f50d8602b16094bef25f5e85ecb8021b6749fc8a8977c54b78186cd1898",
+    "verify_npc_identification_startup.py": "a593f18dbea1be8b251365511b020de438bcabd8a2016a289bbf1bbccc75b1db"
+  },
+  "policy_sha256": {
+    "design/npc-equipment-identification-v1.json": "2a486c524ff3e043359cc57a5fce6305d16f680f555e3072aab14374bcf7f138",
+    "design/npc-identification-query-v1.json": "67a06fea785edd54e76a3490ee49f9ff5d1297cb1809be1313f6081ab5dae94e"
+  },
+  "existing_npc_dependencies_sha256": {
+    "npc_identification_query.py": "a981a3136a6d061b806bc8a8242fb89573c59faf38a905d5c86690aefb37ed45",
+    "npc_identification_protocol.py": "ac7eecf02f9ef564d0961c5702a8e54a38c9dea1d846b609a536066264654fdb"
+  },
+  "provider_production_sha256": {
+    "inventory.py": "d66329dbb8976e6ed3642e7fcc5f26f6a6f5ad2d4ced56f9af4689c5081764d4",
+    "equipment_detail.py": "05f974a8d201da47b11c332e00bc4c9eaa402366b3f6c14596929541e941118a",
+    "design/currency-v1.json": "ed93b3f9a9d6902e4a3120dd52b3467f9347fe2598a2ebf326141aa46626f994"
+  },
+  "provider_ready_sha256": "b3629b76c5faf54b8dce52c088722e54b68281970926a707789089acb827c36f",
+  "provider_review": "D:\\神雕侠侣\\revival\\evidence\\reviews\\equipment-identification-assets-20261024-r2",
+  "fixed_review": {
+    "directory": "D:\\神雕侠侣\\revival\\evidence\\reviews\\npc-equipment-identification-20261024-r1",
+    "sha256": {
+      "manifest.json": "1acba99c7d835a08a1d133653e7a5a36dc69c5726aa6dd2533545135e2fef8b2",
+      "changes.diff": "760b77dffdd25b1ee29b4a2043c462916ddc0f2341964ac76e15c17ee683a340",
+      "verify_frozen.py": "5b1c35761a5632ce7c931d9fcd16af0ebce5d2bbdb9ca8bc57b169b7fdb93e08",
+      "standards.md": "7921d71df11621f658e6b8407978a59d66df7c0207c2a88b6f614f1b0ccc9db5",
+      "spec.md": "a60db97dad8ed9e673788ed745c7d34db9c3654942af13ba2e5e61e57d608a99",
+      "REVIEW.md": "9aa5187eee43de92733e424eb88ac7eaa2748a1ee4b651cb2a949f1e1d327390"
+    },
+    "inputs": 1284,
+    "standards_hard": 0,
+    "standards_fowler": 0,
+    "spec_missing_partial": 0,
+    "spec_scope": 0,
+    "spec_wrong": 0
+  },
+  "independently_passed_results_sha256": {
+    "parent": {
+      "verify_npc_identification_dialogue.py": "8b8629e5281889ba8dde7d12e498cd5f9146467cdb5dd44e34f478de647effc1",
+      "verify_npc_equipment_identification.py": "8aa605af1ff5d07ce28a75a114488d6d6422356288dc13951af60d3d02b8b7e4",
+      "verify_npc_identification_startup.py": "99704ffeee54a5e7e6137e062b7fbedfbeae6653432cd87e518f5eb2847ca677"
+    },
+    "standards": {
+      "verify_npc_identification_dialogue.py": "8b8629e5281889ba8dde7d12e498cd5f9146467cdb5dd44e34f478de647effc1",
+      "verify_npc_equipment_identification.py": "8aa605af1ff5d07ce28a75a114488d6d6422356288dc13951af60d3d02b8b7e4",
+      "verify_npc_identification_startup.py": "99704ffeee54a5e7e6137e062b7fbedfbeae6653432cd87e518f5eb2847ca677"
+    },
+    "spec": {
+      "verify_npc_identification_dialogue.py": "8b8629e5281889ba8dde7d12e498cd5f9146467cdb5dd44e34f478de647effc1",
+      "verify_npc_equipment_identification.py": "8aa605af1ff5d07ce28a75a114488d6d6422356288dc13951af60d3d02b8b7e4",
+      "verify_npc_identification_startup.py": "99704ffeee54a5e7e6137e062b7fbedfbeae6653432cd87e518f5eb2847ca677"
+    }
+  },
+  "verification": {
+    "settlement_groups": 13,
+    "late_rollback_faults": 5,
+    "dialogue_rejections": 18,
+    "startup_invalid_recipes": 55,
+    "paid_current_only_SQL_authorizer": true
+  },
+  "integration_handoff": "evidence/NPC_IDENTIFICATION_INTEGRATION.md",
+  "shared_required": [
+    "startup after currency",
+    "original local menu495 and C04cc/C4276 routing",
+    "server ticket lifecycle and modal gates",
+    "current map/member/connection authority",
+    "actual-send fences",
+    "actual BASE-specific provider delta and candidate review"
+  ],
+  "shared_route_activated": false,
+  "deployed": false,
+  "native_gui_verified": false,
+  "live_database_modified": false,
+  "random_identification_implemented": false
+}

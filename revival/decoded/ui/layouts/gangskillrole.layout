@@ -1,0 +1,1040 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/SmallFrameWindow" Name="GangSkillRole">
+    <Property Name="Font" Value="msyh-16" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.121875,0},{0.058333,0},{0.174375,563},{0.058333,530}}" />
+    <Window Type="TaharezLook/StaticImage" Name="GangSkillRole/skilltrain">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/MultiColumnList" Name="GangSkillRole/skilltrain/List">
+        <Property Name="UnifiedAreaRect" Value="{{0,17},{-0.002167,42},{0,586},{-0.002167,387}}" />
+        <Property Name="ColumnHeader" Value="text:修炼项目 width:{0.17,0} id:0" />
+        <Property Name="ColumnHeader" Value="text:修炼等级 width:{0.17,0} id:1" />
+        <Property Name="ColumnHeader" Value="text:每次修炼费用 width:{0.19,0} id:2" />
+        <Property Name="ColumnHeader" Value="text:当前进度 width:{0.23,0} id:2" />
+        <Property Name="ColumnHeader" Value="text:操作按钮 width:{1,-431} id:3" />
+        <Window Type="TaharezLook/SkillBox" Name="GangSkillRole/skilltrain/List/Skill1">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0105448,0},{0.0753623,0},{0.0878735,0},{0.202899,0}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="GangSkillRole/skilltrain/List/Skill2">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0105448,0},{0.233334,-10},{0.0878735,0},{0.380001,-16}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="GangSkillRole/skilltrain/List/Skill3">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0105448,0},{0.380001,-15},{0.0878735,0},{0.526667,-22}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="GangSkillRole/skilltrain/List/Skill4">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0105448,0},{0.526667,-21},{0.0878735,0},{0.673334,-27}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="GangSkillRole/skilltrain/List/Skill5">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0105448,0},{0.673334,-26},{0.0878735,0},{0.673334,18}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="GangSkillRole/skilltrain/List/Skill6">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0105448,0},{0.673334,19},{0.0878735,0},{0.673334,63}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/List/Name1">
+          <Property Name="Text" Value="勇武" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.100176,0},{0.113043,0},{0.158172,0},{0.13,12}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/List/Name2">
+          <Property Name="Text" Value="谋略" />
+          <Property Name="HorzExtent" Value="26" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.100176,0},{0.246377,0},{0.158172,0},{0.18,41}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/List/Name3">
+          <Property Name="Text" Value="招架" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.100176,0},{0.368116,0},{0.158172,0},{0.23,66}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/List/Name4">
+          <Property Name="Text" Value="抗命" />
+          <Property Name="HorzExtent" Value="26" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.100176,0},{0.498551,0},{0.158172,0},{0.28,93}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/List/Name5">
+          <Property Name="Text" Value="意念" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.100176,0},{0.631884,0},{0.158172,0},{0.33,122}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/List/Name6">
+          <Property Name="Text" Value="冥思" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.100176,0},{0.765217,0},{0.158172,0},{0.85,-11}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/List/Level1">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.193322,0},{0.113043,0},{0.339192,0},{0.126667,13}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/List/Level2">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.193322,0},{0.246377,0},{0.339192,0},{0.176667,42}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/List/Level3">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.193322,0},{0.368116,0},{0.339192,0},{0.226667,67}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/List/Level4">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.193322,0},{0.498551,0},{0.339192,0},{0.276667,95}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/List/Level5">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.193322,0},{0.631884,0},{0.339192,0},{0.33,122}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/List/Level6">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.193322,0},{0.765217,0},{0.339192,0},{0.85,-11}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/List/Money1">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.365554,0},{0.113043,0},{0.511424,0},{0.13,12}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/List/Money2">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.365554,0},{0.246377,0},{0.511424,0},{0.18,41}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/List/Money3">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.365554,0},{0.368116,0},{0.511424,0},{0.23,66}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/List/Money4">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.365554,0},{0.498551,0},{0.511424,0},{0.28,93}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/List/Money5">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.365554,0},{0.631884,0},{0.511424,0},{0.33,122}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/List/Money6">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.365554,0},{0.765217,0},{0.511424,0},{0.85,-11}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/ProgressBar" Name="GangSkillRole/skilltrain/List/Progress1">
+          <Property Name="Text" Value="400/500" />
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="FrameEnable" Value="True" />
+          <Property Name="CurrentProgress" Value="1" />
+          <Property Name="UnifiedAreaRect" Value="{{0.536028,0},{0.115942,0},{0.750439,0},{0.523333,-125}}" />
+        </Window>
+        <Window Type="TaharezLook/ProgressBar" Name="GangSkillRole/skilltrain/List/Progress2">
+          <Property Name="Text" Value="400/500" />
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="FrameEnable" Value="True" />
+          <Property Name="CurrentProgress" Value="1" />
+          <Property Name="UnifiedAreaRect" Value="{{0.536028,0},{0.249275,0},{0.750439,0},{0.673333,-130}}" />
+        </Window>
+        <Window Type="TaharezLook/ProgressBar" Name="GangSkillRole/skilltrain/List/Progress3">
+          <Property Name="Text" Value="400/500" />
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="FrameEnable" Value="True" />
+          <Property Name="CurrentProgress" Value="1" />
+          <Property Name="UnifiedAreaRect" Value="{{0.536028,0},{0.371015,0},{0.750439,0},{0.813333,-137}}" />
+        </Window>
+        <Window Type="TaharezLook/ProgressBar" Name="GangSkillRole/skilltrain/List/Progress4">
+          <Property Name="Text" Value="400/500" />
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="FrameEnable" Value="True" />
+          <Property Name="CurrentProgress" Value="1" />
+          <Property Name="UnifiedAreaRect" Value="{{0.536028,0},{0.501449,0},{0.750439,0},{0.963333,-143}}" />
+        </Window>
+        <Window Type="TaharezLook/ProgressBar" Name="GangSkillRole/skilltrain/List/Progress5">
+          <Property Name="Text" Value="400/500" />
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="FrameEnable" Value="True" />
+          <Property Name="CurrentProgress" Value="1" />
+          <Property Name="UnifiedAreaRect" Value="{{0.536028,0},{0.634783,0},{0.750439,0},{1.11667,-150}}" />
+        </Window>
+        <Window Type="TaharezLook/ProgressBar" Name="GangSkillRole/skilltrain/List/Progress6">
+          <Property Name="Text" Value="400/500" />
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="FrameEnable" Value="True" />
+          <Property Name="CurrentProgress" Value="1" />
+          <Property Name="UnifiedAreaRect" Value="{{0.536028,0},{0.768116,0},{0.750439,0},{1.27333,-158}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/skilltrain/List/Button1">
+          <Property Name="Text" Value="修  炼" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.764499,0},{0.101449,0},{0.878735,0},{0.171014,0}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/skilltrain/List/Button2">
+          <Property Name="Text" Value="修  炼" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.764499,0},{0.237681,0},{0.878735,0},{0.307246,0}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/skilltrain/List/Button3">
+          <Property Name="Text" Value="修  炼" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.764499,0},{0.35942,0},{0.878735,0},{0.428986,0}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/skilltrain/List/Button4">
+          <Property Name="Text" Value="修  炼" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.764499,0},{0.489855,0},{0.878735,0},{0.55942,0}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/skilltrain/List/Button5">
+          <Property Name="Text" Value="修  炼" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.764499,0},{0.623188,0},{0.878735,0},{0.692754,0}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/skilltrain/List/Button6">
+          <Property Name="Text" Value="修  炼" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.764499,0},{0.756522,0},{0.878735,0},{0.826087,0}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/skilltrain/List/Button8">
+          <Property Name="Text" Value="试  炼" />
+          <Property Name="Tooltip" Value="使用道具修炼丹进行修炼" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.878735,0},{0.101449,0},{0.99297,0},{0.171014,0}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/skilltrain/List/Button9">
+          <Property Name="Text" Value="试  炼" />
+          <Property Name="Tooltip" Value="使用道具修炼丹进行修炼" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.878735,0},{0.237681,0},{0.99297,0},{0.307246,0}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/skilltrain/List/Button10">
+          <Property Name="Text" Value="试  炼" />
+          <Property Name="Tooltip" Value="使用道具修炼丹进行修炼" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.878735,0},{0.35942,0},{0.99297,0},{0.428986,0}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/skilltrain/List/Button11">
+          <Property Name="Text" Value="试  炼" />
+          <Property Name="Tooltip" Value="使用道具修炼丹进行修炼" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.878735,0},{0.489855,0},{0.99297,0},{0.55942,0}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/skilltrain/List/Button12">
+          <Property Name="Text" Value="试  炼" />
+          <Property Name="Tooltip" Value="使用道具修炼丹进行修炼" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.878735,0},{0.623188,0},{0.99297,0},{0.692754,0}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/skilltrain/List/Button13">
+          <Property Name="Text" Value="试  炼" />
+          <Property Name="Tooltip" Value="使用道具修炼丹进行修炼" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.878735,0},{0.756522,0},{0.99297,0},{0.826087,0}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="GangSkillRole/skilltrain/List/Skill7">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0105448,0},{0.723334,46},{0.0878735,0},{0.723334,90}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/List/Name7">
+          <Property Name="Text" Value="仁心" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.100176,0},{0.892754,0},{0.158172,0},{0.9,16}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/List/Level7">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.193322,0},{0.895652,0},{0.339192,0},{0.9,22}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/ProgressBar" Name="GangSkillRole/skilltrain/List/Progress7">
+          <Property Name="Text" Value="400/500" />
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="FrameEnable" Value="True" />
+          <Property Name="CurrentProgress" Value="1" />
+          <Property Name="UnifiedAreaRect" Value="{{0.536028,0},{0.895652,0},{0.750439,0},{1.32333,-132}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/List/Money7">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.365554,0},{0.895652,0},{0.511424,0},{0.894203,18}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/skilltrain/List/Button7">
+          <Property Name="Text" Value="修  炼" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.764499,0},{0.884058,0},{0.878735,0},{0.953623,0}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/skilltrain/List/Button14">
+          <Property Name="Text" Value="试  炼" />
+          <Property Name="Tooltip" Value="使用道具修炼丹进行修炼" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.878735,0},{0.884058,0},{0.99297,0},{0.953623,0}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Figure1" Name="GangSkillRole/skilltrain/Figure1">
+        <Property Name="UnifiedAreaRect" Value="{{0.0298013,0},{0.74717,0},{0.231788,0},{0.732608,27}}" />
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/Figure1/Name">
+          <Property Name="Text" Value="人物技能修炼" />
+          <Property Name="HorzExtent" Value="79" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.155738,0},{0,0},{0.836066,0},{0.3,13}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/Figure1/Name1">
+          <Property Name="Text" Value="当前银两" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.786301,-78},{0.736842,0},{0.762295,0},{0.699512,41}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/MoneyBack">
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0.756622,0},{0.741509,0},{0.966887,0},{0.762222,11}}" />
+        <Window Type="TaharezLook/StaticImage" Name="GangSkillRole/skilltrain/MoneyBack/Image">
+          <Property Name="Image" Value="set:MainControl image:Xianjin" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.834646,0},{0,0},{0.984252,0},{0.863636,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/MoneyBack/Money">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.023622,0},{0.0454545,0},{0.834646,0},{0.3,14}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/Info">
+        <Property Name="Text">1.修炼需要消耗一定的银两，每次修炼增加10点修炼经验。
+	2.试炼需要消耗一颗修炼丹，勇武、谋略、意念每次试炼增加20点修炼经验；招架、抗命、冥思和仁心每次试炼增加30点修炼经验。
+	3.每次修炼需要消耗3点帮派资材，帮派资材不够时则无法修炼，试炼不消耗帮派资材。
+	4.修炼和试炼时有一定的帮派声望等级限制。
+	5.人物等级越高，修炼和试炼可达到的技能等级上限也越高。</Property>
+        <Property Name="HorzExtent" Value="549" />
+        <Property Name="VertExtent" Value="93.7134" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0,17},{0.784906,0},{0,586},{0.973585,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/skilltrain/Info/Max">
+          <Property Name="Visible" Value="False" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.901582,0},{0.73,0},{0.938489,0},{0.3,59}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="GangSkillRole/property">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/MultiColumnList" Name="GangSkillRole/property/List">
+        <Property Name="UnifiedAreaRect" Value="{{0,19},{-0.002167,41},{0,588},{-0.002167,482}}" />
+        <Property Name="ColumnHeader" Value="text:修炼项目 width:{0.2,0} id:0" />
+        <Property Name="ColumnHeader" Value="text:修炼等级 width:{0.15,0} id:1" />
+        <Property Name="ColumnHeader" Value="text:每次修炼费用 width:{0.15,0} id:2" />
+        <Property Name="ColumnHeader" Value="text:当前进度 width:{0.25,0} id:3" />
+        <Property Name="ColumnHeader" Value="text:操作按钮 width:{1,-426} id:4" />
+        <Window Type="TaharezLook/SkillBox" Name="GangSkillRole/property/List/Skill1">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,6},{0,26},{0,50},{0,70}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="GangSkillRole/property/List/Skill2">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,6},{0,71},{0,50},{0,115}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="GangSkillRole/property/List/Skill3">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,6},{0,116},{0,50},{0,160}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="GangSkillRole/property/List/Skill4">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,6},{0,161},{0,50},{0,205}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="GangSkillRole/property/List/Skill5">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,6},{0,206},{0,50},{0,250}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="GangSkillRole/property/List/Skill6">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,6},{0,251},{0,50},{0,295}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="GangSkillRole/property/List/Skill7">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,6},{0,296},{0,50},{0,340}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="GangSkillRole/property/List/Skill8">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,6},{0,341},{0,50},{0,385}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="GangSkillRole/property/List/Skill9">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,6},{0,386},{0,50},{0,430}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Name1">
+          <Property Name="Text" Value="生命" />
+          <Property Name="HorzExtent" Value="26" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,55},{0,39},{0,112},{0,57}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Name2">
+          <Property Name="Text" Value="真气" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,55},{0,84},{0,112},{0,102}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Name3">
+          <Property Name="Text" Value="外功伤害" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,55},{0,129},{0,112},{0,147}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Name4">
+          <Property Name="Text" Value="内功伤害" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,55},{0,174},{0,112},{0,192}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Name5">
+          <Property Name="Text" Value="外功防御" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,55},{0,219},{0,112},{0,237}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Name6">
+          <Property Name="Text" Value="内功防御" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,55},{0,264},{0,112},{0,282}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Name7">
+          <Property Name="Text" Value="加强封印" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,55},{0,309},{0,112},{0,327}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Name8">
+          <Property Name="Text" Value="封印抗性" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,55},{0,354},{0,112},{0,372}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Name9">
+          <Property Name="Text" Value="速度" />
+          <Property Name="HorzExtent" Value="26" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,55},{0,399},{0,112},{0,417}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Level1">
+          <Property Name="Text" Value="0/0" />
+          <Property Name="HorzExtent" Value="23" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,128},{0,39},{0,192},{0,57}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Level2">
+          <Property Name="Text" Value="0/0" />
+          <Property Name="HorzExtent" Value="23" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,128},{0,84},{0,192},{0,102}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Level3">
+          <Property Name="Text" Value="0/0" />
+          <Property Name="HorzExtent" Value="23" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,128},{0,129},{0,192},{0,147}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Level4">
+          <Property Name="Text" Value="0/0" />
+          <Property Name="HorzExtent" Value="23" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,128},{0,174},{0,192},{0,192}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Level5">
+          <Property Name="Text" Value="0/0" />
+          <Property Name="HorzExtent" Value="23" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,128},{0,219},{0,192},{0,237}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Level6">
+          <Property Name="Text" Value="0/0" />
+          <Property Name="HorzExtent" Value="23" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,128},{0,264},{0,192},{0,282}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Level7">
+          <Property Name="Text" Value="0/0" />
+          <Property Name="HorzExtent" Value="23" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,128},{0,309},{0,192},{0,327}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Level8">
+          <Property Name="Text" Value="0/0" />
+          <Property Name="HorzExtent" Value="23" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,128},{0,354},{0,192},{0,372}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Level9">
+          <Property Name="Text" Value="0/0" />
+          <Property Name="HorzExtent" Value="23" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,129},{0,399},{0,193},{0,417}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Money1">
+          <Property Name="Text" Value="30000" />
+          <Property Name="HorzExtent" Value="40" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,212},{0,39},{0,273},{0,57}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Money2">
+          <Property Name="Text" Value="20000" />
+          <Property Name="HorzExtent" Value="40" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,212},{0,84},{0,273},{0,102}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Money3">
+          <Property Name="Text" Value="30000" />
+          <Property Name="HorzExtent" Value="40" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,212},{0,129},{0,273},{0,147}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Money4">
+          <Property Name="Text" Value="30000" />
+          <Property Name="HorzExtent" Value="40" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,212},{0,174},{0,273},{0,192}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Money5">
+          <Property Name="Text" Value="20000" />
+          <Property Name="HorzExtent" Value="40" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,212},{0,219},{0,273},{0,237}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Money6">
+          <Property Name="Text" Value="20000" />
+          <Property Name="HorzExtent" Value="40" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,212},{0,264},{0,273},{0,282}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Money7">
+          <Property Name="Text" Value="30000" />
+          <Property Name="HorzExtent" Value="40" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,212},{0,309},{0,273},{0,327}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Money8">
+          <Property Name="Text" Value="20000" />
+          <Property Name="HorzExtent" Value="40" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,212},{0,354},{0,273},{0,372}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/List/Money9">
+          <Property Name="Text" Value="30000" />
+          <Property Name="HorzExtent" Value="40" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,212},{0,399},{0,273},{0,417}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/ProgressBar" Name="GangSkillRole/property/List/Progress1">
+          <Property Name="Text" Value="400/500" />
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="FrameEnable" Value="True" />
+          <Property Name="CurrentProgress" Value="1" />
+          <Property Name="UnifiedAreaRect" Value="{{0,290},{0,41},{0,412},{0,57}}" />
+        </Window>
+        <Window Type="TaharezLook/ProgressBar" Name="GangSkillRole/property/List/Progress2">
+          <Property Name="Text" Value="400/500" />
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="FrameEnable" Value="True" />
+          <Property Name="CurrentProgress" Value="1" />
+          <Property Name="UnifiedAreaRect" Value="{{0,290},{0,86},{0,412},{0,102}}" />
+        </Window>
+        <Window Type="TaharezLook/ProgressBar" Name="GangSkillRole/property/List/Progress3">
+          <Property Name="Text" Value="400/500" />
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="FrameEnable" Value="True" />
+          <Property Name="CurrentProgress" Value="1" />
+          <Property Name="UnifiedAreaRect" Value="{{0,290},{0,131},{0,412},{0,147}}" />
+        </Window>
+        <Window Type="TaharezLook/ProgressBar" Name="GangSkillRole/property/List/Progress4">
+          <Property Name="Text" Value="400/500" />
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="FrameEnable" Value="True" />
+          <Property Name="CurrentProgress" Value="1" />
+          <Property Name="UnifiedAreaRect" Value="{{0,290},{0,175},{0,412},{0,191}}" />
+        </Window>
+        <Window Type="TaharezLook/ProgressBar" Name="GangSkillRole/property/List/Progress5">
+          <Property Name="Text" Value="400/500" />
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="FrameEnable" Value="True" />
+          <Property Name="CurrentProgress" Value="1" />
+          <Property Name="UnifiedAreaRect" Value="{{0,290},{0,220},{0,412},{0,236}}" />
+        </Window>
+        <Window Type="TaharezLook/ProgressBar" Name="GangSkillRole/property/List/Progress6">
+          <Property Name="Text" Value="400/500" />
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="FrameEnable" Value="True" />
+          <Property Name="CurrentProgress" Value="1" />
+          <Property Name="UnifiedAreaRect" Value="{{0,290},{0,265},{0,412},{0,281}}" />
+        </Window>
+        <Window Type="TaharezLook/ProgressBar" Name="GangSkillRole/property/List/Progress7">
+          <Property Name="Text" Value="400/500" />
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="FrameEnable" Value="True" />
+          <Property Name="CurrentProgress" Value="1" />
+          <Property Name="UnifiedAreaRect" Value="{{0,290},{0,310},{0,412},{0,326}}" />
+        </Window>
+        <Window Type="TaharezLook/ProgressBar" Name="GangSkillRole/property/List/Progress8">
+          <Property Name="Text" Value="400/500" />
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="FrameEnable" Value="True" />
+          <Property Name="CurrentProgress" Value="1" />
+          <Property Name="UnifiedAreaRect" Value="{{0,290},{0,355},{0,412},{0,371}}" />
+        </Window>
+        <Window Type="TaharezLook/ProgressBar" Name="GangSkillRole/property/List/Progress9">
+          <Property Name="Text" Value="400/500" />
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="FrameEnable" Value="True" />
+          <Property Name="CurrentProgress" Value="1" />
+          <Property Name="UnifiedAreaRect" Value="{{0,290},{0,400},{0,412},{0,416}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/property/List/Button1">
+          <Property Name="Text" Value="修  炼" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,434},{0,37},{0,491},{0,61}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/property/List/Button2">
+          <Property Name="Text" Value="修  炼" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,434},{0,82},{0,491},{0,106}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/property/List/Button3">
+          <Property Name="Text" Value="修  炼" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,434},{0,127},{0,491},{0,151}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/property/List/Button4">
+          <Property Name="Text" Value="修  炼" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,434},{0,172},{0,491},{0,196}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/property/List/Button5">
+          <Property Name="Text" Value="修  炼" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,434},{0,217},{0,491},{0,241}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/property/List/Button6">
+          <Property Name="Text" Value="修  炼" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,434},{0,262},{0,491},{0,286}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/property/List/Button7">
+          <Property Name="Text" Value="修  炼" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,434},{0,307},{0,491},{0,331}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/property/List/Button8">
+          <Property Name="Text" Value="修  炼" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,434},{0,352},{0,491},{0,376}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/property/List/Button9">
+          <Property Name="Text" Value="修  炼" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,434},{0,396},{0,491},{0,420}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/property/List/Btn1">
+          <Property Name="Text" Value="修炼十次" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,495},{0,36},{0,560},{0,60}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/property/List/Btn2">
+          <Property Name="Text" Value="修炼十次" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,495},{0,81},{0,560},{0,105}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/property/List/Btn3">
+          <Property Name="Text" Value="修炼十次" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,495},{0,126},{0,560},{0,150}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/property/List/Btn4">
+          <Property Name="Text" Value="修炼十次" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,495},{0,171},{0,560},{0,195}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/property/List/Btn5">
+          <Property Name="Text" Value="修炼十次" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,495},{0,216},{0,560},{0,240}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/property/List/Btn6">
+          <Property Name="Text" Value="修炼十次" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,495},{0,261},{0,560},{0,285}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/property/List/Btn7">
+          <Property Name="Text" Value="修炼十次" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,495},{0,306},{0,560},{0,330}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/property/List/Btn8">
+          <Property Name="Text" Value="修炼十次" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,495},{0,351},{0,560},{0,375}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="GangSkillRole/property/List/Btn9">
+          <Property Name="Text" Value="修炼十次" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,495},{0,396},{0,560},{0,420}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Figure1" Name="GangSkillRole/property/Figure1">
+        <Property Name="UnifiedAreaRect" Value="{{0.0298013,0},{0.930189,0},{0.231788,0},{0.749512,114}}" />
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/Figure1/Name">
+          <Property Name="Text" Value="人物属性修炼" />
+          <Property Name="HorzExtent" Value="79" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.155738,0},{0,0},{0.836066,0},{0.3,13}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/Figure1/Name0">
+        <Property Name="Text" Value="当前银两" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.786301,-77},{0.930189,0},{0.759934,0},{0.749512,114}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/MoneyBack0">
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0.756622,0},{0.930189,0},{0.966887,0},{0.749512,114}}" />
+        <Window Type="TaharezLook/StaticImage" Name="GangSkillRole/property/MoneyBack/Image0">
+          <Property Name="Image" Value="set:MainControl image:Xianjin" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.834646,0},{0,0},{0.984252,0},{1.05556,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/MoneyBack/Money0">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.023622,0},{0.0555556,0},{0.834646,0},{0.3,15}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/Figure1/Name1">
+        <Property Name="Text" Value="当前绑银" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.836301,-307},{0.930189,0},{0.430464,0},{0.749512,114}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/MoneyBack1">
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0.427152,0},{0.930189,0},{0.637417,0},{0.749512,114}}" />
+        <Window Type="TaharezLook/StaticImage" Name="GangSkillRole/property/MoneyBack/Image1">
+          <Property Name="Image" Value="set:MainControl image:Xianjin" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.834646,0},{0,0},{0.984252,0},{1.05556,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="GangSkillRole/property/MoneyBack/Money1">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.023622,0},{0.0555556,0},{0.834646,0},{0.3,15}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="GangSkillRole/Title">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="人物修炼" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="68" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.453642,0},{0.0207547,0},{0.784768,0},{0.0584906,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/RightGroupButton" Name="GangSkillRole/pagebtn1">
+      <Property Name="Text">技
+	能
+	修
+	炼</Property>
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.981788,0},{0.090566,0},{1.02815,0},{0.235849,0}}" />
+    </Window>
+    <Window Type="TaharezLook/RightGroupButton" Name="GangSkillRole/pagebtn2">
+      <Property Name="Text">属
+	性
+	修
+	炼</Property>
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.981788,0},{0.233962,0},{1.02815,0},{0.379245,0}}" />
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,68 @@
+{
+  "batch": "social_07_guild_offices",
+  "source_sha256": {
+    "guild_offices.py": "22d4c0d22aa3ad6fe9ba297d10eb90429f0360df70c21e618100ca60f06662fa",
+    "faction_domain.py": "c7b9232221d893913a9fe9d7a753ab5138b3b6f988db63e0ca552d790069ee12",
+    "faction_protocol.py": "5abb578f564805fd91a73a77061fdc88da3604145f11f978cb3d200bd623a0e0",
+    "verify_guild_offices.py": "b3c88aac91746488da5dd1733cca1666ca6132ce394f5ece4d745faa4bd18ca4",
+    "verify_faction_runtime.py": "2ac657bd921b204c353c495c57473ec46a35740f28d976ed6f988e2cce4710d2",
+    "design/recovery-baseline.json": "f89c4a14c20169f902304feb2e04f2f958e09a2848b4ca6fc8422c76c0c892a2"
+  },
+  "verifications": {
+    "guild-offices-verification.json": {
+      "passed": [
+        "nine original authority bits persist independently; bit nine is rejected; unimplemented rights grant no unrelated permission",
+        "one deputy; two left-elder slots at fixture guild level four; deputy appointment requires delegated bit six",
+        "family head appoints multiple own ordinary members as patrols; cross-family and officer overwrite denied",
+        "both elder kinds can mute ordinary members; protected officers and nonmanager patrol permissions preserved",
+        "resignation enforces deputy and 72-hour tenure, clears delegation, and leaves independent family leadership intact",
+        "family exit does not write guild offices; membership generation immediately revokes old delegation across leave/rejoin, then guild owner prunes",
+        "whole-family departure/rejoin rotates guild-family generation and clears patrols without office resurrection",
+        "office/binding/authority/revision and receipt are atomic; stale lease refuses; reopening preserves current state",
+        "actual bounded guild owner serializes competing final elder-slot appointments without exceeding quota",
+        "old one-position unique schema migrates once preserving deputy/delegation; archive never resurrects a later removed office"
+      ],
+      "source_org_runtime_integrated": true,
+      "native_guild_management_routes_integrated": false,
+      "native_gui_verified": false,
+      "live_store_changed": false,
+      "progression": "explicit level-four/tenure fixtures only"
+    },
+    "guild-ui-verification.json": {
+      "passed": [
+        "original nomination button deputy emits 5",
+        "original nomination button left_elder emits 3",
+        "original nomination button right_elder emits 4",
+        "original nomination button patrol emits 1",
+        "original nomination button member emits 0",
+        "original appointment guard rank 5 authority 0",
+        "original appointment guard rank 5 authority 64",
+        "original appointment guard rank 4 authority 511",
+        "original higher officer cannot overwrite directly with patrol",
+        "original grant/revoke button and serializer one-hot 1",
+        "original grant/revoke button and serializer one-hot 2",
+        "original grant/revoke button and serializer one-hot 4",
+        "original grant/revoke button and serializer one-hot 8",
+        "original grant/revoke button and serializer one-hot 16",
+        "original grant/revoke button and serializer one-hot 32",
+        "original grant/revoke button and serializer one-hot 64",
+        "original grant/revoke button and serializer one-hot 128",
+        "original grant/revoke button and serializer one-hot 256",
+        "original duplicate authority guard authority_already_set",
+        "original duplicate authority guard authority_not_set",
+        "original outgoing confirmation emits empty office resignation c5622",
+        "native authority response c5638 supports all nine bits"
+      ],
+      "image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+      "native_gui_verified": false,
+      "scope": "original nomination and authority handlers/manager executed offline; network/dialog/string warning edges adapted",
+      "native_guild_management_routes_integrated": false
+    }
+  },
+  "native_guild_management_routed": false,
+  "whole_gameplay_complete": false,
+  "native_gui_verified": false,
+  "source_writes_frozen": true,
+  "shared_entry_files_modified_by_this_batch": false,
+  "user_scope": "家族帮派整套玩法、技能研究、个人学习、修炼、建设维护、生产、任务、Boss、帮战及相关系统均需实现"
+}

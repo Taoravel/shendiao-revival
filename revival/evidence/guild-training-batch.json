@@ -1,0 +1,361 @@
+{
+  "batch": "social_08_guild_training_settings",
+  "recorded_utc": "2026-10-23T07:33:43.852927+00:00",
+  "source_sha256": {
+    "guild_training.py": "a3e2a45884b9bcc8dfcb726a252a28f2fb5513c18cabcc1336c9ed2a3a27ee77",
+    "faction_domain.py": "f1f2ed2ce6a3b7d37bd8576e695b557bbb05b53aedde32e0f516e64020144711",
+    "verify_guild_training.py": "53becfd0cafe9a110baaaefbf116a6acb993c26646cfff9b15e8c4a8aa197b55",
+    "verify_guild_training_policy.py": "2cbad86fee2cbf519573d528a7bf85994ad1d53a58aadec645c93015714e9725",
+    "verify_guild_training_native.py": "c1e4fe8b6ffff85288bd49d0152eebea96d2b0a86fe184067ffdae65ec1684c3",
+    "verify_guild_office_native.py": "00cc1003e953743d3d37a1c7d5c20518f7f01bc2431849fdcee07b4241f67058",
+    "recover_social_inventory.py": "c06205177af1d3386500501273c090e465c90c8b5b74373d4601007443873a3a",
+    "design/recovery-baseline.json": "72fba654c4015402eb4f326d8eea21f79052d2351102f46ba69930abe53dc9e6"
+  },
+  "verifications": {
+    "guild-training-verification.json": {
+      "passed": [
+        "head selects original furniture-production research; persisted selection and receipt replay agree",
+        "deputy research requires its own bit zero; revocation and appointment-only authority do not allow research",
+        "opening requires six million guild funds and spends three million once; closing uses explicit zero fee; role cash is unchanged",
+        "level-three guild opens two practice types, close frees a slot, and deputy requires independent practice bit one",
+        "invalid skills, flags, repeated state, ordinary member and wrong organization preserve settings, revision and both fund pools",
+        "late receipt failure rolls back practice, three-million debit, ledger and revision; retry commits once and altered-key replay rejects",
+        "old login epoch is rejected; replacement lease and startup preserve selected research and open practices",
+        "deputy loses research authority immediately on family departure and does not recover it by rejoining",
+        "actual bounded organization owner serializes competing final paid practice slot: one success and one debit",
+        "unknown legacy settings are not initialized or granted by startup or a failed command"
+      ],
+      "source_org_owner_integrated": true,
+      "native_gui_verified": false,
+      "native_npc_routes_integrated": false,
+      "personal_training_integrated": false,
+      "research_progression_integrated": false,
+      "live_store_changed": false,
+      "current_seven_type_capacity_source": "inferred from verified legacy level-minus-one path",
+      "fixtures": "explicit disposable guild levels and guild-funds updates only"
+    },
+    "guild-training-policy-verification.json": {
+      "passed": [
+        "actual SQLiteSocialStore.initialize freezes configuration lists and prepares organization schemas",
+        "JSON and immutable organization policies produce identical training rules",
+        "nonempty initial-practice baseline remains rejected for both container types"
+      ],
+      "live_store_changed": false
+    },
+    "guild-practice-native-verification.json": {
+      "passed": [
+        {
+          "name": "level one has zero open slots",
+          "handler": "0x14e0700",
+          "packets": [],
+          "first_warning_string_ids": [
+            2269
+          ]
+        },
+        {
+          "name": "level two first practice opens",
+          "handler": "0x14e0700",
+          "packets": [
+            [
+              808509,
+              [
+                123,
+                256,
+                360001,
+                1
+              ]
+            ]
+          ],
+          "first_warning_string_ids": []
+        },
+        {
+          "name": "level three second practice opens",
+          "handler": "0x14e0700",
+          "packets": [
+            [
+              808509,
+              [
+                123,
+                256,
+                360001,
+                1
+              ]
+            ]
+          ],
+          "first_warning_string_ids": []
+        },
+        {
+          "name": "level three third practice exceeds level minus one slots",
+          "handler": "0x14e0700",
+          "packets": [],
+          "first_warning_string_ids": [
+            2269
+          ]
+        },
+        {
+          "name": "already open rejects",
+          "handler": "0x14e0700",
+          "packets": [],
+          "first_warning_string_ids": [
+            2267
+          ]
+        },
+        {
+          "name": "closing active practice emits zero flag",
+          "handler": "0x14e09d0",
+          "packets": [
+            [
+              808509,
+              [
+                123,
+                256,
+                360001,
+                0
+              ]
+            ]
+          ],
+          "first_warning_string_ids": []
+        },
+        {
+          "name": "already closed rejects",
+          "handler": "0x14e09d0",
+          "packets": [],
+          "first_warning_string_ids": [
+            2271
+          ]
+        },
+        {
+          "name": "open requires selected row",
+          "handler": "0x14e0700",
+          "packets": [],
+          "first_warning_string_ids": [
+            2270
+          ]
+        },
+        {
+          "name": "close requires selected row",
+          "handler": "0x14e09d0",
+          "packets": [],
+          "first_warning_string_ids": [
+            2272
+          ]
+        },
+        {
+          "name": "research selected furniture skill",
+          "handler": "0x14e1600",
+          "packets": [
+            [
+              808507,
+              [
+                123,
+                256,
+                310103
+              ]
+            ]
+          ],
+          "first_warning_string_ids": []
+        },
+        {
+          "name": "research duplicate selection rejects",
+          "handler": "0x14e1600",
+          "packets": [],
+          "first_warning_string_ids": [
+            2273
+          ]
+        },
+        {
+          "name": "CFactionSetPractice",
+          "type": "0xc5655",
+          "serializer": "0xe450b0",
+          "wire": "000001000000007b00057e4100000001"
+        },
+        {
+          "name": "CSetFactionPracticeOpen",
+          "type": "0xc563d",
+          "serializer": "0xe45700",
+          "wire": "000001000000007b00057e4100000001"
+        },
+        {
+          "name": "CSetFactionResearchSkill",
+          "type": "0xc563b",
+          "serializer": "0xe45740",
+          "wire": "000001000000007b0004bb57"
+        },
+        {
+          "name": "CPractiseSkill raw mode 0",
+          "type": "0xc36cc",
+          "serializer": "0xe56770",
+          "wire": "000001000000007b00057e4100"
+        },
+        {
+          "name": "CPractiseSkill raw mode 1",
+          "type": "0xc36cc",
+          "serializer": "0xe56770",
+          "wire": "000001000000007b00057e4101"
+        },
+        {
+          "name": "CPractiseSkill raw mode 2",
+          "type": "0xc36cc",
+          "serializer": "0xe56770",
+          "wire": "000001000000007b00057e4102"
+        },
+        {
+          "name": "CPractiseSkill raw mode 3",
+          "type": "0xc36cc",
+          "serializer": "0xe56770",
+          "wire": "000001000000007b00057e4103"
+        },
+        {
+          "name": "CPractiseSkill raw mode 4",
+          "type": "0xc36cc",
+          "serializer": "0xe56770",
+          "wire": "000001000000007b00057e4104"
+        },
+        {
+          "name": "CUpdaetAssistSkillLevel raw mode 0",
+          "type": "0xc36b6",
+          "serializer": "0xe56880",
+          "wire": "000001000000007b00057e4100"
+        },
+        {
+          "name": "CUpdaetAssistSkillLevel raw mode 1",
+          "type": "0xc36b6",
+          "serializer": "0xe56880",
+          "wire": "000001000000007b00057e4101"
+        },
+        {
+          "name": "CUpdaetAssistSkillLevel raw mode 2",
+          "type": "0xc36b6",
+          "serializer": "0xe56880",
+          "wire": "000001000000007b00057e4102"
+        },
+        {
+          "name": "CUpdaetAssistSkillLevel raw mode 3",
+          "type": "0xc36b6",
+          "serializer": "0xe56880",
+          "wire": "000001000000007b00057e4103"
+        },
+        {
+          "name": "CUpdaetAssistSkillLevel raw mode 4",
+          "type": "0xc36b6",
+          "serializer": "0xe56880",
+          "wire": "000001000000007b00057e4104"
+        },
+        {
+          "name": "FactionPractice and SFactionSetPracticeOK id/status int pair",
+          "serializers": [
+            "0xe91320",
+            "0xe46060"
+          ]
+        }
+      ],
+      "image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+      "native_gui_verified": false,
+      "runtime_integrated": false,
+      "scope": "offline original settings handlers and native serializers; UI selection/network/dialog edges adapted; seven-node active list uses original lookup/count routines",
+      "conclusions": [
+        "legacy FactionData +40 is guild level cached at manager +280; legacy open count cannot exceed level minus one",
+        "SRefreshFactionPracticeData c563c entries copy skill id and nonzero-as-boolean into active list",
+        "settings, enable and individual practice are distinct requests",
+        "request Q business context and individual raw modes remain unbound"
+      ],
+      "catalog_checks": [
+        "research ids match original bCanStudy=1 rows",
+        "seven current practice ids are original life-skill rows",
+        "opening fee 3000000 and current minimum funds 6000000 match original success/failure messages"
+      ],
+      "current_seven_type_capacity_source": "inferred from verified legacy level-minus-one path"
+    },
+    "guild-authority-context-verification.json": {
+      "passed": [
+        "original NPC UI d0/d4 key traverses 1637ad3 ->148d6b0 ->14e4600 ->authority dialog +20/+24"
+      ],
+      "image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+      "npc_key": 1099511627899,
+      "dialog_registration": [
+        [
+          123,
+          256,
+          1,
+          83902468,
+          13
+        ]
+      ],
+      "npc_key_origin": "SVisitNpc ->1635f10 stores key d0/d4; original instructions re-read",
+      "native_gui_verified": false,
+      "scope": "offline original NPC dispatch-to-dialog chain; timer/dialog registry and security-check edges adapted"
+    },
+    "guild-ui-verification.json": {
+      "passed": [
+        "original nomination button deputy emits 5",
+        "original nomination button left_elder emits 3",
+        "original nomination button right_elder emits 4",
+        "original nomination button patrol emits 1",
+        "original nomination button member emits 0",
+        "original appointment guard rank 5 authority 0",
+        "original appointment guard rank 5 authority 64",
+        "original appointment guard rank 4 authority 511",
+        "original higher officer cannot overwrite directly with patrol",
+        "original grant/revoke button and serializer one-hot 1",
+        "original grant/revoke button and serializer one-hot 2",
+        "original grant/revoke button and serializer one-hot 4",
+        "original grant/revoke button and serializer one-hot 8",
+        "original grant/revoke button and serializer one-hot 16",
+        "original grant/revoke button and serializer one-hot 32",
+        "original grant/revoke button and serializer one-hot 64",
+        "original grant/revoke button and serializer one-hot 128",
+        "original grant/revoke button and serializer one-hot 256",
+        "original duplicate authority guard authority_already_set",
+        "original duplicate authority guard authority_not_set",
+        "original outgoing confirmation emits empty office resignation c5622",
+        "native authority response c5638 supports all nine bits"
+      ],
+      "image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+      "native_gui_verified": false,
+      "scope": "original nomination/authority handlers and manager executed offline; network/dialog/string warning edges adapted",
+      "native_guild_management_routes_integrated": false
+    }
+  },
+  "tdd_cycles": [
+    {
+      "slice": "research selection",
+      "observed_red": "operation_not_supported",
+      "green": true
+    },
+    {
+      "slice": "delegated research",
+      "observed_red": "permission_denied despite bit zero",
+      "green": true
+    },
+    {
+      "slice": "practice opening",
+      "observed_red": "operation_not_supported",
+      "green": true
+    },
+    {
+      "slice": "practice organization charge",
+      "observed_red": "Expected rejection: insufficient_guild_funds; zero-funded guild was allowed",
+      "green": true
+    },
+    {
+      "slice": "actual frozen startup policy",
+      "observed_red": "invalid_guild_training_policy at runtime_storage.prepare and SQLiteSocialStore.initialize",
+      "green": true
+    }
+  ],
+  "source_org_owner_integrated": true,
+  "native_npc_routes_integrated": false,
+  "personal_training_integrated": false,
+  "whole_goal_complete": false,
+  "native_gui_verified": false,
+  "live_store_changed": false,
+  "live_server_restarted_by_this_batch": false,
+  "running_release": "independent immutable 20261023T063445Z source snapshot; current changes not deployed",
+  "shared_entry_files_edited_by_this_batch": false,
+  "methods": [
+    "codebase-design",
+    "tdd",
+    "diagnosing-bugs",
+    "writing-for-agents"
+  ]
+}

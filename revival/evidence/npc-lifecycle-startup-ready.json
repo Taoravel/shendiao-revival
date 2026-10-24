@@ -1,0 +1,45 @@
+{
+  "status": "reviewed_domain_ready_for_shared_startup_and_control_integration",
+  "files": {
+    "npc_lifecycle.py": "8a0cd6313c761828c6acf5b483edbf96f72b043d307ae60bd20dc506fb8edf8a",
+    "design/npc-lifecycle-v1.json": "31ac74006ca8c35d7b598eaec17528a43ddbe006f3efe154eecd7fcf7d71b387"
+  },
+  "review": "reviews/npc-lifecycle-startup-20261024/REVIEW.md",
+  "public_interfaces": [
+    "load_npc_lifecycle_rules(interaction_rules,*,path=None)",
+    "prepare(accounts,*,path=None) -> accounts.npc_lifecycle_rules"
+  ],
+  "startup_order": "npc_resources then npc_interaction.prepare then npc_lifecycle.prepare before map creation",
+  "interaction_rule_ownership": "holds the exact frozen v2 object; no independent circle/formula",
+  "checks": {
+    "startup": 6,
+    "invalid_configurations": 34,
+    "existing_lifecycle": 11,
+    "v2_interaction": 8,
+    "explicit_legacy_interaction": 8
+  },
+  "baseline": "reviews/npc-interaction-v2-20261023/current/npc_lifecycle.py",
+  "initial_source_is_authority": false,
+  "shared_map_owner_integrated": false,
+  "delivery_fences_verified": false,
+  "native_gui_verified": false,
+  "live_database_modified": false,
+  "live_server_changed": false,
+  "review_result": {
+    "standards_hard": 0,
+    "standards_heuristic": 0,
+    "spec_missing": 0,
+    "spec_extra": 0,
+    "spec_wrong": 0
+  },
+  "reviewed_files": {
+    "npc_lifecycle.py": "8a0cd6313c761828c6acf5b483edbf96f72b043d307ae60bd20dc506fb8edf8a",
+    "verify_npc_lifecycle_rules.py": "c9796858c3569a75b8673c05e4050e28d0be393ebecb01afe95236eb2aa5547f"
+  },
+  "dependencies": {
+    "npc_interaction.py": "26fb6862a240ee42bcd57e2f18343a836ee2fa917b337b54d60e6978ddbeaf86",
+    "world_npcs.py": "177f55e34168229665586f9fef6ddee3fcdeef17c3c47fde716ad7353ac7d1c4",
+    "design/npc-interaction-v2.json": "d0f4081008982314f2b224b28cfe8d6c32701bc2835f11b063180c066d0951e1"
+  },
+  "handoff": "NPC_LIFECYCLE_INTEGRATION.md#严格启动配置闭包"
+}

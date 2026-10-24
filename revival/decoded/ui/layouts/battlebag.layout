@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="BattleBag/MainWindow">
+    <Property Name="Font" Value="simhei-12" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="Biaoqian.ogg" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.324375,0},{0.231667,0},{0.324375,281},{0.231667,322}}" />
+    <Window Type="TaharezLook/StaticText" Name="BattleBag/DefaultText">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="当前默认物品:无" />
+      <Property Name="HorzExtent" Value="96" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0,20},{0,272.067},{0,259},{0,299.067}}" />
+    </Window>
+    <Window Type="TaharezLook/TabControl" Name="BattleBag/TC">
+      <Property Name="TabHeight" Value="{0,18}" />
+      <Property Name="TabPanePosition" Value="Top" />
+      <Property Name="UnifiedAreaRect" Value="{{0,16},{0,42},{0,262},{0,304}}" />
+      <Window Type="TaharezLook/ItemTable" Name="BattleBag/ItemTable">
+        <Property Name="Text" Value="战斗道具" />
+        <Property Name="ColCount" Value="5" />
+        <Property Name="RowCount" Value="5" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0203252,0},{0.0163934,0},{0.0203252,238},{0.0163934,238}}" />
+      </Window>
+      <Window Type="TaharezLook/ItemTable" Name="BattleBag/QuestItem">
+        <Property Name="Text" Value="任务道具" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="ColCount" Value="0" />
+        <Property Name="RowCount" Value="0" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,3},{0,243},{0,241}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="BattleBag/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,214},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,214},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,32.3179},{0,11},{0,246.318},{0,38}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="BattleBag/Title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="道具选择" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,1},{0,144},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

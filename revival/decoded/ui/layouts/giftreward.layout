@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="Giftreward">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="Foot_Leaves_HeelsRun10.ogg" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.271294,0},{0.0838313,0},{0.05,527},{0.189167,265}}" />
+    <Property Name="CloseSoundResource" Value="Button.ogg" />
+    <Window Type="TaharezLook/StaticImage" Name="Giftreward/Melt/Right/item">
+      <Property Name="Image" Value="set:MainControl3 image:LuckyWheelMiddleBox" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,66},{0,68}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,66},{0,68}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,258},{0.137195,0},{0.925714,0},{0.103175,79}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/ItemCell" Name="Giftreward/Melt/Right/item/cell">
+        <Property Name="UnifiedAreaRect" Value="{{0.136364,0},{0.147059,0},{0.136364,48},{0.147059,48}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="Giftreward/MoneyBack">
+      <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0.185714,0},{0.265244,0},{0.188406,117},{0.326219,0}}" />
+      <Window Type="TaharezLook/StaticImage" Name="Giftreward/MoneyBack/Money">
+        <Property Name="Image" Value="set:MainControl image:Xianjin" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.00847458,0},{-0.05,0},{0,20},{0,18}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Editbox" Name="Giftreward/moneynum">
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0,20},{0,0},{0,116},{0,20}}" />
+        <Property Name="BackGroundEnable" Value="False" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="Giftreward/zengsong">
+      <Property Name="Text" Value="赠送：" />
+      <Property Name="HorzExtent" Value="39" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,24},{0.0497545,34},{0.00067265,63},{-0.00207825,76}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="Giftreward/Sender">
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0.182857,0},{0.0497545,38},{0.705714,0},{-0.00525285,75}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="Giftreward/name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="礼盒赠送" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="68" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,242},{0.0365854,0},{0.05,330},{0.05,18}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="Giftreward/Send">
+      <Property Name="Text" Value="赠送" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.377143,0},{0.841463,0},{0.671429,0},{0.914634,0}}" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/RichEditbox" Name="Giftreward/zengyan">
+      <Property Name="Tooltip" Value="请输入赠言" />
+      <Property Name="LineSpace" Value="1" />
+      <Property Name="BlinkCaret" Value="True" />
+      <Property Name="MaxTextLength" Value="2147483647" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0685714,0},{0.375,0},{0.925714,0},{0.807927,0}}" />
+      <Property Name="BlinkCaretTimeout" Value="0.5" />
+      <Property Name="TextParsingEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="Giftreward/yinliang">
+      <Property Name="Text" Value="银两：" />
+      <Property Name="HorzExtent" Value="39" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,24},{0.265244,0},{-0.0246896,72},{0.169847,51}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="Giftreward/friend">
+      <Property Name="Text" Value="好友列表" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.54,0},{0.262195,0},{0.711429,0},{0.335366,0}}" />
+    </Window>
+  </Window>
+</GUILayout>

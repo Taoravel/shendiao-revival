@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/SmallFrameWindow" Name="SplitItemDlg">
+    <Property Name="Font" Value="simhei-12" />
+    <Property Name="AlwaysOnTop" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,280.675},{0,242.545},{0,483.675},{0,394.545}}" />
+    <Window Type="TaharezLook/Button" Name="SplitItemDlg/OK">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="确   定" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0,34.2229},{0,115},{0,99.2229},{0,139}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="SplitItemDlg/cancel">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="取   消" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0,102.994},{0,115},{0,167.994},{0,139}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="SplitItemDlg/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,162},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,162},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.4,0},{0.0675111,0},{1.19803,0},{0.245143,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="SplitItemDlg/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="拆分物品" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,60},{0,1},{0,148},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="SplitItemDlg/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0,15},{0,40},{0.916256,0},{0,112}}" />
+      <Window Type="TaharezLook/StaticText" Name="SplitItemDlg/text">
+        <Property Name="Text" Value="请输入数量" />
+        <Property Name="HorzExtent" Value="65" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.28655,0},{0.05,7.105},{0.305085,68.4938},{0.05,29.105}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+      <Window Type="TaharezLook/Spinner" Name="SplitItemDlg/numEdit">
+        <Property Name="StepSize" Value="1" />
+        <Property Name="CurrentValue" Value="0" />
+        <Property Name="MaximumValue" Value="32767" />
+        <Property Name="MinimumValue" Value="-32768" />
+        <Property Name="UnifiedAreaRect" Value="{{0.213451,0},{0.05,34.105},{0.206215,108.212},{0.05,56.105}}" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="ContactCharacterChatOutWnd">
+    <Property Name="AlwaysOnTop" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.01625,0},{0.045,0},{0,204},{0,315}}" />
+    <Window Type="TaharezLook/CommonBox" Name="ContactCharacterChatOutWnd/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0,2},{0,192},{0,283}}" />
+      <Window Type="TaharezLook/StaticImage" Name="ContactCharacterChatOutWnd/BackImage">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,14},{0,28},{0,176},{0,264}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="ContactCharacterChatOutWnd/id">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="等级:" />
+          <Property Name="HorzExtent" Value="30" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,3},{0,22},{0,35},{0,42}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ContactCharacterChatOutWnd/name">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="名称:" />
+          <Property Name="HorzExtent" Value="30" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,3},{0,1},{0,35},{0,21}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ContactCharacterChatOutWnd/Name">
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,33},{0,1},{0,146},{0,21}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ContactCharacterChatOutWnd/ID">
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,33},{0,22},{0,96},{0,42}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ContactCharacterChatOutWnd/View">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="查看装备" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,3},{0,91},{0,80},{0,115}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ContactCharacterChatOutWnd/FamilyInvite">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="家族邀请" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,3},{0,139},{0,80},{0,163}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ContactCharacterChatOutWnd/Friend">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="加为好友" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,3},{0,163},{0,80},{0,187}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ContactCharacterChatOutWnd/Chat">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="开始聊天" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,81},{0,139},{0,158},{0,163}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ContactCharacterChatOutWnd/Jointeam">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="申请加队" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,3},{0,187},{0,80},{0,211}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ContactCharacterChatOutWnd/Invite">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="拜他为师" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,81},{0,163},{0,158},{0,187}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ContactCharacterChatOutWnd/Info">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="玩家信息" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,3},{0.05,199},{0,80},{0.05,223}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ContactCharacterChatOutWnd/Copyname">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="复制名称" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,81},{0,187},{0,158},{0,211}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ContactCharacterChatOutWnd/Given">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="给   予" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,3},{0,67},{0,80},{0,91}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ContactCharacterChatOutWnd/Trade">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="交   易" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,81},{0,67},{0,158},{0,91}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ContactCharacterChatOutWnd/Shield">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="查看宠物" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,81},{0,91},{0,158},{0,115}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ContactCharacterChatOutWnd/Ride">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="查看坐骑" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,3},{0,115},{0,80},{0,139}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ContactCharacterChatOutWnd/Report">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="举      报" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,81},{0.05,199},{0,158},{0.05,223}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ContactCharacterChatOutWnd/Child">
+          <Property Name="Text" Value="查看子女" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,81},{0,115},{0,158},{0,139}}" />
+        </Window>
+        <Window Type="TaharezLook/LittleButton" Name="ContactCharacterChatOutWnd/BackImage/WaiGua">
+          <Property Name="Text" Value="举报外挂" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.518519,0},{0.172882,0},{0.950617,0},{0.274577,0}}" />
+          <Property Name="NormalTextColour" Value="FFFFFF33" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="ContactCharacterChatOutWnd/BackImage/WaiGua1">
+          <Property Name="Text" Value="PK" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="HoverImage" Value="set:MainControl17 image:DragHover" />
+          <Property Name="NormalImage" Value="set:MainControl17 image:DragNormal" />
+          <Property Name="PushedImage" Value="set:MainControl17 image:DragPushed" />
+          <Property Name="DisabledImage" Value="set:MainControl17 image:DragDisabled" />
+          <Property Name="UnifiedAreaRect" Value="{{0,8},{0,42},{0,77},{0,65}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="ContactCharacterChatOutWnd/Back/Title">
+        <Property Name="Image" Value="set:component image:BoxLightLeft" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,90},{0,11}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,90},{0,11}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.09375,0},{0.0462633,0},{0.5625,0},{0.0854093,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="ContactCharacterChatOutWnd/Back/Title1">
+        <Property Name="Image" Value="set:component image:BoxLightRight" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,57},{0,11}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,57},{0,11}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.5625,0},{0.0462633,0},{0.859375,0},{0.0854093,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="ContactCharacterChatOutWnd/BackImage/CloseBtn">
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:component image:CloseButtonHover" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="NormalImage" Value="set:component image:CloseButtonNormal" />
+        <Property Name="PushedImage" Value="set:component image:CloseButtonPushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,21},{0,19}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,21},{0,19}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,147},{0.0498221,0},{0.05,168},{0.05,19}}" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

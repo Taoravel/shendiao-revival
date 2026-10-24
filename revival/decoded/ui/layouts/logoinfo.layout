@@ -1,0 +1,388 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="LogoInfo">
+    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,150},{0,71}}" />
+    <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    <Window Type="TaharezLook/StaticImage" Name="LogoInfo/backImage">
+      <Property Name="Image" Value="set:MainControl image:MapBack" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="LeftAligned" />
+      <Property Name="UnifiedMaxSize" Value="{{0,197},{0,75}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,197},{0,75}}" />
+      <Property Name="VertFormatting" Value="CentreAligned" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{-4.65661e-009,0},{-0.0704225,0},{-4.65661e-009,172},{0,229}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticText" Name="LogoInfo/mapname">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="桃花迷阵一层二" />
+        <Property Name="Tooltip" Value="你所在的地图" />
+        <Property Name="HorzExtent" Value="91" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFFBB8 tr:FFFFFBB8 bl:FFFFC000 br:FFFFC000" />
+        <Property Name="BorderColour" Value="FF4F2700" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,44.9633},{0.0893106,0},{0,143.963},{0.222644,10}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="LogoInfo/coordinate">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="100,100" />
+        <Property Name="Tooltip" Value="你所在的坐标，点击可粘贴到聊天输入框" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFFBB8 tr:FFFFFBB8 bl:FFFFC000 br:FFFFC000" />
+        <Property Name="BorderColour" Value="FF4F2700" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,53.923},{0,23.9434},{0,110.923},{0,43.9434}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="LogoInfo/time">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="子时" />
+        <Property Name="Tooltip" Value="当前时辰" />
+        <Property Name="HorzExtent" Value="26" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFFBB8 tr:FFFFFBB8 bl:FFFFC000 br:FFFFC000" />
+        <Property Name="BorderColour" Value="FF4F2700" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,140.288},{0.0893107,0},{0,173.288},{0.0759773,21}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="LogoInfo/backImage/FBInfoBtn">
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0,30.2101},{0,69.1406},{0,30.2101},{0,69.1406}}" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="LogoInfo/FindFriend">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="友" />
+        <Property Name="Tooltip" Value="点击打开征友界面" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl image:ActivityHover" />
+        <Property Name="NormalImage" Value="set:MainControl image:ActivityNormal" />
+        <Property Name="PushedImage" Value="set:MainControl image:ActivityPushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,32},{0,35}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,32},{0,35}}" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.407986,0},{0.493333,0},{-0.0234856,107},{0.546667,45}}" />
+        <Property Name="NormalTextColour" Value="tl:FFFFFBB8 tr:FFFFFBB8 bl:FFFFC000 br:FFFFC000" />
+        <Property Name="ButtonBorderColour" Value="FF4F2700" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="LogoInfo/Activity">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="历" />
+        <Property Name="Tooltip" Value="点击打开活动日历界面" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl image:ActivityHover" />
+        <Property Name="NormalImage" Value="set:MainControl image:ActivityNormal" />
+        <Property Name="PushedImage" Value="set:MainControl image:ActivityPushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,32},{0,35}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,32},{0,35}}" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.2,67.036},{0.497373,0},{0.2,89.036},{0.497374,24}}" />
+        <Property Name="NormalTextColour" Value="tl:FFFFFBB8 tr:FFFFFBB8 bl:FFFFC000 br:FFFFC000" />
+        <Property Name="ButtonBorderColour" Value="FF4F2700" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="LogoInfo/CollectionButton">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="集" />
+        <Property Name="Tooltip" Value="点击打开收集类按钮" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl image:ActivityHover" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="NormalImage" Value="set:MainControl image:ActivityNormal" />
+        <Property Name="PushedImage" Value="set:MainControl image:ActivityPushed" />
+        <Property Name="DisabledImage" Value="set:MainControl23 image:ExitDisable" />
+        <Property Name="UnifiedMaxSize" Value="{{0,32},{0,35}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,32},{0,35}}" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.00129582,0},{0.497373,0},{0.163975,0},{0.604405,24}}" />
+        <Property Name="NormalTextColour" Value="tl:FFFFFBB8 tr:FFFFFBB8 bl:FFFFC000 br:FFFFC000" />
+        <Property Name="ButtonBorderColour" Value="FF4F2700" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="LogoInfo/coordinate1">
+        <Property Name="Text" Value="一二三四" />
+        <Property Name="Tooltip" Value="你所在的坐标，点击可粘贴到聊天输入框" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFFBB8 tr:FFFFFBB8 bl:FFFFC000 br:FFFFC000" />
+        <Property Name="BorderColour" Value="FF4F2700" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,100.923},{0.05,20.9434},{0.05,156.923},{0.05,40.9434}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="LogoInfo/backImage/Music">
+        <Property Name="Tooltip" Value="点击收听“四海茶馆在线直播”" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl2 image:MusicHover" />
+        <Property Name="NormalImage" Value="set:MainControl2 image:MusicNormal" />
+        <Property Name="PushedImage" Value="set:MainControl2 image:MusicPushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,20},{0,21}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,20},{0,21}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.86193,0},{0.226666,0},{1.00914,0},{0.573335,0}}" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="LogoInfo/Fashion">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="新" />
+        <Property Name="Tooltip" Value="点击打开时装商城" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl1 image:NewHover" />
+        <Property Name="NormalImage" Value="set:MainControl1 image:NewNormal" />
+        <Property Name="PushedImage" Value="set:MainControl1 image:NewPushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,32},{0,35}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,32},{0,35}}" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.25,83.036},{0.49404,0},{0.25,105.036},{0.547374,20}}" />
+        <Property Name="NormalTextColour" Value="tl:FFFFFBB8 tr:FFFFFBB8 bl:FFFFC000 br:FFFFC000" />
+        <Property Name="ButtonBorderColour" Value="FF4F2700" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="LogoInfo/backImage/enjoy">
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl38 image:diaoerhover" />
+        <Property Name="NormalImage" Value="set:MainControl38 image:diaoernormal" />
+        <Property Name="PushedImage" Value="set:MainControl38 image:diaoerpushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,32},{0,32}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,32},{0,32}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0456853,0},{0.0800003,0},{0.284263,0},{0.48,0}}" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="LogoInfo/Shop">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="商" />
+        <Property Name="Tooltip" Value="点击打开元宝商城" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl1 image:ShopHover" />
+        <Property Name="NormalImage" Value="set:MainControl1 image:ShopNormal" />
+        <Property Name="PushedImage" Value="set:MainControl1 image:ShopPushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,32},{0,35}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,32},{0,35}}" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.3,99.036},{0.493333,0},{0.3,121.036},{0.6,16}}" />
+        <Property Name="NormalTextColour" Value="tl:FFFFFBB8 tr:FFFFFBB8 bl:FFFFC000 br:FFFFC000" />
+        <Property Name="ButtonBorderColour" Value="FF4F2700" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="LogoInfo/RankingList">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="榜" />
+        <Property Name="Tooltip" Value="点击打开排行榜单" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl image:ActivityHover" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="NormalImage" Value="set:MainControl image:ActivityNormal" />
+        <Property Name="PushedImage" Value="set:MainControl image:ActivityPushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,32},{0,35}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,32},{0,35}}" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,17},{0.493333,0},{0.05,49},{0.497374,35}}" />
+        <Property Name="NormalTextColour" Value="tl:FFFFFBB8 tr:FFFFFBB8 bl:FFFFC000 br:FFFFC000" />
+        <Property Name="ButtonBorderColour" Value="FF4F2700" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="LogoInfo/mimimapBtn">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="图" />
+        <Property Name="Tooltip" Value="点击打开当前地图" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl image:ActivityHover" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="NormalImage" Value="set:MainControl image:ActivityNormal" />
+        <Property Name="PushedImage" Value="set:MainControl image:ActivityPushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,32},{0,35}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,32},{0,35}}" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,53},{0.493333,0},{0,85},{0.497374,35}}" />
+        <Property Name="NormalTextColour" Value="tl:FFFFFBB8 tr:FFFFFBB8 bl:FFFFC000 br:FFFFC000" />
+        <Property Name="ButtonBorderColour" Value="FF4F2700" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="LogoInfo/17y">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Tooltip" Value="点击打开官方论坛" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl30 image:17Hover" />
+        <Property Name="NormalImage" Value="set:MainControl30 image:17Normaltga" />
+        <Property Name="PushedImage" Value="set:MainControl30 image:17Pushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,32},{0,35}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,32},{0,35}}" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.35,115.036},{0.493333,0},{0.35,137.036},{0.64,13}}" />
+        <Property Name="NormalTextColour" Value="tl:FFFFFBB8 tr:FFFFFBB8 bl:FFFFC000 br:FFFFC000" />
+        <Property Name="ButtonBorderColour" Value="FF4F2700" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="LogoInfo/backImage/GT">
+        <Property Name="Tooltip" Value="点击可登录GT" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl27 image:GTHover" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="NormalImage" Value="set:MainControl27 image:GTNormal" />
+        <Property Name="PushedImage" Value="set:MainControl27 image:GTPushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,24},{0,24}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,24},{0,24}}" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.959391,0},{0.213334,0},{1.06092,0},{0.493334,0}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="LogoInfo/MingshengButton">
+      <Property Name="Text" Value="名" />
+      <Property Name="Tooltip" Value="点击打开名胜界面" />
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:MainControl image:ActivityHover" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="NormalImage" Value="set:MainControl image:ActivityNormal" />
+      <Property Name="PushedImage" Value="set:MainControl image:ActivityPushed" />
+      <Property Name="DisabledImage" Value="set:MainControl23 image:ExitDisable" />
+      <Property Name="UnifiedMaxSize" Value="{{0,32},{0,35}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,32},{0,35}}" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{-0.0133333,0},{0,60},{0,31},{0,93}}" />
+      <Property Name="NormalTextColour" Value="tl:FFFFFBB8 tr:FFFFFBB8 bl:FFFFC000 br:FFFFC000" />
+      <Property Name="ButtonBorderColour" Value="FF4F2700" />
+      <Property Name="ButtonBorderEnable" Value="True" />
+      <Property Name="ButtonDefaultBorderEnable" Value="False" />
+      <Property Name="ButtonDefaultColourEnable" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="LogoInfo/CangbaogeButton">
+      <Property Name="Text" Value="宝" />
+      <Property Name="Tooltip" Value="点击打开藏宝阁界面" />
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:MainControl image:ActivityHover" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="NormalImage" Value="set:MainControl image:ActivityNormal" />
+      <Property Name="PushedImage" Value="set:MainControl image:ActivityPushed" />
+      <Property Name="DisabledImage" Value="set:MainControl23 image:ExitDisable" />
+      <Property Name="UnifiedMaxSize" Value="{{0,32},{0,35}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,32},{0,35}}" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{-0.0133333,0},{0,90},{0,31},{0,123}}" />
+      <Property Name="NormalTextColour" Value="tl:FFFFFBB8 tr:FFFFFBB8 bl:FFFFC000 br:FFFFC000" />
+      <Property Name="ButtonBorderColour" Value="FF4F2700" />
+      <Property Name="ButtonBorderEnable" Value="True" />
+      <Property Name="ButtonDefaultBorderEnable" Value="False" />
+      <Property Name="ButtonDefaultColourEnable" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="LogoInfo/AccessoriesButton">
+      <Property Name="Text" Value="饰" />
+      <Property Name="Tooltip" Value="点击打开配饰收藏界面" />
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:MainControl image:ActivityHover" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="NormalImage" Value="set:MainControl image:ActivityNormal" />
+      <Property Name="PushedImage" Value="set:MainControl image:ActivityPushed" />
+      <Property Name="DisabledImage" Value="set:MainControl23 image:ExitDisable" />
+      <Property Name="UnifiedMaxSize" Value="{{0,32},{0,35}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,32},{0,35}}" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{-0.0133333,0},{0,119},{0,31},{0,152}}" />
+      <Property Name="NormalTextColour" Value="tl:FFFFFBB8 tr:FFFFFBB8 bl:FFFFC000 br:FFFFC000" />
+      <Property Name="ButtonBorderColour" Value="FF4F2700" />
+      <Property Name="ButtonBorderEnable" Value="True" />
+      <Property Name="ButtonDefaultBorderEnable" Value="False" />
+      <Property Name="ButtonDefaultColourEnable" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="LogoInfo/MedalButton">
+      <Property Name="Text" Value="章" />
+      <Property Name="Visible" Value="False" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="HoverImage" Value="set:MainControl image:MiniMapHover" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="NormalImage" Value="set:MainControl image:MiniMapNormal" />
+      <Property Name="PushedImage" Value="set:MainControl image:MiniMapPushed" />
+      <Property Name="DisabledImage" Value="set:MainControl23 image:ExitDisable" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.031333,0},{1.60282,0},{0.218,0},{1.38696,43.326}}" />
+      <Property Name="NormalTextColour" Value="tl:FFFFFBB8 tr:FFFFFBB8 bl:FFFFC000 br:FFFFC000" />
+      <Property Name="ButtonBorderColour" Value="FF4F2700" />
+      <Property Name="ButtonBorderEnable" Value="True" />
+      <Property Name="ButtonDefaultBorderEnable" Value="False" />
+      <Property Name="ButtonDefaultColourEnable" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="LogoInfo/ActiveEffect">
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{-0.0672417,0},{1.2711,0},{1.07664,0},{2.42327,0}}" />
+    </Window>
+    <Window Type="TaharezLook/JumpProgressBar" Name="LogoInfo/Jump">
+      <Property Name="StepSize" Value="0.01" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="FrameEnable" Value="True" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="CurrentProgress" Value="0.8" />
+      <Property Name="UnifiedAreaRect" Value="{{1.42666,0},{0.133804,0},{1.25999,61},{0.00704291,60}}" />
+      <Property Name="VerticalProgress" Value="True" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="LogoInfo/SupermanButton">
+      <Property Name="Text" Value="异" />
+      <Property Name="Tooltip" Value="点击打开异士录界面" />
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:MainControl image:ActivityHover" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="NormalImage" Value="set:MainControl image:ActivityNormal" />
+      <Property Name="PushedImage" Value="set:MainControl image:ActivityPushed" />
+      <Property Name="DisabledImage" Value="set:MainControl23 image:ExitDisable" />
+      <Property Name="UnifiedMaxSize" Value="{{0,32},{0,35}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,32},{0,35}}" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{-0.0133333,0},{0.05,144},{0.0466667,24},{0.05,177}}" />
+      <Property Name="NormalTextColour" Value="tl:FFFFFBB8 tr:FFFFFBB8 bl:FFFFC000 br:FFFFC000" />
+      <Property Name="ButtonBorderColour" Value="FF4F2700" />
+      <Property Name="ButtonBorderEnable" Value="True" />
+      <Property Name="ButtonDefaultBorderEnable" Value="False" />
+      <Property Name="ButtonDefaultColourEnable" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="LogoInfo/FlowerBtn">
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:MainControl25 image:FlowerHover" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="NormalImage" Value="set:MainControl25 image:FlowerNormal" />
+      <Property Name="PushedImage" Value="set:MainControl25 image:FlowerPushed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,66},{0,47}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,66},{0,47}}" />
+      <Property Name="UnifiedAreaRect" Value="{{-0.566667,0},{-0.056338,0},{-0.126666,0},{0.605634,0}}" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="LogoInfo/Tupo">
+      <Property Name="Tooltip" Value="点击打开突破界面" />
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:MainControl36 image:tupoh" />
+      <Property Name="NormalImage" Value="set:MainControl36 image:tupon" />
+      <Property Name="PushedImage" Value="set:MainControl36 image:tupop" />
+      <Property Name="UnifiedMaxSize" Value="{{0,58},{0,58}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,58},{0,58}}" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,203},{0.0595779,0},{0.05,235},{0.459577,0}}" />
+    </Window>
+  </Window>
+</GUILayout>

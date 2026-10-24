@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="GUIScheme" type="SchemeType" />
+  <xs:complexType name="SchemeType">
+    <xs:choice minOccurs="0" maxOccurs="unbounded">
+      <xs:element name="Imageset" type="NamedDataType" />
+      <xs:element name="ImagesetFromImage" type="NamedDataType" />
+      <xs:element name="Font" type="NamedDataType" />
+      <xs:element name="LookNFeel" type="FileDataType" />
+      <xs:element name="WindowSet" type="WindowSetType" />
+      <xs:element name="WindowRendererSet" type="WindowRendererSetType" />
+      <xs:element name="WindowAlias" type="WindowAliasType" />
+      <xs:element name="FalagardMapping" type="FalagardMapType" />
+    </xs:choice>
+    <xs:attribute name="Name" type="xsd:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="WindowSetType">
+    <xs:sequence>
+      <xs:element name="WindowFactory" type="WindowFactoryType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="Filename" type="xsd:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="WindowRendererSetType">
+    <xs:sequence>
+      <xs:element name="WindowRendererFactory" type="WindowRendererFactoryType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="Filename" type="xsd:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="FileDataType">
+    <xs:attribute name="Filename" type="xsd:string" use="required" />
+    <xs:attribute name="ResourceGroup" type="xsd:string" use="optional" default="" />
+  </xs:complexType>
+  <xs:complexType name="NamedDataType">
+    <xs:attribute name="Name" type="xsd:string" use="optional" default="" />
+    <xs:attribute name="Filename" type="xsd:string" use="required" />
+    <xs:attribute name="ResourceGroup" type="xsd:string" use="optional" default="" />
+  </xs:complexType>
+  <xs:complexType name="WindowFactoryType">
+    <xs:attribute name="Name" type="xsd:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="WindowRendererFactoryType">
+    <xs:attribute name="Name" type="xsd:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="WindowAliasType">
+    <xs:attribute name="Alias" type="xsd:string" use="required" />
+    <xs:attribute name="Target" type="xsd:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="FalagardMapType">
+    <xs:attribute name="WindowType" type="xsd:string" use="required" />
+    <xs:attribute name="TargetType" type="xsd:string" use="required" />
+    <xs:attribute name="Renderer" type="xsd:string" use="required" />
+    <xs:attribute name="LookNFeel" type="xsd:string" use="required" />
+  </xs:complexType>
+</xs:schema>

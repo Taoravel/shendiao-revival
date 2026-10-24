@@ -1,0 +1,51 @@
+{
+  "revision": "2026-10-23.master-card.1",
+  "provenance": "designed_workflow_using_client_verified_choices",
+  "scope": "the43 original first-school-master tasks after the authorized intro chapter",
+  "research": "evidence/NEWBIE_FIRST_MASTER_RESEARCH.md",
+  "catalog": "catalogs/newbie-master-cards.json",
+  "original_values": "43 route/task/NPC/card associations, two legal item IDs and quantity1 each; 49001..49010 are direct equipment items",
+  "eligibility": "completed explicit newbie chapter and its frozen role-specific successor active; matching school/map/NPC instance and authoritative interaction distance; current lease and connection generation",
+  "dialogue": {
+    "opening": "validated NPC visit authorizes the original local dialogue via active bean/state3 and SVisitNpc quest vector",
+    "commit": "matching original Start-tail CCommitScenarioQuest0xc4a44 with exact task/NPC and option0, validated current conversation ticket and role fences, persists choice authorization, then emits SPlayCardEffect0xc001c; task remains active and no weapon is granted yet",
+    "dialogue_end": "CQuestDialogEnd0xc4a52 belongs to original phase3 Finish cleanup; these Start-only first-master tasks end in phase2 and do not send it; it cannot authorize this card",
+    "commit_required_before_dialogue_end": false,
+    "timing_provenance": "client_verified Start phase2 produces only CCommit; server card authorization on that valid commit is designed; original server dispatch timing is unknown",
+    "cg_end": "CEndPlayCG is not accepted for these card-bearing type10 tasks"
+  },
+  "choice": {
+    "request": "CGetCardItem0xc041f exact8-byte BE i32 effectID plus BE i32 itemID; no client quantity, task ID or nonce",
+    "authorization": "one frozen choice per role/source task; expected card and the two original item/quantity pairs; current epoch/generation/location version; do not derive a task or reward solely from request fields",
+    "timeout_ms": 300000,
+    "timeout_provenance": "designed session authorization window, not a movie timer",
+    "grant": "exactly the selected original quantity, no other weapon, no automatic equip",
+    "binding": 1,
+    "binding_provenance": "designed bound starter equipment; card table does not define instance binding",
+    "equipment_instance": "reuse the inventory-owned ordinary instance factory and equipment-condition-v1 generation policy; retain raw baseEffect; item name colour is not an instance quality/score",
+    "atomic_commit": "chosen item instance and stable choice receipt, source type10 completion and common reward receipts, original type59 successor activation in one fenced role transaction",
+    "retry": "same committed choice acknowledges current state without another item; different item for the committed source task rejects; do not allow the second button to grant a second weapon",
+    "full_bag_or_fault": "roll back item/task/choice changes together; task stays active and choice recoverable",
+    "disconnect_or_expiry": "retain durable pending choice without granting/completing; a new valid visit to the same master reauthorizes original choices under the new session, never reset the task or silently select a default"
+  },
+  "equipment_objective": {
+    "tasks": [100188,100288,100388,100488,100588,100688,100788,100888,100988,103288],
+    "provenance": "designed exact-received-instance predicate; original objective text says equip the master's weapon but target ID is zero",
+    "predicate": "asset owner confirms the same still-owned instance from the committed choice is actually equipped in its original weapon slot0; revalidate the current asset snapshot/revision in the caller transaction",
+    "event": "immutable role/item-key/template/slot/revision result of the public inventory equipment transaction; client CEquipement intent alone is insufficient",
+    "atomic_commit": "equip write, supported type59 completion and common receipts, and activation of its unique original cart-driver successor share the role transaction",
+    "recovery": "reconcile an already-equipped selected instance against the active type59 under the same lease/transaction; complete once, preserve current assets and later tasks",
+    "non_evidence": "no completion from item receipt, arbitrary equipment, NPC dialogue, targetID0, or virtual NPC10390; that link opens the client bag UI"
+  },
+  "acceptance": [
+    "all43 task/card combinations load with two role-compatible original choices",
+    "wrong NPC, stale session/location, unsolicited choice and arbitrary item refuse",
+    "card choice plus task/next/asset receipt commit once and roll back together",
+    "same choice replay is harmless, second-choice replay refuses, bag-full remains recoverable",
+    "actual selected-instance equip alone satisfies type59, retry/reconnect cannot duplicate rewards",
+    "native connection message order and current bag/equipment refresh decode; actual GUI is separately authorized"
+  ],
+  "implementation_status": "decision_only; begin_after_intro_chapter_delivery",
+  "native_gui_verified": false,
+  "live_server_changed": false
+}

@@ -1,0 +1,25 @@
+# X无确认窗：真实入场初始化修复
+
+2026-10-23，原始集成窗口。用户明确选择“完全没有反应，也没有确认窗口”；无需用户重新打开游戏来做本批定位，助手未启动客户端、GUI或实际战斗。
+
+## 失败反馈与已证前提
+
+当前33072的npc-20261023T102110Z发布已有CRoleOffline/SRoleOffline路由，不能将问题误报成旧修复没有部署；原有Peer生命周期绿只覆盖确认按钮之后。原生重新核验见ROLE_EXIT_NATIVE_REAUDIT、ROLE_EXIT_UI_DECISION。原reset将退出模式置-1，此时worldstate2非battle的原WndProc会消费WM_CLOSE且不创建确认窗；只有SFirstDayExitGame处理后才进入普通/首日窗。SRoleOffline调用的是DefWindowProcW，早报PostMessage说法已更正。
+
+verify_exit_initialization_runtime.py首先在真实Peer入场回复缺c0039时准确红：World initialization never enables the original exit confirmation gate。原x86已独立证明缺初始化时X无窗。未采样用户客户端全局变量，源码前提的可复现性不等于已现场唯一确诊。
+
+## 最小实现与验证
+
+role_protocol.load_exit_ui_message仅启动读取design/role-exit-ui-v1.json，核对受支持revision/type及严格int -1，返回immutable逻辑消息。GameRuntime启动保存该tuple；每次合法AFTER_ENTER_WORLD的spawn回复在intro前发送。无热路径读取、角色/资源/任务/费用变化；0会进入首日退出窗，因此当前Adapter明确用ffffffff普通窗，未恢复首日业务。
+
+真实加密Peer解出的实际消息type/body与原native ctor/marshal完整字节核对，然后由原unmarshal/Process/WndProc从reset无窗进入ordinary_exit_dialog端点；不是另跑一个硬编码case当投递证明。旧角色、新角色待intro、重连、同连接返回选角再入场共四次都通过，每次各一条通知。原c0011/c0031角色释放仍通过，原生命周期删除/返选角/重登/位置与租约回归绿。
+
+候选master-ready-exit-20261023T110056Z基于实际npc冻结版本，仅叠本批role_protocol、game_runtime初始化、正式JSON，以及任务窗口经用户明确授权的师父/车夫ready两Module。game_runtime按冻结基准程序化加三处退出初始化，未复制后来workspace的close/battle_step改动。候选5文件差异和每项哈希见其candidate.json/ready-changes.diff/manifest.json；1423文件包含基准原manifest未跟踪但运行必读的evidence静态输入。新版不包含本批care、新创建许可、v2/新combat或血手印生产增量。
+
+候选代码与配置复制到独立检查overlay，原有bean处理、43路线两选项/10车夫、自然首师父Owner、退出实际包→原WndProc以及生命周期检查通过；实际生产Module路径均确认来自候选，输出仅写checks，source哈希不变。主策划独立候选Standards/Spec均0项，1423文件与固定5文件哈希复核一致。
+
+2026-10-23 19:11（Asia/Shanghai）已按用户退出修复及任务窗口明确更新测试服授权部署，实际PID29268，监听127.0.0.1:28993，固定master-ready-exit-20261023T110056Z。先核精确33072命令行/监听且无Established客户端，停止后保存accounts-at-stop.sqlite3一致性备份，隐藏启动新进程。新真实Challenge601/未认证4字节heartbeat通过，startup Python及1423输入哈希匹配；quick_check=ok，停机备份全部106张应用表及每行哈希与启动后真实库一致，无删角、任务或角色改写。完整结果见master-ready-exit-deployment-verification.json及latest-deployment-verification.json。没有真人登录/GUI或实际战斗；未把离线端点当作真人画面验收。
+
+随后怪物窗口依据其用户直接部署授权完成wild-20261023T110855Z切换，实际监听PID10076；上述29268是已完成的历史发布，不再是当前进程。本窗口只读复核当前CIM命令行、28993唯一Listen、startup记录，退出role_protocol/JSON与师父/车夫两个Module准确字节hash继承，game_runtime启动冻结消息和入场前置均保留。未另启/恢复旧服。主策划另独立实算1425manifest，并在实际wild源码/配置运行退出四reset纵切绿，见wild-release-root-verification.json及wild-release-exit-owner-root-verification.json；本窗口不把该退出复核外推wild全部玩法或GUI。gateway.pid核对时尚旧，已交本次部署责任方统一更新；今后进程操作仍须核真实listener及准确命令行。
+
+方法：diagnosing-bugs从具体无确认窗反馈重新建立原状态红反馈，并在后续发布切换通知后核实际进程/端口/哈希；tdd沿预先采用的真实Peer/Owner→原native消费Seam实现最小绿；codebase-design保留连接原codec与生命周期状态所有权，用冻结纯消息补入口；writing-for-agents共置原事实、Adapter设计、候选范围和未验现场。助手不要求用户为定位重复开游戏，真人之后自行验收的确认窗和关闭效果仍未验证。

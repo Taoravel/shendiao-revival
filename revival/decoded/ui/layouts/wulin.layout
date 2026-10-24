@@ -1,0 +1,734 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/QuackFrameWindow" Name="Wulin">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.048125,0},{0.0912281,0},{0.119219,680},{0.114167,445}}" />
+    <Window Type="TaharezLook/ImageButton" Name="Wulin/close">
+      <Property Name="Visible" Value="False" />
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:component image:CloseButtonHover" />
+      <Property Name="NormalImage" Value="set:component image:CloseButtonNormal" />
+      <Property Name="PushedImage" Value="set:component image:CloseButtonPressed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,21},{0,19}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,21},{0,19}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0.991859,0},{0.0261438,0},{1.02035,0},{0.0675381,0}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="Wulin/image">
+      <Property Name="Image" Value="set:MainControl31 image:SkillBack" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,737},{0,452}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,737},{0,452}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{0.0108932,0},{1,0},{0.995643,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticImage" Name="Wulin/left">
+        <Property Name="Image" Value="set:MainControl31 image:role" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,320},{0,396}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,320},{0,396}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0312076,0},{0.050885,0},{0.05,306},{0.05,396}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ImageButton" Name="Wulin/left/change">
+          <Property Name="Tooltip" Value="可替换已使用的武林秘籍" />
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl30 image:GeHover" />
+          <Property Name="NormalImage" Value="set:MainControl30 image:GeNormal" />
+          <Property Name="PushedImage" Value="set:MainControl30 image:GePushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,60},{0,50}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,60},{0,50}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,242},{0,24},{0,302},{0,74}}" />
+          <Property Name="ButtonBorderEnable" Value="True" />
+          <Property Name="ButtonDefaultBorderEnable" Value="False" />
+          <Property Name="ButtonDefaultColourEnable" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image2">
+          <Property Name="Image" Value="set:MainControl29 image:SkillNormal" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,108},{0,84},{0,143},{0,119}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image2/back">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.142858,0},{0.114286,0},{0.142857,25},{0.142857,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image2/choose">
+            <Property Name="Image" Value="set:MainControl29 image:SkillChoose" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0285714,0},{0,0},{0.0285714,35},{0,35}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image3">
+          <Property Name="Image" Value="set:MainControl29 image:SkillNormal" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,201},{0,112},{0,236},{0,147}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image3/back">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.171429,0},{0.142857,0},{0.314286,20},{0.257143,21}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image3/choose">
+            <Property Name="Image" Value="set:MainControl29 image:SkillChoose" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0285714,0},{0,0},{0.0285714,35},{0,35}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image4">
+          <Property Name="Image" Value="set:MainControl29 image:SkillNormal" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,70},{0,150},{0,105},{0,185}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image4/back">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.171429,0},{0.142857,0},{0.314286,20},{0.257143,21}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image4/choose">
+            <Property Name="Image" Value="set:MainControl29 image:SkillChoose" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0285714,0},{0,0},{0.0285714,35},{0,35}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image6">
+          <Property Name="Image" Value="set:MainControl29 image:SkillNormal" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,44},{0,242},{0,79},{0,277}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image6/back">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.171429,0},{0.142857,0},{0.314286,20},{0.257143,21}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image6/choose">
+            <Property Name="Image" Value="set:MainControl29 image:SkillChoose" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0285714,0},{0,0},{0.0285714,35},{0,35}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image7">
+          <Property Name="Image" Value="set:MainControl29 image:SkillNormal" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,121},{0,258},{0,156},{0,293}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image7/back">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.142858,0},{0.142857,0},{0.314286,19},{0.257143,21}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image7/choose">
+            <Property Name="Image" Value="set:MainControl29 image:SkillChoose" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0285714,0},{0,0},{0.0285714,35},{0,35}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image8">
+          <Property Name="Image" Value="set:MainControl29 image:SkillNormal" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,256},{0,235},{0,291},{0,270}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image8/back">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.171429,0},{0.142857,0},{0.314286,20},{0.257143,21}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image8/choose">
+            <Property Name="Image" Value="set:MainControl29 image:SkillChoose" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0285714,0},{0,0},{0.0285714,35},{0,35}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image9">
+          <Property Name="Image" Value="set:MainControl29 image:SkillNormal" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,63},{0,338},{0,98},{0,373}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image9/back">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.142858,0},{0.142857,0},{0.314286,19},{0.257143,21}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image9/choose">
+            <Property Name="Image" Value="set:MainControl29 image:SkillChoose" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0285714,0},{0,0},{0.0285714,35},{0,35}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image10">
+          <Property Name="Image" Value="set:MainControl29 image:SkillNormal" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,169},{0,310},{0,204},{0,345}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image10/back">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.171429,0},{0.142857,0},{0.314286,20},{0.257143,21}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image10/choose">
+            <Property Name="Image" Value="set:MainControl29 image:SkillChoose" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0285714,0},{0,0},{0.0285714,35},{0,35}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image5">
+          <Property Name="Image" Value="set:MainControl29 image:SkillNormal" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,164},{0,194},{0,199},{0,229}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image5/back">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.171429,0},{0.142857,0},{0.314286,20},{0.257143,21}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image5/choose">
+            <Property Name="Image" Value="set:MainControl29 image:SkillChoose" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0285714,0},{0,0},{0.0285714,35},{0,35}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image11">
+          <Property Name="Image" Value="set:MainControl29 image:SkillNormal" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,237},{0,349},{0,272},{0,384}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image11/back">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.142858,0},{0.171428,0},{0.314286,19},{0.257143,22}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image11/choose">
+            <Property Name="Image" Value="set:MainControl29 image:SkillChoose" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0285714,0},{0,0},{0.0285714,35},{0,35}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Wulin/left/txt1">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF33FF33 tr:FF33FF33 bl:FF33FF33 br:FF33FF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,180},{0,43},{0,203},{0,61}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Wulin/left/txt2">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF33FF33 tr:FF33FF33 bl:FF33FF33 br:FF33FF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,133},{0,101},{0,156},{0,119}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Wulin/left/txt3">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF33FF33 tr:FF33FF33 bl:FF33FF33 br:FF33FF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,228},{0,128},{0,251},{0,146}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Wulin/left/txt4">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF33FF33 tr:FF33FF33 bl:FF33FF33 br:FF33FF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,96},{0,167},{0,119},{0,185}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Wulin/left/txt5">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF33FF33 tr:FF33FF33 bl:FF33FF33 br:FF33FF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,191},{0,211},{0,214},{0,229}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Wulin/left/txt6">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF33FF33 tr:FF33FF33 bl:FF33FF33 br:FF33FF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,70},{0,259},{0,93},{0,277}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Wulin/left/txt7">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF33FF33 tr:FF33FF33 bl:FF33FF33 br:FF33FF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,146},{0,274},{0,169},{0,292}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Wulin/left/txt8">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF33FF33 tr:FF33FF33 bl:FF33FF33 br:FF33FF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,282},{0,252},{0,305},{0,270}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Wulin/left/txt9">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF33FF33 tr:FF33FF33 bl:FF33FF33 br:FF33FF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,88},{0,354},{0,111},{0,372}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Wulin/left/txt10">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF33FF33 tr:FF33FF33 bl:FF33FF33 br:FF33FF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,195},{0,326},{0,218},{0,344}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Wulin/left/txt11">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF33FF33 tr:FF33FF33 bl:FF33FF33 br:FF33FF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,263},{0,365},{0,286},{0,383}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image1">
+          <Property Name="Image" Value="set:MainControl29 image:SkillNormal" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,153},{0,27},{0,188},{0,62}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image1/back">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.171429,0},{0.114286,0},{0.142857,26},{0.0857143,26}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="Wulin/left/image1/choose">
+            <Property Name="Image" Value="set:MainControl29 image:SkillChoose" />
+            <Property Name="Visible" Value="False" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0285714,0},{0,0},{0.0285714,35},{0,35}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/LinkText" Name="Wulin/shuoming">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="Text" Value="玩法说明" />
+          <Property Name="UserID" Value="84016" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,114},{0.05,347},{0.05,185},{0.05,364}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseSimple" Name="Wulin/right">
+        <Property Name="UnifiedAreaRect" Value="{{0.05,328},{0.0376106,0},{0.05,675},{0.05,406}}" />
+        <Window Type="TaharezLook/StaticText" Name="Wulin/right/title">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="Text" Value="武林秘籍" />
+          <Property Name="HorzExtent" Value="64" />
+          <Property Name="VertExtent" Value="18.75" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,101},{0,14},{0,235},{0,37}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="Wulin/right/pagback">
+          <Property Name="UnifiedAreaRect" Value="{{0,43},{0,268},{0,308},{0,370}}" />
+          <Window Type="TaharezLook/ScrollablePane" Name="Wulin/right/pagback/List">
+            <Property Name="ContentArea" Value="l:-2 t:-2 r:234 b:187" />
+            <Property Name="HorzStepSize" Value="0.1" />
+            <Property Name="VertStepSize" Value="0.1" />
+            <Property Name="HorzOverlapSize" Value="0.01" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0188679,0},{0.0196078,0},{0.0150943,276},{0.00847458,96}}" />
+            <Property Name="VertOverlapSize" Value="0.01" />
+            <Property Name="HorzScrollPosition" Value="0" />
+            <Property Name="VertScrollPosition" Value="0" />
+            <AutoWindow NameSuffix="__auto_container__">
+              <Property Name="ContentArea" Value="l:-2 t:-2 r:234 b:187" />
+              <Property Name="ChildExtentsArea" Value="l:-2 t:-2 r:234 b:187" />
+              <Window Type="TaharezLook/ItemCell" Name="Wulin/right/pagback/List/Item0">
+                <Property Name="UnifiedAreaRect" Value="{{-0.0078125,0},{-0.0212766,0},{0.0259259,39},{-0.00934579,47}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="Wulin/right/pagback/List/Item1">
+                <Property Name="UnifiedAreaRect" Value="{{0.0259259,38},{-0.0212766,0},{0.0259259,86},{-0.00934579,47}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="Wulin/right/pagback/List/Item2">
+                <Property Name="UnifiedAreaRect" Value="{{0.0259259,85},{-0.0212766,0},{-0.185185,187},{-0.00934579,47}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="Wulin/right/pagback/List/Item3">
+                <Property Name="UnifiedAreaRect" Value="{{-0.185185,186},{-0.0212766,0},{-0.185185,234},{-0.00934579,47}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="Wulin/right/pagback/List/Item4">
+                <Property Name="UnifiedAreaRect" Value="{{-0.185185,233},{-0.0212766,0},{-0.185185,281},{-0.00934579,47}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="Wulin/right/pagback/List/Item5">
+                <Property Name="UnifiedAreaRect" Value="{{-0.0078125,0},{-0.00934579,46},{0.074074,27},{-0.00934579,94}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="Wulin/right/pagback/List/Item6">
+                <Property Name="UnifiedAreaRect" Value="{{0.0259259,38},{-0.00934579,46},{0.0259259,86},{-0.00934579,94}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="Wulin/right/pagback/List/Item7">
+                <Property Name="UnifiedAreaRect" Value="{{0.0259259,85},{-0.00934579,46},{-0.185185,187},{-0.00934579,94}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="Wulin/right/pagback/List/Item8">
+                <Property Name="UnifiedAreaRect" Value="{{-0.185185,186},{-0.00934579,46},{-0.185185,234},{-0.00934579,94}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="Wulin/right/pagback/List/Item9">
+                <Property Name="UnifiedAreaRect" Value="{{-0.185185,233},{-0.00934579,46},{-0.185185,281},{-0.00934579,94}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="Wulin/right/pagback/List/Item15">
+                <Property Name="UnifiedAreaRect" Value="{{-0.0078125,0},{-0.00934579,140},{0.122222,15},{-0.00934579,188}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="Wulin/right/pagback/List/Item16">
+                <Property Name="UnifiedAreaRect" Value="{{0.0259259,38},{-0.00934579,140},{0.0259259,86},{-0.00934579,188}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="Wulin/right/pagback/List/Item17">
+                <Property Name="UnifiedAreaRect" Value="{{0.0259259,85},{-0.00934579,140},{-0.185185,187},{-0.00934579,188}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="Wulin/right/pagback/List/Item18">
+                <Property Name="UnifiedAreaRect" Value="{{-0.185185,186},{-0.00934579,140},{-0.185185,234},{-0.00934579,188}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="Wulin/right/pagback/List/Item19">
+                <Property Name="UnifiedAreaRect" Value="{{-0.185185,233},{-0.00934579,140},{-0.185185,281},{-0.00934579,188}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="Wulin/right/pagback/List/Item10">
+                <Property Name="UnifiedAreaRect" Value="{{-0.0078125,0},{-0.00934579,93},{0.0222222,40},{-0.00934579,141}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="Wulin/right/pagback/List/Item11">
+                <Property Name="UnifiedAreaRect" Value="{{0.0259259,38},{-0.00934579,93},{0.0259259,86},{-0.00934579,141}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="Wulin/right/pagback/List/Item12">
+                <Property Name="UnifiedAreaRect" Value="{{0.0259259,85},{-0.00934579,93},{-0.185185,187},{-0.00934579,141}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="Wulin/right/pagback/List/Item13">
+                <Property Name="UnifiedAreaRect" Value="{{-0.185185,186},{-0.00934579,93},{-0.185185,234},{-0.00934579,141}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="Wulin/right/pagback/List/Item14">
+                <Property Name="UnifiedAreaRect" Value="{{-0.185185,233},{-0.00934579,93},{-0.185185,281},{-0.00934579,141}}" />
+              </Window>
+            </AutoWindow>
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Wulin/right/txt1">
+          <Property Name="Text" Value="当前效果" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,73},{0,47},{0,128},{0,67}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Wulin/right/txt2">
+          <Property Name="Text" Value="预览效果" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,228},{0,47},{0,283},{0,67}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="Wulin/right/now">
+          <Property Name="UnifiedAreaRect" Value="{{0,27},{0,70},{0,169},{0,171}}" />
+          <Window Type="TaharezLook/StaticText" Name="Wulin/right/now/txt1">
+            <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.056338,0},{0.05,0},{0.535211,0},{0.25,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="Wulin/right/now/txt2">
+            <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.056338,0},{0.201613,8},{0.535211,0},{0.401613,8}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="Wulin/right/now/txt3">
+            <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.056338,0},{0,51},{0.535211,0},{0,71}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="Wulin/right/now/txt4">
+            <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.056338,0},{0,74},{0.535211,0},{0,94}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="Wulin/right/now/num1">
+            <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.542253,0},{0.05,0},{0.908451,0},{0.25,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="Wulin/right/now/num2">
+            <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.56338,0},{0.201613,8},{0.929577,0},{0.401613,8}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="Wulin/right/now/num3">
+            <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.535211,0},{0,51},{0.901408,0},{0,71}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="Wulin/right/now/num4">
+            <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.542253,0},{0,74},{0.908451,0},{0,94}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="Wulin/right/after">
+          <Property Name="UnifiedAreaRect" Value="{{0,182},{0,70},{0,324},{0,171}}" />
+          <Window Type="TaharezLook/StaticText" Name="Wulin/right/after/txt1">
+            <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0352113,0},{0.05,0},{0.514085,0},{0.25,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="Wulin/right/after/txt2">
+            <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0352113,0},{0.201613,8},{0.514085,0},{0.401613,8}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="Wulin/right/after/txt3">
+            <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0352113,0},{0,51},{0.514085,0},{0,71}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="Wulin/right/after/txt4">
+            <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.028169,0},{0,74},{0.507042,0},{0,94}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="Wulin/right/after/num1">
+            <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.542253,0},{0.05,0},{0.908451,0},{0.25,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="Wulin/right/after/num2">
+            <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.56338,0},{0.201613,8},{0.929577,0},{0.401613,8}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="Wulin/right/after/num3">
+            <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.535211,0},{0,51},{0.901408,0},{0,71}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="Wulin/right/after/num4">
+            <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.535211,0},{0,74},{0.901408,0},{0,94}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Wulin/right/num1">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="TextColours" Value="tl:FF33FF33 tr:FF33FF33 bl:FF33FF33 br:FF33FF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,54},{0,177},{0,145},{0,197}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Wulin/right/num2">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="TextColours" Value="tl:FF33FF33 tr:FF33FF33 bl:FF33FF33 br:FF33FF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,210},{0,177},{0,301},{0,197}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Wulin/right/txt7">
+          <Property Name="Text" Value="需要银两" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,54},{0,377},{0,111},{0,400}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Wulin/right/num3">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0,115},{0,380},{0,219},{0,399}}" />
+          <Window Type="TaharezLook/StaticImage" Name="Wulin/right/num3/image">
+            <Property Name="Image" Value="set:MainControl image:Xianjin" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.807692,0},{0.0454545,0},{0.990385,0},{0.909091,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="Wulin/right/num3/txt">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0480769,0},{0,4},{0.75,0},{0,15}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/ProgressBar" Name="Wulin/right/bar">
+          <Property Name="StepSize" Value="0.01" />
+          <Property Name="FrameEnable" Value="True" />
+          <Property Name="CurrentProgress" Value="1" />
+          <Property Name="UnifiedAreaRect" Value="{{0,75},{0,207},{0,275},{0,224}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="Wulin/right/txt11">
+          <Property Name="Font" Value="fzy4k-11" />
+          <Property Name="Text" Value="请选择材料秘籍（可多选）" />
+          <Property Name="HorzExtent" Value="180" />
+          <Property Name="VertExtent" Value="17.1936" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,82},{0,238},{0,256},{0,263}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/LittleButton" Name="Wulin/right/button1">
+          <Property Name="Text" Value="提升" />
+          <Property Name="Tooltip" Value="可将初级秘籍提升至高级" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,241},{0,12},{0,310},{0,38}}" />
+          <Property Name="ButtonBorderEnable" Value="True" />
+          <Property Name="ButtonDefaultBorderEnable" Value="False" />
+          <Property Name="ButtonDefaultColourEnable" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/LittleButton" Name="Wulin/right/button2">
+          <Property Name="Text" Value="修行" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,233},{0,376},{0,302},{0,402}}" />
+          <Property Name="ButtonBorderEnable" Value="True" />
+          <Property Name="ButtonDefaultBorderEnable" Value="False" />
+          <Property Name="ButtonDefaultColourEnable" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="WulinTitle">
+      <Property Name="Image" Value="set:MainControl26 image:Pattern" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{-0.0189959,0},{0,0},{-0.0242261,44},{-0.00656455,372}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticText" Name="Wulin/WulinTitle/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="武   林   秘   籍" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="23" />
+        <Property Name="VertExtent" Value="121.297" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.225,0},{0,55},{0.925,0},{0,204}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

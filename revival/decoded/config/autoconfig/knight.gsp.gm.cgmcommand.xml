@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+  <record id="1" tipsid="0" desc="GM公告" command="//post $NoticeMsg$">
+    <param>
+      <string>NoticeMsg</string>
+    </param>
+  </record>
+  <record id="2" tipsid="0" desc="发送系统好友消息" command="//broadcast 1 $NoticeMsg$">
+    <param>
+      <string>NoticeMsg</string>
+    </param>
+  </record>
+  <record id="3" tipsid="0" desc="发送系统消息" command="//broadcast 0 $NoticeMsg$">
+    <param>
+      <string>NoticeMsg</string>
+    </param>
+  </record>
+  <record id="4" tipsid="0" desc="发送系统好友消息（单人）" command="//sendmsg $Player$ $NoticeMsg$">
+    <param>
+      <string>Player</string>
+      <string>NoticeMsg</string>
+    </param>
+  </record>
+  <record id="5" tipsid="0" desc="无敌状态" command="//invincible" />
+  <record id="6" tipsid="0" desc="取消无敌" command="//invincible cancel" />
+  <record id="7" tipsid="0" desc="隐身状态" command="//hideme" />
+  <record id="8" tipsid="0" desc="取消隐身" command="//showme" />
+  <record id="9" tipsid="141826" desc="拉人到身边" command="//hold $Player$">
+    <param>
+      <string>Player</string>
+    </param>
+  </record>
+  <record id="10" tipsid="141830" desc="去玩家身边" command="//gotoplayer $Player$">
+    <param>
+      <string>Player</string>
+    </param>
+  </record>
+  <record id="11" tipsid="0" desc="去指定地点" command="//goto $xpos$ $ypos$ $Mapid$">
+    <param>
+      <string>xpos</string>
+      <string>ypos</string>
+      <string>Mapid</string>
+    </param>
+  </record>
+  <record id="12" tipsid="141833" desc="禁止发言" command="//nonvoice  $Player$ $Time$ $reason$">
+    <param>
+      <string>Player</string>
+      <string>Time</string>
+      <string>reason</string>
+    </param>
+  </record>
+  <record id="13" tipsid="0" desc="解除禁言" command="//unnonvoice $Player$">
+    <param>
+      <string>Player</string>
+    </param>
+  </record>
+  <record id="14" tipsid="141837" desc="禁止角色登陆" command="//forbid  $Player$ $Time$ $reason$">
+    <param>
+      <string>Player</string>
+      <string>Time</string>
+      <string>reason</string>
+    </param>
+  </record>
+  <record id="15" tipsid="0" desc="解除禁止角色登陆" command="//unforbid  $Player$">
+    <param>
+      <string>Player</string>
+    </param>
+  </record>
+  <record id="16" tipsid="0" desc="将指定角色踢下线" command="//kick  $Player$">
+    <param>
+      <string>Player</string>
+    </param>
+  </record>
+  <record id="17" tipsid="0" desc="结束指定角色所处的战斗" command="//battleend  $Player$">
+    <param>
+      <string>Player</string>
+    </param>
+  </record>
+  <record id="18" tipsid="141844" desc="打开服务" command="//openservice $Serviceid$">
+    <param>
+      <string>Serviceid</string>
+    </param>
+  </record>
+  <record id="19" tipsid="141846" desc="关闭服务" command="//closeservice $Serviceid$">
+    <param>
+      <string>Serviceid</string>
+    </param>
+  </record>
+  <record id="20" tipsid="141848" desc="显示NPC并开启其所有服务" command="//shownpc $Npcid$">
+    <param>
+      <string>Npcid</string>
+    </param>
+  </record>
+  <record id="21" tipsid="141850" desc="隐藏NPC并关闭其所有服务" command="//hidenpc $Npcid$">
+    <param>
+      <string>Npcid</string>
+    </param>
+  </record>
+  <record id="22" tipsid="141852" desc="友好关闭服务器" command="//stopgs $Time$">
+    <param>
+      <string>Time</string>
+    </param>
+  </record>
+  <record id="23" tipsid="0" desc="开启一场闯关" command="//startcg" />
+  <record id="24" tipsid="0" desc="开启一场科举" command="//startkeju" />
+  <record id="25" tipsid="0" desc="结束指令开启的闯关" command="//stopcg" />
+  <record id="26" tipsid="0" desc="开启战斗" command="//battle start $battleID$">
+    <param>
+      <string>battleID</string>
+    </param>
+  </record>
+  <record id="27" tipsid="0" desc="结束战斗" command="//battle end" />
+  <record id="28" tipsid="143745" desc="抓捕入天牢" command="//catch $Player$">
+    <param>
+      <string>Player</string>
+    </param>
+  </record>
+  <record id="29" tipsid="143746" desc="放出天牢" command="//free $Player$">
+    <param>
+      <string>Player</string>
+    </param>
+  </record>
+</root>

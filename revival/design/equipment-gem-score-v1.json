@@ -1,0 +1,12 @@
+{
+  "revision": "2026-10-24.gem-score.1",
+  "source_status": "designed local candidate; ordinary original server gem score formula remains unknown",
+  "scope": "ordinary uncultivated gems from equipment-gems.1; complete explicit pre-gem score baseline only",
+  "grade_points": [50,55,60,65,70,75,80,85,90,95,100,105,110,115,120],
+  "decision": "Equal grade gets equal local score across all14 families; first gem50 and each grade+5 are local balance values, not a client-derived formula or use of cequipscoreconfig tokens400/420",
+  "composition": "current score = explicit known pre-gem score + sum(points for current ordered list); recompute from baseline on every change, no incremental drift and no inference of unknown historical baseline",
+  "color": "original cequipeffect.scorecolor thresholds and cequipprefixconfig.bestcolortype; preserve prefix/base/identified; condition version increments only if color changes, preserve current/maximum durability",
+  "bounds": "nonnegative signed32 score; reject overflow before persistence; source/current score and color must agree exactly",
+  "activation": "pure candidate rules; no automatic migration, shared registration, production deployment, score/durability write or role-resource mutation",
+  "evidence": "evidence/GEM_SOCKET_SOURCE_MAPPING_RESEARCH.md; its7 score-table consumers are enhancement preview, not ordinary gem scoring"
+}

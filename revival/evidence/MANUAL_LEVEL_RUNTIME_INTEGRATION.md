@@ -1,0 +1,23 @@
+# 普通手动升级实际角色入口
+
+2026-10-23。原生/领域依据为role_growth_protocol、role_growth_actions及manual-role-level-verification.json。先接C_REQ_LEVEL_UP=0xc32cd；加点Interface交付后同批接入C_ADD_POINT_TO_ATTR=0xc000c，后续记录如下。
+
+采用codebase-design：请求布局由协议Module解码，成长计算、旧键重放及原生预编码留在主策划GrowthAction Interface；runtime_storage负责租约/完整显式profile检查与事务，RoleOwner负责世界门禁、提交后的角色/社交发布，ConnectionOwner继续拥有加密/压缩/发送。无新增全服执行器，无运行时规则读取或DDL。
+
+RoleOwner在同一角色邮箱接GROWTH_TYPES，战斗中或传送loading拒绝，首次世界初始化前拒绝。严格4字节BE32交decode_level_request；业务值0仅是designed普通模式，绝不当目标等级/奖励量。每条新线包产生新的内部request_id；原请求没有客户端重试ID。
+
+runtime_storage.manual_level在fenced角色事务调用manual_level_transaction，扣本级XP、升一级、潜能/属性/伤势、内部重试凭据及原生编码校验同事务。返回冻结CommittedGrowth携带当时当前GrowthActionResult和CommittedRoleState；事务退出成功后，RoleOwner通过publish_committed_role同步角色/在线/频道及社交所有者，再返回预编码当前绝对XP和19项普通map。历史请求重放只确认原操作，显示与发布均读当前L/XP，不将原L11回执覆盖后来L12。
+
+verify_manual_level_runtime.py本窗口运行通过：临时明确旧角色profile，实际Peer认证/入场后L10→11→12，每次新请求一级；五处角色/在线/社交等级均同步；旧内部键重放仍当前L12/XP7/free10；经验不足、非零模式、长度错误、旧epoch与无基线角色拒绝；battle/transfer仅sentinel门禁，不创建或执行这些子系统；连续RC4/原生MPPC解码及重登保持HP90/120、MP52/112。证据manual-level-runtime-verification.json。人物初始化为临时测试旧档，不改用户级别。
+
+该验证未操作GUI或真实端口，未部署/重启/修改现场，不替代原客户端按钮、自然XP来源、场景可见/行走或商业容量验收。原生字段业务含义仍未确认，0模式与普通升级/点数规则沿design/role-progression-v1.json的designed裁定。领域层编码失败与外层回滚由主策划已有verify_manual_role_level验证，本窗口未重复全套回归。
+
+## 同批加点接线与追加验证
+
+GROWTH_TYPES扩展后，立即改为显式按kind选择decode_level_request/manual_level或decode_allocation_request/allocate_potential；集合成员不能统一按升级解析。其余类型明确拒绝。加点20字节BE32非负增量，原wire五项末尾AGI/END交换为内部END/AGI。storage复用主策划allocation_transaction及领域request_potential_allocation重放逻辑；相同完整profile、租约、世界/战斗/传送门禁、提交后发布和当前消息契约。不复制指纹、不把客户端字段当权威revision。
+
+扩充同一verify_manual_level_runtime并运行通过：伪造加点opcode+4字节0拒绝且等级不变；原wire不对称AGI1/END2正确变为内部END2/AGI1，自由点10→7、防17/躲闪26/速度12；再加体质1后free6、HP100/130。此前升级键和首个加点键重放均返回此时当前属性，不再扣点或回退显示；换意图复用旧键、零/负/超余额/错误长度拒绝，无profile不能加点。重登保留上述值及MP52/112，成长凭据共4份（两升级两加点）。证据manual-level-runtime-verification.json已更新。
+
+原UI还有限制小游戏期间加点的状态门禁。当前运行时未接小游戏会话，本批没有凭客户端wire伪造活动开关；未来须由可信活动所有者状态接入，当前明确未覆盖。没有启动战斗、小游戏、GUI或线上监听，也未为新分支重复全系统回归。
+
+同日主策划独立复跑verify_manual_level_runtime.py通过，确认上述升级、分类型解码、不对称加点、当前快照重放、守卫哨兵和重连HP100/130、MP52/112、free6。此项按独立复核登记，本窗口未为登记重复执行。本批源码接线可登记为限定运行检查通过；自然新手主线、真实结束回包及原客户端仍未验收。保持不部署、不重启服务或客户端。

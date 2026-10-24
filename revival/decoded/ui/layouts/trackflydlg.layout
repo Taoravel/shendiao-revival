@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="TrackFlyDlg">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.325,0},{0.303333,0},{0.325,314},{0.303333,183}}" />
+    <Window Type="TaharezLook/StaticImage" Name="TrackFlyDlg/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,214},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,214},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.449682,0},{0,10},{1.13121,0},{0.202186,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="TrackFlyDlg/Title/Name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="千里寻踪蝶" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="85" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFF9600 br:FFFF9600" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.3,0},{0.00370368,0},{0.888785,0},{0.3,16.9999}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="TrackFlyDlg/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0557325,0},{0.240437,0},{0.0283334,284.633},{0.240437,120}}" />
+      <Window Type="TaharezLook/RadioButton" Name="TrackFlyDlg/Back/CheckName">
+        <Property Name="Text" Value="根据玩家姓名查找" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0573225,0},{0.125,0},{0.525335,0},{0.13089,19.2932}}" />
+      </Window>
+      <Window Type="TaharezLook/RadioButton" Name="TrackFlyDlg/Back/CheckID">
+        <Property Name="Text" Value="根据玩家ID查找" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0573225,0},{0.3875,0},{0.525335,0},{0.353403,24.0917}}" />
+      </Window>
+      <Window Type="TaharezLook/Editbox" Name="TrackFlyDlg/Back/Name">
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0.549281,0},{0.125,0},{0.97013,0},{0.13089,19.2932}}" />
+        <Property Name="BlinkCaretTimeout" Value="0.5" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Editbox" Name="TrackFlyDlg/Back/Name1">
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0.549281,0},{0.3875,0},{0.97013,0},{0.353403,24.0917}}" />
+        <Property Name="BlinkCaretTimeout" Value="0.5" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="TrackFlyDlg/Back/Sure">
+        <Property Name="Text" Value="确定" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.185211,0},{0.691666,0},{0.468196,0},{0.654449,26.4661}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="TrackFlyDlg/Back/Sure1">
+        <Property Name="Text" Value="取消" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.556221,0},{0.691666,0},{0.839205,0},{0.654449,26.4661}}" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

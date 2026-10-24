@@ -1,0 +1,24 @@
+{
+  "revision": "2026-10-24.equipment-gems.1",
+  "scope": "ordinary uncultivated210 gems; ordered grade-unique list, at most three families and15 sockets; full original separate gem effects",
+  "sources": ["evidence/EQUIPMENT_GEMS_SOURCE_RESEARCH.md", "evidence/GEM_SOCKET_SOURCE_MAPPING_RESEARCH.md"],
+  "client_verified": {
+    "maximum_gem_level": 15,
+    "maximum_families": 3,
+    "socket_skill_ids": [0,410006,410007],
+    "normal_diamond": 36949,
+    "advanced_diamond": 39649,
+    "cash_quote": "50*(original equipment effective level+10*gem level)",
+    "grade_equals_hole": true
+  },
+  "designed": {
+    "replacement": "consume incoming one; replace existing same-grade gem in its position, no returned old gem; append if empty grade; validate resulting at-most-three family set",
+    "binding": "successful insertion equipment becomes bound if equipment or material bound; removal keeps equipment binding and returns all gems bound",
+    "success": "deterministic insertion/removal after all validations; cancellations never create domain plans or asset changes",
+    "ordinary_return": "grades1..6 use original removegem count and same template; grades7..15 use superremovegem count and original Diamondid one grade lower",
+    "ordering": "preserve explicit original imported order; same-grade replacement retains index; new grade appends; removal retains relative order",
+    "unknown_flags": "only explicit zero nonbinding flags supported; persistent authority must be supplied by owner, no inferred legacy zero",
+    "score_and_color": "not inferred from gem list; require separately versioned trusted score/color source before mutation integration",
+    "activation": "pure plans, native detail and explicit state storage are foundations; no shared activation or silent v1/v2 role projection of nonempty gems"
+  }
+}

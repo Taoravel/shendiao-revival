@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="GroupSettingMemberDlg">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,260.469},{0,157.798},{0,582.469},{0,382.798}}" />
+    <Window Type="TaharezLook/TabControl" Name="GroupSettingMember">
+      <Property Name="TabHeight" Value="{0,18}" />
+      <Property Name="TabPanePosition" Value="Top" />
+      <Property Name="UnifiedAreaRect" Value="{{0,16},{0,45},{0,304},{0,183}}" />
+      <Window Type="DefaultWindow" Name="GroupSettingMember/Tab/Tab 1">
+        <Property Name="Text" Value="群设置" />
+        <Property Name="UnifiedAreaRect" Value="{{0,1.00055},{0,0.636906},{0,291.001},{0,121.637}}" />
+        <Window Type="TaharezLook/Checkbox" Name="GroupSettingMember/Tab/Tab 1/MsgTips">
+          <Property Name="Text" Value="开启群消息提示" />
+          <Property Name="Selected" Value="True" />
+          <Property Name="UnifiedAreaRect" Value="{{0,40},{0,54},{0,168},{0,76}}" />
+        </Window>
+        <Window Type="TaharezLook/LittleButton" Name="GroupSettingMember/Tab/Tab 1/ExitGroup">
+          <Property Name="Text" Value="退出群" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,186.33},{0,55},{0,263.33},{0,77}}" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GroupSettingMember/OkBtn">
+      <Property Name="Text" Value="确定" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,45.5001},{0,186},{0,115.5},{0,210}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GroupSettingMember/Cancel">
+      <Property Name="Text" Value="取消" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,125.5},{0,186},{0,195.5},{0,210}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GroupSettingMember/Apply">
+      <Property Name="Text" Value="应用" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,205.5},{0,186},{0,275.5},{0,210}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="GroupSettingMemberDlg/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,214},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,214},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,127.6},{0,12},{0,341.6},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="GroupSettingMemberDlg/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="群设置" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="51" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,1},{0,129},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,2258 @@
+<?xml version='1.0' encoding='utf-8'?>
+<fragments>
+  <shaderFragment name="VS_Calc_DefaultLocalPosNormal" slot="SS_Vertex_Calculate_LocalPosNormal">
+    <parameter>
+      
+      #define SLOCALPOSITION         //宏的名字和变量名字一致
+      static float4 sLocalPosition;  //用于shader片段传输数据的变量，必须加static，变量名以‘s’开头，必须加上宏定义
+      #ifdef DeclareNormal
+        #define SLOCALNORMAL
+        static float4 sLocalNormal;    //中间变量用于传递局部法线信息
+      #endif
+    </parameter>
+    <code>
+      
+      sLocalPosition = input.Position;
+      #ifdef DeclareNormal
+      sLocalNormal = float4(input.Normal,0.f);
+      #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Calc_Skin" slot="SS_Vertex_Calculate_LocalPosNormal">
+    <parameter>
+      
+      #define SLOCALPOSITION         //宏的名字和变量名字一致
+      static float4 sLocalPosition;  //用于shader片段传输数据的变量，必须加static，变量名以‘s’开头，必须加上宏定义
+      #ifdef DeclareNormal
+        #define SLOCALNORMAL
+        static float4 sLocalNormal;    //中间变量用于传递局部法线信息
+      #endif
+      extern float4x4 gBonePalette[50];     //骨骼调色板，全局变量
+      #define SBONEMATLOCAL          //定义了蒙皮
+      static float4x4 sBoneMatLocal;
+    </parameter>
+    <code>
+      
+      /*
+		  sBoneMatLocal = gBonePalette[(int)input.BoneIndex.x]*input.BoneWeight.x +
+	            gBonePalette[(int)input.BoneIndex.y]*input.BoneWeight.y +
+	            gBonePalette[(int)input.BoneIndex.z]*input.BoneWeight.z +
+	            gBonePalette[(int)input.BoneIndex.w]*input.BoneWeight.w;
+	    */
+	    float4x4 temp;
+	    {
+	      temp = gBonePalette[(int)input.BoneIndex.x];
+	    	sBoneMatLocal = temp*input.BoneWeight.x;
+	    }
+	    {
+	      temp = gBonePalette[(int)input.BoneIndex.y];
+	    	sBoneMatLocal += temp*input.BoneWeight.y;
+	    }
+	    {
+	      temp = gBonePalette[(int)input.BoneIndex.z];
+	    	sBoneMatLocal += temp*input.BoneWeight.z;
+	    }
+	    {
+	      temp = gBonePalette[(int)input.BoneIndex.w];
+	    	sBoneMatLocal += temp*input.BoneWeight.w;
+	    }
+      sLocalPosition = mul(input.Position,sBoneMatLocal);
+      #ifdef DeclareNormal
+      sLocalNormal = mul(float4(input.Normal,0.0f),sBoneMatLocal);
+      #endif
+	    
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Calc_VegetationBatch" slot="SS_Vertex_Calculate_LocalPosNormal">
+    <parameter>
+      #define SLOCALPOSITION         //宏的名字和变量名字一致
+      static float4 sLocalPosition;  //用于shader片段传输数据的变量，必须加static，变量名以‘s’开头，必须加上宏定义
+      extern float4 gVegBatchTimeAndSoftFactor;//时间和柔软度
+      /*
+      extern float  gVegBatchTime;       //时间
+      extern float  gVegBatchSoftFactor; //柔软度
+      */
+      extern float3 gVegWindDirection;   //风向
+    </parameter>
+    <include name="VegetationBatch" />
+    <code>
+      
+      float4 wave = smoothTriangleWave(gVegBatchTimeAndSoftFactor.x+input.Position.z);
+	    float4 wave1 = smoothTriangleWave(0.05*gVegBatchTimeAndSoftFactor.x+input.Position.z);
+	    float4 wave2 = smoothTriangleWave(0.5*gVegBatchTimeAndSoftFactor.x+input.Position.z);
+	    wave = wave + wave1 + wave2;
+      #ifdef DeclareNormal
+	    sLocalPosition = input.Position + input.Normal.x*gVegBatchTimeAndSoftFactor.y*wave*float4(gVegWindDirection,0);
+      #else
+        #error [ModMud]no Vertex.Normal declared.
+      #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Calc_EmptyLocalPosNormal" slot="SS_Vertex_Calculate_LocalPosNormal">
+    <parameter />
+    <code />
+  </shaderFragment>
+  <shaderFragment name="VS_Calc_DefaultWorldPosNormal" slot="SS_Vertex_Calculate_WorldPosNormal">
+    <parameter>
+      #define SWORLDPOSITION
+      static float4 sWorldPosition;  //中间变量，顶点在世界空间位置
+      #ifdef DeclareNormal
+        #define SWORLDNORMAL
+        static float4 sWorldNormal;    //中间变量，顶点在世界空间法线
+      #endif
+      extern float4x4 gWorldMatrix_DWPN;
+    </parameter>
+    <code>
+      
+      #ifdef DeclareNormal
+        #ifdef SLOCALPOSITION
+          sWorldPosition = mul(sLocalPosition,gWorldMatrix_DWPN);
+        #else
+          sWorldPosition = mul(input.Position,gWorldMatrix_DWPN);
+        #endif
+        #ifdef SLOCALNORMAL
+          sWorldNormal = mul(sLocalNormal,gWorldMatrix_DWPN);
+        #else
+          sWorldNormal = mul(input.Normal,gWorldMatrix_DWPN);
+        #endif
+      #else
+        #ifdef SLOCALPOSITION
+          sWorldPosition = mul(sLocalPosition,gWorldMatrix_DWPN);
+        #else
+          sWorldPosition = mul(input.Position,gWorldMatrix_DWPN);
+        #endif
+      #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Calc_ClipPlaneDist" slot="SS_Vertex_Calculate_ClipPlaneDist">
+    <parameter>
+    </parameter>
+    <include name="LeftHand2RightHand" />
+    <code>
+        
+              
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_ClipPlaneTest" slot="SS_Pixel_ClipPlaneTest">
+    <parameter>
+    </parameter>
+    <include name="AssistFunction" />
+    <code>
+        
+              
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_DefaultUVTex" slot="SS_Vertex_Output_UVTex">
+    <code>
+      
+      #ifdef DeclareInputUV0
+        #ifdef DeclareOutputUV0
+	output.UV0 = input.UV0;
+	#endif
+      #endif
+      #ifdef DeclareInputUV1
+        #ifdef DeclareOutputUV1
+        output.UV1 = input.UV1;
+	#endif
+      #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_UVAnimation" slot="SS_Vertex_Output_UVTex">
+    <parameter>
+      
+      #ifdef ANIMATION_UV0
+      //extern float4x4 gUVTrans0;  //UV0 transform matrix
+      extern float4 gUVTrans0;  //UV0 transform matrix
+      #endif
+      #ifdef ANIMATION_UV1
+      //extern float4x4 gUVTrans1;  //UV1 transform matrix
+      extern float4 gUVTrans1;  //UV1 transform matrix
+      #endif
+      
+    </parameter>
+    <code>
+      
+      #ifdef ANIMATION_UV0
+      output.UV0 = float4(input.UV0.xy,0.0f,0.0f) + gUVTrans0;
+      #endif
+      #ifdef ANIMATION_UV1
+        output.UV1 = float4(input.UV1.xy,0.0f,0.0f) + gUVTrans1;
+      #endif
+	    
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_MaskVertexColor" slot="SS_Vertex_Output_Color">
+    <parameter>
+      
+      extern float4 gVertexMask; //modifier to change vertexColor
+      
+    </parameter>
+    <code>
+      
+      #ifdef DeclareColor
+      output.Color = input.Color*gVertexMask;
+      #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_DefaultVertexColor" slot="SS_Vertex_Output_Color">
+    <code>
+      
+      #ifdef DeclareColor
+      output.Color = input.Color;
+      #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_VegetationVertexColor" slot="SS_Vertex_Output_Color">
+    <parameter>
+      
+	extern float4 gVertexMaskColor_CBC; //模型的Mask颜色
+	extern float4 gLightColor_CBC;  //gDirLight_CBC.rgb颜色，gDirLight_CBC.a强度（相当于光源方向和草法线的乘积）
+	extern float4 gLightAmbient_CBC;
+      
+    </parameter>
+    <code>
+      
+      #ifdef DeclareColor
+      output.Color.rgb = gLightColor_CBC.rgb*input.Color.a + gLightAmbient_CBC;
+      output.Color *= gVertexMaskColor_CBC;
+      #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_DefaultNormal" slot="SS_Vertex_Output_Normal">
+    <code>
+      
+      #ifdef DeclareNormal
+        #ifdef SWORLDNORMAL
+          output.Normal = sWorldNormal;
+        #else 
+          #ifdef SLOCALNORMAL
+            output.Normal = sLocalNormal;
+          #else
+            output.Normal = float4(input.Normal,0.0f);
+          #endif
+        #endif
+        output.Normal = normalize(output.Normal); //有些模型导出的法线数据没有归一化
+      #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_3DMousePosition" slot="SS_Vertex_Output_Position">
+    <parameter>
+      
+      extern float4x4 gWorldViewProjMatrix_DP;  //World*View*Proj 用sWorldPosition可能导致精度损失太大，造成Z-Fighting
+      
+    </parameter>
+    <code>
+      
+      output.Position = mul(input.Position,gWorldViewProjMatrix_DP);
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_2DUIPosition" slot="SS_Vertex_Output_Position">
+    <parameter>
+      
+      extern float4 gViewPortSize; //gViewPortSize.xy - Canvas size; gViewPortSize.zw - Canvas offset
+      
+    </parameter>
+    <code>
+      
+      output.Position = input.Position;
+      output.Position.x = 2.0*(input.Position.x-gViewPortSize.z)/gViewPortSize.x-1.0f;
+      output.Position.y = 1.0f-2.0f*(input.Position.y-gViewPortSize.w)/gViewPortSize.y;
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_PositionT" slot="SS_Vertex_Output_Position">
+    <code>
+      
+      output.Position = input.Position;
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_DefaultPosition" slot="SS_Vertex_Output_Position">
+    <parameter>
+      
+      extern float4x4 gViewProjMatrix_DP;  //View*Proj
+      extern float4x4 gWorldViewProjMatrix_DP;  //World*View*Proj 用sWorldPosition可能导致精度损失太大，造成Z-Fighting
+      
+    </parameter>
+    <code>
+      
+      #ifdef SWORLDPOSITION
+        #ifdef SLOCALPOSITION //考虑到可能出现Z-Fighting，使用LocalPosition来计算
+          output.Position = mul(sLocalPosition,gWorldViewProjMatrix_DP);
+        #else
+          output.Position = mul(sWorldPosition,gViewProjMatrix_DP);
+	      #endif
+      #else
+        #ifdef SLOCALPOSITION
+          output.Position = mul(sLocalPosition,gViewProjMatrix_DP);
+        #else
+          output.Position = mul(input.Position,gViewProjMatrix_DP);
+        #endif
+      #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_UIVertPosition" slot="SS_Vertex_Output_Position">
+    <parameter>
+      
+      extern float4x4 gWorldViewProjMatrix_DP;  //World*View*Proj 
+      
+    </parameter>
+    <code>
+      
+          output.Position = mul(input.Position,gWorldViewProjMatrix_DP);
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_EffectPosition" slot="SS_Vertex_Output_Position">
+    <parameter>
+      
+      extern float4x4 gWorldViewProjMatrix_EP;
+      
+    </parameter>
+    <code>
+      
+        output.Position = mul(input.Position,gWorldViewProjMatrix_EP);
+        #ifdef DeclareNormal
+	output.Normal.xyz = input.Normal;
+	output.Normal.w = 0.f;
+	#endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_PixelPhong" slot="SS_Vertex_Output_RealtimeLighting">
+    <uvMacros name="PIXELPHONG_INDEX" />
+    <code>
+      
+      #ifdef SWORLDPOSITION
+        output.PIXELPHONG_INDEX = sWorldPosition;
+      #else
+        #ifdef SLOCALPOSITION
+          output.PIXELPHONG_INDEX = sLocalPosition;
+        #else
+          output.PIXELPHONG_INDEX = input.Position;
+        #endif
+      #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_VertexPhongDiffuse" slot="SS_Vertex_Output_RealtimeLighting">
+    <uvMacros name="LIGHTCOLOR_INDEX" />
+    <parameter>
+      
+      extern float4x4 gMainLightInfo_VPD;   //第一行，环境光颜色；第二行，直线光颜色；第三行，直线光方向；第四行的每个元素只能取值0.0/1.0，分别表示四个光源是否存在
+      extern float4x4 gPointLight0_VPD;     //第一行，颜色；第二行位置；第三行，衰减(0:atten0,1:atten1;2:atten2;3:range)
+      extern float4x4 gPointLight1_VPD;     //第一行，颜色；第二行位置；第三行，衰减(0:atten0,1:atten1;2:atten2;3:range)
+      
+    </parameter>
+    <include name="PhongDiffuse" />
+    <code>
+      
+      float4 lightColor; //Vertex Lighting不可能考虑高光和法线贴图
+      //环境光
+      lightColor = gMainLightInfo_VPD[0];
+      //平行光
+      if ( gMainLightInfo_VPD._42==1.0f )
+      {
+        lightColor += Phong_DirectLight_Diffuse(gMainLightInfo_VPD[1],gMainLightInfo_VPD[2],lightDiffuseColor,float4(sWorldNormal,0.f));
+      }
+      //点光0
+      if ( gMainLightInfo_VPD._43==1.0f )
+      {
+        lightColor += Phong_PointLight_Diffuse(gPointLight0_VPD,sWordlPosition,float4(sWorldNormal,0.f));
+      }
+      //点光1
+      if ( gMainLightInfo_VPD._44==1.0f )
+      {
+        lightColor += Phong_PointLight_Diffuse(gPointLight1_VPD,sWorldPosition,float4(sWorldNormal,0.f));
+      }
+      output.LIGHTCOLOR_INDEX = lightColor;
+      output.LIGHTCOLOR_INDEX.a = 1.0f;
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_VertexPhongDiffuseSpecular" slot="SS_Vertex_Output_RealtimeLighting">
+    <uvMacros name="LIGHTCOLOR_INDEX" />
+    <parameter>
+      
+      extern float4 gEyePosition_VPDS;       //EyePosition in World Coord
+      extern float  gSpecExpon_VPDS;         //Specular指数
+      extern float4x4 gMainLightInfo_VPDS;   //第一行，环境光颜色；第二行，直线光颜色；第三行，直线光方向；第四行的每个元素只能取值0.0/1.0，分别表示四个光源是否存在
+      extern float4x4 gPointLight0_VPDS;     //第一行，颜色；第二行位置；第三行，衰减(0:atten0,1:atten1;2:atten2;3:range)
+      extern float4x4 gPointLight1_VPDS;     //第一行，颜色；第二行位置；第三行，衰减(0:atten0,1:atten1;2:atten2;3:range)
+      
+    </parameter>
+    <include name="PhongSpecular" />
+    <code>
+      
+      float4 lightColor; //Vertex Lighting不可能考虑高光和法线贴图
+      //环境光
+      lightColor = gMainLightInfo_VPDS[0];
+      //平行光
+      if ( gMainLightInfo_VPDS._42==1.0f )
+      {
+        float4 lightDiffuseColor,lightSpecColor;
+        Phong_DirectLight_Diffuse_Specular(gMainLightInfo_VPDS[1],gMainLightInfo_VPDS[2],gSpecExpon_VPDS,gEyePosition_VPDS,sWorldPosition,sWorldNormal,lightDiffuseColor,lightSpecColor);
+        lightColor += (lightDiffuseColor+lightSpecColor);
+      }
+      //点光0
+      if ( gMainLightInfo_VPDS._43==1.0f )
+      {
+        float4 lightDiffuseColor,lightSpecColor;
+        Phong_PointLight_Diffuse_Specular(gPointLight0_VPDS,gSpecExpon_VPDS,gEyePosition_VPDS,sWorldPosition,sWorldNormal,lightDiffuseColor,lightSpecColor);
+        lightColor += (lightDiffuseColor+lightSpecColor);
+      }
+      //点光1
+      if ( gMainLightInfo_VPDS._44==1.0f )
+      {
+        float4 lightDiffuseColor,lightSpecColor;
+        Phong_PointLight_Diffuse_Specular(gPointLight1_VPDS,gSpecExpon_VPDS,gEyePosition_VPDS,sWorldPosition,sWorldNormal,lightDiffuseColor,lightSpecColor);
+        lightColor += (lightDiffuseColor+lightSpecColor);
+      }
+      output.LIGHTCOLOR_INDEX = lightColor;
+      output.LIGHTCOLOR_INDEX.a = 1.0f;
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_Terrain" slot="SS_Vertex_Output_Terrain">
+    <uvMacros name="TERRAINPOS_INDEX" />
+    <code>
+      
+      output.TERRAINPOS_INDEX = input.Position;
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_Terrain_Diffuse" slot="SS_Pixel_Diffuse">
+    <parameter>
+      #if TERRAIN_LAYERNUM&gt;0
+      extern sampler  gTerrainSampler0;
+      extern float4    gxzRatio0;
+      //extern float    gzRatio0;
+      extern float4x4 gmatUVTrans0;
+      #endif
+
+      #if TERRAIN_LAYERNUM&gt;1
+      extern sampler  gTerrainSampler1;
+      extern float4    gxzRatio1;
+      //extern float    gzRatio1;
+      extern float4x4 gmatUVTrans1;
+      #endif
+
+      #if TERRAIN_LAYERNUM&gt;2
+      extern sampler  gTerrainSampler2;
+      extern float4    gxzRatio2;
+      //extern float    gzRatio2;
+      extern float4x4 gmatUVTrans2;
+      #endif
+
+      #if TERRAIN_LAYERNUM&gt;3
+      extern sampler  gTerrainSampler3;
+      extern float4    gxzRatio3;
+      //extern float    gzRatio3;
+      extern float4x4 gmatUVTrans3;
+      #endif
+
+      extern sampler gTerrainMask; //掩膜图
+      extern float4  gMaskXZWorldOffset;//x mask,y xworldOffset,z zWorldOffset
+      /*
+      extern float   gMaskUVRatio;
+      extern float   gxWorldOffset;
+      extern float   gzWorldOffset;
+      */
+
+      #define STERRAINLOCALPOS
+      static float3  sTerrainLocalPos; //在地形各个slot之间传递参数
+    </parameter>
+    <code>
+      
+      #ifndef TERRAINPOS_INDEX
+      #error [ModMud::PS_Terrain_Diffuse] no TERRAINPOS_INDEX defined
+      #endif
+      float4 texColor=float4(0.0,0.0,0.0,0.0);
+	    float4 uvw;
+	    //float3 localPos = float3(input.TERRAINPOS_INDEX.x-gxWorldOffset,input.TERRAINPOS_INDEX.y,input.TERRAINPOS_INDEX.z-gzWorldOffset);
+      float3 localPos = float3(input.TERRAINPOS_INDEX.x-gMaskXZWorldOffset.y,input.TERRAINPOS_INDEX.y,input.TERRAINPOS_INDEX.z-gMaskXZWorldOffset.z);
+	    sTerrainLocalPos = localPos;
+	    float4 mask = saturate(tex2D(gTerrainMask,float2(localPos.x*gMaskXZWorldOffset.x,localPos.z*gMaskXZWorldOffset.x))); //不加saturate在win7机器上可能出现闪烁现象
+	    //first layer
+#if TERRAIN_LAYERNUM&gt;0
+	    uvw = float4(localPos.x*gxzRatio0.x,0.0,localPos.z*gxzRatio0.y,1.0);
+	    uvw = mul(uvw,gmatUVTrans0);
+	    texColor += tex2D(gTerrainSampler0,float2(uvw.x,uvw.z))*mask.b;
+#endif
+	    //second layer
+#if TERRAIN_LAYERNUM&gt;1
+	    uvw = float4(localPos.x*gxzRatio1.x,0.0,localPos.z*gxzRatio1.y,1.0);
+	    uvw = mul(uvw,gmatUVTrans1);
+	    texColor += tex2D(gTerrainSampler1,float2(uvw.x,uvw.z))*mask.g;
+#endif
+	    //third layer
+#if TERRAIN_LAYERNUM&gt;2
+	    uvw = float4(localPos.x*gxzRatio2.x,0.0,localPos.z*gxzRatio2.y,1.0);
+	    uvw = mul(uvw,gmatUVTrans2);
+	    texColor += tex2D(gTerrainSampler2,float2(uvw.x,uvw.z))*mask.r;
+#endif
+	    //fourth layer
+#if TERRAIN_LAYERNUM&gt;3
+	    uvw = float4(localPos.x*gxzRatio3.x,0.0,localPos.z*gxzRatio3.y,1.0);
+	    uvw = mul(uvw,gmatUVTrans3);
+      texColor += tex2D(gTerrainSampler3,float2(uvw.x,uvw.z))*mask.a;
+#endif
+      output.Color = texColor;
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_Terrain_Specular" slot="SS_Pixel_SpecularFactor">
+    <parameter>
+      extern float3  gTerrainSpecSunLightDir;     //太阳光方向
+      extern float4  gTerrainSpecEyePosition;     //摄像机位置
+      #define STERRAIN_SPECFACTOR
+      static float4  sTerrainSpecFactor; //高光强度
+    </parameter>
+    <code>
+      
+	    sTerrainSpecFactor = output.Color.a;
+		  float3 viewDir  = normalize(gTerrainSpecEyePosition - input.TERRAINPOS_INDEX);
+		  float3 lightDir = normalize(-gTerrainSpecSunLightDir);
+		  float3 Hn = normalize(viewDir+lightDir);
+      sTerrainSpecFactor *= sTerrainSpecFactor&gt;0.1 ? pow(dot(input.Normal,Hn),20.0f) : 0.0f;
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_Terrain_Lightmap" slot="SS_Pixel_LightMap">
+    <parameter>
+      extern sampler gTerrainLightMap0;
+      extern float   gTerrainLightMapUVRatio;   //LightMap相对地形位置的缩放比例
+      extern float3  gTerrainLightMapDirection; //直线光方向
+      extern float4  gTerrainLightMapColor;     //直线光颜色
+      extern float4  gTerrainLightMapBackColor; //直线背光颜色
+      extern float4  gTerrainLightMapAmbnColor; //环境光颜色
+      #define SLIGHTMAPCOLOR
+      static float4 sLightMapColor;  //最终得到的LightMap的颜色
+    </parameter>
+    <code>
+      
+      float realShadowLightAmount = 1.0f;
+      #ifdef SSHADOWLIGHTAMOUNT
+        realShadowLightAmount = sShadowLightAmount;
+      #endif
+      #ifdef STERRAINLOCALPOS
+        float4 texColor = tex2D(gTerrainLightMap0,float2(sTerrainLocalPos.x*gTerrainLightMapUVRatio,1.0f-sTerrainLocalPos.z*gTerrainLightMapUVRatio));
+	      //float4 texColor0 = tex2D(gTerrainLightMap0,float2(sTerrainLocalPos.x*gTerrainLightMapUVRatio,1.0f-sTerrainLocalPos.z*gTerrainLightMapUVRatio));
+	      //float4 texColor1 = tex2D(gTerrainLightMap1,float2(sTerrainLocalPos.x*gTerrainLightMapUVRatio,1.0f-sTerrainLocalPos.z*gTerrainLightMapUVRatio));
+	      //float4 texColor = lerp(texColor1,texColor0,gTerrainLightMapLerp);
+	      //阴影部分去掉太阳光
+        float dotDiffuse = dot(-gTerrainLightMapDirection,input.Normal);
+		#ifdef SHADOW_MAP_CSM
+          sLightMapColor.a = 1.0f;
+		#else
+		  sLightMapColor.a = min(texColor.a,realShadowLightAmount); //最终阴影系数
+		#endif
+	      texColor.rgb = texColor.rgb*2.0f+             //辅助光源
+                       sLightMapColor.a*              //考虑阴影的场景主光
+                       max(0.0f,dotDiffuse)*
+                       gTerrainLightMapColor.rgb*
+                       gTerrainLightMapColor.a*2.0f+
+                       max(0.0f,-dotDiffuse)*         //场景背光
+                       gTerrainLightMapBackColor.rgb+
+                       gTerrainLightMapAmbnColor.rgb; //场景环境光
+                       
+	      sLightMapColor.rgb = texColor.rgb;
+        
+	      output.Color *= texColor;
+        output.Color.a = 1.0f;
+        #ifdef STERRAIN_SPECFACTOR
+	        output.Color.rgb += sTerrainSpecFactor*sLightMapColor.a*gTerrainLightMapColor.rgb*gTerrainLightMapColor.a; //sLightMapColor.a为阴影强度信息
+        #endif
+      #else
+        #error [ModMud::PS_Terrain_Lightmap] No TerrainLocalPos Defined
+      #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_ShadowMap" slot="SS_Vertex_Output_ShadowMap">
+    <parameter>
+      extern float4x4 gShadowMapViewProjMatrix;  //顶点在ShadowMap坐标系下的投影坐标，ViewProj是光源摄像机坐标系变换
+      extern float4x4 gShadowMapWorldViewProjMatrix;  //顶点在ShadowMap坐标系下的投影坐标，ViewProj是光源摄像机坐标系变换
+    </parameter>
+    <uvMacros name="SHADOWMAPINDEX" />
+    <code>
+      
+      #ifdef SWORLDPOSITION
+          //把定点变换到光源所在的摄像机坐标系
+	  #ifdef SLOCALPOSITION
+            output.SHADOWMAPINDEX = mul(sLocalPosition,gShadowMapWorldViewProjMatrix); //投影坐标，用于采样
+	  #else
+            output.SHADOWMAPINDEX = mul(sWorldPosition,gShadowMapViewProjMatrix); //投影坐标，用于采样
+	  #endif
+      #else
+          output.SHADOWMAPINDEX = mul(input.Position,gShadowMapWorldViewProjMatrix); //对于地形没有sWorldPosition，直接用input.Position
+      #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_ShadowMap_SSM_TSM" slot="SS_Pixel_ShadowMap">
+    <parameter>
+      extern float4   gShmParams;     //lightProjPos.w*gShmParams.x+gShmParams.y;gShmParams.z阴影阈值;gShmParams.w==1 means write shadow to output.Color
+      extern sampler  gShmShadowMap;  //阴影深度图纹理
+      #define SSHADOWLIGHTAMOUNT
+      static float sShadowLightAmount; //阴影区域的光照强度，0.0f表示完全在阴影中，1.0f表示完全不再阴影中
+    </parameter>
+    <code>
+      
+      float4 lightSpaceProjPos = input.SHADOWMAPINDEX; 
+	    //transform from light space to texture space.
+      float2 ShadowTexC = saturate(0.5 * lightSpaceProjPos.xy/lightSpaceProjPos.w + float2( 0.5, 0.5 ));
+      ShadowTexC.y = 1.0f - ShadowTexC.y;
+   
+      lightSpaceProjPos.w = lightSpaceProjPos.w*gShmParams.x+gShmParams.y;
+      float depth = clamp(lightSpaceProjPos.z/lightSpaceProjPos.w,0.0f,1.0f);
+   
+      float texDepth = tex2D( gShmShadowMap, ShadowTexC ); //这个数值的范围是0.0 - 1.0
+      //sShadowLightAmount = (depth-texDepth-gShmParams.z) &lt; 0.0f ? 1.0 : 0.0f;
+      sShadowLightAmount = (depth-texDepth-0.001) &lt; 0.0f ? 1.0 : 0.0f;
+	    if ( gShmParams.w==1.0f )
+	    {
+	       output.Color.rgb *= sShadowLightAmount;
+	    }
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_ShadowMap_CSM" slot="SS_Vertex_Output_ShadowMap">
+    <parameter>
+		extern float4x4 gWorldMatrix_DP;
+    </parameter>
+    <uvMacros name="CSM_POSION_WS" />
+    <uvMacros name="CSM_POSION_CS" />
+    <code>
+      
+	  #ifdef SWORLDPOSITION
+	    #ifdef SLOCALPOSITION
+          output.CSM_POSION_WS = mul(sLocalPosition, gWorldMatrix_DP);
+          output.CSM_POSION_CS = mul(float4(output.CSM_POSION_WS.xyz, 1.0f), gViewProjMatrix_DP);
+	    #else
+          output.CSM_POSION_WS = sWorldPosition;
+          output.CSM_POSION_CS = mul(float4(output.CSM_POSION_WS.xyz, 1.0f), gViewProjMatrix_DP);
+	    #endif
+      #else
+        output.CSM_POSION_WS = mul(input.Position, gWorldMatrix_DP);
+        output.CSM_POSION_CS = mul(float4(output.CSM_POSION_WS.xyz, 1.0f), gViewProjMatrix_DP);
+      #endif
+/*
+	  #ifdef DeclareNormal
+	    #ifdef SLOCALNORMAL
+	      output.CSM_NORMAL_WS = mul(sLocalNormal, gWorldMatrix_DP);
+	    #else
+		  output.CSM_NORMAL_WS = mul(input.Normal, gWorldMatrix_DP);
+	    #endif
+	  #else
+		  output.CSM_NORMAL_WS = 1;
+	  #endif
+*/
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_ShadowMap_CSM" slot="SS_Pixel_ShadowMap">
+    <parameter>
+	  extern sampler  gShadowMap;
+	  extern float4 gCSMParam; // x, y--&gt;dimension of RT, z--&gt;is alpha, w--&gt;reserved
+      #define SHADOW_MAP_CSM
+    </parameter>
+    <code>
+      
+	  	float2 SSTexCoord = input.CSM_POSION_CS.xy / input.CSM_POSION_CS.w;
+		SSTexCoord		= SSTexCoord * 0.5f + 0.5f;
+		SSTexCoord.y	= 1.0f - SSTexCoord.y;
+		SSTexCoord	   += 0.5f / gCSMParam.xy;
+
+		output.Color.rgb *= (gCSMParam.z == 0.0f) ? 1.0f : tex2D(gShadowMap, SSTexCoord).rgb;
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_NormalMap" slot="SS_Vertex_Output_NormalMap">
+    <uvMacros name="NORMAL_MAP_INDEX1" />
+    <uvMacros name="NORMAL_MAP_INDEX2" />
+    <parameter>
+      extern float4x4 gMatWorld_NM; //应用程序设定的全局变量（shader不可修改）必须用extern声明，变量名以‘g’开头
+    </parameter>
+    <code>
+      
+      {
+      #ifdef SBONEMATLOCAL//考虑是否定义了蒙皮
+ 	      float4x4 lBoneMatWorld = mul(sBoneMatLocal,gMatWorld_NM); //Shader片段内的局部变量以‘l’开头，片段之间局部变量名可重复
+      #else
+        float4x4 lBoneMatWorld = gMatWorld_NM;
+      #endif
+	    output.NORMAL_MAP_INDEX1 = normalize( mul(input.Tangent,lBoneMatWorld) );
+ 	    output.NORMAL_MAP_INDEX2 = normalize( mul(input.Bionormal,lBoneMatWorld) );
+	}
+	    
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_NormalMap" slot="SS_Pixel_Normal">
+    <parameter>
+      extern sampler gNormalSampler;  //法线贴图纹理
+      #define SNORMALMAP              //宏的名字和变量名字一致
+      static float3  sNormalMap;      //供别的片段使用的法线值
+      
+    </parameter>
+    <code>
+      
+      {
+	    //规范化输入的切向空间到世界空间变换
+      #ifdef DeclareNormal
+	    float3 Tn = input.NORMAL_MAP_INDEX1;
+	    float3 Bn = input.NORMAL_MAP_INDEX2;
+	    float3 N  = input.Normal;
+	
+
+	    //根据法线贴图计算出来的切向空间的法向变换到世界空间	
+	    #ifdef NORMALMAP_UV_INDEX
+	    float3 bump = 2*(tex2D(gNormalSampler,input.NORMALMAP_UV_INDEX)-0.5).rgb;
+	    #else
+		    #error no normal map uv index
+	    #endif
+	    sNormalMap = bump.z*N + bump.x*Tn - bump.y*Bn; //Max烘焙时选红右绿下
+      #else
+        #error [ModMud] No Normal Declared
+      #endif
+      }
+	    
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_ReflectSphereMap" slot="SS_Vertex_Output_Reflection">
+    <uvMacros name="REFLECT_SPHERE_MAP_INDEX1" />
+    <parameter>
+      //extern float4x4 gMatView_RSM; //观察变换
+    </parameter>
+    <code>
+      
+      //output.REFLECT_SPHERE_MAP_INDEX1 = mul(sWorldPosition,gMatView_RSM);
+	    
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_ReflectCubeMap" slot="SS_Vertex_Output_Reflection">
+    <uvMacros name="REFLECT_CUBE_MAP_WORLDPOS" />
+    <code>
+      
+      {
+      #ifdef SWORLDPOSITION
+      output.REFLECT_CUBE_MAP_WORLDPOS = sWorldPosition;
+      #else
+      output.REFLECT_CUBE_MAP_WORLDPOS = input.Position;
+      #endif
+      }
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_ReflectSphereMap" slot="SS_Pixel_Reflection">
+    <parameter>
+      
+      extern float4x4 gMatView_PRS;
+      extern sampler gReflectSampler;
+	    
+    </parameter>
+    <code>
+      
+      {
+	    //float3 viewPos = input.REFLECT_SPHERE_MAP_INDEX1;
+	    #ifdef SNORMALMAP
+	    float3 reflectNormal = mul(sNormalMap,gMatView_PRS);
+	    #else
+	    float3 reflectNormal = mul(input.Normal,gMatView_PRS);
+	    #endif
+	    /*
+	    float3 reflectDirection = reflect(normalize(-viewPos),reflectNormal);
+	    reflectDirection += float3(0,0,1);
+      */
+      float3 reflectDirection = reflectNormal;
+	    reflectDirection = 0.5*normalize(reflectDirection)+0.5;
+	    float4 reflectColor = tex2D(gReflectSampler,float2(reflectDirection.x,reflectDirection.y));
+
+      #ifdef SMATERIALCHANNEL
+	      output.Color.rgb += output.Color.rgb*reflectColor.rgb*sMaterialChannel.b;
+      #else
+	      output.Color.rgb += output.Color.rgb*reflectColor.rgb;
+      #endif
+      }
+	    
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_ReflectCubeMap" slot="SS_Pixel_Reflection">
+    <parameter>
+      
+      extern float3      gEyePos_CubeReflect;
+      extern samplerCUBE gReflectCubemap;
+      
+    </parameter>
+    <code>
+      
+      {
+      float3 viewDir = normalize(input.REFLECT_CUBE_MAP_WORLDPOS-gEyePos_CubeReflect);
+      float3 reflectDir = reflect(viewDir,input.Normal);
+      float3 refractDir = normalize(reflect(viewDir,-input.Normal*0.4f));
+      float4 reflectColor = texCUBE(gReflectCubemap,reflectDir);
+      float4 refractColor = texCUBE(gReflectCubemap,refractDir);
+      #ifdef SMATERIALCHANNEL
+        //反射越强，phong模型光照的结果越弱
+        output.Color.rgb = lerp(output.Color.rgb,reflectColor.rgb,saturate(sMaterialChannel.b));//不加saturate可能出奇怪现象
+      #else
+	      output.Color.rgb = reflectColor.rgb;
+      #endif
+      output.Color.rgb = lerp(refractColor.rgb,output.Color.rgb,saturate(output.Color.a));//alpha越小折射越强
+      output.Color.a = 1.0f;
+      }
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_Pixel_Fog" slot="SS_Vertex_Output_Fog">
+    <uvMacros name="FOG_INDEX1" />
+    <parameter>
+      extern float    gFogEnable;
+      extern float4x4 gMatWorld_VOF; //观察变换
+    </parameter>
+    <code>
+      
+      if(gFogEnable == 1.0f)
+      {
+      #ifdef SWORLDPOSITION
+        output.FOG_INDEX1 = sWorldPosition;
+      #else
+        #ifdef SLOCALPOSITION
+          output.FOG_INDEX1 = mul(sLocalPosition,gMatWorld_VOF);
+        #else
+	  #ifdef TERRAINPOS_INDEX
+	  output.FOG_INDEX1 = input.Position;
+	  #else
+          output.FOG_INDEX1 = mul(input.Position,gMatWorld_VOF);
+	  #endif
+        #endif
+      #endif
+      }
+	    
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_Fog_Factor" slot="SS_Vertex_Output_Fog">
+    <uvMacros name="FOG_INDEX1" />
+    <include name="Fog" />
+    <parameter>
+      //在vs中计算雾化
+      extern float    gFogEnable;
+      extern float4x4 gMatWorld_VOF; //观察变换
+
+      extern float4 gFogArgument;
+      extern float4 gEyePosition_PPF;
+    </parameter>
+    <code>
+      
+      if(gFogEnable == 1.0f)
+      {
+          float4 worldPos;
+      #ifdef SWORLDPOSITION
+	 worldPos = sWorldPosition;
+      #else
+        #ifdef SLOCALPOSITION
+          worldPos = mul(sLocalPosition,gMatWorld_VOF);
+        #else
+	  #ifdef TERRAINPOS_INDEX
+	  worldPos = input.Position;
+	  #else
+          worldPos = mul(input.Position,gMatWorld_VOF);
+	  #endif
+        #endif
+      #endif
+        float toEye = distance(worldPos.xyz,gEyePosition_PPF.xyz);
+
+	float fogFactor = CalcFogFactor(gFogArgument,toEye);	
+	output.FOG_INDEX1.x = fogFactor;
+      }
+	    
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_Pixel_Fog_Factor" slot="SS_Pixel_Fog">
+    <parameter>
+      
+      extern float4 gFogColorAndEnable;//rgb雾的颜色，w是否开启雾
+	    
+    </parameter>
+    <code>
+      
+      if(gFogColorAndEnable.w == 1.0f)
+      {
+	float opacity = 1.0f;
+	#ifdef EffectFog
+	opacity = min(dot(output.Color.xyz,float3(0.2125f,0.715f,0.0721f)),output.Color.w);
+	#endif
+
+	#ifdef PASSNUM_INVERSE//需要多个pass,pass的倒数
+	    output.Color.xyz = lerp(gFogColorAndEnable.rgb*PASSNUM_INVERSE,output.Color.xyz,input.FOG_INDEX1.x);
+	#else//一般模型
+	    output.Color.xyz = lerp(gFogColorAndEnable.xyz*opacity,output.Color.xyz,input.FOG_INDEX1.x);
+	#endif
+	}
+	    
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_Pixel_Fog" slot="SS_Pixel_Fog">
+    <include name="Fog" />
+    <parameter>
+      
+      extern float4 gFogColorAndEnable;//rgb雾的颜色，w是否开启雾
+        extern float4 gFogArgument;
+	extern float4 gEyePosition_PPF;
+	    
+    </parameter>
+    <code>
+      
+
+        if(gFogColorAndEnable.w == 1.0f)
+	{
+        float toEye = distance(input.FOG_INDEX1.xyz,gEyePosition_PPF.xyz);
+	float fogFactor = CalcFogFactor(gFogArgument,toEye);	
+	float opacity = 1.0f;
+	#ifdef EffectFog
+	opacity = min(dot(output.Color.xyz,float3(0.2125f,0.715f,0.0721f)),output.Color.w);
+	#endif
+
+	#ifdef PASSNUM_INVERSE//需要多个pass,pass的倒数
+	    output.Color.xyz = lerp(gFogColorAndEnable.rgb*PASSNUM_INVERSE,output.Color.xyz,fogFactor);
+	#else//一般模型
+	    output.Color.xyz = lerp(gFogColorAndEnable.xyz*opacity,output.Color.xyz,fogFactor);
+	#endif
+	}
+	    
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_OutputDecal" slot="SS_Vertex_Output_SelfDefine">
+    <parameter>
+      extern float4x4 gDecalViewProjMatrix; //Decal节点的world*viewLight*projLight的变换
+      extern float4x4 gViewProjMatrix_VOD;
+    </parameter>
+    <uvMacros name="DECALINDEX" />
+    <code>
+      
+      output . Position = mul ( input . Position , gViewProjMatrix_VOD ) ;
+      output.DECALINDEX = mul(input.Position,gDecalViewProjMatrix); //投影坐标，用于采样
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_DecalUV" slot="SS_Pixel_UV">
+    <parameter>
+	extern float4x4 gMatModel_DD;
+    </parameter>
+    <code>
+      
+	float4 boxProjPos = input.DECALINDEX;
+	boxProjPos = boxProjPos/boxProjPos.w;
+	boxProjPos.w = 0;//避免发生位移
+
+	float2 decalUV = float2(-0.5f,0.5f)*boxProjPos.xy;
+	decalUV = mul(float4(decalUV.x,0,decalUV.y,0),gMatModel_DD).xz;
+	decalUV += float2(0.5,0.5);
+	input.UV0.xy = decalUV;
+	//float2 decalUV = 0.5f*boxProjPos.xy + 0.5f;
+	clip(1-abs(boxProjPos.x));
+	clip(1-abs(boxProjPos.y));
+	/*
+	clip(output.Color.x+output.Color.y+output.Color.z-0.5f);
+	*/
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_RefractDepth" slot="SS_Vertex_Output_ReflectRefractDepth">
+    <parameter>
+	extern float4x4 gWorldMatrix_VOR;
+    </parameter>
+    <uvMacros name="VOR_POSITION" />
+    <code>
+    
+      #ifdef SWORLDPOSITION
+        output.VOR_POSITION = sWorldPosition;
+      #else
+        #ifdef SLOCALPOSITION
+          output.VOR_POSITION = mul(sLocalPosition,gWorldMatrix_VOR);
+        #else
+	  #ifdef TERRAINPOS_INDEX
+	  output.VOR_POSITION = input.Position;
+	  #else
+          output.VOR_POSITION = mul(input.Position,gWorldMatrix_VOR);
+	  #endif
+        #endif
+      #endif
+	  
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_Output_ReflectDepth" slot="SS_Pixel_Output_ReflectRefractDepth">
+    <parameter>
+	extern float gOceanHeight;
+    </parameter>
+    <code>
+    
+    //0.1f 水平面上移,多画一些反射，避免缝
+	clip(input.VOR_POSITION.y - gOceanHeight+0.1f);
+	  
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_Output_RefractDepth" slot="SS_Pixel_Output_ReflectRefractDepth">
+    <parameter>
+	extern float4 gOceanHeightAndWaterColor;
+	//x:hasBlend y:cameraY z:FogRange
+	extern float4 gHasBlendCameraYFogRange;//如果有alpha blend 不能将output.Color.w设置成高度差
+	//extern float gMaxWaterFogRange;
+    </parameter>
+    <code>
+    
+    //可以在这里通过对gOceanHeightAndWaterColor.w-input.VOR_POSITION.y结果的缩放控制岸边的透明范围,现在默认是一个单位
+    if(gHasBlendCameraYFogRange.x != 1.0f)
+    {
+    //float fogFactor = saturate((input.VOR_POSITION.y - (gOceanHeightAndWaterColor.w-gMaxWaterFogRange))/gMaxWaterFogRange);
+    	float fogFactor = saturate((input.VOR_POSITION.y - (gOceanHeightAndWaterColor.w-gHasBlendCameraYFogRange.z))/gHasBlendCameraYFogRange.z);
+	output.Color.rgb = lerp(gOceanHeightAndWaterColor.rgb,output.Color.rgb,fogFactor);
+        output.Color.w = saturate((gOceanHeightAndWaterColor.w-input.VOR_POSITION.y));
+	if(gHasBlendCameraYFogRange.y &gt; gOceanHeightAndWaterColor.w
+	    &amp;&amp; input.VOR_POSITION.y - gOceanHeightAndWaterColor.w &gt; 1.0f)
+	{
+		output.Color.rgb = gOceanHeightAndWaterColor.rgb;
+	}
+	//clip(gOceanHeightAndWaterColor.w-input.VOR_POSITION.y);
+    }
+	  
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Water_UVAnimation" slot="SS_Vertex_Output_UVTex">
+    <parameter>
+      
+      extern float4 gUVScale_WU;//uv 行列缩放
+      
+    </parameter>
+    <code>
+      
+      output.UV0.xy = input.UV0.xy*gUVScale_WU.xy;
+	    
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_SimpleOutputWater" slot="SS_Vertex_Output_SelfDefine">
+    <uvMacros name="WaterRefractProjPosIndex" />
+    <code>
+      
+	output.WaterRefractProjPosIndex = output.Position;//正常的透视变换，使用在折射
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_WaterDiffuse" slot="SS_Pixel_Diffuse">
+    <parameter>
+      
+      extern sampler gDiffuseSampler_PWD; 
+      extern sampler gRefractionSampler_OW; 
+      extern float4  gWaterColor;
+      extern float   gIsUnderWater;
+      
+    </parameter>
+    <code>
+      
+      #ifdef DIFFUSE_UV_INDEX
+	    {
+	        float2 projectedRefrTexCoords;
+                input.WaterRefractProjPosIndex = input.WaterRefractProjPosIndex/input.WaterRefractProjPosIndex.w;
+         	projectedRefrTexCoords.x = input.WaterRefractProjPosIndex.x*0.5f + 0.5f;
+	        projectedRefrTexCoords.y = -input.WaterRefractProjPosIndex.y*0.5f + 0.5f;
+	        float4 terrainColor = tex2D(gRefractionSampler_OW,projectedRefrTexCoords);
+
+	        output.Color = tex2D(gDiffuseSampler_PWD,input.DIFFUSE_UV_INDEX);
+	        output.Color.xyz = lerp(output.Color.xyz,gWaterColor.xyz,gWaterColor.w);
+
+		if(gIsUnderWater == 1.0f)
+		{
+		    output.Color = lerp(terrainColor,output.Color,0.5f);
+		}
+		else//摄像机在水面上
+		{
+		    output.Color = lerp(terrainColor,output.Color,terrainColor.a);//TODO可以考虑把terrainColor.a乘一个系数控制透明
+		}
+	    }
+	    #else
+	      #error no diffuse uvindex
+	    #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_AdvanceOutputWater" slot="SS_Vertex_Output_SelfDefine">
+    <parameter>
+      extern float4x4 gReflectionView_OW;
+      extern float4   gEyePosAndWaveLength_OW;//xyz eye Pos w waveLength
+      extern float4x4 gMatWorld_OW;
+      extern float4x4 gMatProj_OW;
+    </parameter>
+    <uvMacros name="WaterUVIndex" />
+    <uvMacros name="WaterViewDirectionIndex" />
+    <uvMacros name="WaterReflectProjPosIndex" />
+    <uvMacros name="WaterRefractProjPosIndex" />
+    <code>
+      
+        float4x4 preReflectionViewProjection = mul (gReflectionView_OW, gMatProj_OW);
+        float4x4 preWorldReflectionViewProjection = mul (gMatWorld_OW, preReflectionViewProjection);
+        output.WaterReflectProjPosIndex = mul(input.Position, preWorldReflectionViewProjection);
+	output.WaterRefractProjPosIndex = output.Position;//正常的透视变换，使用在折射
+    
+        //法线动画沿着风向推进
+	output.WaterUVIndex = input.UV0*gEyePosAndWaveLength_OW.w;
+        //计算观察方向
+	#ifdef SWORLDPOSITION
+        output.WaterViewDirectionIndex = float4(gEyePosAndWaveLength_OW.xyz,1.0f) - sWorldPosition;
+	#else
+	#error "no world pos defined"
+	#endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_AdvanceWater" slot="SS_Pixel_Realtime_Lighting">
+    <parameter>
+    extern sampler gReflectionSampler_OW;
+	  extern sampler gRefractionSampler_OW;
+	  extern sampler gWaterBumpMapSampler;
+	  extern float4  gWaterColor;//xyz waterColor w waterColorBlendFactor
+	  extern float4  gWaterFactor_OW;//x waveHeight, y specularPower,z specularIntensity,w absTime*speed
+	  extern float4  gLightDirection_OW;//场景唯一直线光方向
+	  extern float4  gLightColor_OW;// 场景唯一直线光颜色
+	  extern float4  gIsUnderWater;//x,是否在水下 y blendFactor
+    </parameter>
+    <code>
+      
+	/*计算反射颜色*/
+	float3 viewDirection = normalize(input.WaterViewDirectionIndex.xyz);
+	float distance2Eye = length(input.WaterViewDirectionIndex.xyz);
+	float time1 = gWaterFactor_OW.w;
+	float time2 = 2 * gWaterFactor_OW.w;
+	float time3 = 3 * gWaterFactor_OW.w;
+	
+	float3 normal1  = (2*tex2D(gWaterBumpMapSampler,input.WaterUVIndex+float2(time1,time1))-1.0f).rgb;	
+	float3 normal2  = (2*tex2D(gWaterBumpMapSampler,input.WaterUVIndex+float2(time2,time2))-1.0f).rgb;	
+	float3 normal3 = (2*tex2D(gWaterBumpMapSampler,input.WaterUVIndex+float2(time2,-time2))-1.0f).rgb;	
+	float3 normal4 = (2*tex2D(gWaterBumpMapSampler,input.WaterUVIndex+float2(time3,time3))-1.0f).rgb;	
+
+	//float3 normal = normalize((normal1+normal2+normal3+normal4)*0.25f);
+	float3 normal = normalize((normal1+normal2+normal3+normal4)*0.25f);
+	
+	//经验公式,计算扰动分量
+	float2 perturbation = gWaterFactor_OW.x*normal.rg; 
+
+	//计算折射颜色
+	float2 projectedRefrTexCoords;
+	input.WaterRefractProjPosIndex = input.WaterRefractProjPosIndex/input.WaterRefractProjPosIndex.w;
+	projectedRefrTexCoords.x = input.WaterRefractProjPosIndex.x*0.5f + 0.5f;
+	projectedRefrTexCoords.y = -input.WaterRefractProjPosIndex.y*0.5f + 0.5f;
+	float2 perturbatedRefrTexCoords = projectedRefrTexCoords + perturbation;
+	float4 refractiveColor = tex2D(gRefractionSampler_OW, perturbatedRefrTexCoords);
+
+	if(gIsUnderWater.x == 1.0f)
+	{
+	    output.Color.xyz = lerp(refractiveColor.xyz,gWaterColor.xyz,gWaterColor.w);
+	}
+	else
+	{
+	    float4 terrainColor = tex2D(gRefractionSampler_OW,projectedRefrTexCoords);
+	    /*
+	    if(refractiveColor.w&lt;=0.3)
+	    {
+		refractiveColor = terrainColor;
+	    }
+	    */
+            //计算反射颜色
+            //插值过后Reflection.w可能已经不是1了,重新计算
+            float2 projectedTexCoords;
+	    input.WaterReflectProjPosIndex = input.WaterReflectProjPosIndex/input.WaterReflectProjPosIndex.w;
+	    projectedTexCoords.x = input.WaterReflectProjPosIndex.x*0.5f + 0.5f;
+            projectedTexCoords.y = -input.WaterReflectProjPosIndex.y*0.5f + 0.5f;
+            float2 perturbatedTexCoords = projectedTexCoords + perturbation;
+            float4 reflectiveColor = tex2D(gReflectionSampler_OW, perturbatedTexCoords);
+
+	    //混合折反射的颜色
+	    float3 normalVector = float3(0,1,0);
+            float fNdotV = dot(viewDirection, normalVector); // Fresnel term
+	    float fFresnel = 1.0 - fNdotV;
+	    float4 combinedColor = lerp(refractiveColor, reflectiveColor, fFresnel);
+	    //float waterColorFactor = 0.5f;//TODO可以外部控制
+	    combinedColor.xyz = lerp(combinedColor.xyz,gWaterColor.xyz,gWaterColor.w);
+
+	    float specularCon = 0;
+	    //计算高光颜色
+	    float3 lightDirection = gLightDirection_OW;
+	    float3 floatVec = normalize(viewDirection + lightDirection);
+	    normal = normalize(normal.rbg);
+	    specularCon = ((dot(normal,lightDirection) &lt; 0) || (dot(normal,floatVec) &lt; 0)) ? 0 : (pow(dot(normal,floatVec),gWaterFactor_OW.y));
+	    /*
+	    float specularClip = 0.03f;
+	    distance2Eye = min(distance2Eye*specularClip,1.0f);
+	    specularCon = distance2Eye * specularCon;
+	    */
+	    combinedColor += specularCon*gLightColor_OW*gWaterFactor_OW.z;
+	    output.Color = lerp(terrainColor,combinedColor,terrainColor.a);
+	    //output.Color = terrainColor;//combinedColor;//,terrainColor.a);
+	}
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_ShadowDepth_TSM_SSM" slot="SS_Vertex_Output_ShadowDepth">
+    <parameter>
+      extern float4x4 gShadowDepth_TSM_SSM_MatrixWorld;  //Output_ShadowDepth专用的变换矩阵;world*viewLight*projLight
+      extern float4x4 gShadowDepth_TSM_SSM_Matrix;       //Output_ShadowDepth专用的变换矩阵;viewLight*projLight
+    </parameter>
+    <uvMacros name="SD_POSITION" />
+    <code>
+      
+      #ifdef SWORLDPOSITION
+        #ifdef SLOCALPOSITION
+          output.SD_POSITION = mul(sLocalPosition,gShadowDepth_TSM_SSM_MatrixWorld);
+	      #else
+          output.SD_POSITION = mul(sWorldPosition,gShadowDepth_TSM_SSM_Matrix);
+	      #endif
+      #else
+        #ifdef SLOCALPOSITION
+          output.SD_POSITION = mul(sLocalPosition,gShadowDepth_TSM_SSM_Matrix);
+        #else
+          output.SD_POSITION = mul(input.Position,gShadowDepth_TSM_SSM_Matrix);
+        #endif
+      #endif
+	  
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_Output_ShadowDepth_TSM_SSM" slot="SS_Pixel_Output_ShadowDepth">
+    <parameter>
+      extern float4  gShadowDepth_TSM_SSM_Param; //Param.x,Param.y用来计算w，区分TSM/SSM；Param.z用来保存3.0/MAPSIZE
+    </parameter>
+    <code>
+      
+    float2 posUV = input.SD_POSITION.xy/input.SD_POSITION.w;
+	  clip( 1.0f - gShadowDepth_TSM_SSM_Param.z - abs(posUV.xy) ); //边缘像素不画，防止拉丝
+    float w = input.SD_POSITION.w*gShadowDepth_TSM_SSM_Param.x+gShadowDepth_TSM_SSM_Param.y;
+    output.Color.r = 0.f;//input.SD_POSITION.z/w;
+	  
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_SceneVelocity" slot="SS_Vertex_Output_SceneVelocity">
+    <uvMacros name="SV_POSITION0" />
+    <uvMacros name="SV_POSITION1" />
+    <parameter>
+      extern float4x4 gMatLastFrameViewProj_SV;
+    </parameter>
+    <code>
+    
+    #ifdef SWORLDPOSITION
+    output.SV_POSITION0 = output.Position;
+    output.SV_POSITION1 = mul(sWorldPosition,gMatLastFrameViewProj_SV);
+    #else
+    output.SV_POSITION0 = output.Position;
+    output.SV_POSITION1 = mul(input.Position,gMatLastFrameViewProj_SV);
+    #endif
+	  
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_Output_SceneVelocity" slot="SS_Pixel_Output_SceneVelocity">
+    <parameter>
+      extern float gIgnoreNode_SV; //不应该模糊的模型，强制写入0.0
+    </parameter>
+    <code>
+    
+    if ( gIgnoreNode_SV==1 )
+    {
+      output.Color.rg = float2(0.0f,0.0f);
+    }
+    else
+    {
+      float4 curPos  = input.SV_POSITION0/input.SV_POSITION0.w;
+      float4 lastPos = input.SV_POSITION1/input.SV_POSITION1.w;
+      float2 velocity = (curPos.xy-lastPos.xy)*0.5f;
+      output.Color.rg = velocity;
+    }
+	  
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Output_SceneDepth" slot="SS_Vertex_Output_SceneDepth">
+    <uvMacros name="SCD_POSITION" />
+    <parameter>
+      //extern float4 gMatView_SceneDepth;
+    </parameter>
+    <code>
+    
+    /*
+    #ifdef SWORLDPOSITION
+    output.SCD_POSITION = mul(sWorldPosition,gMatView_SceneDepth);
+    #else
+    output.SCD_POSITION = mul(input.Position,gMatView_SceneDepth);
+    #endif
+    */
+    output.SCD_POSITION = output.Position;
+	  
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_Output_SceneDepth" slot="SS_Pixel_Output_SceneDepth">
+    <parameter>
+      extern float gFarClip;
+      extern float gIgnoreNode_SV;
+    </parameter>
+    <code>
+    
+//	output.Color.r = input.SCD_POSITION.z / gFarClip;
+
+	float depth = input.SCD_POSITION.z / gFarClip;
+	const float max16bit = 256.0 * 256.0 - 1;
+	depth *= max16bit;
+	float2 res = floor(depth / float2(256.0, 1.0));
+	res.y -= res.x * 256.0;
+	res /= 255.0;
+
+	output.Color.rg = res;
+	output.Color.b = gIgnoreNode_SV != 1;
+	output.Color.a = 1.0f;
+	  
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_Output_SceneDepthNormalize" slot="SS_Pixel_Output_SceneDepth">
+    <code>
+    
+//	output.Color.r = input.SCD_POSITION.z / input.SCD_POSITION.w;
+
+	float depth = input.SCD_POSITION.z / input.SCD_POSITION.w;
+	const float max16bit = 256.0 * 256.0 - 1;
+	depth *= max16bit;
+	float2 res = floor(depth / float2(256.0, 1.0));
+	res.y -= res.x * 256.0;
+	res /= 255.0;
+	
+	output.Color.rg = res;
+	output.Color.ba = 1.f;
+	  
+    </code>
+  </shaderFragment>
+  <shaderFragment name="VS_Combine_ShadowMap" slot="SS_Vertex_Combine_ShadowMap">
+    <parameter>
+      extern float4 gOcclusionTextureSize;
+	  extern float4 gFrustumCornersVS[4];
+    </parameter>
+    <code>
+    
+	output.Position.x 	= input.Position.x - (1.0f / gOcclusionTextureSize.x);
+	output.Position.y 	= input.Position.y + (1.0f / gOcclusionTextureSize.y);
+	output.Position.z 	= input.Position.z;
+	output.Position.w 	= 1.0f;
+
+	output.UV0.xy 		= input.UV0.xy;
+	output.UV1	  		= gFrustumCornersVS[input.UV0.z];
+	
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_Combine_ShadowMap" slot="SS_Pixel_Combine_ShadowMap">
+    <parameter>
+		extern sampler	gDepthSampler_P;
+		extern sampler	gColorSampler_P;
+		extern float2	gClipPlane;
+		extern float2	gShadowMapSize;
+		extern float4x4	gMatInvView;
+		extern float4x4	gMatLightViewProj;
+		static float    BIAS = 0.0005f;
+    </parameter>
+    <code>
+    
+	const float max16bit = 256.0 * 256.0 - 1.0;
+	float2 PixelDepth = tex2D(gDepthSampler_P, input.UV0.xy).rg;
+	PixelDepth.x = 255.0 * dot(PixelDepth, float2(256.0, 1.0)) / max16bit;
+
+	float4 PosVS = float4(PixelDepth.x * input.UV1, 1.0f);
+//	float4 PosVS = float4(input.UV0.x * 2 - 1, (1 - input.UV0.y) * 2 - 1, PixelDepth.x, 1);
+	
+	clip(PosVS.z - gClipPlane.x);
+	clip(gClipPlane.y - PosVS.z);
+//	if (PosVS.z &lt; gClipPlane.x || PosVS.z &gt; gClipPlane.y)
+//	{
+//		clip(-1.0f);
+//	}
+
+	float4x4 matViewToLightViewProj	= mul(gMatInvView, gMatLightViewProj);
+	float4 PositionLightCS			= mul(PosVS, matViewToLightViewProj);
+
+//	float LightDepth = saturate(PositionLightCS.z / PositionLightCS.w);
+	float LightDepth = PositionLightCS.z / PositionLightCS.w;
+
+    float2 ShadowTexCoord = 0.5f * PositionLightCS.xy / PositionLightCS.w + float2(0.5f, 0.5f);
+    ShadowTexCoord.y = 1.0f - ShadowTexCoord.y;
+    ShadowTexCoord  += (0.5f / gShadowMapSize);
+
+//	float Depth	= tex2D(gColorSampler_P, ShadowTexCoord).x;
+//	float ShadowTerm = (LightDepth &lt;= Depth + BIAS) ? 1.f : 0.45f;
+
+	// pcf soft shadow
+	int SqrtSamples = 5;	// use 5 samples
+	float ShadowTerm = 0.0f;
+
+	float Radius = (SqrtSamples - 1.0f) / 2;	// use 5 samples
+	float WeightAccum = 0.0f;
+
+	for (float y = -Radius; y &lt;= Radius; y ++)
+	{
+		for (float x = -Radius; x &lt;= Radius; x ++)
+		{
+			float2 Offset = 0;
+			Offset = float2(x, y);
+			Offset /= gShadowMapSize;
+			float2 SamplePoint = ShadowTexCoord + Offset;
+			float2 Depth = tex2D(gColorSampler_P, SamplePoint).rg;
+			Depth.x = 255.0 * dot(Depth, float2(256.0, 1.0)) / max16bit;
+
+			float Sample = (LightDepth &lt;= Depth.x + BIAS) ? 1.0f : 0.5f;
+
+			float WeightX = 1.f;
+			float WeightY = 1.f;
+
+			if (x == -Radius)
+			{
+				WeightX = 1.f - frac(ShadowTexCoord.x * gShadowMapSize.x);
+			} else if (x == Radius)
+			{
+				WeightX = frac(ShadowTexCoord.x * gShadowMapSize.x);
+			}
+
+			if (y == -Radius)
+			{
+				WeightY = 1.f - frac(ShadowTexCoord.y * gShadowMapSize.y);
+			} else if (y == Radius)
+			{
+				WeightY = frac(ShadowTexCoord.y * gShadowMapSize.y);
+			}
+
+			ShadowTerm += Sample * WeightX * WeightY;
+			WeightAccum = WeightX * WeightY;
+		}
+	}
+
+	ShadowTerm /= (SqrtSamples * SqrtSamples);
+	ShadowTerm *= 1.55f;
+
+	output.Color = float4(ShadowTerm, ShadowTerm, ShadowTerm, 1.f);
+	
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_DiffuseDefault" slot="SS_Pixel_Diffuse">
+    <code>
+      
+		  output.Color = input.Color;
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_DiffuseFactor" slot="SS_Pixel_Diffuse">
+    <parameter>
+      extern float4  gDiffuseColor_PDF; //如果没有漫反射纹理就使用max中的漫反射颜色
+    </parameter>
+    <code>
+      
+		  output.Color = gDiffuseColor_PDF;
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_DiffuseOneTexture" slot="SS_Pixel_Diffuse">
+    <parameter>
+      
+      extern sampler gDiffuseSampler_OneT; 
+      
+    </parameter>
+    <code>
+      
+	    #ifdef DIFFUSE_UV_INDEX
+	    {
+		    output.Color = tex2D(gDiffuseSampler_OneT,input.DIFFUSE_UV_INDEX);
+	    }
+	    #else
+	      #error no diffuse uvindex
+	    #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_DiffuseDissolve" slot="SS_Pixel_Diffuse">
+    <parameter>
+      
+      extern sampler gDiffuseSampler_DD; 
+      extern sampler gAlphaSampler_DD; 
+      extern float4  gAlphaClipFactor;//x clipRef y fade range,z lerpFactor between diffuse color and edge color
+      extren float4  gEdgeColor;//rgb color a brightness;
+      /*
+      extern float   gAlphaClipRef_DD;
+      extern float   gAlphaFadeRange;//边缘的范围
+      extern float   gBrightness;//加亮程度
+      */
+      
+    </parameter>
+    <code>
+      
+      #ifdef DIFFUSE_UV_INDEX
+	    {
+		    output.Color = tex2D(gDiffuseSampler_DD,input.DIFFUSE_UV_INDEX);
+		    output.Color.w *= tex2D(gAlphaSampler_DD,input.DIFFUSE_UV_INDEX).r;
+		    output.Color.w -= gAlphaClipRef_DD;
+		    clip(output.Color.w);
+
+		    if(output.Color.w &lt;= gAlphaFadeRange)
+		    {
+		        output.Color*=gBrightness;
+		    }
+	    }
+	    #else
+	      #error no diffuse uvindex
+	    #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_DiffuseMultiLayer" slot="SS_Pixel_Diffuse">
+    <include name="TextureLayer" />
+    <parameter>
+      
+    #define LayerParameter(index) extern sampler gSampler##index;extern float2 gUVTransDML##index;extern float4  gAlphaClip##index;extern float4x4 gUVRotate##index;
+      /*
+      需要#define TEXTURE_LAYERN
+      #define TL_CLIPN
+      */
+      #ifdef TEXTURE_LAYER0
+      LayerParameter(0);
+      #endif
+
+      #ifdef TEXTURE_LAYER1
+      LayerParameter(1);
+      #endif
+
+      #ifdef TEXTURE_LAYER2
+      LayerParameter(2);
+      #endif
+
+      #ifdef TEXTURE_LAYER3
+      LayerParameter(3);
+      #endif
+
+      #ifdef TEXTURE_LAYER4
+      LayerParameter(4);
+      #endif
+
+      #ifdef TEXTURE_LAYER5
+      LayerParameter(5);
+      #endif
+
+      #ifdef TEXTURE_LAYER6
+      LayerParameter(6);
+      #endif
+
+      #ifdef TEXTURE_LAYER7
+      LayerParameter(7);
+      #endif
+      
+    </parameter>
+    <code>
+      
+      #ifdef DIFFUSE_UV_INDEX
+      #ifdef TEXTURE_LAYER0
+      output.Color = 0;//有贴图层，初始化为黑色
+      TextureLayer(0);
+      #else
+      output.Color = 1;//没有贴图层，显示白色
+      #endif
+
+      #ifdef TEXTURE_LAYER1
+      TextureLayer(1);
+      #endif
+
+      #ifdef TEXTURE_LAYER2
+      TextureLayer(2);
+      #endif
+
+      #ifdef TEXTURE_LAYER3
+      TextureLayer(3);
+      #endif
+
+      #ifdef TEXTURE_LAYER4
+      TextureLayer(4);
+      #endif
+
+      #ifdef TEXTURE_LAYER5
+      TextureLayer(5);
+      #endif
+
+      #ifdef TEXTURE_LAYER6
+      TextureLayer(6);
+      #endif
+
+      #ifdef TEXTURE_LAYER7
+      TextureLayer(7);
+      #endif
+
+      #else
+      #error no diffuse uvindex
+      #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_EmissiveTexture" slot="SS_Pixel_Emissive_Blend">
+    <parameter>
+      
+      extern sampler gEmissiveSampler_ET; 
+      
+    </parameter>
+    <code>
+      
+	    #ifdef Emissive_UV_INDEX
+	    {
+	    output.Color = output.Color + tex2D(gEmissiveSampler_ET,input.Emissive_UV_INDEX);//一般使用漫反射的uv坐标
+	    }
+	    #else
+	      #error no emissive uvindex
+	    #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_DiffuseMaskTexture" slot="SS_Pixel_Diffuse">
+    <parameter>
+      
+      extern sampler gDiffuseSampler_DST; 
+      extern sampler gColorMaskSampler_DST; 
+      extern float4  gColor_DST;
+      extern float4  gColor_DST1;
+      
+    </parameter>
+    <code>
+      
+      #ifdef DIFFUSE_UV_INDEX
+	    {
+	            float4 mask = tex2D(gColorMaskSampler_DST,input.DIFFUSE_UV_INDEX);
+		    float4 diffuseColor = tex2D(gDiffuseSampler_DST,input.DIFFUSE_UV_INDEX);
+		    output.Color = diffuseColor*saturate(gColor_DST*mask.r + gColor_DST1*mask.g) + saturate(1-mask.r-mask.g)*diffuseColor;
+	    }
+	    #else
+	      #error no diffuse uvindex
+	    #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_SkyVertexColorBlend" slot="SS_Pixel_Diffuse">
+    <parameter>
+      
+        uniform float3 gTopColor;//对应顶点最上面一圈的颜色
+	uniform float3 gMiddleColor;//对应顶点中间一圈的颜色 
+	uniform float3 gBottomColor;//对应顶点最下面一圈的颜色
+      
+    </parameter>
+    <code>
+      
+      #ifdef DeclareColor
+      output.Color.xyz = input.Color.r*gTopColor + input.Color.g*gMiddleColor + input.Color.b*gBottomColor;
+      #else
+	#error no vertex color declaration in sky outside vertics 
+      #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_SkyDiffuseBlend4" slot="SS_Pixel_Diffuse">
+    <parameter>
+      
+	uniform sampler gSkyDiffuseSampler0; 
+	uniform sampler gSkyDiffuseSampler1; 
+	uniform sampler gSkyDiffuseSampler2; 
+	uniform sampler gSkyDiffuseSampler3; 
+	uniform float4 gSkyDiffuseWeight;
+      
+    </parameter>
+    <code>
+      
+	#ifdef DIFFUSE_UV_INDEX
+	{
+	output.Color = gSkyDiffuseWeight.x*tex2D(gSkyDiffuseSampler0,input.DIFFUSE_UV_INDEX) 
+	               + gSkyDiffuseWeight.y*tex2D(gSkyDiffuseSampler1,input.DIFFUSE_UV_INDEX)
+	               + gSkyDiffuseWeight.z*tex2D(gSkyDiffuseSampler2,input.DIFFUSE_UV_INDEX)
+		       + gSkyDiffuseWeight.w*tex2D(gSkyDiffuseSampler3,input.DIFFUSE_UV_INDEX);
+        #ifdef DeclareColor
+	output.Color.w = output.Color.w * input.Color.w;
+	#else
+		#error no vertex color in sky mesh
+	#endif
+	}
+	#else
+		#error no diffuse uvindex
+	#endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_SkyDiffuse" slot="SS_Pixel_Diffuse">
+    <parameter>
+      
+	uniform sampler gSkyDiffuseSampler0; 
+	uniform sampler gSkyDiffuseSampler1; 
+	uniform float gSkyDiffuseWeight;
+      
+    </parameter>
+    <code>
+      
+	#ifdef DIFFUSE_UV_INDEX
+	{
+	output.Color = gSkyDiffuseWeight*tex2D(gSkyDiffuseSampler0,input.DIFFUSE_UV_INDEX) 
+	               + (1-gSkyDiffuseWeight)*tex2D(gSkyDiffuseSampler1,input.DIFFUSE_UV_INDEX);
+	}
+	#else
+		#error no diffuse uvindex
+	#endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_AlphaClipDiffuse" slot="SS_Pixel_DiffuseAlphaClip">
+    <parameter>
+      
+      extern sampler gDiffuseSampler_ACD; 
+      extern float gAlphaClipRef_ACD;
+      
+    </parameter>
+    <code>
+      
+      #ifdef DIFFUSE_UV_INDEX
+	    {
+	    float4 diffuseColor= tex2D(gDiffuseSampler_ACD,input.DIFFUSE_UV_INDEX);
+	    //clip(diffuseColor.a-min(0.5f,gAlphaClipRef_ACD));
+	    clip(diffuseColor.a-gAlphaClipRef_ACD);
+	    }
+	    #else
+	      #error no diffuse uvindex
+	    #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_AlphaClip" slot="SS_Pixel_AlphaClip">
+    <parameter>
+      
+      extern float gAlphaClipRef; //AlphaClip仅仅根据当前颜色Alpha值进行Clip
+      
+    </parameter>
+    <code>
+      
+      //clip(output.Color.a-min(0.5f,gAlphaClipRef));
+      clip(output.Color.a-gAlphaClipRef);
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_AlphaClipMap" slot="SS_Pixel_AlphaClip">
+    <parameter>
+      
+      extern sampler gAlphaClipMap; //alpha clip的纹理
+      extern float gAlphaClipRef;   //AlphaClip仅仅根据当前颜色Alpha值进行Clip
+      
+    </parameter>
+    <code>
+      
+      #ifdef ALPHACLIP_UV_INDEX
+      float4 alphaMaskColor = tex2D(gAlphaClipMap,input.ALPHACLIP_UV_INDEX);
+      clip(alphaMaskColor.a-gAlphaClipRef);
+      #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_SpecularFactor" slot="SS_Pixel_SpecularFactor">
+    <parameter>
+      
+      extern float4  gSpecularColor_PSF; //如果没有高光纹理就使用max中的高光颜色
+      #define SMATERIALSPECULARCOLOR
+      static float4 sMaterialSpecularColor;
+      
+    </parameter>
+    <code>
+      
+	    sMaterialSpecularColor = gSpecularColor_PSF;
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_SpecularMap" slot="SS_Pixel_SpecularFactor">
+    <parameter>
+      
+      extern sampler gSpecularMapSampler;
+      #define SMATERIALSPECULARCOLOR 
+      static float4 sMaterialSpecularColor;  //计算光照时，传递Specular信息
+      #define SMATERIALCHANNEL //高光纹理目前作为通道来使用，r - 高光强度，g - 高光Power值，b - 反射强度， a - 暂时未定义; 此时高光颜色为白色
+      static float4 sMaterialChannel;
+      
+    </parameter>
+    <code>
+      
+      #ifndef SPECULAR_UV_INDEX
+        #error [ModMud::PS_SpecularMap] no SPECULAR_UV_INDEX specified
+      #else
+        sMaterialChannel = tex2D(gSpecularMapSampler,input.SPECULAR_UV_INDEX);
+        sMaterialSpecularColor = float4(1.0f,1.0f,1.0f,1.0f);
+        sMaterialChannel.b *= 2; //反射通道做*2处理
+      #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_PixelPhong_Diffuse_DirectOnly" slot="SS_Pixel_Realtime_Lighting">
+    <parameter>
+      
+      extern float4x4 gMainLightInfo;   //第一行，环境光颜色；第二行，直线光颜色；第三行，直线光方向；第四行背光颜色
+      
+    </parameter>
+    <include name="PhongDiffuse" />
+    <code>
+      
+      {
+      float4 lightColor = 0.0f;
+      //环境光
+      lightColor = gMainLightInfo[0];
+      //平行光
+      {
+        float4 direLightDiffuse;
+        #ifdef SNORMALMAP
+        direLightDiffuse = Phong_DirectLight_Diffuse(gMainLightInfo[1],gMainLightInfo[3],gMainLightInfo[2],float4(sNormalMap,0.f));
+        #else
+	direLightDiffuse = Phong_DirectLight_Diffuse(gMainLightInfo[1],gMainLightInfo[3],gMainLightInfo[2],input.Normal);
+	#endif
+        //考虑实时阴影对光照的影响
+        #ifdef SSHADOWLIGHTAMOUNT
+        lightColor += direLightDiffuse*sShadowLightAmount;
+        #else
+        lightColor += direLightDiffuse;
+        #endif
+      }
+      output.Color *= lightColor;
+      }
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_PixelPhong_Diffuse" slot="SS_Pixel_Realtime_Lighting">
+    <parameter>
+      
+      extern float4   gLightMask;           //每个元素只能取值0.0/1.0，分别表示四个光源是否存在
+      extern float4x4 gMainLightInfo;   //第一行，环境光颜色；第二行，直线光颜色；第三行，直线光方向；第四行背光颜色
+      extern float4x4 gPointLight0;     //第一行，颜色；第二行位置；第三行，衰减(0:atten0,1:atten1;2:atten2;3:range)
+      extern float4x4 gPointLight1;     //第一行，颜色；第二行位置；第三行，衰减(0:atten0,1:atten1;2:atten2;3:range)
+      
+    </parameter>
+    <include name="PhongDiffuse" />
+    <code>
+      
+      {
+      float4 lightColor = 0.0f;
+      //环境光
+      lightColor = gMainLightInfo[0];
+      //平行光
+      if ( gLightMask.y==1.0f )
+      {
+        float4 direLightDiffuse;
+        #ifdef SNORMALMAP
+        direLightDiffuse = Phong_DirectLight_Diffuse(gMainLightInfo[1],gMainLightInfo[3],gMainLightInfo[2],float4(sNormalMap,0.f));
+        #else
+	direLightDiffuse = Phong_DirectLight_Diffuse(gMainLightInfo[1],gMainLightInfo[3],gMainLightInfo[2],input.Normal);
+	#endif
+        //考虑实时阴影对光照的影响
+        #ifdef SSHADOWLIGHTAMOUNT
+        lightColor += direLightDiffuse*sShadowLightAmount;
+        #else
+        lightColor += direLightDiffuse;
+        #endif
+      }
+      //点光0
+      if ( gLightMask.z==1.0f )
+      {
+        #ifdef SNORMALMAP
+        lightColor += Phong_PointLight_Diffuse(gPointLight0,input.PIXELPHONG_INDEX,float4(sNormalMap,0.f));
+        #else
+	lightColor += Phong_PointLight_Diffuse(gPointLight0,input.PIXELPHONG_INDEX,input.Normal);
+	#endif
+      }
+      //点光1
+      if ( gLightMask.w==1.0f )
+      {
+        #ifdef SNORMALMAP
+        lightColor += Phong_PointLight_Diffuse(gPointLight1,input.PIXELPHONG_INDEX,float4(sNormalMap,0.f));
+        #else
+        lightColor += Phong_PointLight_Diffuse(gPointLight1,input.PIXELPHONG_INDEX,input.Normal);
+        #endif
+      }
+      output.Color *= lightColor;
+      }
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_SHDiffuse" slot="SS_Pixel_SH_Lighting">
+    <parameter>
+      
+      extern float4 gSHMask; 
+      struct SHCoeff
+      {
+        float4 cAr;
+        float4 cAg;
+        float4 cAb;
+        float4 cBr;
+        float4 cBg;
+        float4 cBb;
+        float4 cC;
+      };
+      extern SHCoeff gSHCoeff;
+      #define SH_LIGHTING
+      static float4 sSHLighting = {0,0,0,1};
+      
+    </parameter>
+    <include name="PhongDiffuse" />
+    <code>
+      
+      
+      //平行光
+      #ifdef SNORMALMAP     
+        float3 sWorldNormal = sNormalMap;
+      #else
+        float3 sWorldNormal = input.Normal.rgb;
+	    #endif 
+    
+      [branch] if (gSHMask.x&gt;0)
+      {
+          float3 x1, x2, x3;
+          // Linear + constant polynomial terms
+          x1.r = dot(gSHCoeff.cAr,sWorldNormal);
+          x1.g = dot(gSHCoeff.cAg,sWorldNormal);
+          x1.b = dot(gSHCoeff.cAb,sWorldNormal);
+          
+          // 4 of the quadratic polynomials
+          float4 vB = sWorldNormal.xyzz * sWorldNormal.yzzx;   
+          x2.r = dot(gSHCoeff.cBr,vB);
+          x2.g = dot(gSHCoeff.cBg,vB);
+          x2.b = dot(gSHCoeff.cBb,vB);
+         
+          // Final quadratic polynomial
+          float vC = sWorldNormal.x*sWorldNormal.x - sWorldNormal.y*sWorldNormal.y;
+          x3 = gSHCoeff.cC.rgb * vC;    
+
+          sSHLighting.xyz = max(x1 + x2 + x3,0);  
+          sSHLighting.w = gSHCoeff.cC.a;
+      }
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_PixelPhong_EngeryShadow" slot="SS_Pixel_Realtime_Lighting">
+    <parameter>
+      
+      extern float4   gEnergyShadowColor;//残影颜色,xyz是残影颜色，w为纹理增益系数
+      
+    </parameter>
+    <code>
+      
+        float4 worldNormal = input.Normal;
+        //使用diffuse贴图的灰度，增强细节，下面的参数都是经验参数
+        float illum = 0.299*output.Color.r+0.587*output.Color.g+0.114*output.Color.b;
+        float amplifier = gEnergyShadowColor.w*illum*(0.5f+illum); //0.5+illum是增强对比度的方法
+        output.Color.rgb = gEnergyShadowColor.rgb*(1.0f+amplifier);
+        output.Color.a = 0.5f+amplifier*0.5f;
+        
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_PixelPhong_DiffuseSpecular" slot="SS_Pixel_Realtime_Lighting">
+    <parameter>
+      
+      extern float4   gLightMask;          //每个元素只能取值0.0/1.0，分别表示四个光源是否存在
+      extern float4x4 gMainLightInfo;      //第一行，环境光颜色；第二行，直线光颜色；第三行，直线光方向；第四行背光颜色
+      extern float4x4 gPointLight0;        //第一行，颜色；第二行位置；第三行，衰减(0:atten0,1:atten1;2:atten2;3:range)
+      extern float4x4 gPointLight1;        //第一行，颜色；第二行位置；第三行，衰减(0:atten0,1:atten1;2:atten2;3:range)
+      extern float4   gEyePosition_PPDS;   //EyePosition in World Coord
+      extern float4   gLightParam_PPDS;    //gLightParam_PPDS.x为Specular指数；gLightParam_PPDS.y为边缘光宽度；gLightParam_PPDS.z为是否是全局加边缘光，否则只在受光面加；
+      extern float4   gEdgeLightColor_PPDS;//边缘光颜色 rgb,a 加亮
+      extern float4    gEnableEdgeLight;//是否开启边缘光
+      
+    </parameter>
+    <include name="PhongSpecular" />
+    <code>
+      
+      {
+      float4 litDiffuseResult = 0;
+      float4 litSpecularResult = 0;
+      float4 litBackResult = 0;//背光颜色
+      float4 litEdgeLight = 0; //边缘光颜色
+      float4 worldNormal;
+      //考虑法线贴图
+      #ifdef SNORMALMAP
+        worldNormal = float4(sNormalMap,0.f);  
+      #else
+        worldNormal = input.Normal;
+      #endif
+      float specStren = 1.0f;
+      float specExpon = gLightParam_PPDS.x;
+      #ifdef SMATERIALCHANNEL
+        specStren *= sMaterialChannel.r;
+        specExpon = sMaterialChannel.g*255;
+      #endif
+      worldNormal = normalize(worldNormal);
+      //平行光
+      if ( gLightMask.y==1.0f )
+      {
+        float4 lightDiffuseColor,lightSpecColor;
+        float3 viewDir;
+        viewDir = normalize(gEyePosition_PPDS-input.PIXELPHONG_INDEX);
+        float3 Hn = normalize(viewDir + gMainLightInfo[2]);
+        float dotDN = dot(gMainLightInfo[2],worldNormal);
+        float dotHN = dot(Hn,worldNormal);
+        Phong_DirectLight_Diffuse_Specular(
+          gMainLightInfo[1], //diffuse color
+          gMainLightInfo[3], //back color
+          gMainLightInfo[2], //direction
+          specExpon,
+          dotDN,
+          dotHN,
+          worldNormal,
+          lightDiffuseColor,
+	        lightSpecColor,
+	        litBackResult);
+
+        #ifdef SH_LIGHTING
+          lightDiffuseColor *= sSHLighting.w;
+        #endif
+        
+        //考虑实时阴影对光照的影响
+        #ifdef SSHADOWLIGHTAMOUNT
+        litDiffuseResult += lightDiffuseColor*sShadowLightAmount;
+	      litSpecularResult += lightSpecColor*sShadowLightAmount*specStren;
+        #else
+        litDiffuseResult += lightDiffuseColor;
+        litSpecularResult += lightSpecColor*specStren;
+        #endif
+        float VN = dot(viewDir,worldNormal);
+	      if(gEnableEdgeLight.x == 1.0f)
+	      {
+	          litEdgeLight = saturate(1.0f-VN*gLightParam_PPDS.y)*gEdgeLightColor_PPDS*max(gLightParam_PPDS.z,dotDN)*gEdgeLightColor_PPDS.a; //光照区域加亮
+	      }
+      }
+      
+      #ifdef SH_LIGHTING
+        litDiffuseResult += sSHLighting;
+      #endif
+      
+      //点光0
+      if ( gLightMask.z==1.0f )
+      {
+        float4 lightDiffuseColor,lightSpecColor;
+        Phong_PointLight_Diffuse_Specular(
+          gPointLight0,
+          specExpon,
+          gEyePosition_PPDS,
+          input.PIXELPHONG_INDEX, //world position
+          worldNormal,
+          lightDiffuseColor,
+          lightSpecColor);
+        litDiffuseResult += lightDiffuseColor;
+        litSpecularResult += lightSpecColor*specStren;
+      }
+      //点光1
+      if ( gLightMask.w==1.0f )
+      {
+        float4 lightDiffuseColor,lightSpecColor;
+        Phong_PointLight_Diffuse_Specular(
+          gPointLight1,
+          specExpon,
+          gEyePosition_PPDS,
+          input.PIXELPHONG_INDEX, //world position
+          worldNormal,
+          lightDiffuseColor,
+          lightSpecColor);
+        litDiffuseResult += lightDiffuseColor;
+        litSpecularResult += lightSpecColor*specStren;
+      }
+      //此时Output.Color应该等于MaterialDiffuse
+      #ifdef SMATERIALSPECULARCOLOR
+      output.Color.rgb = (output.Color*(litDiffuseResult+gMainLightInfo[0]+litBackResult)+sMaterialSpecularColor*litSpecularResult).rgb;
+      #else
+      output.Color.rgb = (output.Color*(litDiffuseResult+gMainLightInfo[0]+litBackResult)+litSpecularResult).rgb;
+      #endif
+
+      //视空间边缘加亮
+      output.Color.rgb += litEdgeLight.rgb; //光照区域加亮
+      }
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_LightMap_StaticObj" slot="SS_Pixel_LightMap">
+    <parameter>
+      
+      extern sampler gLightMap_StaticObj;      //辅助光照图+阴影信息
+      extern float4  gDirColor_LM;             //场景直线光颜色
+
+      extern float3  gDirDirection_LM;         //场景直线光方向
+      extern float4  gDirBackColor_LM;         //场景直线光背光颜色
+      extern float4  gAmbientColor_LM;         //场景环境光颜色
+      extern float4  gTreePos_LM;              //xyz表示数节点的世界坐标，w表示是否为树叶节点；对树叶法线要但特殊计算
+      #ifdef SMATERIALSPECULARCOLOR
+      extern float  gSpecExpon_StaticObjLM;    //Specular指数
+      extern float4 gEyePosition_StaticObjLM;  //眼睛位置
+      #endif
+      
+    </parameter>
+    <code>
+      
+      #ifndef LIGHTMAP_INDEX
+        #error no LIGHTMAP_INDEX defined
+      #endif
+      float3 normal;
+      #ifdef SNORMALMAP
+	      normal = sNormalMap;
+	    #else
+	      normal = input.Normal;
+	    #endif
+      if ( gTreePos_LM.w==1.0f )
+      {
+        //树叶节点，法线单独计算
+        #ifdef PIXELPHONG_INDEX
+          normal = normalize(input.PIXELPHONG_INDEX-gTreePos_LM.xyz);
+        #else
+          #error [ModMud::PS_LightMap_StaticObj] No PIXELPHONE_INDEX find.
+        #endif
+      }
+      float4 dayColor = tex2D(gLightMap_StaticObj,input.LIGHTMAP_INDEX);
+      //考虑阴影的影响
+      float dotDiffuse = dot(-gDirDirection_LM,normal);
+      float realShadow = 1.0f;
+	  #ifdef SHADOW_MAP_CSM
+	    realShadow = 1.0f;
+	  #else
+		#ifdef SSHADOWLIGHTAMOUNT
+		  realShadow = min(dayColor.a,sShadowLightAmount);
+        #else
+          realShadow = dayColor.a;
+        #endif
+	  #endif
+      dayColor.rgb = dayColor.rgb*2.0f +   //静态辅助光源
+                     realShadow*           //考虑阴影的场景主光源
+                     max(0.0f,dotDiffuse)* 
+                     gDirColor_LM.rgb*gDirColor_LM.a*2.0f+
+                     max(0.0f,-dotDiffuse)*gDirBackColor_LM.rgb + //场景背光源
+                     gAmbientColor_LM.rgb; //场景环境光源
+                     
+      //此时的output.Color是MaterialDiffuse
+      output.Color.rgb *= dayColor.rgb;
+      
+      #ifdef SMATERIALSPECULARCOLOR //如果静态模型要计算高光
+        float specStren = 1.0f;
+        float specExpon = gSpecExpon_StaticObjLM;
+        #ifdef SMATERIALCHANNEL
+          specStren *= sMaterialChannel.r;
+          specExpon = sMaterialChannel.g*255;
+        #endif
+        #ifdef PIXELPHONG_INDEX
+          float3 viewDir  = normalize(gEyePosition_StaticObjLM - input.PIXELPHONG_INDEX);
+          float3 lightDir = -gDirDirection_LM;
+          float3 Hn = normalize(viewDir+lightDir);
+          float4 lSpecFactor = lit(dot(lightDir,normal),dot(Hn,normal),specExpon); //用预先计算的查找表进行优化
+          output.Color.rgb += specStren*lSpecFactor.z*sMaterialSpecularColor*gDirColor_LM.rgb*gDirColor_LM.a; //高光颜色默认为白色
+        #else
+          #error [ModMud::PS_LightMap_StaticObj] no VertexShader PIXELPHONG_INDEX defined
+        #endif
+      #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_ColorBlendVertexColor" slot="SS_Pixel_ColorBlend">
+    <code>
+      
+      #ifdef DeclareColor
+      output.Color *= input.Color;
+      #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_ColorBlendVegetation" slot="SS_Pixel_ColorBlend">
+    <parameter>
+      
+      extern float  gAlphaClipRef_CBC; //AlphaClip仅仅根据当前颜色Alpha值进行Clip
+      /*
+      extern float4 gVertexMaskColor_CBC; //模型的Mask颜色
+      extern float4 gLightColor_CBC;  //gDirLight_CBC.rgb颜色，gDirLight_CBC.a强度（相当于光源方向和草法线的乘积）
+      extern float4 gDirLight_CBC;  //gDirLight_CBC.rgb颜色，gDirLight_CBC.a强度（相当于光源方向和草法线的乘积）
+      extern float4 gAmbient_CBC;
+      */
+      
+    </parameter>
+    <code>
+      
+
+      #ifdef DeclareColor
+      clip(output.Color.w - gAlphaClipRef_CBC);
+      /*
+      float3 lightColor = gDirLight_CBC.rgb*gDirLight_CBC.a*2.0f*input.Color.a+gAmbient_CBC.rgb+input.Color.rgb*2.0f;
+      //float3 lightColor = gDirLight_CBC.rgb*gDirLight_CBC.a*input.Color.a+gAmbient_CBC.rgb+input.Color.rgb;
+      //float3 lightColor = gDirLight_CBC.rgb*gDirLight_CBC.a*2.0f+gAmbient_CBC.rgb;
+      output.Color.rgb *= gLightColor_CBC.rgb*input.Color.a;
+      output.Color *= gVertexMaskColor_CBC;
+      */
+      output.Color = output.Color*input.Color;
+      #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_ColorBlendFactor" slot="SS_Pixel_ColorBlend">
+    <parameter>
+      
+      extern float4 gBlendColor_CBF;
+      
+    </parameter>
+    <code>
+      
+      output.Color *= (gBlendColor_CBF*input.Color);
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_2DUIColorMask" slot="SS_Pixel_ColorBlend">
+    <parameter>
+      
+      extern float4 gMaskColor_2DUI;
+      
+    </parameter>
+    <code>
+      
+      #ifdef DeclareColor
+      output.Color *= input.Color;
+      #endif
+      output.Color *= gMaskColor_2DUI;
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_2DUIColorMaskAlphaFactor" slot="SS_Pixel_ColorBlend">
+    <parameter>
+      
+      extern float4 gMaskColor_2DUI;
+      
+    </parameter>
+    <code>
+      
+      #ifdef DeclareColor
+      output.Color *= input.Color;
+      #endif
+      output.Color *= gMaskColor_2DUI;
+      output.Color.a = gMaskColor_2DUI.a; //锁定alpha值为MaskColor的Alpha值，这用在冷却Window中
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_ColorBlendVertexAlpha" slot="SS_Pixel_ColorBlend">
+    <code>
+      
+      #ifdef DeclareColor
+      output.Color.w = input.Color.w;
+      #else
+      #error 没有声明定点颜色
+      #endif
+      
+    </code>
+  </shaderFragment>
+  <shaderFragment name="PS_ColorToneSimple" slot="SS_Pixel_ToneMap">
+    <parameter>
+      
+      //extern float4 gToneColor_Simple;
+      
+    </parameter>
+    <code>
+      
+      //output.Color *= float4(gToneColor_Simple.rgb*gToneColor_Simple.a,1.0f);
+      
+    </code>
+  </shaderFragment>
+</fragments>

@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="SpecialBuyDialog">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.32125,0},{0.215834,0},{0.3325,275},{0.215834,353}}" />
+    <Window Type="TaharezLook/StaticImage" Name="SpecialBuyDialog/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,162},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,162},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.367606,0},{0,12},{0.938029,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="SpecialBuyDialog/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="兑换特产" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,60},{0,1},{0,153},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="SpecialBuyDialog/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0616198,0},{0.120396,0},{0.0574075,248.937},{0.120426,200.269}}" />
+      <Window Type="TaharezLook/ItemTable" Name="SpecialBuyDialog/table">
+        <Property Name="Tooltip" Value="." />
+        <Property Name="ColCount" Value="5" />
+        <Property Name="RowCount" Value="4" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,-6.17476},{0.05,-4.83844},{0.05,230.825},{0.05,187.161}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="SpecialBuyDialog/Bot">
+      <Property Name="UnifiedAreaRect" Value="{{0.0633803,0},{0.698299,0},{0.0410448,254.676},{0.673134,94.3768}}" />
+      <Window Type="TaharezLook/StaticText" Name="SpecialBuyDialog/numtext">
+        <Property Name="Text" Value="兑换数量" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,9.772},{0.05,6.70617},{0,66.772},{0.05,26.7062}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="SpecialBuyDialog/pricetext">
+        <Property Name="Text" Value="消耗声望" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,9.772},{0.05,29.7062},{0,66.772},{0.05,49.7062}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="SpecialBuyDialog/moneytext">
+        <Property Name="Text" Value="家族声望" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,9.772},{0.05,52.7062},{0,66.772},{0.05,72.7062}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="SpecialBuyDialog/totalmoney">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,71.772},{0.05,52.7062},{0,158.772},{0.05,72.7062}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="SpecialBuyDialog/price">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,71.772},{0.05,29.7062},{0,158.772},{0.05,49.7062}}" />
+      </Window>
+      <Window Type="TaharezLook/Editbox" Name="SpecialBuyDialog/number">
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0,71.772},{0.05,6.70617},{0,158.772},{0.05,26.7062}}" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="SpecialBuyDialog/buybtn">
+        <Property Name="Text" Value="兑   换" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="UnifiedAreaRect" Value="{{0,162.772},{0.05,27.7062},{0,230.772},{0.05,51.7062}}" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

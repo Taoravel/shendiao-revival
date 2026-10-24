@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="ComplainStart">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.23875,0},{0,174.417},{0.2375,429},{0,420.417}}" />
+    <Window Type="TaharezLook/StaticImage" Name="ComplainStart/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.36215,0},{0,12},{1.08178,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="ComplainStart/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="发起投诉" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,71},{0,1},{0,165},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ComplainStart/explain">
+      <Property Name="Text">如果有人在契约时间内违约，可以在我这里发起投诉，其他队员将
+会收到投诉信息并进行投票表决，当有3人同意投诉，即投诉成功。
+</Property>
+      <Property Name="HorzExtent" Value="385" />
+      <Property Name="VertExtent" Value="31.2378" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003679" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,23},{0,46},{0,406},{0,80}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="ComplainStart/Back/LittleBack">
+      <Property Name="UnifiedAreaRect" Value="{{0.0443925,0},{0.329268,0},{0.948598,0},{0.813008,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="ComplainStart/name1">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,87},{0.0214232,23},{0,182},{0.0214232,41}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ComplainStart/name2">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,186},{0.0214232,23},{0,281},{0.0214232,41}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ComplainStart/name3">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,87},{0.0214232,46},{0,182},{0.0214232,64}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ComplainStart/name4">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,186},{0.0214232,46},{0,281},{0.0214232,64}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ComplainStart/info">
+        <Property Name="Text" Value="请输入投诉原因(不超过20字)" />
+        <Property Name="HorzExtent" Value="171" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,103},{0.0214232,69},{0,289},{0.0214232,89}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Editbox" Name="ComplainStart/complainInfo">
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="1073741823" />
+        <Property Name="UnifiedAreaRect" Value="{{0,44},{0.0214232,92},{0,341},{0.0214232,112}}" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ComplainStart/Back/LittleBack/Text">
+        <Property Name="Text" Value="你想要发起对哪名队员的投诉？（发起投诉需要消耗20点体力）" />
+        <Property Name="HorzExtent" Value="367" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0103359,0},{0.0252101,0},{1.0155,0},{0.0214232,20}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ComplainStart/complain">
+      <Property Name="Text" Value="投   诉" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,131},{0,201},{0,199},{0,225}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ComplainStart/cancel">
+      <Property Name="Text" Value="取   消" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,228},{0,201},{0,296},{0,225}}" />
+    </Window>
+  </Window>
+</GUILayout>

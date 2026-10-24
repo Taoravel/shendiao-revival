@@ -1,0 +1,450 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="MyItemShop">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.1175,0},{0.05,0},{0.1175,612},{0.05,560}}" />
+    <Window Type="TaharezLook/StaticImage" Name="MyItemShop/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.235294,0},{0,12},{0.738562,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="MyItemShop/Title/Name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="我的商店" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.298701,0},{0,1},{0.688312,0},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="MyItemShop/LeaveShop">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="离开商店" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,282},{0,515},{0,354},{0,539}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="MyItemShop/OtherShop">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="管理其他商店" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,172},{0,515},{0,272},{0,539}}" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="MyItemShop/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,44},{0,592},{0,513}}" />
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="MyItemShop/Back/Top">
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{0,569},{0,169}}" />
+        <Window Type="TaharezLook/StaticText" Name="MyItemShop/shopName1">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="商店名称" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003679" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,8},{0,6},{0,66},{0,26}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyItemShop/shopName">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0,64},{0,6},{0,186},{0,24}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MyItemShop/changeNameBtn">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="更改名称" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0,206},{0,3},{0,278},{0,27}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyItemShop/openTime1">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="创店日期" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003679" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,8},{0,50},{0,66},{0,70}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyItemShop/openTime">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,64},{0,50},{0,186},{0,70}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyItemShop/CofCIndex1">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="商业指数" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+          <Property Name="BorderColour" Value="FF220B01" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,8},{0,116},{0,67},{0,136}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyItemShop/fareRate">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,64},{0,138},{0,106},{0,158}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyItemShop/operateMoney1">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="运营资金" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+          <Property Name="BorderColour" Value="FF220B01" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,8},{0,72},{0,66},{0,92}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyItemShop/packMoney1">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="银         两" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+          <Property Name="BorderColour" Value="FF220B01" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,8},{0,94},{0,66},{0,114}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MyItemShop/TakeOutMoney">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="取出资金" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0,206},{0,68},{0,278},{0,92}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MyItemShop/InvestBtn">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="投入资金" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0,206},{0,92},{0,278},{0,116}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MyItemShop/changeInfoBtn">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="更改商店介绍" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0,375},{0,137},{0,475},{0,161}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyItemShop/maintainMoney1">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="每日维护费用" />
+          <Property Name="HorzExtent" Value="78" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+          <Property Name="BorderColour" Value="FF220B01" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,107},{0,116},{0,190},{0,136}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyItemShop/maintainMoney">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,197},{0,116},{0,259},{0,136}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/LinkText" Name="MyItemShop/counterMoney1">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="每小时运营费用" />
+          <Property Name="UnifiedAreaRect" Value="{{0,107},{0,140},{0,202},{0,160}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyItemShop/CofCIndex">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,64},{0,116},{0,106},{0,136}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyItemShop/fareRate1">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="经营税率" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+          <Property Name="BorderColour" Value="FF220B01" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,8},{0,138},{0,67},{0,158}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyItemShop/counterMoney">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Tooltip" Value="基础运营费*商业指数*运营中柜台数，\n每小时扣除一次。" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,208},{0,140},{0,263},{0,160}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyItemShop/MoneyBack111">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0,64},{0,72},{0,186},{0,92}}" />
+          <Window Type="TaharezLook/StaticText" Name="MyItemShop/operateMoney">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0409836,0},{-0.05,0},{0,98},{-0.0464847,17}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyItemShop/MoneyBack1111">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0,64},{0,93},{0,186},{0,113}}" />
+          <Window Type="TaharezLook/StaticText" Name="MyItemShop/packMoney">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0409836,0},{0,0},{0,119},{-0.0464847,18}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MyItemShop/changeNameBtn1">
+          <Property Name="Text" Value="修   改" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0,256},{0,138},{0,324},{0,162}}" />
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="MyItemShop/Back/Top/Case">
+          <Property Name="UnifiedAreaRect" Value="{{0.530142,0},{0.0365854,0},{0.985816,0},{0.786585,0}}" />
+          <Window Type="TaharezLook/MultiLineEditbox" Name="MyItemShop/shopInfo">
+            <Property Name="Text">
+</Property>
+            <Property Name="MaxTextLength" Value="1073741823" />
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,2},{0,253},{0,116}}" />
+            <Property Name="BackGroundEnable" Value="False" />
+            <Property Name="TextParsingEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyItemShop/shopName11">
+          <Property Name="Text" Value="商店分类" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003679" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,8},{0,28},{0,66},{0,48}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Combobox" Name="MyItemShop/Back/Top/Combobox">
+          <Property Name="ReadOnly" Value="True" />
+          <Property Name="UnifiedAreaRect" Value="{{0,64},{0.170732,0},{0,186},{1.08537,0}}" />
+          <Property Name="MaxEditTextLength" Value="2147483647" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MyItemShop/changeType">
+          <Property Name="Text" Value="更改分类" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,178},{0.05,19},{0.05,250},{0.05,43}}" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="MyItemShop/Back/Bottom">
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,173},{2.64402e-005,569},{0,465}}" />
+        <Window Type="TaharezLook/Button" Name="MyItemShop/PutIntoShop">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="&lt;&lt;放入" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0,248},{0,158},{0,316},{0,182}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MyItemShop/TakeOut">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="取出&gt;&gt;" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0,248},{0,182},{0,316},{0,206}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MyItemShop/PauseBusiness">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="暂停营业" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0,476},{0,266},{0,548},{0,290}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MyItemShop/ExpandCounter">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="扩张柜台" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0,316},{0,266},{0,388},{0,290}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MyItemShop/CloseCounter">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="关闭柜台" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0,396},{0,266},{0,468},{0,290}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyItemShop/priceEdit1">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="单价" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+          <Property Name="BorderColour" Value="FF220B01" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,7},{0,268},{0,38},{0,288}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyItemShop/sellMoney1">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="总价" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+          <Property Name="BorderColour" Value="FF220B01" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{-0.0045662,159},{0,268},{-0.0045662,190},{0,288}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/TabControl" Name="MyItemShop/shopTC">
+          <Property Name="TabHeight" Value="{0,18}" />
+          <Property Name="TabPanePosition" Value="Top" />
+          <Property Name="UnifiedAreaRect" Value="{{0,5},{0,4},{0,247},{0,264}}" />
+          <Window Type="TaharezLook/ItemTable" Name="MyItemShop/Table1">
+            <Property Name="Text" Value="1" />
+            <Property Name="ColCount" Value="5" />
+            <Property Name="RowCount" Value="5" />
+            <Property Name="UnifiedAreaRect" Value="{{0,3},{0,2},{0,239.291},{0,237}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/TabControl" Name="MyItemShop/packTC">
+          <Property Name="TabHeight" Value="{0,18}" />
+          <Property Name="TabPanePosition" Value="Top" />
+          <Property Name="UnifiedAreaRect" Value="{{0,317},{0,4},{0,560},{0,264}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MyItemShop/up">
+          <Property Name="Text" Value="上   架" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0,248},{0,206},{0,316},{0,230}}" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="MyItemShop/down">
+          <Property Name="Text" Value="下   架" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="EnableSound" Value="True" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedAreaRect" Value="{{0,248},{0,230},{0,316},{0,254}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyItemShop/MoneyBack1">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{0,36},{0,268},{-0.0045662,148},{0,286}}" />
+          <Window Type="TaharezLook/StaticImage" Name="MyItemShop/MoneyBack1/Money1">
+            <Property Name="Image" Value="set:MainControl image:Xianjin" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-1},{0,19},{0,18}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Editbox" Name="MyItemShop/priceEdit">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="BlinkCaret" Value="True" />
+            <Property Name="MaxTextLength" Value="1073741823" />
+            <Property Name="UnifiedAreaRect" Value="{{0,17},{0,0},{0,110},{0.0188154,21}}" />
+            <Property Name="BackGroundEnable" Value="False" />
+            <Property Name="TextParsingEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="MyItemShop/MoneyBack11">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="UnifiedAreaRect" Value="{{-0.0045662,187},{0,268},{-0.351163,507},{0,286}}" />
+          <Window Type="TaharezLook/StaticImage" Name="MyItemShop/MoneyBack1/Money11">
+            <Property Name="Image" Value="set:MainControl image:Xianjin" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,-1},{0,19},{0,18}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="MyItemShop/sellMoney">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,23},{0,0},{0,117},{0.00255839,20}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="MyItemShop/Back/Bottom/Pattern">
+          <Property Name="Image" Value="set:MainControl13 image:Commerce" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,59},{0,153}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,59},{0,153}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,252},{0.0136986,0},{0,311},{0.537671,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="MyItemShop/Record">
+      <Property Name="Text" Value="营业记录" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,364},{0,515},{0,436},{0,539}}" />
+    </Window>
+  </Window>
+</GUILayout>

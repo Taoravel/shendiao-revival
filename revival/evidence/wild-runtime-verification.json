@@ -1,0 +1,19 @@
+{
+  "passed": [
+    "real encrypted accepted move -> original monster -> native battle -> XP/cash/bound silver/three fixed drops/role HP committed once",
+    "reconnect reads committed current resources, inventory and experience without replay reward",
+    "second encrypted role remains independent",
+    "disconnect during playback persists actual damage and aborts with zero victory awards",
+    "failed nonterminal checkpoint retries before disconnect, then closes battle mailbox and persists exact abort damage",
+    "persistent checkpoint outage releases disconnected owner; next lease recovers last durable active copy with zero victory payout",
+    "persisted terminal survives payout failure; retry releases battle only after one atomic payout",
+    "controlled blocking actual wild payout leaves other encrypted role heartbeat runnable",
+    "explicit migrated role + actual owned pet participates; durable victory recovers under new lease once",
+    "role auto-level uses same resource transaction preserving combat wounds; original pet XP and three drops settle atomically",
+    "frozen full admission resource source rejects real unrelated inventory-source change even with identical resource version/HP/MP/caps; rejected transaction leaves original terminal payable once"
+  ],
+  "actual_runtime_path": true,
+  "native_downlink_decoded": true,
+  "live_server_changed": false,
+  "native_gui_verified": false
+}

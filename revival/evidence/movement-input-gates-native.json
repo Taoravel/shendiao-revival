@@ -1,0 +1,73 @@
+{
+  "image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+  "entry": "0x1211db0",
+  "cases": [
+    {
+      "changed_field": "clear_baseline",
+      "allowed": true
+    },
+    {
+      "changed_field": "application_3d8",
+      "allowed": false
+    },
+    {
+      "changed_field": "role_2e4",
+      "allowed": false
+    },
+    {
+      "changed_field": "cutscene_3c",
+      "allowed": false
+    },
+    {
+      "changed_field": "role_13c",
+      "allowed": false
+    },
+    {
+      "changed_field": "global_294d190",
+      "allowed": false
+    },
+    {
+      "changed_field": "scene_58",
+      "allowed": false
+    },
+    {
+      "changed_field": "modal_34",
+      "allowed": false
+    },
+    {
+      "changed_field": "other_singleton_4",
+      "allowed": false
+    },
+    {
+      "changed_field": "session_state_3",
+      "allowed": false
+    },
+    {
+      "changed_field": "session_state_4",
+      "allowed": false
+    },
+    {
+      "changed_field": "opening_global_2945438_alias_of_application_3d8",
+      "allowed": false
+    },
+    {
+      "changed_field": "scene_black_effect_39c",
+      "allowed": true
+    },
+    {
+      "changed_field": "scene_transition_32c",
+      "allowed": true
+    }
+  ],
+  "original_start_section_cleanup": {
+    "entry": "CStartSetion vtable+4 = 0x12b9a10",
+    "allowed_before": false,
+    "allowed_after": true,
+    "scene_39c_after": 0,
+    "effect_remove_requested": [
+      305419896
+    ]
+  },
+  "adapter": "0x15bb820 notification output plus external effect disposal only; all gates, flag cleanup and Scene39c reset executed original instructions",
+  "limitation": "passing this gate does not prove an overlay passes mouse input or renderer creation succeeded"
+}

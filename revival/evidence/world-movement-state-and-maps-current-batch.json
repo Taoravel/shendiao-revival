@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-24",
+  "previous_goal_turn_classification": "progress",
+  "current_goal_turn_classification": "progress",
+  "method_decisions": {
+    "research": "background original state writers/JumpStop, then original buffer loader and lifecycle consumers; preserve adapters/unknown",
+    "diagnosing-bugs": "all302 native point oracle with fault-clear-walls red; actual historical read missing-function red; review epoch-alias actual red then corrected",
+    "codebase-design": "reuse public MapOwner current-cell and World owned pure SELECT history/current Instance seam; sole main owns runtime state declarations",
+    "tdd": "public reader absence red before implementation; exact epoch1 type-alias repro red before fix; final9 green",
+    "code-review": "parallel independent axes; initial SpecP2 fixed, v2closed; lifecycle separate2file axes0",
+    "writing-for-agents": "small exact caller handoff, source hashes, reviewed two-file ready, lifecycle facts and designed activation distinct"
+  },
+  "review_snapshots": {
+    "reviews/world-current-cell-collision-v1": {
+      "final_files": 9,
+      "references": 24,
+      "manifest_sha256": "aa770fb540acdcbbd8d24a74c52d9e9c8291d8b9d6dd64db5dfbc442f9c533c1"
+    },
+    "reviews/world-movement-state-and-maps-v2": {
+      "final_files": 7,
+      "references": 29,
+      "manifest_sha256": "8069c00403daa7f940bb01ddfbe4ccaabed0266902db063ad141da462ca79686"
+    },
+    "reviews/world-movement-state-lifecycle-v1": {
+      "final_files": 2,
+      "references": 22,
+      "manifest_sha256": "5c97d076f9bf06d83fbb7edf8e0ef27691abbf647425ed71815897dea9fdb974"
+    }
+  },
+  "artifact_sha256": {
+    "world_transfer_storage.py": "65e2709cd1967dcbecc1328f2346f35d3e38def7ce362a81fac12f9affe80aa4",
+    "verify_world_current_cell_maps.py": "5acb3380f8c6e322cc0cf5743e85a6a2fb05fd21b93fef941244427603cb626e",
+    "verify_world_committed_transfer_read.py": "de54099cd0797df86fbfe928614c633ed72ad42d98b86f150f433c9832a891f1",
+    "verify_world_movement_state_transitions_native.py": "914710db7528b7e5811c748ccca8f0c5687a67eb1aadb1a15239ce04c5fccc26",
+    "verify_world_movement_state_lifecycle_native.py": "2bde30c97d093f276cfdb4c8855cbe0bdad42059b5359d69ff4ad3ada3ee62a8",
+    "evidence/WORLD_CURRENT_CELL_MAPS_ACCEPTANCE.md": "ff0dc2aa01d68f0572775b07a1b61468fcb92532f9d8eac7e9b905fa5a8fb2d9",
+    "evidence/WORLD_MOVEMENT_STATE_TRANSITIONS_NATIVE.md": "bfdd83dda2a546e9d6771129ddacc523c952e6f68977bbc3161e817d8708c9e2",
+    "evidence/WORLD_MOVEMENT_STATE_LIFECYCLE_GATES.md": "c48aeca05dd95aefdb3bef564d0d6a0f821cdbf9d470f8d6453e8a32cd4e8cf8",
+    "evidence/WORLD_COMMITTED_TRANSFER_READ_HANDOFF.md": "dd0b451ad9df98835caa96c4e3eac599ca6189f5190a7aaa398a345714950be4",
+    "evidence/WORLD_MOVEMENT_STATE_AND_MAPS_REVIEW.md": "965819821cbbc8616c51e5289dbb9e949d7140781fe33dca3e3d2e76b4e1d9b9",
+    "evidence/WORLD_MOVEMENT_STATE_LIFECYCLE_REVIEW.md": "c38556c0c569276320034b3640cb09f2e98e43ce2142bbe212ae41922c955bd6",
+    "evidence/world-current-cell-two-file-ready.json": "76a8b7d26d074356de5eddd1fb692d54d44e661cd71cf1e2ff6b6e85155baead",
+    "evidence/world-current-cell-collision-current-interface.json": "96edc6f2b1d1ec3458795072ae1a66659d95fc1f683d524b3fd5e71064553e3c",
+    "evidence/world-committed-transfer-read-current-interface.json": "a4eda8c968b03bd3c61703de1ff1a35798e93b711973979791d79efeeacd6cf9",
+    "evidence/world-committed-transfer-read-candidate.patch": "a962fbeff482af2586ff1e85f05c988d8a9e3257f6aa5bd604866d0ab1f2dc37",
+    "evidence/world-current-cell-maps-verification.json": "354a884154c2f3f24187657da5a25a5a3ae58cd1a292bff6e45d33d7a69882b0",
+    "evidence/world-current-cell-maps-fault.json": "9b4239d55ab23841a3256aaf946ba688f3b4f84c96eb04b4eaebee57851edb57",
+    "evidence/world-movement-state-transitions-parent-verification.json": "f7a0bfdbaaedf7eda4c8b33f461dca40b860c82713cc4dc463b0329bcd110c85",
+    "evidence/world-movement-state-lifecycle-parent-verification.json": "faeab64e77ebad785c4966defa31469fcc31320206fc20af4cf067d2ce1586e4",
+    "evidence/world-committed-transfer-read-verification.json": "eb3044b37cd4fbdbd1d1d91b477ee2bd898f2e5f026dbed97b86d9dadfa73629",
+    "evidence/world-instance-persistence-verification.json": "9841c78239a54bf1ded7a44e582613ddee17fd875459a11a89a34556ebec8869",
+    "evidence/WORLD_FULL_RECOVERY.md": "ff90264da1ee7c8cd73805e03beb46998ca27bb48dabbf16abbe3ee4f240efe1",
+    "evidence/WORLD_RUNTIME_HANDOFF.md": "9550c68a9a35e8fb2ea0e5c1d5a3d43a73fc12b9aa24a8f646760bbbc326c10a"
+  },
+  "ast_valid": [
+    "world_transfer_storage.py",
+    "verify_world_current_cell_maps.py",
+    "verify_world_committed_transfer_read.py",
+    "verify_world_movement_state_transitions_native.py",
+    "verify_world_movement_state_lifecycle_native.py"
+  ],
+  "verification": {
+    "all_resource_map_domain_count": 302,
+    "explicit_state_fixture_groups": 1208,
+    "MapOwner_commands": 5039,
+    "original_point_queries": 3656,
+    "native_transition_parent_cases": 35,
+    "native_lifecycle_parent_cases": 28,
+    "SELECT_only_reader_groups": 9,
+    "instance_persistence_groups": 12,
+    "final_transfer_recovery_regression": "prepared/committed/new lease/cancelled then walked all passed",
+    "fault_clear_walls": "expected safety exit1"
+  },
+  "first_spec_p2_closed": true,
+  "shared_modified_by_world": false,
+  "live_server_changed_by_world": false,
+  "native_gui_verified": false,
+  "overall_goal_complete": false,
+  "unverified": [
+    "main actual runtime collision/state lifecycle wiring",
+    "Task paid caller integration of read provider",
+    "full resource engine/render and user GUI acceptance",
+    "continuous speed/trajectory and complete jump authorization",
+    "1302/1307 missing original maps and special portals",
+    "NPC direction/hide/special model full lifecycle",
+    "formal story battles/full monsters/all newborn flow"
+  ]
+}

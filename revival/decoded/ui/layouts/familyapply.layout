@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="FamilyApply">
+    <Property Name="Font" Value="msyh-16" />
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.259195,0},{0,110},{0.259195,415},{0,525}}" />
+    <Window Type="TaharezLook/Button" Name="FamilyApply/Apply">
+      <Property Name="Text" Value="申请加入" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,103},{0.05,351},{0.05,175},{0.05,375}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="FamilyApply/Contact">
+      <Property Name="Text" Value="联系族长" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,195},{0.05,351},{0.05,267},{0.05,375}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="FamilyApply/Cancle">
+      <Property Name="Text" Value="离   开" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,287},{0.05,351},{0.05,359},{0.05,375}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="FamilyApply/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.614458,0},{0,12},{1.35663,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="FamilyApply/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="加入家族" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,71},{0,0},{0,163},{0,27}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/MultiColumnList" Name="FamilyApply/FamilyList">
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,44},{0,394},{0,259}}" />
+      <Property Name="ColumnHeader" Value="text:家族名 width:{0.24,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:家族等级 width:{0.18,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:家族ID width:{0.16,0} id:2" />
+      <Property Name="ColumnHeader" Value="text:家族族长 width:{1,-218} id:3" />
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="FamilyApply/back">
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0.73494,0},{0,394},{0.886747,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="FamilyApply/Mission">
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+        <Property Name="BorderColour" Value="FF5F4100" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0,8},{0,12},{0,372},{0,58}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Figure1" Name="FamilyApply/back/Title">
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.351064,0},{0,-20},{0.694149,0},{-0.015873,0}}" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Window Type="TaharezLook/StaticText" Name="FamilyApply/back/Title/name">
+          <Property Name="Text" Value="家族宗旨" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003679" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.372093,0},{0,1},{0.829457,0},{0,20}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="FamilyApply/Up">
+      <Property Name="Text" Value="上一页" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="滴答1.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,79},{0.05,240},{0.05,147},{0.05,264}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="FamilyApply/Down">
+      <Property Name="Text" Value="下一页" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,244},{0.05,240},{0,312},{0.05,264}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="FamilyApply/Page">
+      <Property Name="Text" Value="100/100" />
+      <Property Name="HorzExtent" Value="55" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.419277,0},{0.633735,0},{0.580723,0},{0.4,115}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="FamilyApply/Applypageall">
+      <Property Name="Text" Value="一键申请" />
+      <Property Name="Tooltip" Value="一键申请本页内所有成员未达上限的家族" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,11},{0.05,351},{0.05,83},{0.05,375}}" />
+    </Window>
+  </Window>
+</GUILayout>

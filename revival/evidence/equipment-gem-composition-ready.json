@@ -1,0 +1,87 @@
+{
+  "created_utc": "2026-10-23T20:23:49.577623+00:00",
+  "status": "owned_composition_and_stamina_provider_ready_fixed_r2",
+  "scope": "ordinary untrained gems composition transaction and explicit independent stamina450/630; production class4 skill reader/shared admission remain caller integration",
+  "interfaces": {
+    "startup": "Inventory.prepare first, then gems.prepare(db) and role_stamina.prepare(db)",
+    "known_material": "initialize_material(db,inventory,rules,key,nonbinding_flags,origin)",
+    "known_stamina": "role_stamina.initialize(db,inventory,rules,value,maximum,origin)",
+    "admission": "admit(db,inventory,rules,stamina_rules,request_id,original8byte_payload,captured_draw,study_source)",
+    "transaction": "apply(db,inventory,rules,stamina_rules,command,*,study_source,precommit=root_hook)"
+  },
+  "production_sha256": {
+    "equipment_gem_composition.py": "de80a12b2ec166fab60fd70a83ffb474d5bd64ec19bfac68e9908e0354fb59ab",
+    "role_stamina.py": "3b731535bad94fafc397756f6371ec68f51a5a87b22195d222cbef238511f7e1",
+    "design/equipment-gem-composition-v1.json": "7cf644572c0ac68dac4e1103a3b8ef2ba7057f29f4cf7bd01a63e304a8130957",
+    "design/role-stamina-v1.json": "17bd182b7b18a679e438fa6f4cb734c3f8dbba90ba180e275d54e2bcc1433d03"
+  },
+  "verification_sha256": {
+    "verify_equipment_gem_composition_rules.py": "c63c173e7d295cf18072e4eac1a45b5ba147974cde581bb6c47f389325ed8cc3",
+    "verify_equipment_gem_composition.py": "7a46b86186a107853cc5b8e9eafcd9bd04ba0ecb203e0308810d1382a5c172fd",
+    "verify_equipment_gem_composition_atomic.py": "c9b2463e92f3a55a11025ff05fdf70f8c2029ff0cd3ae13d6f4813c947717910",
+    "verify_equipment_gem_composition_sources.py": "1cf2a114a98567a57e9fac35dbba9f1b21907350a3d0a4a73d0436bfc26ed1ce",
+    "verify_role_stamina.py": "d2eb2e27356fe671fb813664ed483a48b2da7e60631cacc91fd3ba86f32ff756"
+  },
+  "source_docs_sha256": {
+    "evidence/EQUIPMENT_GEM_COMPOSITION_INTEGRATION.md": "0952dec30e4d604911bf4efcb518bc46a46c772c3e1a13ad67396e29c0bb18e6",
+    "evidence/GEM_COMPOSITION_RESOURCE_SOURCE.md": "a43b69932e22363283e517d6672bb5926eb11e7c028569c7122908eca644a034"
+  },
+  "fixed_review": {
+    "directory": "D:\\神雕侠侣\\revival\\evidence\\reviews\\equipment-gem-composition-20261024-r2",
+    "dependencies": 1297,
+    "manifest_sha256": "ad7f083ce4fc024ef2d241b61276ccafaec15c3dc736c01f7372a839c1d49ad5",
+    "diff_sha256": "5b51333daba10cd633292594c91a51268ef97fbb4d57e8b53d51164c4db7eff4",
+    "standards_report_sha256": "4de3f2dc9fa1631222919a2670fe98d9c90f7ae571b05363ff821c2d5ec6854e",
+    "spec_report_sha256": "9164b5c2d4b2a32b9c963bc4c70e4152e49ba7a840a004a13d21fc577f957c68",
+    "aggregate_sha256": "e706461b17f3ed085cba11ff113cfd26a38d4798229d0d477a1dd2bcd265f2af",
+    "snapshot_verifier_sha256": "25866556b5b39d68ca27787ea72d609fb2e8b60e92676e278abef63785fe4675",
+    "standards_hard_findings": 0,
+    "standards_judgement_findings": 0,
+    "spec_findings": 0,
+    "r1_findings_closed": [
+      "material source ABA P1",
+      "incomplete frozen startup dependency P2",
+      "duplicate private asset fingerprint/receipt knowledge P3"
+    ]
+  },
+  "passed_checks": [
+    "verify_equipment_gem_composition_rules.py",
+    "verify_equipment_gem_composition.py",
+    "verify_equipment_gem_composition_atomic.py",
+    "verify_equipment_gem_composition_sources.py",
+    "verify_role_stamina.py",
+    "research_equipment_gem_protocol.py",
+    "verify_role_vigor.py",
+    "verify_currency.py",
+    "verify_inventory_resource_hook.py",
+    "verify_equipment_identification_cas.py",
+    "verify_equipment_details.py",
+    "verify_equipment_condition.py"
+  ],
+  "compile_passed": 7,
+  "reviewer_checks_per_axis": 5,
+  "identification_production_sha256_unchanged": {
+    "inventory.py": "d66329dbb8976e6ed3642e7fcc5f26f6a6f5ad2d4ced56f9af4689c5081764d4",
+    "equipment_detail.py": "05f974a8d201da47b11c332e00bc4c9eaa402366b3f6c14596929541e941118a",
+    "design/currency-v1.json": "ed93b3f9a9d6902e4a3120dd52b3467f9347fe2598a2ebf326141aa46626f994"
+  },
+  "implementation_notes": [
+    "Do not use vigor440/620 or other-skills100008/class6; CompositionStudy requires zaxue600005/class4 known authority",
+    "Module-owned item change/delete observers invalidate source even across external quantity ABA; same transaction restores only known composition result/remainder",
+    "No hot config/DDL/connect/commit/send; caller rolls back any exception and commits after root source plus native encoding",
+    "Paid requires both receipts; Inventory public dedupe validates its own receipt; current bags/stamina/root source strict readonly",
+    "No implicit unknown flags/skill0/stamina baseline; no new-role100 or regeneration enabled"
+  ],
+  "integration_handoff": "evidence/EQUIPMENT_GEM_COMPOSITION_INTEGRATION.md",
+  "unverified": [
+    "production authoritative class4 zaxue ledger/learning adapter",
+    "production stamina baseline migration and online regeneration",
+    "trusted shared RNG admission/encrypted route/deployment/real GUI",
+    "gem embedding/removal/full score and worn resource/battle effects",
+    "commercial database, sharding and capacity"
+  ],
+  "shared_files_changed": false,
+  "live_server_changed": false,
+  "native_gui_verified": false,
+  "full_restoration_goal": "active"
+}

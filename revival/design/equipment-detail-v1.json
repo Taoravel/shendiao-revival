@@ -1,0 +1,22 @@
+{
+  "revision": "2026-10-23.equipment-detail.1",
+  "scope": "new ordinary six-slot, non-god-weapon restoration equipment; unenhanced baseline only",
+  "generation": {
+    "provenance": "designed; native fields and source values independently client_verified",
+    "identified": 1,
+    "prefix_quality": 1,
+    "score": 0,
+    "base_properties": "original cequipeffect baseEffectType/baseEffect pairs, preserving raw modifier IDs",
+    "color": "original scorecolor thresholds capped by cequipprefixconfig.bestcolortype; must agree with authoritative equipment condition",
+    "other_scalars": "zero for this explicitly clean baseline, without naming unknown fields",
+    "other_containers": "empty additional-property map and gem list; zero original 4-i32 and 6-i32 extension beans; two disabled extension flags",
+    "texts": "empty UTF16 Octets; text meanings remain unknown"
+  },
+  "legacy": "no implicit profile generation; trusted caller may initialize only a known clean unenhanced instance with explicit frozen details and matching condition color; never overwrite existing details",
+  "wire": "generic SItemTips Octets consumed by EquipObject107d960; seven-i32 prefix, UTF16 Octets, three-i32, BE32 map count/pairs, BE32 triple-map count, BE32 gem count, scalar tail and disabled optional beans; not SEquiptips",
+  "research": "evidence/equipment-detail-full.json",
+  "guide": "https://sdxl.games.wanmei.com/news/gamenews/20130830/149369.shtml",
+  "guide_date": "2013-08-30",
+  "guide_limit": "historical PC article supports six parts, six colors, score/color and base/additional distinction; it does not establish this baseline generation or server score formula",
+  "unverified": ["live tooltip UI", "original server score generation", "additional attribute randomness", "enhancement/gems/refining", "god-weapon tail and enabled extension semantics"]
+}

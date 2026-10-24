@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/SmallFrameWindow" Name="ElectorWordsDlg/back">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.31875,0},{0.305833,0},{0.31875,294},{0.305833,230}}" />
+    <Window Type="TaharezLook/Button" Name="ElectorWordsDlg/yes">
+      <Property Name="Text" Value="提   交" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,60},{0,194},{0,128},{0,218}}" />
+      <Property Name="NormalTextColour" Value="ffffffff" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ElectorWordsDlg/no">
+      <Property Name="Text" Value="关   闭" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,162},{0,194},{0,230},{0,218}}" />
+      <Property Name="NormalTextColour" Value="ffffffff" />
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="ElectorWordsDlg/back/Infoback">
+      <Property Name="UnifiedAreaRect" Value="{{0,16},{0,41},{0,276},{0,191}}" />
+      <Window Type="TaharezLook/MultiLineEditbox" Name="ElectorWordsDlg/info">
+        <Property Name="Text">
+</Property>
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,3},{0,250},{0,143}}" />
+        <Property Name="BackGroundEnable" Value="False" />
+        <Property Name="TextParsingEnabled" Value="False" />
+        <Property Name="SelectionBrushImage" Value="" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ElectorWordsDlg/title/name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="竞选词" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="51" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,161},{0,9},{0.05,237},{0,32}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+  </Window>
+</GUILayout>

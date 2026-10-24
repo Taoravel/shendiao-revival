@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/HouseFrameWindow" Name="ChildEat">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="open.ogg" />
+    <Property Name="ClippedByParent" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.203125,0},{0.175,0},{0.203125,500},{0.175,350}}" />
+    <Property Name="CloseSoundResource" Value="close.ogg" />
+    <Window Type="TaharezLook/StaticImage" Name="ChildEat/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.702,0},{0,12},{1.318,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="ChildEat/Title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="用    餐" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="58" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.298701,0},{0,6},{0.597403,0},{0,29}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="ChildEat/eat">
+      <Property Name="UnifiedAreaRect" Value="{{0.078,0},{0.142857,0},{0.078,420},{0.131429,279}}" />
+      <Window Type="TaharezLook/CommonCaseHouse" Name="ChildEat/eat/back">
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{-0.0047619,0},{0.0254545,0},{0.046798,403},{0.0254545,270}}" />
+        <Window Type="TaharezLook/Figure" Name="ChildEat/eat/back/title">
+          <Property Name="UnifiedAreaRect" Value="{{0.336471,0},{0,9},{0.35086,116},{0,26}}" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+          <Window Type="TaharezLook/StaticText" Name="ChildEat/eat/back/title/name">
+            <Property Name="Text" Value="请选择食物" />
+            <Property Name="HorzExtent" Value="65" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.229508,0},{-0.117647,0},{0.827869,0},{0,18}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="ChildEat/eat/back/pagback">
+          <Property Name="UnifiedAreaRect" Value="{{0.0258824,0},{0,26},{0.0141176,406},{0,128}}" />
+          <Window Type="TaharezLook/ScrollablePane" Name="ChildEat/eat/back/pagback/List">
+            <Property Name="ContentArea" Value="l:-13 t:0 r:364 b:147" />
+            <Property Name="HorzStepSize" Value="0.1" />
+            <Property Name="VertStepSize" Value="0.1" />
+            <Property Name="HorzOverlapSize" Value="0.01" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0074813,0},{0.00980392,0},{0.0074813,413},{0.01,100}}" />
+            <Property Name="VertOverlapSize" Value="0.01" />
+            <Property Name="HorzScrollPosition" Value="0" />
+            <Property Name="VertScrollPosition" Value="0" />
+            <AutoWindow NameSuffix="__auto_container__">
+              <Property Name="ContentArea" Value="l:-13 t:0 r:364 b:147" />
+              <Property Name="ChildExtentsArea" Value="l:-13 t:0 r:364 b:147" />
+              <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/pagback/List/cell1">
+                <Property Name="UnifiedAreaRect" Value="{{0,-13},{0,2},{0,35},{0,50}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/pagback/List/cell2">
+                <Property Name="UnifiedAreaRect" Value="{{0,34},{0,2},{0,82},{0,50}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/pagback/List/cell3">
+                <Property Name="UnifiedAreaRect" Value="{{0,81},{0,2},{0,129},{0,50}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/pagback/List/cell4">
+                <Property Name="UnifiedAreaRect" Value="{{0,128},{0,2},{0,176},{0,50}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/pagback/List/cell5">
+                <Property Name="UnifiedAreaRect" Value="{{0,175},{0,2},{0,223},{0,50}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/pagback/List/cell6">
+                <Property Name="UnifiedAreaRect" Value="{{0,222},{0,2},{0,270},{0,50}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/pagback/List/cell7">
+                <Property Name="UnifiedAreaRect" Value="{{0,269},{0,2},{0,317},{0,50}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/pagback/List/cell8">
+                <Property Name="UnifiedAreaRect" Value="{{0,316},{0,2},{0,364},{0,50}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/pagback/List/cell9">
+                <Property Name="UnifiedAreaRect" Value="{{0,-13},{0,50},{0,35},{0,98}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/pagback/List/cell10">
+                <Property Name="UnifiedAreaRect" Value="{{0,34},{0,50},{0,82},{0,98}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/pagback/List/cell11">
+                <Property Name="UnifiedAreaRect" Value="{{0,81},{0,50},{0,129},{0,98}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/pagback/List/cell12">
+                <Property Name="UnifiedAreaRect" Value="{{0,128},{0,50},{0,176},{0,98}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/pagback/List/cell13">
+                <Property Name="UnifiedAreaRect" Value="{{0,175},{0,50},{0,223},{0,98}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/pagback/List/cell14">
+                <Property Name="UnifiedAreaRect" Value="{{0,222},{0,50},{0,270},{0,98}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/pagback/List/cell15">
+                <Property Name="UnifiedAreaRect" Value="{{0,269},{0,50},{0,317},{0,98}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/pagback/List/cell16">
+                <Property Name="UnifiedAreaRect" Value="{{0,316},{0,50},{0,364},{0,98}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/pagback/List/cell17">
+                <Property Name="UnifiedAreaRect" Value="{{0,-13},{0,98},{0,35},{0,147}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/pagback/List/cell18">
+                <Property Name="UnifiedAreaRect" Value="{{0,34},{0,98},{0,82},{0,147}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/pagback/List/cell19">
+                <Property Name="UnifiedAreaRect" Value="{{0,81},{0,98},{0,129},{0,147}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/pagback/List/cell20">
+                <Property Name="UnifiedAreaRect" Value="{{0,128},{0,98},{0,176},{0,147}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/pagback/List/cell21">
+                <Property Name="UnifiedAreaRect" Value="{{0,175},{0,98},{0,223},{0,147}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/pagback/List/cell22">
+                <Property Name="UnifiedAreaRect" Value="{{0,222},{0,98},{0,270},{0,147}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/pagback/List/cell23">
+                <Property Name="UnifiedAreaRect" Value="{{0,269},{0,98},{0,317},{0,147}}" />
+              </Window>
+              <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/pagback/List/cell24">
+                <Property Name="UnifiedAreaRect" Value="{{0,316},{0,98},{0,364},{0,147}}" />
+              </Window>
+            </AutoWindow>
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ChildEat/eat/back/ok">
+          <Property Name="Text" Value="确定用餐" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.409412,0},{0.877778,0},{0.588235,0},{0.97037,0}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ChildEat/eat/back/food1">
+          <Property Name="Image" Value="set:MainControl3 image:LuckyWheelMiddleBox" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,66},{0,68}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,66},{0,68}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.202353,0},{0.611111,0},{0.357647,0},{0.862963,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/food1/food">
+            <Property Name="UnifiedAreaRect" Value="{{0.136364,0},{0.147059,0},{0.30303,37},{0.294118,38}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ChildEat/eat/back/food2">
+          <Property Name="Image" Value="set:MainControl3 image:LuckyWheelMiddleBox" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,66},{0,68}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,66},{0,68}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.425882,0},{0.611111,0},{0.581176,0},{0.862963,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/food2/food">
+            <Property Name="UnifiedAreaRect" Value="{{0.136364,0},{0.147059,0},{0.35303,34},{0.344118,35}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ChildEat/eat/back/food3">
+          <Property Name="Image" Value="set:MainControl3 image:LuckyWheelMiddleBox" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,66},{0,68}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,66},{0,68}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.642353,0},{0.611111,0},{0.797647,0},{0.862963,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="ChildEat/eat/back/food3/food">
+            <Property Name="UnifiedAreaRect" Value="{{0.136364,0},{0.147059,0},{0.35303,34},{0.344118,35}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ChildEat/eat/back/txt">
+          <Property Name="Text" Value="用餐所需食物为包裹内任意烹饪物品" />
+          <Property Name="HorzExtent" Value="208" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0376471,0},{0.503704,0},{0.557647,0},{0.588889,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

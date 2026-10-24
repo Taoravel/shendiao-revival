@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="DecorationView">
+    <Property Name="Font" Value="simhei-12" />
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="blank.ogg" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,123},{0,232},{0,428},{0,425}}" />
+    <Property Name="CloseSoundResource" Value="close.ogg" />
+    <Window Type="TaharezLook/StaticImage" Name="DecorationView/Name">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="CentreAligned" />
+      <Property Name="UnifiedMaxSize" Value="{{0,162},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,162},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,61},{0,12},{0,223},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="DecorationView/Name/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="配饰时装显示设置" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="136" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{-0.0925926,0},{0,1},{0,129},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="DecorationView/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0,17},{0,45},{0,287},{0,147}}" />
+      <Window Type="TaharezLook/StaticText" Name="DecorationView/Back/Introduce">
+        <Property Name="Text" Value="取消勾选后将不显示对应的配饰时装造型" />
+        <Property Name="HorzExtent" Value="234" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFFF00 tr:FFFFFF00 bl:FFFFFF00 br:FFFFFF00" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0148148,0},{0.705883,0},{0.988889,0},{0.980392,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="DecorationView/Back/CB1">
+        <Property Name="Text" Value="显示头饰" />
+        <Property Name="UnifiedAreaRect" Value="{{0.12963,0},{0.0686275,0},{0.3,29},{0.264706,0}}" />
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="DecorationView/Back/CB2">
+        <Property Name="Text" Value="显示眼饰" />
+        <Property Name="UnifiedAreaRect" Value="{{0.522222,0},{0.0686275,0},{0.35,121},{0.264706,0}}" />
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="DecorationView/Back/CB3">
+        <Property Name="Text" Value="显示背饰" />
+        <Property Name="UnifiedAreaRect" Value="{{0.12963,0},{0.303922,0},{0.407407,0},{0.5,0}}" />
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="DecorationView/Back/CB4">
+        <Property Name="Text" Value="显示口饰" />
+        <Property Name="UnifiedAreaRect" Value="{{0.522222,0},{0.303922,0},{0.8,0},{0.5,0}}" />
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="DecorationView/Back/CB5">
+        <Property Name="Text" Value="显示时装" />
+        <Property Name="UnifiedAreaRect" Value="{{0.12963,0},{0.558824,0},{0.422221,0},{0.705882,0}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="DecorationView/SaveAndClose">
+      <Property Name="Text" Value="保存并关闭" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0918033,0},{0.777202,0},{0.334426,0},{0.911917,0}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="DecorationView/Recover">
+      <Property Name="Text" Value="恢复默认值" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.377049,0},{0.777202,0},{0.619672,0},{0.911917,0}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="DecorationView/Close">
+      <Property Name="Text" Value="保存设置" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.659016,0},{0.777202,0},{0.901639,0},{0.911917,0}}" />
+    </Window>
+  </Window>
+</GUILayout>

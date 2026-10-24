@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="ChooseModelList/MainWindow">
+    <Property Name="Font" Value="simhei-12" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,161.399},{0,56.388},{0,676.399},{0,561.388}}" />
+    <Window Type="TaharezLook/TabControl" Name="ChooseModelList/TC">
+      <Property Name="TabHeight" Value="{0,18}" />
+      <Property Name="TabPanePosition" Value="Top" />
+      <Property Name="UnifiedAreaRect" Value="{{0,15},{0,40},{0,498},{0,483}}" />
+      <Window Type="DefaultWindow" Name="ChooseModelList/TC/Help">
+        <Property Name="Text" Value="帮助" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,4},{0,484},{0,427}}" />
+        <Window Type="TaharezLook/StaticText" Name="ChooseModelList/TC/Help/HelpTip">
+          <Property Name="Text">F1:进入战斗编辑器
+F2:退出战斗编辑器
+F3:开始战斗(可用鼠标左键点选敌方任意角色)
+F4:切换战斗方式(技能攻击/普通攻击)
+F5:切换当前环境最大粒子数量(100/15)</Property>
+          <Property Name="HorzExtent" Value="265" />
+          <Property Name="VertExtent" Value="78.0945" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,12},{0,19},{0,320},{0,208}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="ChooseModelList/TC/ChooseCharactor">
+        <Property Name="Text" Value="设置角色" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,7},{0,483},{0,430}}" />
+        <Window Type="TaharezLook/Button" Name="ChooseModelList/TC/ChooseCharactor/NextBattleID">
+          <Property Name="Text" Value="站位next" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,348},{0,346},{0,448},{0,366}}" />
+          <Property Name="NormalTextColour" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="ButtonDefaultBorderEnable" Value="False" />
+          <Property Name="ButtonDefaultColourEnable" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ChooseModelList/TC/ChooseCharactor/NextShape">
+          <Property Name="Text" Value="模型next" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,345},{0,378},{0,445},{0,398}}" />
+          <Property Name="NormalTextColour" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="ButtonDefaultBorderEnable" Value="False" />
+          <Property Name="ButtonDefaultColourEnable" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ChooseModelList/TC/ChooseCharactor/ChangeMale">
+          <Property Name="Text" Value="设置为男性" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,15},{0.0236407,0},{0,115},{0,30}}" />
+          <Property Name="NormalTextColour" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="ButtonDefaultBorderEnable" Value="False" />
+          <Property Name="ButtonDefaultColourEnable" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ChooseModelList/TC/ChooseCharactor/ChangeFemale">
+          <Property Name="Text" Value="设置为女性" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,137},{0,11},{0,237},{0,31}}" />
+          <Property Name="NormalTextColour" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="ButtonDefaultBorderEnable" Value="False" />
+          <Property Name="ButtonDefaultColourEnable" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="ChooseModelList/TC/ChooseCharactor/ChangePet">
+          <Property Name="Text" Value="设置为宠物/怪物" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,340},{0,11},{0,440},{0,31}}" />
+          <Property Name="NormalTextColour" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="ButtonDefaultBorderEnable" Value="False" />
+          <Property Name="ButtonDefaultColourEnable" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Listbox" Name="ChooseModelList/TC/ChooseCharactor/PetModelDir">
+          <Property Name="UnifiedAreaRect" Value="{{0.669104,0},{0.114657,0},{0.975993,0},{0.518912,0}}" />
+        </Window>
+        <Window Type="TaharezLook/Listbox" Name="ChooseModelList/TC/ChooseCharactor/PetBodyDir">
+          <Property Name="UnifiedAreaRect" Value="{{0.664929,0},{0.552008,0},{0.971818,0},{0.769503,0}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ChooseModelList/TC/ChooseCharactor/ChooseHairModelMsg">
+          <Property Name="Text" Value="设置hair" />
+          <Property Name="HorzExtent" Value="51" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,22},{0,90},{0,102},{0,110}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Listbox" Name="ChooseModelList/TC/ChooseCharactor/HairModelDir">
+          <Property Name="UnifiedAreaRect" Value="{{0.201462,0},{0.109929,0},{0.593946,0},{0.358156,0}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ChooseModelList/TC/ChooseCharactor/ChooseHeadModelMsg">
+          <Property Name="Text" Value="设置head" />
+          <Property Name="HorzExtent" Value="58" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,11},{0,220},{0,90},{0,240}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Listbox" Name="ChooseModelList/TC/ChooseCharactor/HeadModelDir">
+          <Property Name="UnifiedAreaRect" Value="{{0.201461,0},{0.414894,0},{0.591858,0},{0.674939,0}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ChooseModelList/TC/ChooseCharactor/ChooseBodyModelMsg">
+          <Property Name="Text" Value="设置body" />
+          <Property Name="HorzExtent" Value="57" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,10},{0,348},{0,90},{0,368}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Listbox" Name="ChooseModelList/TC/ChooseCharactor/BodyModelDir">
+          <Property Name="UnifiedAreaRect" Value="{{0.199374,0},{0.724586,0},{0.593946,0},{0.965719,0}}" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="ChooseModelList/TC/ChooseEffect">
+        <Property Name="Text" Value="设置技能特效&amp;播放动作" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,7},{0,4},{0,484},{0,427}}" />
+        <Window Type="TaharezLook/Listbox" Name="ChooseModelList/TC/ChooseEffect/ModelChooseEffect">
+          <Property Name="UnifiedAreaRect" Value="{{0,23},{0,23},{0,237},{0,398}}" />
+        </Window>
+        <Window Type="TaharezLook/Listbox" Name="ChooseModelList/TC/ChooseEffect/ModelChooseAction">
+          <Property Name="UnifiedAreaRect" Value="{{0,254},{0,20},{0,468},{0,395}}" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="ChooseModelList/TC/ChooseWeaponTable">
+        <Property Name="Text" Value="设置武器" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,4},{0,484},{0,427}}" />
+        <Window Type="TaharezLook/StaticText" Name="ChooseModelList/TC/ChooseWeaponTable/ChooseLeftMsg">
+          <Property Name="Text" Value="左手武器设置" />
+          <Property Name="HorzExtent" Value="78" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,87},{0,33},{0,186},{0,53}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="ChooseModelList/TC/ChooseWeaponTable/ChooseRightMsg">
+          <Property Name="Text" Value="右手武器设置" />
+          <Property Name="HorzExtent" Value="78" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,294},{0,33},{0,393},{0,53}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Listbox" Name="ChooseModelList/TC/ChooseWeaponTable/ModelChooseLeft">
+          <Property Name="UnifiedAreaRect" Value="{{0,57},{0,60},{0,201},{0,275}}" />
+        </Window>
+        <Window Type="TaharezLook/Listbox" Name="ChooseModelList/TC/ChooseWeaponTable/ModelChooseRight">
+          <Property Name="UnifiedAreaRect" Value="{{0,265},{0,60},{0,409},{0,275}}" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

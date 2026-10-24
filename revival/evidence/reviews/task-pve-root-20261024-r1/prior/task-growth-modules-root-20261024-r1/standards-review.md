@@ -1,0 +1,18 @@
+Standards：硬违规0；heuristic可行动发现0。
+
+方法：重读完整code-review/codebase-design及ARCHITECTURE、DESIGN_AUTHORITY；以repair023920固定字节为BASE，静态比较指定5文件并追踪实际组合的import/公开Interface及caller-transaction Seam，逐项判断全部12种Fowler启发。沿用原十节点/完整map/跨租约受限恢复裁定，未读另一轴结论。无Git/commits，未改源码或manifest。
+
+证据：task_first_battle.py:55、98、135–163启动冻结精确policy与能力集，准入核真实章节/路线/private checkpoint/NPC及当前租约，再调用组合内TaskBattle的同签名公开事务；不启动engine或自行commit。task_first_skill.py:136、211–289经当前租约读真实已结算前驱，fresh以完整技能revision CAS授max值，原XP/任务/后继/唯一教学回执及最终完整快照编码留在同一外层事务；paid读当前，不重放技能/XP/电影。
+
+role_skills.py:133–204缺账本保持unknown，历史只收显式完整Verified基线，不以旧章节标签推空；保留全部合法key/value及来源，编码原生完整替换map。TaskDomain仅增加受限的原节点/evidence能力，不把UI请求当事实。所选五文件的相互import名称及与BASE task_workflow/task_growth_resources的参数契约匹配；没有内部connect/commit/send或全局锁，符合ARCHITECTURE角色单写者、原子幂等及启动配置规则。
+
+task_battle.py:355–403普通settle仍要求当前epoch与原admission/terminal匹配；476起专用recovery验证原指纹/能力/当前租约，不改原DTO的epoch；已结算走456起纯current查询。TaskBattleRecoveryWitness是可信宿主必须先核producer原件和全source CAS后提供的证据绑定，字段/哈希合法本身不证明来源可信。
+
+源SHA256（审前后均匹配指定组合）：
+- task_first_battle.py b5557bd04227018b7d706849091373a0915c446b62cdb3e45ade7835036b51ad
+- role_skills.py 7985e132239bffcda1c19fce63b3af724d3b48e1e92395f590a530b7e6038daf
+- task_first_skill.py 40a15f95b47bf25088a2abff63aa84b246c612d5b91e76fdb50043bb71f0fcdb
+- task_domain.py 11f93e8efbaf6059e6b51779691c310912bda5143fe630a0e625c5cadedf6c0b
+- task_battle.py 8a78b9da2ce1cd144035c0b176c5485ef561d75afaa0ddf1bb033bdb6740d3f8
+
+仅静态，未重跑harness或操作服务/DB/socket/GUI。root的5+8+6组使用人工terminal/numeric Participant，不能外推actual producer、全source CAS、资源/outbox同事务或shared已通过。设计兼容旧技能基线不在本组合实现中；未知旧角色仍拒绝。不批准部署，仅新增本报告。

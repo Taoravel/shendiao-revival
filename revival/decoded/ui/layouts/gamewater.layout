@@ -1,0 +1,993 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameBottom" Name="GameWater">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.09125,0},{0.1,0},{0.14875,608},{0.096667,482}}" />
+    <Window Type="TaharezLook/StaticImage" Name="GameWater/NPCword">
+      <Property Name="Image" Value="set:MainControl19 image:GameHeadBack" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,604},{0,63}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,604},{0,63}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0168196,0},{0.0375,0},{0.0313733,594},{0.377093,-100}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticText" Name="GameWater/word">
+        <Property Name="TextColours" Value="tl:FFFFF5A2 tr:FFFFF5A2 bl:FFFFD200 br:FFFFD200" />
+        <Property Name="BorderColour" Value="FF2E1E08" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0,146},{0,28},{0,533},{0,57}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GameWater/Name">
+        <Property Name="TextColours" Value="tl:FFFFF5A2 tr:FFFFF5A2 bl:FFFFD200 br:FFFFD200" />
+        <Property Name="BorderColour" Value="FF2E1E08" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,166},{0,7},{0,276},{0,26}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="GameWater/Head/Icon">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,-13},{0.05,-73},{0.05,115},{0.05,55}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="GameWater/Guide">
+      <Property Name="Image" Value="set:MainControl18 image:GameWaterBack" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,617},{0,357}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,617},{0,357}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0259939,0},{0.185417,0},{0.0313733,613},{0.929167,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/ImageButton" Name="GameWater/Start">
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl19 image:GameStartHover" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="NormalImage" Value="set:MainControl19 image:GameStartNormal" />
+        <Property Name="PushedImage" Value="set:MainControl19 image:GameStartPushed" />
+        <Property Name="DisabledImage" Value="set:MainControl19 image:OverDisable" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="UnifiedMaxSize" Value="{{0,303},{0,49}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,303},{0,49}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,175},{0,80},{0.05,478},{0,129}}" />
+        <Property Name="NormalTextColour" Value="tl:FFFFF5A2 tr:FFFFF5A2 bl:FFFFD200 br:FFFFD200" />
+        <Property Name="ButtonBorderColour" Value="FF6E340D" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="GameWater/Operation">
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl19 image:GameInfoHover" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="NormalImage" Value="set:MainControl19 image:GameInfoNormal" />
+        <Property Name="PushedImage" Value="set:MainControl19 image:GameInfoPushed" />
+        <Property Name="DisabledImage" Value="set:MainControl23 image:OverDisable" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="UnifiedMaxSize" Value="{{0,303},{0,49}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,303},{0,49}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,181},{0,151},{0,484},{0,200}}" />
+        <Property Name="NormalTextColour" Value="tl:FFFFF5A2 tr:FFFFF5A2 bl:FFFFD200 br:FFFFD200" />
+        <Property Name="ButtonBorderColour" Value="FF6E340D" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="GameWater/Exit">
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl19 image:GameExitHover" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="NormalImage" Value="set:MainControl19 image:GameExitNormal" />
+        <Property Name="PushedImage" Value="set:MainControl19 image:GameExitPushed" />
+        <Property Name="DisabledImage" Value="set:MainControl23 image:OverDisable" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="UnifiedMaxSize" Value="{{0,303},{0,49}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,303},{0,49}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,182},{0,222},{0,485},{0,271}}" />
+        <Property Name="NormalTextColour" Value="tl:FFFFF5A2 tr:FFFFF5A2 bl:FFFFD200 br:FFFFD200" />
+        <Property Name="ButtonBorderColour" Value="FF6E340D" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="GameWater/Front/Back">
+      <Property Name="Image" Value="set:MainControl18 image:GameWaterInfo" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,613},{0,354}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,613},{0,354}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{-0.0565749,0},{0.18125,0},{0.0506237,543},{0.171212,359}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="GameWater/WaterInfo/Word">
+        <Property Name="Text">操作说明：
+      1、左键点击空白方块就可以将右边的形状置于其上；
+      2、将右边的形状放在合适的地方，使水道可以连成一片，灌溉的方块越多，游戏的结果越好。</Property>
+        <Property Name="HorzExtent" Value="195" />
+        <Property Name="VertExtent" Value="93.7134" />
+        <Property Name="TextColours" Value="tl:FFFFF5A2 tr:FFFFF5A2 bl:FFFFD200 br:FFFFD200" />
+        <Property Name="BorderColour" Value="FF2E1E08" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0,397},{0,107},{0,593},{0,238}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="GameWater/Return">
+        <Property Name="Text" Value="返      回" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="HoverImage" Value="set:MainControl23 image:OverHover" />
+        <Property Name="NormalImage" Value="set:MainControl23 image:OverNormal" />
+        <Property Name="PushedImage" Value="set:MainControl23 image:OverPushed" />
+        <Property Name="DisabledImage" Value="set:MainControl23 image:OverDisable" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,403},{0.05,267},{0.05,494},{0.05,295}}" />
+        <Property Name="NormalTextColour" Value="tl:FFFFF5A2 tr:FFFFF5A2 bl:FFFFD200 br:FFFFD200" />
+        <Property Name="ButtonBorderColour" Value="FF6E340D" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="GameWater/Defult">
+      <Property Name="UnifiedAreaRect" Value="{{0.0259939,0},{0.166667,0},{0.98318,0},{0.170833,370}}" />
+      <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack">
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,100},{0.05,-1},{0.05,465},{0.05,364}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/1">
+          <Property Name="Image" Value="set:MainControl14 image:01" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,55},{0,55}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,55},{0,55}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0164384,0},{0,7},{0.167123,0},{0,62}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/11">
+          <Property Name="Image" Value="set:MainControl14 image:02" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,55},{0,55}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,55},{0,55}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.805479,0},{0,7},{0.956164,0},{0,62}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/12">
+          <Property Name="Image" Value="set:MainControl14 image:03" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,55},{0,55}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,55},{0,55}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0164384,0},{0,294},{0.167123,0},{0,349}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/13">
+          <Property Name="Image" Value="set:MainControl14 image:04" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,55},{0,55}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,55},{0,55}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.805479,0},{0,294},{0.956164,0},{0,349}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/14">
+          <Property Name="Image" Value="set:MainControl14 image:05" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,55},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,55},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.805479,0},{0,201},{0.956164,0},{0,249}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/15">
+          <Property Name="Image" Value="set:MainControl14 image:06" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,55},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,55},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0164384,0},{0,60},{0.167123,0},{0,108}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/16">
+          <Property Name="Image" Value="set:MainControl14 image:07" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,55}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,55}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.161644,0},{0,7},{0.293151,0},{0,62}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/17">
+          <Property Name="Image" Value="set:MainControl14 image:08" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,55}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,55}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.161644,0},{0,294},{0.293151,0},{0,349}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/18">
+          <Property Name="Image" Value="set:MainControl14 image:09" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.161644,0},{0,60},{0.293151,0},{0,108}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/151">
+          <Property Name="Image" Value="set:MainControl14 image:06" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,55},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,55},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0164384,0},{0,107},{0.167123,0},{0,155}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/152">
+          <Property Name="Image" Value="set:MainControl14 image:06" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,55},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,55},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0164384,0},{0,154},{0.167123,0},{0,202}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/153">
+          <Property Name="Image" Value="set:MainControl14 image:06" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,55},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,55},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0164384,0},{0,201},{0.167123,0},{0,249}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/171">
+          <Property Name="Image" Value="set:MainControl14 image:08" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,55}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,55}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.290411,0},{0,294},{0.421918,0},{0,349}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/172">
+          <Property Name="Image" Value="set:MainControl14 image:08" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,55}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,55}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.419178,0},{0,294},{0.550685,0},{0,349}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/173">
+          <Property Name="Image" Value="set:MainControl14 image:08" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,55}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,55}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.547945,0},{0,294},{0.679452,0},{0,349}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/174">
+          <Property Name="Image" Value="set:MainControl14 image:08" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,55}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,55}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.676712,0},{0,294},{0.690417,43},{0,349}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/141">
+          <Property Name="Image" Value="set:MainControl14 image:05" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,55},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,55},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.805479,0},{0,154},{0.956164,0},{0,202}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/142">
+          <Property Name="Image" Value="set:MainControl14 image:05" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,55},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,55},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.805479,0},{0,107},{0.956164,0},{0,155}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/1421">
+          <Property Name="Image" Value="set:MainControl14 image:05" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,55},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,55},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.805479,0},{0,60},{0.956164,0},{0,108}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/161">
+          <Property Name="Image" Value="set:MainControl14 image:07" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,55}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,55}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.290411,0},{0,7},{0.421918,0},{0,62}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/162">
+          <Property Name="Image" Value="set:MainControl14 image:07" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,55}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,55}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.419178,0},{0,7},{0.550685,0},{0,62}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/163">
+          <Property Name="Image" Value="set:MainControl14 image:07" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,55}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,55}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.547945,0},{0,7},{0.679452,0},{0,62}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/164">
+          <Property Name="Image" Value="set:MainControl14 image:07" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,55}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,55}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.676712,0},{0,7},{0.808219,0},{0,62}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/181">
+          <Property Name="Image" Value="set:MainControl14 image:09" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.290411,0},{0,60},{0.421918,0},{0,108}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/182">
+          <Property Name="Image" Value="set:MainControl14 image:09" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.419178,0},{0,60},{0.550685,0},{0,108}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/183">
+          <Property Name="Image" Value="set:MainControl14 image:09" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.547945,0},{0,201},{0.679452,0},{0,249}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/184">
+          <Property Name="Image" Value="set:MainControl14 image:09" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.547945,0},{0,154},{0.679452,0},{0,202}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/185">
+          <Property Name="Image" Value="set:MainControl14 image:09" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.547945,0},{0,107},{0.679452,0},{0,155}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/186">
+          <Property Name="Image" Value="set:MainControl14 image:09" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.547945,0},{0,60},{0.679452,0},{0,108}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/187">
+          <Property Name="Image" Value="set:MainControl14 image:09" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.676712,0},{0,201},{0.808219,0},{0,249}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/188">
+          <Property Name="Image" Value="set:MainControl14 image:09" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.676712,0},{0,154},{0.808219,0},{0,202}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/189">
+          <Property Name="Image" Value="set:MainControl14 image:09" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.676712,0},{0,107},{0.808219,0},{0,155}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/1810">
+          <Property Name="Image" Value="set:MainControl14 image:09" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.676712,0},{0,60},{0.808219,0},{0,108}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/1811">
+          <Property Name="Image" Value="set:MainControl14 image:09" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.419178,0},{0,201},{0.550685,0},{0,249}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/1812">
+          <Property Name="Image" Value="set:MainControl14 image:09" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.290411,0},{0,201},{0.421918,0},{0,249}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/18121">
+          <Property Name="Image" Value="set:MainControl14 image:09" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.161644,0},{0,201},{0.293151,0},{0,249}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/18122">
+          <Property Name="Image" Value="set:MainControl14 image:09" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.161644,0},{0,154},{0.293151,0},{0,202}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/18123">
+          <Property Name="Image" Value="set:MainControl14 image:09" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.290411,0},{0,154},{0.421918,0},{0,202}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/18124">
+          <Property Name="Image" Value="set:MainControl14 image:09" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.419178,0},{0,154},{0.550685,0},{0,202}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/18125">
+          <Property Name="Image" Value="set:MainControl14 image:09" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.419178,0},{0,107},{0.550685,0},{0,155}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/18126">
+          <Property Name="Image" Value="set:MainControl14 image:09" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.290411,0},{0,107},{0.421918,0},{0,155}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/181261">
+          <Property Name="Image" Value="set:MainControl14 image:09" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.161644,0},{0,107},{0.293151,0},{0,155}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/Back">
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,-9},{0,10},{0.05,334},{0,351}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box0">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.00874636,0},{0,3},{0,51},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box1">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,50},{0,3},{0,98},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box2">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,97},{0,3},{0,145},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box3">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,144},{0,3},{0,192},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box4">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,191},{0,3},{0,239},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box5">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,238},{0,3},{0,286},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box6">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,286},{0,3},{0,334},{0,51}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box7">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.00874636,0},{0,50},{0.0204089,44},{0,98}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box8">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,50},{0,50},{0,98},{0,98}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box9">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,97},{0,50},{0,145},{0,98}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box10">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,144},{0,50},{0,192},{0,98}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box11">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,191},{0,50},{0,239},{0,98}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box12">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,238},{0,50},{0,286},{0,98}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box13">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,286},{0,50},{0,334},{0,98}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box14">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.00874636,0},{0,97},{0.0204089,44},{0,145}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box15">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,50},{0,97},{0,98},{0,145}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box16">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,97},{0,97},{0,145},{0,145}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box17">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,144},{0,97},{0,192},{0,145}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box18">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,191},{0,97},{0,239},{0,145}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box19">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,238},{0,97},{0,286},{0,145}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box20">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,286},{0,97},{0,334},{0,145}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box21">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.00874636,0},{0,144},{0.0204089,44},{0,192}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box22">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,50},{0,144},{0,98},{0,192}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box23">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,97},{0,144},{0,145},{0,192}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box24">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,144},{0,144},{0,192},{0,192}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box25">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,191},{0,144},{0,239},{0,192}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box26">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,238},{0,144},{0,286},{0,192}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box27">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,286},{0,144},{0,334},{0,192}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box28">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.00874636,0},{0,191},{0.0204089,44},{0,239}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box29">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,50},{0,191},{0,98},{0,239}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box30">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,97},{0,191},{0,145},{0,239}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box31">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,144},{0,191},{0,192},{0,239}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box32">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,191},{0,191},{0,239},{0,239}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box33">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,238},{0,191},{0,286},{0,239}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box34">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,286},{0,191},{0,334},{0,239}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box35">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.00874636,0},{0,238},{0.00583103,49},{0,286}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box36">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,50},{0,238},{0,98},{0,286}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box37">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,97},{0,238},{0,145},{0,286}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box38">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,144},{0,238},{0,192},{0,286}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box39">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,191},{0,238},{0,239},{0,286}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box40">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,238},{0,238},{0,286},{0,286}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box41">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,286},{0,238},{0,334},{0,286}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box48">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,286},{0,286},{0,334},{0,334}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box47">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,238},{0,286},{0,286},{0,334}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box46">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,191},{0,286},{0,239},{0,334}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box45">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,144},{0,286},{0,192},{0,334}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box44">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,97},{0,286},{0,145},{0,334}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box43">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,50},{0,286},{0,98},{0,334}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Back/box42">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.00874636,0},{0,286},{0.0174934,45},{0,334}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/1531">
+          <Property Name="Image" Value="set:MainControl14 image:06" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,55},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,55},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0164384,0},{0,248},{0.167123,0},{0,296}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/181211">
+          <Property Name="Image" Value="set:MainControl14 image:09" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.161644,0},{0,248},{0.293151,0},{0,296}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/18127">
+          <Property Name="Image" Value="set:MainControl14 image:09" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.290411,0},{0,248},{0.421918,0},{0,296}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/18111">
+          <Property Name="Image" Value="set:MainControl14 image:09" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.419178,0},{0,248},{0.550685,0},{0,296}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/1871">
+          <Property Name="Image" Value="set:MainControl14 image:09" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.676712,0},{0,248},{0.808219,0},{0,296}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/1831">
+          <Property Name="Image" Value="set:MainControl14 image:09" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.547945,0},{0,248},{0.679452,0},{0,296}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftBack/143">
+          <Property Name="Image" Value="set:MainControl14 image:05" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,55},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,55},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.805479,0},{0,248},{0.956164,0},{0,296}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/Back/Water">
+          <Property Name="Image" Value="set:MainControl14 image:WaterRoot" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,150},{0,32}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,150},{0,32}}" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.1,65},{0,-19},{0.1,215},{0,13}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="GameWater/S">
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,336},{0,372},{0,373},{0,392}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="GameWater/Defult/Right">
+        <Property Name="UnifiedAreaRect" Value="{{0.771565,0},{0.0483871,0},{0.980831,0},{0.989247,0}}" />
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/Move">
+          <Property Name="Image" Value="set:MainControl19 image:ChoceBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,106},{0,336}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,106},{0,336}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0916031,0},{0.0228571,0},{0.0954198,106},{0.0240793,336}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Move/Num4">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.292453,0},{0,261},{0.745283,0},{0,309}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Move/Num3">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.292453,0},{0,187},{0.745283,0},{0,235}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Move/Num2">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.292453,0},{0,112},{0.745283,0},{0,160}}" />
+          </Window>
+          <Window Type="TaharezLook/GameBox" Name="GameWater/Move/Num1">
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,48}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.292453,0},{0,33},{0.745283,0},{0,81}}" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="GameWater/LeftCase">
+        <Property Name="UnifiedAreaRect" Value="{{0.05,-31},{0.05,-2},{0.05,104},{0.05,346}}" />
+        <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftCase/ProgressBar">
+          <Property Name="Image" Value="set:MainControl19 image:GameProgressBar" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,35},{0,324}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,35},{0,324}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.637037,0},{0,13},{0.896296,0},{0,337}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/GameProgressBar" Name="GameWater/Progress">
+            <Property Name="StepSize" Value="0.01" />
+            <Property Name="CurrentProgress" Value="0" />
+            <Property Name="UnifiedAreaRect" Value="{{0,11},{0,12},{0,25},{0,317}}" />
+            <Property Name="VerticalProgress" Value="True" />
+            <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftCase/Result31">
+              <Property Name="Image" Value="set:MainControl19 image:Victory" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,77},{0,33}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,77},{0,33}}" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.05,-78.7},{0.05,-19.3543},{0.05,17.3},{0.05,13.6457}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftCase/Result3">
+              <Property Name="Image" Value="set:MainControl19 image:LevelBest" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,77},{0,37}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,77},{0,37}}" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.05,-78.7},{0,49.6457},{0.05,-1.7},{0,86.6457}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftCase/Result2">
+              <Property Name="Image" Value="set:MainControl19 image:LevelGood" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,77},{0,37}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,77},{0,37}}" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.05,-78.7},{0,100.646},{0.05,-1.7},{0,137.646}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftCase/Result1">
+              <Property Name="Image" Value="set:MainControl19 image:LevelMedium" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,77},{0,37}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,77},{0,37}}" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.05,-78.7},{0,193.954},{0.05,-1.7},{0,230.954}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="GameWater/LeftCase/Result">
+              <Property Name="Image" Value="set:MainControl19 image:LevelBad" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,77},{0,37}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,77},{0,37}}" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.05,-78.7},{0,277.735},{0.05,-1.7},{0,314.735}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="GameWater/Ago">
+      <Property Name="Image" Value="set:MainControl19 image:StartAgo" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,89},{0,39}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,89},{0,39}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.830275,0},{0.0666667,0},{0.966361,0},{0.147917,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticText" Name="GameWater/Ago/Time">
+        <Property Name="Font" Value="msyh-16" />
+        <Property Name="Text" Value="未开始" />
+        <Property Name="HorzExtent" Value="48" />
+        <Property Name="VertExtent" Value="18.75" />
+        <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0337079,0},{0.230769,0},{0.786517,0},{0.3,19}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="GameWater/Close">
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:component image:CloseButtonHover" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="NormalImage" Value="set:component image:CloseButtonNormal" />
+      <Property Name="PushedImage" Value="set:component image:CloseButtonPressed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,21},{0,19}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,21},{0,19}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0.943425,0},{0.0416667,0},{0.975535,0},{0.08125,0}}" />
+    </Window>
+  </Window>
+</GUILayout>

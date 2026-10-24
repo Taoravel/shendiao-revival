@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/SmallFrameWindow" Name="CofCRegister">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.5,-179},{0,205},{0,584},{0,402}}" />
+    <Window Type="TaharezLook/Button" Name="CofCRegister/OKBtn">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="确   定" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,140},{0,155},{0,222},{0,179}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="CofCRegister/intro">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="开店简介" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,43},{0,155},{0,125},{0,179}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="CofCRegister/CancleBtn">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="取   消" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,237},{0,155},{0,319},{0,179}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="CofCRegister/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,54},{0,10},{0,261},{0,35}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="CofCRegister/Title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="商店登记表" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="85" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,71},{-0.04,0},{0,180},{0,22}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="CofCRegister/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0495868,0},{0.218274,0},{0.947658,0},{0.771574,0}}" />
+      <Window Type="TaharezLook/Editbox" Name="CofCRegister/shopName">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="1073741823" />
+        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,31},{0,179},{0,51}}" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="CofCRegister/shopName1">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="商店名称" />
+        <Property Name="HorzExtent" Value="53" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,7},{0,31},{0,63},{0,51}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="CofCRegister/owerName1">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="店主名字" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,7},{0,7},{0,61},{0,27}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="CofCRegister/owerName">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,7},{0,179},{0,27}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="CofCRegister/owerID1">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="店主 ID" />
+        <Property Name="HorzExtent" Value="44" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,183},{0,7},{0,230},{0,27}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="CofCRegister/owerID">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,235},{0,7},{0,316},{0,27}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="CofCRegister/shopType1">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="商店类型" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,183},{0,31},{0,239},{0,51}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="CofCRegister/CofCIndex1">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="当前商业指数" />
+        <Property Name="HorzExtent" Value="79" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,7},{0,81},{0,91},{0,101}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="CofCRegister/needMoney1">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="投资和税资总额" />
+        <Property Name="HorzExtent" Value="92" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.444785,0},{0,55},{0,241},{0,75}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="CofCRegister/CofCIndex">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,90},{0,81},{0,139},{0,101}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="CofCRegister/needMoney">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,247},{0,55},{0,317},{0,75}}" />
+      </Window>
+      <Window Type="TaharezLook/Combobox" Name="CofCRegister/shopType">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="ReadOnly" Value="True" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,241},{0,31},{0,316},{0,104}}" />
+        <Property Name="MaxEditTextLength" Value="1073741823" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="CofCRegister/shopType11">
+        <Property Name="Text" Value="商店分类" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,7},{0,55},{0,63},{0,75}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Combobox" Name="CofCRegister/shopType2">
+        <Property Name="ReadOnly" Value="True" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,64},{0,55},{0,139},{0,171}}" />
+        <Property Name="MaxEditTextLength" Value="1073741823" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,11 @@
+# Standards
+
+硬违规0；heuristic判断项0。已重读code-review，沿用codebase-design；按AGENTS、ARCHITECTURE和DESIGN_AUTHORITY核对。未发现GLOSSARY／ADR／CONTRIBUTING／CODING_STANDARDS。
+
+仅审固定两文件63行非Git差异，无提交列表。candidate副本及不可变release均匹配：
+- battle_protocol.py：1a472edf4f1a9db20d8c08ba05eb5516b56b723b87b2b2c80ca0c0a60c75cd22
+- training_battle.py：0eff784921f509c3f173de8ebd9aeab2a539f098b9a26fed1d5e1a675e91b127
+
+两份base亦与指定BASE发布字节一致。静态检索冻结生产调用：唯一round_script调用training_battle.py:259–261已改TargetResult；旧tuple仅见源内旧验证脚本，候选采用独立harness。battle_protocol.py:104–112将原hp_change映至结果map key1并保留DemoAttr独立集合，未改变伤害计算、事件、资源或Owner。12项Fowler smell逐项判断，未见有实际后果的问题。
+
+仅静态阅读、调用检索与哈希核对；未执行脚本、DB、GUI、登录、战斗或服务。原生实际显示、部署和运行回归由根另验。

@@ -1,0 +1,1360 @@
+{
+  "source_status": "client_verified rows; battle AI mapping and numeric design not proved",
+  "archive": "D:\\神雕侠侣\\artres\\config.pfs",
+  "archive_sha256": "eee475d5ffe7eecbde99abc119c2b9b8faa899489e2f7e13533a8de81f40d915",
+  "sources": {
+    "autoconfig/knight.gsp.task.cmainmissioninfo.xml": {
+      "sha256": "ed4bad3a037498115e3d9cac308daddd39c3d60b70c1372ad22044085f06c706",
+      "crc32": "3f7ab7b3",
+      "length": 2026233,
+      "rows": 2460
+    },
+    "autoconfig/knight.gsp.npc.cnpcconfig.xml": {
+      "sha256": "b4fc5d440380fb535a36b8e5315c5a1bf10a99f550f5bfde55bd156fca864f85",
+      "crc32": "cc437e13",
+      "length": 619832,
+      "rows": 4127
+    },
+    "autoconfig/knight.gsp.npc.cmonsterconfig.xml": {
+      "sha256": "b4843cab3b217a94c2f6fefc00b68cd28bed4c4dc125d9271812769d59dd7c39",
+      "crc32": "95939be9",
+      "length": 360729,
+      "rows": 5635
+    },
+    "autoconfig/knight.gsp.battle.cbattlebackground.xml": {
+      "sha256": "a5ed7ae935261891c4185ee0bd98250e71abe8344139dcb6cf5b04df23cc1191",
+      "crc32": "972e695c",
+      "length": 3685,
+      "rows": 41
+    },
+    "autoconfig/knight.gsp.battle.cbattlebackmusic.xml": {
+      "sha256": "ac99f45bbeab428cc69a83ba89414659b62d6c65eb0e87374a8134a195bd97bc",
+      "crc32": "5f48a015",
+      "length": 309,
+      "rows": 3
+    }
+  },
+  "task_ai8001": [
+    {
+      "attributes": {
+        "id": "100107",
+        "MissionName": "[主线]序章缘起",
+        "MissionTypeString": "主线剧情",
+        "MinLevel": "0",
+        "MaxLevel": "0",
+        "TransMinLevel": "0",
+        "TransMaxLevel": "0",
+        "TransformID": "0",
+        "ExpReward": "120",
+        "MoneyReward": "0",
+        "PetExpReward": "0",
+        "ShengWang": "0",
+        "SMoney": "400",
+        "RewardMapJumpType": "0",
+        "RewardMapID": "0",
+        "RewardMapXPos": "0",
+        "RewardMapYPos": "0",
+        "ProcessBarTime": "0",
+        "MissionType": "40",
+        "ActiveInfoNpcID": "10908",
+        "ActiveInfoMapID": "1501",
+        "ActiveInfoLeftPos": "0",
+        "ActiveInfoTopPos": "0",
+        "ActiveInfoRightPos": "0",
+        "ActiveInfoBottomPos": "0",
+        "ActiveInfoTargetID": "0",
+        "ActiveInfoTargetNum": "0",
+        "ActiveInfoMiniStep": "0",
+        "ActiveInfoStepProbability": "0",
+        "ActiveInfoMaxStep": "0",
+        "ActiveInfoTeamState": "1",
+        "ActiveInfoTimeLimit": "0",
+        "ActiveInfoIsRestartTimer": "0",
+        "ActiveInfoGiveBackMoney": "0",
+        "ActiveInfoGiveBackPetID": "0",
+        "ActiveInfoUseItemID": "0",
+        "ActiveInfoOtherType": "0",
+        "QuestionInfoNpcID": "0",
+        "TaskInfoDescriptionListA": "<T t=\"触摸血手印后，周围的世界仿佛发生了变化。神秘的说书人在旁边向你招手。\" c=\"ff12c4ff\" ></T><T t=\"【战斗难度：单人简单难度，与任务等级接近的玩家可以单人轻松完成的战斗】\" c=\"ffe9f231\"></T>",
+        "TaskInfoPurposeListA": "<T t=\"询问陆家庄外的\"></T><G t=\"说书人\" npcid=\"10908\"></G><T t=\"（需战斗）。\"></T>",
+        "TaskInfoTraceListA": "<T t=\"询问陆家庄外的\"></T><G t=\"说书人\" npcid=\"10908\"></G><I s=\"MainControl\" i=\"zhan\"></I>",
+        "AIInfoAIID": "8001",
+        "AIInfoBattleResult": "1",
+        "AIInfoDeathPunish": "0",
+        "AIInfoTeamSteate": "1",
+        "AIInfoBattleLevel": "【战斗难度：单人简单】",
+        "BattleInfoBattleMapType": "1",
+        "BattleInfoBattleZoneID": "0",
+        "BattleInfoDrop": "0",
+        "BattleInfoBattleTimes": "0",
+        "BattleInfoMonsterNum": "0",
+        "BattleInfoDropItemID": "0",
+        "BattleInfoDropItemNum": "0",
+        "ScenarioInfoAnimationID": "10019",
+        "ScenarioInfoBranchNpcID": "0"
+      },
+      "lists": {
+        "PostMissionList": [
+          "100179"
+        ],
+        "DisPlayNPCID": [
+          "10909"
+        ],
+        "ScenarioInfoNpcConversationList": [
+          "<T t=\"少年人，你终于来了。我等了你好久了。\" ></T>",
+          "<T t=\"前……先生，这里发生了什么事？为什么这里的气氛变得这么诡异？\" ></T>",
+          "<T t=\"我知道你有很多疑问，有时间我会慢慢向你解释的，现在\"></T><T t=\"先解决掉眼前这些麻烦的家伙吧！\"  c=\"ffffff33\"></T>"
+        ],
+        "ScenarioInfoNpcID": [
+          "10908",
+          "1",
+          "10908"
+        ],
+        "ScenarioInfoFinishConversationList": [
+          "<T t=\"哎呀，你虽有慧根，打得却毫无章法，看来门派武功还尚未入门，实在不符合我的美学！\"></T>",
+          "<T t=\"这套太祖长拳\" c=\"ffffff33\" ></T><T t=\"就传授于你，你先参悟一下吧！\"></T>"
+        ],
+        "ScenarioInfoFinishNpcID": [
+          "10908",
+          "10908"
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "id": "100205",
+        "MissionName": "[主线]序章缘起",
+        "MissionTypeString": "主线剧情",
+        "MinLevel": "0",
+        "MaxLevel": "0",
+        "TransMinLevel": "0",
+        "TransMaxLevel": "0",
+        "TransformID": "0",
+        "ExpReward": "120",
+        "MoneyReward": "0",
+        "PetExpReward": "0",
+        "ShengWang": "0",
+        "SMoney": "400",
+        "RewardMapJumpType": "0",
+        "RewardMapID": "0",
+        "RewardMapXPos": "0",
+        "RewardMapYPos": "0",
+        "ProcessBarTime": "0",
+        "MissionType": "40",
+        "ActiveInfoNpcID": "10908",
+        "ActiveInfoMapID": "1501",
+        "ActiveInfoLeftPos": "0",
+        "ActiveInfoTopPos": "0",
+        "ActiveInfoRightPos": "0",
+        "ActiveInfoBottomPos": "0",
+        "ActiveInfoTargetID": "0",
+        "ActiveInfoTargetNum": "0",
+        "ActiveInfoMiniStep": "0",
+        "ActiveInfoStepProbability": "0",
+        "ActiveInfoMaxStep": "0",
+        "ActiveInfoTeamState": "1",
+        "ActiveInfoTimeLimit": "0",
+        "ActiveInfoIsRestartTimer": "0",
+        "ActiveInfoGiveBackMoney": "0",
+        "ActiveInfoGiveBackPetID": "0",
+        "ActiveInfoUseItemID": "0",
+        "ActiveInfoOtherType": "0",
+        "QuestionInfoNpcID": "0",
+        "TaskInfoDescriptionListA": "<T t=\"触摸血手印后，周围的世界仿佛发生了变化。神秘的说书人在旁边向你招手。\" c=\"ff12c4ff\" ></T><T t=\"【战斗难度：单人简单难度，与任务等级接近的玩家可以单人轻松完成的战斗】\" c=\"ffe9f231\"></T>",
+        "TaskInfoPurposeListA": "<T t=\"询问陆家庄外的\"></T><G t=\"说书人\" npcid=\"10908\"></G><T t=\"（需战斗）。\"></T>",
+        "TaskInfoTraceListA": "<T t=\"询问陆家庄外的\"></T><G t=\"说书人\" npcid=\"10908\"></G><I s=\"MainControl\" i=\"zhan\"></I>",
+        "AIInfoAIID": "8001",
+        "AIInfoBattleResult": "1",
+        "AIInfoDeathPunish": "0",
+        "AIInfoTeamSteate": "1",
+        "AIInfoBattleLevel": "【战斗难度：单人简单】",
+        "BattleInfoBattleMapType": "1",
+        "BattleInfoBattleZoneID": "0",
+        "BattleInfoDrop": "0",
+        "BattleInfoBattleTimes": "0",
+        "BattleInfoMonsterNum": "0",
+        "BattleInfoDropItemID": "0",
+        "BattleInfoDropItemNum": "0",
+        "ScenarioInfoAnimationID": "10019",
+        "ScenarioInfoBranchNpcID": "0"
+      },
+      "lists": {
+        "PostMissionList": [
+          "100279"
+        ],
+        "DisPlayNPCID": [
+          "10909"
+        ],
+        "ScenarioInfoNpcConversationList": [
+          "<T t=\"少年人，你终于来了。我等了你好久了。\" ></T>",
+          "<T t=\"前……先生，这里发生了什么事？为什么这里的气氛变得这么诡异？\" ></T>",
+          "<T t=\"我知道你有很多疑问，有时间我会慢慢向你解释的，现在\"></T><T t=\"先解决掉眼前这些麻烦的家伙吧！\"  c=\"ffffff33\"></T>"
+        ],
+        "ScenarioInfoNpcID": [
+          "10908",
+          "1",
+          "10908"
+        ],
+        "ScenarioInfoFinishConversationList": [
+          "<T t=\"哎呀，你虽有慧根，打得却毫无章法，看来门派武功还尚未入门，实在不符合我的美学！\"></T>",
+          "<T t=\"这套太祖长拳\" c=\"ffffff33\" ></T><T t=\"就传授于你，你先参悟一下吧！\"></T>"
+        ],
+        "ScenarioInfoFinishNpcID": [
+          "10908",
+          "10908"
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "id": "100305",
+        "MissionName": "[主线]序章缘起",
+        "MissionTypeString": "主线剧情",
+        "MinLevel": "0",
+        "MaxLevel": "0",
+        "TransMinLevel": "0",
+        "TransMaxLevel": "0",
+        "TransformID": "0",
+        "ExpReward": "120",
+        "MoneyReward": "0",
+        "PetExpReward": "0",
+        "ShengWang": "0",
+        "SMoney": "400",
+        "RewardMapJumpType": "0",
+        "RewardMapID": "0",
+        "RewardMapXPos": "0",
+        "RewardMapYPos": "0",
+        "ProcessBarTime": "0",
+        "MissionType": "40",
+        "ActiveInfoNpcID": "10908",
+        "ActiveInfoMapID": "1501",
+        "ActiveInfoLeftPos": "0",
+        "ActiveInfoTopPos": "0",
+        "ActiveInfoRightPos": "0",
+        "ActiveInfoBottomPos": "0",
+        "ActiveInfoTargetID": "0",
+        "ActiveInfoTargetNum": "0",
+        "ActiveInfoMiniStep": "0",
+        "ActiveInfoStepProbability": "0",
+        "ActiveInfoMaxStep": "0",
+        "ActiveInfoTeamState": "1",
+        "ActiveInfoTimeLimit": "0",
+        "ActiveInfoIsRestartTimer": "0",
+        "ActiveInfoGiveBackMoney": "0",
+        "ActiveInfoGiveBackPetID": "0",
+        "ActiveInfoUseItemID": "0",
+        "ActiveInfoOtherType": "0",
+        "QuestionInfoNpcID": "0",
+        "TaskInfoDescriptionListA": "<T t=\"触摸血手印后，周围的世界仿佛发生了变化。神秘的说书人在旁边向你招手。\" c=\"ff12c4ff\" ></T><T t=\"【战斗难度：单人简单难度，与任务等级接近的玩家可以单人轻松完成的战斗】\" c=\"ffe9f231\"></T>",
+        "TaskInfoPurposeListA": "<T t=\"询问陆家庄外的\"></T><G t=\"说书人\" npcid=\"10908\"></G><T t=\"（需战斗）。\"></T>",
+        "TaskInfoTraceListA": "<T t=\"询问陆家庄外的\"></T><G t=\"说书人\" npcid=\"10908\"></G><I s=\"MainControl\" i=\"zhan\"></I>",
+        "AIInfoAIID": "8001",
+        "AIInfoBattleResult": "1",
+        "AIInfoDeathPunish": "0",
+        "AIInfoTeamSteate": "1",
+        "AIInfoBattleLevel": "【战斗难度：单人简单】",
+        "BattleInfoBattleMapType": "1",
+        "BattleInfoBattleZoneID": "0",
+        "BattleInfoDrop": "0",
+        "BattleInfoBattleTimes": "0",
+        "BattleInfoMonsterNum": "0",
+        "BattleInfoDropItemID": "0",
+        "BattleInfoDropItemNum": "0",
+        "ScenarioInfoAnimationID": "10019",
+        "ScenarioInfoBranchNpcID": "0"
+      },
+      "lists": {
+        "PostMissionList": [
+          "100379"
+        ],
+        "DisPlayNPCID": [
+          "10909"
+        ],
+        "ScenarioInfoNpcConversationList": [
+          "<T t=\"少年人，你终于来了。我等了你好久了。\" ></T>",
+          "<T t=\"前……先生，这里发生了什么事？为什么这里的气氛变得这么诡异？\" ></T>",
+          "<T t=\"我知道你有很多疑问，有时间我会慢慢向你解释的，现在\"></T><T t=\"先解决掉眼前这些麻烦的家伙吧！\"  c=\"ffffff33\"></T>"
+        ],
+        "ScenarioInfoNpcID": [
+          "10908",
+          "1",
+          "10908"
+        ],
+        "ScenarioInfoFinishConversationList": [
+          "<T t=\"哎呀，你虽有慧根，打得却毫无章法，看来门派武功还尚未入门，实在不符合我的美学！\"></T>",
+          "<T t=\"这套太祖长拳\" c=\"ffffff33\" ></T><T t=\"就传授于你，你先参悟一下吧！\"></T>"
+        ],
+        "ScenarioInfoFinishNpcID": [
+          "10908",
+          "10908"
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "id": "100405",
+        "MissionName": "[主线]序章缘起",
+        "MissionTypeString": "主线剧情",
+        "MinLevel": "0",
+        "MaxLevel": "0",
+        "TransMinLevel": "0",
+        "TransMaxLevel": "0",
+        "TransformID": "0",
+        "ExpReward": "120",
+        "MoneyReward": "0",
+        "PetExpReward": "0",
+        "ShengWang": "0",
+        "SMoney": "400",
+        "RewardMapJumpType": "0",
+        "RewardMapID": "0",
+        "RewardMapXPos": "0",
+        "RewardMapYPos": "0",
+        "ProcessBarTime": "0",
+        "MissionType": "40",
+        "ActiveInfoNpcID": "10908",
+        "ActiveInfoMapID": "1501",
+        "ActiveInfoLeftPos": "0",
+        "ActiveInfoTopPos": "0",
+        "ActiveInfoRightPos": "0",
+        "ActiveInfoBottomPos": "0",
+        "ActiveInfoTargetID": "0",
+        "ActiveInfoTargetNum": "0",
+        "ActiveInfoMiniStep": "0",
+        "ActiveInfoStepProbability": "0",
+        "ActiveInfoMaxStep": "0",
+        "ActiveInfoTeamState": "1",
+        "ActiveInfoTimeLimit": "0",
+        "ActiveInfoIsRestartTimer": "0",
+        "ActiveInfoGiveBackMoney": "0",
+        "ActiveInfoGiveBackPetID": "0",
+        "ActiveInfoUseItemID": "0",
+        "ActiveInfoOtherType": "0",
+        "QuestionInfoNpcID": "0",
+        "TaskInfoDescriptionListA": "<T t=\"触摸血手印后，周围的世界仿佛发生了变化。神秘的说书人在旁边向你招手。\" c=\"ff12c4ff\" ></T><T t=\"【战斗难度：单人简单难度，与任务等级接近的玩家可以单人轻松完成的战斗】\" c=\"ffe9f231\"></T>",
+        "TaskInfoPurposeListA": "<T t=\"询问陆家庄外的\"></T><G t=\"说书人\" npcid=\"10908\"></G><T t=\"（需战斗）。\"></T>",
+        "TaskInfoTraceListA": "<T t=\"询问陆家庄外的\"></T><G t=\"说书人\" npcid=\"10908\"></G><I s=\"MainControl\" i=\"zhan\"></I>",
+        "AIInfoAIID": "8001",
+        "AIInfoBattleResult": "1",
+        "AIInfoDeathPunish": "0",
+        "AIInfoTeamSteate": "1",
+        "AIInfoBattleLevel": "【战斗难度：单人简单】",
+        "BattleInfoBattleMapType": "1",
+        "BattleInfoBattleZoneID": "0",
+        "BattleInfoDrop": "0",
+        "BattleInfoBattleTimes": "0",
+        "BattleInfoMonsterNum": "0",
+        "BattleInfoDropItemID": "0",
+        "BattleInfoDropItemNum": "0",
+        "ScenarioInfoAnimationID": "10019",
+        "ScenarioInfoBranchNpcID": "0"
+      },
+      "lists": {
+        "PostMissionList": [
+          "100479"
+        ],
+        "DisPlayNPCID": [
+          "10909"
+        ],
+        "ScenarioInfoNpcConversationList": [
+          "<T t=\"少年人，你终于来了。我等了你好久了。\" ></T>",
+          "<T t=\"前……先生，这里发生了什么事？为什么这里的气氛变得这么诡异？\" ></T>",
+          "<T t=\"我知道你有很多疑问，有时间我会慢慢向你解释的，现在\"></T><T t=\"先解决掉眼前这些麻烦的家伙吧！\"  c=\"ffffff33\"></T>"
+        ],
+        "ScenarioInfoNpcID": [
+          "10908",
+          "1",
+          "10908"
+        ],
+        "ScenarioInfoFinishConversationList": [
+          "<T t=\"哎呀，你虽有慧根，打得却毫无章法，看来门派武功还尚未入门，实在不符合我的美学！\"></T>",
+          "<T t=\"这套太祖长拳\" c=\"ffffff33\" ></T><T t=\"就传授于你，你先参悟一下吧！\"></T>"
+        ],
+        "ScenarioInfoFinishNpcID": [
+          "10908",
+          "10908"
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "id": "100505",
+        "MissionName": "[主线]序章缘起",
+        "MissionTypeString": "主线剧情",
+        "MinLevel": "0",
+        "MaxLevel": "0",
+        "TransMinLevel": "0",
+        "TransMaxLevel": "0",
+        "TransformID": "0",
+        "ExpReward": "120",
+        "MoneyReward": "0",
+        "PetExpReward": "0",
+        "ShengWang": "0",
+        "SMoney": "400",
+        "RewardMapJumpType": "0",
+        "RewardMapID": "0",
+        "RewardMapXPos": "0",
+        "RewardMapYPos": "0",
+        "ProcessBarTime": "0",
+        "MissionType": "40",
+        "ActiveInfoNpcID": "10908",
+        "ActiveInfoMapID": "1501",
+        "ActiveInfoLeftPos": "0",
+        "ActiveInfoTopPos": "0",
+        "ActiveInfoRightPos": "0",
+        "ActiveInfoBottomPos": "0",
+        "ActiveInfoTargetID": "0",
+        "ActiveInfoTargetNum": "0",
+        "ActiveInfoMiniStep": "0",
+        "ActiveInfoStepProbability": "0",
+        "ActiveInfoMaxStep": "0",
+        "ActiveInfoTeamState": "1",
+        "ActiveInfoTimeLimit": "0",
+        "ActiveInfoIsRestartTimer": "0",
+        "ActiveInfoGiveBackMoney": "0",
+        "ActiveInfoGiveBackPetID": "0",
+        "ActiveInfoUseItemID": "0",
+        "ActiveInfoOtherType": "0",
+        "QuestionInfoNpcID": "0",
+        "TaskInfoDescriptionListA": "<T t=\"触摸血手印后，周围的世界仿佛发生了变化。神秘的说书人在旁边向你招手。\" c=\"ff12c4ff\" ></T><T t=\"【战斗难度：单人简单难度，与任务等级接近的玩家可以单人轻松完成的战斗】\" c=\"ffe9f231\"></T>",
+        "TaskInfoPurposeListA": "<T t=\"询问陆家庄外的\"></T><G t=\"说书人\" npcid=\"10908\"></G><T t=\"（需战斗）。\"></T>",
+        "TaskInfoTraceListA": "<T t=\"询问陆家庄外的\"></T><G t=\"说书人\" npcid=\"10908\"></G><I s=\"MainControl\" i=\"zhan\"></I>",
+        "AIInfoAIID": "8001",
+        "AIInfoBattleResult": "1",
+        "AIInfoDeathPunish": "0",
+        "AIInfoTeamSteate": "1",
+        "AIInfoBattleLevel": "【战斗难度：单人简单】",
+        "BattleInfoBattleMapType": "1",
+        "BattleInfoBattleZoneID": "0",
+        "BattleInfoDrop": "0",
+        "BattleInfoBattleTimes": "0",
+        "BattleInfoMonsterNum": "0",
+        "BattleInfoDropItemID": "0",
+        "BattleInfoDropItemNum": "0",
+        "ScenarioInfoAnimationID": "10019",
+        "ScenarioInfoBranchNpcID": "0"
+      },
+      "lists": {
+        "PostMissionList": [
+          "100579"
+        ],
+        "DisPlayNPCID": [
+          "10909"
+        ],
+        "ScenarioInfoNpcConversationList": [
+          "<T t=\"少年人，你终于来了。我等了你好久了。\" ></T>",
+          "<T t=\"前……先生，这里发生了什么事？为什么这里的气氛变得这么诡异？\" ></T>",
+          "<T t=\"我知道你有很多疑问，有时间我会慢慢向你解释的，现在\"></T><T t=\"先解决掉眼前这些麻烦的家伙吧！\"  c=\"ffffff33\"></T>"
+        ],
+        "ScenarioInfoNpcID": [
+          "10908",
+          "1",
+          "10908"
+        ],
+        "ScenarioInfoFinishConversationList": [
+          "<T t=\"哎呀，你虽有慧根，打得却毫无章法，看来门派武功还尚未入门，实在不符合我的美学！\"></T>",
+          "<T t=\"这套太祖长拳\" c=\"ffffff33\" ></T><T t=\"就传授于你，你先参悟一下吧！\"></T>"
+        ],
+        "ScenarioInfoFinishNpcID": [
+          "10908",
+          "10908"
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "id": "100605",
+        "MissionName": "[主线]序章缘起",
+        "MissionTypeString": "主线剧情",
+        "MinLevel": "0",
+        "MaxLevel": "0",
+        "TransMinLevel": "0",
+        "TransMaxLevel": "0",
+        "TransformID": "0",
+        "ExpReward": "120",
+        "MoneyReward": "0",
+        "PetExpReward": "0",
+        "ShengWang": "0",
+        "SMoney": "400",
+        "RewardMapJumpType": "0",
+        "RewardMapID": "0",
+        "RewardMapXPos": "0",
+        "RewardMapYPos": "0",
+        "ProcessBarTime": "0",
+        "MissionType": "40",
+        "ActiveInfoNpcID": "10908",
+        "ActiveInfoMapID": "1501",
+        "ActiveInfoLeftPos": "0",
+        "ActiveInfoTopPos": "0",
+        "ActiveInfoRightPos": "0",
+        "ActiveInfoBottomPos": "0",
+        "ActiveInfoTargetID": "0",
+        "ActiveInfoTargetNum": "0",
+        "ActiveInfoMiniStep": "0",
+        "ActiveInfoStepProbability": "0",
+        "ActiveInfoMaxStep": "0",
+        "ActiveInfoTeamState": "1",
+        "ActiveInfoTimeLimit": "0",
+        "ActiveInfoIsRestartTimer": "0",
+        "ActiveInfoGiveBackMoney": "0",
+        "ActiveInfoGiveBackPetID": "0",
+        "ActiveInfoUseItemID": "0",
+        "ActiveInfoOtherType": "0",
+        "QuestionInfoNpcID": "0",
+        "TaskInfoDescriptionListA": "<T t=\"触摸血手印后，周围的世界仿佛发生了变化。神秘的说书人在旁边向你招手。\" c=\"ff12c4ff\" ></T><T t=\"【战斗难度：单人简单难度，与任务等级接近的玩家可以单人轻松完成的战斗】\" c=\"ffe9f231\"></T>",
+        "TaskInfoPurposeListA": "<T t=\"询问陆家庄外的\"></T><G t=\"说书人\" npcid=\"10908\"></G><T t=\"（需战斗）。\"></T>",
+        "TaskInfoTraceListA": "<T t=\"询问陆家庄外的\"></T><G t=\"说书人\" npcid=\"10908\"></G><I s=\"MainControl\" i=\"zhan\"></I>",
+        "AIInfoAIID": "8001",
+        "AIInfoBattleResult": "1",
+        "AIInfoDeathPunish": "0",
+        "AIInfoTeamSteate": "1",
+        "AIInfoBattleLevel": "【战斗难度：单人简单】",
+        "BattleInfoBattleMapType": "1",
+        "BattleInfoBattleZoneID": "0",
+        "BattleInfoDrop": "0",
+        "BattleInfoBattleTimes": "0",
+        "BattleInfoMonsterNum": "0",
+        "BattleInfoDropItemID": "0",
+        "BattleInfoDropItemNum": "0",
+        "ScenarioInfoAnimationID": "10019",
+        "ScenarioInfoBranchNpcID": "0"
+      },
+      "lists": {
+        "PostMissionList": [
+          "100679"
+        ],
+        "DisPlayNPCID": [
+          "10909"
+        ],
+        "ScenarioInfoNpcConversationList": [
+          "<T t=\"少年人，你终于来了。我等了你好久了。\" ></T>",
+          "<T t=\"前……先生，这里发生了什么事？为什么这里的气氛变得这么诡异？\" ></T>",
+          "<T t=\"我知道你有很多疑问，有时间我会慢慢向你解释的，现在\"></T><T t=\"先解决掉眼前这些麻烦的家伙吧！\"  c=\"ffffff33\"></T>"
+        ],
+        "ScenarioInfoNpcID": [
+          "10908",
+          "1",
+          "10908"
+        ],
+        "ScenarioInfoFinishConversationList": [
+          "<T t=\"哎呀，你虽有慧根，打得却毫无章法，看来门派武功还尚未入门，实在不符合我的美学！\"></T>",
+          "<T t=\"这套太祖长拳\" c=\"ffffff33\" ></T><T t=\"就传授于你，你先参悟一下吧！\"></T>"
+        ],
+        "ScenarioInfoFinishNpcID": [
+          "10908",
+          "10908"
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "id": "100705",
+        "MissionName": "[主线]序章缘起",
+        "MissionTypeString": "主线剧情",
+        "MinLevel": "0",
+        "MaxLevel": "0",
+        "TransMinLevel": "0",
+        "TransMaxLevel": "0",
+        "TransformID": "0",
+        "ExpReward": "120",
+        "MoneyReward": "0",
+        "PetExpReward": "0",
+        "ShengWang": "0",
+        "SMoney": "400",
+        "RewardMapJumpType": "0",
+        "RewardMapID": "0",
+        "RewardMapXPos": "0",
+        "RewardMapYPos": "0",
+        "ProcessBarTime": "0",
+        "MissionType": "40",
+        "ActiveInfoNpcID": "10908",
+        "ActiveInfoMapID": "1501",
+        "ActiveInfoLeftPos": "0",
+        "ActiveInfoTopPos": "0",
+        "ActiveInfoRightPos": "0",
+        "ActiveInfoBottomPos": "0",
+        "ActiveInfoTargetID": "0",
+        "ActiveInfoTargetNum": "0",
+        "ActiveInfoMiniStep": "0",
+        "ActiveInfoStepProbability": "0",
+        "ActiveInfoMaxStep": "0",
+        "ActiveInfoTeamState": "1",
+        "ActiveInfoTimeLimit": "0",
+        "ActiveInfoIsRestartTimer": "0",
+        "ActiveInfoGiveBackMoney": "0",
+        "ActiveInfoGiveBackPetID": "0",
+        "ActiveInfoUseItemID": "0",
+        "ActiveInfoOtherType": "0",
+        "QuestionInfoNpcID": "0",
+        "TaskInfoDescriptionListA": "<T t=\"触摸血手印后，周围的世界仿佛发生了变化。神秘的说书人在旁边向你招手。\" c=\"ff12c4ff\" ></T><T t=\"【战斗难度：单人简单难度，与任务等级接近的玩家可以单人轻松完成的战斗】\" c=\"ffe9f231\"></T>",
+        "TaskInfoPurposeListA": "<T t=\"询问陆家庄外的\"></T><G t=\"说书人\" npcid=\"10908\"></G><T t=\"（需战斗）。\"></T>",
+        "TaskInfoTraceListA": "<T t=\"询问陆家庄外的\"></T><G t=\"说书人\" npcid=\"10908\"></G><I s=\"MainControl\" i=\"zhan\"></I>",
+        "AIInfoAIID": "8001",
+        "AIInfoBattleResult": "1",
+        "AIInfoDeathPunish": "0",
+        "AIInfoTeamSteate": "1",
+        "AIInfoBattleLevel": "【战斗难度：单人简单】",
+        "BattleInfoBattleMapType": "1",
+        "BattleInfoBattleZoneID": "0",
+        "BattleInfoDrop": "0",
+        "BattleInfoBattleTimes": "0",
+        "BattleInfoMonsterNum": "0",
+        "BattleInfoDropItemID": "0",
+        "BattleInfoDropItemNum": "0",
+        "ScenarioInfoAnimationID": "10019",
+        "ScenarioInfoBranchNpcID": "0"
+      },
+      "lists": {
+        "PostMissionList": [
+          "100779"
+        ],
+        "DisPlayNPCID": [
+          "10909"
+        ],
+        "ScenarioInfoNpcConversationList": [
+          "<T t=\"少年人，你终于来了。我等了你好久了。\" ></T>",
+          "<T t=\"前……先生，这里发生了什么事？为什么这里的气氛变得这么诡异？\" ></T>",
+          "<T t=\"我知道你有很多疑问，有时间我会慢慢向你解释的，现在\"></T><T t=\"先解决掉眼前这些麻烦的家伙吧！\"  c=\"ffffff33\"></T>"
+        ],
+        "ScenarioInfoNpcID": [
+          "10908",
+          "1",
+          "10908"
+        ],
+        "ScenarioInfoFinishConversationList": [
+          "<T t=\"哎呀，你虽有慧根，打得却毫无章法，看来门派武功还尚未入门，实在不符合我的美学！\"></T>",
+          "<T t=\"这套太祖长拳\" c=\"ffffff33\" ></T><T t=\"就传授于你，你先参悟一下吧！\"></T>"
+        ],
+        "ScenarioInfoFinishNpcID": [
+          "10908",
+          "10908"
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "id": "100805",
+        "MissionName": "[主线]序章缘起",
+        "MissionTypeString": "主线剧情",
+        "MinLevel": "0",
+        "MaxLevel": "0",
+        "TransMinLevel": "0",
+        "TransMaxLevel": "0",
+        "TransformID": "0",
+        "ExpReward": "120",
+        "MoneyReward": "0",
+        "PetExpReward": "0",
+        "ShengWang": "0",
+        "SMoney": "400",
+        "RewardMapJumpType": "0",
+        "RewardMapID": "0",
+        "RewardMapXPos": "0",
+        "RewardMapYPos": "0",
+        "ProcessBarTime": "0",
+        "MissionType": "40",
+        "ActiveInfoNpcID": "10908",
+        "ActiveInfoMapID": "1501",
+        "ActiveInfoLeftPos": "0",
+        "ActiveInfoTopPos": "0",
+        "ActiveInfoRightPos": "0",
+        "ActiveInfoBottomPos": "0",
+        "ActiveInfoTargetID": "0",
+        "ActiveInfoTargetNum": "0",
+        "ActiveInfoMiniStep": "0",
+        "ActiveInfoStepProbability": "0",
+        "ActiveInfoMaxStep": "0",
+        "ActiveInfoTeamState": "1",
+        "ActiveInfoTimeLimit": "0",
+        "ActiveInfoIsRestartTimer": "0",
+        "ActiveInfoGiveBackMoney": "0",
+        "ActiveInfoGiveBackPetID": "0",
+        "ActiveInfoUseItemID": "0",
+        "ActiveInfoOtherType": "0",
+        "QuestionInfoNpcID": "0",
+        "TaskInfoDescriptionListA": "<T t=\"触摸血手印后，周围的世界仿佛发生了变化。神秘的说书人在旁边向你招手。\" c=\"ff12c4ff\" ></T><T t=\"【战斗难度：单人简单难度，与任务等级接近的玩家可以单人轻松完成的战斗】\" c=\"ffe9f231\"></T>",
+        "TaskInfoPurposeListA": "<T t=\"询问陆家庄外的\"></T><G t=\"说书人\" npcid=\"10908\"></G><T t=\"（需战斗）。\"></T>",
+        "TaskInfoTraceListA": "<T t=\"询问陆家庄外的\"></T><G t=\"说书人\" npcid=\"10908\"></G><I s=\"MainControl\" i=\"zhan\"></I>",
+        "AIInfoAIID": "8001",
+        "AIInfoBattleResult": "1",
+        "AIInfoDeathPunish": "0",
+        "AIInfoTeamSteate": "1",
+        "AIInfoBattleLevel": "【战斗难度：单人简单】",
+        "BattleInfoBattleMapType": "1",
+        "BattleInfoBattleZoneID": "0",
+        "BattleInfoDrop": "0",
+        "BattleInfoBattleTimes": "0",
+        "BattleInfoMonsterNum": "0",
+        "BattleInfoDropItemID": "0",
+        "BattleInfoDropItemNum": "0",
+        "ScenarioInfoAnimationID": "10019",
+        "ScenarioInfoBranchNpcID": "0"
+      },
+      "lists": {
+        "PostMissionList": [
+          "100879"
+        ],
+        "DisPlayNPCID": [
+          "10909"
+        ],
+        "ScenarioInfoNpcConversationList": [
+          "<T t=\"少年人，你终于来了。我等了你好久了。\" ></T>",
+          "<T t=\"前……先生，这里发生了什么事？为什么这里的气氛变得这么诡异？\" ></T>",
+          "<T t=\"我知道你有很多疑问，有时间我会慢慢向你解释的，现在\"></T><T t=\"先解决掉眼前这些麻烦的家伙吧！\"  c=\"ffffff33\"></T>"
+        ],
+        "ScenarioInfoNpcID": [
+          "10908",
+          "1",
+          "10908"
+        ],
+        "ScenarioInfoFinishConversationList": [
+          "<T t=\"哎呀，你虽有慧根，打得却毫无章法，看来门派武功还尚未入门，实在不符合我的美学！\"></T>",
+          "<T t=\"这套太祖长拳\" c=\"ffffff33\" ></T><T t=\"就传授于你，你先参悟一下吧！\"></T>"
+        ],
+        "ScenarioInfoFinishNpcID": [
+          "10908",
+          "10908"
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "id": "100905",
+        "MissionName": "[主线]序章缘起",
+        "MissionTypeString": "主线剧情",
+        "MinLevel": "0",
+        "MaxLevel": "0",
+        "TransMinLevel": "0",
+        "TransMaxLevel": "0",
+        "TransformID": "0",
+        "ExpReward": "120",
+        "MoneyReward": "0",
+        "PetExpReward": "0",
+        "ShengWang": "0",
+        "SMoney": "400",
+        "RewardMapJumpType": "0",
+        "RewardMapID": "0",
+        "RewardMapXPos": "0",
+        "RewardMapYPos": "0",
+        "ProcessBarTime": "0",
+        "MissionType": "40",
+        "ActiveInfoNpcID": "10908",
+        "ActiveInfoMapID": "1501",
+        "ActiveInfoLeftPos": "0",
+        "ActiveInfoTopPos": "0",
+        "ActiveInfoRightPos": "0",
+        "ActiveInfoBottomPos": "0",
+        "ActiveInfoTargetID": "0",
+        "ActiveInfoTargetNum": "0",
+        "ActiveInfoMiniStep": "0",
+        "ActiveInfoStepProbability": "0",
+        "ActiveInfoMaxStep": "0",
+        "ActiveInfoTeamState": "1",
+        "ActiveInfoTimeLimit": "0",
+        "ActiveInfoIsRestartTimer": "0",
+        "ActiveInfoGiveBackMoney": "0",
+        "ActiveInfoGiveBackPetID": "0",
+        "ActiveInfoUseItemID": "0",
+        "ActiveInfoOtherType": "0",
+        "QuestionInfoNpcID": "0",
+        "TaskInfoDescriptionListA": "<T t=\"触摸血手印后，周围的世界仿佛发生了变化。神秘的说书人在旁边向你招手。\" c=\"ff12c4ff\" ></T><T t=\"【战斗难度：单人简单难度，与任务等级接近的玩家可以单人轻松完成的战斗】\" c=\"ffe9f231\"></T>",
+        "TaskInfoPurposeListA": "<T t=\"询问陆家庄外的\"></T><G t=\"说书人\" npcid=\"10908\"></G><T t=\"（需战斗）。\"></T>",
+        "TaskInfoTraceListA": "<T t=\"询问陆家庄外的\"></T><G t=\"说书人\" npcid=\"10908\"></G><I s=\"MainControl\" i=\"zhan\"></I>",
+        "AIInfoAIID": "8001",
+        "AIInfoBattleResult": "1",
+        "AIInfoDeathPunish": "0",
+        "AIInfoTeamSteate": "1",
+        "AIInfoBattleLevel": "【战斗难度：单人简单】",
+        "BattleInfoBattleMapType": "1",
+        "BattleInfoBattleZoneID": "0",
+        "BattleInfoDrop": "0",
+        "BattleInfoBattleTimes": "0",
+        "BattleInfoMonsterNum": "0",
+        "BattleInfoDropItemID": "0",
+        "BattleInfoDropItemNum": "0",
+        "ScenarioInfoAnimationID": "10019",
+        "ScenarioInfoBranchNpcID": "0"
+      },
+      "lists": {
+        "PostMissionList": [
+          "100979"
+        ],
+        "DisPlayNPCID": [
+          "10909"
+        ],
+        "ScenarioInfoNpcConversationList": [
+          "<T t=\"少年人，你终于来了。我等了你好久了。\" ></T>",
+          "<T t=\"前……先生，这里发生了什么事？为什么这里的气氛变得这么诡异？\" ></T>",
+          "<T t=\"我知道你有很多疑问，有时间我会慢慢向你解释的，现在\"></T><T t=\"先解决掉眼前这些麻烦的家伙吧！\"  c=\"ffffff33\"></T>"
+        ],
+        "ScenarioInfoNpcID": [
+          "10908",
+          "1",
+          "10908"
+        ],
+        "ScenarioInfoFinishConversationList": [
+          "<T t=\"哎呀，你虽有慧根，打得却毫无章法，看来门派武功还尚未入门，实在不符合我的美学！\"></T>",
+          "<T t=\"这套太祖长拳\" c=\"ffffff33\" ></T><T t=\"就传授于你，你先参悟一下吧！\"></T>"
+        ],
+        "ScenarioInfoFinishNpcID": [
+          "10908",
+          "10908"
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "id": "101003",
+        "MissionName": "[主线]序章缘起",
+        "MissionTypeString": "主线剧情",
+        "MinLevel": "0",
+        "MaxLevel": "0",
+        "TransMinLevel": "0",
+        "TransMaxLevel": "0",
+        "TransformID": "0",
+        "ExpReward": "240",
+        "MoneyReward": "0",
+        "PetExpReward": "0",
+        "ShengWang": "0",
+        "SMoney": "400",
+        "RewardMapJumpType": "0",
+        "RewardMapID": "0",
+        "RewardMapXPos": "0",
+        "RewardMapYPos": "0",
+        "ProcessBarTime": "0",
+        "MissionType": "40",
+        "ActiveInfoNpcID": "10908",
+        "ActiveInfoMapID": "1501",
+        "ActiveInfoLeftPos": "0",
+        "ActiveInfoTopPos": "0",
+        "ActiveInfoRightPos": "0",
+        "ActiveInfoBottomPos": "0",
+        "ActiveInfoTargetID": "0",
+        "ActiveInfoTargetNum": "0",
+        "ActiveInfoMiniStep": "0",
+        "ActiveInfoStepProbability": "0",
+        "ActiveInfoMaxStep": "0",
+        "ActiveInfoTeamState": "1",
+        "ActiveInfoTimeLimit": "0",
+        "ActiveInfoIsRestartTimer": "0",
+        "ActiveInfoGiveBackMoney": "0",
+        "ActiveInfoGiveBackPetID": "0",
+        "ActiveInfoUseItemID": "0",
+        "ActiveInfoOtherType": "0",
+        "QuestionInfoNpcID": "0",
+        "TaskInfoDescriptionListA": "<T t=\"触摸血手印后，周围的世界仿佛发生了变化。神秘的说书人在旁边向你招手。\" c=\"ff12c4ff\" ></T><T t=\"【战斗难度：单人简单难度，与任务等级接近的玩家可以单人轻松完成的战斗】\" c=\"ffe9f231\"></T>",
+        "TaskInfoPurposeListA": "<T t=\"询问陆家庄外的\"></T><G t=\"说书人\" npcid=\"10908\"></G><T t=\"（需战斗）。\"></T>",
+        "TaskInfoTraceListA": "<T t=\"询问陆家庄外的\"></T><G t=\"说书人\" npcid=\"10908\"></G><I s=\"MainControl\" i=\"zhan\"></I>",
+        "AIInfoAIID": "8001",
+        "AIInfoBattleResult": "1",
+        "AIInfoDeathPunish": "0",
+        "AIInfoTeamSteate": "1",
+        "AIInfoBattleLevel": "【战斗难度：单人简单】",
+        "BattleInfoBattleMapType": "1",
+        "BattleInfoBattleZoneID": "0",
+        "BattleInfoDrop": "0",
+        "BattleInfoBattleTimes": "0",
+        "BattleInfoMonsterNum": "0",
+        "BattleInfoDropItemID": "0",
+        "BattleInfoDropItemNum": "0",
+        "ScenarioInfoAnimationID": "10019",
+        "ScenarioInfoBranchNpcID": "0"
+      },
+      "lists": {
+        "PostMissionList": [
+          "101004"
+        ],
+        "DisPlayNPCID": [
+          "10909"
+        ],
+        "ScenarioInfoNpcConversationList": [
+          "<T t=\"少年人，你终于来了。我等了你好久了。\" ></T>",
+          "<T t=\"前……先生，这里发生了什么事？为什么这里的气氛变得这么诡异？\" ></T>",
+          "<T t=\"我知道你有很多疑问，有时间我会慢慢向你解释的，现在\"></T><T t=\"先解决掉眼前这些麻烦的家伙吧！\"  c=\"ffffff33\"></T>"
+        ],
+        "ScenarioInfoNpcID": [
+          "10908",
+          "1",
+          "10908"
+        ],
+        "ScenarioInfoFinishConversationList": [
+          "<T t=\"哎呀，你虽有慧根，打得却毫无章法，看来门派武功还尚未入门，实在不符合我的美学！\"></T>",
+          "<T t=\"这套太祖长拳\" c=\"ffffff33\" ></T><T t=\"就传授于你，你先参悟一下吧！\"></T>"
+        ],
+        "ScenarioInfoFinishNpcID": [
+          "10908",
+          "10908"
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "id": "103207",
+        "MissionName": "[主线]序章缘起",
+        "MissionTypeString": "主线剧情",
+        "MinLevel": "0",
+        "MaxLevel": "0",
+        "TransMinLevel": "0",
+        "TransMaxLevel": "0",
+        "TransformID": "0",
+        "ExpReward": "120",
+        "MoneyReward": "0",
+        "PetExpReward": "0",
+        "ShengWang": "0",
+        "SMoney": "400",
+        "RewardMapJumpType": "0",
+        "RewardMapID": "0",
+        "RewardMapXPos": "0",
+        "RewardMapYPos": "0",
+        "ProcessBarTime": "0",
+        "MissionType": "40",
+        "ActiveInfoNpcID": "10908",
+        "ActiveInfoMapID": "1501",
+        "ActiveInfoLeftPos": "0",
+        "ActiveInfoTopPos": "0",
+        "ActiveInfoRightPos": "0",
+        "ActiveInfoBottomPos": "0",
+        "ActiveInfoTargetID": "0",
+        "ActiveInfoTargetNum": "0",
+        "ActiveInfoMiniStep": "0",
+        "ActiveInfoStepProbability": "0",
+        "ActiveInfoMaxStep": "0",
+        "ActiveInfoTeamState": "1",
+        "ActiveInfoTimeLimit": "0",
+        "ActiveInfoIsRestartTimer": "0",
+        "ActiveInfoGiveBackMoney": "0",
+        "ActiveInfoGiveBackPetID": "0",
+        "ActiveInfoUseItemID": "0",
+        "ActiveInfoOtherType": "0",
+        "QuestionInfoNpcID": "0",
+        "TaskInfoDescriptionListA": "<T t=\"触摸血手印后，周围的世界仿佛发生了变化。神秘的说书人在旁边向你招手。\" c=\"ff12c4ff\" ></T><T t=\"【战斗难度：单人简单难度，与任务等级接近的玩家可以单人轻松完成的战斗】\" c=\"ffe9f231\"></T>",
+        "TaskInfoPurposeListA": "<T t=\"询问陆家庄外的\"></T><G t=\"说书人\" npcid=\"10908\"></G><T t=\"（需战斗）。\"></T>",
+        "TaskInfoTraceListA": "<T t=\"询问陆家庄外的\"></T><G t=\"说书人\" npcid=\"10908\"></G><I s=\"MainControl\" i=\"zhan\"></I>",
+        "AIInfoAIID": "8001",
+        "AIInfoBattleResult": "1",
+        "AIInfoDeathPunish": "0",
+        "AIInfoTeamSteate": "1",
+        "AIInfoBattleLevel": "【战斗难度：单人简单】",
+        "BattleInfoBattleMapType": "1",
+        "BattleInfoBattleZoneID": "0",
+        "BattleInfoDrop": "0",
+        "BattleInfoBattleTimes": "0",
+        "BattleInfoMonsterNum": "0",
+        "BattleInfoDropItemID": "0",
+        "BattleInfoDropItemNum": "0",
+        "ScenarioInfoAnimationID": "10019",
+        "ScenarioInfoBranchNpcID": "0"
+      },
+      "lists": {
+        "PostMissionList": [
+          "103279"
+        ],
+        "DisPlayNPCID": [
+          "10909"
+        ],
+        "ScenarioInfoNpcConversationList": [
+          "<T t=\"少年人，你终于来了。我等了你好久了。\" ></T>",
+          "<T t=\"前……先生，这里发生了什么事？为什么这里的气氛变得这么诡异？\" ></T>",
+          "<T t=\"我知道你有很多疑问，有时间我会慢慢向你解释的，现在\"></T><T t=\"先解决掉眼前这些麻烦的家伙吧！\"  c=\"ffffff33\"></T>"
+        ],
+        "ScenarioInfoNpcID": [
+          "10908",
+          "1",
+          "10908"
+        ],
+        "ScenarioInfoFinishConversationList": [
+          "<T t=\"哎呀，你虽有慧根，打得却毫无章法，看来门派武功还尚未入门，实在不符合我的美学！\"></T>",
+          "<T t=\"这套太祖长拳\" c=\"ffffff33\" ></T><T t=\"就传授于你，你先参悟一下吧！\"></T>"
+        ],
+        "ScenarioInfoFinishNpcID": [
+          "10908",
+          "10908"
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "id": "220603",
+        "MissionName": "[支线]止战之殇",
+        "MissionTypeString": "支线剧情",
+        "MinLevel": "0",
+        "MaxLevel": "0",
+        "TransMinLevel": "0",
+        "TransMaxLevel": "0",
+        "TransformID": "0",
+        "ExpReward": "60000",
+        "MoneyReward": "0",
+        "PetExpReward": "15000",
+        "ShengWang": "0",
+        "SMoney": "25000",
+        "RewardMapJumpType": "0",
+        "RewardMapID": "0",
+        "RewardMapXPos": "0",
+        "RewardMapYPos": "0",
+        "ProcessBarTime": "0",
+        "MissionType": "12",
+        "ActiveInfoNpcID": "10587",
+        "ActiveInfoMapID": "1011",
+        "ActiveInfoLeftPos": "0",
+        "ActiveInfoTopPos": "0",
+        "ActiveInfoRightPos": "0",
+        "ActiveInfoBottomPos": "0",
+        "ActiveInfoTargetID": "50253",
+        "ActiveInfoTargetNum": "1",
+        "ActiveInfoMiniStep": "0",
+        "ActiveInfoStepProbability": "0",
+        "ActiveInfoMaxStep": "0",
+        "ActiveInfoTeamState": "1",
+        "ActiveInfoTimeLimit": "0",
+        "ActiveInfoIsRestartTimer": "0",
+        "ActiveInfoGiveBackMoney": "0",
+        "ActiveInfoGiveBackPetID": "0",
+        "ActiveInfoUseItemID": "0",
+        "ActiveInfoOtherType": "0",
+        "QuestionInfoNpcID": "0",
+        "TaskInfoDescriptionListA": "<T t=\"如今这些亡魂应该得到安息了，将祭魂香还给救世狂人吧。\" c=\"ff12c4ff\" ></T>",
+        "TaskInfoPurposeListA": "<T t=\"将\"></T><G t=\"祭魂香\" m=\"50253\" npcid=\"10390\" c=\"ff33ffff\"></G><T t=\"交还\"></T><G t=\"救世狂人\" npcid=\"10587\"></G><T t=\"。\"></T>",
+        "TaskInfoTraceListA": "<T t=\"将\"></T><G t=\"祭魂香\" m=\"50253\" npcid=\"10390\" c=\"ff33ffff\"></G><T t=\"交还\"></T><G t=\"救世狂人\" npcid=\"10587\"></G>",
+        "AIInfoAIID": "8001",
+        "AIInfoBattleResult": "1",
+        "AIInfoDeathPunish": "0",
+        "AIInfoTeamSteate": "1",
+        "BattleInfoBattleMapType": "1",
+        "BattleInfoBattleZoneID": "0",
+        "BattleInfoDrop": "0",
+        "BattleInfoBattleTimes": "0",
+        "BattleInfoMonsterNum": "0",
+        "BattleInfoDropItemID": "0",
+        "BattleInfoDropItemNum": "0",
+        "ScenarioInfoAnimationID": "0",
+        "ScenarioInfoBranchNpcID": "0"
+      },
+      "lists": {
+        "PostMissionList": [
+          "220699"
+        ],
+        "ScenarioInfoFinishConversationList": [
+          "佛因般若波罗蜜，不见众生心来相、去相，不见众生心生相，灭相、住异相。何以故？是诸心性无故，谁来？谁去？谁生灭住异？如是，须菩提，佛因般若波罗蜜，是众生大心如实知大新。",
+          "他们为谁而生，又为谁而逝，现在谁能知道，以后又有谁会想起。人生为谁而活，施主不知你心中可有答案？"
+        ],
+        "ScenarioInfoFinishNpcID": [
+          "10587",
+          "10587"
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "id": "220802",
+        "MissionName": "[支线]忘川水灯",
+        "MissionTypeString": "支线剧情",
+        "MinLevel": "0",
+        "MaxLevel": "0",
+        "TransMinLevel": "0",
+        "TransMaxLevel": "0",
+        "TransformID": "0",
+        "NoteInfo": "阴暗的水流开始不安的搅动，一个个幽怨的身影从中浮现……",
+        "ExpReward": "0",
+        "MoneyReward": "0",
+        "PetExpReward": "0",
+        "ShengWang": "0",
+        "SMoney": "0",
+        "RewardMapJumpType": "0",
+        "RewardMapID": "0",
+        "RewardMapXPos": "0",
+        "RewardMapYPos": "0",
+        "ProcessBarTime": "0",
+        "MissionType": "56",
+        "ActiveInfoNpcID": "0",
+        "ActiveInfoMapID": "1011",
+        "ActiveInfoLeftPos": "88",
+        "ActiveInfoTopPos": "124",
+        "ActiveInfoRightPos": "102",
+        "ActiveInfoBottomPos": "134",
+        "ActiveInfoTargetID": "0",
+        "ActiveInfoTargetNum": "0",
+        "ActiveInfoMiniStep": "0",
+        "ActiveInfoStepProbability": "0",
+        "ActiveInfoMaxStep": "0",
+        "ActiveInfoTeamState": "1",
+        "ActiveInfoTimeLimit": "0",
+        "ActiveInfoIsRestartTimer": "0",
+        "ActiveInfoGiveBackMoney": "0",
+        "ActiveInfoGiveBackPetID": "0",
+        "ActiveInfoUseItemID": "0",
+        "ActiveInfoOtherType": "0",
+        "QuestionInfoNpcID": "0",
+        "TaskInfoDescriptionListA": "<T t=\"若是寿终而尽，自有引导，但若是死于非命，则可能迷失凡间，永不超生。施主若有大善之心，我这里有一盏引魂明灯，你可携至谷底顺水而放，便会引导这些游魂前往安息之地。\" c=\"ff12c4ff\" ></T>",
+        "TaskInfoPurposeListA": "<T t=\"前往\"></T><G t=\"百花谷底\" m=\"1011\" x=\"94\" y=\"128\" npcid=\"10499\"></G><T t=\"寻找水流。\"></T>",
+        "TaskInfoTraceListA": "<T t=\"前往\"></T><G t=\"百花谷底\" m=\"1011\" x=\"94\" y=\"128\" npcid=\"10499\"></G><T t=\"寻找水流\"></T>",
+        "AIInfoAIID": "8001",
+        "AIInfoBattleResult": "1",
+        "AIInfoDeathPunish": "0",
+        "AIInfoTeamSteate": "1",
+        "BattleInfoBattleMapType": "1",
+        "BattleInfoBattleZoneID": "0",
+        "BattleInfoDrop": "0",
+        "BattleInfoBattleTimes": "0",
+        "BattleInfoMonsterNum": "0",
+        "BattleInfoDropItemID": "0",
+        "BattleInfoDropItemNum": "0",
+        "ScenarioInfoAnimationID": "0",
+        "ScenarioInfoBranchNpcID": "0"
+      },
+      "lists": {
+        "PostMissionList": [
+          "220803"
+        ],
+        "DisPlayNPCID": [
+          "10587"
+        ],
+        "ScenarioInfoFinishConversationList": [
+          "阿弥陀佛，愿佛祖保佑你们安息吧。"
+        ],
+        "ScenarioInfoFinishNpcID": [
+          "1"
+        ]
+      }
+    },
+    {
+      "attributes": {
+        "id": "229419",
+        "MissionName": "[赚钱]一千万的回忆",
+        "MissionTypeString": "支线剧情",
+        "MinLevel": "0",
+        "MaxLevel": "0",
+        "TransMinLevel": "0",
+        "TransMaxLevel": "0",
+        "TransformID": "0",
+        "ExpReward": "0",
+        "MoneyReward": "0",
+        "PetExpReward": "0",
+        "ShengWang": "0",
+        "SMoney": "0",
+        "RewardMapJumpType": "0",
+        "RewardMapID": "0",
+        "RewardMapXPos": "0",
+        "RewardMapYPos": "0",
+        "ProcessBarTime": "0",
+        "MissionType": "12",
+        "ActiveInfoNpcID": "11581",
+        "ActiveInfoMapID": "1007",
+        "ActiveInfoLeftPos": "0",
+        "ActiveInfoTopPos": "0",
+        "ActiveInfoRightPos": "0",
+        "ActiveInfoBottomPos": "0",
+        "ActiveInfoTargetID": "50240",
+        "ActiveInfoTargetNum": "1",
+        "ActiveInfoMiniStep": "0",
+        "ActiveInfoStepProbability": "0",
+        "ActiveInfoMaxStep": "0",
+        "ActiveInfoTeamState": "1",
+        "ActiveInfoTimeLimit": "0",
+        "ActiveInfoIsRestartTimer": "0",
+        "ActiveInfoGiveBackMoney": "0",
+        "ActiveInfoGiveBackPetID": "0",
+        "ActiveInfoUseItemID": "0",
+        "ActiveInfoOtherType": "0",
+        "QuestionInfoNpcID": "0",
+        "TaskInfoDescriptionListA": "<T t=\"可恶！少给我得意忘形啊！你还有什么都拿出来啊！\" c=\"ff12c4ff\" ></T>",
+        "TaskInfoPurposeListA": "<T t=\"将\"></T><G t=\"银箱\" m=\"50240\" npcid=\"10390\" c=\"ff33ffff\"></G><T t=\"交给\"></T><G t=\"钱家二少\" npcid=\"11581\"></G><T t=\"。\"></T>",
+        "TaskInfoTraceListA": "<T t=\"将\"></T><G t=\"银箱\" m=\"50240\" npcid=\"10390\" c=\"ff33ffff\"></G><T t=\"交给\"></T><G t=\"钱家二少\" npcid=\"11581\"></G>",
+        "AIInfoAIID": "8001",
+        "AIInfoBattleResult": "1",
+        "AIInfoDeathPunish": "0",
+        "AIInfoTeamSteate": "1",
+        "BattleInfoBattleMapType": "1",
+        "BattleInfoBattleZoneID": "0",
+        "BattleInfoDrop": "0",
+        "BattleInfoBattleTimes": "0",
+        "BattleInfoMonsterNum": "0",
+        "BattleInfoDropItemID": "0",
+        "BattleInfoDropItemNum": "0",
+        "ScenarioInfoAnimationID": "0",
+        "ScenarioInfoBranchNpcID": "0"
+      },
+      "lists": {
+        "PostMissionList": [
+          "229420"
+        ],
+        "DisPlayNPCID": [
+          "10945",
+          "10856",
+          "11581",
+          "11582",
+          "11583",
+          "11584",
+          "11585",
+          "10952",
+          "10953",
+          "10954",
+          "10955"
+        ],
+        "ScenarioInfoNpcConversationList": [
+          "你们……你们居然……",
+          "就算是蚂蚁，只要能联合起来，也是拥有能咬死大象的力量的！",
+          "再来！"
+        ],
+        "ScenarioInfoNpcID": [
+          "11581",
+          "10952",
+          "1"
+        ],
+        "ScenarioInfoFinishConversationList": [
+          "师父，下次要什么需要帮忙可别再忘了叫上我们兄弟了哦！我们就先走一步了，做好事不留名这样比较帅，哈哈！",
+          "9800000银两……"
+        ],
+        "ScenarioInfoFinishNpcID": [
+          "10952",
+          "1"
+        ]
+      }
+    }
+  ],
+  "npcs": [
+    {
+      "id": "10908",
+      "bodytype": "0",
+      "npctype": "4",
+      "modelID": "6080",
+      "name": "说书人",
+      "minimapquery": "说书人",
+      "minimapshow": "说书人",
+      "leaveservice": "告辞",
+      "area1colour": "1",
+      "area2colour": "0",
+      "mapid": "1501",
+      "xPos": "65",
+      "yPos": "97",
+      "hide": "1",
+      "zaxueid": "-1",
+      "actionname": "0"
+    },
+    {
+      "id": "10909",
+      "bodytype": "0",
+      "npctype": "4",
+      "modelID": "6052",
+      "name": "梦魇杀手",
+      "minimapquery": "梦魇杀手",
+      "minimapshow": "梦魇杀手",
+      "leaveservice": "离开",
+      "area1colour": "7",
+      "area2colour": "0",
+      "mapid": "1501",
+      "xPos": "57",
+      "yPos": "100",
+      "hide": "1",
+      "zaxueid": "-1",
+      "actionname": "0"
+    },
+    {
+      "id": "10910",
+      "bodytype": "0",
+      "npctype": "4",
+      "modelID": "6070",
+      "name": "梦魇邪兽",
+      "minimapquery": "梦魇邪兽",
+      "minimapshow": "梦魇邪兽",
+      "leaveservice": "离开",
+      "area1colour": "7",
+      "area2colour": "0",
+      "mapid": "1501",
+      "xPos": "53",
+      "yPos": "108",
+      "hide": "1",
+      "zaxueid": "-1",
+      "actionname": "0"
+    },
+    {
+      "id": "10911",
+      "bodytype": "0",
+      "npctype": "4",
+      "modelID": "6070",
+      "name": "梦魇邪兽",
+      "minimapquery": "梦魇邪兽",
+      "minimapshow": "梦魇邪兽",
+      "leaveservice": "离开",
+      "area1colour": "7",
+      "area2colour": "0",
+      "mapid": "1501",
+      "xPos": "53",
+      "yPos": "97",
+      "hide": "1",
+      "zaxueid": "-1",
+      "actionname": "0"
+    },
+    {
+      "id": "10912",
+      "bodytype": "0",
+      "npctype": "4",
+      "modelID": "6070",
+      "name": "梦魇邪兽",
+      "minimapquery": "梦魇邪兽",
+      "minimapshow": "梦魇邪兽",
+      "leaveservice": "离开",
+      "area1colour": "7",
+      "area2colour": "0",
+      "mapid": "1501",
+      "xPos": "67",
+      "yPos": "108",
+      "hide": "1",
+      "zaxueid": "-1",
+      "actionname": "0"
+    }
+  ],
+  "monsters": [
+    {
+      "id": "29104",
+      "name": "梦魇杀手",
+      "modelID": "6052",
+      "becatch": "0",
+      "showhpbar": "1",
+      "showlevel": "0",
+      "npctype": "4",
+      "bodytype": "0",
+      "area1colour": "7",
+      "area2colour": "0"
+    },
+    {
+      "id": "29112",
+      "name": "梦魇杀手",
+      "modelID": "6052",
+      "becatch": "0",
+      "showhpbar": "1",
+      "showlevel": "0",
+      "npctype": "4",
+      "bodytype": "0",
+      "area1colour": "7",
+      "area2colour": "0"
+    },
+    {
+      "id": "29129",
+      "name": "梦魇杀手",
+      "modelID": "6052",
+      "becatch": "0",
+      "showhpbar": "1",
+      "showlevel": "0",
+      "npctype": "1",
+      "bodytype": "0",
+      "area1colour": "7",
+      "area2colour": "0"
+    }
+  ],
+  "backgrounds": [
+    {
+      "id": "5",
+      "path": "/map/battleground/jiaxing.jpg"
+    }
+  ],
+  "music": [
+    {
+      "id": "1",
+      "path": "/sound/music/zhandou_putong1.ogg"
+    }
+  ],
+  "task_ai_enemy_association_verified": false,
+  "enemy_combat_stats_in_source": false,
+  "live_server_changed": false,
+  "live_database_accessed": false,
+  "game_started": false,
+  "program_sha256": "9732c7533d0855badcaa53b0797aa80475479b2eee912bda978ba37f968d64bc"
+}

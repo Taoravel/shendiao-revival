@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="GangNoticeDel">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,307.653},{0,196.135},{0,573.653},{0,405.135}}" />
+    <Window Type="TaharezLook/Button" Name="GangNoticeDel/OK">
+      <Property Name="Text" Value="删除" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,55.4909},{0,169},{0,133.491},{0,191}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GangNoticeDel/Cancel">
+      <Property Name="Text" Value="取消" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,134.873},{0,169},{0,212.873},{0,191}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="GangNoticeDel/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.369925,0},{0.0462204,0},{1.52782,0},{0.175407,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="GangNoticeDel/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="删除帮派告示" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="102" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFF9600 br:FFFF9600" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,59.7},{-0.00552486,0},{0,182.7},{0,25.5691}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Listbox" Name="GangNoticeDel/NoticeList">
+      <Property Name="UnifiedAreaRect" Value="{{0.05,3.64551},{0.05,34.15},{0.05,233.645},{0.05,138.15}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="GangNoticeDel/Tips">
+      <Property Name="Text" Value="提示：请先选择告示，然后点击删除" />
+      <Property Name="HorzExtent" Value="209" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,20},{0,147},{0,240},{0,169}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="DefaultBorderEnable" Value="True" />
+      <Property Name="DefaultColourEnable" Value="True" />
+    </Window>
+  </Window>
+</GUILayout>

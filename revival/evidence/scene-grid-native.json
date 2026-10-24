@@ -1,0 +1,122 @@
+{
+  "image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+  "native_query": "0x6284f0",
+  "native_query_differential_cases": 2893,
+  "native_loader_header_cases": [
+    {
+      "header_size": 12,
+      "length": 18,
+      "accepted": true
+    },
+    {
+      "header_size": 16,
+      "length": 22,
+      "accepted": true
+    },
+    {
+      "header_size": 11,
+      "length": 17,
+      "accepted": false
+    },
+    {
+      "header_size": 12,
+      "length": 17,
+      "accepted": false
+    },
+    {
+      "header_size": 16,
+      "length": 18,
+      "accepted": false
+    }
+  ],
+  "archive_crc_parsed": {
+    "maze": 308,
+    "monster": 44
+  },
+  "monster_preserved_anomalies": [
+    {
+      "path": "leifengta1/monster.dat",
+      "duplicate_records": 1,
+      "outside_declared_extent": 0
+    },
+    {
+      "path": "leifengta2/monster.dat",
+      "duplicate_records": 1,
+      "outside_declared_extent": 0
+    },
+    {
+      "path": "leifengta3/monster.dat",
+      "duplicate_records": 1,
+      "outside_declared_extent": 0
+    },
+    {
+      "path": "leifengta4/monster.dat",
+      "duplicate_records": 1,
+      "outside_declared_extent": 0
+    },
+    {
+      "path": "leifengta5/monster.dat",
+      "duplicate_records": 1,
+      "outside_declared_extent": 3024
+    },
+    {
+      "path": "leifengta6/monster.dat",
+      "duplicate_records": 1,
+      "outside_declared_extent": 3024
+    },
+    {
+      "path": "leifengta7/monster.dat",
+      "duplicate_records": 1,
+      "outside_declared_extent": 3024
+    },
+    {
+      "path": "map_1015_taohuadaoyewai/monster.dat",
+      "duplicate_records": 2,
+      "outside_declared_extent": 0
+    },
+    {
+      "path": "map_1655_zhengjiuxueren1/monster.dat",
+      "duplicate_records": 1,
+      "outside_declared_extent": 0
+    },
+    {
+      "path": "xihushuidao2/monster.dat",
+      "duplicate_records": 1,
+      "outside_declared_extent": 0
+    },
+    {
+      "path": "xihushuidao3/monster.dat",
+      "duplicate_records": 1,
+      "outside_declared_extent": 0
+    },
+    {
+      "path": "xihushuidao4/monster.dat",
+      "duplicate_records": 1,
+      "outside_declared_extent": 0
+    }
+  ],
+  "character_mask_native_cases": [
+    {
+      "role_state_0x218": 0,
+      "movement_mask": 1,
+      "native_getter_setter_and_query_install": true
+    },
+    {
+      "role_state_0x218": 1,
+      "movement_mask": 8,
+      "native_getter_setter_and_query_install": true
+    },
+    {
+      "role_state_0x218": 2,
+      "movement_mask": 8,
+      "native_getter_setter_and_query_install": true
+    },
+    {
+      "role_state_0x218": 255,
+      "movement_mask": 8,
+      "native_getter_setter_and_query_install": true
+    }
+  ],
+  "movement_mask_default": null,
+  "monster_region_semantics": "unproven"
+}

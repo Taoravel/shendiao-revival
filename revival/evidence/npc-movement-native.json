@@ -1,0 +1,55 @@
+{
+  "passed": [
+    "3 original SNPCMoveTo high-key/duration/coordinate codec round trips",
+    "original handler resolves actual64bit NPC key and assigns destination/source/duration in correct order",
+    "original zero/negative duration and origin0,0 are ignored; server refuses them"
+  ],
+  "protocol": "0xc0fd2",
+  "constructor": "0xdaba20",
+  "marshal": "0xe509c0",
+  "unmarshal": "0xdabaf0",
+  "consumer_executed": "0x11d8170->0x1201320..0x1201366",
+  "consumer_adapters": "logging no-op and owned-NPC key lookup only; original field assignment executes",
+  "animation_duration_divisor": 1000.0,
+  "cases": [
+    [
+      1,
+      1,
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    [
+      4886718345,
+      1000,
+      [
+        1680,
+        5311
+      ],
+      [
+        1700,
+        5343
+      ]
+    ],
+    [
+      81985529216486895,
+      2147483647,
+      [
+        32766,
+        32765
+      ],
+      [
+        32767,
+        32767
+      ]
+    ]
+  ],
+  "native_image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+  "authoritative_movement_scheduler_implemented": false,
+  "native_gui_verified": false
+}

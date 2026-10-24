@@ -1,0 +1,49 @@
+{
+  "status": "deployed",
+  "base": "runtime/deployments/npc-role-healing-20261023T125539Z/source",
+  "candidate": "runtime/deployments/wild-auto-20261023T180606Z/source",
+  "review": "evidence/reviews/wild-auto-20261023T180606Z",
+  "production_files": {
+    "training_battle.py": "80b2267e1972a325cb1e891f2c5251342bab2c067ccf6b28dc4c77ec58f480ef"
+  },
+  "baseline_training_sha256": "3d45a14a1f8614d4cc9bf36b136a3679456a17d53bbf406571f94f2c6dfe9e9f",
+  "scope": "Only six auto1 attack target0 target-selection lines. This pure training candidate retains OLD damage serialization; merge its six-line receive hunk with reviewed damage change, never replace combined training file wholesale.",
+  "rejected_candidate": "wild-auto-20261023T135625Z captured concurrent damage TargetResult without matching protocol; never publish",
+  "tests": [
+    {
+      "test": "verify_wild_auto_runtime.py",
+      "exit_code": 0
+    },
+    {
+      "test": "verify_wild_runtime.py",
+      "exit_code": 0
+    },
+    {
+      "test": "verify_battle_runtime.py",
+      "exit_code": 0
+    },
+    {
+      "test": "verify_battle_owner.py",
+      "exit_code": 0
+    }
+  ],
+  "client_gui_verified": false,
+  "live_server_mutated": false,
+  "standards_findings": 0,
+  "spec_findings": 0,
+  "patch": "D:\\神雕侠侣\\revival\\evidence\\reviews\\wild-auto-20261023T180606Z\\AUTO_ONLY.patch",
+  "rebased_combined": {
+    "candidate": "D:\\神雕侠侣\\revival\\runtime\\deployments\\wild-auto-20261023T181143Z",
+    "base": "D:\\神雕侠侣\\revival\\runtime\\deployments\\battle-damage-20261023T180731Z",
+    "training_sha256": "7b6d81c9885517b2036419d437bddc5c9260f7e6a73c5339e1eb2949647640db",
+    "protocol_sha256": "1a472edf4f1a9db20d8c08ba05eb5516b56b723b87b2b2c80ca0c0a60c75cd22",
+    "review": "D:\\神雕侠侣\\revival\\evidence\\reviews\\wild-auto-20261023T181143Z\\REVIEW.md",
+    "checks": "5 frozen checks passed, including auto, damage original consumer, wild11, manual battle and DB-copy startup; base BattleOwner10 unchanged green",
+    "status": "deployed"
+  },
+  "pid": 12336,
+  "actual_release": "D:\\神雕侠侣\\revival\\runtime\\deployments\\wild-auto-20261023T181143Z",
+  "deployment_verification": "D:\\神雕侠侣\\revival\\runtime\\deployments\\wild-auto-20261023T181143Z\\deployment-verification.json",
+  "previous_pid": 6008,
+  "damage_fix_preserved": true
+}

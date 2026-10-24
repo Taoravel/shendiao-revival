@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/RichEditbox1" Name="SkillTips">
+    <Property Name="Font" Value="simhei-12" />
+    <Property Name="ReadOnly" Value="True" />
+    <Property Name="LineSpace" Value="1" />
+    <Property Name="BlinkCaret" Value="True" />
+    <Property Name="AlwaysOnTop" Value="True" />
+    <Property Name="MaxTextLength" Value="1073741823" />
+    <Property Name="UnifiedAreaRect" Value="{{0,50.995},{0,33.8183},{0,252.995},{0,136.818}}" />
+    <Property Name="BlinkCaretTimeout" Value="0.5" />
+    <Property Name="TextParsingEnabled" Value="False" />
+    <Window Type="TaharezLook/StaticText" Name="SkillTips/name">
+      <Property Name="Font" Value="msyh-16" />
+      <Property Name="Text" Value="一二三四五六七八" />
+      <Property Name="HorzExtent" Value="128" />
+      <Property Name="VertExtent" Value="18.75" />
+      <Property Name="TextColours" Value="tl:FFFF0000 tr:FFFFFF00 bl:FFFFFF00 br:FFFFFF00" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,11},{0,7},{0,142},{0,27}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="SkillTips/icon">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{1,-58},{0,7},{1,-18},{0,47}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="SkillTips/closebtn">
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="HoverImage" Value="set:component image:CloseButtonHover" />
+      <Property Name="NormalImage" Value="set:component image:CloseButtonNormal" />
+      <Property Name="PushedImage" Value="set:component image:CloseButtonPressed" />
+      <Property Name="UnifiedAreaRect" Value="{{1,-20},{0,0},{1,0},{0,20}}" />
+    </Window>
+  </Window>
+</GUILayout>

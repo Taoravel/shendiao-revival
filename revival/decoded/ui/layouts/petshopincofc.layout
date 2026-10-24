@@ -1,0 +1,1081 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="PetShop">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.0075,0},{0.135,0},{0.0075,798},{0.135,446}}" />
+    <Window Type="TaharezLook/Button" Name="PetShop/inFamous">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="加入名店夹" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,580},{0,406},{0,670},{0,430}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="PetShop/BuyBtn">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="购买" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,180},{0,406},{0,270},{0,430}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="PetShop/preShop">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="上一间店铺" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,280},{0,406},{0,370},{0,430}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="PetShop/nextShop">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="下一间店铺" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,380},{0,406},{0,470},{0,430}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="PetShop/backToShopList">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="回到店铺列表" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,480},{0,406},{0,570},{0,430}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="PetShop/leaveCofC">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="离开商店" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,680},{0,406},{0,770},{0,430}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="PetShop/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,297},{0,12},{0,605},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="PetShop/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0,17},{0,44},{0,779},{0,405}}" />
+      <Window Type="TaharezLook/Button" Name="PetShop/prePage">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="上一页" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="UnifiedAreaRect" Value="{{0,567},{0,335},{0,635},{0,359}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="PetShop/nextPage">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="下一页" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="UnifiedAreaRect" Value="{{0,687},{0,335},{0,755},{0,359}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetShop/counterIndex">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,636},{0,338},{0,686},{0,356}}" />
+      </Window>
+      <Window Type="TaharezLook/ShopGroupButton" Name="PetShop/counter1">
+        <Property Name="Text" Value="1" />
+        <Property Name="UnifiedAreaRect" Value="{{0,15},{0,52},{0,43},{0,74}}" />
+      </Window>
+      <Window Type="TaharezLook/ShopGroupButton" Name="PetShop/counter2">
+        <Property Name="Text" Value="2" />
+        <Property Name="UnifiedAreaRect" Value="{{0,44},{0,52},{0,72},{0,74}}" />
+      </Window>
+      <Window Type="TaharezLook/ShopGroupButton" Name="PetShop/counter3">
+        <Property Name="Text" Value="3" />
+        <Property Name="UnifiedAreaRect" Value="{{0,73},{0,52},{0,101},{0,74}}" />
+      </Window>
+      <Window Type="TaharezLook/ShopGroupButton" Name="PetShop/counter4">
+        <Property Name="Text" Value="4" />
+        <Property Name="UnifiedAreaRect" Value="{{0,102},{0,52},{0,130},{0,74}}" />
+      </Window>
+      <Window Type="TaharezLook/ShopGroupButton" Name="PetShop/counter5">
+        <Property Name="Text" Value="5" />
+        <Property Name="UnifiedAreaRect" Value="{{0,131},{0,52},{0,159},{0,74}}" />
+      </Window>
+      <Window Type="TaharezLook/ShopGroupButton" Name="PetShop/counter6">
+        <Property Name="Text" Value="6" />
+        <Property Name="UnifiedAreaRect" Value="{{0,160},{0,52},{0,188},{0,74}}" />
+      </Window>
+      <Window Type="TaharezLook/ShopGroupButton" Name="PetShop/counter7">
+        <Property Name="Text" Value="7" />
+        <Property Name="UnifiedAreaRect" Value="{{0,189},{0,52},{0,217},{0,74}}" />
+      </Window>
+      <Window Type="TaharezLook/ShopGroupButton" Name="PetShop/counter8">
+        <Property Name="Text" Value="8" />
+        <Property Name="UnifiedAreaRect" Value="{{0,218},{0,52},{0,246},{0,74}}" />
+      </Window>
+      <Window Type="TaharezLook/ShopGroupButton" Name="PetShop/counter9">
+        <Property Name="Text" Value="9" />
+        <Property Name="UnifiedAreaRect" Value="{{0,247},{0,52},{0,275},{0,74}}" />
+      </Window>
+      <Window Type="TaharezLook/ShopGroupButton" Name="PetShop/counter10">
+        <Property Name="Text" Value="10" />
+        <Property Name="UnifiedAreaRect" Value="{{0,276},{0,52},{0,304},{0,74}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetShop/Moneyback1">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,433},{0,335},{0,566},{0,355}}" />
+        <Window Type="TaharezLook/StaticImage" Name="PetShop/Moneyback1/Money">
+          <Property Name="Image" Value="set:MainControl image:Xianjin" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0.2},{0,20},{0,19.2}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetShop/Money">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,22.4348},{0.052,0},{0,127.435},{0.002,21}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetShop/MoneyBack2">
+        <Property Name="Visible" Value="False" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,42.176},{0,337},{0,150.176},{0,355}}" />
+        <Window Type="TaharezLook/StaticImage" Name="PetShop/Money2">
+          <Property Name="Image" Value="set:MainControl image:Xianjin" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.005,0},{0,2.2},{0,19.54},{0,21.2}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetShop/TotalPrice">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="TextColours" Value="tl:FFFCDC6E tr:FFFCDC6E bl:FFFFB500 br:FFFFB500" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,23.2603},{0.00222223,0},{0,105.26},{0,23.08}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetShop/MoneyBack3">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,281},{0,335},{0,401},{0,353}}" />
+        <Window Type="TaharezLook/StaticImage" Name="PetShop/Money3">
+          <Property Name="Image" Value="set:MainControl image:Xianjin" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,1},{0,0.2},{0,20},{0,19.2}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetShop/Price">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,23.2603},{0.0559259,0},{0,116.26},{0.000333332,21.0007}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="PetShop/TableBack">
+        <Property Name="UnifiedAreaRect" Value="{{0,3},{0,71},{0,760},{0,334}}" />
+        <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet1">
+          <Property Name="Image" Value="set:MainControl image:SellPetBaffle" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,251},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,251},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,252},{0,54}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="PetShop/TableBack/Pet1/Icon">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,46},{0,46}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet1/Name">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,54},{0,4},{0,164},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet1/Level">
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,208},{0,4},{0,246},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet1/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,28},{0,145},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet1/Money">
+            <Property Name="Image" Value="set:MainControl image:Xianjin" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,147},{0,28},{0,166},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="PetShop/TableBack/Pet1/Check">
+            <Property Name="Text" Value="查看信息" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,169},{0,26},{0,245},{0,48}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet2">
+          <Property Name="Image" Value="set:MainControl image:SellPetBaffle" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,251},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,251},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,252},{0,1},{0,503},{0,54}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="PetShop/TableBack/Pet2/Icon">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,46},{0,46}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet2/Name">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,54},{0,4},{0,164},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet2/Level">
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,208},{0,4},{0,246},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet2/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,28},{0,145},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet2/Money">
+            <Property Name="Image" Value="set:MainControl image:Xianjin" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,147},{0,28},{0,166},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="PetShop/TableBack/Pet2/Check">
+            <Property Name="Text" Value="查看信息" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,169},{0,26},{0,245},{0,48}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet3">
+          <Property Name="Image" Value="set:MainControl image:SellPetBaffle" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,251},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,251},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,464.65},{0,1},{0.05,715.65},{0,54}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="PetShop/TableBack/Pet3/Icon">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,46},{0,46}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet3/Name">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,54},{0,4},{0,164},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet3/Level">
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,208},{0,4},{0,246},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet3/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,28},{0,145},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet3/Money">
+            <Property Name="Image" Value="set:MainControl image:Xianjin" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,147},{0,28},{0,166},{0,47}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="PetShop/TableBack/Pet3/Check">
+            <Property Name="Text" Value="查看信息" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,169},{0,26},{0,245},{0,48}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet4">
+          <Property Name="Image" Value="set:MainControl image:SellPetBaffle" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,251},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,251},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,1},{0,53},{0,252},{0,106}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="PetShop/TableBack/Pet4/Icon">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,46},{0,46}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet4/Name">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,54},{0,4},{0,164},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet4/Level">
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,208},{0,4},{0,246},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet4/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,28},{0,145},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet4/Money">
+            <Property Name="Image" Value="set:MainControl image:Xianjin" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,147},{0,28},{0,166},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="PetShop/TableBack/Pet4/Check">
+            <Property Name="Text" Value="查看信息" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,169},{0,26},{0,245},{0,48}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet5">
+          <Property Name="Image" Value="set:MainControl image:SellPetBaffle" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,251},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,251},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,252},{0,53},{0,503},{0,106}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="PetShop/TableBack/Pet5/Icon">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,46},{0,46}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet5/Name">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,54},{0,4},{0,164},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet5/Level">
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,208},{0,4},{0,246},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet5/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,28},{0,145},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet5/Money">
+            <Property Name="Image" Value="set:MainControl image:Xianjin" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,147},{0,28},{0,166},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="PetShop/TableBack/Pet5/Check">
+            <Property Name="Text" Value="查看信息" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,169},{0,26},{0,245},{0,48}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet9">
+          <Property Name="Image" Value="set:MainControl image:SellPetBaffle" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,251},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,251},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,464.65},{0,105},{0.05,715.65},{0,158}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="PetShop/TableBack/Pet9/Icon">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,46},{0,46}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet9/Name">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,54},{0,4},{0,164},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet9/Level">
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,208},{0,4},{0,246},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet9/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,28},{0,145},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet9/Money">
+            <Property Name="Image" Value="set:MainControl image:Xianjin" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,147},{0,28},{0,166},{0,47}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="PetShop/TableBack/Pet9/Check">
+            <Property Name="Text" Value="查看信息" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,169},{0,26},{0,245},{0,48}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet7">
+          <Property Name="Image" Value="set:MainControl image:SellPetBaffle" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,251},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,251},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,1},{0,105},{0.142845,143.866},{0,158}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="PetShop/TableBack/Pet7/Icon">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,46},{0,46}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet7/Name">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,54},{0,4},{0,164},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet7/Level">
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,208},{0,4},{0,246},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet7/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,28},{0,145},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet7/Money">
+            <Property Name="Image" Value="set:MainControl image:Xianjin" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,147},{0,28},{0,166},{0,47}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="PetShop/TableBack/Pet7/Check">
+            <Property Name="Text" Value="查看信息" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,169},{0,26},{0,245},{0,48}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet8">
+          <Property Name="Image" Value="set:MainControl image:SellPetBaffle" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,251},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,251},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,252},{0,105},{0,503},{0,158}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="PetShop/TableBack/Pet8/Icon">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,46},{0,46}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet8/Name">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,54},{0,4},{0,164},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet8/Level">
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,208},{0,4},{0,246},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet8/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,28},{0,145},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet8/Money">
+            <Property Name="Image" Value="set:MainControl image:Xianjin" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,147},{0,28},{0,166},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="PetShop/TableBack/Pet8/Check">
+            <Property Name="Text" Value="查看信息" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,169},{0,26},{0,245},{0,48}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet6">
+          <Property Name="Image" Value="set:MainControl image:SellPetBaffle" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,251},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,251},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,464.65},{0,53},{0.05,715.65},{0,106}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="PetShop/TableBack/Pet6/Icon">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,46},{0,46}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet6/Name">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,54},{0,4},{0,164},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet6/Level">
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,208},{0,4},{0,246},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet6/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,28},{0,145},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet6/Money">
+            <Property Name="Image" Value="set:MainControl image:Xianjin" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,147},{0,28},{0,166},{0,47}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="PetShop/TableBack/Pet6/Check">
+            <Property Name="Text" Value="查看信息" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,169},{0,26},{0,245},{0,48}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet10">
+          <Property Name="Image" Value="set:MainControl image:SellPetBaffle" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,251},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,251},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,1},{0,157},{0,252},{0,210}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="PetShop/TableBack/Pet10/Icon">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,46},{0,46}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet10/Name">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,54},{0,4},{0,164},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet10/Level">
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,208},{0,4},{0,246},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet10/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,28},{0,145},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet10/Money">
+            <Property Name="Image" Value="set:MainControl image:Xianjin" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,147},{0,28},{0,166},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="PetShop/TableBack/Pet10/Check">
+            <Property Name="Text" Value="查看信息" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,169},{0,26},{0,245},{0,48}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet11">
+          <Property Name="Image" Value="set:MainControl image:SellPetBaffle" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,251},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,251},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,252},{0,157},{0,503},{0,210}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="PetShop/TableBack/Pet11/Icon">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,46},{0,46}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet11/Name">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,54},{0,4},{0,164},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet11/Level">
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,208},{0,4},{0,246},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet11/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,28},{0,145},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet11/Money">
+            <Property Name="Image" Value="set:MainControl image:Xianjin" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,147},{0,28},{0,166},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="PetShop/TableBack/Pet11/Check">
+            <Property Name="Text" Value="查看信息" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,169},{0,26},{0,245},{0,48}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet12">
+          <Property Name="Image" Value="set:MainControl image:SellPetBaffle" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,251},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,251},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,464.65},{0,157},{0.05,715.65},{0,210}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="PetShop/TableBack/Pet12/Icon">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,46},{0,46}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet12/Name">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,54},{0,4},{0,164},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet12/Level">
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,208},{0,4},{0,246},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet12/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,28},{0,145},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet12/Money">
+            <Property Name="Image" Value="set:MainControl image:Xianjin" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,147},{0,28},{0,166},{0,47}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="PetShop/TableBack/Pet12/Check">
+            <Property Name="Text" Value="查看信息" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,169},{0,26},{0,245},{0,48}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet13">
+          <Property Name="Image" Value="set:MainControl image:SellPetBaffle" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,251},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,251},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,1},{0,209},{0,252},{0,262}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="PetShop/TableBack/Pet13/Icon">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,46},{0,46}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet13/Name">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,54},{0,4},{0,164},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet13/Level">
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,208},{0,4},{0,246},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet13/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,28},{0,145},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet13/Money">
+            <Property Name="Image" Value="set:MainControl image:Xianjin" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,147},{0,28},{0,166},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="PetShop/TableBack/Pet13/Check">
+            <Property Name="Text" Value="查看信息" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,169},{0,26},{0,245},{0,48}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet14">
+          <Property Name="Image" Value="set:MainControl image:SellPetBaffle" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,251},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,251},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,252},{0,209},{0,503},{0,262}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="PetShop/TableBack/Pet14/Icon">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,46},{0,46}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet14/Name">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,54},{0,4},{0,164},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet14/Level">
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,208},{0,4},{0,246},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet14/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,28},{0,145},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet14/Money">
+            <Property Name="Image" Value="set:MainControl image:Xianjin" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,147},{0,28},{0,166},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="PetShop/TableBack/Pet14/Check">
+            <Property Name="Text" Value="查看信息" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,169},{0,26},{0,245},{0,48}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet15">
+          <Property Name="Image" Value="set:MainControl image:SellPetBaffle" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,251},{0,53}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,251},{0,53}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,464.65},{0,209},{0.05,715.65},{0,262}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="PetShop/TableBack/Pet15/Icon">
+            <Property Name="UnifiedAreaRect" Value="{{0,6},{0,6},{0,46},{0,46}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet15/Name">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,54},{0,4},{0,164},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet15/Level">
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,208},{0,4},{0,246},{0,24}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="PetShop/TableBack/Pet15/Price">
+            <Property Name="Font" Value="tahoma-10" />
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="RightAligned" />
+            <Property Name="UnifiedAreaRect" Value="{{0,53},{0,28},{0,145},{0,48}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/Pet15/Money">
+            <Property Name="Image" Value="set:MainControl image:Xianjin" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,147},{0,28},{0,166},{0,47}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="PetShop/TableBack/Pet15/Check">
+            <Property Name="Text" Value="查看信息" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0,169},{0,26},{0,245},{0,48}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetShop/TableBack/PetUnitHover">
+          <Property Name="Image" Value="set:MainControl image:SellPetNormal" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,251},{0,51}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,251},{0,51}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0.331572,0},{0.193916,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetShop/PirceText">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="单价" />
+        <Property Name="HorzExtent" Value="27" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,252},{0,335},{0,282},{0,355}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetShop/PirceText1">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="数量" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="HorzExtent" Value="26" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,151.176},{0,335},{0,181.176},{0,357}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/Editbox" Name="PetShop/Number">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="1073741823" />
+        <Property Name="UnifiedAreaRect" Value="{{0,182.176},{0,336},{0,232.176},{0,358}}" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetShop/PirceText2">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="总价" />
+        <Property Name="HorzExtent" Value="27" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,13.176},{0,335},{0,43.176},{0,357}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetShop/PirceText3">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="银两" />
+        <Property Name="HorzExtent" Value="26" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,404},{0,336},{0,434},{0,356}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="PetShop/Back/Infoback">
+        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,6},{0,758},{0,51}}" />
+        <Window Type="TaharezLook/StaticText" Name="PetShop/shopInfo">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003679" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="VertFormatting" Value="TopAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0,70},{0,23},{0,747},{0,39}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetShop/Back/Infoback/shop">
+          <Property Name="Text" Value="店铺介绍：" />
+          <Property Name="HorzExtent" Value="65" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+          <Property Name="BorderColour" Value="FF220B01" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,8},{0,21},{0,68},{0,41}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetShop/Back/InfoBack/ShopKeeper">
+          <Property Name="Text" Value="店主：" />
+          <Property Name="HorzExtent" Value="39" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+          <Property Name="BorderColour" Value="FF220B01" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,-30},{0,3},{0.05,7},{0,23}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetShop/Back/InfoBack/KeeperName">
+          <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+          <Property Name="BorderColour" Value="FF220B01" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.1,-30},{0.0944444,0},{0.1,80},{0.05,22}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/LittleButton" Name="PetShop/Back/Infoback/chat">
+          <Property Name="Text" Value="联系店主" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0.891248,0},{0.0888889,0},{0.200265,598},{0.2,19}}" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

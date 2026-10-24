@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="Qianlichuanqing">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="Foot_Leaves_HeelsRun10.ogg" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.0675439,0},{0.1825,0},{0.05,703},{0.189167,369}}" />
+    <Property Name="CloseSoundResource" Value="Button.ogg" />
+    <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    <Window Type="TaharezLook/MultiColumnList" Name="Qianlichuanqing/LocalSearchList">
+      <Property Name="UnifiedAreaRect" Value="{{0,20},{0,67},{0,256},{0,271}}" />
+      <Property Name="ColumnHeader" Value="text:好友名称 width:{0.48,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:等级 width:{0.18,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:未登录天数 width:{1,-155} id:2" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="Qianlichuanqing/haoyoushu">
+      <Property Name="Text" Value="信件主题" />
+      <Property Name="HorzExtent" Value="52" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,228},{0.125945,28},{0.05,293},{0.125945,48}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="Qianlichuanqing/haoyoushu1">
+      <Property Name="Text" Value="收件人：" />
+      <Property Name="HorzExtent" Value="52" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,228},{0.134048,0},{0.05,281},{0.125945,23}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="Qianlichuanqing/haoyoushu11">
+      <Property Name="Text" Value="选择模板" />
+      <Property Name="HorzExtent" Value="53" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.1,542},{0.134048,0},{0.1,599},{0.0848457,38}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="Qianlichuanqing/haoyoushu12">
+      <Property Name="Text" Value="已发信/发送上限：" />
+      <Property Name="HorzExtent" Value="111" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,228},{0.873995,0},{0.05,339},{0.849866,29}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="Qianlichuanqing/haoyoushu1311">
+      <Property Name="Text">温馨提示：
+1.玩家每天最多发送5封邮件。
+2.对同一好友发送邮件两次时间隔10天。
+3.每次发送需消耗20点体力。</Property>
+      <Property Name="HorzExtent" Value="236" />
+      <Property Name="VertExtent" Value="62.4756" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003456" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.2,-115},{0.729223,0},{0.2,116},{0.25,261}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="Qianlichuanqing/Sender">
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0.454282,0},{0.134048,0},{0.644412,0},{0.125945,23}}" />
+    </Window>
+    <Window Type="TaharezLook/Figure" Name="Qianlichuanqing/Figure">
+      <Property Name="UnifiedAreaRect" Value="{{0.103048,0},{0.134048,0},{0.313498,0},{0.176944,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="Qianlichuanqing/haoyoushu13">
+        <Property Name="Text" Value="可召回好友列表" />
+        <Property Name="HorzExtent" Value="92" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,27},{-0.125,0},{0,123},{0.05,15}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="Qianlichuanqing/Num">
+      <Property Name="Text" Value="0/5" />
+      <Property Name="HorzExtent" Value="23" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.15,274},{0.873995,0},{0.15,313},{0.849866,29}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="Qianlichuanqing/name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="神雕传书" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="68" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,226},{0.0321716,0},{0.05,314},{0.05,16}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="Qianlichuanqing/Send">
+      <Property Name="Text" Value="发送邮件" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.820029,0},{0.873995,0},{0.969521,0},{0.938338,0}}" />
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="Qianlichuanqing/TextBack">
+      <Property Name="UnifiedAreaRect" Value="{{0.377358,0},{0.260054,0},{0.96807,0},{0.855228,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="Qianlichuanqing/Text">
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="VertFormatting" Value="TopAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.017199,0},{0.05,-5},{0.05,385},{0.05,191}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/RadioButton" Name="Qianlichuanqing/type1">
+      <Property Name="Text" Value="热血版" />
+      <Property Name="UnifiedAreaRect" Value="{{0.687954,0},{0.203753,0},{0.776488,0},{0.24933,0}}" />
+    </Window>
+    <Window Type="TaharezLook/RadioButton" Name="Qianlichuanqing/type11">
+      <Property Name="Text" Value="轻松版" />
+      <Property Name="UnifiedAreaRect" Value="{{0.77939,0},{0.203753,0},{0.867925,0},{0.24933,0}}" />
+    </Window>
+    <Window Type="TaharezLook/RadioButton" Name="Qianlichuanqing/type12">
+      <Property Name="Text" Value="温情版" />
+      <Property Name="UnifiedAreaRect" Value="{{0.870827,0},{0.203753,0},{0.959361,0},{0.24933,0}}" />
+    </Window>
+  </Window>
+</GUILayout>

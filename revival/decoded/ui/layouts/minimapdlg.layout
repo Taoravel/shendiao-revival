@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="MinimapDlg">
+    <Property Name="Font" Value="simhei-12" />
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="open.ogg" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,36.0663},{0,32.9318},{0,758.066},{0,538.932}}" />
+    <Property Name="CloseSoundResource" Value="close.ogg" />
+    <Window Type="TaharezLook/StaticText" Name="MinimapDlg/TopPanel">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="TextColours" Value="tl:FFDCF6CE tr:FFDCF6CE bl:FF10BBD3 br:FF10BBD3" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0,14},{0,38},{1,-19.9835},{0,67}}" />
+      <Window Type="TaharezLook/Checkbox" Name="MinimapDlg/Important">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="重要" />
+        <Property Name="UnifiedAreaRect" Value="{{0,9.8152},{0,5.46687},{0,49.8152},{0,20.4669}}" />
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="MinimapDlg/Transport">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="传送" />
+        <Property Name="Selected" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0,65},{0,5.46687},{0,105},{0,20.4669}}" />
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="MinimapDlg/Business">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="商业" />
+        <Property Name="Selected" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0,175},{0,5},{0,215},{0,20}}" />
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="MinimapDlg/Normal">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="普通" />
+        <Property Name="UnifiedAreaRect" Value="{{0,120},{0,5},{0,160},{0,20}}" />
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="MinimapDlg/All">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="全部" />
+        <Property Name="UnifiedAreaRect" Value="{{0,285},{0,5},{0,325},{0,20}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="MinimapDlg/WorldMap">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="世界地图" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{1,-98},{0,3},{1,-10},{1,-3}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="MinimapDlg/TopPanel/NPCSearchBtn">
+        <Property Name="Text" Value="NPC查询" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="UnifiedAreaRect" Value="{{1,-289.033},{0,3},{1,-199.033},{1,-2}}" />
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="MinimapDlg/task">
+        <Property Name="Text" Value="任务" />
+        <Property Name="Selected" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0,230},{0,5},{0,270},{0,20}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="MinimapDlg/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="LeftAligned" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.27964,0},{0,12},{0.62867,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="MinimapDlg/SearchNpcPanel">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Image" Value="set:MainControl6 image:LeftBack" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{1,-189},{0,70},{1,-17},{1,-17.0117}}" />
+      <Window Type="TaharezLook/StaticText" Name="MinimapDlg/SearchNpcPanel/NpcSearchText">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="NPC快速查询" />
+        <Property Name="HorzExtent" Value="78" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,49},{0,6},{0,136},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/Editbox" Name="MinimapDlg/SearchNpcPanel/SearchBox">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="1073741823" />
+        <Property Name="UnifiedAreaRect" Value="{{0,9.2008},{0,23},{0,164.201},{0,42}}" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Tree" Name="MinimapDlg/SearchNpcPanel/NpcListBox">
+        <Property Name="UnifiedAreaRect" Value="{{0,9},{0,50},{0,163},{1,10.535}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure" Name="MinimapDlg/MapImageBack">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="UnifiedAreaRect" Value="{{0,10},{0,64},{1,-216.984},{1,-13.0117}}" />
+      <Window Type="DefaultWindow" Name="MinimapDlg/MapImage">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0,9},{0,9},{0,49},{0,24}}" />
+        <Window Type="TaharezLook/MapTipsText" Name="MinimapDlg/MapImage/ToolTips">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="一二三四五六七八" />
+          <Property Name="HorzExtent" Value="104" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,4.12565},{0,139.997},{0,128.126},{0,183.997}}" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

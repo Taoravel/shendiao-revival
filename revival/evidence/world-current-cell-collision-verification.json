@@ -1,0 +1,29 @@
+{
+  "all_passed": true,
+  "passed": [
+    "original history/current boundary; legacy unchanged; explicit current policy accepts clear cell",
+    "public MapOwner rejects blocked current without version/checkpoint mutation",
+    "blocked intention is not authoritative arrival; subsequent blocked STOP was refused",
+    "CHECK uses its current prefix rather than a rounded history node",
+    "unknown policy, absent maze and absent trusted state refuse explicit current validation",
+    "all reported coordinates retain exact bounds validation",
+    "all positive ordinary X preimages occupy the same native cell as the reported current"
+  ],
+  "original_history": [
+    16,
+    20
+  ],
+  "original_current": [
+    15,
+    20
+  ],
+  "source_sha256": {
+    "world_movement.py": "34ad13f25e9a7ea412e0e885b07ea37714ac02ad4695e40d22f64c4388145f30",
+    "world_owner.py": "51cd7090cb8215231d3be9bafc68a170ced635bd339f68a291dc77f05057b438",
+    "verify_world_current_cell_collision.py": "921ec7eeaa20c384c7af95c45ee8612b75a40b228efd30d7445935c40bb16678",
+    "verify_world_movement_quantization_intervals.py": "74c69733db473f7db9eebaee6b5dbd864dd982304bfa17f5e356ac8072ea8123"
+  },
+  "source_scope": "explicit pure planner/MapOwner seam; no runtime state assignment",
+  "native_gui_verified": false,
+  "live_server_changed": false
+}

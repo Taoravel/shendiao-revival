@@ -1,0 +1,21 @@
+# 同库角色的装备政策选择
+
+2026-10-23，root数值交单。普通六槽v2最终投影已交，但全局将v1 loader换成v2会使旧basis合同不匹配。因此在既有Equipment Module添加按持久basis选择规则的Interface；未改shared默认、新建许可或已有basis。先读ORDINARY_EQUIPMENT_V2_INTEGRATION及ROLE_RESOURCE_STORAGE_INTEGRATION。
+
+## Interface与责任
+
+启动明确调用`load_equipment_attribute_policies()`，得到MappingProxyType：v1十件规则和v2原973条规则。每份仍使用已有严格loader及冻结元数据；该函数不选角色、不建basis、不迁移资源。
+
+`equipment_attribute_rules_transaction(db,account_id,role_id,epoch,policies)`在调用方已有租约事务内核对冻结registry、共用原形象映射、真实角色归属与当前lease，然后读取该角色当前basis的明确policy，只返回对应启动规则对象。缺basis精确抛EquipmentBasisNotInitialized，未知policy/半套部署拒绝，不能回退到任意默认。v1的seal_resistance=None保持未知，v2须显式已知；规则与当前basis的role/character/1240合同不符拒绝。读取无更新、无文件读取或新连接，不将旧档None改成0。
+
+同一事务取得的规则必须用于该事务实际Inventory依赖、totals/profile/resource及成长/药品/任务/NPC消费者。角色Owner不能长期缓存一个跨显式basis迁移的选择，也不能同时用一个规则计算caps、另一个提交资源。实际资产版本及最终资源一致性仍由current_resource_profile核验；选择器本身不是完整profile或新建授权。
+
+缺basis的旧角色仍按明确的旧contract分支处理；选择器不提供该兼容默认，也不能用catch所有ValueError把未知policy降级成旧档。首次创建basis使用真实创建授权明定的规则，与读取已有角色分开。v1→v2现仍无显式basis升级事务，当前v1新建许可不授权v2。
+
+## 实际验证与接线限制
+
+verify_equipment_policy_selection通过公开startup/事务/最终profile Seam：先缺startup Interface而红，最小实现后绿。同一真实临时库两个明确持久basis分别选择原v1/v2对象，均保留人物70/40/version0；原普通map分别20/21项，默认store.equipment_attribute_rules仍v1。SQL禁写authorizer下读取通过，文件/嵌套连接被禁止；缺basis、不可用policy、foreign账户、旧lease和可变registry拒绝，新lease仍选相同v2。
+
+实际fixture明确给v2抗性0，不以构造默认或旧None推值。其余guard为后续验证，不宣称每条都经历红。本批只补选择Seam，未改运行时统一注入；shared和六槽Owner全消费者仍按ORDINARY_EQUIPMENT_V2_INTEGRATION的完成条件逐项接，未自动开放穿戴/迁移/部署。没有GUI、真实角色修改或战斗。
+
+方法：codebase-design保留现有Module，用两个实际存在的policy支持调用方变化，不新增空port/转发类；tdd在已授权角色事务/冻结快照公开Seam，以精确对象身份、未知1240和实际20/21map证明选择，而非仅检查配置存在；writing-for-agents分开startup、读取已有与新建授权责任。

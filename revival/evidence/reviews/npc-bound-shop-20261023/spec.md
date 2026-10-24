@@ -1,0 +1,11 @@
+# Spec
+
+需求缺失0项，额外范围0项，错误实现0项。
+
+按code-review Spec与codebase-design公开Interface检查固定五文件，base/current真实字节SHA均匹配manifest。mode1按裁定使用bound_silver/npc_shop_bound/binding1，保留service2授权、原正价与数量限制；mode0旧指纹不变，未新增生产授权。钱包、绑定堆叠、来源CAS、凭据及编码均在原租约事务；已付读取当前状态。
+
+独立以current优先导入，runpy执行两项绑银verifier及旧商店回归，全绿。实际GameRuntime未替换dispatcher；覆盖新线包独立身份、重放/冲突、未知钱包、不混付、兼容堆叠、源CAS后晚错/背包满回滚与同失败ID重试。兼容测试真实执行已发布旧模块产生receipt，再用新模块重放成功，非手算指纹。
+
+最终增补复核：五文件真实字节SHA再次匹配刷新manifest，生产工作区与冻结current相同，npc_gameplay实现SHA仍为e5d70e181a18dd13ff29ed0c9302bb65f980e8b498160c5eb8a444a15d344bfa。仅来源verifier改由ROOT/revival/runtime定位历史发布并硬验ea920c4afd61ef5d9a649bee52b4c549db9c9373db5fbeb2dcf40af1e3b90f91，避免OUT指向发布source时错误嵌套路径或使用漂移夹具。独立直接运行verify_npc_bound_shop_sources.py，全绿，实际加载生产工作区实现及指定旧模块。无新增Spec问题。
+
+验证仅临时库；生产工作区已合入不等于固定运行服已加载。本审查未部署、未操作真实库或GUI，未将direct public结果等同mode1已固定部署。

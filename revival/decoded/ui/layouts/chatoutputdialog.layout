@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/ChatBack" Name="ChatOutput/ChatOutputBox/Back">
+    <Property Name="UnifiedAreaRect" Value="{{0,-5},{1,-204},{0,305},{1,-72}}" />
+    <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    <Window Type="TaharezLook/LeftVertScrollRichEditbox" Name="ChatOutput/ChatOutputBox">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="ReadOnly" Value="True" />
+      <Property Name="LineSpace" Value="1" />
+      <Property Name="BlinkCaret" Value="True" />
+      <Property Name="MaxTextLength" Value="1073741823" />
+      <Property Name="UnifiedAreaRect" Value="{{0,2},{0,0},{1,0},{1,0}}" />
+      <Property Name="BackGroundEnable" Value="False" />
+      <Property Name="BlinkCaretTimeout" Value="0.5" />
+      <Property Name="TextParsingEnabled" Value="False" />
+      <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+      <Window Type="TaharezLook/ImageButton" Name="ChatOutput/ChatOutputBox/Back/DragBtn">
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl image:ZoomBtnHover" />
+        <Property Name="NormalImage" Value="set:MainControl image:ZoomBtnNormal" />
+        <Property Name="PushedImage" Value="set:MainControl image:ZoomBtnPushed" />
+        <Property Name="UnifiedMaxSize" Value="{{0,6},{0,6}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,6},{0,6}}" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{1,-7},{0,1},{1,-1},{0,7}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ChatOutput/ChatOutputBox/ControlPanel">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="TextColours" Value="tl:FFDCF6CE tr:FFDCF6CE bl:FF10BBD3 br:FF10BBD3" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{1,-66},{1,-24},{1,-1},{1,-1}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ImageButton" Name="ChatOutput/ChatOutputBox/ControlPanel/Switch">
+          <Property Name="Tooltip" Value="切换为外置聊天窗" />
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:SwitchHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:SwitchNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:SwitchPushed" />
+          <Property Name="DisabledImage" Value="set:MainControl image:SwitchEnablel" />
+          <Property Name="UnifiedMaxSize" Value="{{0,16},{0,16}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,16},{0,16}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,10},{0,4},{0,26},{0,20}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="ChatOutput/ChatOutputBox/ControlPanel/SwitchSearch">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Tooltip" Value="查找聊天记录" />
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:FindHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:FindNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:FindPushed" />
+          <Property Name="DisabledImage" Value="set:MainControl image:FindEnable" />
+          <Property Name="UnifiedMaxSize" Value="{{0,16},{0,16}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,16},{0,16}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,28},{0,4},{0,44},{0,20}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="ChatOutput/ChatOutputBox/ControlPanel/Lock">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Tooltip" Value="点击切换为锁屏" />
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:LockHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:LockNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:LockPushed" />
+          <Property Name="DisabledImage" Value="image:LockEnable" />
+          <Property Name="UnifiedMaxSize" Value="{{0,16},{0,16}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,16},{0,16}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,46},{0,4},{0,62},{0,20}}" />
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="ChatOutput/ChatOutputBox/ControlPanel/UnLock">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Tooltip" Value="切换为滚屏" />
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:UnLockHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:UnLockNormal" />
+          <Property Name="PushedImage" Value="image:UnLockPushed" />
+          <Property Name="DisabledImage" Value="image:UnlockEnable" />
+          <Property Name="UnifiedMaxSize" Value="{{0,16},{0,16}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,16},{0,16}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,46},{0,4},{0,62},{0,20}}" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

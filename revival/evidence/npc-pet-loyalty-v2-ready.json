@@ -1,0 +1,74 @@
+{
+  "status": "deployed_and_independently_verified",
+  "production_inputs": {
+    "npc_recovery.py": "e9a450596b38c8434139deb186f27f32ac1eb6cb916248a13ef79a9a43c17bab",
+    "design/npc-pet-loyalty-v2.json": "09cc5d0572dc56b439b1ab16d132b70fb4e36390ca8642db5d67821d5af7ea29"
+  },
+  "review": "reviews/npc-loyalty-quote-20261024/REVIEW.md",
+  "review_result": {
+    "standards_hard": 0,
+    "standards_heuristic": 0,
+    "spec_missing": 0,
+    "spec_extra": 0,
+    "spec_wrong": 0
+  },
+  "methods": "research + diagnosing-bugs + tdd public plan/settle then actual Owner + codebase-design + fixed code-review two axes + writing-for-agents",
+  "checks": {
+    "original_quote_cases": 80,
+    "public_domain_groups": 6,
+    "invalid_startup_recipes": 34,
+    "actual_owner_groups": 6,
+    "known_power_price_oracles": {
+      "0": 900,
+      "9": 1260,
+      "1139": 1260
+    },
+    "old_two_trainers": "pass",
+    "inn_resource_regression_checks": 12
+  },
+  "startup": "existing npc_gameplay.prepare freezes new loyalty rules; 14480 BASE also needs the narrowly reviewed shared guard removal below",
+  "schema_changes": false,
+  "history_migration": false,
+  "fingerprint_contract": "unchanged npc.1; old paid first/current-only without repricing",
+  "new_receipt_detail": "existing per-pet before facts plus loyalty_quote fee_recipe/power/remainder/unit_fee/source/deficit/contribution",
+  "verification_support": [
+    "diagnose_npc_loyalty_quote.py",
+    "verify_npc_loyalty_quote.py",
+    "verify_npc_loyalty_quote_runtime.py",
+    "evidence/reviews/npc-loyalty-quote-20261024/base/npc_recovery.py"
+  ],
+  "acceptance": "run exact domain and actual runtime scripts under immutable candidate, redirect only output sinks; preserve all existing live functionality and actual storage paths",
+  "exclude_from_current_private_release": "historical14480 private release excluded this slice; loyalty48572 now inherits it through the explicit reviewed three-input update",
+  "deployed": true,
+  "live_database_modified": false,
+  "native_gui_verified": false,
+  "commercial_capacity_verified": false,
+  "production_inputs_scope": "two NPC-owned inputs only, not the complete deployment closure",
+  "shared_integration_required": {
+    "file": "runtime_storage.py",
+    "function": "npc_recover_resources",
+    "delta": "from exact14480 BASE remove only kind!=1 + _require_unmigrated_operation two lines; preserve all other BASE behavior",
+    "basis": "RESOURCE_SHARED_RUNTIME_INTEGRATION.md and RESOURCE_NPC_NEXT_BATCH_PLAN.md",
+    "exact_candidate_acceptance_required": true
+  },
+  "actual_owner_verification_context": "current workspace with that guard already removed; not private-story14480 BASE",
+  "exact_candidate": {
+    "release": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-loyalty-20261023T193742Z",
+    "base_release": "D:\\神雕侠侣\\revival\\runtime\\deployments\\private-story-20261023T190051Z",
+    "complete_candidate_inputs": {
+      "npc_recovery.py": "e9a450596b38c8434139deb186f27f32ac1eb6cb916248a13ef79a9a43c17bab",
+      "runtime_storage.py": "7d27f9c22b9eed3aa2eb7b67e63d51b208f61025f616ea411fb555bcb5b08df1",
+      "design/npc-pet-loyalty-v2.json": "09cc5d0572dc56b439b1ab16d132b70fb4e36390ca8642db5d67821d5af7ea29"
+    },
+    "acceptance_input_sha256": "e89add66f12a15daf2dea77163162ab85e9ec49fb722480d8aa866e4a34b6e4f",
+    "owner_acceptance": "npc-loyalty-candidate-owner-20261024",
+    "domain_groups": 6,
+    "invalid_startup_cases": 34,
+    "actual_owner_groups": 6,
+    "root_shared_review_required": false,
+    "root_shared_review": "reviews/npc-loyalty-release-20261024-r2/REVIEW-root.md"
+  },
+  "deployed_pid": 48572,
+  "deployed_release": "runtime/deployments/npc-loyalty-20261023T193742Z",
+  "deployment_owner_verification": "npc-loyalty-deployment-owner-verification.json"
+}

@@ -1,0 +1,26 @@
+{
+  "revision": "2026-10-23.pet-skill-learning.3",
+  "scope": "ordinary book learning with certification and persistent expansion progress; learned IDs retain pet-skills-v1 state format",
+  "provenance": "client_verified identities, protection count, extra failure points, thresholds and wire; guide_supported chance table; designed missing server state machine",
+  "generation": {"initial_progress": 0, "provenance": "designed for explicitly new pets only"},
+  "thresholds": "original item.cpetskillsuccessconfig.progress keyed by current learned-skill count; original UI verified; guarantee semantics remain designed",
+  "probability": {
+    "denominator": 10000,
+    "provenance": "guide_supported: official PC probability disclosure published2017-06-14; exact match to1.6.1 unproved; supersedes temporary flat250/1000 design",
+    "source": "https://sdxl.wanmei.com/news/gamebroad/20170614/203848.shtml",
+    "image": "https://sdxl.wanmei.com/resources/png/170614/10181497442517936.png",
+    "none": [10000,2000,1000,500,250,200,100,50,20,10,5,2],
+    "basic": [0,1000,2000,1000,500,250,200,100,50,20,10,5],
+    "both": [0,0,10000,2000,1000,500,250,200,100,50,20,10]
+  },
+  "certification": {"basic_template": 31254, "advanced_template": 31255, "per_attempt_quantity": 1, "maximum_protected": 2, "advanced_requires_basic": true, "selection": "optional exact current learned distinct IDs; selected ID requires corresponding certificate; no-certificate empty pet may learn its first skill, empty pets cannot waste certificates"},
+  "failure_progress": {"base": 1, "basic_extra": 1, "advanced_extra": 3, "provenance": "base1 designed; extra1/3 from original item text; only eligible new-family expansion failure below current blood-color cap accumulates"},
+  "guarantee": "designed: current points at positive threshold before an eligible new-family attempt force append; append resets0; reaching threshold through this failure benefits the next attempt",
+  "replacement": "designed: preserve order; fixed server replacement draw modulo unprotected positions; when all protected and expansion fails, valid attempt consumes materials and increases progress but keeps learned IDs",
+  "upgrade": "in-place same-family upgrade; protected target rejected before consumption; upgrades and actions already at color cap leave progress unchanged",
+  "consumption": "designed: valid attempt consumes one book and one of each supplied certificate, including protected-all failure; invalid/duplicate/weaker intent consumes nothing; failed bound-book attempt does not bind until an actual learning succeeds",
+  "legacy": "unknown progress stays unknown; explicit one-time historical points required; old skill state and v1 receipts readable, no retroactive progress; temporary v2 algorithm was not published/deployed",
+  "transaction": "book/certificate debit, skill version, progress, optional pet binding, asset revision and receipt in current role lease transaction; preencode current replies before commit",
+  "source_research": "evidence/PET_SKILL_LEARNING_DECISION.md",
+  "native_gui_verified": false
+}

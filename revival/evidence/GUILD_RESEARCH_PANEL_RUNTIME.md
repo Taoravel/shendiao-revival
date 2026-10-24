@@ -1,0 +1,23 @@
+# 帮派研究列表的原生显示链
+
+读取条件：整合研究列表刷新、发布GuildProjection新字段或消费研究奖励后的通知前。准确候选与验证结果查guild-research-panel-current-review.json；研究结算/家族当前集成指针须指同一候选，避免混用旧Store与新GuildRuntime。完整家族帮派、维护/建筑/NPC及其他社交仍继续恢复。
+
+## 当前行为
+
+已知研究状态经原0xc563a(selected i32+五i32列表)发送。GuildProjection只增加kw-only可选research，不改变旧三个位置参数；Store在原租约/帮派-家族及个人双代次授权的同一读取事务里取得当前状态。GuildRuntime.packets在收件人Owner准备逻辑消息时编码当前绝对值，连接继续独占RC4/MPPC和发送流。既有登录presence、原帮派查询、研究选择/其他组织刷新自然走该路径，不依赖个人七项修炼profile是否已经初始化。
+
+研究奖励提交后，由同一帮派Owner读取当前audience并投递既有GuildWake。旧奖励receipt只作幂等结果；收到wake时重新读取当前选择/等级/经验，所以切换研究或已有新奖励后重放旧事件不会回显旧面板。展示读取异常只记录延后，查询/重登重建当前投影；真正奖励提交仍在展示错误处理之外，失败按原事务抛出并回滚。第22批r1两轴独立发现SQLite展示错误漏捕P2，公开Peer/Owner先红后修，r1证据保留，修复只扩大提交后sqlite3.Error处理。
+
+当前研究未知或未配置recipe时，原空selected0/list0响应只失效客户端旧cache，不创建14条0级数据、不初始化/删除DB、不推定旧档业务状态。原基础帮派更新0x148c7e0不会清研究cache；原离帮清理会清，但不能拿旧离帮消息替代每次当前投影的缓存失效。旧成员/旧家族代次的排队wake在原授权Seam拒绝，不得清理已经属于新世代的视图。
+
+## 原证据与实际验证范围
+
+原构造0xe918b0写type0xc563a，marshal0xe92110；原0x149a410完整接收函数在GUI实例均为空的临时映像中执行，验证选择与非空研究列表替换、空列表清理、再填充。原list构造/释放使用主机分配Adapter，wire codec未替换。SLeaveFaction0x14a0220→149fdd0→1499380链只执行相关selected清零及research list清理两切片，没有声称整个离帮GUI流程已跑。证据guild-research-panel-native-disasm.txt与verify_guild_research_refresh_native。
+
+verify_guild_research_panel通过实际GameRuntime/ConnectionOwner认证、原RC4/MPPC及目标邮箱验证登录/查询/选择/奖励/历史重放、展示ValueError及SQLite错误、真正提交触发失败回滚、重启恢复、退出/重入双代次过滤、旧租约/recipe拒绝、未知只清cache。生产曲线仍无默认，经验源均为临时可信夹具；没有用这些调用证明正式维护资格。完整固定回归与独立两轴结果以当前指针绑定的report为准。
+
+## 后续正式接入
+
+研究参数和真实正常维护事件仍按GUILD_RESEARCH_MAIN_HANDOFF；低储备不增XP、练功房研究力和研究cap由维护/建筑唯一写者实施。NPC服务120/c563b请求没有注册或扩大SOCIAL_TYPES；仍需main提供完整组织地址/驻地代次、角色状态、当前NPC服务证明及共享路由。本批未编辑main共享入口、未改数值baseline或生产recipe、未部署/启停/开游戏/真人DB/战斗，真实GUI与商业容量尚待验收。
+
+方法：codebase-design复用原收件人投影与组织Owner；tdd四条实际红灯（缺codec、登录缺刷新、奖励缺通知、未知缺清cache）及审查SQLite反例先红修复；diagnosing-bugs以原基础/离帮/研究三消费者和实际Peer信号区分缓存责任；code-review独立固定Standards/Spec；writing-for-agents共置当前规则、原消费范围与完成条件。临时sentinel/output buffer冲突只属夹具修正，未冒称玩法红灯。

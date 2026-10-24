@@ -1,0 +1,12 @@
+{
+  "revision": "2026-10-23.pet-skill-expiry.1",
+  "clock": {"unit": "unix_milliseconds", "minimum": 0, "maximum": 32535215999999, "source_status": "client_verified"},
+  "empty_skill_id": 200534,
+  "expiry_comparison": "now_ms > deadline_ms",
+  "source_status": "client_verified",
+  "persistence": {"missing_row": "unknown", "new_pet": "explicit_empty_map", "source_status": "designed"},
+  "learning": {"expired_slot": "reuse_before_expansion", "permanent_book": "remove_replaced_expiry", "source_status": "designed"},
+  "duration": null,
+  "evidence": "evidence/pet-skill-clock-expiry-native.json",
+  "limits": ["No original cosmetic-book duration established", "Clock advancement between synchronization messages not established", "No live client acceptance"]
+}

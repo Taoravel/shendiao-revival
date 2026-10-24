@@ -1,0 +1,76 @@
+{
+  "source_status": "client_verified",
+  "confirm_send_cases": [
+    {
+      "pet": 1,
+      "key": 7,
+      "body": "00000007000000010000000000000001"
+    },
+    {
+      "pet": 7,
+      "key": 11,
+      "body": "0000000b000000010000000000000007"
+    },
+    {
+      "pet": 2147483647,
+      "key": 2147483647,
+      "body": "7fffffff00000001000000007fffffff"
+    }
+  ],
+  "notice_cases": [
+    {
+      "type": "0xc1775",
+      "message": 145133,
+      "parameters": [],
+      "body": "000236ed0000000000"
+    },
+    {
+      "type": "0xc1775",
+      "message": 145135,
+      "parameters": [
+        "外功",
+        "7",
+        "19"
+      ],
+      "body": "000236ef00000000030416599f520237000431003900"
+    },
+    {
+      "type": "0xc1775",
+      "message": 145135,
+      "parameters": [
+        "体力",
+        "12",
+        "0"
+      ],
+      "body": "000236ef000000000304534f9b520431003200023000"
+    },
+    {
+      "type": "0xc1775",
+      "message": 145136,
+      "parameters": [
+        "栗子年糕"
+      ],
+      "body": "000236f00000000001081768505b745ed57c"
+    },
+    {
+      "type": "0xc1775",
+      "message": 145137,
+      "parameters": [],
+      "body": "000236f10000000000"
+    },
+    {
+      "type": "0xc1775",
+      "message": 145139,
+      "parameters": [],
+      "body": "000236f30000000000"
+    }
+  ],
+  "confirm": "original10a6330 computes forecast,145134 local confirmation callback10892f0; actual1089325..1089350 constructs CUseItem(key,1,u64pet)",
+  "notice": "original SSendMsgNotify ctorf14ae0/typec1775/marshalf14c60/decoderf14b70; two BE32 id/default-extra0 then compact vector<Octets UTF16>; nonempty original decoded vector is re-marshaled unchanged",
+  "parameters": "original145135 uses attribute CString2707..2711, actual increment, remaining20-count;145136 uses item display name",
+  "limits": [
+    "no GUI/rendered message verification",
+    "extra field semantic not inferred; original constructor default0 retained",
+    "client local confirmation has no server-side pending token; server current-state validation remains required"
+  ]
+}

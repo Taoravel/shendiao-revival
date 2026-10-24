@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="OtherStallInfDlg">
+    <Property Name="Font" Value="simhei-12" />
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.3325,0},{0.1625,0},{0.3325,270},{0.1625,408}}" />
+    <Window Type="TaharezLook/RichEditbox" Name="OtherStallInfDlg/ChatInputBox">
+      <Property Name="LineSpace" Value="1" />
+      <Property Name="BlinkCaret" Value="True" />
+      <Property Name="MaxTextLength" Value="1073741823" />
+      <Property Name="UnifiedAreaRect" Value="{{0,16},{0,367},{0,183},{0,389}}" />
+      <Property Name="BlinkCaretTimeout" Value="0.5" />
+      <Property Name="TextParsingEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="OtherStallInfDlg/Emote">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:MainControl image:EmoteHover" />
+      <Property Name="NormalImage" Value="set:MainControl image:EmoteNormal" />
+      <Property Name="PushedImage" Value="set:MainControl image:EmotePushed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,24},{0,24}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,24},{0,24}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0,185},{0,367},{0,209},{0,391}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="OtherStallInfDlg/Send">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="发送" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0,209},{0,368},{0,249},{0,392}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="OtherStallInfDlg/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,162},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,162},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.198519,0},{0.0254289,0},{0.798519,0},{0.0916054,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="OtherStallInfDlg/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="摊位信息" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,60},{0,1},{0,157},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="OtherStallInfDlg/Top">
+      <Property Name="UnifiedAreaRect" Value="{{0,15},{0,47},{0,253},{0,134}}" />
+      <Window Type="TaharezLook/RichEditbox" Name="OtherStallInfDlg/StallBoder">
+        <Property Name="LineSpace" Value="1" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0,7},{0,9},{0.05,222.1},{0.05,77.75}}" />
+        <Property Name="BackGroundEnable" Value="False" />
+        <Property Name="BlinkCaretTimeout" Value="0.5" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Figure1" Name="OtherStallInfDlg/Top/Title">
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.241176,0},{-0.0977013,0},{0.741176,0},{-0.178161,26}}" />
+        <Window Type="TaharezLook/StaticText" Name="OtherStallInfDlg/Top/Title/">
+          <Property Name="Text" Value="摊位公告" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.284874,0},{0.121053,0},{0.805882,0},{1.06842,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="OtherStallInfDlg/Bot">
+      <Property Name="UnifiedAreaRect" Value="{{0,15},{0,137},{0,253},{0,366}}" />
+      <Window Type="TaharezLook/RichEditbox" Name="OtherStallInfDlg/ChatHistory">
+        <Property Name="LineSpace" Value="1" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="1073741823" />
+        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,5},{0.05,224.5},{0.05,215.5}}" />
+        <Property Name="BackGroundEnable" Value="False" />
+        <Property Name="BlinkCaretTimeout" Value="0.5" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

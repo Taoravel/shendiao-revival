@@ -1,0 +1,234 @@
+CLASS CCreatCommonGroup VTABLE 0x2273728 SERIALIZER 0xd76170
+ID dword ptr [eax + 4], 0xc4e46
+CLASS CSendCommonGroupName VTABLE 0x2273cd4 SERIALIZER 0xe479c0
+ID dword ptr [esi + 4], 0xc4e5c
+0xe479d9 lea eax, [esi + 0xc]
+0xe47a1c call 0x770a30
+0xe47a24 lea edx, [esi + 8]
+CLASS CSearchCommonGroup VTABLE 0x2273bf8 SERIALIZER 0xe47720
+ID dword ptr [esi + 4], 0xc4e48
+0xe4775f lea ecx, [esi + 0xc]
+0xe477a2 call 0x770a30
+0xe477aa lea eax, [esi + 8]
+0xe477cd call 0x7709b0
+0xe477d8 call 0x770960
+CLASS CRequestJoinGroup VTABLE 0x2273b1c SERIALIZER 0xe47520
+ID dword ptr [eax + 4], 0xc4e4a
+0xe4752f call 0x7709b0
+CLASS CResponseJoinGroup VTABLE 0x2273b74 SERIALIZER 0xe47560
+ID dword ptr [eax + 4], 0xc4e4b
+0xe47563 mov eax, dword ptr [esi + 8]
+0xe4756e call 0x770960
+0xe47573 mov ecx, dword ptr [esi + 0x14]
+0xe47576 mov edx, dword ptr [esi + 0x10]
+0xe4757d call 0x7709b0
+0xe47582 mov eax, dword ptr [esi + 0x1c]
+0xe47585 mov ecx, dword ptr [esi + 0x18]
+0xe4758c call 0x7709b0
+CLASS CAppointOrCancelManager VTABLE 0x22734c0 SERIALIZER 0xe468b0
+ID dword ptr [eax + 4], 0xc4e58
+0xe468b3 mov eax, dword ptr [esi + 0xc]
+0xe468b6 mov ecx, dword ptr [esi + 8]
+0xe468c2 call 0x7709b0
+0xe468c7 mov edx, dword ptr [esi + 0x14]
+0xe468ca mov eax, dword ptr [esi + 0x10]
+0xe468d1 call 0x7709b0
+0xe468d6 mov ecx, dword ptr [esi + 0x1c]
+0xe468d9 mov edx, dword ptr [esi + 0x18]
+0xe468e0 call 0x7709b0
+CLASS CExpelCommonGroupMember VTABLE 0x22737d8 SERIALIZER 0xe46f20
+ID dword ptr [eax + 4], 0xc4e55
+0xe46f23 mov eax, dword ptr [esi + 0xc]
+0xe46f26 mov ecx, dword ptr [esi + 8]
+0xe46f32 call 0x7709b0
+0xe46f37 mov edx, dword ptr [esi + 0x14]
+0xe46f3a mov eax, dword ptr [esi + 0x10]
+0xe46f41 call 0x7709b0
+CLASS CLeaveCommonGroup VTABLE 0x22738b4 SERIALIZER 0xe47030
+ID dword ptr [eax + 4], 0xc4e4f
+0xe4703f call 0x7709b0
+CLASS CChangeCommonGroupConfig VTABLE 0x2273620 SERIALIZER 0xe46bc0
+ID dword ptr [esi + 4], 0xc4e4e
+0xe46bcb mov eax, dword ptr [ebp + 0xc]
+0xe46bce mov ecx, dword ptr [ebp + 8]
+0xe46bd6 call 0x7709b0
+0xe46bdb mov edx, dword ptr [ebp + 0x10]
+0xe46be1 call 0x770960
+0xe46be6 mov eax, dword ptr [ebp + 0x14]
+0xe46bec call 0x770960
+0xe46bf1 cmp dword ptr [ebp + 0x30], 8
+0xe46bf5 mov eax, dword ptr [ebp + 0x2c]
+0xe46bfa mov ecx, dword ptr [ebp + 0x1c]
+0xe46c03 lea edx, [ebp + 0x1c]
+0xe46c0d lea eax, [esi + 0xc]
+0xe46c50 call 0x770a30
+0xe46c58 lea eax, [esi + 8]
+0xe46c70 cmp dword ptr [ebp + 0x4c], 8
+0xe46c74 mov eax, dword ptr [ebp + 0x48]
+0xe46c79 mov ecx, dword ptr [ebp + 0x38]
+0xe46c82 lea edx, [ebp + 0x38]
+0xe46c8c lea eax, [esi + 0xc]
+0xe46cce call 0x770a30
+0xe46cd6 lea eax, [esi + 8]
+0xe46cef mov ecx, dword ptr [ebp + 0x50]
+0xe46cf5 call 0x770960
+CLASS CSendMessageToCommonGroup VTABLE 0x2283900 SERIALIZER 0xed7ec0
+ID dword ptr [esi + 4], 0xc4e4c
+0xed7eed call 0xed7e70
+0xed7f09 cmp dword ptr [esi + 0x20], 8
+0xed7f0d mov eax, dword ptr [esi + 0x1c]
+0xed7f12 mov ebx, dword ptr [esi + 0xc]
+0xed7f17 lea ebx, [esi + 0xc]
+0xed7f23 lea ecx, [esi + 0xc]
+0xed7f2f call ebp
+0xed7f61 call 0x770a30
+0xed7f69 lea eax, [esi + 8]
+0xed7f99 lea edx, [esi + 0xc]
+0xed7fa9 call ebp
+0xed7fd9 call 0x770a30
+0xed7fe1 lea edx, [esi + 8]
+0xed7ffd mov eax, dword ptr [esi + 0x44]
+0xed8000 mov ecx, dword ptr [esi + 0x40]
+0xed8007 call 0x7709b0
+0xed8015 call 0xed5b00
+CLASS SCreatCommonGroup VTABLE 0x2274038 SERIALIZER 0xe483a0
+ID dword ptr [esi + 4], 0xc4e47
+0xe483ac mov eax, dword ptr [esi + 0xc]
+0xe483af mov ecx, dword ptr [esi + 8]
+0xe483b7 call 0x7709b0
+0xe483bc cmp dword ptr [esi + 0x28], 8
+0xe483c0 mov eax, dword ptr [esi + 0x24]
+0xe483c5 mov ebx, dword ptr [esi + 0x14]
+0xe483ca lea ebx, [esi + 0x14]
+0xe483d0 lea edx, [esi + 0xc]
+0xe4840e call 0x770a30
+0xe48416 lea ecx, [esi + 8]
+CLASS SCreateCommonGroupResponse VTABLE 0x2274090 SERIALIZER 0xd7b9f0
+ID dword ptr [eax + 4], 0xc4e5b
+CLASS SAddToCommonGroup VTABLE 0x2273d94 SERIALIZER 0xe47ed0
+ID dword ptr [esi + 4], 0xc4e54
+0xe47ee7 call 0x7709b0
+0xe47f08 lea edx, [esi + 0xc]
+0xe47f4a call 0x770a30
+0xe47f52 lea edx, [esi + 8]
+0xe47f7e lea eax, [esi + 0xc]
+0xe47fbc call 0x770a30
+0xe47fc4 lea edx, [esi + 8]
+CLASS SLeaveCommonGroup VTABLE 0x22741dc SERIALIZER 0xe487b0
+ID dword ptr [eax + 4], 0xc4e50
+0xe487bf call 0x7709b0
+CLASS SSearchCommonGroup VTABLE 0x2274414 SERIALIZER 0xe490f0
+ID dword ptr [esi + 4], 0xc4e49
+0xe490f6 mov eax, dword ptr [ebp + 0xc]
+0xe490fb mov ecx, dword ptr [ebp + 8]
+0xe49125 call 0x7709b0
+0xe4912a cmp dword ptr [ebp + 0x28], 8
+0xe4912e mov eax, dword ptr [ebp + 0x24]
+0xe49133 mov ecx, dword ptr [ebp + 0x14]
+0xe4913c lea edx, [ebp + 0x14]
+0xe49146 lea eax, [esi + 0xc]
+0xe49189 call 0x770a30
+0xe49191 lea eax, [edi + 8]
+0xe491a9 cmp dword ptr [ebp + 0x44], 8
+0xe491ad mov eax, dword ptr [ebp + 0x40]
+0xe491b2 mov ecx, dword ptr [ebp + 0x30]
+0xe491bb lea edx, [ebp + 0x30]
+0xe491c5 lea eax, [esi + 0xc]
+0xe49207 call 0x770a30
+0xe4920f lea eax, [esi + 8]
+0xe49227 mov ecx, dword ptr [ebp + 0x48]
+0xe4922d call 0x770960
+0xe49232 cmp dword ptr [ebp + 0x64], 8
+0xe49236 mov eax, dword ptr [ebp + 0x60]
+0xe4923b mov ebp, dword ptr [ebp + 0x50]
+0xe49246 lea edx, [esi + 0xc]
+0xe49284 call 0x770a30
+0xe4928c lea ecx, [esi + 8]
+CLASS SSendMessageToCommonGroup VTABLE 0x2283cd0 SERIALIZER 0xee6270
+ID dword ptr [esi + 4], 0xc4e4d
+0xee62d7 lea eax, [esi + 0xc]
+0xee62e3 call ebp
+0xee6319 call 0x770a30
+0xee6321 lea eax, [edi + 8]
+0xee6355 lea eax, [edi + 0xc]
+0xee6361 call ebp
+0xee6393 call 0x770a30
+0xee639b lea eax, [ebp + 8]
+0xee63cf lea eax, [edi + 0xc]
+0xee6411 call 0x770a30
+0xee6419 lea eax, [ebp + 8]
+0xee643b call 0x7709b0
+0xee6440 mov ecx, dword ptr [esi + 4]
+0xee644d call 0x770090
+0xee6452 mov dword ptr [esi + 4], eax
+0xee6464 call 0x770440
+0xee6472 call 0xebabd0
+0xee6494 call 0xed5b00
+CLASS CommonGroupInfo VTABLE 0x2283994 SERIALIZER 0xeda410
+0xeda439 mov eax, dword ptr [ebp + 0xc]
+0xeda43c mov ecx, dword ptr [ebp + 8]
+0xeda447 call 0x7709b0
+0xeda44c mov edx, dword ptr [ebp + 0x14]
+0xeda44f mov eax, dword ptr [ebp + 0x10]
+0xeda456 call 0x7709b0
+0xeda45b cmp dword ptr [ebp + 0x30], 8
+0xeda45f mov eax, dword ptr [ebp + 0x2c]
+0xeda464 mov ecx, dword ptr [ebp + 0x1c]
+0xeda46d lea edx, [ebp + 0x1c]
+0xeda4a9 call 0x7706b0
+0xeda4ae mov ecx, dword ptr [esi + 4]
+0xeda4b9 call 0x770090
+0xeda4be mov dword ptr [esi + 4], eax
+0xeda4cd call 0x770440
+0xeda4d5 lea edx, [edi + 8]
+0xeda4ed lea eax, [ebp + 0x34]
+0xeda50d lea ecx, [ebp + 0x44]
+0xeda516 call 0xed9e60
+0xeda52f cmp dword ptr [ebp + 0x6c], 8
+0xeda533 mov eax, dword ptr [ebp + 0x68]
+0xeda538 mov ecx, dword ptr [ebp + 0x58]
+0xeda541 lea edx, [ebp + 0x58]
+0xeda579 call 0x7706b0
+0xeda57e mov ecx, dword ptr [esi + 4]
+0xeda589 call 0x770090
+0xeda58e mov dword ptr [esi + 4], eax
+0xeda59d call 0x770440
+0xeda5a5 lea eax, [edi + 8]
+0xeda5bd mov ecx, dword ptr [ebp + 0x70]
+0xeda5ce mov ecx, dword ptr [esi + 4]
+0xeda5dc call 0x770090
+0xeda5e1 mov dword ptr [esi + 4], eax
+0xeda5f3 call 0x770440
+0xeda5f8 mov eax, dword ptr [ebp + 0x74]
+0xeda611 mov ecx, dword ptr [esi + 4]
+0xeda617 call 0x770090
+0xeda61c mov dword ptr [esi + 4], eax
+0xeda62e call 0x770440
+CLASS CommonGroupMemberInfo VTABLE 0x22839bc SERIALIZER 0xeda2e0
+0xeda2e9 mov eax, dword ptr [ebp + 0xc]
+0xeda2ec mov ecx, dword ptr [ebp + 8]
+0xeda2f4 call 0x7709b0
+0xeda2f9 cmp dword ptr [ebp + 0x28], 8
+0xeda2fd mov eax, dword ptr [ebp + 0x24]
+0xeda302 mov edx, dword ptr [ebp + 0x14]
+0xeda30b lea ecx, [ebp + 0x14]
+0xeda348 call 0x7706b0
+0xeda34d mov ecx, dword ptr [esi + 4]
+0xeda358 call 0x770090
+0xeda35d mov dword ptr [esi + 4], eax
+0xeda36c call 0x770440
+0xeda374 lea edx, [edi + 8]
+0xeda38d mov eax, dword ptr [ebp + 0x2c]
+0xeda3a6 mov ecx, dword ptr [esi + 4]
+0xeda3ac call 0x770090
+0xeda3b1 mov dword ptr [esi + 4], eax
+0xeda3c3 call 0x770440
+0xeda3c8 mov edx, dword ptr [ebp + 0x30]
+0xeda3d9 mov ecx, dword ptr [esi + 4]
+0xeda3e7 call 0x770090
+0xeda3ec mov dword ptr [esi + 4], eax
+0xeda3fe call 0x770440
+CLASS SCommonGroupInfoInit VTABLE 0x22839d0 SERIALIZER 0xedb560
+ID dword ptr [eax + 4], 0xc4e64
+0xedb586 call 0xedb500
+0xedb5ab call 0xedb1f0

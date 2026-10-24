@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="TianqiList">
+    <Property Name="Font" Value="msyh-16" />
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.3075,0},{0.301667,0},{0.18875,427},{0.306667,244}}" />
+    <Window Type="TaharezLook/MultiColumnList" Name="TianqiList/TianqiListFrame/TianqiListMember">
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0.173387,0},{0,290},{0.189076,176}}" />
+      <Property Name="ColumnHeader" Value="text:成员 width:{0.4,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:等级 width:{0.3,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:门派 width:{0.3,-199} id:2" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TianqiList/Name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Title" Value="True" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.360656,0},{0.0483871,0},{0.957377,0},{0.200669,-15}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+  </Window>
+</GUILayout>

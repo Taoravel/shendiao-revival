@@ -1,0 +1,418 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="PetSouldianhua">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.19,0},{0,64},{0.12875,569},{0,506}}" />
+    <Window Type="TaharezLook/StaticText" Name="PetSouldianhua/Title">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="元魂珠点化" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="85" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.244231,0},{0.0294118,0},{0.628846,0},{0.081448,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="PetSouldianhua/left">
+      <Property Name="UnifiedAreaRect" Value="{{0.0365385,0},{0.104072,0},{0.0365385,200},{0.121053,369}}" />
+      <Window Type="TaharezLook/StaticImage" Name="PetSouldianhua/left/PetBack">
+        <Property Name="Image" Value="set:MainControl6 image:PetPropertyBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,126},{0,125}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,126},{0,125}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.21,0},{0.0397878,0},{0.84,0},{0.371353,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="PetSouldianhua/left/PetBack/name">
+          <Property Name="Text" Value="宝宝绑定" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="31.2378" />
+          <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+          <Property Name="BorderColour" Value="FF5F4100" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="WordWrapRightAligned" />
+          <Property Name="VertFormatting" Value="TopAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0.65873,0},{0.04,0},{0.952381,0},{0.304,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetSouldianhua/left/PetBack/lock">
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0555556,0},{0.048,0},{0.0396825,14},{0.04,20}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSouldianhua/left/PetBack/level">
+          <Property Name="Text" Value="155级" />
+          <Property Name="HorzExtent" Value="38" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+          <Property Name="BorderColour" Value="FF5F4100" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0.595238,0},{0.824,0},{0.952381,0},{0.968,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Combobox" Name="PetSouldianhua/left/recent">
+        <Property Name="ReadOnly" Value="True" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.31,0},{0.395225,0},{0.965,0},{0.790451,0}}" />
+        <Property Name="MaxEditTextLength" Value="2147483647" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetSouldianhua/left/re">
+        <Property Name="Text" Value="当前宠物" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+        <Property Name="BorderColour" Value="FF5F4100" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.03,0},{0.395225,0},{0.35,0},{0.456233,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="PetSouldianhua/Upgrade/back/drop1">
+        <Property Name="UnifiedAreaRect" Value="{{0.035,0},{0.05,160},{0.05,183},{0.05,352}}" />
+        <Window Type="TaharezLook/StaticText" Name="PetSouldianhua/Upgrade/back/drop/Need1">
+          <Property Name="Text">1.点化是为元魂珠附加一个魂技。
+2.每个元魂珠最多可点化次数为3次，请慎重点化。
+3.有魂技的元魂珠再次点化将刷新魂技且新魂技等级为1。
+4.点击                           。</Property>
+          <Property Name="HorzExtent" Value="169" />
+          <Property Name="VertExtent" Value="109.332" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="VertFormatting" Value="TopAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0430108,0},{0.0260417,0},{0,179},{0,116}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/LinkText" Name="PetSouldianhua/Upgrade/back/drop/Need1/Link">
+            <Property Name="Text" Value="查看魂技列表" />
+            <Property Name="UserID" Value="13093" />
+            <Property Name="UnifiedAreaRect" Value="{{0.22807,0},{0.846847,0},{0.719298,0},{1,0}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/ScrollStaticText" Name="PetSouldianhua/Upgrade/back/drop1/txt">
+          <Property Name="Text" Value="5.使用魂技符参与点化，将固定获得魂技符上的魂技。" />
+          <Property Name="HorzExtent" Value="168" />
+          <Property Name="VertExtent" Value="31.2378" />
+          <Property Name="TextColours" Value="tl:FFFF33FF tr:FFFF33FF bl:FFFF33FF br:FFFF33FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="VertFormatting" Value="TopAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0430108,0},{0.614583,0},{0.978495,0},{0.9375,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="PetSouldianhua/Upgrade/back">
+      <Property Name="UnifiedAreaRect" Value="{{0.423077,0},{0.104072,0},{0.2925,350},{0.121053,369}}" />
+      <Window Type="TaharezLook/Figure" Name="PetSouldianhua/Upgrade/back/title">
+        <Property Name="UnifiedAreaRect" Value="{{0.170213,0},{0,5},{0.159989,189},{0,20}}" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Window Type="TaharezLook/StaticText" Name="PetSouldianhua/Upgrade/back/title/name">
+          <Property Name="Text" Value="请选择宠物身上元魂珠" />
+          <Property Name="HorzExtent" Value="131" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003679" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.311828,0},{-0.133333,0},{1.05376,0},{0,18}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="PetSouldianhua/Upgrade/back/pagback">
+        <Property Name="UnifiedAreaRect" Value="{{0.0283688,0},{0,101},{0.968085,0},{0,203}}" />
+        <Window Type="TaharezLook/ScrollablePane" Name="PetSouldianhua/Upgrade/back/pagback/List">
+          <Property Name="ContentArea" Value="l:-2 t:-2 r:234 b:187" />
+          <Property Name="HorzStepSize" Value="0.1" />
+          <Property Name="VertStepSize" Value="0.1" />
+          <Property Name="HorzOverlapSize" Value="0.01" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0150943,0},{0.0196078,0},{0.0150943,275},{0.00847458,96}}" />
+          <Property Name="VertOverlapSize" Value="0.01" />
+          <Property Name="HorzScrollPosition" Value="0" />
+          <Property Name="VertScrollPosition" Value="0" />
+          <AutoWindow NameSuffix="__auto_container__">
+            <Property Name="ContentArea" Value="l:-2 t:-2 r:234 b:187" />
+            <Property Name="ChildExtentsArea" Value="l:-2 t:-2 r:234 b:187" />
+            <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/pagback/List/Item0">
+              <Property Name="UnifiedAreaRect" Value="{{-0.0078125,0},{-0.0212766,0},{0.0259259,39},{-0.00934579,47}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/pagback/List/Item1">
+              <Property Name="UnifiedAreaRect" Value="{{0.0259259,38},{-0.0212766,0},{0.0259259,86},{-0.00934579,47}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/pagback/List/Item2">
+              <Property Name="UnifiedAreaRect" Value="{{0.0259259,85},{-0.0212766,0},{-0.185185,187},{-0.00934579,47}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/pagback/List/Item3">
+              <Property Name="UnifiedAreaRect" Value="{{-0.185185,186},{-0.0212766,0},{-0.185185,234},{-0.00934579,47}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/pagback/List/Item4">
+              <Property Name="UnifiedAreaRect" Value="{{-0.185185,233},{-0.0212766,0},{-0.185185,281},{-0.00934579,47}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/pagback/List/Item5">
+              <Property Name="UnifiedAreaRect" Value="{{-0.0078125,0},{-0.00934579,46},{0.074074,27},{-0.00934579,94}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/pagback/List/Item6">
+              <Property Name="UnifiedAreaRect" Value="{{0.0259259,38},{-0.00934579,46},{0.0259259,86},{-0.00934579,94}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/pagback/List/Item7">
+              <Property Name="UnifiedAreaRect" Value="{{0.0259259,85},{-0.00934579,46},{-0.185185,187},{-0.00934579,94}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/pagback/List/Item8">
+              <Property Name="UnifiedAreaRect" Value="{{-0.185185,186},{-0.00934579,46},{-0.185185,234},{-0.00934579,94}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/pagback/List/Item9">
+              <Property Name="UnifiedAreaRect" Value="{{-0.185185,233},{-0.00934579,46},{-0.185185,281},{-0.00934579,94}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/pagback/List/Item15">
+              <Property Name="UnifiedAreaRect" Value="{{-0.0078125,0},{-0.00934579,140},{0.122222,15},{-0.00934579,188}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/pagback/List/Item16">
+              <Property Name="UnifiedAreaRect" Value="{{0.0259259,38},{-0.00934579,140},{0.0259259,86},{-0.00934579,188}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/pagback/List/Item17">
+              <Property Name="UnifiedAreaRect" Value="{{0.0259259,85},{-0.00934579,140},{-0.185185,187},{-0.00934579,188}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/pagback/List/Item18">
+              <Property Name="UnifiedAreaRect" Value="{{-0.185185,186},{-0.00934579,140},{-0.185185,234},{-0.00934579,188}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/pagback/List/Item19">
+              <Property Name="UnifiedAreaRect" Value="{{-0.185185,233},{-0.00934579,140},{-0.185185,281},{-0.00934579,188}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/pagback/List/Item10">
+              <Property Name="UnifiedAreaRect" Value="{{-0.0078125,0},{-0.00934579,93},{0.0222222,40},{-0.00934579,141}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/pagback/List/Item11">
+              <Property Name="UnifiedAreaRect" Value="{{0.0259259,38},{-0.00934579,93},{0.0259259,86},{-0.00934579,141}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/pagback/List/Item12">
+              <Property Name="UnifiedAreaRect" Value="{{0.0259259,85},{-0.00934579,93},{-0.185185,187},{-0.00934579,141}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/pagback/List/Item13">
+              <Property Name="UnifiedAreaRect" Value="{{-0.185185,186},{-0.00934579,93},{-0.185185,234},{-0.00934579,141}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/pagback/List/Item14">
+              <Property Name="UnifiedAreaRect" Value="{{-0.185185,233},{-0.00934579,93},{-0.185185,281},{-0.00934579,141}}" />
+            </Window>
+          </AutoWindow>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="PetSouldianhua/Upgrade/back/Current/back">
+        <Property Name="Image" Value="set:MainControl3 image:LuckyWheelMiddleBox" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,66},{0,68}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,66},{0,68}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,21},{0.607427,0},{0,87},{0.0526316,277}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/Current/back/item">
+          <Property Name="UnifiedAreaRect" Value="{{0.318182,0},{0.161765,0},{0.21875,53},{0.16661,46}}" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="PetSouldianhua/Upgrade/back/pagback1">
+        <Property Name="UnifiedAreaRect" Value="{{0.0283688,0},{0,21},{0.971631,0},{0,79}}" />
+        <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/pagback1/Item0">
+          <Property Name="UnifiedAreaRect" Value="{{0.018797,0},{0.0689655,0},{0.199248,0},{0.293103,35}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/pagback1/Item1">
+          <Property Name="UnifiedAreaRect" Value="{{0.199248,0},{0.0689655,0},{0.379699,0},{0.344827,32}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/pagback1/Item2">
+          <Property Name="UnifiedAreaRect" Value="{{0.379699,0},{0.0689655,0},{0.56015,0},{0.344827,32}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/pagback1/Item3">
+          <Property Name="UnifiedAreaRect" Value="{{0.56015,0},{0.0689655,0},{0.740601,0},{0.413793,28}}" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/Upgrade/back/pagback1/Item4">
+          <Property Name="UnifiedAreaRect" Value="{{0.740601,0},{0.0689655,0},{0.921053,0},{0.465517,25}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="PetSouldianhua/Upgrade/back/pagback1/3">
+          <Property Name="Image" Value="set:MainControl13 image:01" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,21},{0,48}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,21},{0,48}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.917293,0},{0.0344828,0},{0.996241,0},{0.862069,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetSouldianhua/Upgrade/back/Current/Name">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003679" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0248227,0},{0,300},{0,103},{0,318}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="PetSouldianhua/Upgrade/back/Materialback/button">
+        <Property Name="Text" Value="点     化" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,169},{0.05,323},{0.05,250},{0.05,347}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetSouldianhua/Upgrade/back/NeedMoney">
+        <Property Name="Text" Value="需要体力" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0248227,0},{0.877984,0},{0.219858,0},{0.2,276}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetSouldianhua/Upgrade/back/MoneyBack">
+        <Property Name="Text" Value="23000" />
+        <Property Name="HorzExtent" Value="40" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0.219858,0},{0.938992,0},{0.539007,0},{0.986737,0}}" />
+        <Window Type="TaharezLook/StaticImage" Name="PetSouldianhua/Upgrade/back/MoneyBack/Xianjin">
+          <Property Name="Image" Value="set:MainControl image:Xianjin" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.744444,0},{-0.0555556,0},{0.955556,0},{1,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Figure" Name="PetSouldianhua/Upgrade/back/title1">
+        <Property Name="UnifiedAreaRect" Value="{{0.170213,0},{0.05,64},{0.358925,133},{0.05,79}}" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Window Type="TaharezLook/StaticText" Name="PetSouldianhua/Upgrade/back/title/name1">
+          <Property Name="Text" Value="请选择包裹内的元魂珠" />
+          <Property Name="HorzExtent" Value="131" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003679" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,92},{-0.2,0},{0,230},{0,17}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="PetSouldianhua/RemoveStar/back/Image">
+        <Property Name="Image" Value="set:MainControl image:SellItemBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,127},{0,55}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,127},{0,55}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,110},{0.591512,0},{0,237},{0.737401,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/RemoveStar/back/Image/Item">
+          <Property Name="UnifiedAreaRect" Value="{{0,2},{0,4},{0,50},{0,52}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSouldianhua/RemoveStar/back/Image/Name">
+          <Property Name="Text" Value="点化石" />
+          <Property Name="HorzExtent" Value="39" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.409449,0},{0.109091,0},{0.976378,0},{0.436364,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSouldianhua/RemoveStar/back/Image/Num">
+          <Property Name="Text" Value="1/1" />
+          <Property Name="HorzExtent" Value="23" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.401575,0},{0.545455,0},{0.968504,0},{0.359091,28}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="PetSouldianhua/RemoveStar/back/Buy">
+        <Property Name="Text" Value="购买" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.847518,0},{0,239},{0.98227,0},{0,262}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetSouldianhua/Upgrade/back/NeedMoney1">
+        <Property Name="Text" Value="需要银两" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0248227,0},{0.941645,0},{0.219858,0},{0.25,281}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetSouldianhua/Upgrade/back/MoneyBack1">
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0.219858,0},{0.883289,0},{0.539007,0},{0.931035,0}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="PetSouldianhua/RemoveStar/back/NeedMoney">
+        <Property Name="Text" Value="需要点化元魂珠" />
+        <Property Name="HorzExtent" Value="92" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+        <Property Name="BorderColour" Value="FF220B01" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,7},{0.549072,0},{0,106},{0.2,153}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="PetSouldianhua/Upgrade/back/colour">
+        <Property Name="Text" Value="点化获得固定魂技" />
+        <Property Name="UnifiedAreaRect" Value="{{0.397163,0},{0.543767,0},{0.843972,0},{0.599469,0}}" />
+        <Property Name="NormalTextColour" Value="FFFFFF33" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="PetSouldianhua/RemoveStar/back/Image1">
+        <Property Name="Image" Value="set:MainControl image:SellItemBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,127},{0,55}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,127},{0,55}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,96},{0.734748,0},{0.05,223},{0.880637,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="PetSouldianhua/RemoveStar/back/Image1/Item">
+          <Property Name="UnifiedAreaRect" Value="{{0,2},{0,4},{0,50},{0,52}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSouldianhua/RemoveStar/back/Image1/Name">
+          <Property Name="Text" Value="无魂技符" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.409449,0},{0.109091,0},{0.976378,0},{0.436364,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="PetSouldianhua/RemoveStar/back/Image1/Num">
+          <Property Name="Text" Value="1/1" />
+          <Property Name="HorzExtent" Value="23" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.401575,0},{0.545455,0},{0.968504,0},{0.359091,28}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="PetSouldianhua/RemoveStar/back/Buy1">
+        <Property Name="Text" Value="兑换" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.847872,0},{0.05,273},{0.982624,0},{0.05,296}}" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

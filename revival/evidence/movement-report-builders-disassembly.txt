@@ -1,0 +1,212 @@
+native-image.bin SHA256 2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791
+
+006138f7 mov      ebp, dword ptr [esp + 0x74]
+006138fb mov      edi, ecx
+006138fd mov      esi, edx
+006138ff mov      eax, dword ptr [esp + 0x6c]
+00613903 test     eax, eax
+00613905 jle      0x61390c
+00613907 cmp      eax, 1
+0061390a jle      0x613969
+0061390c mov      ebx, dword ptr [esp + 0x64]
+00613910 movss    xmm0, dword ptr [0x243d95c]
+00613918 movss    xmm1, dword ptr [ebx + 4]
+0061391d mov      eax, dword ptr [esp + 0x68]
+00613921 addss    xmm1, xmm0
+00613925 push     esi
+00613926 cvttss2si ecx, xmm1
+0061392a movss    xmm1, dword ptr [ebx]
+0061392e push     esi
+0061392f push     eax
+00613930 addss    xmm1, xmm0
+00613934 mov      eax, edi
+00613936 cvttss2si edx, xmm1
+0061393a call     0x626b40
+0061393f add      esp, 0xc
+00613942 test     eax, eax
+
+006bc3d9 mov      ecx, dword ptr [ebp + 0x10]
+006bc3dc mov      eax, dword ptr [eax + 0xc]
+006bc3df push     0
+006bc3e1 push     ecx
+006bc3e2 lea      edx, [esi + 0x2c]
+006bc3e5 push     edx
+006bc3e6 mov      edx, dword ptr [ebp + 0xc]
+006bc3e9 lea      ecx, [esi + 0x20]
+006bc3ec push     ecx
+006bc3ed push     eax
+006bc3ee push     edx
+006bc3ef lea      eax, [esp + 0x28]
+006bc3f3 mov      ecx, esi
+006bc3f5 call     0x651920
+006bc3fa push     eax
+006bc3fb mov      ecx, ebx
+006bc3fd mov      edx, edi
+006bc3ff call     0x6138d0
+
+012160b0 push     -1
+012160b2 push     0x2056333
+012160b7 mov      eax, dword ptr fs:[0]
+012160bd push     eax
+012160be push     ecx
+012160bf push     esi
+012160c0 mov      eax, dword ptr [0x28f6e28]
+012160c5 xor      eax, esp
+012160c7 push     eax
+012160c8 lea      eax, [esp + 0xc]
+012160cc mov      dword ptr fs:[0], eax
+012160d2 mov      esi, ecx
+012160d4 mov      dword ptr [esp + 8], esi
+012160d8 mov      eax, dword ptr [esp + 0x1c]
+012160dc mov      dword ptr [esi], 0x22828c8
+012160e2 mov      dword ptr [esi + 8], 0x2278e54
+012160e9 mov      cx, word ptr [eax + 4]
+012160ed mov      word ptr [esi + 0xc], cx
+012160f1 mov      dx, word ptr [eax + 6]
+012160f5 mov      dword ptr [esp + 0x14], 0
+012160fd mov      word ptr [esi + 0xe], dx
+01216101 mov      eax, dword ptr [esp + 0x20]
+01216105 push     eax
+01216106 lea      ecx, [esi + 0x10]
+01216109 mov      byte ptr [esp + 0x18], 1
+0121610e call     0xeb40b0
+01216113 mov      ecx, dword ptr [esp + 0x24]
+01216117 mov      edx, dword ptr [esp + 0x28]
+0121611b mov      dword ptr [esi + 0x20], ecx
+0121611e mov      dword ptr [esi + 0x24], edx
+01216121 mov      dword ptr [esi + 4], 0xc0fa3
+01216128 mov      eax, esi
+0121612a mov      ecx, dword ptr [esp + 0xc]
+0121612e mov      dword ptr fs:[0], ecx
+01216135 pop      ecx
+01216136 pop      esi
+01216137 add      esp, 0x10
+
+0121720e cmp      dword ptr [esi + 0x354], 0
+01217215 mov      dword ptr [esi + 0x338], 0x1f4
+0121721f jne      0x1217233
+01217221 mov      edx, dword ptr [esi]
+01217223 mov      eax, dword ptr [edx + 0xb8]
+01217229 call     eax
+0121722b test     al, al
+0121722d je       0x12172ce
+01217233 mov      ecx, esi
+01217235 call     0x12034e0
+0121723a test     al, al
+0121723c jne      0x12172ce
+01217242 mov      edx, dword ptr [esi]
+01217244 mov      edx, dword ptr [edx + 0xd0]
+0121724a lea      eax, [esp + 0x10]
+0121724e push     eax
+0121724f mov      ecx, esi
+01217251 call     edx
+01217253 mov      ax, word ptr [esp + 0x10]
+01217258 mov      cx, word ptr [esp + 0x14]
+0121725d mov      dword ptr [esp + 8], 0x2278e54
+01217265 mov      word ptr [esp + 0xc], ax
+0121726a mov      word ptr [esp + 0xe], cx
+0121726f mov      eax, dword ptr [0x2944564]
+01217274 mov      ecx, dword ptr [eax + 0x30]
+01217277 mov      eax, dword ptr [eax + 0x34]
+0121727a push     eax
+0121727b push     ecx
+0121727c add      esi, 0x34c
+01217282 push     esi
+01217283 lea      edx, [esp + 0x14]
+01217287 push     edx
+01217288 lea      ecx, [esp + 0x28]
+0121728c mov      dword ptr [esp + 0x58], 0
+01217294 call     0x12160b0
+01217299 mov      byte ptr [esp + 0x48], 2
+0121729e call     0x813860
+012172a3 mov      edx, dword ptr [eax]
+012172a5 mov      edx, dword ptr [edx + 0x3c]
+012172a8 lea      ecx, [esp + 0x18]
+012172ac push     ecx
+012172ad mov      ecx, eax
+012172af call     edx
+012172b1 mov      ecx, esi
+012172b3 call     0xe61eb0
+
+01217f73 lea      ecx, [esp + 0x14]
+01217f77 call     0xe9d5e0
+01217f7c mov      cx, word ptr [esp + 0x10]
+01217f81 mov      ax, word ptr [esp + 0xc]
+01217f86 mov      word ptr [esp + 0x2e], cx
+01217f8b lea      edi, [esi + 0x34c]
+01217f91 push     edi
+01217f92 lea      ecx, [esp + 0x20]
+01217f96 mov      dword ptr [esp + 0x48], 0
+01217f9e mov      word ptr [esp + 0x30], ax
+01217fa3 call     0x11df990
+01217fa8 mov      eax, dword ptr [0x2944564]
+01217fad mov      edx, dword ptr [eax + 0x30]
+01217fb0 mov      dword ptr [esp + 0x34], edx
+01217fb4 mov      eax, dword ptr [eax + 0x34]
+01217fb7 mov      dword ptr [esp + 0x38], eax
+01217fbb call     0x813860
+01217fc0 mov      edx, dword ptr [eax]
+01217fc2 mov      edx, dword ptr [edx + 0x3c]
+01217fc5 lea      ecx, [esp + 0x14]
+01217fc9 push     ecx
+01217fca mov      ecx, eax
+01217fcc call     edx
+01217fce mov      ecx, edi
+01217fd0 call     0xe61eb0
+
+01214b60 mov      dword ptr [esp + 0x78], ebp
+01214b64 mov      word ptr [esp + 0x7c], ax
+01214b69 mov      word ptr [esp + 0x7e], bx
+01214b6e lea      ecx, [esp + 0x78]
+01214b72 push     ecx
+01214b73 lea      ecx, [esi + 0x34c]
+01214b79 mov      byte ptr [esp + 0x74], 1
+01214b7e call     0x1214110
+01214b83 mov      eax, dword ptr [edi + 4]
+01214b86 mov      eax, dword ptr [eax]
+01214b88 push     eax
+01214b89 push     edi
+01214b8a lea      edx, [esp + 0x80]
+01214b91 push     edx
+01214b92 mov      ecx, edi
+01214b94 call     0x621f40
+
+0121793e mov      dword ptr [esp + 0x1c], ebp
+01217942 mov      word ptr [esp + 0x20], ax
+01217947 mov      word ptr [esp + 0x22], bx
+0121794c lea      eax, [esp + 0x1c]
+01217950 push     eax
+01217951 lea      ecx, [esi + 0x34c]
+01217957 mov      dword ptr [esp + 0x64], 5
+0121795f call     0x1214110
+01217964 mov      edx, dword ptr [esi + 0x344]
+0121796a mov      eax, dword ptr [edx]
+0121796c lea      ecx, [esi + 0x340]
+01217972 push     eax
+01217973 push     ecx
+01217974 lea      eax, [esp + 0x34]
+01217978 push     eax
+01217979 call     0x621f40
+
+01214110 mov      eax, dword ptr [esp + 4]
+01214114 push     ebx
+01214115 push     esi
+01214116 push     edi
+01214117 mov      esi, ecx
+01214119 mov      edi, dword ptr [esi + 4]
+0121411c mov      ecx, dword ptr [edi + 4]
+0121411f push     eax
+01214120 push     ecx
+01214121 push     edi
+01214122 mov      ecx, esi
+01214124 call     0xe9cc30
+01214129 push     1
+0121412b mov      ecx, esi
+0121412d mov      ebx, eax
+0121412f call     0xe9ca90
+01214134 mov      dword ptr [edi + 4], ebx
+01214137 mov      edx, dword ptr [ebx + 4]
+0121413a pop      edi
+0121413b pop      esi
+0121413c mov      dword ptr [edx], ebx
+0121413e pop      ebx

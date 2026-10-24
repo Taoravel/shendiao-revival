@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="LogRecord">
+    <Property Name="Font" Value="msyh-16" />
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.2525,0},{0.265,0},{0.02875,531},{0.265,282}}" />
+    <Window Type="TaharezLook/MultiColumnList" Name="LogRecord/LogRecordFrame/LogRecordMember">
+      <Property Name="UnifiedAreaRect" Value="{{0,19},{0,45},{0,331},{0,260}}" />
+      <Property Name="ColumnHeader" Value="text:登录大区 width:{0.5,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:登录服务器 width:{1,-187} id:1" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="LogRecord/Name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="近期登录" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="68" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.5625,0},{0.0460993,0},{0.892045,0},{0.12766,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+  </Window>
+</GUILayout>

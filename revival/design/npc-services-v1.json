@@ -1,0 +1,77 @@
+{
+  "revision": "2026-10-23.npc.1",
+  "shop": {
+    "stock_source": "knight.gsp.item.npcsellitem: NPC config ID -> items",
+    "price_source": "knight.gsp.item.citemattr.price",
+    "currency": "cash",
+    "currency_status": "designed; ordinary NPC shop uses cash only, no bound-silver fallback",
+    "binding": 0,
+    "binding_status": "designed; ordinary purchased items are unbound",
+    "quantity_limit": 99,
+    "supported_native_mode": 0
+  },
+  "warehouse": {"capacity": 40, "capacity_status": "designed", "npc_ids": [10003],
+    "money_recipe": "designed same-role cash wallet/depot transfer, no fees; native CDepositMoney/CDrawMoney NPCkey+amount int64; canonical currency-v1 npc_depot_transfer purpose",
+    "money_bounds": "positive signed64 amount; both resulting known balances must remain0..9223372036854775807; unknown legacy baselines require trusted migration"},
+  "recovery": {
+    "trainer_npc_ids": [10086,10493],
+    "inn_npc_ids": [10157,11099,11100],
+    "binding_status": "designed explicit original trainer/inn NPC IDs with native recovery menu services",
+    "free_through_level": 20,
+    "pet_level_coefficient": 20,
+    "pet_base_fee": 20,
+    "loyalty_unit_fee": 45,
+    "loyalty_fee_status": "designed ordinary restoration blood remainder0; native1136290 computes (45+2*(blood_value%10))*missing_loyalty",
+    "inn_fee": 500,
+    "payment_purpose": "npc_shop",
+    "payment_mapping_status": "designed: priced NPC care uses the existing cash NPC retail expense channel; no mixed/hidden currency payment",
+    "native_sources": "service3/10/11/12 -> CRecovery kinds1/2/3/4; normal pet fee11360e0; loyalty fee1136290; role level<=20 free checks",
+    "lifetime": "unchanged; all-state recovery restores resources and loyalty only",
+    "inn_vigor_fraction_hex": "0x1.3333340000000p-3",
+    "inn_vigor_source": "native16338ee multiplies max vigor620 by original binary64 0.15000000596046448 then truncates; current vigor440 checked",
+    "vigor": {
+      "revision": "2026-10-23.vigor.1", "initial":100,"maximum":100,"period_ms":300000,"gain":5,
+      "baseline_and_gain_status": "designed explicit new-restoration profile; legacy requires known baseline migration; online-only 5 per5min, no offline or at-cap time banking",
+      "native_field_ids": {"value":440,"maximum":620},
+      "scope": "NPC rest prerequisite; level/skill-based vigor maxima and other production uses remain separate"
+    }
+  },
+  "repair": {
+    "service_id": 513,
+    "method": 2,
+    "npc_ids": [10004,10282,10283,10284,10285,10286,10287,10288,10292,10293,10294,10295],
+    "binding_status": "designed explicit NPC bindings; guide_supported weapon/armor/accessory shop eligibility",
+    "rules": "design/equipment-condition-v1.json",
+    "source": "https://sdxl.wanmei.com/info/intro/20120623/131855.shtml"
+  },
+  "sale": {
+    "service_id": 214,
+    "npc_ids": [10011],
+    "binding_status": "designed explicit association; original citemsell.sellnpc=10011",
+    "cash_equipment_level": 40,
+    "currency_status": "client UI supports cash for unbound equipment above the level threshold, bound silver otherwise; exact >=40 threshold and all explicit citemsell rows to bound silver are designed",
+    "equipment_quote": "original107a6e0: max(1,trunc(binary32(current_endure*sellpricecoef/endurecoef))); known clean ordinary equipment only",
+    "explicit_quote": "original npc.citemsell.sellprice per unit; preserve full stack quantity",
+    "buyback_currency": "cash",
+    "buyback_currency_source": "native1109d7b compares quoted cost to current wallet+b0 cash before CRepurchaseFromNpc",
+    "buyback_capacity": 20,
+    "buyback_ttl_seconds": 3600,
+    "buyback_policy_status": "designed: retain 20 whole-stack instances per role for one hour, buy back at full recorded sale proceeds, same NPC only; metadata remains in audit journal after expiry"
+  },
+  "transport": {
+    "source": "https://sdxl.wanmei.com/info/system/other/20120728/133515.shtml",
+    "route_status": "guide_supported: own faction carriage can return to Linan",
+    "binding_endpoint_and_fare_status": "designed: service216 for each listed carriage; original Linan NPC10447 position as endpoint; free local recovery fare",
+    "routes": [
+      {"npc_id":10260,"service_id":216,"source_map":1100,"target":[1007,5402,3142]},
+      {"npc_id":10261,"service_id":216,"source_map":1101,"target":[1007,5402,3142]},
+      {"npc_id":10262,"service_id":216,"source_map":1102,"target":[1007,5402,3142]},
+      {"npc_id":10263,"service_id":216,"source_map":1103,"target":[1007,5402,3142]},
+      {"npc_id":10264,"service_id":216,"source_map":1105,"target":[1007,5402,3142]},
+      {"npc_id":10265,"service_id":216,"source_map":1104,"target":[1007,5402,3142]},
+      {"npc_id":10266,"service_id":216,"source_map":1106,"target":[1007,5402,3142]},
+      {"npc_id":10267,"service_id":216,"source_map":1107,"target":[1007,5402,3142]},
+      {"npc_id":10268,"service_id":216,"source_map":1108,"target":[1007,5402,3142]}
+    ]
+  }
+}

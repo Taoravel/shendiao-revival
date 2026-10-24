@@ -1,0 +1,56 @@
+{
+  "release": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-bound-shop-20261023T115742Z",
+  "base_release": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-close-master-commit-20261023T113819Z",
+  "base_pid_at_staging": 44084,
+  "changed_modules": {
+    "npc_gameplay.py": "e5d70e181a18dd13ff29ed0c9302bb65f980e8b498160c5eb8a444a15d344bfa",
+    "npc_shop_payments.py": "874f6f02e3f154b32f408d61c853bc9cea07236d3f5db812c769e9de91d72450",
+    "design/npc-shop-payments-v1.json": "e5575ee1c4e8718e862efec8cca25769416660ab417373a971b62393addca386",
+    "design/currency-v1.json": "13a573af54597eee1ff6fdae3389a51615e5d8a24738713755b362900a79523d"
+  },
+  "file_count": 1427,
+  "started": true,
+  "scope": "ordinary NPC mode1 bound-silver payment and binding1 output only; preserve cash mode0 receipts",
+  "checks_required": [
+    "verify_currency_bound_shop.py",
+    "verify_npc_bound_shop_runtime.py",
+    "verify_npc_bound_shop_sources.py",
+    "verify_npc_shop_runtime.py",
+    "verify_npc_services.py",
+    "verify_npc_pet_recovery_runtime.py",
+    "verify_master_commit_card_runtime.py",
+    "verify_exit_initialization_runtime.py",
+    "verify_npc_depot_close.py",
+    "verify_npc_depot_money_runtime.py"
+  ],
+  "verification_name": "npc-bound-shop",
+  "harness_sources": {
+    "verify_currency_bound_shop.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-bound-shop-20261023T115742Z\\harness\\verify_currency_bound_shop.py",
+    "verify_npc_bound_shop_runtime.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-bound-shop-20261023T115742Z\\harness\\verify_npc_bound_shop_runtime.py",
+    "verify_npc_bound_shop_sources.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-bound-shop-20261023T115742Z\\harness\\verify_npc_bound_shop_sources.py",
+    "verify_npc_shop_runtime.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-bound-shop-20261023T115742Z\\harness\\verify_npc_shop_runtime.py",
+    "verify_npc_services.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-bound-shop-20261023T115742Z\\harness\\verify_npc_services.py",
+    "verify_npc_pet_recovery_runtime.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-bound-shop-20261023T115742Z\\harness\\verify_npc_pet_recovery_runtime.py",
+    "verify_master_commit_card_runtime.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-bound-shop-20261023T115742Z\\harness\\verify_master_commit_card_runtime.py",
+    "verify_exit_initialization_runtime.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-bound-shop-20261023T115742Z\\harness\\verify_exit_initialization_runtime.py",
+    "verify_npc_depot_close.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-bound-shop-20261023T115742Z\\harness\\verify_npc_depot_close.py",
+    "verify_npc_depot_money_runtime.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-bound-shop-20261023T115742Z\\harness\\verify_npc_depot_money_runtime.py"
+  },
+  "harness_sha256": {
+    "verify_currency_bound_shop.py": "c41af9b4f02614214f5355194b86ffeccd6b8fc6ca4d7b56a7a4469be40bbc4f",
+    "verify_npc_bound_shop_runtime.py": "17152b8c24d87acee7ef4287bcb10b715b97fc9d1fad0e1ce1493a7ecc04e94e",
+    "verify_npc_bound_shop_sources.py": "e2d8078b29137870ab0e2b46d39995ca40cae1d248356352ed16b0c77a98b185",
+    "verify_npc_shop_runtime.py": "d51629d2aa3fcb193c35b0f5b16fa4ba7cc3c9d31399266635a6a0226df58bd4",
+    "verify_npc_services.py": "d1bbd2bd6f776a73e64ea2b23aacd6af7aec5f844a3c7cec6c20186111919f78",
+    "verify_npc_pet_recovery_runtime.py": "9aeeb5a20d5fbd3316c25cfa00ef59658308154e3ada898f758635392c4e7cd6",
+    "verify_master_commit_card_runtime.py": "c86732d038be41158a98a4122add604ca6dbfb44ccfb8ede4b8192ee6e3e4caa",
+    "verify_exit_initialization_runtime.py": "e3433b911f645b86e71d6c022796488520ad5762e92a0d7b6c00f221834fd02e",
+    "verify_npc_depot_close.py": "d8b83736dc9d1ccece1c407c6960c48b4e89b27790876596f8cf41a16ce11833",
+    "verify_npc_depot_money_runtime.py": "c5b2fc8614b97fcadf8b2d19739c294fdf5c3d6ed19a96090898a8bd30a50569"
+  },
+  "shared_modules_unchanged": true,
+  "native_gui_verified": false,
+  "excluded": "lifecycle/care/new creation/v2/world/story instance and all other workspace changes",
+  "status": "deployed",
+  "pid": 39796
+}

@@ -1,0 +1,101 @@
+{
+  "candidate": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z",
+  "base": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-bound-shop-20261023T115742Z",
+  "verified_manifest_inputs": 1429,
+  "changed_inputs": {
+    "game_runtime.py": "7089408b929b8b730cf99e14e1c8d8e750b41d91dd3e405cde202a1c70f2fd6f",
+    "npc_gameplay.py": "7212aa304509721bf82c4e5d6545212a5cc8c21b26bfbbf3901ed3c946c83387",
+    "npc_role_healing.py": "1f9e6a594e666545d51db37806ffa6f2c5ec513e80aa0eab6da6ae014f95e160",
+    "role_resource_plan.py": "bc70cadabe5d214b95691e75cce2d7295f9781f56909d53200324e95305820c8",
+    "design/currency-v1.json": "6a702ba9831a6ec99254ac4d4732f8d6c62ac4a6835157ead5df9de9c286e1cb",
+    "design/npc-role-healing-v1.json": "6f232df5c36dbb0f37aa2530670d2f7c38c65e6fbfc065bff116e24dacbbbaff",
+    "design/role-resources-v1.json": "8be230cb69403f4eeefc2c72610e628035e802ab7777beaf3296abb8c4ff67a8"
+  },
+  "removed_inputs": [],
+  "shared_diff_only_expected_three_lines": true,
+  "candidate_source_unchanged_after_checks": true,
+  "production_imports": {
+    "accounts": {
+      "path": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\source\\accounts.py",
+      "sha256": "2f9022a4b40aaecffbd2bb57491f8f1678980e4a6405f8fc28e78d0099db34ff"
+    },
+    "game_runtime": {
+      "path": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\source\\game_runtime.py",
+      "sha256": "7089408b929b8b730cf99e14e1c8d8e750b41d91dd3e405cde202a1c70f2fd6f"
+    },
+    "runtime_storage": {
+      "path": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\source\\runtime_storage.py",
+      "sha256": "ed99a72e738c12db925ace733286a8438d5b4495a3a7fc8c8aeea81194370222"
+    },
+    "npc_gameplay": {
+      "path": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\source\\npc_gameplay.py",
+      "sha256": "7212aa304509721bf82c4e5d6545212a5cc8c21b26bfbbf3901ed3c946c83387"
+    },
+    "npc_role_healing": {
+      "path": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\source\\npc_role_healing.py",
+      "sha256": "1f9e6a594e666545d51db37806ffa6f2c5ec513e80aa0eab6da6ae014f95e160"
+    },
+    "role_resource_plan": {
+      "path": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\source\\role_resource_plan.py",
+      "sha256": "bc70cadabe5d214b95691e75cce2d7295f9781f56909d53200324e95305820c8"
+    },
+    "currency": {
+      "path": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\source\\currency.py",
+      "sha256": "6d637c2736baafd9ac1092a07edb88b4bd405d482716a432295bcac271929e36"
+    },
+    "world_npcs": {
+      "path": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z\\source\\world_npcs.py",
+      "sha256": "ca46d6960e3fc98d4adbb74d0d5f0421a1660c37c0c1459f64ba4d643a560d78"
+    }
+  },
+  "checks": {
+    "verify_npc_role_healing_runtime": {
+      "passed": [
+        "actual original10380/placement34 offers designed294 alongside its existing menu",
+        "native CNpcService294 heals known70/40 to current final100/100 and charges30 cash",
+        "bound500 and actual inventory remain unchanged; unique resource version advances once"
+      ],
+      "native_gui_verified": false,
+      "live_database_modified": false,
+      "battle_executed": false
+    },
+    "verify_npc_role_healing_guards": {
+      "passed": [
+        "fresh full treatment rejects without fees, resources or receipt changes",
+        "actual admitted server identity replay preserves later controlled80/60 and original cash970",
+        "controlled loading/battle occupancy gates reject treatment before settlement",
+        "unbound family92, malformed body and unknown NPC key reject without mutation",
+        "new authenticated lease restores current wounds; paid retry does not heal or charge",
+        "fresh native request after wounds heals once and charges a new30; cash940/bound500",
+        "actual unknown-resource role refuses without migration, fee or receipt creation"
+      ],
+      "state_gate_fixtures_only": true,
+      "damage_fixture_only": true,
+      "battle_executed": false,
+      "scene_handoff_executed": false,
+      "native_gui_verified": false,
+      "live_database_modified": false
+    },
+    "verify_npc_role_healing": {
+      "passed": [
+        "original doctor proof settles one resource carrier70/40->100/100 with30 cash and unchanged bound500/assets/caps",
+        "paid full replay and fresh full refusal preserve current state; later damage80/60 is never healed by replay",
+        "actual ordinary growth to level2 preserves old paid fee30; a new healing admission charges60",
+        "foreign doctor/service/handler/placement refuse without writes",
+        "real late SQL receipt failure rolls back fee/resources/all receipts; same failed ID retries once",
+        "fresh HP0 rejects while paid replay preserves death",
+        "actual new lease rejects old owner; freshly proved paid retry preserves current death and balances",
+        "real native float32 final-map failure rolls back fee/heal and receipts",
+        "unknown resource profile rejects without migration or fee",
+        "insufficient cash cannot consume bound500 or a request ID; trusted funding permits the same retry",
+        "pending source rejects fresh and paid reads without reconciliation; actual inventory-owner sync permits read-only replay"
+      ],
+      "native_gui_verified": false,
+      "live_database_modified": false,
+      "battle_executed": false
+    }
+  },
+  "live_database_modified": false,
+  "service_restarted": false,
+  "native_gui_verified": false
+}

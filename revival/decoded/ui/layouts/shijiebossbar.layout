@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="ShijieBossBar">
+    <Property Name="DragMoveEnable" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.5,-120},{-0,0},{0.5,120},{0,84}}" />
+    <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    <Window Type="TaharezLook/StaticImage" Name="ShijieBossBar/Back">
+      <Property Name="Image" Value="set:MainControl41 image:ShijieBossBar" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,232},{0,79}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,232},{0,79}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,-3},{0.0952381,0},{0,229},{0,87}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticText" Name="ShijieBossBar/Back/bar/xie">
+        <Property Name="Font" Value="simsun" />
+        <Property Name="Text" Value="5000000/5000000" />
+        <Property Name="HorzExtent" Value="119" />
+        <Property Name="VertExtent" Value="13" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.318966,0},{0.151899,0},{0.909483,0},{0.405063,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="DefaultWindow" Name="ShijieBossBar/Back/bar">
+        <Property Name="UnifiedAreaRect" Value="{{0,74},{0,17},{0,209},{0,29}}" />
+        <Window Type="TaharezLook/StaticImage" Name="ShijieBossBar/Back/bar/RedBack">
+          <Property Name="Image" Value="set:MainControl41 image:ShijieBossHP" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,135},{0,12}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,135},{0,12}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0.978261,0},{1,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ShijieBossBar/Back/xie2">
+        <Property Name="Text" Value="100%" />
+        <Property Name="HorzExtent" Value="39" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.318966,0},{0.354431,0},{0.909483,0},{0.582277,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="ShijieBossBar/Back/icon">
+        <Property Name="Image" Value="set:MainControl41 image:jinlun" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,9},{0,5},{0,72},{0,68}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

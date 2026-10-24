@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="EquipRecompose">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,124},{0,116},{0,428},{0,516}}" />
+    <Window Type="TaharezLook/StaticImage" Name="EquipRecompose/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,214},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,214},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,148},{0,12},{0,362},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="EquipRecompose/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="装备分解" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFF9600 br:FFFF9600" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,58},{0,1},{0,149},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="EquipRecompose/Case">
+      <Property Name="UnifiedAreaRect" Value="{{0,19},{0,45},{0.927632,0},{0,380}}" />
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="EquipRecompose/part1">
+        <Property Name="UnifiedAreaRect" Value="{{0.0190114,0},{0.00895526,0},{0.05,244.1},{0.00895526,160}}" />
+        <Window Type="TaharezLook/StaticText" Name="EquipRecompose/part1/info1">
+          <Property Name="Text" Value="装备" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+          <Property Name="BorderColour" Value="FF220B01" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,32},{0,29},{0,64},{0,51}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="EquipRecompose/part1/info2">
+          <Property Name="Text" Value="玄铁" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,195},{0,28},{0,227},{0,50}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="EquipRecompose/part1/info11">
+          <Property Name="Text" Value="请放入需要分解的装备" />
+          <Property Name="HorzExtent" Value="131" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,47.045},{0.0375,0},{0.05,182.045},{0.05,19.0849}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/Figure" Name="EquipRecompose/part1/Figure">
+          <Property Name="UnifiedAreaRect" Value="{{0.115034,0},{0.05625,0},{0.880603,0},{0.1625,0}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="EquipRecompose/part1/info12">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,4},{0,123},{0,87},{0,145}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="EquipRecompose/part1/info21">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="WordWrapCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,170},{0,123},{0,248},{0,145}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="DefaultBorderEnable" Value="True" />
+          <Property Name="DefaultColourEnable" Value="True" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="EquipRecompose/part1/Arrow">
+          <Property Name="Image" Value="set:MainControl2 image:Preview" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,75},{0,68},{0,179},{0,105}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="EquipRecompose/part1/back1">
+          <Property Name="Image" Value="set:MainControl3 image:LuckyWheelMiddleBox" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,66},{0,68}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,66},{0,68}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0461325,0},{0.327625,0},{0.307933,0},{0.752625,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="EquipRecompose/part1/gem1">
+            <Property Name="UnifiedAreaRect" Value="{{0.05,7},{0.05,7},{0.05,55},{0.05,55}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="EquipRecompose/part1/back2">
+          <Property Name="Image" Value="set:MainControl3 image:LuckyWheelMiddleBox" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,66},{0,68}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,66},{0,68}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.695101,0},{0.327625,0},{0.956902,0},{0.752625,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/ItemCell" Name="EquipRecompose/part1/gem2">
+            <Property Name="UnifiedAreaRect" Value="{{0.140909,0},{0.05,8},{0.05,54},{0.05,56}}" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="EquipRecompose/part2">
+        <Property Name="UnifiedAreaRect" Value="{{0.0190114,0},{0.05,149.6},{0.0461977,245.1},{0.05,278.6}}" />
+        <Window Type="TaharezLook/StaticText" Name="EquipRecompose/part2/Text">
+          <Property Name="Text">1.90级及以上装备才能进行分解；                                                       
+2.装备分解后将会获得一块玄铁；
+3.玄铁是否绑定和被分解的装备有关；
+4.五绝令兑换的装备不能进行分解。</Property>
+          <Property Name="HorzExtent" Value="362" />
+          <Property Name="VertExtent" Value="62.4756" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0317334,0},{0,23},{0.952003,0},{0,105}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Figure" Name="EquipRecompose/part2/figure2">
+          <Property Name="UnifiedAreaRect" Value="{{0,29},{0,9},{0,222},{0,26}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="EquipRecompose/part2/">
+          <Property Name="Text" Value="装备分解规则说明" />
+          <Property Name="HorzExtent" Value="104" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.284966,0},{0,6},{0.717334,0},{0,27}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="EquipRecompose/phyneed">
+      <Property Name="Text" Value="需要银两" />
+      <Property Name="HorzExtent" Value="52" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,24},{0,350},{0,79},{0,372}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="EquipRecompose/phynum">
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0,82},{0,352},{0,204},{0,370}}" />
+      <Window Type="TaharezLook/StaticImage" Name="EquipRecompose/phynum/tubiao">
+        <Property Name="Image" Value="set:MainControl image:Xianjin" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.832786,0},{0,0},{0.750819,29},{0,19}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="EquipRecompose/compose">
+      <Property Name="Text" Value="分解" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="UnifiedAreaRect" Value="{{0,208},{0,349},{0,275},{0,373}}" />
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="PartnerRanking">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.24375,0},{0.198333,0},{0.29625,364},{0.25,288}}" />
+    <Window Type="TaharezLook/StaticImage" Name="PartnerRanking/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,214},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,214},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.226601,0},{0,12},{0.753695,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="PartnerRanking/Title/Name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="破除迷局排行榜" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="119" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.299065,0},{0,1},{1.23364,0},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/MultiColumnList" Name="PartnerRanking/Back/Bot">
+      <Property Name="UnifiedAreaRect" Value="{{0.0418719,0},{0,43},{0,388},{0,271}}" />
+      <Property Name="ColumnHeader" Value="text:排名 width:{0.2,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:名称 width:{0.45,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:耗时 width:{1,-240} id:2" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="PartnerRanking/Section">
+      <Property Name="Text" Value="刷新榜单" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0615763,0},{0.862069,0},{0.0408867,80},{0.868014,22}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="PartnerRanking/Up">
+      <Property Name="Text" Value="上一页" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.596059,0},{0.862069,0},{0.597907,67},{0.868014,22}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="PartnerRanking/Down">
+      <Property Name="Text" Value="下一页" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.597907,77},{0.862069,0},{0.60037,144},{0.868014,22}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="PartnerRanking/Section1">
+      <Property Name="Text" Value="我的位置" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.256897,0},{0.862069,0},{0.0908867,139},{0.915036,7}}" />
+    </Window>
+  </Window>
+</GUILayout>

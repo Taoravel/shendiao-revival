@@ -1,0 +1,109 @@
+{
+  "passed": [
+    {
+      "name": "leader button transfers to existing deputy",
+      "handler": "0x14c3000",
+      "packets": [
+        [
+          808452,
+          2,
+          0,
+          2
+        ]
+      ],
+      "tips": []
+    },
+    {
+      "name": "self deputy means abdication",
+      "handler": "0x14c3030",
+      "packets": [
+        [
+          808452,
+          1,
+          0,
+          1
+        ]
+      ],
+      "tips": []
+    },
+    {
+      "name": "self member means abdication",
+      "handler": "0x14c3060",
+      "packets": [
+        [
+          808452,
+          1,
+          0,
+          0
+        ]
+      ],
+      "tips": []
+    },
+    {
+      "name": "self abdication requires successor",
+      "handler": "0x14c3060",
+      "packets": [],
+      "tips": [
+        140172
+      ]
+    },
+    {
+      "name": "ordinary member cannot skip deputy",
+      "handler": "0x14c3000",
+      "packets": [],
+      "tips": [
+        140176
+      ]
+    },
+    {
+      "name": "second deputy slot rejected",
+      "handler": "0x14c3030",
+      "packets": [],
+      "tips": [
+        140177
+      ]
+    },
+    {
+      "name": "patrol button is guild appointment 1",
+      "handler": "0x14c2fd0",
+      "packets": [
+        [
+          808481,
+          3,
+          0,
+          1
+        ]
+      ],
+      "tips": []
+    },
+    {
+      "name": "original family review manager 0",
+      "handler": "0x14970f0",
+      "packets": [
+        [
+          808446,
+          4,
+          0,
+          0
+        ]
+      ],
+      "tips": []
+    },
+    {
+      "name": "original family review manager 1",
+      "handler": "0x14970f0",
+      "packets": [
+        [
+          808446,
+          4,
+          0,
+          1
+        ]
+      ],
+      "tips": []
+    }
+  ],
+  "image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+  "scope": "original handler/manager/roster lookup execution, adapted network/tip/dialog edges",
+  "native_gui_verified": false
+}

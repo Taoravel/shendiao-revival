@@ -1,0 +1,779 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/QuackFrameWindow" Name="QuackRank">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="dlgopen.mp3" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.085,0},{0.109999,0},{-0.002513,734},{0.0166667,487}}" />
+    <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0451807,0},{0.0417633,0},{0.951807,0},{0.939675,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/CommonCaseBlue" Name="QuackRank/fight/back">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0.0129199,0},{0.995017,0},{0.997416,0}}" />
+        <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/1">
+          <Property Name="Image" Value="set:MainControl29 image:One" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,116},{0,181}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,116},{0,181}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0166945,0},{0.023622,0},{0.210351,0},{0.498688,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/1/head">
+            <Property Name="Image" Value="set:MainControl2 image:PetLight" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,101},{0,100}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,101},{0,100}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0603448,0},{0.0828729,0},{0.931035,0},{0.635359,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/1/head/image">
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.138614,0},{-0.06,0},{-0.0693069,96},{-0.61,148}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/1/head/server">
+              <Property Name="Font" Value="fzy4k-9" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0.237624,0},{0.05,44},{0.096729,69},{0.05,62}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/1/head/rank">
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.346535,0},{0.69,0},{0.722772,0},{0.86,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/1/name">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0775862,0},{0.05,104},{0.0499997,100},{0.05,122}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/1/level">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0775862,0},{0.1,112},{0.108621,93},{0.1,130}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/ImageButton" Name="QuackRank/fight/back/1/Btn">
+            <Property Name="Text" Value="随机战" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="HoverImage" Value="set:component image:lightButtonHover" />
+            <Property Name="NormalImage" Value="set:component image:lightButtonNormal" />
+            <Property Name="PushedImage" Value="set:component image:lightButtonPushed" />
+            <Property Name="UnifiedAreaRect" Value="{{0.172414,0},{0.839779,0},{0.818966,0},{0.972376,0}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/1/pai">
+            <Property Name="Image" Value="set:MainControl3 image:n1" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,56}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,56}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0172414,0},{0,0},{0.431034,0},{0.309392,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/2">
+          <Property Name="Image" Value="set:MainControl29 image:Two" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,116},{0,181}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,116},{0,181}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.210351,0},{0.023622,0},{0.404007,0},{0.498688,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/2/head">
+            <Property Name="Image" Value="set:MainControl2 image:PetLight" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,101},{0,100}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,101},{0,100}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0689655,0},{0.0828729,0},{0.939655,0},{0.635359,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/2/head/server">
+              <Property Name="Font" Value="fzy4k-9" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0.227723,0},{0.05,44},{0.076927,70},{0.05,62}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/2/head/image">
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.138614,0},{-0.06,0},{-0.0693069,96},{-0.61,148}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/2/head/rank">
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.346535,0},{0.69,0},{0.722772,0},{0.86,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/2/name">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0775862,0},{0.05,103},{0.05,100},{0.05,121}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/2/level">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0775862,0},{0.1,112},{0.1,94},{0.1,130}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/ImageButton" Name="QuackRank/fight/back/2/Btn">
+            <Property Name="Text" Value="随机战" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="HoverImage" Value="set:component image:lightButtonHover" />
+            <Property Name="NormalImage" Value="set:component image:lightButtonNormal" />
+            <Property Name="PushedImage" Value="set:component image:lightButtonPushed" />
+            <Property Name="UnifiedAreaRect" Value="{{0.172414,0},{0.839779,0},{0.818966,0},{0.972376,0}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/2/pai">
+            <Property Name="Image" Value="set:MainControl3 image:n2" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,56}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,56}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0172414,0},{0,0},{0.431034,0},{0.309392,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/3">
+          <Property Name="Image" Value="set:MainControl29 image:Three" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,116},{0,181}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,116},{0,181}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.402337,0},{0.023622,0},{0.595993,0},{0.498688,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/3/head">
+            <Property Name="Image" Value="set:MainControl2 image:PetLight" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,101},{0,100}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,101},{0,100}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0689655,0},{0.0828729,0},{0.939655,0},{0.635359,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/3/head/server">
+              <Property Name="Font" Value="fzy4k-9" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0.237624,0},{0.05,44},{0.096729,69},{0.05,62}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/3/head/image">
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.138614,0},{-0.06,0},{-0.0693069,96},{-0.61,148}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/3/head/rank">
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.346535,0},{0.69,0},{0.722772,0},{0.86,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/3/name">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0862069,0},{0.05,103},{0.05,101},{0.05,121}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/3/level">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0862069,0},{0.1,112},{0.1,95},{0.1,130}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/ImageButton" Name="QuackRank/fight/back/3/Btn">
+            <Property Name="Text" Value="随机战" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="HoverImage" Value="set:component image:lightButtonHover" />
+            <Property Name="NormalImage" Value="set:component image:lightButtonNormal" />
+            <Property Name="PushedImage" Value="set:component image:lightButtonPushed" />
+            <Property Name="UnifiedAreaRect" Value="{{0.172414,0},{0.839779,0},{0.818966,0},{0.972376,0}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/3/pai">
+            <Property Name="Image" Value="set:MainControl3 image:n3" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,48},{0,56}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,48},{0,56}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0258621,0},{0,0},{0.439655,0},{0.309392,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/4">
+          <Property Name="Image" Value="set:MainControl29 image:Four" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,116},{0,181}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,116},{0,181}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.595993,0},{0.023622,0},{0.789649,0},{0.498688,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/4/head">
+            <Property Name="Image" Value="set:MainControl2 image:PetLight" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,101},{0,100}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,101},{0,100}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0689655,0},{0.0828729,0},{0.939655,0},{0.635359,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/4/head/server">
+              <Property Name="Font" Value="fzy4k-9" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0.227723,0},{0.05,44},{0.086828,69},{0.05,62}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/4/head/image">
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.138614,0},{-0.06,0},{-0.0693069,96},{-0.61,148}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/4/head/rank">
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.346535,0},{0.69,0},{0.722772,0},{0.86,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/4/name">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0862069,0},{0.05,103},{0.05,101},{0.05,121}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/4/level">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0862069,0},{0.1,112},{0.1,95},{0.1,130}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/ImageButton" Name="QuackRank/fight/back/4/Btn">
+            <Property Name="Text" Value="随机战" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="HoverImage" Value="set:component image:lightButtonHover" />
+            <Property Name="NormalImage" Value="set:component image:lightButtonNormal" />
+            <Property Name="PushedImage" Value="set:component image:lightButtonPushed" />
+            <Property Name="UnifiedAreaRect" Value="{{0.172414,0},{0.839779,0},{0.818966,0},{0.972376,0}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/5">
+          <Property Name="Image" Value="set:MainControl29 image:Four" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,116},{0,181}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,116},{0,181}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.78798,0},{0.023622,0},{0.981636,0},{0.498688,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/5/head">
+            <Property Name="Image" Value="set:MainControl2 image:PetLight" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,101},{0,100}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,101},{0,100}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0689655,0},{0.0828729,0},{0.939655,0},{0.635359,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/5/head/server">
+              <Property Name="Font" Value="fzy4k-9" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0.237624,0},{0.05,44},{0.096729,69},{0.05,62}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/5/head/image">
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.138614,0},{-0.06,0},{-0.0693069,96},{-0.61,148}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/5/head/rank">
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.346535,0},{0.69,0},{0.722772,0},{0.86,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/5/name">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0862069,0},{0.05,103},{0.05,101},{0.05,121}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/5/level">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0862069,0},{0.1,112},{0.1,95},{0.1,130}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/ImageButton" Name="QuackRank/fight/back/5/Btn">
+            <Property Name="Text" Value="随机战" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="HoverImage" Value="set:component image:lightButtonHover" />
+            <Property Name="NormalImage" Value="set:component image:lightButtonNormal" />
+            <Property Name="PushedImage" Value="set:component image:lightButtonPushed" />
+            <Property Name="UnifiedAreaRect" Value="{{0.172414,0},{0.839779,0},{0.818966,0},{0.972376,0}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/6">
+          <Property Name="Image" Value="set:MainControl29 image:Four" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,116},{0,181}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,116},{0,181}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.015025,0},{0.501312,0},{0.208681,0},{0.976378,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/6/head">
+            <Property Name="Image" Value="set:MainControl2 image:PetLight" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,101},{0,100}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,101},{0,100}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0603448,0},{0.0828729,0},{0.931035,0},{0.635359,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/6/head/server">
+              <Property Name="Font" Value="fzy4k-9" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0.237624,0},{0.05,44},{0.096729,69},{0.05,62}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/6/head/image">
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.138614,0},{-0.06,0},{-0.0792079,97},{-0.61,148}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/6/head/rank">
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.346535,0},{0.69,0},{0.722772,0},{0.86,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/6/name">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0862069,0},{0.05,104},{0.05,101},{0.05,122}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/6/level">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0862069,0},{0.1,113},{0.1,95},{0.1,131}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/ImageButton" Name="QuackRank/fight/back/6/Btn">
+            <Property Name="Text" Value="随机战" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="HoverImage" Value="set:component image:lightButtonHover" />
+            <Property Name="NormalImage" Value="set:component image:lightButtonNormal" />
+            <Property Name="PushedImage" Value="set:component image:lightButtonPushed" />
+            <Property Name="UnifiedAreaRect" Value="{{0.172414,0},{0.839779,0},{0.818966,0},{0.972376,0}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/7">
+          <Property Name="Image" Value="set:MainControl29 image:Four" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,116},{0,181}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,116},{0,181}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.208681,0},{0.501312,0},{0.402337,0},{0.976378,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/7/head">
+            <Property Name="Image" Value="set:MainControl2 image:PetLight" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,101},{0,100}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,101},{0,100}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0689655,0},{0.0828729,0},{0.939655,0},{0.635359,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/7/head/server">
+              <Property Name="Font" Value="fzy4k-9" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0.237624,0},{0.05,44},{0.096729,69},{0.05,62}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/7/head/image">
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.138614,0},{-0.06,0},{-0.0693069,96},{-0.61,148}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/7/head/rank">
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.346535,0},{0.69,0},{0.722772,0},{0.86,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/7/name">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0862069,0},{0.05,104},{0.05,101},{0.05,122}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/7/level">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0862069,0},{0.1,113},{0.1,95},{0.1,131}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/ImageButton" Name="QuackRank/fight/back/7/Btn">
+            <Property Name="Text" Value="随机战" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="HoverImage" Value="set:component image:lightButtonHover" />
+            <Property Name="NormalImage" Value="set:component image:lightButtonNormal" />
+            <Property Name="PushedImage" Value="set:component image:lightButtonPushed" />
+            <Property Name="UnifiedAreaRect" Value="{{0.172414,0},{0.839779,0},{0.818966,0},{0.972376,0}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/8">
+          <Property Name="Image" Value="set:MainControl29 image:Four" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,116},{0,181}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,116},{0,181}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.400668,0},{0.501312,0},{0.594324,0},{0.976378,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/8/head">
+            <Property Name="Image" Value="set:MainControl2 image:PetLight" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,101},{0,100}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,101},{0,100}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0689655,0},{0.0828729,0},{0.939655,0},{0.635359,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/8/head/server">
+              <Property Name="Font" Value="fzy4k-9" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0.237624,0},{0.05,44},{0.096729,69},{0.05,62}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/8/head/image">
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.138614,0},{-0.06,0},{-0.0693069,96},{-0.61,148}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/8/head/rank">
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.346535,0},{0.69,0},{0.722772,0},{0.86,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/8/name">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0862069,0},{0.05,104},{0.05,101},{0.05,122}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/8/level">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0862069,0},{0.1,113},{0.1,95},{0.1,131}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/ImageButton" Name="QuackRank/fight/back/8/Btn">
+            <Property Name="Text" Value="随机战" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="HoverImage" Value="set:component image:lightButtonHover" />
+            <Property Name="NormalImage" Value="set:component image:lightButtonNormal" />
+            <Property Name="PushedImage" Value="set:component image:lightButtonPushed" />
+            <Property Name="UnifiedAreaRect" Value="{{0.172414,0},{0.839779,0},{0.818966,0},{0.972376,0}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/9">
+          <Property Name="Image" Value="set:MainControl29 image:Four" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,116},{0,181}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,116},{0,181}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.594324,0},{0.501312,0},{0.78798,0},{0.976378,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/9/head">
+            <Property Name="Image" Value="set:MainControl2 image:PetLight" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,101},{0,100}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,101},{0,100}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0689655,0},{0.0828729,0},{0.939655,0},{0.635359,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/9/head/server">
+              <Property Name="Font" Value="fzy4k-9" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0.237624,0},{0.05,44},{0.096729,69},{0.05,62}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/9/head/image">
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.138614,0},{-0.06,0},{-0.0693069,96},{-0.61,148}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/9/head/rank">
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.346535,0},{0.69,0},{0.722772,0},{0.86,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/9/name">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0862069,0},{0.05,104},{0.05,101},{0.05,122}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/9/level">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0862069,0},{0.1,113},{0.1,95},{0.1,131}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/ImageButton" Name="QuackRank/fight/back/9/Btn">
+            <Property Name="Text" Value="随机战" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="HoverImage" Value="set:component image:lightButtonHover" />
+            <Property Name="NormalImage" Value="set:component image:lightButtonNormal" />
+            <Property Name="PushedImage" Value="set:component image:lightButtonPushed" />
+            <Property Name="UnifiedAreaRect" Value="{{0.172414,0},{0.839779,0},{0.818966,0},{0.972376,0}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/10">
+          <Property Name="Image" Value="set:MainControl29 image:Four" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,116},{0,181}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,116},{0,181}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.78798,0},{0.501312,0},{0.981636,0},{0.976378,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/10/head">
+            <Property Name="Image" Value="set:MainControl2 image:PetLight" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,101},{0,100}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,101},{0,100}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0689655,0},{0.0828729,0},{0.939655,0},{0.635359,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/10/head/server">
+              <Property Name="Font" Value="fzy4k-9" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0.237624,0},{0.05,44},{0.096729,69},{0.05,62}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="QuackRank/fight/back/10/head/image">
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.148515,0},{-0.06,0},{-0.0594059,96},{-0.61,148}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/10/head/rank">
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.346535,0},{0.69,0},{0.722772,0},{0.86,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/10/name">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0862069,0},{0.05,104},{0.05,101},{0.05,122}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="QuackRank/fight/back/10/level">
+            <Property Name="Font" Value="fzy4k-9" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0862069,0},{0.1,113},{0.05,101},{0.1,131}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/ImageButton" Name="QuackRank/fight/back/10/Btn">
+            <Property Name="Text" Value="随机战" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="HoverImage" Value="set:component image:lightButtonHover" />
+            <Property Name="NormalImage" Value="set:component image:lightButtonNormal" />
+            <Property Name="PushedImage" Value="set:component image:lightButtonPushed" />
+            <Property Name="UnifiedAreaRect" Value="{{0.172414,0},{0.839779,0},{0.818966,0},{0.972376,0}}" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

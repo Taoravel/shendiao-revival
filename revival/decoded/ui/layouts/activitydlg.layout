@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="ActivityDlg">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="open.ogg" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.09875,0},{0.123333,0},{0.09875,643},{0.123333,452}}" />
+    <Property Name="CloseSoundResource" Value="close.ogg" />
+    <Window Type="TaharezLook/MultiColumnList" Name="ActivityDlg/back/list">
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,103},{0,410},{0,409}}" />
+      <Property Name="ColumnHeader" Value="text:类型 width:{0.13,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:任务名称 width:{0.34,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:次数 width:{0.22,0} id:2" />
+      <Property Name="ColumnHeader" Value="text:活跃度 width:{1,-269} id:3" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="ActivityDlg/Case">
+      <Property Name="Image" Value="set:MainControl5 image:Zshop" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,209},{0,282}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,209},{0,282}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,413},{0,128},{0,622},{0,410}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/RichEditbox" Name="ActivityDlg/Case/text">
+        <Property Name="ReadOnly" Value="True" />
+        <Property Name="LineSpace" Value="1" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,-4.35},{0.0120891,0},{0.05,194.65},{0.980174,0}}" />
+        <Property Name="BackGroundEnable" Value="False" />
+        <Property Name="BlinkCaretTimeout" Value="0.5" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ActivityDlg/time">
+      <Property Name="Text" Value="北京时间：" />
+      <Property Name="HorzExtent" Value="65" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,20},{0.913717,0},{0,82},{0.957965,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ActivityDlg/time1">
+      <Property Name="Text" Value="2011-8-18 星期四 15：48" />
+      <Property Name="HorzExtent" Value="158" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF3BF3FF tr:FF3BF3FF bl:FF3BF3FF br:FF3BF3FF" />
+      <Property Name="BorderColour" Value="FF003679" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,85},{0.913717,0},{0,270},{0.957965,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ActivityDlg/Gametime">
+      <Property Name="Text" Value="游戏时间：" />
+      <Property Name="HorzExtent" Value="65" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,270},{0.913717,0},{0,332},{0.957965,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ActivityDlg/Gametime1">
+      <Property Name="Text" Value="寅时 夜 距离白天大约还有 30 分钟" />
+      <Property Name="HorzExtent" Value="197" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF3BF3FF tr:FF3BF3FF bl:FF3BF3FF br:FF3BF3FF" />
+      <Property Name="BorderColour" Value="FF003679" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,300},{0.913717,0},{0.05,504},{0.957965,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="ActivityDlg/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.312597,0},{0,9},{0.791602,0},{0.079646,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="ActivityDlg/Title/Name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="活动日历" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.298701,0},{0.148148,0},{0.675325,0},{0.3,16}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="ActivityDlg/ActiveShop">
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:MainControl2 image:ActivityHover" />
+      <Property Name="NormalImage" Value="set:MainControl2 image:ActivityNormal" />
+      <Property Name="PushedImage" Value="set:MainControl2 image:ActivityPushed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,101},{0,59}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,101},{0,59}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0,516},{0,43},{0,617},{0,102}}" />
+      <Window Type="TaharezLook/StaticImage" Name="ActivityDlg/Stars/Star">
+        <Property Name="Image" Value="set:MainControl image:TotalStar" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,69.25},{0.05,28.5},{0.05,88.25},{0.05,44.5}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ActivityDlg/StarsNum">
+        <Property Name="Font" Value="msyh-16" />
+        <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFF9600 br:FFFF9600" />
+        <Property Name="BorderColour" Value="FF5F4100" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,7.25},{0.05,28.5},{0.05,70.25},{0.05,45.4997}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="ActivityDlg/ThisWeek">
+      <Property Name="Font" Value="fzy4k-11" />
+      <Property Name="Image" Value="set:MainControl2 image:DayBack" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,123},{0,18}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,123},{0,18}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.645412,0},{0.234513,0},{0.836703,0},{0.5,-102}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/DayGroupButton" Name="ActivityDlg/week1">
+        <Property Name="Font" Value="simsun" />
+        <Property Name="Text" Value="一" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,47},{-0.166667,0},{0,70},{0,20}}" />
+      </Window>
+      <Window Type="TaharezLook/DayGroupButton" Name="ActivityDlg/week2">
+        <Property Name="Font" Value="simsun" />
+        <Property Name="Text" Value="二" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,70},{-0.166667,0},{0,93},{0,20}}" />
+      </Window>
+      <Window Type="TaharezLook/DayGroupButton" Name="ActivityDlg/week3">
+        <Property Name="Font" Value="simsun" />
+        <Property Name="Text" Value="三" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,93},{-0.166667,0},{0,116},{0,20}}" />
+      </Window>
+      <Window Type="TaharezLook/DayGroupButton" Name="ActivityDlg/week4">
+        <Property Name="Font" Value="simsun" />
+        <Property Name="Text" Value="四" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,116},{-0.166667,0},{0,139},{0,20}}" />
+      </Window>
+      <Window Type="TaharezLook/DayGroupButton" Name="ActivityDlg/week5">
+        <Property Name="Font" Value="simsun" />
+        <Property Name="Text" Value="五" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,139},{-0.166667,0},{0,162},{0,20}}" />
+      </Window>
+      <Window Type="TaharezLook/DayGroupButton" Name="ActivityDlg/week6">
+        <Property Name="Font" Value="simsun" />
+        <Property Name="Text" Value="六" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,162},{-0.166667,0},{0,185},{0,20}}" />
+      </Window>
+      <Window Type="TaharezLook/DayGroupButton" Name="ActivityDlg/week0">
+        <Property Name="Font" Value="simsun" />
+        <Property Name="Text" Value="日" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,185},{-0.166667,0},{0,208},{0,20}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="ActivityDlg/ProgressBar">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.130638,0},{0,37},{0.144888,426},{0,98}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticImage" Name="ActivityDlg/Type4">
+        <Property Name="Image" Value="set:MainControl2 image:CellBack" />
+        <Property Name="Visible" Value="False" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,371},{0,8},{0,475},{0,59}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="ActivityDlg/Type4/Name">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="80活跃" />
+          <Property Name="HorzExtent" Value="43" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0,41},{0.0392157,0},{0,94},{0,22}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="ActivityDlg/Type4/Item">
+          <Property Name="UnifiedAreaRect" Value="{{0,3},{0.0392157,0},{0,51},{0.0784314,46.5882}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ActivityDlg/Stars/Star4">
+          <Property Name="Image" Value="set:MainControl image:TotalStar" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,54},{0,26},{0,73},{0,42}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ActivityDlg/Type4/Image">
+          <Property Name="Image" Value="set:MainControl2 image:Arrive" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,40},{0,41}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,40},{0,41}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.15,47.604},{0.186275,0},{0.15,87.604},{0.990196,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="ActivityDlg/Type3">
+        <Property Name="Image" Value="set:MainControl2 image:CellBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,104},{0,51}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,104},{0,51}}" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,312},{0.05,4},{0,416},{0.05,55}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="ActivityDlg/Type3/Name">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="50活跃" />
+          <Property Name="HorzExtent" Value="43" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,46},{0.0392157,0},{0,99},{0,22}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="ActivityDlg/Type3/Item">
+          <Property Name="UnifiedAreaRect" Value="{{0,2},{0.0392157,0},{0,50},{0.0784314,46}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ActivityDlg/Stars/Star3">
+          <Property Name="Image" Value="set:MainControl image:TotalStar" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,50},{0,26},{0,69},{0,42}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ActivityDlg/Type3/Image">
+          <Property Name="Image" Value="set:MainControl2 image:Arrive" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,40},{0,41}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,40},{0,41}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.1,53},{0.196078,0},{0.1,93},{1,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="ActivityDlg/Type2">
+        <Property Name="Image" Value="set:MainControl2 image:CellBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,104},{0,51}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,104},{0,51}}" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,196},{0.05,4},{0,300},{0.05,55}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="ActivityDlg/Type2/Name">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text" Value="30活跃" />
+          <Property Name="HorzExtent" Value="43" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0,48},{0.0392157,0},{0,100},{0,22}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="ActivityDlg/Type2/Item">
+          <Property Name="UnifiedAreaRect" Value="{{0,2},{0.0392157,0},{0,50},{0.0784314,46}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ActivityDlg/Stars/Star2">
+          <Property Name="Image" Value="set:MainControl image:TotalStar" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,50},{0,26},{0,69},{0,42}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ActivityDlg/Type2/Image">
+          <Property Name="Image" Value="set:MainControl2 image:Arrive" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,40},{0,41}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,40},{0,41}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.605769,0},{0.196078,0},{0.990385,0},{1,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="ActivityDlg/login">
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl12 image:LoginwardHover" />
+        <Property Name="NormalImage" Value="set:MainControl12 image:LoginwardNormal" />
+        <Property Name="PushedImage" Value="set:MainControl12 image:LoginwardPushed" />
+        <Property Name="DisabledImage" Value="set:MainControl12 image:LoginwarDisable" />
+        <Property Name="UnifiedMaxSize" Value="{{0,67},{0,65}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,67},{0,65}}" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0091954,0},{0,0},{0,57},{0,49}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="ActivityDlg/Type1">
+        <Property Name="Image" Value="set:MainControl2 image:CellBack" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,104},{0,51}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,104},{0,51}}" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,80},{0.05,4},{0,184},{0.05,55}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="ActivityDlg/Type1/Name">
+          <Property Name="Text" Value="10活跃" />
+          <Property Name="HorzExtent" Value="43" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="UnifiedAreaRect" Value="{{0.471154,0},{0.0392157,0},{0,97},{0,22}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/ItemCell" Name="ActivityDlg/Type1/Item">
+          <Property Name="UnifiedAreaRect" Value="{{0.0192308,0},{0.0392157,0},{0.0204103,48},{0,50}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ActivityDlg/Stars/Star1">
+          <Property Name="Image" Value="set:MainControl image:TotalStar" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,16}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,16}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,50},{0,26},{0,69},{0,42}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="ActivityDlg/Type1/Image">
+          <Property Name="Image" Value="set:MainControl2 image:Arrive" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,40},{0,41}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,40},{0,41}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.596154,0},{0.196078,0},{0.980769,0},{1,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ActivityDlg/ActivityButton/Word">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="活跃度" />
+      <Property Name="HorzExtent" Value="51" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0,19},{0.05,26},{0,82},{0.05,48}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="ActivityDlg/Today/Num">
+      <Property Name="Font" Value="msyh-16" />
+      <Property Name="Text" Value="100" />
+      <Property Name="HorzExtent" Value="30" />
+      <Property Name="VertExtent" Value="18.75" />
+      <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFF9600 br:FFFF9600" />
+      <Property Name="BorderColour" Value="FF220B01" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0,13},{0.15708,0},{0,85},{0.221239,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="ActivityDlg/Action">
+      <Property Name="Text" Value="活动提醒" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.839813,0},{0.909292,0},{0.965785,0},{0.400442,254}}" />
+    </Window>
+  </Window>
+</GUILayout>

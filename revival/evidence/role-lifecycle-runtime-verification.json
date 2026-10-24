@@ -1,0 +1,15 @@
+{
+  "passed": [
+    "native exit confirmation works during pending intro and cleans only current role",
+    "native delete request/confirmation removes owned roster entry and preserves audit/assets",
+    "duplicate deletion is idempotent; malformed/foreign/online deletion refused",
+    "return-to-role-list preserves continuous codec and allows subsequent deletion",
+    "return-to-login emits the real native confirmation; latest movement checkpoint persists before leaving",
+    "lease acquisition races reject deletion and late retirement failure rolls back the marker",
+    "deleted role cannot log in or accept old callbacks; deletion frees a creation slot",
+    "other connected role heartbeat continues"
+  ],
+  "database": "disposable",
+  "native_gui_verified": false,
+  "live_data_changed": false
+}

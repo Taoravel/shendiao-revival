@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="BattleSkill">
+    <Property Name="Font" Value="simhei-12" />
+    <Property Name="UnifiedAreaRect" Value="{{1,-402},{1,-460},{1,-107},{1,-139}}" />
+    <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    <Window Type="TaharezLook/RichEditbox1" Name="BattleSkill/DetailInfo">
+      <Property Name="Alpha" Value="0.95" />
+      <Property Name="ReadOnly" Value="True" />
+      <Property Name="LineSpace" Value="1" />
+      <Property Name="BlinkCaret" Value="True" />
+      <Property Name="MaxTextLength" Value="2147483647" />
+      <Property Name="UnifiedAreaRect" Value="{{0,-99},{0,0},{0,98},{-0.00288184,322}}" />
+      <Property Name="BlinkCaretTimeout" Value="0.5" />
+      <Property Name="TextParsingEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Right" />
+      <Window Type="TaharezLook/StaticText" Name="BattleSkill/DetailInfo/Name">
+        <Property Name="Font" Value="msyh-16" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,11},{0,7},{0,179},{0,27}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/TipsGroupButton" Name="BattleSkill/MartialSkill">
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,287},{-0.856698,0},{0.972881,0},{0,0}}" />
+    </Window>
+    <Window Type="TaharezLook/TipsGroupButton" Name="BattleSkill/CittaSkill">
+      <Property Name="Text" Value="主要" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.688136,0},{-0.05919,0},{-1,543},{0,0}}" />
+    </Window>
+    <Window Type="TaharezLook/TipsGroupButton" Name="BattleSkill/EquipSkill">
+      <Property Name="Text" Value="其它" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.649305,56},{-0.05919,0},{0.649305,101},{0,0}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="BattleSkill/SkillBack">
+      <Property Name="Image" Value="set:MainControl38 image:TipFrame2" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,97},{0,322}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,97},{0,322}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,197},{0,-1},{0,294},{0,321}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="DefaultWindow" Name="BattleSkill/EquipSkillTable">
+        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,0},{0,98},{0,320}}" />
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/EquipSkillTable/SkillBox0">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0.468085,0},{0.15,0}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/EquipSkillTable/SkillBox1">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.478723,0},{0,4},{0.946809,0},{0.15,0}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/EquipSkillTable/SkillBox2">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,49},{0.468085,0},{0,93}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/EquipSkillTable/SkillBox3">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.478723,0},{0,49},{0.946809,0},{0,93}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/EquipSkillTable/SkillBox4">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,94},{0.468085,0},{0,138}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/EquipSkillTable/SkillBox5">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.478723,0},{0,94},{0.946809,0},{0,138}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/EquipSkillTable/SkillBox6">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,139},{0.468085,0},{0,183}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/EquipSkillTable/SkillBox7">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.478723,0},{0,139},{0.946809,0},{0,183}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/EquipSkillTable/SkillBox8">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,184},{0.468085,0},{0,228}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/EquipSkillTable/SkillBox9">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.478723,0},{0,184},{0.946809,0},{0,228}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/EquipSkillTable/SkillBox10">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,229},{0.468085,0},{0,273}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/EquipSkillTable/SkillBox11">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.478723,0},{0,229},{0.946809,0},{0,273}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/EquipSkillTable/SkillBox12">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0.05,258},{0.468085,0},{0.05,302}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/EquipSkillTable/SkillBox13">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.478723,0},{0.05,258},{0.946808,0},{0.05,302}}" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="BattleSkill/MartialSkillTable">
+        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,0},{0,98},{0,320}}" />
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/MartialSkillTable/SkillBox0">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0.468085,0},{0.15,0}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/MartialSkillTable/SkillBox1">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.478723,0},{0,4},{0.946809,0},{0.15,0}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/MartialSkillTable/SkillBox2">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,49},{0.468085,0},{0,93}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/MartialSkillTable/SkillBox3">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.478723,0},{0,49},{0.946809,0},{0,93}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/MartialSkillTable/SkillBox4">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,94},{0.468085,0},{0,138}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/MartialSkillTable/SkillBox5">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.478723,0},{0,94},{0.946809,0},{0,138}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/MartialSkillTable/SkillBox6">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,139},{0.468085,0},{0,183}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/MartialSkillTable/SkillBox7">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.478723,0},{0,139},{0.946809,0},{0,183}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/MartialSkillTable/SkillBox8">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,184},{0.468085,0},{0,228}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/MartialSkillTable/SkillBox9">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.478723,0},{0,184},{0.946809,0},{0,228}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/MartialSkillTable/SkillBox10">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,229},{0.468085,0},{0,273}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/MartialSkillTable/SkillBox11">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.478723,0},{0,229},{0.946809,0},{0,273}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/MartialSkillTable/SkillBox12">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0.05,258},{0.468085,0},{0.05,302}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/MartialSkillTable/SkillBox13">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.478723,0},{0.05,258},{0.946808,0},{0.05,302}}" />
+        </Window>
+      </Window>
+      <Window Type="DefaultWindow" Name="BattleSkill/CittaSkillTable">
+        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,0},{0,98},{0,320}}" />
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/CittaSkillTable/SkillBox0">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,4},{0,44},{0,48}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/CittaSkillTable/SkillBox1">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,45},{0,4},{0,89},{0,48}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/CittaSkillTable/SkillBox2">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,49},{0.468085,0},{0,93}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/CittaSkillTable/SkillBox3">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,45},{0,49},{0.425532,49},{0,93}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/CittaSkillTable/SkillBox4">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,94},{0.468085,0},{0,138}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/CittaSkillTable/SkillBox5">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,45},{0,94},{0.425532,49},{0,138}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/CittaSkillTable/SkillBox6">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,139},{0.468085,0},{0,183}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/CittaSkillTable/SkillBox7">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,45},{0,139},{0.425532,49},{0,183}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/CittaSkillTable/SkillBox8">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,184},{0.468085,0},{0,228}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/CittaSkillTable/SkillBox9">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,45},{0,184},{0.425532,49},{0,228}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/CittaSkillTable/SkillBox10">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0,229},{0.468085,0},{0,273}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/CittaSkillTable/SkillBox11">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,45},{0,229},{0.425532,49},{0,273}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/CittaSkillTable/SkillBox12">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0},{0.05,258},{0.468085,0},{0.05,302}}" />
+        </Window>
+        <Window Type="TaharezLook/SkillBox" Name="BattleSkill/CittaSkillTable/SkillBox13">
+          <Property Name="UnifiedMaxSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,44},{0,44}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0,45},{0.05,258},{0.468085,45},{0.05,302}}" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,521 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/YellowFrameWindow" Name="EquipTrans">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="dlgopen.mp3" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.085,0},{0.151667,0},{-0.023763,751},{0.0283354,492}}" />
+    <Window Type="TaharezLook/StaticImage" Name="EquipTrans/title">
+      <Property Name="Image" Value="set:MainControl30 image:TitleBack" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{-0.0225904,0},{0.00478469,0},{0.0361446,2},{-0.00973237,375}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticText" Name="EquipTrans/title/txt">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="装 备 传 承" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="17" />
+        <Property Name="VertExtent" Value="121.297" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF90E8F2" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.268293,0},{0.195122,0},{0.707317,0},{0.531165,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="EquipTrans/combine">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.0256024,0},{0.0550239,0},{0.950301,0},{0.940191,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/StaticText" Name="EquipTrans/combine/title">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="请选择包裹内装备" />
+        <Property Name="HorzExtent" Value="120" />
+        <Property Name="VertExtent" Value="17.1936" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,32},{0.05,-12},{0.05,155},{0.05,10}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticImage" Name="EquipTrans/combine/title/left">
+          <Property Name="Image" Value="set:MainControl30 image:ShadingLeft" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,24}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,24}}" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{-0.373984,0},{-0.136364,0},{0.0162601,0},{0.954545,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="EquipTrans/combine/title/right">
+          <Property Name="Image" Value="set:MainControl30 image:ShadingRight" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,48},{0,24}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,48},{0,24}}" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.943089,0},{-0.136364,0},{1.33333,0},{0.954545,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCaseFigure1" Name="EquipTrans/combine/left">
+        <Property Name="UnifiedAreaRect" Value="{{0.0570033,0},{0.05,14},{0.05,179},{0.05,311}}" />
+        <Window Type="TaharezLook/StaticImage" Name="EquipTrans/combine/left/equip1">
+          <Property Name="Image" Value="set:MainControl30 image:SellItemBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,167},{0,56}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,167},{0,56}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0228571,0},{0,4},{0.977143,0},{0,60}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="EquipTrans/combine/left/equip1/item">
+            <Property Name="Image" Value="set:MainControl30 image:ItemInCell" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,50},{0,50}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,50},{0,50}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0179641,0},{0.0357143,0},{0.317365,0},{0.928571,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="EquipTrans/combine/left/equip1/item/cell">
+              <Property Name="UnifiedAreaRect" Value="{{0.02,0},{0.02,0},{0.186667,40},{0.1875,40}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="EquipTrans/combine/left/equip1/name">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF000000" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.341317,0},{0.0714286,0},{0.976048,0},{0.428571,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="EquipTrans/combine/left/equip1/txt">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF000000" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.341317,0},{0.553571,0},{0.976048,0},{0.910714,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="EquipTrans/combine/left/equip2">
+          <Property Name="Image" Value="set:MainControl30 image:SellItemBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,167},{0,56}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,167},{0,56}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0228571,0},{0.05,47},{0.977143,0},{0.05,103}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="EquipTrans/combine/left/equip2/item">
+            <Property Name="Image" Value="set:MainControl30 image:ItemInCell" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,50},{0,50}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,50},{0,50}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0179641,0},{0.0357143,0},{0.317365,0},{0.928571,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="EquipTrans/combine/left/equip2/item/cell">
+              <Property Name="UnifiedAreaRect" Value="{{0.02,0},{0.02,0},{0.186667,40},{0.1875,40}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="EquipTrans/combine/left/equip2/name">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF000000" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.341317,0},{0.0714286,0},{0.976048,0},{0.428571,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="EquipTrans/combine/left/equip2/txt">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF000000" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.341317,0},{0.553571,0},{0.976048,0},{0.910714,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="EquipTrans/combine/left/equip3">
+          <Property Name="Image" Value="set:MainControl30 image:SellItemBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,167},{0,56}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,167},{0,56}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0228571,0},{0.1,90},{0.977143,0},{0.1,146}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="EquipTrans/combine/left/equip3/item">
+            <Property Name="Image" Value="set:MainControl30 image:ItemInCell" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,50},{0,50}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,50},{0,50}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0179641,0},{0.0357143,0},{0.317365,0},{0.928571,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="EquipTrans/combine/left/equip3/item/cell">
+              <Property Name="UnifiedAreaRect" Value="{{0.02,0},{0.02,0},{0.186667,40},{0.1875,40}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="EquipTrans/combine/left/equip3/name">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF000000" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.341317,0},{0.0714286,0},{0.976048,0},{0.428571,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="EquipTrans/combine/left/equip3/txt">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF000000" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.341317,0},{0.553571,0},{0.976048,0},{0.910714,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="EquipTrans/combine/left/equip4">
+          <Property Name="Image" Value="set:MainControl30 image:SellItemBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,167},{0,56}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,167},{0,56}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0228571,0},{0.15,134},{0.977143,0},{0.15,190}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="EquipTrans/combine/left/equip4/item">
+            <Property Name="Image" Value="set:MainControl30 image:ItemInCell" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,50},{0,50}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,50},{0,50}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0179641,0},{0.0357143,0},{0.317365,0},{0.928571,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="EquipTrans/combine/left/equip4/item/cell">
+              <Property Name="UnifiedAreaRect" Value="{{0.02,0},{0.02,0},{0.186667,40},{0.1875,40}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="EquipTrans/combine/left/equip4/name">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF000000" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.341317,0},{0.0714286,0},{0.976048,0},{0.428571,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="EquipTrans/combine/left/equip4/txt">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF000000" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.341317,0},{0.553571,0},{0.976048,0},{0.910714,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="EquipTrans/combine/left/equip5">
+          <Property Name="Image" Value="set:MainControl30 image:SellItemBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,167},{0,56}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,167},{0,56}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0228571,0},{0.2,178},{0.977143,0},{0.2,234}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="EquipTrans/combine/left/equip5/item">
+            <Property Name="Image" Value="set:MainControl30 image:ItemInCell" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,50},{0,50}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,50},{0,50}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0179641,0},{0.0357143,0},{0.317365,0},{0.928571,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="EquipTrans/combine/left/equip5/item/cell">
+              <Property Name="UnifiedAreaRect" Value="{{0.02,0},{0.02,0},{0.186667,40},{0.1875,40}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="EquipTrans/combine/left/equip5/name">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF000000" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.341317,0},{0.0714286,0},{0.976048,0},{0.428571,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="EquipTrans/combine/left/equip5/txt">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF000000" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.341317,0},{0.553571,0},{0.976048,0},{0.910714,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="EquipTrans/combine/left/select">
+          <Property Name="Image" Value="set:MainControl image:SellItem1Hover" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0228571,0},{0.00673401,0},{0.988571,0},{0.205387,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="EquipTrans/combine/up">
+        <Property Name="Text" Value="上一页" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0928339,0},{0.908108,0},{0.0668842,78},{0.897959,28}}" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="EquipTrans/combine/down">
+        <Property Name="Text" Value="下一页" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.218241,0},{0.908108,0},{0.116884,123},{0.972973,0}}" />
+        <Property Name="ButtonDefaultBorderEnable" Value="False" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="EquipTrans/combine/line">
+        <Property Name="Image" Value="set:MainControl30 image:Straight" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.351792,0},{-0.00810811,0},{0.407166,0},{0.994595,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/CommonCaseBlue" Name="EquipTrans/combine/right">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{0.400651,0},{0.378378,0},{0.982085,0},{0.813514,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="EquipTrans/combine/right/w">
+          <Property Name="Text" Value="所需材料" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.168067,0},{0.068323,0},{0.344538,0},{0.198758,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="EquipTrans/combine/right/w1">
+          <Property Name="Text" Value="传承说明" />
+          <Property Name="HorzExtent" Value="52" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFDE00 tr:FFFFDE00 bl:FFFFA405 br:FFFFA405" />
+          <Property Name="BorderColour" Value="FF190400" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.661064,0},{0.068323,0},{0.837535,0},{0.198758,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="EquipTrans/combine/right/title1">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="Text">1.星钻传承：可将材料装备上的星钻全部转移至主装备上。
+2.传承成功后，主装备将会绑定。</Property>
+          <Property Name="HorzExtent" Value="143" />
+          <Property Name="VertExtent" Value="78.0945" />
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.05,177},{0.05,29},{0.05,323},{0.05,127}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="EquipTrans/combine/right/equip1">
+          <Property Name="Image" Value="set:MainControl30 image:SellItemBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,167},{0,56}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,167},{0,56}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0336134,0},{0.05,27},{0.05,161},{0.05,83}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="EquipTrans/combine/right/equip1/item">
+            <Property Name="Image" Value="set:MainControl30 image:ItemInCell" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,50},{0,50}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,50},{0,50}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0179641,0},{0.0357143,0},{0.317365,0},{0.928571,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="EquipTrans/combine/right/equip1/item/cell">
+              <Property Name="UnifiedAreaRect" Value="{{0.02,0},{0.02,0},{0.186667,40},{0.1875,40}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="EquipTrans/combine/right/equip1/name">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF000000" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.341317,0},{0.0714286,0},{0.976048,0},{0.428571,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="EquipTrans/combine/right/equip1/txt">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF000000" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.341317,0},{0.553571,0},{0.976048,0},{0.910714,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="EquipTrans/combine/right/equip2">
+          <Property Name="Image" Value="set:MainControl30 image:SellItemBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,167},{0,56}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,167},{0,56}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.0336134,0},{0.1,77},{0.1,143},{0.1,133}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticImage" Name="EquipTrans/combine/right/equip2/item">
+            <Property Name="Image" Value="set:MainControl30 image:ItemInCell" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,50},{0,50}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,50},{0,50}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0179641,0},{0.0357143,0},{0.317365,0},{0.928571,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="EquipTrans/combine/right/equip2/item/cell">
+              <Property Name="UnifiedAreaRect" Value="{{0.02,0},{0.02,0},{0.186667,40},{0.1875,40}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="EquipTrans/combine/right/equip2/name">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF000000" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.341317,0},{0.0714286,0},{0.976048,0},{0.428571,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="EquipTrans/combine/right/equip2/txt">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF000000" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.341317,0},{0.553571,0},{0.976048,0},{0.910714,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="EquipTrans/combine/item1">
+        <Property Name="Image" Value="set:MainControl3 image:LuckyWheelMiddleBox" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,66},{0,68}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,66},{0,68}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,283},{0.0567568,0},{0.05,349},{0.05,70}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="EquipTrans/combine/item1/cell">
+          <Property Name="UnifiedAreaRect" Value="{{0.136364,0},{0.147059,0},{0.136364,48},{0.147059,48}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="EquipTrans/combine/item1/name">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="Text" Value="材料装备" />
+          <Property Name="HorzExtent" Value="64" />
+          <Property Name="VertExtent" Value="18.75" />
+          <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+          <Property Name="BorderColour" Value="FFB7760F" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{-0.242424,0},{1.14706,0},{1.24242,0},{1.51471,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="EquipTrans/combine/item2">
+        <Property Name="Image" Value="set:MainControl3 image:LuckyWheelMiddleBox" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,66},{0,68}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,66},{0,68}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,446},{0.0513513,0},{0.05,512},{0.05,68}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="EquipTrans/combine/item2/cell">
+          <Property Name="UnifiedAreaRect" Value="{{0.136364,0},{0.147059,0},{0.136364,48},{0.147059,48}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="EquipTrans/combine/item2/name">
+          <Property Name="Font" Value="msyh-16" />
+          <Property Name="Text" Value="主装备" />
+          <Property Name="HorzExtent" Value="48" />
+          <Property Name="VertExtent" Value="18.75" />
+          <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+          <Property Name="BorderColour" Value="FFB7760F" />
+          <Property Name="BorderEnable" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="HorzCentred" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{-0.242424,0},{1.14706,0},{1.24242,0},{1.51471,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="EquipTrans/combine/right/image">
+        <Property Name="Image" Value="set:MainControl34 image:chuancheng" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,78},{0,57}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,78},{0,57}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,361},{0.0621622,0},{0.05,439},{0.05,61}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/LittleButton" Name="EquipTrans/combine/right/one">
+        <Property Name="Font" Value="fzy4k-11" />
+        <Property Name="Text" Value="开 始 传 承" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="UnifiedAreaRect" Value="{{0.623778,0},{0.859459,0},{0.780131,0},{0.943243,0}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/QuackGroupButton" Name="EquipTrans/page0">
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.957831,0},{0.105263,0},{0.2,554},{0.100917,91}}" />
+      <Window Type="TaharezLook/StaticText" Name="EquipTrans/page0/txt">
+        <Property Name="Font" Value="msyh-16" />
+        <Property Name="Text" Value="星钻" />
+        <Property Name="HorzExtent" Value="16" />
+        <Property Name="VertExtent" Value="37.5" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0,14},{0,12},{0,37},{0,67}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/QuackGroupButton" Name="EquipTrans/page1">
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.957831,0},{0.100917,87},{0.2,554},{0.100917,176}}" />
+      <Window Type="TaharezLook/StaticText" Name="EquipTrans/page1/txt">
+        <Property Name="Font" Value="msyh-16" />
+        <Property Name="Text" Value="宝石" />
+        <Property Name="HorzExtent" Value="16" />
+        <Property Name="VertExtent" Value="37.5" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0,14},{0,12},{0,37},{0,67}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/QuackGroupButton" Name="EquipTrans/page2">
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.957831,0},{0.100917,172},{0.2,554},{0.100917,261}}" />
+      <Window Type="TaharezLook/StaticText" Name="EquipTrans/page2/txt">
+        <Property Name="Font" Value="msyh-16" />
+        <Property Name="Text" Value="天命" />
+        <Property Name="HorzExtent" Value="16" />
+        <Property Name="VertExtent" Value="37.5" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0,14},{0,12},{0,37},{0,67}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

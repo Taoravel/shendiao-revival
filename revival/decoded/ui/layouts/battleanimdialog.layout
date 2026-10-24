@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="BattleAnimDlg/MainWindow">
+    <Property Name="Font" Value="simhei-12" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,125.399},{0,187.388},{0,644.399},{0,474.388}}" />
+    <Window Type="TaharezLook/TabControl" Name="BattleAnimDlg/TC">
+      <Property Name="TabHeight" Value="{0,18}" />
+      <Property Name="TabPanePosition" Value="Top" />
+      <Property Name="UnifiedAreaRect" Value="{{0,17},{0,42},{0,500},{0,268}}" />
+      <Window Type="DefaultWindow" Name="BattleAnimDlg/TC/Help">
+        <Property Name="Text" Value="帮助" />
+        <Property Name="UnifiedAreaRect" Value="{{0.010352,0},{0,6},{0,484},{0,200}}" />
+        <Window Type="TaharezLook/StaticText" Name="BattleAnimDlg/TC/Help/CurBattleTypeMsg">
+          <Property Name="Text" Value="当前战斗方式:" />
+          <Property Name="HorzExtent" Value="82" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,4},{0,3},{0,93},{0,23}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="BattleAnimDlg/TC/Help/CurBattleTypeValue">
+          <Property Name="Text" Value="common" />
+          <Property Name="HorzExtent" Value="55" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,92},{0,3},{0,180},{0,23}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="BattleAnimDlg/TC/Help/CurPlayAnimTypeMsg">
+          <Property Name="Text" Value="是否循环播放:" />
+          <Property Name="HorzExtent" Value="82" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,4},{0,31},{0,88},{0,51}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="BattleAnimDlg/TC/Help/CurPlayAnimTypeValue">
+          <Property Name="Text" Value="common" />
+          <Property Name="HorzExtent" Value="55" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,92},{0,31},{0,181},{0,51}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="BattleAnimDlg/TC/Help/CurPlayAnimFreqMsg">
+          <Property Name="Text" Value="动画播放速率倍数:" />
+          <Property Name="HorzExtent" Value="108" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,166},{0,3},{0,282},{0,23}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="BattleAnimDlg/TC/Help/CurPlayAnimFreqValue">
+          <Property Name="Text" Value="1.0000" />
+          <Property Name="HorzExtent" Value="44" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,283},{0,3},{0,334},{-0.0773196,38}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Button" Name="BattleAnimDlg/TC/Help/RefreshAnimFreq">
+          <Property Name="Text" Value="刷新" />
+          <Property Name="SizeType" Value="Auto" />
+          <Property Name="UnifiedAreaRect" Value="{{0,407},{0,2},{0,475},{0,26}}" />
+          <Property Name="NormalTextColour" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="ButtonDefaultBorderEnable" Value="False" />
+          <Property Name="ButtonDefaultColourEnable" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Editbox" Name="BattleAnimDlg/TC/Help/PlayAnimFreqValueEdit">
+          <Property Name="BlinkCaret" Value="True" />
+          <Property Name="MaxTextLength" Value="2147483647" />
+          <Property Name="UnifiedAreaRect" Value="{{0,335},{0,3},{0,406},{0,23}}" />
+          <Property Name="TextParsingEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="BattleAnimDlg/TC/Help/CB4">
+          <Property Name="Text" Value="粒子效果" />
+          <Property Name="HorzExtent" Value="53" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,166},{0,33},{0,282},{0,53}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Combobox" Name="BattleAnimDlg/TC/Help/Pep1">
+          <Property Name="UnifiedAreaRect" Value="{{0,296},{0,34},{0,406},{0,119}}" />
+          <Property Name="MaxEditTextLength" Value="1073741823" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="BattleAnimDlg/TC/Help/HelpTip">
+          <Property Name="Text">F1:进入战斗编辑器
+F2:退出战斗编辑器
+F3:开始战斗(可用鼠标左键点选敌方任意角色)
+F4:普通攻击(common)/技能攻击(skill)切换
+F5:切换当前环境最大粒子数量(100/15)
+F6:单次播放(common)/循环播放(loop)切换
+F9:帮助面板显示/隐藏切换</Property>
+          <Property Name="HorzExtent" Value="265" />
+          <Property Name="VertExtent" Value="109.332" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,4},{0.376288,0},{-0.0208768,322},{0,197}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

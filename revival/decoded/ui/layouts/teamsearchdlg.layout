@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="TeamSearchDlg">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,220.81},{0,122.744},{0,600.81},{0,393.744}}" />
+    <Window Type="TaharezLook/MultiColumnList" Name="TeamSearchDlg/TeamList">
+      <Property Name="UnifiedAreaRect" Value="{{0,19},{0,47},{0,358},{0,192}}" />
+      <Property Name="ColumnHeader" Value="text:队伍名称 width:{0.35,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:队长信息 width:{0.5,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:人数 width:{1,-287} id:2" />
+    </Window>
+    <Window Type="TaharezLook/MultiColumnList" Name="TeamSearchDlg/CharacterList">
+      <Property Name="UnifiedAreaRect" Value="{{0,19},{0,47},{0,358},{0,192}}" />
+      <Property Name="ColumnHeader" Value="text:玩家名称 width:{0.4,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:玩家信息 width:{0.3,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:所在地图 width:{1,-237} id:2" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="TeamSearchDlg/titleback">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,67},{0,11},{0,375},{0,38}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="TeamSearchDlg/titleback/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="队伍搜索" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,76},{0,1},{0,156},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="TeamSearchDlg/Case">
+      <Property Name="UnifiedAreaRect" Value="{{0.0526316,0},{0.708487,0},{0.939474,0},{0.922509,0}}" />
+      <Window Type="TaharezLook/Button" Name="TeamSearchDlg/Refresh">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="刷   新" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="UnifiedAreaRect" Value="{{0,92},{0.465517,0},{0,164},{0.456898,24}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="TeamSearchDlg/Pageup">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="上一页" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="UnifiedAreaRect" Value="{{0,174},{0.465517,0},{0,246},{0.456898,24}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="TeamSearchDlg/Pagedown">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="下一页" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="UnifiedAreaRect" Value="{{0,256},{0.465517,0},{0,328},{0.456898,24}}" />
+      </Window>
+      <Window Type="TaharezLook/RadioButton" Name="TeamSearchDlg/JoinBtn">
+        <Property Name="Text" Value="加入别人队伍" />
+        <Property Name="UnifiedAreaRect" Value="{{0,121},{0.0517241,0},{0,224},{0.115385,16}}" />
+      </Window>
+      <Window Type="TaharezLook/RadioButton" Name="TeamSearchDlg/InviteBtn">
+        <Property Name="Text" Value="邀请他人组队" />
+        <Property Name="UnifiedAreaRect" Value="{{0,228},{0.0517241,0},{0,331},{0.115385,16}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="TeamSearchDlg/JoinTeam">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text">加入队伍
+
+</Property>
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="click.ogg" />
+        <Property Name="UnifiedAreaRect" Value="{{0,10},{0.465517,0},{0,82},{0.456898,24}}" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

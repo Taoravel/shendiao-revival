@@ -1,0 +1,61 @@
+{
+  "batch": "world movement current-cell collision and normal-state delivery lifecycle",
+  "baseline": "runtime/deployments/npc-loyalty-20261023T193742Z",
+  "baseline_pid": 48572,
+  "candidate": "runtime/deployments/world-collision-20261023T204238Z",
+  "acceptance_input_sha256": "4dcc6a0b0b3aea28d338508dd081419e1294bd498aa9d7ef683ac23ff1287917",
+  "methods": {
+    "diagnosing-bugs": {
+      "feedback": "actual encrypted Peer early ACK and held exact Scene drain; clear controls and original wall CHECK/STOP; temporary storage",
+      "ranked_hypotheses": [
+        "runtime factory omits the startup maze, so original blocked cells are accepted",
+        "map movement lacks a trusted current member movement state",
+        "initial, CG, transfer and battle transitions invalidate any permanent state0 assumption"
+      ],
+      "baseline_red": "staging/check_movement_baseline.py: joined=true, accepted STOP before exact drain; all1440 live BASE source hashes unchanged",
+      "regressions_discovered": [
+        "paid completed CEnd was appending a fresh location0 declaration despite evidence=None; exact candidate200906 independently RED",
+        "fresh early ACK starts authorized CG before old Scene drain returns; old receipt closed its replacement send stream; exact candidate202425 independently RED at queue completion",
+        "historical finalize returned target location to source Adapter and cleared replacement member/context; exact202823 independently RED, actual10 transfer replay cases now GREEN"
+      ]
+    },
+    "codebase-design": {
+      "decision": "MapMovement is the sole map-executor-owned ephemeral context module; RoleOwner requests lifecycle changes; ConnectionOwner alone verifies exact message and write/drain",
+      "interface": "immutable declaration and context, current exact Location, pending/confirm/invalidate/advance/leave; no durable second position authority",
+      "scope": "per current map membership; one pending declaration per member; original template maze frozen during startup"
+    },
+    "tdd": {
+      "approved_seams": "actual encrypted Peer, real MapOwner/RoleOwner/ConnectionOwner and original native consumer; disposable caller transactions",
+      "red_then_green": [
+        "verify_runtime_movement_lifecycle.py held Scene drain; strengthened with actual early encrypted ACK and joined=true",
+        "verify_runtime_movement_terminals.py paid duplicate CEnd and current-only state grant",
+        "verify_runtime_movement_intro_race.py actual authorized intro supersedes late Scene delivery without reinstalling old state"
+      ]
+    },
+    "code-review": {
+      "fixed_point": "1440 SHA-bound live BASE, no Git repository",
+      "axes": "root independent Standards and Spec against fixed production diffs and policy; candidate200906/202425/202823 rejected with preserved counterexamples; exact204238 independent both axes0 and ten integration checks plus native HP8 green",
+      "scope_control": "six production differences only; storage derived from live BASE plus startup maze/policy; live repair guard retained"
+    }
+  },
+  "artifacts": [
+    "runtime_movement.py",
+    "staging/prepare_collision_release.py",
+    "staging/run_frozen_candidate_checks.py",
+    "evidence/world-movement-joined-drain-baseline.json",
+    "runtime/deployments/world-collision-20261023T204238Z/candidate.json",
+    "verify_runtime_transfer_replays.py",
+    "evidence/world-transfer-replay-r3-baseline.json",
+    "evidence/approved-loyalty-service-recovery.json"
+  ],
+  "verification_status": "46 exact sealed checks all exit0, all302 maps and exact import graph preserved; startup on consistent formal DB copy preserves all110 table rows with quick_check ok; root structured acceptance granted for exact r4; deployed actual PID35568 from actual approved BASE3396 at2026-10-24T02:21:56Z; source1442/startup445/601/heartbeat/all110 table rows verified",
+  "deployment_report": "evidence/world-collision-deployment-verification.json",
+  "approved_service_restoration": "OS proved old48572 absent; restored last approved193742 immutable release as actualPID3396 after consistent read-only backup; actual601/heartbeat/source1440/startup444 and all110 table rows unchanged; root and NPC independently verified",
+  "unverified": [
+    "native GUI and real actor/resource loading",
+    "complete jump gameplay or special movement modes",
+    "trajectory/speed and exact rounded history occupancy",
+    "paused formal story AI",
+    "commercial storage, capacity and multi-process operation"
+  ]
+}

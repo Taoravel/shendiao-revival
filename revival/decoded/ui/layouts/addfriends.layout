@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="AddFriends">
+    <Property Name="Font" Value="msyh-16" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.3025,0},{0.242647,0},{0.28875,327},{0.297794,190}}" />
+    <Window Type="TaharezLook/StaticImage" Name="AddFriends/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,58},{0,12},{0,220},{0,38}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="AddFriends/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="至尊好友卡" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="85" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,38},{0,1},{0,144},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="AddFriends/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.056962,0},{0.2,0},{0.936709,0},{0.8,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="AddFriends/ApplyMsg">
+        <Property Name="Text">使用说明：
+填写好友ID确定后可与该好友好友度增加至   
+2000，如果已达到2000及以上，则不能使用。
+</Property>
+        <Property Name="HorzExtent" Value="272" />
+        <Property Name="VertExtent" Value="46.8567" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,7},{0,72},{0,272},{0,130}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/Editbox" Name="AddFriends/Content">
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0,50},{0,39},{0,215},{0,59}}" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="AddFriends/PS">
+        <Property Name="Text" Value="请填写好友角色ID" />
+        <Property Name="HorzExtent" Value="106" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.28777,0},{0,12},{0,191},{0,34}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Figure" Name="AddFriends/Back/">
+        <Property Name="UnifiedAreaRect" Value="{{0.172662,0},{0.113636,0},{0.784173,0},{0.234848,0}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="AddFriends/Send">
+      <Property Name="Text">确定
+
+
+
+</Property>
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,56},{0,178},{0,131},{0,202}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="AddFriends/Cancel">
+      <Property Name="Text">取   消
+
+
+
+</Property>
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,186},{0,178},{0,261},{0,202}}" />
+    </Window>
+  </Window>
+</GUILayout>

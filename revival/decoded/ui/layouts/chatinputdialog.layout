@@ -1,0 +1,407 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/StaticImage" Name="ChatInputDlgBackGround">
+    <Property Name="Image" Value="set:MainControl image:Back" />
+    <Property Name="FrameEnabled" Value="False" />
+    <Property Name="UnifiedAreaRect" Value="{{0,0},{1,-39},{0,310},{1,-17}}" />
+    <Property Name="BackgroundEnabled" Value="False" />
+    <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    <Window Type="TaharezLook/ImageButton" Name="ChatInputDlgBackGround/ChanelBtn">
+      <Property Name="Font" Value="fzy4k-9" />
+      <Property Name="Text" Value="当  前" />
+      <Property Name="Tooltip" Value="点击选择聊天频道" />
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:MainControl image:ChatButtonHover" />
+      <Property Name="NormalImage" Value="set:MainControl image:ChatButtonNormal" />
+      <Property Name="PushedImage" Value="set:MainControl image:ChatButtonPushed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,43},{0,20}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,43},{0,20}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0.00967742,0},{0.0454545,0},{0.0166179,41},{0.144853,18}}" />
+      <Property Name="NormalTextColour" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFF9600 br:FFFF9600" />
+      <Property Name="ButtonBorderColour" Value="FF003454" />
+      <Property Name="ButtonBorderEnable" Value="True" />
+      <Property Name="ButtonDefaultColourEnable" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="ChatInputDlgBackGround/EmoteBtn">
+      <Property Name="Tooltip" Value="表情:Alt + -" />
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:MainControl image:EmoteHover" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="NormalImage" Value="set:MainControl image:EmoteNormal" />
+      <Property Name="PushedImage" Value="set:MainControl image:EmotePushed" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedMaxSize" Value="{{0,22},{0,22}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,22},{0,22}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0.722581,0},{0,0},{0.793548,0},{1,0}}" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="ChatInputDlgBackGround/SendBtn">
+      <Property Name="Tooltip" Value="发送:Enter" />
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:MainControl image:SendHover" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="NormalImage" Value="set:MainControl image:SendNormal" />
+      <Property Name="PushedImage" Value="set:MainControl image:SendPushed" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedMaxSize" Value="{{0,22},{0,22}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,22},{0,22}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0.898547,-13},{0,0},{0.946624,-5},{1,0}}" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="ChatInputDlgBackGround/ChanelSelPanel">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,0},{-7.36364,0},{-0.00130208,68},{-6.59304,146}}" />
+      <Window Type="TaharezLook/Checkbox" Name="ChatInputDlgBackGround/ChanelSelPanel/CheckBox2">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Tooltip" Value="选中后显示该频道信息" />
+        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,23},{0,21},{0,41}}" />
+        <Window Type="TaharezLook/ImageButton" Name="ChatInputDlgBackGround/ChanelSelPanel/Current/ChanelBtn2">
+          <Property Name="Font" Value="fzy4k-9" />
+          <Property Name="Text" Value="队  伍" />
+          <Property Name="Tooltip" Value="点击切换至【队伍】频道" />
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:ChatButtonHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:ChatButtonNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:ChatButtonPushed" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,20}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,20}}" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,17},{0,-1},{0,60},{0,19}}" />
+          <Property Name="ButtonBorderColour" Value="FF003454" />
+          <Property Name="ButtonBorderEnable" Value="True" />
+          <Property Name="ButtonDefaultColourEnable" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="ChatInputDlgBackGround/ChanelSelPanel/CheckBox1">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Tooltip" Value="选中后显示该频道信息" />
+        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,3},{0,21},{0,21}}" />
+        <Window Type="TaharezLook/ImageButton" Name="ChatInputDlgBackGround/ChanelSelPanel/Current/ChanelBtn1">
+          <Property Name="Font" Value="fzy4k-9" />
+          <Property Name="Text" Value="当  前" />
+          <Property Name="Tooltip" Value="点击切换至【当前】频道" />
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:ChatButtonHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:ChatButtonNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:ChatButtonPushed" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,20}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,20}}" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,17},{-0.0555556,0},{0,51},{0,17}}" />
+          <Property Name="ButtonBorderColour" Value="FF003454" />
+          <Property Name="ButtonBorderEnable" Value="True" />
+          <Property Name="ButtonDefaultColourEnable" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="ChatInputDlgBackGround/ChanelSelPanel/CheckBox3">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Tooltip" Value="选中后显示该频道信息" />
+        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,43},{0,21},{0,61}}" />
+        <Window Type="TaharezLook/ImageButton" Name="ChatInputDlgBackGround/ChanelSelPanel/Current/ChanelBtn3">
+          <Property Name="Font" Value="fzy4k-9" />
+          <Property Name="Text" Value="家  族" />
+          <Property Name="Tooltip" Value="点击切换至【家族】频道" />
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:ChatButtonHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:ChatButtonNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:ChatButtonPushed" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,20}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,20}}" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,17},{0,-1},{0,60},{0,19}}" />
+          <Property Name="ButtonBorderColour" Value="FF003454" />
+          <Property Name="ButtonBorderEnable" Value="True" />
+          <Property Name="ButtonDefaultColourEnable" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="ChatInputDlgBackGround/ChanelSelPanel/CheckBox5">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Tooltip" Value="选中后显示该频道信息" />
+        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,83},{0,21},{0,101}}" />
+        <Window Type="TaharezLook/ImageButton" Name="ChatInputDlgBackGround/ChanelSelPanel/Current/ChanelBtn5">
+          <Property Name="Font" Value="fzy4k-9" />
+          <Property Name="Text" Value="门  派" />
+          <Property Name="Tooltip" Value="点击切换至【门派】频道" />
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:ChatButtonHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:ChatButtonNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:ChatButtonPushed" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,20}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,20}}" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,17},{0,-1},{0,60},{0,19}}" />
+          <Property Name="ButtonBorderColour" Value="FF003454" />
+          <Property Name="ButtonBorderEnable" Value="True" />
+          <Property Name="ButtonDefaultColourEnable" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="ChatInputDlgBackGround/ChanelSelPanel/CheckBox6">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Tooltip" Value="选中后显示该频道信息" />
+        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,103},{0,21},{0,121}}" />
+        <Window Type="TaharezLook/ImageButton" Name="ChatInputDlgBackGround/ChanelSelPanel/Current/ChanelBtn6">
+          <Property Name="Font" Value="fzy4k-9" />
+          <Property Name="Text" Value="世  界" />
+          <Property Name="Tooltip" Value="点击切换至【世界】频道" />
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:ChatButtonHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:ChatButtonNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:ChatButtonPushed" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,20}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,20}}" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,17},{0,-1},{0,60},{0,19}}" />
+          <Property Name="ButtonBorderColour" Value="FF003454" />
+          <Property Name="ButtonBorderEnable" Value="True" />
+          <Property Name="ButtonDefaultColourEnable" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="ChatInputDlgBackGround/ChanelSelPanel/CheckBox4">
+        <Property Name="Tooltip" Value="选中后显示该频道信息" />
+        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,63},{0,21},{0,81}}" />
+        <Window Type="TaharezLook/ImageButton" Name="ChatInputDlgBackGround/ChanelSelPanel/Current/ChanelBtn4">
+          <Property Name="Font" Value="fzy4k-9" />
+          <Property Name="Text" Value="帮  派" />
+          <Property Name="Tooltip" Value="点击切换至【帮派】频道" />
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:MainControl image:ChatButtonHover" />
+          <Property Name="NormalImage" Value="set:MainControl image:ChatButtonNormal" />
+          <Property Name="PushedImage" Value="set:MainControl image:ChatButtonPushed" />
+          <Property Name="SoundResource" Value="Button.ogg" />
+          <Property Name="UnifiedMaxSize" Value="{{0,43},{0,20}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,43},{0,20}}" />
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,17},{0,-1},{0,60},{0,19}}" />
+          <Property Name="ButtonBorderColour" Value="FF003454" />
+          <Property Name="ButtonBorderEnable" Value="True" />
+          <Property Name="ButtonDefaultColourEnable" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="ChatInputDlgBackGround/ChanelSelPanel/CheckBox7">
+        <Property Name="Tooltip" Value="选中后显示该频道信息" />
+        <Property Name="Selected" Value="True" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,4},{0,123},{0,21},{0,141}}" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="ChatInputDlgBackGround/ChanelSelPanel/Current/ChanelBtn7">
+        <Property Name="Font" Value="fzy4k-9" />
+        <Property Name="Text" Value="喇  叭" />
+        <Property Name="Tooltip" Value="点击切换至【喇叭】频道" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl image:ChatButtonHover" />
+        <Property Name="NormalImage" Value="set:MainControl image:ChatButtonNormal" />
+        <Property Name="PushedImage" Value="set:MainControl image:ChatButtonPushed" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="UnifiedMaxSize" Value="{{0,43},{0,20}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,43},{0,20}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,21},{0,122},{0,64},{0,142}}" />
+        <Property Name="ButtonBorderColour" Value="FF003454" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="ChatInputDlgBackGround/ChanelSelPanel/Current/ChanelBtn8">
+        <Property Name="Font" Value="fzy4k-9" />
+        <Property Name="Text" Value="全  服" />
+        <Property Name="Tooltip" Value="点击切换至【全服】频道" />
+        <Property Name="SizeType" Value="Image" />
+        <Property Name="HoverImage" Value="set:MainControl image:ChatButtonHover" />
+        <Property Name="NormalImage" Value="set:MainControl image:ChatButtonNormal" />
+        <Property Name="PushedImage" Value="set:MainControl image:ChatButtonPushed" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="UnifiedMaxSize" Value="{{0,43},{0,20}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,43},{0,20}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,18},{0.05,134},{0.05,61},{0.05,154}}" />
+        <Property Name="ButtonBorderColour" Value="FF003454" />
+        <Property Name="ButtonBorderEnable" Value="True" />
+        <Property Name="ButtonDefaultColourEnable" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/Checkbox" Name="ChatInputDlgBackGround/ChanelSelPanel/CheckBox8">
+        <Property Name="Tooltip" Value="选中后显示该频道信息" />
+        <Property Name="Selected" Value="True" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,1},{0.05,135},{0.05,18},{0.05,153}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="ChatInputDlgBackGround/ColorPanel">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.770968,0},{-4.77273,0},{0.9,0},{-4.68182,103}}" />
+      <Window Type="TaharezLook/StaticText" Name="ChatInputDlgBackGround/ColorPanel/ColorBtn1">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="■" />
+        <Property Name="HorzExtent" Value="13" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFF9019F tr:FFF9019F bl:FFF9019F br:FFF9019F" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,7},{0,21},{0,20}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ChatInputDlgBackGround/ColorPanel/ColorBtn2">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="■" />
+        <Property Name="HorzExtent" Value="13" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFF000 tr:FFFFF000 bl:FFFFF000 br:FFFFF000" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,24},{0,21},{0,37}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ChatInputDlgBackGround/ColorPanel/ColorBtn3">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="■" />
+        <Property Name="HorzExtent" Value="13" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF0CFF00 tr:FF0CFF00 bl:FF0CFF00 br:FF0CFF00" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,40},{0,21},{0,53}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ChatInputDlgBackGround/ColorPanel/ColorBtn4">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="■" />
+        <Property Name="HorzExtent" Value="13" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF2C59FF tr:FF2C59FF bl:FF2C59FF br:FF2C59FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,57},{0,21},{0,70}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ChatInputDlgBackGround/ColorPanel/ColorBtn5">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="■" />
+        <Property Name="HorzExtent" Value="13" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,72},{0,21},{0,85}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ChatInputDlgBackGround/ColorPanel/ColorBtn6">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="■" />
+        <Property Name="HorzExtent" Value="13" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFFAA0E6 tr:FFFAA0E6 bl:FFFAA0E6 br:FFFAA0E6" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,22},{0,7},{0,38},{0,20}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ChatInputDlgBackGround/ColorPanel/ColorBtn7">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="■" />
+        <Property Name="HorzExtent" Value="13" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF7272FF tr:FF7272FF bl:FF7272FF br:FF7272FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,22},{0,24},{0,38},{0,37}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ChatInputDlgBackGround/ColorPanel/ColorBtn8">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="■" />
+        <Property Name="HorzExtent" Value="13" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF0DE78D tr:FF0DE78D bl:FF0DE78D br:FF0DE78D" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,22},{0,40},{0,38},{0,53}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ChatInputDlgBackGround/ColorPanel/ColorBtn9">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="■" />
+        <Property Name="HorzExtent" Value="13" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF75CCD9 tr:FF75CCD9 bl:FF75CCD9 br:FF75CCD9" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,22},{0,57},{0,38},{0,70}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ChatInputDlgBackGround/ColorPanel/ColorBtn10">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="■" />
+        <Property Name="HorzExtent" Value="13" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFA547F0 tr:FFA547F0 bl:FFA547F0 br:FFA547F0" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,22},{0,72},{0,38},{0,85}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ChatInputDlgBackGround/ColorPanel/ColorBtn11">
+        <Property Name="Text" Value="■" />
+        <Property Name="HorzExtent" Value="13" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FFF08723 tr:FFF08723 bl:FFF08723 br:FFF08723" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,5},{0.05,83},{0,21},{0.05,96}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="ChatInputDlgBackGround/ColorPanel/ColorBtn12">
+        <Property Name="Text" Value="■" />
+        <Property Name="HorzExtent" Value="13" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF00BEFF tr:FF00BEFF bl:FF00BEFF br:FF00BEFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,22},{0.05,83},{0,38},{0.05,96}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="ChatInputDlgBackGround/ColourBtn">
+      <Property Name="Tooltip" Value="选择文字颜色" />
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:MainControl image:ColourHover" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="NormalImage" Value="set:MainControl image:ColourNormal" />
+      <Property Name="PushedImage" Value="set:MainControl image:ColourPushed" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedMaxSize" Value="{{0,22},{0,22}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,22},{0,22}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0.847265,-18},{0,0},{0.898547,-12},{1,0}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="ChatInputDlgBackGround/ChatEditBox">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.151613,0},{0.136364,0},{0.722581,0},{0.954545,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/RichEditbox" Name="BackImage/InputBox">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="LineSpace" Value="1" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="1073741823" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{-0.166667,0},{0.00506419,173},{-0.111111,21}}" />
+        <Property Name="BackGroundEnable" Value="False" />
+        <Property Name="BlinkCaretTimeout" Value="0.5" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="ChatInputDlgBackGround/Action">
+      <Property Name="Tooltip" Value="点击打开动作界面" />
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:MainControl image:ActionHover" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="NormalImage" Value="set:MainControl image:ActionNormal" />
+      <Property Name="PushedImage" Value="set:MainControl image:ActionPushed" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedMaxSize" Value="{{0,22},{0,22}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,22},{0,22}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0.925806,0},{0,0},{0.996774,0},{1,0}}" />
+    </Window>
+  </Window>
+</GUILayout>

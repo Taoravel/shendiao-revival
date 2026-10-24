@@ -1,0 +1,12 @@
+--- a/revival/game_runtime.py
++++ b/revival/game_runtime.py
+@@ -433,8 +433,7 @@
+             return []
+         if kind in npc_gameplay.NPC_GAMEPLAY_TYPES:
+             if not self.joined: raise ValueError('NPC gameplay waits for world initialization')
+-            if kind==npc_depot.OPEN_DEPOT:
+-                if len(body)!=8: raise ValueError('Invalid warehouse open')
++            if kind in npc_gameplay.NPC_DEPOT_TYPES:
+                 return await self.depot_request(cmd,kind,body)
+             sale=kind in (npc_shop_sales.SELL_ITEMS,npc_shop_sales.REPURCHASE)
+             recovery=kind==npc_recovery.RECOVERY

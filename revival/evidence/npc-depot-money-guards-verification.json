@@ -1,0 +1,14 @@
+{
+  "passed": [
+    "expired real access ticket rejects deposit and revokes later draw without any asset/receipt mutation",
+    "opening again restores legitimate access",
+    "identical fresh native requests each transfer once rather than being globally deduplicated",
+    "malformed/zero/negative/wrong NPC actual money requests leave both balances and all receipts unchanged",
+    "native movement cancels access; draw rejects unchanged until warehouse reopens"
+  ],
+  "clock_scope": "only game_runtime time dependency advanced past its ticket; no event-loop clock replacement",
+  "database": "disposable",
+  "native_gui_verified": false,
+  "live_server_changed": false,
+  "battle_executed": false
+}

@@ -1,0 +1,69 @@
+{
+  "revision": "2026-10-23.pet.1",
+  "provenance": "designed",
+  "scope": "restoration_pet_growth_missing_server_rules_only",
+  "activation": "module_integration_and_attribute_scale_check_required",
+  "research": "evidence/PET_NUMERIC_RESEARCH.md",
+  "client_values": {
+    "aptitudes": "cpetattr original min/max fields; preserve each selected integer in instance storage",
+    "growth": "cpetattr original growrate list; preserve selected raw integer",
+    "experience": "cpetnextexp original values; no fitted polynomial",
+    "take_and_fight_level": "cpetattr takelevel and uselevel"
+  },
+  "generation": {
+    "provenance": "designed",
+    "initial_level": 0,
+    "initial_five_stats": 10,
+    "aptitude_selection": "floor((client_min + client_max) / 2)",
+    "growth_selection": "client_growrate[floor(list_length / 2)]",
+    "sampling_note": "Deterministic restoration baseline; no claim of recovered rarity or random probabilities. Never reroll persisted instances."
+  },
+  "experience_policy": {
+    "provenance": "designed_index_mapping_using_client_values",
+    "ordinary_key": "current_level",
+    "ordinary_level_cap": 150,
+    "special_keys_1001_to_1150": "preserve_but_do_not_use_without_explicit_phase_mapping",
+    "semantics": "subtract current-level row exp for each successful level increase; carry remaining experience",
+    "at_level_cap": "retain unspent experience without further leveling",
+    "missing_or_nonpositive_threshold": "reject_entire_award_transaction",
+    "negative_award": "reject",
+    "maximum_stored_experience": 2147483647,
+    "overflow": "reject_entire_award_transaction"
+  },
+  "attribute_points": {
+    "provenance": "designed; growth_raw / 100 direction is supported only by historical official guide",
+    "order": ["vitality", "inner_power", "strength", "endurance", "agility"],
+    "total_earned": "floor(growth_raw * (level - initial_level) / 100)",
+    "free_earned": "5 * (level - initial_level)",
+    "automatic_earned": "total_earned - free_earned",
+    "automatic_distribution": "q=automatic_earned//5, r=automatic_earned%5; stat[i] gets q+(i<r)",
+    "final_stat": "initial_five_stats + automatic_share + allocated_free_points",
+    "allocation": "nonnegative integers only; sum of allocated <= free_earned; persist allocation",
+    "growth_below_500": "reject profile as incompatible, never create negative automatic points",
+    "remainder": "calculate cumulative totals from raw integers; no per-level float rounding",
+    "evolution_bloodline_skills": "separate explicit modifiers; not included in this baseline"
+  },
+  "derived_attributes": {
+    "provenance": "designed",
+    "variables": "L=level; V=vitality; I=inner_power; S=strength; E=endurance; A=agility; QA/QD/QV/QM/QS are selected original aptitude integers",
+    "hp_max": "50 + floor(10 * V * QV / 1000) + 2 * L",
+    "mp_max": "30 + floor(5 * I * QM / 1000) + L",
+    "physical_attack": "5 + floor(2 * S * QA / 1000) + L",
+    "physical_defense": "5 + floor(3 * E * QD / 2000) + floor(L / 2)",
+    "magic_attack": "5 + floor(2 * I * QM / 1000) + L",
+    "magic_defense": "5 + floor((I + E) * QM / 1000) + floor(L / 2)",
+    "speed": "5 + floor(A * QS / 1000) + floor(L / 5)",
+    "bounds": "HP>=1, MP>=0, speed>=1, other derived values>=0; reject integer overflow",
+    "growth_application": "growth changes point totals only; do not multiply derived attributes again",
+    "vitality_after_upgrade": "preserve missing HP/MP: current=min(new_max, max(0, old_current + new_max - old_max)); a dead pet stays at HP0",
+    "view_refresh": "only encode native fields after each meaning is confirmed"
+  },
+  "persistence": {
+    "owner": "role_id + login_epoch",
+    "transaction": "pet XP, level, points, resource changes, revision and settlement receipt commit together",
+    "retry_key": "role_id + settlement_id + pet_instance_id",
+    "existing_pet": "explicit one-time migration required; constructor zero defaults are not recovered stats",
+    "reward_recipient": "explicit pet_instance_id; no silent selection of first pet",
+    "battle": "immutable versioned snapshot; integrate after player and pet attribute scales are checked"
+  }
+}

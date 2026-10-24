@@ -1,0 +1,26 @@
+{
+  "status": "deployed_and_independently_verified",
+  "deployed_release": "npc-bound-shop-20261023T115742Z",
+  "deployed_pid": 39796,
+  "deployment_evidence": "npc-bound-shop-deployment-verification.json",
+  "hash_scope": "immutable release inputs; later workspace changes are excluded",
+  "base_release": "npc-close-master-commit-20261023T113819Z",
+  "base_pid": 44084,
+  "files": {
+    "npc_gameplay.py": "e5d70e181a18dd13ff29ed0c9302bb65f980e8b498160c5eb8a444a15d344bfa",
+    "npc_shop_payments.py": "874f6f02e3f154b32f408d61c853bc9cea07236d3f5db812c769e9de91d72450",
+    "design/npc-shop-payments-v1.json": "e5575ee1c4e8718e862efec8cca25769416660ab417373a971b62393addca386",
+    "design/currency-v1.json": "13a573af54597eee1ff6fdae3389a51615e5d8a24738713755b362900a79523d"
+  },
+  "checks": [
+    "verify_npc_bound_shop_runtime.py",
+    "verify_npc_bound_shop_sources.py",
+    "verify_npc_shop_runtime.py"
+  ],
+  "review": {
+    "standards_hard": 0,
+    "standards_heuristic": 0,
+    "spec": 0
+  },
+  "live_database_modified": false
+}

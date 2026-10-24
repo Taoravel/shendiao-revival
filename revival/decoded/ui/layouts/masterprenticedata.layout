@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="MasterPrenticeData">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.181251,0},{0.31,0},{0.181251,509.999},{0.31,228}}" />
+    <Window Type="TaharezLook/Button" Name="MasterPrenticeData/relationbtn">
+      <Property Name="Text" Value="解除关系" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,313},{0,190},{0,385},{0,214}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="MasterPrenticeData/back">
+      <Property Name="Text" Value="离   开" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,395},{0,190},{0,463},{0,214}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="MasterPrenticeData/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.298297,0},{0,12},{0.90222,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="MasterPrenticeData/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="师徒关系表" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="85" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,76},{0,1},{0,191},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/MultiColumnList" Name="MasterPrenticeData/list">
+      <Property Name="UnifiedAreaRect" Value="{{0,17},{0,44},{0,492},{0,187.83}}" />
+      <Property Name="ColumnHeader" Value="text:关系 width:{0.1,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:玩家名称 width:{0.3,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:等级 width:{0.1,0} id:2" />
+      <Property Name="ColumnHeader" Value="text:门派 width:{0.15,0} id:3" />
+      <Property Name="ColumnHeader" Value="text:上次下线时间 width:{1,-308} id:4" />
+    </Window>
+  </Window>
+</GUILayout>

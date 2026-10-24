@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="WordBook">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="SoundResource" Value="SpecialOpen.ogg" />
+    <Property Name="UnifiedAreaRect" Value="{{0.07625,0},{1,-491},{0.07625,678},{1,-127}}" />
+    <Property Name="CloseSoundResource" Value="SpecialOpen.ogg" />
+    <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    <Window Type="TaharezLook/StaticImage" Name="WordBook/back">
+      <Property Name="Image" Value="set:MainControl17 image:ServantBig" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,677},{0,350}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,677},{0,350}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.5,-339},{0.5,-175},{0,339},{0,175}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="TaharezLook/Combobox" Name="WordBook/combox">
+        <Property Name="Text" Value="$owner$，在这下面输入想知道的内容吧。" />
+        <Property Name="CaratIndex" Value="22" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,238.338},{0,277.072},{0,535.338},{0,397.072}}" />
+        <Property Name="MaxEditTextLength" Value="2147483647" />
+        <Property Name="EditSelectionStart" Value="22" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="WordBook/enter">
+        <Property Name="Text" Value="提   问" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="click.ogg" />
+        <Property Name="UnifiedAreaRect" Value="{{0,545.309},{0,276.514},{0,613.309},{0,298.514}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="WordBook/back/Head">
+        <Property Name="Visible" Value="False" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.479034,0},{0.820397,0},{0.48269,0},{0.841546,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/RichEditbox" Name="WordBook/richeditbook">
+        <Property Name="LineSpace" Value="1" />
+        <Property Name="BlinkCaret" Value="True" />
+        <Property Name="MaxTextLength" Value="2147483647" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,208.801},{0.05,18.7821},{0.05,594.801},{0.05,250.782}}" />
+        <Property Name="BackGroundEnable" Value="False" />
+        <Property Name="BlinkCaretTimeout" Value="0.5" />
+        <Property Name="TextParsingEnabled" Value="False" />
+      </Window>
+      <Window Type="TaharezLook/ImageButton" Name="WordBook/closebtn">
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="HoverImage" Value="set:component image:CloseButtonHover" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="NormalImage" Value="set:component image:CloseButtonNormal" />
+        <Property Name="PushedImage" Value="set:component image:CloseButtonPressed" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,585},{0.0465817,0},{0.05,603},{0.05,16}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="WordBook/back/Name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="江湖宝典" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFF9600 br:FFFF9600" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.440768,0},{0.855891,0},{0.576051,0},{0.964653,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="WordBook/icon">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,-51.681},{0,385.505},{0,59.319},{0,484.505}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+  </Window>
+</GUILayout>

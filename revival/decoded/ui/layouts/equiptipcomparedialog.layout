@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/RichEditbox1" Name="EquipTips">
+    <Property Name="Font" Value="simhei-12" />
+    <Property Name="ReadOnly" Value="True" />
+    <Property Name="LineSpace" Value="1" />
+    <Property Name="BlinkCaret" Value="True" />
+    <Property Name="MaxTextLength" Value="1073741823" />
+    <Property Name="UnifiedAreaRect" Value="{{0,60},{0,36},{0,332},{0,177}}" />
+    <Property Name="BlinkCaretTimeout" Value="0.5" />
+    <Property Name="TextParsingEnabled" Value="False" />
+    <Window Type="TaharezLook/StaticImage" Name="EquipTipCompareDialog/colorimage">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.018382,0},{0,5},{1,-5},{0,60}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="EquipTipCompareDialog/name">
+      <Property Name="Font" Value="msyh-16" />
+      <Property Name="TextColours" Value="tl:FFFF0000 tr:FFFFFF00 bl:FFFFFF00 br:FFFFFF00" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,11},{0,4},{0,206},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="EquipTipCompareDialog/icon">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="Tiled" />
+      <Property Name="VertFormatting" Value="Tiled" />
+      <Property Name="UnifiedAreaRect" Value="{{1,-49},{0,7},{1,-7},{0,49}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="EquipTipCompareDialog/lockicon">
+      <Property Name="Image" Value="set:MainControl5 image:Locked" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,12},{0,19}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,12},{0,19}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{1,-65},{0,8},{1,-49},{0,24}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="EquipTipCompareDialog/bind">
+      <Property Name="Text" Value="已绑定" />
+      <Property Name="HorzExtent" Value="39" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFF00 bl:FFFF0000 br:FFFF0000" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{1,-49},{0,47},{1,-7},{0,67}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="EquipTips/CurrentEquip">
+      <Property Name="Image" Value="set:MainControl image:PresentEquip" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{1,-49},{0,74},{1,-7},{0,116}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,531 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="DefaultWindow" Name="loginBack">
+    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+    <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+    <Window Type="TaharezLook/StaticImage" Name="loginBack/back">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.00125,0},{-0.00166667,0},{1.00125,0},{0.998333,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Window Type="DefaultWindow" Name="LoginDialog">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="UnifiedAreaRect" Value="{{0.5,-243},{0.12,0},{0.885,0},{0.805,0}}" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Window Type="TaharezLook/StaticImage" Name="LoginDialog/back">
+          <Property Name="Image" Value="set:LoginBack image:loginBack" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,453},{0,212}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,453},{0,212}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.5,-163},{0.5,-179},{1.02722,0},{0.581509,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+          <Window Type="TaharezLook/Combobox" Name="LoginDialog/nameEdit">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,134},{0,114},{0,315},{0,297}}" />
+            <Property Name="MaxEditTextLength" Value="50" />
+          </Window>
+          <Window Type="TaharezLook/LoginEditbox" Name="LoginDialog/keyEdit">
+            <Property Name="BlinkCaret" Value="True" />
+            <Property Name="MaxTextLength" Value="1073741823" />
+            <Property Name="UnifiedAreaRect" Value="{{0,131},{0,140},{0,314},{0,161}}" />
+            <Property Name="TextParsingEnabled" Value="False" />
+            <Window Type="TaharezLook/ImageButton" Name="LoginDialog/keyEdit/SoftkeyboradBT">
+              <Property Name="SizeType" Value="Image" />
+              <Property Name="HoverImage" Value="set:LoginBack image:KeyboardHover" />
+              <Property Name="NormalImage" Value="set:LoginBack image:KeyboardNormal" />
+              <Property Name="PushedImage" Value="set:LoginBack image:KeyboardPushed" />
+              <Property Name="UnifiedMaxSize" Value="{{0,17},{0,11}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,17},{0,11}}" />
+              <Property Name="UnifiedAreaRect" Value="{{0.895012,0},{0.218537,0},{0,182.787},{0,17.5893}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/ImageButton" Name="LoginDialog/LoginBtn">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="SizeType" Value="Image" />
+            <Property Name="HoverImage" Value="set:LoginBack image:LoginHover" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="NormalImage" Value="set:LoginBack image:LoginNormal" />
+            <Property Name="PushedImage" Value="set:LoginBack image:LoginPushed" />
+            <Property Name="DisabledImage" Value="set:LoginBack image:LoginDisable" />
+            <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+            <Property Name="UnifiedMaxSize" Value="{{0,215},{0,40}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,215},{0,40}}" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,172},{0,224},{0.05,387},{0,264}}" />
+            <Property Name="NormalTextColour" Value="tl:FF3C8DB3 tr:FF3C8DB3 bl:FF84DBFF br:FF84DBFF" />
+            <Property Name="ButtonBorderColour" Value="FF0A293C" />
+            <Property Name="ButtonBorderEnable" Value="True" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Property Name="ButtonDefaultBorderEnable" Value="False" />
+            <Property Name="ButtonDefaultColourEnable" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="LoginDialog/accountText1">
+            <Property Name="Font" Value="simhei-12" />
+            <Property Name="Text" Value="您当前所在" />
+            <Property Name="HorzExtent" Value="65" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+            <Property Name="BorderColour" Value="FF5F4100" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,98},{0,197},{0,171},{0,215}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="loginBack/softkeybroad/background">
+            <Property Name="Image" Value="set:MainControl6 image:SoftKeyBigBack" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,271},{0,131}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,271},{0,131}}" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,-10},{0,345},{0,261},{0,476}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/num_1">
+              <Property Name="Text" Value="1" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,9},{0,10},{0,31},{0,30}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/num_2">
+              <Property Name="Text" Value="1" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,32},{0,10},{0,54},{0,30}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/num_3">
+              <Property Name="Text" Value="1" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,55},{0,10},{0,77},{0,30}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/num_4">
+              <Property Name="Text" Value="1" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,78},{0,10},{0,100},{0,30}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/num_5">
+              <Property Name="Text" Value="1" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,101},{0,10},{0,123},{0,30}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/num_6">
+              <Property Name="Text" Value="1" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,124},{0,10},{0,146},{0,30}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/num_7">
+              <Property Name="Text" Value="1" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,147},{0,10},{0,169},{0,30}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/num_8">
+              <Property Name="Text" Value="1" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,170},{0,10},{0,192},{0,30}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/num_9">
+              <Property Name="Text" Value="1" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,193},{0,10},{0,215},{0,30}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/num_10">
+              <Property Name="Text" Value="1" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,216},{0,10},{0,238},{0,30}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/num_11">
+              <Property Name="Text" Value="1" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,239},{0,10},{0,261},{0,30}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_1">
+              <Property Name="Text" Value="q" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,19},{0,31},{0,41},{0,51}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_2">
+              <Property Name="Text" Value="w" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,42},{0,31},{0,64},{0,51}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_3">
+              <Property Name="Text" Value="q" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,65},{0,31},{0,87},{0,51}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_4">
+              <Property Name="Text" Value="q" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,88},{0,31},{0,110},{0,51}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_5">
+              <Property Name="Text" Value="q" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,111},{0,31},{0,133},{0,51}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_6">
+              <Property Name="Text" Value="q" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,134},{0,31},{0,156},{0,51}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_7">
+              <Property Name="Text" Value="q" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,157},{0,31},{0,179},{0,51}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_8">
+              <Property Name="Text" Value="q" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,180},{0,31},{0,202},{0,51}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_9">
+              <Property Name="Text" Value="q" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,203},{0,31},{0,225},{0,51}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_10">
+              <Property Name="Text" Value="q" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,226},{0,31},{0,248},{0,51}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_11">
+              <Property Name="Text" Value="q" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,29},{0,52},{0,51},{0,72}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_12">
+              <Property Name="Text" Value="q" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,52},{0,52},{0,74},{0,72}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_13">
+              <Property Name="Text" Value="q" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,75},{0,52},{0,97},{0,72}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_14">
+              <Property Name="Text" Value="q" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,98},{0,52},{0,120},{0,72}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_15">
+              <Property Name="Text" Value="q" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,121},{0,52},{0,143},{0,72}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_16">
+              <Property Name="Text" Value="q" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,144},{0,52},{0,166},{0,72}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_17">
+              <Property Name="Text" Value="q" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,167},{0,52},{0,189},{0,72}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_18">
+              <Property Name="Text" Value="q" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,190},{0,52},{0,212},{0,72}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_19">
+              <Property Name="Text" Value="q" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,213},{0,52},{0,235},{0,72}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_20">
+              <Property Name="Text" Value="q" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,40},{0,73},{0,62},{0,93}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_21">
+              <Property Name="Text" Value="q" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,63},{0,73},{0,85},{0,93}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_22">
+              <Property Name="Text" Value="q" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,86},{0,73},{0,108},{0,93}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_23">
+              <Property Name="Text" Value="q" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,109},{0,73},{0,131},{0,93}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_24">
+              <Property Name="Text" Value="q" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,132},{0,73},{0,154},{0,93}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_25">
+              <Property Name="Text" Value="q" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,155},{0,73},{0,177},{0,93}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/char_26">
+              <Property Name="Text" Value="q" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,178},{0,73},{0,200},{0,93}}" />
+            </Window>
+            <Window Type="TaharezLook/PassWordGroupButton" Name="loginBack/softkeybroad/capslock">
+              <Property Name="Text" Value="大/小写" />
+              <Property Name="EnableSound" Value="True" />
+              <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+              <Property Name="UnifiedAreaRect" Value="{{0,201},{0,73},{0,256},{0,93}}" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="loginBack/softkeybroad/background/note">
+              <Property Name="Text" Value="交替使用真实键盘和上方的软键盘可以提高密码的安全性" />
+              <Property Name="HorzExtent" Value="195" />
+              <Property Name="VertExtent" Value="31.2378" />
+              <Property Name="TextColours" Value="tl:FF15BAFF tr:FF15BAFF bl:FF15BAFF br:FF15BAFF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="WordWrapCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0,46.5743},{0,92.349},{0,249.574},{0,125.349}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/ImageButton" Name="LoginDialog/selectbtn">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="SizeType" Value="Image" />
+            <Property Name="HoverImage" Value="set:LoginBack image:ServerHover" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="NormalImage" Value="set:LoginBack image:ServerNormal" />
+            <Property Name="PushedImage" Value="set:LoginBack image:ServerPushed" />
+            <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+            <Property Name="UnifiedMaxSize" Value="{{0,215},{0,40}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,215},{0,40}}" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,172},{0,265},{0.05,387},{0,305}}" />
+            <Property Name="NormalTextColour" Value="tl:FF3C8DB3 tr:FF3C8DB3 bl:FF84DBFF br:FF84DBFF" />
+            <Property Name="ButtonBorderColour" Value="FF0A293C" />
+            <Property Name="ButtonBorderEnable" Value="True" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Property Name="ButtonDefaultBorderEnable" Value="False" />
+            <Property Name="ButtonDefaultColourEnable" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="LoginDialog/servername">
+            <Property Name="Text" Value="电信一区——亲友体验大服·网通服" />
+            <Property Name="HorzExtent" Value="200" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF2C577 br:FFF2C577" />
+            <Property Name="BorderColour" Value="FF433C10" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,177},{0,197},{0,450},{0,215}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/ImageButton" Name="LoginDialog/back/Regist">
+            <Property Name="SizeType" Value="Image" />
+            <Property Name="HoverImage" Value="set:LoginBack image:BankHover" />
+            <Property Name="NormalImage" Value="set:LoginBack image:BankNormal" />
+            <Property Name="PushedImage" Value="set:LoginBack image:BankPushed" />
+            <Property Name="UnifiedMaxSize" Value="{{0,52},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,52},{0,16}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.724062,0},{0.54717,0},{0.838852,0},{0.622642,0}}" />
+          </Window>
+          <Window Type="TaharezLook/ImageButton" Name="LoginDialog/back/Regist1">
+            <Property Name="SizeType" Value="Image" />
+            <Property Name="HoverImage" Value="set:LoginBack image:ForgetHover" />
+            <Property Name="NormalImage" Value="set:LoginBack image:ForgetNormal" />
+            <Property Name="PushedImage" Value="set:LoginBack image:ForgetPushed" />
+            <Property Name="UnifiedMaxSize" Value="{{0,52},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,52},{0,16}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.724062,0},{0.05,132},{0.838852,0},{0.05,148}}" />
+          </Window>
+          <Window Type="TaharezLook/LoginCheckbox" Name="LoginDialog/saveAccount">
+            <Property Name="UnifiedAreaRect" Value="{{0.05,67},{0.05,149},{0.05,89},{0.05,177}}" />
+          </Window>
+          <Window Type="TaharezLook/LoginCheckbox" Name="LoginDialog/forcelogin">
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,219},{0.05,149},{0.05,238},{0.05,177}}" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="LoginDialog/back/Image">
+            <Property Name="Image" Value="set:LoginBack image:mima" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,55},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,55},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.238411,0},{0.783019,0},{0.359823,0},{0.858491,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="LoginDialog/back/Image1">
+            <Property Name="Image" Value="set:LoginBack image:LoginImage" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,55},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,55},{0,16}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.576159,0},{0.778302,0},{0.697572,0},{0.760274,20}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/ImageButton" Name="LoginDialog/LoginBtn1">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Tooltip" Value="可直接使用您的新浪、360、人人、腾讯微博、淘宝账号登录" />
+            <Property Name="SizeType" Value="Image" />
+            <Property Name="HoverImage" Value="set:LoginBack image:CoopHover" />
+            <Property Name="EnableSound" Value="True" />
+            <Property Name="NormalImage" Value="set:LoginBack image:CoopNormal" />
+            <Property Name="PushedImage" Value="set:LoginBack image:CoopPushed" />
+            <Property Name="DisabledImage" Value="set:LoginBack image:LoginDisable" />
+            <Property Name="SoundResource" Value="RCCopter_ControlButton4.ogg" />
+            <Property Name="UnifiedMaxSize" Value="{{0,215},{0,40}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,215},{0,40}}" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,172},{0,306},{0.05,387},{0,346}}" />
+            <Property Name="NormalTextColour" Value="tl:FF3C8DB3 tr:FF3C8DB3 bl:FF84DBFF br:FF84DBFF" />
+            <Property Name="ButtonBorderColour" Value="FF0A293C" />
+            <Property Name="ButtonBorderEnable" Value="True" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+            <Property Name="ButtonDefaultBorderEnable" Value="False" />
+            <Property Name="ButtonDefaultColourEnable" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="loginBack/back/warn">
+            <Property Name="Image" Value="set:MainControl15 image:AchievementNormalBig" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.05,64},{0.05,156},{0.05,420},{0.05,219}}" />
+            <Window Type="TaharezLook/StaticText" Name="loginBack/back/warn/text">
+              <Property Name="Text" Value="大写锁定已打开" />
+              <Property Name="HorzExtent" Value="91" />
+              <Property Name="VertExtent" Value="15.6189" />
+              <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+              <Property Name="BorderColour" Value="FF280B03" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.101124,0},{0.031746,0},{0.587079,0},{0,22}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="loginBack/back/warn/text1">
+              <Property Name="Text" Value="保持大写锁定打开可能会使您错误输入密码，在输入密码前，您可以按“CapsLock”键来将其关闭。" />
+              <Property Name="HorzExtent" Value="351" />
+              <Property Name="VertExtent" Value="31.2378" />
+              <Property Name="TextColours" Value="tl:FFFFF5E2 tr:FFFFF5E2 bl:FFF3AE37 br:FFF3AE37" />
+              <Property Name="BorderColour" Value="FF433C10" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+              <Property Name="UnifiedAreaRect" Value="{{0.0140449,0},{0,21},{1.00562,0},{0,63}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="loginBack/back/warn/image">
+              <Property Name="Image" Value="set:MainControl image:AddictionControlRed" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedMaxSize" Value="{{0,24},{0,24}}" />
+              <Property Name="UnifiedMinSize" Value="{{0,24},{0,24}}" />
+              <Property Name="ImageSizeEnable" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.0252809,0},{-0.015873,0},{0.0926966,0},{0,23}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/ImageButton" Name="LoginDialog/back/Resever">
+            <Property Name="SizeType" Value="Image" />
+            <Property Name="HoverImage" Value="set:LoginBack image:ReseverHover" />
+            <Property Name="NormalImage" Value="set:LoginBack image:ReseverNormal" />
+            <Property Name="PushedImage" Value="set:LoginBack image:ReseverPushed" />
+            <Property Name="UnifiedMaxSize" Value="{{0,65},{0,16}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,65},{0,16}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.724062,0},{0.1,146},{0.86755,0},{0.1,162}}" />
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="loginBack/back/back">
+        <Property Name="Image" Value="set:LoginBack image:News" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,279},{0,165}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,279},{0,165}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{1,-291},{1,-223},{1,-12},{0.903333,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/RichEditbox" Name="loginBack/back/systemmsg">
+          <Property Name="ReadOnly" Value="True" />
+          <Property Name="LineSpace" Value="1" />
+          <Property Name="BlinkCaret" Value="True" />
+          <Property Name="MaxTextLength" Value="2147483647" />
+          <Property Name="UnifiedAreaRect" Value="{{0.103943,0},{0.169697,0},{0.106481,242},{0.836364,0}}" />
+          <Property Name="BackGroundEnable" Value="False" />
+          <Property Name="BlinkCaretTimeout" Value="0.5" />
+          <Property Name="TextParsingEnabled" Value="False" />
+          <Window Type="TaharezLook/StaticText" Name="loginBack/back/systemmsg/title">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Text" Value="维护信息" />
+            <Property Name="HorzExtent" Value="64" />
+            <Property Name="VertExtent" Value="18.75" />
+            <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+            <Property Name="BorderColour" Value="FF280B03" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.572016,0},{-0.2,0},{0.880658,0},{0.0272727,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/ImageButton" Name="loginBack/back/refreshbtn">
+          <Property Name="Font" Value="simhei-12" />
+          <Property Name="SizeType" Value="Image" />
+          <Property Name="HoverImage" Value="set:LoginBack image:RefreshHover" />
+          <Property Name="NormalImage" Value="set:LoginBack image:RefreshNormal" />
+          <Property Name="PushedImage" Value="set:LoginBack image:RefreshPushed" />
+          <Property Name="UnifiedMaxSize" Value="{{0,53},{0,16}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,53},{0,16}}" />
+          <Property Name="UnifiedAreaRect" Value="{{0.781362,0},{0.854545,0},{0,271},{0,157}}" />
+          <Property Name="DisplaySizeChangePosEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="loginBack/back/back/titleline">
+          <Property Name="Image" Value="set:LoginBack image:Titleline" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,206},{0,20}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,206},{0,20}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.164875,0},{0.0363636,0},{0.903226,0},{0.157576,0}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

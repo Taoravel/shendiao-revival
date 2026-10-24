@@ -1,0 +1,168 @@
+00626b40 sub      esp, 8
+00626b43 push     ebx
+00626b44 push     ebp
+00626b45 mov      ebp, dword ptr [esp + 0x14]
+00626b49 push     esi
+00626b4a mov      ebx, eax
+00626b4c mov      esi, edx
+00626b4e cmp      esi, ebx
+00626b50 push     edi
+00626b51 mov      edi, ecx
+00626b53 jne      0x626b66
+00626b55 cmp      edi, ebp
+00626b57 jne      0x626b66
+00626b59 mov      eax, 3
+00626b5e pop      edi
+00626b5f pop      esi
+00626b60 pop      ebp
+00626b61 pop      ebx
+00626b62 add      esp, 8
+00626b65 ret      
+00626b66 sub      ebx, esi
+00626b68 mov      eax, ebx
+00626b6a cdq      
+00626b6b mov      ecx, eax
+00626b6d xor      ecx, edx
+00626b6f sub      ebp, edi
+00626b71 sub      ecx, edx
+00626b73 mov      eax, ebp
+00626b75 cdq      
+00626b76 xor      eax, edx
+00626b78 sub      eax, edx
+00626b7a cmp      eax, ecx
+00626b7c mov      byte ptr [esp + 0x17], 0
+00626b81 jle      0x626b8d
+00626b83 mov      eax, ebp
+00626b85 mov      ebp, ebx
+00626b87 mov      ebx, eax
+00626b89 mov      cl, 1
+00626b8b jmp      0x626b91
+00626b8d mov      cl, byte ptr [esp + 0x17]
+00626b91 test     ebx, ebx
+00626b93 jne      0x626b99
+00626b95 xor      ebp, ebp
+00626b97 jmp      0x626ba3
+00626b99 mov      eax, ebp
+00626b9b shl      eax, 0x10
+00626b9e cdq      
+00626b9f idiv     ebx
+00626ba1 mov      ebp, eax
+00626ba3 xor      edx, edx
+00626ba5 test     ebp, ebp
+00626ba7 setl     dl
+00626baa add      ebp, edx
+00626bac test     cl, cl
+00626bae je       0x626c2e
+00626bb0 shl      esi, 0x10
+00626bb3 test     ebx, ebx
+00626bb5 jle      0x626bf2
+00626bb7 add      ebx, edi
+00626bb9 add      edi, 1
+00626bbc cmp      edi, ebx
+00626bbe lea      esi, [esi + ebp + 0x7fff]
+00626bc5 jg       0x626be8
+00626bc7 push     edi
+00626bc8 lea      ecx, [esp + 0x24]
+00626bcc mov      eax, esi
+00626bce sar      eax, 0x10
+00626bd1 push     ecx
+00626bd2 call     0x6284f0
+00626bd7 test     al, al
+00626bd9 je       0x626cac
+00626bdf add      edi, 1
+00626be2 add      esi, ebp
+00626be4 cmp      edi, ebx
+00626be6 jle      0x626bc7
+00626be8 xor      eax, eax
+00626bea pop      edi
+00626beb pop      esi
+00626bec pop      ebp
+00626bed pop      ebx
+00626bee add      esp, 8
+00626bf1 ret      
+00626bf2 add      ebx, edi
+00626bf4 sub      esi, ebp
+00626bf6 sub      edi, 1
+00626bf9 add      esi, 0x8000
+00626bff cmp      edi, ebx
+00626c01 jl       0x626be8
+00626c03 push     edi
+00626c04 lea      edx, [esp + 0x24]
+00626c08 mov      eax, esi
+00626c0a sar      eax, 0x10
+00626c0d push     edx
+00626c0e call     0x6284f0
+00626c13 test     al, al
+00626c15 je       0x626cac
+00626c1b sub      edi, 1
+00626c1e sub      esi, ebp
+00626c20 cmp      edi, ebx
+00626c22 jge      0x626c03
+00626c24 xor      eax, eax
+00626c26 pop      edi
+00626c27 pop      esi
+00626c28 pop      ebp
+00626c29 pop      ebx
+00626c2a add      esp, 8
+00626c2d ret      
+00626c2e shl      edi, 0x10
+00626c31 test     ebx, ebx
+00626c33 jle      0x626c6e
+00626c35 add      ebx, esi
+00626c37 add      esi, 1
+00626c3a cmp      esi, ebx
+00626c3c lea      edi, [edi + ebp + 0x7fff]
+00626c43 jg       0x626be8
+00626c45 mov      eax, edi
+00626c47 sar      eax, 0x10
+00626c4a push     eax
+00626c4b lea      ecx, [esp + 0x24]
+00626c4f push     ecx
+00626c50 mov      eax, esi
+00626c52 call     0x6284f0
+00626c57 test     al, al
+00626c59 je       0x626cac
+00626c5b add      esi, 1
+00626c5e add      edi, ebp
+00626c60 cmp      esi, ebx
+00626c62 jle      0x626c45
+00626c64 xor      eax, eax
+00626c66 pop      edi
+00626c67 pop      esi
+00626c68 pop      ebp
+00626c69 pop      ebx
+00626c6a add      esp, 8
+00626c6d ret      
+00626c6e add      ebx, esi
+00626c70 sub      edi, ebp
+00626c72 sub      esi, 1
+00626c75 add      edi, 0x8000
+00626c7b cmp      esi, ebx
+00626c7d jl       0x626be8
+00626c83 mov      edx, edi
+00626c85 sar      edx, 0x10
+00626c88 push     edx
+00626c89 lea      eax, [esp + 0x24]
+00626c8d push     eax
+00626c8e mov      eax, esi
+00626c90 call     0x6284f0
+00626c95 test     al, al
+00626c97 je       0x626cac
+00626c99 sub      esi, 1
+00626c9c sub      edi, ebp
+00626c9e cmp      esi, ebx
+00626ca0 jge      0x626c83
+00626ca2 xor      eax, eax
+00626ca4 pop      edi
+00626ca5 pop      esi
+00626ca6 pop      ebp
+00626ca7 pop      ebx
+00626ca8 add      esp, 8
+00626cab ret      
+00626cac pop      edi
+00626cad pop      esi
+00626cae pop      ebp
+00626caf mov      eax, 1
+00626cb4 pop      ebx
+00626cb5 add      esp, 8
+00626cb8 ret      

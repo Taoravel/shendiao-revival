@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="GangSkillSetting">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.050625,0},{0,105},{0.0901221,687},{0,497}}" />
+    <Window Type="TaharezLook/StaticText" Name="GangSkillSetting/Tips">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="Text" Value="当前正在研究的技能为：" />
+      <Property Name="HorzExtent" Value="143" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+      <Property Name="BorderColour" Value="FF5F4100" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,21},{0,45},{0,159},{0,63}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="GangSkillSetting/BuildingName">
+      <Property Name="Font" Value="simhei-12" />
+      <Property Name="TextColours" Value="tl:FF80FD98 tr:FF80FD98 bl:FF47FF15 br:FF47FF15" />
+      <Property Name="BorderColour" Value="FF075F00" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,157},{0,45},{0,210},{0,63}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/MultiColumnList" Name="GangSkillSetting/SlectList">
+      <Property Name="UnifiedAreaRect" Value="{{0,19},{0,66},{0,697},{0,329}}" />
+      <Property Name="ColumnHeader" Value="text:技能名 width:{0.1,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:当前等级 width:{0.1,0} id:1" />
+      <Property Name="ColumnHeader" Value="text:等级上限 width:{0.1,0} id:2" />
+      <Property Name="ColumnHeader" Value="text:当前经验 width:{0.14,0} id:3" />
+      <Property Name="ColumnHeader" Value="text:升级经验 width:{0.14,0} id:4" />
+      <Property Name="ColumnHeader" Value="text:技能简介 width:{1,-391} id:5" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="GangSkillSetting/Tips1">
+      <Property Name="Text" Value="提示：请选择需要研发的技能，若当前经验达到升级经验，则该技能会自动升级" />
+      <Property Name="HorzExtent" Value="456" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFFBA15 br:FFFFBA15" />
+      <Property Name="BorderColour" Value="FF5F4100" />
+      <Property Name="BorderEnable" Value="True" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,21},{0,328},{0,486},{0,350}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GangSkillSetting/OK">
+      <Property Name="Text" Value="确  定" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,247},{0,348},{0,320},{0,372}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GangSkillSetting/Cancel">
+      <Property Name="Text" Value="取  消" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,413},{0,348},{0,486},{0,372}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="GangSkillSetting/title/name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="设置技能研究" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="102" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,119},{0.0306122,0},{0.05,240},{0.05,12}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+  </Window>
+</GUILayout>

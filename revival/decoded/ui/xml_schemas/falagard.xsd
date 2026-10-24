@@ -1,0 +1,399 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Falagard" type="falagardSpecificationType" />
+  <xs:complexType name="falagardSpecificationType">
+    <xs:sequence>
+      <xs:element name="WidgetLook" type="widgetLookType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="widgetLookType">
+    <xs:sequence>
+      <xs:element name="PropertyDefinition" type="propertyDefinitionType" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="PropertyLinkDefinition" type="propertyLinkDefinitionType" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="Property" type="propertyType" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="NamedArea" type="namedAreaType" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="Child" type="widgetComponentType" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="ImagerySection" type="imagerySectionType" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="StateImagery" type="stateType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="name" type="xsd:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="propertyDefinitionType">
+    <xs:attribute name="type" type="propertyTypeEnum" use="optional" default="Generic" />
+    <xs:attribute name="name" type="xsd:string" use="required" />
+    <xs:attribute name="initialValue" type="xsd:string" use="optional" default="" />
+    <xs:attribute name="layoutOnWrite" type="xsd:boolean" use="optional" default="false" />
+    <xs:attribute name="redrawOnWrite" type="xsd:boolean" use="optional" default="false" />
+  </xs:complexType>
+  <xs:complexType name="propertyLinkDefinitionType">
+    <xs:attribute name="type" type="propertyTypeEnum" use="optional" default="Generic" />
+    <xs:attribute name="name" type="xsd:string" use="required" />
+    <xs:attribute name="widget" type="xsd:string" use="required" />
+    <xs:attribute name="targetProperty" type="xsd:string" use="optional" default="" />
+    <xs:attribute name="initialValue" type="xsd:string" use="optional" default="" />
+    <xs:attribute name="layoutOnWrite" type="xsd:boolean" use="optional" default="false" />
+    <xs:attribute name="redrawOnWrite" type="xsd:boolean" use="optional" default="false" />
+  </xs:complexType>
+  <xs:complexType name="namedAreaType">
+    <xs:sequence>
+      <xs:element name="Area" type="componentAreaType" />
+    </xs:sequence>
+    <xs:attribute name="name" type="xsd:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="stateType">
+    <xs:sequence>
+      <xs:element name="Layer" type="layerType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="name" type="xsd:string" use="required" />
+    <xs:attribute name="clipped" type="xsd:boolean" use="optional" default="true" />
+  </xs:complexType>
+  <xs:complexType name="layerType">
+    <xs:sequence>
+      <xs:element name="Section" type="sectionSpecType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="priority" type="xsd:integer" use="optional" default="0" />
+  </xs:complexType>
+  <xs:complexType name="sectionSpecType">
+    <xs:choice minOccurs="0" maxOccurs="1">
+      <xs:element name="Colour" type="colourType" />
+      <xs:element name="Colours" type="colourRectType" />
+      <xs:element name="ColourProperty" type="settingByPropertyType" />
+      <xs:element name="ColourRectProperty" type="settingByPropertyType" />
+    </xs:choice>
+    <xs:attribute name="look" type="xsd:string" use="optional" default="" />
+    <xs:attribute name="section" type="xsd:string" use="required" />
+    <xs:attribute name="controlProperty" type="xsd:string" use="optional" default="" />
+  </xs:complexType>
+  <xs:complexType name="imagerySectionType">
+    <xs:sequence>
+      <xs:choice minOccurs="0" maxOccurs="1">
+        <xs:element name="Colour" type="colourType" />
+        <xs:element name="Colours" type="colourRectType" />
+        <xs:element name="ColourProperty" type="settingByPropertyType" />
+        <xs:element name="ColourRectProperty" type="settingByPropertyType" />
+      </xs:choice>
+      <xs:element name="FrameComponent" type="frameComponentType" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="ImageryComponent" type="imageryComponentType" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="TextComponent" type="textComponentType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="name" type="xsd:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="frameComponentType">
+    <xs:sequence>
+      <xs:element name="Area" type="componentAreaType" />
+      <xs:element name="Image" type="frameImageType" minOccurs="0" maxOccurs="9" />
+      <xs:choice minOccurs="0" maxOccurs="1">
+        <xs:element name="Colour" type="colourType" />
+        <xs:element name="Colours" type="colourRectType" />
+        <xs:element name="ColourProperty" type="settingByPropertyType" />
+        <xs:element name="ColourRectProperty" type="settingByPropertyType" />
+      </xs:choice>
+      <xs:choice minOccurs="0" maxOccurs="1">
+        <xs:element name="VertFormat" type="vertFormatType" />
+        <xs:element name="VertFormatProperty" type="settingByPropertyType" />
+      </xs:choice>
+      <xs:choice minOccurs="0" maxOccurs="1">
+        <xs:element name="HorzFormat" type="horzFormatType" />
+        <xs:element name="HorzFormatProperty" type="settingByPropertyType" />
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="textComponentType">
+    <xs:sequence>
+      <xs:element name="Area" type="componentAreaType" />
+      <xs:element name="Text" type="textStringType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="TextProperty" type="textPropertyType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="FontProperty" type="fontPropertyType" minOccurs="0" maxOccurs="1" />
+      <xs:choice minOccurs="0" maxOccurs="1">
+        <xs:element name="Colour" type="colourType" />
+        <xs:element name="Colours" type="colourRectType" />
+        <xs:element name="ColourProperty" type="settingByPropertyType" />
+        <xs:element name="ColourRectProperty" type="settingByPropertyType" />
+      </xs:choice>
+      <xs:choice minOccurs="0" maxOccurs="1">
+        <xs:element name="VertFormat" type="vertTextFormatType" />
+        <xs:element name="VertFormatProperty" type="settingByPropertyType" />
+      </xs:choice>
+      <xs:choice minOccurs="0" maxOccurs="1">
+        <xs:element name="HorzFormat" type="horzTextFormatType" />
+        <xs:element name="HorzFormatProperty" type="settingByPropertyType" />
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="imageryComponentType">
+    <xs:sequence>
+      <xs:element name="Area" type="componentAreaType" />
+      <xs:choice>
+        <xs:element name="Image" type="imageType" />
+        <xs:element name="ImageProperty" type="settingByPropertyType" />
+      </xs:choice>
+      <xs:choice minOccurs="0" maxOccurs="1">
+        <xs:element name="Colour" type="colourType" />
+        <xs:element name="Colours" type="colourRectType" />
+        <xs:element name="ColourProperty" type="settingByPropertyType" />
+        <xs:element name="ColourRectProperty" type="settingByPropertyType" />
+      </xs:choice>
+      <xs:choice minOccurs="0" maxOccurs="1">
+        <xs:element name="VertFormat" type="vertFormatType" />
+        <xs:element name="VertFormatProperty" type="settingByPropertyType" />
+      </xs:choice>
+      <xs:choice minOccurs="0" maxOccurs="1">
+        <xs:element name="HorzFormat" type="horzFormatType" />
+        <xs:element name="HorzFormatProperty" type="settingByPropertyType" />
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="widgetComponentType">
+    <xs:sequence>
+      <xs:element name="Area" type="componentAreaType" />
+      <xs:element name="VertAlignment" type="vertAlignmentType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="HorzAlignment" type="horzAlignmentType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="Property" type="propertyType" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="type" type="xsd:string" use="required" />
+    <xs:attribute name="nameSuffix" type="xsd:string" use="required" />
+    <xs:attribute name="renderer" type="xsd:string" use="optional" default="" />
+    <xs:attribute name="look" type="xsd:string" use="optional" default="" />
+  </xs:complexType>
+  <xs:complexType name="horzFormatType">
+    <xs:attribute name="type" type="horzFormatEnum" use="required" />
+  </xs:complexType>
+  <xs:complexType name="vertFormatType">
+    <xs:attribute name="type" type="vertFormatEnum" use="required" />
+  </xs:complexType>
+  <xs:complexType name="horzTextFormatType">
+    <xs:attribute name="type" type="horzTextFormatEnum" use="required" />
+  </xs:complexType>
+  <xs:complexType name="vertTextFormatType">
+    <xs:attribute name="type" type="vertTextFormatEnum" use="required" />
+  </xs:complexType>
+  <xs:complexType name="horzAlignmentType">
+    <xs:attribute name="type" type="horzAlignmentEnum" use="required" />
+  </xs:complexType>
+  <xs:complexType name="vertAlignmentType">
+    <xs:attribute name="type" type="vertAlignmentEnum" use="required" />
+  </xs:complexType>
+  <xs:complexType name="propertyType">
+    <xs:attribute name="name" type="xsd:string" use="required" />
+    <xs:attribute name="value" type="xsd:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="imageType">
+    <xs:attribute name="imageset" type="xsd:string" use="required" />
+    <xs:attribute name="image" type="xsd:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="frameImageType">
+    <xs:attribute name="type" type="frameImageComponentEnum" use="required" />
+    <xs:attribute name="imageset" type="xsd:string" use="required" />
+    <xs:attribute name="image" type="xsd:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="componentAreaType">
+    <xs:choice>
+      <xs:sequence>
+        <xs:element name="Dim" type="dimensionType" minOccurs="4" maxOccurs="4" />
+      </xs:sequence>
+      <xs:element name="AreaProperty" type="settingByPropertyType" />
+    </xs:choice>
+  </xs:complexType>
+  <xs:complexType name="dimensionType">
+    <xs:choice>
+      <xs:element name="UnifiedDim" type="unifiedDimType" />
+      <xs:element name="AbsoluteDim" type="absoluteDimType" />
+      <xs:element name="ImageDim" type="imageDimType" />
+      <xs:element name="WidgetDim" type="widgetDimType" />
+      <xs:element name="FontDim" type="fontDimType" />
+      <xs:element name="PropertyDim" type="propertyDimType" />
+    </xs:choice>
+    <xs:attribute name="type" type="dimensionTypeEnum" use="required" />
+  </xs:complexType>
+  <xs:complexType name="fontDimType">
+    <xs:sequence>
+      <xs:element name="DimOperator" type="dimensionOperatorType" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+    <xs:attribute name="widget" type="xsd:string" use="optional" default="" />
+    <xs:attribute name="font" type="xsd:string" use="optional" default="" />
+    <xs:attribute name="string" type="xsd:string" use="optional" default="" />
+    <xs:attribute name="type" type="fontMetricTypeEnum" use="required" />
+    <xs:attribute name="padding" type="xsd:decimal" use="optional" default="0" />
+  </xs:complexType>
+  <xs:complexType name="propertyDimType">
+    <xs:sequence>
+      <xs:element name="DimOperator" type="dimensionOperatorType" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+    <xs:attribute name="widget" type="xsd:string" use="optional" default="" />
+    <xs:attribute name="name" type="xsd:string" use="required" />
+    <xs:attribute name="type" type="propertyDimensionTypeEnum" use="optional" default="" />
+  </xs:complexType>
+  <xs:complexType name="unifiedDimType">
+    <xs:sequence>
+      <xs:element name="DimOperator" type="dimensionOperatorType" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+    <xs:attribute name="scale" type="xsd:decimal" use="optional" default="0" />
+    <xs:attribute name="offset" type="xsd:integer" use="optional" default="0" />
+    <xs:attribute name="type" type="dimensionTypeEnum" use="required" />
+  </xs:complexType>
+  <xs:complexType name="absoluteDimType">
+    <xs:sequence>
+      <xs:element name="DimOperator" type="dimensionOperatorType" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+    <xs:attribute name="value" type="xsd:decimal" use="optional" default="0" />
+  </xs:complexType>
+  <xs:complexType name="imageDimType">
+    <xs:sequence>
+      <xs:element name="DimOperator" type="dimensionOperatorType" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+    <xs:attribute name="imageset" type="xsd:string" use="required" />
+    <xs:attribute name="image" type="xsd:string" use="required" />
+    <xs:attribute name="dimension" type="dimensionTypeEnum" use="required" />
+  </xs:complexType>
+  <xs:complexType name="widgetDimType">
+    <xs:sequence>
+      <xs:element name="DimOperator" type="dimensionOperatorType" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+    <xs:attribute name="widget" type="xsd:string" use="optional" default="" />
+    <xs:attribute name="dimension" type="dimensionTypeEnum" use="required" />
+  </xs:complexType>
+  <xs:complexType name="settingByPropertyType">
+    <xs:attribute name="name" type="xsd:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="colourRectType">
+    <xs:attribute name="topLeft" type="colourValType" use="required" />
+    <xs:attribute name="topRight" type="colourValType" use="required" />
+    <xs:attribute name="bottomLeft" type="colourValType" use="required" />
+    <xs:attribute name="bottomRight" type="colourValType" use="required" />
+  </xs:complexType>
+  <xs:complexType name="colourType">
+    <xs:attribute name="colour" type="colourValType" use="required" />
+  </xs:complexType>
+  <xs:simpleType name="colourValType">
+    <xs:restriction base="xsd:string">
+      <xs:pattern value="[a-fA-F0-9]{8}" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:complexType name="textStringType">
+    <xs:attribute name="string" type="xsd:string" use="optional" default="" />
+    <xs:attribute name="font" type="xsd:string" use="optional" default="" />
+  </xs:complexType>
+  <xs:complexType name="textPropertyType">
+    <xs:attribute name="name" type="xsd:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="fontPropertyType">
+    <xs:attribute name="name" type="xsd:string" use="required" />
+  </xs:complexType>
+  <xs:complexType name="dimensionOperatorType">
+    <xs:choice>
+      <xs:element name="UnifiedDim" type="unifiedDimType" />
+      <xs:element name="AbsoluteDim" type="absoluteDimType" />
+      <xs:element name="ImageDim" type="imageDimType" />
+      <xs:element name="WidgetDim" type="widgetDimType" />
+      <xs:element name="FontDim" type="fontDimType" />
+      <xs:element name="PropertyDim" type="propertyDimType" />
+    </xs:choice>
+    <xs:attribute name="op" type="dimensionOperatorEnum" use="required" />
+  </xs:complexType>
+  <xs:simpleType name="propertyDimensionTypeEnum">
+    <xs:restriction base="xsd:string">
+      <xs:enumeration value="" />
+      <xs:enumeration value="Width" />
+      <xs:enumeration value="Height" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="dimensionTypeEnum">
+    <xs:restriction base="xsd:string">
+      <xs:enumeration value="LeftEdge" />
+      <xs:enumeration value="TopEdge" />
+      <xs:enumeration value="RightEdge" />
+      <xs:enumeration value="BottomEdge" />
+      <xs:enumeration value="XPosition" />
+      <xs:enumeration value="YPosition" />
+      <xs:enumeration value="Width" />
+      <xs:enumeration value="Height" />
+      <xs:enumeration value="XOffset" />
+      <xs:enumeration value="YOffset" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="vertFormatEnum">
+    <xs:restriction base="xsd:string">
+      <xs:enumeration value="TopAligned" />
+      <xs:enumeration value="CentreAligned" />
+      <xs:enumeration value="BottomAligned" />
+      <xs:enumeration value="Stretched" />
+      <xs:enumeration value="Tiled" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="horzFormatEnum">
+    <xs:restriction base="xsd:string">
+      <xs:enumeration value="LeftAligned" />
+      <xs:enumeration value="CentreAligned" />
+      <xs:enumeration value="RightAligned" />
+      <xs:enumeration value="Stretched" />
+      <xs:enumeration value="Tiled" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="vertAlignmentEnum">
+    <xs:restriction base="xsd:string">
+      <xs:enumeration value="TopAligned" />
+      <xs:enumeration value="CentreAligned" />
+      <xs:enumeration value="BottomAligned" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="horzAlignmentEnum">
+    <xs:restriction base="xsd:string">
+      <xs:enumeration value="LeftAligned" />
+      <xs:enumeration value="CentreAligned" />
+      <xs:enumeration value="RightAligned" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="horzTextFormatEnum">
+    <xs:restriction base="xsd:string">
+      <xs:enumeration value="LeftAligned" />
+      <xs:enumeration value="RightAligned" />
+      <xs:enumeration value="CentreAligned" />
+      <xs:enumeration value="Justified" />
+      <xs:enumeration value="WordWrapLeftAligned" />
+      <xs:enumeration value="WordWrapRightAligned" />
+      <xs:enumeration value="WordWrapCentreAligned" />
+      <xs:enumeration value="WordWrapJustified" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="vertTextFormatEnum">
+    <xs:restriction base="xsd:string">
+      <xs:enumeration value="TopAligned" />
+      <xs:enumeration value="BottomAligned" />
+      <xs:enumeration value="CentreAligned" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="propertyTypeEnum">
+    <xs:restriction base="xsd:string">
+      <xs:enumeration value="Generic" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="fontMetricTypeEnum">
+    <xs:restriction base="xsd:string">
+      <xs:enumeration value="LineSpacing" />
+      <xs:enumeration value="Baseline" />
+      <xs:enumeration value="HorzExtent" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="dimensionOperatorEnum">
+    <xs:restriction base="xsd:string">
+      <xs:enumeration value="Noop" />
+      <xs:enumeration value="Add" />
+      <xs:enumeration value="Subtract" />
+      <xs:enumeration value="Multiply" />
+      <xs:enumeration value="Divide" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="frameImageComponentEnum">
+    <xs:restriction base="xsd:string">
+      <xs:enumeration value="Background" />
+      <xs:enumeration value="TopLeftCorner" />
+      <xs:enumeration value="TopRightCorner" />
+      <xs:enumeration value="BottomLeftCorner" />
+      <xs:enumeration value="BottomRightCorner" />
+      <xs:enumeration value="LeftEdge" />
+      <xs:enumeration value="RightEdge" />
+      <xs:enumeration value="TopEdge" />
+      <xs:enumeration value="BottomEdge" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

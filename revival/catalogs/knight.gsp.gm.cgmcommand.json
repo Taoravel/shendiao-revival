@@ -1,0 +1,768 @@
+[
+  {
+    "attributes": {
+      "id": "1",
+      "tipsid": "0",
+      "desc": "GM公告",
+      "command": "//post $NoticeMsg$"
+    },
+    "lists": {
+      "param": [
+        "NoticeMsg"
+      ]
+    },
+    "children": [
+      {
+        "tag": "param",
+        "attributes": {},
+        "text": "\n      ",
+        "tail": "\n  ",
+        "children": [
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "NoticeMsg",
+            "tail": "\n    ",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "attributes": {
+      "id": "2",
+      "tipsid": "0",
+      "desc": "发送系统好友消息",
+      "command": "//broadcast 1 $NoticeMsg$"
+    },
+    "lists": {
+      "param": [
+        "NoticeMsg"
+      ]
+    },
+    "children": [
+      {
+        "tag": "param",
+        "attributes": {},
+        "text": "\n      ",
+        "tail": "\n  ",
+        "children": [
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "NoticeMsg",
+            "tail": "\n    ",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "attributes": {
+      "id": "3",
+      "tipsid": "0",
+      "desc": "发送系统消息",
+      "command": "//broadcast 0 $NoticeMsg$"
+    },
+    "lists": {
+      "param": [
+        "NoticeMsg"
+      ]
+    },
+    "children": [
+      {
+        "tag": "param",
+        "attributes": {},
+        "text": "\n      ",
+        "tail": "\n  ",
+        "children": [
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "NoticeMsg",
+            "tail": "\n    ",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "attributes": {
+      "id": "4",
+      "tipsid": "0",
+      "desc": "发送系统好友消息（单人）",
+      "command": "//sendmsg $Player$ $NoticeMsg$"
+    },
+    "lists": {
+      "param": [
+        "Player",
+        "NoticeMsg"
+      ]
+    },
+    "children": [
+      {
+        "tag": "param",
+        "attributes": {},
+        "text": "\n      ",
+        "tail": "\n  ",
+        "children": [
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "Player",
+            "tail": "\n      ",
+            "children": []
+          },
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "NoticeMsg",
+            "tail": "\n    ",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "attributes": {
+      "id": "5",
+      "tipsid": "0",
+      "desc": "无敌状态",
+      "command": "//invincible"
+    },
+    "lists": {},
+    "children": []
+  },
+  {
+    "attributes": {
+      "id": "6",
+      "tipsid": "0",
+      "desc": "取消无敌",
+      "command": "//invincible cancel"
+    },
+    "lists": {},
+    "children": []
+  },
+  {
+    "attributes": {
+      "id": "7",
+      "tipsid": "0",
+      "desc": "隐身状态",
+      "command": "//hideme"
+    },
+    "lists": {},
+    "children": []
+  },
+  {
+    "attributes": {
+      "id": "8",
+      "tipsid": "0",
+      "desc": "取消隐身",
+      "command": "//showme"
+    },
+    "lists": {},
+    "children": []
+  },
+  {
+    "attributes": {
+      "id": "9",
+      "tipsid": "141826",
+      "desc": "拉人到身边",
+      "command": "//hold $Player$"
+    },
+    "lists": {
+      "param": [
+        "Player"
+      ]
+    },
+    "children": [
+      {
+        "tag": "param",
+        "attributes": {},
+        "text": "\n      ",
+        "tail": "\n  ",
+        "children": [
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "Player",
+            "tail": "\n    ",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "attributes": {
+      "id": "10",
+      "tipsid": "141830",
+      "desc": "去玩家身边",
+      "command": "//gotoplayer $Player$"
+    },
+    "lists": {
+      "param": [
+        "Player"
+      ]
+    },
+    "children": [
+      {
+        "tag": "param",
+        "attributes": {},
+        "text": "\n      ",
+        "tail": "\n  ",
+        "children": [
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "Player",
+            "tail": "\n    ",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "attributes": {
+      "id": "11",
+      "tipsid": "0",
+      "desc": "去指定地点",
+      "command": "//goto $xpos$ $ypos$ $Mapid$"
+    },
+    "lists": {
+      "param": [
+        "xpos",
+        "ypos",
+        "Mapid"
+      ]
+    },
+    "children": [
+      {
+        "tag": "param",
+        "attributes": {},
+        "text": "\n      ",
+        "tail": "\n  ",
+        "children": [
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "xpos",
+            "tail": "\n      ",
+            "children": []
+          },
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "ypos",
+            "tail": "\n      ",
+            "children": []
+          },
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "Mapid",
+            "tail": "\n    ",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "attributes": {
+      "id": "12",
+      "tipsid": "141833",
+      "desc": "禁止发言",
+      "command": "//nonvoice  $Player$ $Time$ $reason$"
+    },
+    "lists": {
+      "param": [
+        "Player",
+        "Time",
+        "reason"
+      ]
+    },
+    "children": [
+      {
+        "tag": "param",
+        "attributes": {},
+        "text": "\n      ",
+        "tail": "\n  ",
+        "children": [
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "Player",
+            "tail": "\n      ",
+            "children": []
+          },
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "Time",
+            "tail": "\n      ",
+            "children": []
+          },
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "reason",
+            "tail": "\n    ",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "attributes": {
+      "id": "13",
+      "tipsid": "0",
+      "desc": "解除禁言",
+      "command": "//unnonvoice $Player$"
+    },
+    "lists": {
+      "param": [
+        "Player"
+      ]
+    },
+    "children": [
+      {
+        "tag": "param",
+        "attributes": {},
+        "text": "\n      ",
+        "tail": "\n  ",
+        "children": [
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "Player",
+            "tail": "\n    ",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "attributes": {
+      "id": "14",
+      "tipsid": "141837",
+      "desc": "禁止角色登陆",
+      "command": "//forbid  $Player$ $Time$ $reason$"
+    },
+    "lists": {
+      "param": [
+        "Player",
+        "Time",
+        "reason"
+      ]
+    },
+    "children": [
+      {
+        "tag": "param",
+        "attributes": {},
+        "text": "\n      ",
+        "tail": "\n  ",
+        "children": [
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "Player",
+            "tail": "\n      ",
+            "children": []
+          },
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "Time",
+            "tail": "\n      ",
+            "children": []
+          },
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "reason",
+            "tail": "\n    ",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "attributes": {
+      "id": "15",
+      "tipsid": "0",
+      "desc": "解除禁止角色登陆",
+      "command": "//unforbid  $Player$"
+    },
+    "lists": {
+      "param": [
+        "Player"
+      ]
+    },
+    "children": [
+      {
+        "tag": "param",
+        "attributes": {},
+        "text": "\n      ",
+        "tail": "\n  ",
+        "children": [
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "Player",
+            "tail": "\n    ",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "attributes": {
+      "id": "16",
+      "tipsid": "0",
+      "desc": "将指定角色踢下线",
+      "command": "//kick  $Player$"
+    },
+    "lists": {
+      "param": [
+        "Player"
+      ]
+    },
+    "children": [
+      {
+        "tag": "param",
+        "attributes": {},
+        "text": "\n      ",
+        "tail": "\n  ",
+        "children": [
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "Player",
+            "tail": "\n    ",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "attributes": {
+      "id": "17",
+      "tipsid": "0",
+      "desc": "结束指定角色所处的战斗",
+      "command": "//battleend  $Player$"
+    },
+    "lists": {
+      "param": [
+        "Player"
+      ]
+    },
+    "children": [
+      {
+        "tag": "param",
+        "attributes": {},
+        "text": "\n      ",
+        "tail": "\n  ",
+        "children": [
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "Player",
+            "tail": "\n    ",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "attributes": {
+      "id": "18",
+      "tipsid": "141844",
+      "desc": "打开服务",
+      "command": "//openservice $Serviceid$"
+    },
+    "lists": {
+      "param": [
+        "Serviceid"
+      ]
+    },
+    "children": [
+      {
+        "tag": "param",
+        "attributes": {},
+        "text": "\n      ",
+        "tail": "\n  ",
+        "children": [
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "Serviceid",
+            "tail": "\n    ",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "attributes": {
+      "id": "19",
+      "tipsid": "141846",
+      "desc": "关闭服务",
+      "command": "//closeservice $Serviceid$"
+    },
+    "lists": {
+      "param": [
+        "Serviceid"
+      ]
+    },
+    "children": [
+      {
+        "tag": "param",
+        "attributes": {},
+        "text": "\n      ",
+        "tail": "\n  ",
+        "children": [
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "Serviceid",
+            "tail": "\n    ",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "attributes": {
+      "id": "20",
+      "tipsid": "141848",
+      "desc": "显示NPC并开启其所有服务",
+      "command": "//shownpc $Npcid$"
+    },
+    "lists": {
+      "param": [
+        "Npcid"
+      ]
+    },
+    "children": [
+      {
+        "tag": "param",
+        "attributes": {},
+        "text": "\n      ",
+        "tail": "\n  ",
+        "children": [
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "Npcid",
+            "tail": "\n    ",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "attributes": {
+      "id": "21",
+      "tipsid": "141850",
+      "desc": "隐藏NPC并关闭其所有服务",
+      "command": "//hidenpc $Npcid$"
+    },
+    "lists": {
+      "param": [
+        "Npcid"
+      ]
+    },
+    "children": [
+      {
+        "tag": "param",
+        "attributes": {},
+        "text": "\n      ",
+        "tail": "\n  ",
+        "children": [
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "Npcid",
+            "tail": "\n    ",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "attributes": {
+      "id": "22",
+      "tipsid": "141852",
+      "desc": "友好关闭服务器",
+      "command": "//stopgs $Time$"
+    },
+    "lists": {
+      "param": [
+        "Time"
+      ]
+    },
+    "children": [
+      {
+        "tag": "param",
+        "attributes": {},
+        "text": "\n      ",
+        "tail": "\n  ",
+        "children": [
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "Time",
+            "tail": "\n    ",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "attributes": {
+      "id": "23",
+      "tipsid": "0",
+      "desc": "开启一场闯关",
+      "command": "//startcg"
+    },
+    "lists": {},
+    "children": []
+  },
+  {
+    "attributes": {
+      "id": "24",
+      "tipsid": "0",
+      "desc": "开启一场科举",
+      "command": "//startkeju"
+    },
+    "lists": {},
+    "children": []
+  },
+  {
+    "attributes": {
+      "id": "25",
+      "tipsid": "0",
+      "desc": "结束指令开启的闯关",
+      "command": "//stopcg"
+    },
+    "lists": {},
+    "children": []
+  },
+  {
+    "attributes": {
+      "id": "26",
+      "tipsid": "0",
+      "desc": "开启战斗",
+      "command": "//battle start $battleID$"
+    },
+    "lists": {
+      "param": [
+        "battleID"
+      ]
+    },
+    "children": [
+      {
+        "tag": "param",
+        "attributes": {},
+        "text": "\n      ",
+        "tail": "\n  ",
+        "children": [
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "battleID",
+            "tail": "\n    ",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "attributes": {
+      "id": "27",
+      "tipsid": "0",
+      "desc": "结束战斗",
+      "command": "//battle end"
+    },
+    "lists": {},
+    "children": []
+  },
+  {
+    "attributes": {
+      "id": "28",
+      "tipsid": "143745",
+      "desc": "抓捕入天牢",
+      "command": "//catch $Player$"
+    },
+    "lists": {
+      "param": [
+        "Player"
+      ]
+    },
+    "children": [
+      {
+        "tag": "param",
+        "attributes": {},
+        "text": "\n      ",
+        "tail": "\n  ",
+        "children": [
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "Player",
+            "tail": "\n    ",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "attributes": {
+      "id": "29",
+      "tipsid": "143746",
+      "desc": "放出天牢",
+      "command": "//free $Player$"
+    },
+    "lists": {
+      "param": [
+        "Player"
+      ]
+    },
+    "children": [
+      {
+        "tag": "param",
+        "attributes": {},
+        "text": "\n      ",
+        "tail": "\n  ",
+        "children": [
+          {
+            "tag": "string",
+            "attributes": {},
+            "text": "Player",
+            "tail": "\n    ",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]

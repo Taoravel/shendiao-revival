@@ -1,0 +1,13 @@
+Standards：硬违规0；heuristic可行动发现0。
+
+方法：实际沿用code-review逐hunk审两新增政策文档，完整12项Fowler启发逐项判断；codebase-design按Battle/Role/Task的Module、Interface和事务Seam核对。对照用户AGENTS及冻结ARCHITECTURE、DESIGN_AUTHORITY、GLOSSARY、TaskBattleIntegration、role-resources与first-skill合同。无Git/commit，两文件为empty BASE；不读另一轴结论。
+
+证据：DECISION:5、17–19及policy:24–26、57–63把真实Battle状态/正式producer、角色真实不可变属性/宠物来源、任务准入与结算分开；不以Training/Wild改标签制造结果。稳定admission/settlement、完整source CAS、唯一载体、资源先于奖励及terminal/outbox/回执同角色事务、预编码失败回滚，符合ARCHITECTURE角色单写和原子幂等结算规则；未授权跨owner持锁等待或新全服队列。DECISION:27要求另一地图/连接/战斗推进证明，未把静态无锁当容量实测。
+
+DECISION:19及policy:59把task_dream_revive明确列为新专用planner/storage能力，只限本次可信raw角色HP0、相同当前上限、一次性凭据；旧medicine/growth与battle_terminal的禁止治疗/复活约束未放宽，宠物0仍0。缺失能力没有被表述成现行resource政策已可执行；policy:2、65和DECISION:29仍为候选、待准确实现/回归后才能开放。
+
+policy:7–14区分客户端字段、历史guide与designed敌阵/数值/恢复；DECISION:5指定JSON唯一参数源，解释文档不另立执行参数，符合DESIGN_AUTHORITY来源/实施状态分层。policy:61–62明确保留原奖励、后继和动画10019，首技能仍走后续独立账本，不由战斗直接赠送。
+
+审前后9个source及diff均匹配scope。policy SHA256=2cbbe2cafe3151e49f21a4ec35dab0dd9d4aa9dca82b4b28016dfcb3c13a3c56；decision=8f4179b7a3abff5ac47bbcc1c0d6b2da51e323f6a67ff039bc64ed7b9f04e73c；diff=d82aaaa93f6de712df85c4b780e25d96038860c5709e3f66e889bdea60da80d1。其余完整SHA见已实核scope。
+
+仅静态；未自行重读原PFS/访问guide，也未运行测试、服务、DB、socket、GUI或战斗。不证明新producer、复活/终态恢复及自然成长已实现，不恢复暂停goal或批准部署。只新增本报告。

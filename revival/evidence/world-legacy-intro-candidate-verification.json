@@ -1,0 +1,73 @@
+{
+  "base_source": "D:\\神雕侠侣\\revival\\runtime\\deployments\\20261023T063445Z\\source\\game_runtime.py",
+  "base_sha256": "3e9e60da29e2ba4da4cac2d5a281523e99408d4246856d9c3dc6df5bf541323f",
+  "candidate_sha256": "36eed8bbd98622b2ffbddb93f1d618a3670e1875d37f61f0d03c2d70036b4098",
+  "exact_old": "intro=0 if self.newbie_chapter is None else self.newbie_chapter.intro_discriminator",
+  "exact_new": "intro=1 if self.newbie_chapter is None else self.newbie_chapter.intro_discriminator",
+  "legacy_candidate": {
+    "legacy_no_chapter": true,
+    "server_newbie_pending": false,
+    "actual_entry": {
+      "initial_intro_flag": 0,
+      "intro_q64": 1,
+      "native_black_effect_created": false,
+      "native_intro_lock": 0,
+      "native_normal_move_gate_allowed": true
+    },
+    "start_movie_frames": [],
+    "task_rows": [],
+    "actual_position": [
+      1007,
+      8480,
+      6976
+    ],
+    "positive_intro_only_counterfactual": {
+      "initial_intro_flag": 0,
+      "intro_q64": 1,
+      "native_black_effect_created": false,
+      "native_intro_lock": 0,
+      "native_normal_move_gate_allowed": true
+    },
+    "positive_entry_with_preexisting_lock": {
+      "initial_intro_flag": 1,
+      "intro_q64": 1,
+      "native_black_effect_created": false,
+      "native_intro_lock": 0,
+      "native_normal_move_gate_allowed": true
+    },
+    "unsafe_entry_reproduced": false,
+    "safe_entry": true,
+    "input_scope": "original intro slice and original normal-move predicate, other gates explicitly clear",
+    "native_image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+    "database": "disposable",
+    "runtime_source": "C:\\Users\\11950\\AppData\\Local\\Temp\\world-legacy-entry-candidate-q3vq1tdj\\source\\game_runtime.py",
+    "runtime_source_sha256": "36eed8bbd98622b2ffbddb93f1d618a3670e1875d37f61f0d03c2d70036b4098",
+    "shared_runtime_modified": false,
+    "live_server_changed": false,
+    "gui_verified": false
+  },
+  "fresh_chapter_regression": {
+    "passed": [
+      "fresh provenance naturally initializes original school root, designed spawn and native CG",
+      "Gu Mu and Shaolin select different original movies and their character-specific successors",
+      "wrong, malformed and duplicate movie completion cannot alter tasks or assets",
+      "pending movie rejects trusted gameplay writes while another role heartbeat and map owner continue",
+      "pending reconnect reauthorizes playback while preserving the active root",
+      "completed reconnect and reconstructed runtime preserve position/tasks without replay",
+      "real native codecs and continuous connection RC4/MPPC accept the messages"
+    ],
+    "database": "disposable",
+    "trusted_task_offer_used": false,
+    "manual_spawn_used": false,
+    "battle_executed": false,
+    "native_gui_verified": false,
+    "live_server_changed": false
+  },
+  "source_scope": "private disposable copy of the immutable release; current shared code not changed",
+  "candidate_only": true,
+  "policy_published": false,
+  "shared_runtime_modified": false,
+  "deployed_release_modified": false,
+  "live_server_changed": false,
+  "gui_verified": false
+}

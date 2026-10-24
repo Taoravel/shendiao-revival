@@ -1,0 +1,47 @@
+{
+  "release": "D:\\神雕侠侣\\revival\\runtime\\deployments\\battle-damage-20261023T180731Z",
+  "base_release": "D:\\神雕侠侣\\revival\\runtime\\deployments\\npc-role-healing-20261023T125539Z",
+  "base_pid_at_staging": 45272,
+  "changed_modules": {
+    "battle_protocol.py": "1a472edf4f1a9db20d8c08ba05eb5516b56b723b87b2b2c80ca0c0a60c75cd22",
+    "training_battle.py": "0eff784921f509c3f173de8ebd9aeab2a539f098b9a26fed1d5e1a675e91b127"
+  },
+  "file_count": 1429,
+  "started": true,
+  "checks_required": [
+    "verify_battle_damage_presentation.py",
+    "verify_battle.py",
+    "verify_battle_owner.py",
+    "verify_battle_runtime.py",
+    "verify_wild_runtime.py"
+  ],
+  "new_empty_tables": [],
+  "verification_name": "battle-damage",
+  "harness_sha256": {
+    "verify_battle_damage_presentation.py": "b1946b81d36c98b63ca6c3c83c6128aeea1acc3aea256e95eaea13717a0c17a9",
+    "verify_battle.py": "d5dd82b5201b90bc07fa0a356ba5b9dfe705a77287d89ccdf1a5266ec220de13",
+    "verify_battle_owner.py": "ffaaeaaec2e917b678d616caa8719a35b6a4535cd06e1bae07fd7ccf9fcde005",
+    "verify_battle_runtime.py": "e04df50b86a9e966c958ca81838fa06abfab6b4f135d6c0d4f710accfd034272",
+    "verify_wild_runtime.py": "63e431ff2080dc305470ccf8768070326dbae44f333d86d3cfe0701440c98a1c",
+    "research_battle_damage.py": "b67d896d9867cd90a203cca780991c11f363d08937cd2e5de49441e026fce5eb",
+    "research_battle_commands.py": "ced33492c33b33c43763a2eb9a7f8da3f47b7ba0e427272cd5d97103b5b582c7",
+    "research_battle.py": "4aa276ece9ea4a9f13d9c4f9a0de2900f97cf77ff3783aeecc92e7d5f3a47b45"
+  },
+  "harness_sources": {
+    "verify_battle_damage_presentation.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\battle-damage-20261023T180731Z\\harness\\verify_battle_damage_presentation.py",
+    "verify_battle.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\battle-damage-20261023T180731Z\\harness\\verify_battle.py",
+    "verify_battle_owner.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\battle-damage-20261023T180731Z\\harness\\verify_battle_owner.py",
+    "verify_battle_runtime.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\battle-damage-20261023T180731Z\\harness\\verify_battle_runtime.py",
+    "verify_wild_runtime.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\battle-damage-20261023T180731Z\\harness\\verify_wild_runtime.py",
+    "research_battle_damage.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\battle-damage-20261023T180731Z\\harness\\research_battle_damage.py",
+    "research_battle_commands.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\battle-damage-20261023T180731Z\\harness\\research_battle_commands.py",
+    "research_battle.py": "D:\\神雕侠侣\\revival\\runtime\\deployments\\battle-damage-20261023T180731Z\\harness\\research_battle.py"
+  },
+  "scope": "native target HP result map repair; unchanged battle numbers and ownership",
+  "training_derived_from_frozen_base": true,
+  "harness_adaptation": "damage verifier report ROOT redirected to workspace copy only; all gameplay imports frozen source",
+  "excluded": "auto-target patch, private/story/pool/social/NPC-distance and every other workspace gameplay change",
+  "native_gui_verified": false,
+  "status": "deployed",
+  "pid": 6008
+}

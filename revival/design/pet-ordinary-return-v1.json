@@ -1,0 +1,21 @@
+{
+  "revision": "2026-10-23.pet-ordinary-return.1",
+  "item_templates": [31002, 31087],
+  "template_uselevel_boundary": 95,
+  "draw_count": 15,
+  "draw_denominator": 10000,
+  "wild_grade_weights": [6000, 2500, 1000, 400, 90, 10],
+  "guaranteed_skill_sources": [[2137,500090,200472],[2877,500050,200542],[3171,500097,200552],[3516,500112,200582],[4029,500118,200612],[4030,500130,200642],[4052,500131,200652],[4429,500114,200662],[4949,500154,200692],[5097,500156,200702],[5125,500157,200712],[5264,500155,200722],[5473,500158,200732]],
+  "sources": {
+    "template_boundary": "client_verified original142ac8f CPetAttr.uselevel>=95,1094897 original31002/31087 selection; not current pet/character level",
+    "basic_reset": "client_verified reset base aptitudes/growth/insight/skills/points/lifetime/loyalty/level0, baby retains colour/blood, wild becomes baby and rerolls colour/resets blood",
+    "guaranteed_skills": "client_verified original NPC text; inferred mapping by matching unique skill and species to cpetattr; never all candidate skills guaranteed",
+    "sampling": "designed15 stable draws:0..6 share explicit super-return aptitude/growth/insight0..100 policy,7 wild grade weighted,8 count uniformly0..current colour cap/original candidate count with guaranteed minimum1,9..14 sample without replacement; no recovered original probability claim",
+    "wild_grades": "designed six current grades with weights6000/2500/1000/400/90/10 per10000; original weight/colour candidates unknown",
+    "eligibility": "designed allow known complete supported current forms kind1/2/3, nonfighting; original ordinary kind2/all-kind3 server permission unknown;13 kind3 species have explicit text evidence; no super-only kind2/wild ban copied",
+    "resources": "designed ordinary full rebirth rebuilds level0/XP0/allocated0/current full HP/MP including formerly dead; baby retained blood potential becomes unallocated once, wild power0 removes old blood potential",
+    "care": "designed new loyalty=current original colour maximum, lifetime=original cpetattr.life, reset battle-care mod3; exact original regeneration distribution unknown",
+    "metadata": "designed preserve exact complete flag byte/binding/name/ownership/instance; reroll learned list, clear old expiry, reset expansion points0 and cake count/history0, invalidate only this pet super candidate; original ordinary metadata rules unknown",
+    "scope": "current restored ordinary wire: evolution0, no controlled/reserve/extra-equipment authority yet; future state fields must extend admission/reset, not silently erase advanced state"
+  }
+}

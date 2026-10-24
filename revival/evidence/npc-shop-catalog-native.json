@@ -1,0 +1,807 @@
+{
+  "image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+  "method": "research skill: original PFS + bounded native execution; separate observations/Adapters/unknowns",
+  "actual_case_count": 16,
+  "case_count_unit": "one independent fixture chain; codec and inner calls are not separately counted",
+  "sources": {
+    "autoconfig/knight.gsp.item.npcsellitem.xml": {
+      "archive": "artres/config.pfs",
+      "crc32": "0x9c1fe794",
+      "bytes": 45111,
+      "sha256": "3b833d95d50708e4a8ca092c02a9f902780cf195ad56a6dbec457ac7951d577d",
+      "rows": 210,
+      "full_cache_projection_equal": true,
+      "projection_fields": "all rows: all attributes and all flat child lists; no nested/attributed child elements; formatting tails excluded",
+      "cache_sha256": "a33ac25034281ce517965266e4a425f4f42766851167994b6ce995a78b8f35e0"
+    },
+    "autoconfig/knight.gsp.item.citemattr.xml": {
+      "archive": "artres/config.pfs",
+      "crc32": "0xa3add081",
+      "bytes": 4096369,
+      "sha256": "974a3b38049c5f5f7cdae418718ffadd2741d373a5846a40fb71289af25e726f",
+      "rows": 12280,
+      "full_cache_projection_equal": true,
+      "projection_fields": "all rows: all attributes and all flat child lists; no nested/attributed child elements; formatting tails excluded",
+      "cache_sha256": "018a609fe0a007d3aa3bd4eaac2c9ba9310e3dcb234e6366499dab82cf33c0fd"
+    },
+    "autoconfig/knight.gsp.npc.cnpcconfig.xml": {
+      "archive": "artres/config.pfs",
+      "crc32": "0xcc437e13",
+      "bytes": 619832,
+      "sha256": "b4fc5d440380fb535a36b8e5315c5a1bf10a99f550f5bfde55bd156fca864f85",
+      "rows": 4127,
+      "full_cache_projection_equal": true,
+      "projection_fields": "all rows: all attributes and all flat child lists; no nested/attributed child elements; formatting tails excluded",
+      "cache_sha256": "cf070e700e37a6d8d350ccb1e4d86610408e5ffcecad4710641cf2d06aca847d"
+    },
+    "layouts/npcsellitemdlg.layout": {
+      "archive": "artres/ui.pfs",
+      "crc32": "0x382a2b23",
+      "bytes": 36203,
+      "sha256": "cf7f2685f6f5cb527eac9c74da3c9f219fba87da0268524f8c740dba1cc5cc59"
+    }
+  },
+  "tabs": {
+    "NpcSellItem/tab1": "购买",
+    "NpcSellItem/tab11": "回购"
+  },
+  "native_bindings": {
+    "tab1": "UI+0x34 at 0x11088cd",
+    "tab11": "UI+0x38 at 0x1108928",
+    "layout_name_method": "0x1103060",
+    "shelf_table_rtti": ".?AVknight_gsp_item_NpcSellItem_table_implement@XMLCONFIG@@",
+    "shelf_wrapper_vtable": "0x2259044",
+    "shelf_member": "ConfigManager+0x860",
+    "mode_source": "open stack+0x120 -> EBP at 0x110a9b5 -> UI+0x78 at 0x110aa0b; separate from first param stack+0x114"
+  },
+  "local_shelf_cases": [
+    {
+      "config_lookup_key": 10004,
+      "copied_templates": [
+        40103,
+        40203,
+        40303,
+        40403,
+        40503,
+        40603,
+        40703,
+        40803,
+        40903,
+        41003
+      ],
+      "pages": 1,
+      "source_mode": "entered mode0 branch; mode provenance unverified"
+    },
+    {
+      "config_lookup_key": 11,
+      "copied_templates": [
+        62584,
+        62585,
+        62586,
+        62587,
+        62464,
+        61946,
+        61947,
+        61948,
+        61949,
+        32014,
+        32015,
+        32037,
+        32038,
+        38390,
+        39076,
+        60697,
+        38438,
+        38439,
+        38393,
+        38394
+      ],
+      "pages": 2,
+      "source_mode": "entered mode0 branch; mode provenance unverified"
+    },
+    {
+      "config_lookup_key": 12,
+      "copied_templates": [
+        62584,
+        62585,
+        62586,
+        62587,
+        62464,
+        61946,
+        61947,
+        61948,
+        61949,
+        32014,
+        32015,
+        32037,
+        32038,
+        38390,
+        36053,
+        36053,
+        60697,
+        38438,
+        38439,
+        39076,
+        36134,
+        36011,
+        39227,
+        39228,
+        39229,
+        39230,
+        39231,
+        39232,
+        39233,
+        39234,
+        39235,
+        39236,
+        39237,
+        39238,
+        39239,
+        39240,
+        39241,
+        39242,
+        39243,
+        39244,
+        39245,
+        39246,
+        39247,
+        39248,
+        39249,
+        39250,
+        38393,
+        38394
+      ],
+      "pages": 5,
+      "source_mode": "entered mode0 branch; mode provenance unverified"
+    }
+  ],
+  "purchase_chains": [
+    {
+      "config_id_fixture": 10004,
+      "page": 1,
+      "slot_index": 0,
+      "template": 40103,
+      "quantity": 1,
+      "cell_template": 40103,
+      "attribute_lookup_key": 40103,
+      "icon": 1202,
+      "protocol": "0xc232c",
+      "wire": "123456780000271400009ca70000000100000000",
+      "bridge": "same full shelf -> original slot template lookup/CItemAttr lookup/cell setter -> selected cell; no stock instance supplied"
+    },
+    {
+      "config_id_fixture": 10004,
+      "page": 1,
+      "slot_index": 0,
+      "template": 40103,
+      "quantity": 7,
+      "cell_template": 40103,
+      "attribute_lookup_key": 40103,
+      "icon": 1202,
+      "protocol": "0xc232c",
+      "wire": "123456780000271400009ca70000000700000000",
+      "bridge": "same full shelf -> original slot template lookup/CItemAttr lookup/cell setter -> selected cell; no stock instance supplied"
+    },
+    {
+      "config_id_fixture": 10004,
+      "page": 1,
+      "slot_index": 4,
+      "template": 40503,
+      "quantity": 1,
+      "cell_template": 40503,
+      "attribute_lookup_key": 40503,
+      "icon": 1246,
+      "protocol": "0xc232c",
+      "wire": "123456780000271400009e370000000100000000",
+      "bridge": "same full shelf -> original slot template lookup/CItemAttr lookup/cell setter -> selected cell; no stock instance supplied"
+    },
+    {
+      "config_id_fixture": 10004,
+      "page": 1,
+      "slot_index": 4,
+      "template": 40503,
+      "quantity": 7,
+      "cell_template": 40503,
+      "attribute_lookup_key": 40503,
+      "icon": 1246,
+      "protocol": "0xc232c",
+      "wire": "123456780000271400009e370000000700000000",
+      "bridge": "same full shelf -> original slot template lookup/CItemAttr lookup/cell setter -> selected cell; no stock instance supplied"
+    },
+    {
+      "config_id_fixture": 10004,
+      "page": 1,
+      "slot_index": 9,
+      "template": 41003,
+      "quantity": 1,
+      "cell_template": 41003,
+      "attribute_lookup_key": 41003,
+      "icon": 1301,
+      "protocol": "0xc232c",
+      "wire": "12345678000027140000a02b0000000100000000",
+      "bridge": "same full shelf -> original slot template lookup/CItemAttr lookup/cell setter -> selected cell; no stock instance supplied"
+    },
+    {
+      "config_id_fixture": 10004,
+      "page": 1,
+      "slot_index": 9,
+      "template": 41003,
+      "quantity": 7,
+      "cell_template": 41003,
+      "attribute_lookup_key": 41003,
+      "icon": 1301,
+      "protocol": "0xc232c",
+      "wire": "12345678000027140000a02b0000000700000000",
+      "bridge": "same full shelf -> original slot template lookup/CItemAttr lookup/cell setter -> selected cell; no stock instance supplied"
+    }
+  ],
+  "tab_branch_cases": [
+    {
+      "buyback_tab_selected": false,
+      "next": "0x1103e55"
+    },
+    {
+      "buyback_tab_selected": true,
+      "next": "0x1103cd6"
+    }
+  ],
+  "repurchase_chains": [
+    {
+      "template": 40103,
+      "key": 701,
+      "quantity": 1,
+      "position": 0,
+      "binding": 0,
+      "input_price_map_value": 100,
+      "wire": "000000000001e240000000140100009ca700000000000002bd00000000000000000000000000000001000000000000000000000000000000000000000001000002bd00000064",
+      "request_wire": "1234567800002714000002bd",
+      "decoded_item_hex": "fcd42402a79c000000000000bd020000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000",
+      "response_calls": [
+        [
+          "clear",
+          4
+        ],
+        [
+          "install",
+          "ItemBag@+8",
+          "prices@+0x30"
+        ]
+      ],
+      "mapped_price": 100,
+      "baseline_display_before_config_override": 110,
+      "repurchase_request": {
+        "protocol": "0xc232e",
+        "npc_key": 1311768464867731220,
+        "item_key": 701
+      }
+    },
+    {
+      "template": 40203,
+      "key": 702,
+      "quantity": 3,
+      "position": 4,
+      "binding": 1,
+      "input_price_map_value": 110,
+      "wire": "000000000001e240000000140100009d0b00000001000002be00000004000000000000000000000003000000000000000000000000000000000000000001000002be0000006e",
+      "request_wire": "1234567800002714000002be",
+      "decoded_item_hex": "fcd424020b9d000001000000be020000040000000000000000000000000000000300000000000000000000000000000000000000000000000000000000000000",
+      "response_calls": [
+        [
+          "clear",
+          4
+        ],
+        [
+          "install",
+          "ItemBag@+8",
+          "prices@+0x30"
+        ]
+      ],
+      "mapped_price": 110,
+      "baseline_display_before_config_override": 363,
+      "repurchase_request": {
+        "protocol": "0xc232e",
+        "npc_key": 1311768464867731220,
+        "item_key": 702
+      }
+    },
+    {
+      "template": 40303,
+      "key": 703,
+      "quantity": 7,
+      "position": 9,
+      "binding": 1,
+      "input_price_map_value": 120,
+      "wire": "000000000001e240000000140100009d6f00000001000002bf00000009000000000000000000000007000000000000000000000000000000000000000001000002bf00000078",
+      "request_wire": "1234567800002714000002bf",
+      "decoded_item_hex": "fcd424026f9d000001000000bf020000090000000000000000000000000000000700000000000000000000000000000000000000000000000000000000000000",
+      "response_calls": [
+        [
+          "clear",
+          4
+        ],
+        [
+          "install",
+          "ItemBag@+8",
+          "prices@+0x30"
+        ]
+      ],
+      "mapped_price": 120,
+      "baseline_display_before_config_override": 924,
+      "repurchase_request": {
+        "protocol": "0xc232e",
+        "npc_key": 1311768464867731220,
+        "item_key": 703
+      }
+    }
+  ],
+  "response_comparison_cases": [
+    {
+      "protocol": "0xc03f3",
+      "empty": true,
+      "wire": "00000004000000000001e240000000140000",
+      "process_calls": [
+        [
+          "install",
+          4,
+          "ItemBag",
+          "no price_map"
+        ]
+      ]
+    },
+    {
+      "protocol": "0xc0434",
+      "empty": true,
+      "wire": "000000000001e240000000140000",
+      "process_calls": [
+        [
+          "clear",
+          4
+        ],
+        [
+          "install",
+          4,
+          "ItemBag",
+          "price_map"
+        ]
+      ]
+    }
+  ],
+  "source_examples": {
+    "npc10004": {
+      "attributes": {
+        "id": "10004",
+        "bodytype": "0",
+        "npctype": "3",
+        "modelID": "5003",
+        "name": "武器店老板",
+        "minimapquery": "武器店老板",
+        "minimapshow": "武器店老板",
+        "title": "嘉兴武器店",
+        "leaveservice": "告辞",
+        "area1colour": "1",
+        "area2colour": "0",
+        "mapid": "1313",
+        "xPos": "24",
+        "yPos": "30",
+        "hide": "0",
+        "zaxueid": "-1",
+        "actionname": "0"
+      },
+      "lists": {
+        "pinyin": [
+          "wuqidianlaoban"
+        ],
+        "chitchatidlist": [
+          "1",
+          "241",
+          "242"
+        ]
+      }
+    },
+    "shelf10004": {
+      "attributes": {
+        "id": "10004"
+      },
+      "lists": {
+        "items": [
+          "40103",
+          "40203",
+          "40303",
+          "40403",
+          "40503",
+          "40603",
+          "40703",
+          "40803",
+          "40903",
+          "41003"
+        ]
+      }
+    },
+    "item_attributes": {
+      "40103": {
+        "attributes": {
+          "id": "40103",
+          "itemtypeid": "1288",
+          "name": "无情刃",
+          "level": "30",
+          "icon": "1202",
+          "battleuse": "0",
+          "battleuser": "0",
+          "outbattleuse": "1",
+          "destribe": "针对剑刃部分做了特别的强化，兼具了锋利度和耐用性的好剑。",
+          "usemethod": "使用方法：右键点击穿戴装备",
+          "maxNum": "1",
+          "needLevel": "30",
+          "price": "9000",
+          "bManuleDesrtrol": "true",
+          "units": "柄",
+          "bCanSale": "1",
+          "bCanSaleToNpc": "1",
+          "npcid2": "10004",
+          "colour": "fffcfbfb",
+          "effectdes": "30级长剑",
+          "linkusemethod": "0",
+          "blinkopenwordbook": "0",
+          "givetype": "3"
+        },
+        "lists": {}
+      },
+      "40203": {
+        "attributes": {
+          "id": "40203",
+          "itemtypeid": "1032",
+          "name": "百鬼泣",
+          "level": "30",
+          "icon": "1213",
+          "battleuse": "0",
+          "battleuser": "0",
+          "outbattleuse": "1",
+          "destribe": "刀柄正中有鬼眼装饰，通体散发出诡异的气氛，让人不寒而栗。",
+          "usemethod": "使用方法：右键点击穿戴装备",
+          "maxNum": "1",
+          "needLevel": "30",
+          "price": "9000",
+          "bManuleDesrtrol": "true",
+          "units": "把",
+          "bCanSale": "1",
+          "bCanSaleToNpc": "1",
+          "npcid2": "10004",
+          "colour": "fffcfbfb",
+          "effectdes": "30级单刀",
+          "linkusemethod": "0",
+          "blinkopenwordbook": "0",
+          "givetype": "3"
+        },
+        "lists": {}
+      },
+      "40303": {
+        "attributes": {
+          "id": "40303",
+          "itemtypeid": "264",
+          "name": "铁芭蕉",
+          "level": "30",
+          "icon": "1224",
+          "battleuse": "0",
+          "battleuser": "0",
+          "outbattleuse": "1",
+          "destribe": "形似芭蕉叶，剑身上的裂口有助于减轻本身重量又不影响杀伤力。",
+          "usemethod": "使用方法：右键点击穿戴装备",
+          "maxNum": "1",
+          "needLevel": "30",
+          "price": "9000",
+          "bManuleDesrtrol": "true",
+          "units": "柄",
+          "bCanSale": "1",
+          "bCanSaleToNpc": "1",
+          "npcid2": "10004",
+          "colour": "fffcfbfb",
+          "effectdes": "30级巨剑",
+          "linkusemethod": "0",
+          "blinkopenwordbook": "0",
+          "givetype": "3"
+        },
+        "lists": {}
+      },
+      "40403": {
+        "attributes": {
+          "id": "40403",
+          "itemtypeid": "776",
+          "name": "镔铁枪",
+          "level": "30",
+          "icon": "1235",
+          "battleuse": "0",
+          "battleuser": "0",
+          "outbattleuse": "1",
+          "destribe": "用镔铁打造的枪头，钢韧兼备，威力惊人。",
+          "usemethod": "使用方法：右键点击穿戴装备",
+          "maxNum": "1",
+          "needLevel": "30",
+          "price": "9000",
+          "bManuleDesrtrol": "true",
+          "units": "杆",
+          "bCanSale": "1",
+          "bCanSaleToNpc": "1",
+          "npcid2": "10004",
+          "colour": "fffcfbfb",
+          "effectdes": "30级枪矛",
+          "linkusemethod": "0",
+          "blinkopenwordbook": "0",
+          "givetype": "3"
+        },
+        "lists": {}
+      },
+      "40503": {
+        "attributes": {
+          "id": "40503",
+          "itemtypeid": "520",
+          "name": "铁骨扇",
+          "level": "30",
+          "icon": "1246",
+          "battleuse": "0",
+          "battleuser": "0",
+          "outbattleuse": "1",
+          "destribe": "扇骨由精铁打造，已经可以作为伤人的武器使用了。",
+          "usemethod": "使用方法：右键点击穿戴装备",
+          "maxNum": "1",
+          "needLevel": "30",
+          "price": "9000",
+          "bManuleDesrtrol": "true",
+          "units": "把",
+          "bCanSale": "1",
+          "bCanSaleToNpc": "1",
+          "npcid2": "10004",
+          "colour": "fffcfbfb",
+          "effectdes": "30级折扇",
+          "linkusemethod": "0",
+          "blinkopenwordbook": "0",
+          "givetype": "3"
+        },
+        "lists": {}
+      },
+      "40603": {
+        "attributes": {
+          "id": "40603",
+          "itemtypeid": "2568",
+          "name": "比翼双飞",
+          "level": "30",
+          "icon": "1257",
+          "battleuse": "0",
+          "battleuser": "0",
+          "outbattleuse": "1",
+          "destribe": "剑刃护手是羽翼形状，双剑挥舞时如比翼齐飞，非常好看。",
+          "usemethod": "使用方法：右键点击穿戴装备",
+          "maxNum": "1",
+          "needLevel": "30",
+          "price": "9000",
+          "bManuleDesrtrol": "true",
+          "units": "对",
+          "bCanSale": "1",
+          "bCanSaleToNpc": "1",
+          "npcid2": "10004",
+          "colour": "fffcfbfb",
+          "effectdes": "30级双剑",
+          "linkusemethod": "0",
+          "blinkopenwordbook": "0",
+          "givetype": "3"
+        },
+        "lists": {}
+      },
+      "40703": {
+        "attributes": {
+          "id": "40703",
+          "itemtypeid": "2312",
+          "name": "紫竹伞",
+          "level": "30",
+          "icon": "1268",
+          "battleuse": "0",
+          "battleuser": "0",
+          "outbattleuse": "1",
+          "destribe": "伞柄及伞骨都由珍贵的南海紫竹枝制成，造型典雅高贵。",
+          "usemethod": "使用方法：右键点击穿戴装备",
+          "maxNum": "1",
+          "needLevel": "30",
+          "price": "9000",
+          "bManuleDesrtrol": "true",
+          "units": "把",
+          "bCanSale": "1",
+          "bCanSaleToNpc": "1",
+          "npcid2": "10004",
+          "colour": "fffcfbfb",
+          "effectdes": "30级伞",
+          "linkusemethod": "0",
+          "blinkopenwordbook": "0",
+          "givetype": "3"
+        },
+        "lists": {}
+      },
+      "40803": {
+        "attributes": {
+          "id": "40803",
+          "itemtypeid": "2056",
+          "name": "白金孔雀",
+          "level": "30",
+          "icon": "1279",
+          "battleuse": "0",
+          "battleuser": "0",
+          "outbattleuse": "1",
+          "destribe": "形似孔雀开屏的护手，内藏利刃，平时也可当手上的装饰佩戴。",
+          "usemethod": "使用方法：右键点击穿戴装备",
+          "maxNum": "1",
+          "needLevel": "30",
+          "price": "9000",
+          "bManuleDesrtrol": "true",
+          "units": "个",
+          "bCanSale": "1",
+          "bCanSaleToNpc": "1",
+          "npcid2": "10004",
+          "colour": "fffcfbfb",
+          "effectdes": "30级机关",
+          "linkusemethod": "0",
+          "blinkopenwordbook": "0",
+          "givetype": "3"
+        },
+        "lists": {}
+      },
+      "40903": {
+        "attributes": {
+          "id": "40903",
+          "itemtypeid": "1800",
+          "name": "流星弓",
+          "level": "30",
+          "icon": "1290",
+          "battleuse": "0",
+          "battleuser": "0",
+          "outbattleuse": "1",
+          "destribe": "射出的弓箭又快又准，宛若流星划过天空。",
+          "usemethod": "使用方法：右键点击穿戴装备",
+          "maxNum": "1",
+          "needLevel": "30",
+          "price": "9000",
+          "bManuleDesrtrol": "true",
+          "units": "张",
+          "bCanSale": "1",
+          "bCanSaleToNpc": "1",
+          "npcid2": "10004",
+          "colour": "fffcfbfb",
+          "effectdes": "30级弓箭",
+          "linkusemethod": "0",
+          "blinkopenwordbook": "0",
+          "givetype": "3"
+        },
+        "lists": {}
+      },
+      "41003": {
+        "attributes": {
+          "id": "41003",
+          "itemtypeid": "1544",
+          "name": "月牙弯",
+          "level": "30",
+          "icon": "1301",
+          "battleuse": "0",
+          "battleuser": "0",
+          "outbattleuse": "1",
+          "destribe": "前部装有月牙形的刀刃，安全使用的近身攻击的利器。",
+          "usemethod": "使用方法：右键点击穿戴装备",
+          "maxNum": "1",
+          "needLevel": "30",
+          "price": "9000",
+          "bManuleDesrtrol": "true",
+          "units": "对",
+          "bCanSale": "1",
+          "bCanSaleToNpc": "1",
+          "npcid2": "10004",
+          "colour": "fffcfbfb",
+          "effectdes": "30级环圈",
+          "linkusemethod": "0",
+          "blinkopenwordbook": "0",
+          "givetype": "3"
+        },
+        "lists": {}
+      }
+    }
+  },
+  "dependency_adapters": [
+    "Machine native image/scratch memory/stop boundaries; no original GUI process",
+    "local shelf backend lookup supplies original PFS row using id+vector memory layout; original ConfigManager getter and wrapper forwarding execute",
+    "host checked-copy CRT copies bytes; native vector assignment/page arithmetic execute",
+    "normal renderer loop-body slot/index/page are supplied; original full source vector is retained; CItemAttr backend supplies original PFS id/icon scalars; original getter/wrapper/lookup call/cell setter execute; name/icon drawing skipped and selected-cell pointer supplied",
+    "network manager/send captures bytes only, never connects; original purchase and repurchase request construction executes",
+    "native_gameplay_probe offline allocation/free/refcount/UTF16/CRT adapters as declared in hashed helper; original codec and STL tree execute",
+    "response clear-column is observed/no-op; install call is observed/stopped, not a completed ItemManager mutation",
+    "buyback ItemRef memory bridge takes decoded item fields; original price-map lookup/write and display baseline math execute; optional price override and full button guards excluded"
+  ],
+  "unknowns": [
+    "service2 menu+d8 actual first-parameter origin and actual mode for NPC10004 remain unproved; npctype1 is not asserted equal UI mode",
+    "underlying original server behavior, stock limits, infinite stock, expiry policy, permission lists and price/currency eligibility remain unknown",
+    "ordinary local shelf contains template IDs only; no stock instance keys, 99 counts, binding or expiry can be derived from it",
+    "SGetRepurchaseItems has no NPC identity/request correlation; stale replies must be fenced by owning server/session context, which this client research does not implement",
+    "SGetBagInfo column4 common handler also accepts an ItemBag; which response original server chose after query4 is unknown without original server/capture",
+    "buyback default display is map value*quantity*1.1 then conversion; config override at ConfigManager+0xb28 can replace it; final original pricing not reconstructed",
+    "native GUI session, merchant permission reachability and full original ItemManager install/render path are not verified"
+  ],
+  "input_sha256_before": {
+    "research_npc_repair_columns.py": "c73f3f20ad1be46130790e3ca8917f1ebfeba64111813eb15d0e839657b7aed3",
+    "evidence/NPC_REPAIR_COLUMN_RESEARCH.md": "d6d40c1bbcc1d4434ceee02e561b9bee5fef49fef53704261a3da7dd64546133",
+    "evidence/npc-repair-column-native.json": "fa3b4aa032f9f9dd671189eb5d2c153ff480e4fc4f1d93ea6496ea6df0572b27",
+    "evidence/npc-repair-column-disassembly.txt": "085dcc7c6a2333bef076509d7b4e0c3d09b0e15ffea77af8e8122353c2559c67",
+    "research_npc_special_repair_menu.py": "b82d31d73ac85383e8a1f730048ec597012fa4053222754acdb5e622b6fc78a9",
+    "evidence/NPC_SPECIAL_REPAIR_MENU_RESEARCH.md": "3a49bb3b26c7c3c0a366617367e80c869e7dc70c38502596abc5ea7d03e35b6f",
+    "evidence/npc-special-repair-menu-native.json": "c252c9b5b9c15efaf685705500b38d2b228f58da80ec98d30f23ebcffb13b9df",
+    "evidence/npc-special-repair-menu-disassembly.txt": "fcccf19772a38bca3a130cdd74e8e0542baff2ebc7fe60d7ee6d1ffaf78fb25b",
+    "research_npc_special_repairs.py": "88bb5258c17a9db8d1dd28324f2528d98b79b16097edb14d5b54b43368452023",
+    "evidence/NPC_SPECIAL_REPAIRS_NATIVE_RESEARCH.md": "10a418afe9175882a7dc9712ad126287dd951a77eef88087428e8162cd7044a3",
+    "evidence/npc-special-repairs-native.json": "8ecc806aab098d8d0e2edac192f57517c1e05f66746e3919ac809f927e8d83dc",
+    "evidence/npc-special-repairs-native-disassembly.txt": "d8c1b02d345911c1e2e5cd74155a827270e3e197e8271780b6051d89402053ed",
+    "research_npc_special_repair_cost.py": "459e0463fabfa5e53e487250bd7c880a7b337a4c0bc87e7838eaaf9a7fa47078",
+    "evidence/NPC_SPECIAL_REPAIR_COST_RESEARCH.md": "ec45ef4fe98ac23916dd78162093fc2048b73ff10304066b7fc8687ecb43b2d3",
+    "evidence/npc-special-repair-cost-native.json": "ac36e5ac8499384b208f34b88719ae7fd8240e9c6cf5587c551178885cfe899c",
+    "evidence/npc-special-repair-cost-native-disassembly.txt": "38e3e63ddffc171675fcfc2415d7113fb74b4a021e6f482ca623420a3d5f37fb",
+    "npc_gameplay.py": "7212aa304509721bf82c4e5d6545212a5cc8c21b26bfbbf3901ed3c946c83387",
+    "npc_shop_sales.py": "5bfbc44403d9ab2e3aa93dc0cf6304f20e74e7a1b5a111e757fc04bfb6e01058",
+    "npc_shop_payments.py": "874f6f02e3f154b32f408d61c853bc9cea07236d3f5db812c769e9de91d72450",
+    "npc_repairs.py": "3cc4ff7dc2a956946fd31debb18b1a3773d6ca472b93b218fcc257e5aaf86884",
+    "inventory.py": "d66329dbb8976e6ed3642e7fcc5f26f6a6f5ad2d4ced56f9af4689c5081764d4",
+    "native_gameplay_probe.py": "a585adc6522c8162ecaa8c87250eed240a49477ee57322f2950344a92bb7e24c",
+    "native_inspect.py": "0793e525a8e06fe8e6a216b3509202244463dc4bd469c7e87950edb03810b6a0",
+    "research_npc_submenu.py": "6ab20507535f93be920e4eed5f01b59e005aa81184ba0f2e7fdc28793a5bb19b",
+    "verify_social_native.py": "a5e85ff5ec786c461a55af075b5ecd5c6d40b57da41c6f84bf9116596cae1a80",
+    "pfs.py": "d4c9a5f6080276ab51886fdd4f1d7e7c1618715f870cbce84c916cf03b163352",
+    "bxml.py": "ba61810a10fede4305075efd7120429fb165af90fdbb4fb94697862a30c8b66d",
+    "inspect_client.py": "a7efdeec98f4d5b0b3e4980e73b2a7e2f0973c2a0c20bcfdc587b1b481f382fa",
+    "evidence/native-image.bin": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+    "catalogs/knight.gsp.item.npcsellitem.json": "a33ac25034281ce517965266e4a425f4f42766851167994b6ce995a78b8f35e0",
+    "catalogs/knight.gsp.item.citemattr.json": "018a609fe0a007d3aa3bd4eaac2c9ba9310e3dcb234e6366499dab82cf33c0fd",
+    "catalogs/knight.gsp.npc.cnpcconfig.json": "cf070e700e37a6d8d350ccb1e4d86610408e5ffcecad4710641cf2d06aca847d",
+    "../artres/config.pfs": "eee475d5ffe7eecbde99abc119c2b9b8faa899489e2f7e13533a8de81f40d915",
+    "../artres/ui.pfs": "5a687aeeb6356ba12af8dc05aea691cd6d14ff3dfe56122d2fd9bd52dc1143ab",
+    "ARCHITECTURE.md": "0b98c5d027f33cf99071c2a316b77dbcd6a2a785b6658987209321bbadfc1d7d",
+    "DESIGN_AUTHORITY.md": "820829778bcd632f2963eebc5f3106600c873481212fa8542cdd144a2e0ecf5f",
+    "evidence/npc-equipment-identification-ready.json": "9b05ab14fd786558a2e320a70ae5a9579b578b3c4170ecb241fac8e2bab98794",
+    "evidence/npc-placement-direction-ready.json": "761c97193b18d92e860aa8cbfeac045a34d9c10057c792d586b0484c7df62d82",
+    "research_npc_shop_catalog.py": "fd3f5dc3feac5c532a35251c59cb38daa98e7b68ab757c734d1ebbe3390033ea"
+  },
+  "input_sha256_after": {
+    "research_npc_repair_columns.py": "c73f3f20ad1be46130790e3ca8917f1ebfeba64111813eb15d0e839657b7aed3",
+    "evidence/NPC_REPAIR_COLUMN_RESEARCH.md": "d6d40c1bbcc1d4434ceee02e561b9bee5fef49fef53704261a3da7dd64546133",
+    "evidence/npc-repair-column-native.json": "fa3b4aa032f9f9dd671189eb5d2c153ff480e4fc4f1d93ea6496ea6df0572b27",
+    "evidence/npc-repair-column-disassembly.txt": "085dcc7c6a2333bef076509d7b4e0c3d09b0e15ffea77af8e8122353c2559c67",
+    "research_npc_special_repair_menu.py": "b82d31d73ac85383e8a1f730048ec597012fa4053222754acdb5e622b6fc78a9",
+    "evidence/NPC_SPECIAL_REPAIR_MENU_RESEARCH.md": "3a49bb3b26c7c3c0a366617367e80c869e7dc70c38502596abc5ea7d03e35b6f",
+    "evidence/npc-special-repair-menu-native.json": "c252c9b5b9c15efaf685705500b38d2b228f58da80ec98d30f23ebcffb13b9df",
+    "evidence/npc-special-repair-menu-disassembly.txt": "fcccf19772a38bca3a130cdd74e8e0542baff2ebc7fe60d7ee6d1ffaf78fb25b",
+    "research_npc_special_repairs.py": "88bb5258c17a9db8d1dd28324f2528d98b79b16097edb14d5b54b43368452023",
+    "evidence/NPC_SPECIAL_REPAIRS_NATIVE_RESEARCH.md": "10a418afe9175882a7dc9712ad126287dd951a77eef88087428e8162cd7044a3",
+    "evidence/npc-special-repairs-native.json": "8ecc806aab098d8d0e2edac192f57517c1e05f66746e3919ac809f927e8d83dc",
+    "evidence/npc-special-repairs-native-disassembly.txt": "d8c1b02d345911c1e2e5cd74155a827270e3e197e8271780b6051d89402053ed",
+    "research_npc_special_repair_cost.py": "459e0463fabfa5e53e487250bd7c880a7b337a4c0bc87e7838eaaf9a7fa47078",
+    "evidence/NPC_SPECIAL_REPAIR_COST_RESEARCH.md": "ec45ef4fe98ac23916dd78162093fc2048b73ff10304066b7fc8687ecb43b2d3",
+    "evidence/npc-special-repair-cost-native.json": "ac36e5ac8499384b208f34b88719ae7fd8240e9c6cf5587c551178885cfe899c",
+    "evidence/npc-special-repair-cost-native-disassembly.txt": "38e3e63ddffc171675fcfc2415d7113fb74b4a021e6f482ca623420a3d5f37fb",
+    "npc_gameplay.py": "7212aa304509721bf82c4e5d6545212a5cc8c21b26bfbbf3901ed3c946c83387",
+    "npc_shop_sales.py": "5bfbc44403d9ab2e3aa93dc0cf6304f20e74e7a1b5a111e757fc04bfb6e01058",
+    "npc_shop_payments.py": "874f6f02e3f154b32f408d61c853bc9cea07236d3f5db812c769e9de91d72450",
+    "npc_repairs.py": "3cc4ff7dc2a956946fd31debb18b1a3773d6ca472b93b218fcc257e5aaf86884",
+    "inventory.py": "d66329dbb8976e6ed3642e7fcc5f26f6a6f5ad2d4ced56f9af4689c5081764d4",
+    "native_gameplay_probe.py": "a585adc6522c8162ecaa8c87250eed240a49477ee57322f2950344a92bb7e24c",
+    "native_inspect.py": "0793e525a8e06fe8e6a216b3509202244463dc4bd469c7e87950edb03810b6a0",
+    "research_npc_submenu.py": "6ab20507535f93be920e4eed5f01b59e005aa81184ba0f2e7fdc28793a5bb19b",
+    "verify_social_native.py": "a5e85ff5ec786c461a55af075b5ecd5c6d40b57da41c6f84bf9116596cae1a80",
+    "pfs.py": "d4c9a5f6080276ab51886fdd4f1d7e7c1618715f870cbce84c916cf03b163352",
+    "bxml.py": "ba61810a10fede4305075efd7120429fb165af90fdbb4fb94697862a30c8b66d",
+    "inspect_client.py": "a7efdeec98f4d5b0b3e4980e73b2a7e2f0973c2a0c20bcfdc587b1b481f382fa",
+    "evidence/native-image.bin": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+    "catalogs/knight.gsp.item.npcsellitem.json": "a33ac25034281ce517965266e4a425f4f42766851167994b6ce995a78b8f35e0",
+    "catalogs/knight.gsp.item.citemattr.json": "018a609fe0a007d3aa3bd4eaac2c9ba9310e3dcb234e6366499dab82cf33c0fd",
+    "catalogs/knight.gsp.npc.cnpcconfig.json": "cf070e700e37a6d8d350ccb1e4d86610408e5ffcecad4710641cf2d06aca847d",
+    "../artres/config.pfs": "eee475d5ffe7eecbde99abc119c2b9b8faa899489e2f7e13533a8de81f40d915",
+    "../artres/ui.pfs": "5a687aeeb6356ba12af8dc05aea691cd6d14ff3dfe56122d2fd9bd52dc1143ab",
+    "ARCHITECTURE.md": "0b98c5d027f33cf99071c2a316b77dbcd6a2a785b6658987209321bbadfc1d7d",
+    "DESIGN_AUTHORITY.md": "820829778bcd632f2963eebc5f3106600c873481212fa8542cdd144a2e0ecf5f",
+    "evidence/npc-equipment-identification-ready.json": "9b05ab14fd786558a2e320a70ae5a9579b578b3c4170ecb241fac8e2bab98794",
+    "evidence/npc-placement-direction-ready.json": "761c97193b18d92e860aa8cbfeac045a34d9c10057c792d586b0484c7df62d82",
+    "research_npc_shop_catalog.py": "fd3f5dc3feac5c532a35251c59cb38daa98e7b68ab757c734d1ebbe3390033ea"
+  },
+  "native_gui_verified": false,
+  "production_changed": false,
+  "server_implemented": false
+}

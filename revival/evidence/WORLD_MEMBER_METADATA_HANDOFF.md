@@ -1,0 +1,46 @@
+# 真实成员 metadata：所属Module实现交单
+
+状态：World所属实现，未接shared/未部署本批代码；当前运行的r4不可变副本不受工作区改动影响。位置权威仍是WorldDomain；没有启用玩家AOI、收费、正式AI或新客户端协议。
+
+依据：MEMBER_BINDING_DECISION、根GLOSSARY及WORLD_ROLE_BINDING_INTERFACE_DESIGN的design-v2审查。实际使用tdd（公开配套命令逐条红→绿）、codebase-design（现有RoleScene投影与WorldDomain权威的Seam）、code-review（固定真实base/最终变化，结果另记）。测试沿用用户授权的World公开Interface，不增内部测试入口；无内部mock，仅一组用外部文件系统拒绝器证明热路径不读盘。架构与数值规则仍按ARCHITECTURE、DESIGN_AUTHORITY。
+
+## 已实现Interface
+
+共享地图启动调用 `WorldDomain.member_projection(role_capacity=...)`，在已有成员/交接/scene delivery前创建并固定该Domain唯一metadata投影；同预算返回原实例，改预算/替换/退休后重开拒绝。它内部调用RoleScene.membership_only并使用实际Domain generation。即使调用者知道相同generation并另造RoleScene，Domain也按精确注册实例拒绝；只比较地址或generation字符串不足以证明归属。
+
+容量必须显式给出；不需要radius/pair/batch数值。join/ready的appearance必须None；同位置多角色正常登记，没有RoleDelivery/编码/sequence。完整AOI构造继续要求真实RoleBasic，None不会静默进入旧同屏模式。模式没有公开热切换入口。启用该registry后裸join/move/leave/ready/resume/finalize及旧恢复清理不能绕开配套投影更新，固定Domain的full-AOI热替换也被拒。
+
+兼容裁定：metadata签发的RoleViewBinding.owner_generation精确等于实际WorldDomain代次；membership_revision是其独占子投影分配的**成员许可世代**，不是每次物理离开的计数。未启metadata的旧完整AOI继续采用其既有RoleScene投影代次，不把这两个来源混称。新的Domain.role_binding只对已注册metadata签发；NPC已封DTO字段及类型不变。
+
+已有WorldDomain.join_with_view、move_with_view、leave_with_view、finalize_with_view、resume_with_view、ready_with_view直接配合此实例。RolePresence是从已校验Location派生的不可变投影，appearance仅metadata模式为None，不成为第二位置写者。普通行走保留许可世代，实际leave/rejoin（即使epoch/version/位置完全相等）产生新许可；冷建有新Domain generation。activate阶段仅有domain loading成员，无active RolePresence或许可；ready成功后才分配活跃许可，不用假外观给loading补身份。
+
+`WorldDomain.role_binding(expected_presence,view,connection_generation)` 验证传入的准确RolePresence/Location类型、完整地址和字段类型、当前domain active Location及当前view完整presence，然后调用既有bind_role_view。expected必须在跨所有者投递前从配套命令结果捕获，不能在旧请求处理时按roleID给它补当前身份。连接generation来自真实当前连接关系，由角色路由认证；本方法不认证socket，也不是NPC权限或发送ACK。
+
+`WorldDomain.fence_role_binding(expected_presence,view)` 同样先核精确当前成员，再由projection的fence_binding原地推进真实revision/member revision并返回新不可变presence。仅metadata模式允许；位置/任务/库存不变，其他成员不变，旧expected不能重试撤销新身份。冻结后domain不active，签发/fence均拒绝；取消后resume保留已推进的新member revision，冻结前绑定不能复活。完整AOI模式拒绝该fence，避免破坏其消息sequence。
+
+metadata实例的delivery_is_current始终False：持有成员身份也不能被拿来授权同屏投递。未来启AOI要新建完整投影并独立验收，不能把本实例热开后丢弃旧sequence。
+
+## 共享入口所需接线，尚未执行
+
+1. 实际每MapOwner启动经domain.member_projection取得其固定metadata projection；所有join/move/leave/ready/resume/finalize走相应domain配套命令，不从其他执行者传入可变view。只有不可变RolePresence/RoleViewBinding跨队列。域内注册实例与Domain generation同时校验，旧Domain的同地址view不能在新Domain签发或撤销许可。
+2. RoleOwner记录配套命令返回的当前不可变presence；服务查询前将已捕获expected交地图邮箱求binding。不要用Position.version、常量1或旧回复构造身份。绑定稳定不代表NPC空间凭据/位置version可以省略。
+3. 确认transfer/CG/battle等生命周期意图后，先清角色modal/ticket并撤销连接当前binding，再经地图邮箱fence精确active presence，更新返回presence。其后freeze/activate/ready/resume仍按原持久交接流程。角色在跨所有者等待中保持流程锁定；fence请求已过期或expected变旧则不得盲目重取新身份补齐旧请求。
+4. 安装/撤销连接binding采用完整expected compare-and-set；queued logical回复保留捕获binding与scene/flow/ticket身份，入队及实际编码/write前均核当前。旧close/历史receipt不能清新成员，旧安装也不能覆盖新身份；write后字节不能撤回，drain不等于客户端执行ACK。
+5. source finalize会返回历史target回执，不能把它写成当前source缓存；r4的精确cache保护继续保留。使用finalize_with_view时新成员存在的历史重试会拒绝，不得用清新projection来“完成重试”。初次join/目标ready才从真实结果建立当前binding。
+6. 当前不建RoleViewInbox、不发玩家RoleDelivery、不更改AOI半径；收费仍须NPC ticket/空间证明/事务CAS独立验收。main独占共享接线及新准确候选发布。
+
+## 实际验证
+
+verify_world_member_metadata共14组通过：同位置登记/容量与幂等；移动保留许可；离开/同Location重入/冷建；签发的active与完整身份；fence/其他成员隔离；metadata不授权AOI；真实pure domain传送cancel/resume与commit/ready；严格数值类型/模式；热路径无文件I/O；大instance ID与partition隔离；实际Domain generation/固定投影；loading→ready容量拒绝保持前态；实际retire/cold rebuild；错误裸消费者拒绝前保留已接受的移动队列。报告world-member-metadata-verification含6份实际源码路径/hash并前后稳定。
+
+六条新增能力先真实红再实现：factory缺失、metadata移动进旧AOI半径、metadata退出进旧links、签发方法缺失、fence缺失、metadata误认可构造的RoleDelivery。每条红/绿报告保留；后续组合/类型/无I/O/实例测试作为回归，没有伪造它们先红。最终完整测试另通过--domain-source加载真正pre-edit两份base，实际因Domain.member_projection缺失而exit1，world-member-metadata-final-baseline-red明确记录旧源路径/hash；较早world-member-metadata-exact-baseline-red是当时RoleScene factory入口的历史红，不与最终入口混称。
+
+generation中间版也实际红：新Domain在完全相同地址/角色/epoch/Location上，用旧view重签了旧绑定，且绑定generation来自独立RoleScene而非Domain。中间真实两文件与报告保留在tdd/world-member-domain-generation-intermediate及world-member-domain-generation-intermediate-red。随后固定registry/Domain generation实现与第11组真实反例补齐；不是把该原型缺口冒称当前发布的收费或GUI漏洞。
+
+共享join另外已在实际repair BASE检出独立红：幂等重试/旧epoch拒绝/冲突位置拒绝都会提前清当前movement context。精确probe及父独立报告见WORLD_RUNTIME_JOIN_CONTEXT_BLOCKER、world-runtime-join-context-parent-repair-base；不是本片WorldDomain配套join先清数据，也未被World修改。main在后续成员候选须保留拒绝/幂等join的当前movement与member许可，再原样把probe转绿，不能夹进既已发布repair或忽略红。
+
+首版Spec P2实际红是metadata裸process_one在拒绝前已出队，吞掉已接受命令；r1冻结保留。r2把模式校验置于出队前，第14组公开submit/inspect_lifecycle/process_one/process_one_with_view验证拒绝后队列仍为1，正确消费者随后完成同一命令。world-member-metadata-dequeue-red/green保留真实反例和修复，未用私有队列断言。
+
+最终十份旧功能回归全部exit0：RoleScene、配套成员/移动/传送/取消/恢复/出队、RoleViewInbox和两份原native codec链；输入仍与本批源一致，见world-member-metadata-legacy-regressions，实际process返回记录另见world-member-metadata-regression-processes-r2。原解码结果只证明旧同屏字节布局/字段兼容，不是GUI或真实多人接线。
+
+未验证：真实GameRuntime持有/更新presence、连接安装/撤销/编码前fence、并发/容量、正式扣费/数据库恢复、所有可用地图及原资源角色外观的GUI。纯Module传送夹具不等于完整持久/网络流程。全量地图/场景/怪物/客户端目标未完成，不因本片绿灯宣布上线。

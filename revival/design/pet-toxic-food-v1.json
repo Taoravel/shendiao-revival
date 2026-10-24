@@ -1,0 +1,23 @@
+{
+  "revision": "2026-10-23.pet-toxic-food.1",
+  "templates": [32004, 32009],
+  "lifetime": {
+    "formula_source": "client_verified original cfooddrugeffectformula ai0/bi0:32004=3/0,32009=2/50",
+    "service_formula": "designed floor(abs(persisted_quality * original_ai0 + original_bi0))",
+    "overflow": "designed reject signed32 overflow without consuming"
+  },
+  "poison": {
+    "chance_percent": 3,
+    "chance_source": "client_verified original item descriptions and bookanswer36017",
+    "draw_denominator": 10000,
+    "draw_below": 300,
+    "aptitude_loss_each": 1,
+    "minimum_base_aptitude": 0,
+    "loss_source": "designed; original says all aptitudes slightly decrease but gives no integer loss",
+    "order": "designed reduce current base aptitudes before current blood projection; preserve raw growth, level, XP, allocation and blood",
+    "resources": "designed preserve current absolute HP/MP with clipping only to lower new caps; dead stays dead"
+  },
+  "context": "trusted role owner captures one integer draw0..9999 per admitted command; no RNG or client draw inside domain",
+  "legacy": "requires explicit known growth, base aptitudes, blood and care; no automatic import",
+  "evidence": "evidence/pet-lifetime-source-audit.json"
+}

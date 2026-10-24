@@ -1,0 +1,286 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="WeaponsMake">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="open.ogg" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.128125,0},{0.175833,0},{0.128125,595},{0.174167,390}}" />
+    <Property Name="CloseSoundResource" Value="close.ogg" />
+    <Window Type="TaharezLook/StaticImage" Name="WeaponsMake/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.589916,0},{0,12},{1.10756,0},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="WeaponsMake/Title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="生     产" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="79" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.298701,0},{0,1},{0.597403,0},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="WeaponsMake/Leftback">
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,44},{0,180},{0.086309,333}}" />
+      <Window Type="TaharezLook/GroupBtnTree" Name="WeaponsMake/Leftback/Tree">
+        <Property Name="UnifiedAreaRect" Value="{{0.00617284,0},{0.00928793,0},{1,0},{0.996904,0}}" />
+      </Window>
+    </Window>
+    <Window Type="DefaultWindow" Name="WeaponsMake/Euipproduct">
+      <Property Name="UnifiedAreaRect" Value="{{0,181},{0,44},{0,576},{0.086309,333}}" />
+      <Window Type="TaharezLook/CommonCase" Name="WeaponsMake/Euipproduct/back">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,393},{0,324}}" />
+        <Window Type="TaharezLook/Figure" Name="WeaponsMake/Euipproduct/back/title">
+          <Property Name="UnifiedAreaRect" Value="{{0.282443,0},{0,5},{0.272727,154},{0,20}}" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+          <Window Type="TaharezLook/StaticText" Name="WeaponsMake/Euipproduct/back/title/name">
+            <Property Name="Text" Value="请选择装备等级" />
+            <Property Name="HorzExtent" Value="92" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.333333,0},{-0.133333,0},{1.12,0},{0,18}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="WeaponsMake/Euipproduct/back/pagback">
+          <Property Name="UnifiedAreaRect" Value="{{0.0152672,0},{0,22},{0.984733,0},{0,124}}" />
+          <Window Type="TaharezLook/ItemCell" Name="WeaponsMake/Euipproduct/back/pagback/List/cell1">
+            <Property Name="Text">1级
+装备</Property>
+            <Property Name="UnifiedAreaRect" Value="{{0.00262467,0},{0.0490196,0},{0.00479448,47},{0.0294462,50}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="WeaponsMake/Euipproduct/back/pagback/List/cell2">
+            <Property Name="Text">10级
+装备</Property>
+            <Property Name="UnifiedAreaRect" Value="{{0.00479448,46},{0.0490196,0},{0.00479448,94},{0.0294462,50}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="WeaponsMake/Euipproduct/back/pagback/List/cell3">
+            <Property Name="Text">20级
+装备</Property>
+            <Property Name="UnifiedAreaRect" Value="{{0.00479448,93},{0.0490196,0},{0.00479448,141},{0.0294462,50}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="WeaponsMake/Euipproduct/back/pagback/List/cell4">
+            <Property Name="Text">30级
+装备</Property>
+            <Property Name="UnifiedAreaRect" Value="{{0.00479448,140},{0.0490196,0},{0.00479448,188},{0.0294462,50}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="WeaponsMake/Euipproduct/back/pagback/List/cell5">
+            <Property Name="Text">40级
+装备</Property>
+            <Property Name="UnifiedAreaRect" Value="{{0.00479448,187},{0.0490196,0},{0.00479448,235},{0.0294462,50}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="WeaponsMake/Euipproduct/back/pagback/List/cell6">
+            <Property Name="Text">50级
+装备</Property>
+            <Property Name="UnifiedAreaRect" Value="{{0.00479448,234},{0.0490196,0},{0.00479448,282},{0.0294462,50}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="WeaponsMake/Euipproduct/back/pagback/List/cell7">
+            <Property Name="Text">60级
+装备</Property>
+            <Property Name="UnifiedAreaRect" Value="{{0.00479448,281},{0.0490196,0},{0.00479448,329},{0.0294462,50}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="WeaponsMake/Euipproduct/back/pagback/List/cell8">
+            <Property Name="Text">70级
+装备</Property>
+            <Property Name="UnifiedAreaRect" Value="{{0.00479448,328},{0.0490196,0},{0.00479448,376},{0.0294462,50}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="WeaponsMake/Euipproduct/back/pagback/List/cell16">
+            <Property Name="Text">150级
+装备</Property>
+            <Property Name="UnifiedAreaRect" Value="{{0.00479448,328},{0.0294462,48},{0.00479448,376},{0.0294462,96}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="WeaponsMake/Euipproduct/back/pagback/List/cell15">
+            <Property Name="Text">140级
+装备</Property>
+            <Property Name="UnifiedAreaRect" Value="{{0.00479448,281},{0.0294462,48},{0.00479448,329},{0.0294462,96}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="WeaponsMake/Euipproduct/back/pagback/List/cell14">
+            <Property Name="Text">130级
+装备</Property>
+            <Property Name="UnifiedAreaRect" Value="{{0.00479448,234},{0.0294462,48},{0.00479448,282},{0.0294462,96}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="WeaponsMake/Euipproduct/back/pagback/List/cell13">
+            <Property Name="Text">120级
+装备</Property>
+            <Property Name="UnifiedAreaRect" Value="{{0.00479448,187},{0.0294462,48},{0.00479448,235},{0.0294462,96}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="WeaponsMake/Euipproduct/back/pagback/List/cell12">
+            <Property Name="Text">110级
+装备</Property>
+            <Property Name="UnifiedAreaRect" Value="{{0.00479448,140},{0.0294462,48},{0.00479448,188},{0.0294462,96}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="WeaponsMake/Euipproduct/back/pagback/List/cell11">
+            <Property Name="Text">100级
+装备</Property>
+            <Property Name="UnifiedAreaRect" Value="{{0.00479448,93},{0.0294462,48},{0.00479448,141},{0.0294462,96}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="WeaponsMake/Euipproduct/back/pagback/List/cell10">
+            <Property Name="Text">90级
+装备</Property>
+            <Property Name="UnifiedAreaRect" Value="{{0.00479448,46},{0.0294462,48},{0.00479448,94},{0.0294462,96}}" />
+          </Window>
+          <Window Type="TaharezLook/ItemCell" Name="WeaponsMake/Euipproduct/back/pagback/List/cell9">
+            <Property Name="Text">80级
+装备</Property>
+            <Property Name="UnifiedAreaRect" Value="{{0.00262467,0},{0.0294462,48},{0.00226923,48},{0.0294462,96}}" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="WeaponsMake/Euipproduct/back/Current">
+          <Property Name="UnifiedAreaRect" Value="{{0.414951,10},{0,126},{0.984733,0},{0,313}}" />
+          <Window Type="TaharezLook/StaticText" Name="WeaponsMake/Euipproduct/back/Current/choose">
+            <Property Name="Text" Value="可打造装备" />
+            <Property Name="HorzExtent" Value="66" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+            <Property Name="BorderColour" Value="FF280B03" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,8},{0,3},{0,75},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="WeaponsMake/Euipproduct/back/Current/back">
+            <Property Name="Image" Value="set:MainControl3 image:LuckyWheelMiddleBox" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,66},{0,68}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,66},{0,68}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.172897,0},{0,36},{0.481308,0},{0.247273,58}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsMake/Euipproduct/back/Current/back/item">
+              <Property Name="UnifiedAreaRect" Value="{{0.212121,0},{0.161765,0},{0.21875,46},{0.16661,46}}" />
+              <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="WeaponsMake/Euipproduct/back/Current/Name">
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003679" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.504673,0},{0.320856,0},{1.01869,0},{0.417112,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/Button" Name="WeaponsMake/Euipproduct/back/Materialback/button">
+            <Property Name="Text" Value="打   造" />
+            <Property Name="SizeType" Value="Auto" />
+            <Property Name="UnifiedAreaRect" Value="{{0.359813,0},{0.05,133},{0.714953,0},{0.05,157}}" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+        <Window Type="TaharezLook/CommonCaseFigure1" Name="WeaponsMake/Euipproduct/back/Materialback">
+          <Property Name="UnifiedAreaRect" Value="{{0.0152672,0},{0,126},{0.435115,0},{0,313}}" />
+          <Window Type="TaharezLook/StaticImage" Name="WeaponsMake/Euipproduct/back/Materialback/Item1">
+            <Property Name="Image" Value="set:MainControl image:SellItemBack" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,127},{0,55}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,127},{0,55}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,16},{0.112299,0},{0.906832,-7},{0.406417,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="WeaponsMake/Euipproduct/back/Materialback/Item1/name">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003679" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.417323,0},{0.0909091,0},{0.96063,0},{0.0825161,20}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="WeaponsMake/Euipproduct/back/Materialback/Item1/Num">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003679" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.417323,0},{0.563636,0},{0.96063,0},{0.567484,20}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsMake/Euipproduct/back/Materialback/Item1/item">
+              <Property Name="UnifiedAreaRect" Value="{{0,2},{0,3},{0,50},{0,51}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="WeaponsMake/Euipproduct/back/Materialback/Need1">
+            <Property Name="Text" Value="所需材料" />
+            <Property Name="HorzExtent" Value="53" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFFFFC9E tr:FFFFFC9E bl:FFFDAA09 br:FFFDAA09" />
+            <Property Name="BorderColour" Value="FF280B03" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,7},{0,3},{0,66},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="WeaponsMake/Euipproduct/back/Materialback/Item2">
+            <Property Name="Image" Value="set:MainControl image:SellItemBack" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,127},{0,55}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,127},{0,55}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,16},{0.390374,0},{0.906833,-7},{0.471922,40}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="WeaponsMake/Euipproduct/back/Materialback/Item2/name">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003679" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.417323,0},{0.0909091,0},{0.96063,0},{0.0825161,20}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="WeaponsMake/Euipproduct/back/Materialback/Item2/Num">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003679" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.417323,0},{0.563636,0},{0.96063,0},{0.567484,20}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsMake/Euipproduct/back/Materialback/Item2/item">
+              <Property Name="UnifiedAreaRect" Value="{{0,2},{0,3},{0,50},{0,51}}" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="WeaponsMake/Euipproduct/back/Materialback/Item3">
+            <Property Name="Image" Value="set:MainControl image:SellItemBack" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,127},{0,55}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,127},{0,55}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,16},{0.668449,0},{0.906833,-7},{0.655921,57}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Window Type="TaharezLook/StaticText" Name="WeaponsMake/Euipproduct/back/Materialback/Item3/name">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003679" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.417323,0},{0.0909091,0},{0.96063,0},{0.0825161,20}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="WeaponsMake/Euipproduct/back/Materialback/Item3/Num">
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003679" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.417323,0},{0.563636,0},{0.96063,0},{0.567484,20}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/ItemCell" Name="WeaponsMake/Euipproduct/back/Materialback/Item3/item">
+              <Property Name="UnifiedAreaRect" Value="{{0,2},{0,3},{0,50},{0,51}}" />
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

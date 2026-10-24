@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shaderTemplate>
+  <shaderFramework name="PostProcess">
+    <inputDeclaration>
+    
+          struct VS_INPUT
+          {
+              float4 Position  : POSITION;
+              float4 UV0       : TEXCOORD0;
+          };
+	
+
+    </inputDeclaration>
+    <outputDeclaration>
+	    
+	   struct VS_OUTPUT 
+	   {
+               float4 Position : POSITION;
+	       float4 UV0      : TEXCOORD0; 
+           };
+	
+    </outputDeclaration>
+    <pixelOutputDeclaration>
+	  
+	  struct PS_OUTPUT
+	  {
+	    float4 Color : COLOR;
+	  };
+	
+    </pixelOutputDeclaration>
+    <shaderInfo type="VS">
+      <functionEntry>
+      
+		VS_OUTPUT VS(VS_INPUT input)
+		{
+		    VS_OUTPUT output = (VS_OUTPUT)0;
+	    
+      </functionEntry>
+      <returnCode>
+      
+		return output;
+		}
+	    
+      </returnCode>
+      <macro name="SS_Vertex_Output_UVTex" />
+      <macro name="SS_Vertex_Output_Position" />
+    </shaderInfo>
+    <shaderInfo type="PS">
+      <functionEntry>
+      
+		PS_OUTPUT PS(VS_OUTPUT input)
+		{
+		PS_OUTPUT output = (PS_OUTPUT)0;
+	    
+      </functionEntry>
+      <returnCode>
+      
+		return output;
+		}
+	    
+      </returnCode>
+      <initCode>
+      
+        output.Color = 0.0f;
+	    
+      </initCode>
+      <macro name="SS_Pixel_Output_Color" />
+    </shaderInfo>
+  </shaderFramework>
+</shaderTemplate>

@@ -1,0 +1,14 @@
+{
+  "scope": "temporary DB verifier fixture correction; no shared implementation change",
+  "method": "diagnosing-bugs: actual encrypted repro, public role mailbox error, immutable differential, one-variable probe",
+  "original_repro": "verify_npc_transport_runtime.py returned no scene packet and IndexError at result[0]",
+  "public_mailbox_error": "world_transfer_storage.commit_transfer_transaction: Missing durable source checkpoint",
+  "immutable_baseline": "npc-bound-shop-20261023T115742Z reproduces the same failure with its original modules",
+  "cause": "fixture save_position writes role_positions alone; position_versions missing is intentionally rejected as a half-checkpoint",
+  "one_variable_probe": "use acquire_lease and save_checkpoint to persist the complete source; unchanged actual Peer check then passes",
+  "fix": "verifier fixture uses public save_checkpoint at version1; production half-checkpoint guard unchanged",
+  "shared_files_modified": false,
+  "immutable_release_modified": false,
+  "live_database_modified": false,
+  "native_gui_verified": false
+}

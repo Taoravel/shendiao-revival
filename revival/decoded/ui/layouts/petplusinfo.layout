@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="PetPlusInfo">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.29625,0},{0.318333,0},{0.7075,0},{0.716667,0}}" />
+    <Window Type="TaharezLook/StaticText" Name="PetPlusInfo/Name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="注意事项" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="69" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.331307,0},{0,13},{0.696049,0},{0,34}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="PetPlusInfo/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0547112,0},{0.1841,0},{0.053681,289},{0.201835,145}}" />
+      <Window Type="TaharezLook/StaticText" Name="PetPlusInfo/Back/Text">
+        <Property Name="Text">1.“宠物之星”道具可以通过“抽取宠物之星”功能来获得。
+2.“宠物之星”所含技能每个都有一定几率合成到主宠上。
+3. 注意！“合成宠物之星”也有一定的副作用，虽然几率不大，但主宠有可能会损失一个已有的技能哦。
+4.主宠技能数越多，合成之后“          ”的几率越低。</Property>
+        <Property Name="HorzExtent" Value="278" />
+        <Property Name="VertExtent" Value="140.57" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="BorderEnable" Value="True" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+        <Property Name="UnifiedAreaRect" Value="{{0.0242215,0},{0.0201342,0},{1.00692,0},{0.979866,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/StaticText" Name="PetPlusInfo/Back/Text/Tuo">
+          <Property Name="Text" Value="拓格" />
+          <Property Name="HorzExtent" Value="27" />
+          <Property Name="VertExtent" Value="15.6189" />
+          <Property Name="TextColours" Value="tl:FF33FF33 tr:FF33FF33 bl:FF33FF33 br:FF33FF33" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.640845,0},{0.762238,0},{0.746479,0},{0.300699,84}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/Button" Name="PetPlusInfo/OK">
+      <Property Name="Text" Value="我知道了" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.243161,0},{0.8159,0},{0.246012,71},{0.2,171}}" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+  </Window>
+</GUILayout>

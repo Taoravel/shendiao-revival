@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/StaticImage" Name="LeaderBook">
+    <Property Name="Image" Value="set:MainControl13 image:GameSmall" />
+    <Property Name="FrameEnabled" Value="False" />
+    <Property Name="UnifiedMaxSize" Value="{{0,440},{0,455}}" />
+    <Property Name="UnifiedMinSize" Value="{{0,440},{0,455}}" />
+    <Property Name="ImageSizeEnable" Value="False" />
+    <Property Name="UnifiedAreaRect" Value="{{0.240625,0},{0.120833,0},{0.706876,0},{0.780833,0}}" />
+    <Property Name="BackgroundEnabled" Value="False" />
+    <Window Type="TaharezLook/StaticText" Name="LeaderBook/Name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="此处填写标题" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="103" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.277273,0},{0.0791209,0},{0.740909,0},{0.127473,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="LeaderBook/Close">
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:component image:CloseButtonHover" />
+      <Property Name="NormalImage" Value="set:component image:CloseButtonNormal" />
+      <Property Name="PushedImage" Value="set:component image:CloseButtonPressed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,19},{0,21}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,19},{0,21}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0.913636,0},{0.0197802,0},{0.956818,0},{0.0659341,0}}" />
+    </Window>
+    <Window Type="TaharezLook/RichEditbox" Name="LeaderBook/main">
+      <Property Name="ReadOnly" Value="True" />
+      <Property Name="LineSpace" Value="1" />
+      <Property Name="BlinkCaret" Value="True" />
+      <Property Name="MaxTextLength" Value="2147483647" />
+      <Property Name="UnifiedAreaRect" Value="{{0.145455,0},{0.145055,0},{0.859091,0},{0.832967,0}}" />
+      <Property Name="BackGroundEnable" Value="False" />
+      <Property Name="BlinkCaretTimeout" Value="0.5" />
+      <Property Name="TextParsingEnabled" Value="False" />
+    </Window>
+  </Window>
+</GUILayout>

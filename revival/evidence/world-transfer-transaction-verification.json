@@ -1,0 +1,17 @@
+{
+  "passed": [
+    "real MapOwner reserve/freeze/loading receipt joins caller transaction",
+    "late caller failure rolls back target/version/decision and caller state together",
+    "retry records one decision; identical replay does not rewind later position",
+    "callee performs no transaction control, schema work or nested connection",
+    "full offer including deadline is immutable across retries",
+    "raw caller transaction checks current actual lease and account ownership",
+    "older/newer/mismatched/missing source checkpoints and malformed receipts rejected before writes",
+    "committed replay checks durable position consistency without rewinding later progress",
+    "startup migrates exact legacy receipt offers once; unresolved prepared rows are not guessed"
+  ],
+  "task_reward_workflow_tested": false,
+  "shared_runtime_tested": false,
+  "gui_verified": false,
+  "live_server_changed": false
+}

@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="GangMoneyAward">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.102628,0},{0,110},{0.102628,635},{0,497}}" />
+    <Window Type="TaharezLook/Button" Name="GangMoneyAward/AwardSetting">
+      <Property Name="Text" Value="设置奖励" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,75.0003},{0,347},{0,195},{0,369}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GangMoneyAward/AwardDel">
+      <Property Name="Text" Value="删除奖励" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,197},{0,347},{0,317},{0,369}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GangMoneyAward/AwardGet">
+      <Property Name="Text" Value="领取奖励" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,319},{0,347},{0,439},{0,369}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GangMoneyAward/Cancel">
+      <Property Name="Text" Value="离开" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,441},{0,347},{0,561},{0,369}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="GangMoneyAward/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,128.6},{0,9.96335},{0,436.6},{0,36.9633}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="GangMoneyAward/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="帮费奖励" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFF9600 br:FFFF9600" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,71},{0,1},{0,157},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="GangMoneyAward/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0259842,0},{0,60},{0.975591,0},{0,344}}" />
+      <Window Type="TaharezLook/MultiColumnList" Name="GangMoneyAward/GangAll">
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedAreaRect" Value="{{-0.00165838,0},{0,1},{0.00497512,600},{0,283}}" />
+        <Property Name="ColumnHeader" Value="text:名字 width:{0.21,0} id:0" />
+        <Property Name="ColumnHeader" Value="text:建设次数 width:{0.12,0} id:1" />
+        <Property Name="ColumnHeader" Value="text:日常任务次数 width:{0.15,0} id:2" />
+        <Property Name="ColumnHeader" Value="text:所属家族 width:{0.15,0} id:3" />
+        <Property Name="ColumnHeader" Value="text:盈利金额 width:{0.13,0} id:4" />
+        <Property Name="ColumnHeader" Value="text:帮费奖励 width:{0.12,0} id:5" />
+        <Property Name="ColumnHeader" Value="text:领取状态 width:{1,-523} id:6" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="GangMoneyAward/Tab1">
+      <Property Name="Text" Value="帮派总览" />
+      <Property Name="UnifiedAreaRect" Value="{{0.036221,0},{0,39},{0.173229,0},{0,61}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="GangMoneyAward/Tab2">
+      <Property Name="Text" Value="家族1" />
+      <Property Name="UnifiedAreaRect" Value="{{0.173229,0},{0,39},{0.310237,-0.000916183},{0,61}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="GangMoneyAward/Tab3">
+      <Property Name="Text" Value="家族2" />
+      <Property Name="UnifiedAreaRect" Value="{{0.310237,-0.000611007},{0,39},{0.447245,-0.00163662},{0,61}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="GangMoneyAward/Tab4">
+      <Property Name="Text" Value="家族3" />
+      <Property Name="UnifiedAreaRect" Value="{{0.447245,-0.00130856},{0,39},{0.584252,0.00538933},{0,61}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="GangMoneyAward/Tab5">
+      <Property Name="Text" Value="家族4" />
+      <Property Name="UnifiedAreaRect" Value="{{0.584252,0.00315392},{0,39},{0.72126,0.00213593},{0,61}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="GangMoneyAward/Tab6">
+      <Property Name="Text" Value="家族5" />
+      <Property Name="UnifiedAreaRect" Value="{{0.72126,0.00248688},{0,39},{0.858268,0.00149179},{0,61}}" />
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,580 @@
+{
+  "image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+  "inputs_sha256": {
+    "research_equipment_detail_full.py": "d2fb27c59f26052e3d3b4e14d50e2c2f58d2f83822842cc468e3f9829e0fd5c1",
+    "research_npc_submenu.py": "6ab20507535f93be920e4eed5f01b59e005aa81184ba0f2e7fdc28793a5bb19b",
+    "pfs.py": "d4c9a5f6080276ab51886fdd4f1d7e7c1618715f870cbce84c916cf03b163352",
+    "bxml.py": "ba61810a10fede4305075efd7120429fb165af90fdbb4fb94697862a30c8b66d",
+    "native_inspect.py": "0793e525a8e06fe8e6a216b3509202244463dc4bd469c7e87950edb03810b6a0",
+    "research_equipment_random_identification.py": "054266cbe141c58d0b2c3089511b68f928aa1ff4e4b24b3b0db8444d8c9449b9"
+  },
+  "sources": {
+    "autoconfig/knight.gsp.item.cattributedesconfig.xml": {
+      "bytes": 19508,
+      "crc32": "0x56e2ca7e",
+      "sha256": "5c68180582cf6252696d0bd61cd9ea9c11119beab2b473e96aa27bf0da358a79",
+      "rows": 195
+    },
+    "autoconfig/knight.gsp.item.cequipprefixconfig.xml": {
+      "bytes": 291,
+      "crc32": "0xc8592725",
+      "sha256": "3b36fed5bf4e62e41ceec422d902f8479bdcc487e82351750168ba130805e7ae",
+      "rows": 6
+    },
+    "autoconfig/knight.gsp.item.cequipscoreconfig.xml": {
+      "bytes": 10245,
+      "crc32": "0x77c46054",
+      "sha256": "c370650594da413d8870204e0820dab958f34cd9b9386f6102a54f0ba43be683",
+      "rows": 36
+    },
+    "autoconfig/knight.gsp.item.ceffecttype.xml": {
+      "bytes": 7605,
+      "crc32": "0x1cb8e9e5",
+      "sha256": "0c3d62dd70d36e74a1ed6474b067d49d6c6bdba4e323bf4739d0aea478105aa8",
+      "rows": 58
+    },
+    "autoconfig/knight.gsp.item.cequipjichu.xml": {
+      "bytes": 8007,
+      "crc32": "0x3c3c1af8",
+      "sha256": "c317ecb8ec4fe02251ac02ff3d47283c0965090d0372918e9a989c83c628a6fc",
+      "rows": 48
+    },
+    "autoconfig/knight.gsp.item.cequipeffect.xml": {
+      "bytes": 467441,
+      "crc32": "0xe354a76d",
+      "sha256": "8ef1aacae8d016f875a37a8cf907b16a077b89fa522a87e349dd54d320572fe8",
+      "rows": 1521
+    },
+    "autoconfig/knight.gsp.item.citemattr.xml": {
+      "bytes": 4096369,
+      "crc32": "0xa3add081",
+      "sha256": "974a3b38049c5f5f7cdae418718ffadd2741d373a5846a40fb71289af25e726f",
+      "rows": 12280
+    }
+  },
+  "six_slot_parser_cases": [
+    {
+      "template": 40100,
+      "decoded": [
+        [
+          0,
+          [
+            11,
+            7,
+            0
+          ]
+        ],
+        [
+          1,
+          [
+            81,
+            9,
+            3
+          ]
+        ],
+        [
+          2,
+          [
+            11,
+            -3,
+            1
+          ]
+        ]
+      ],
+      "ui_calls": [
+        [
+          11,
+          7,
+          0,
+          0
+        ],
+        [
+          81,
+          9,
+          0,
+          0
+        ],
+        [
+          11,
+          -3,
+          0,
+          0
+        ]
+      ],
+      "prefix_maxrefinetime": 3,
+      "refine_cap_branches": [
+        "below_cap",
+        "at_cap",
+        "below_cap"
+      ],
+      "replacement": [
+        [
+          0,
+          [
+            141,
+            19,
+            0
+          ]
+        ]
+      ],
+      "supplied_score_preserved": 0,
+      "color": 1
+    },
+    {
+      "template": 42000,
+      "decoded": [
+        [
+          0,
+          [
+            11,
+            7,
+            0
+          ]
+        ],
+        [
+          1,
+          [
+            81,
+            9,
+            3
+          ]
+        ],
+        [
+          2,
+          [
+            11,
+            -3,
+            1
+          ]
+        ]
+      ],
+      "ui_calls": [
+        [
+          11,
+          7,
+          0,
+          0
+        ],
+        [
+          81,
+          9,
+          0,
+          0
+        ],
+        [
+          11,
+          -3,
+          0,
+          0
+        ]
+      ],
+      "prefix_maxrefinetime": 3,
+      "refine_cap_branches": [
+        "below_cap",
+        "at_cap",
+        "below_cap"
+      ],
+      "replacement": [
+        [
+          0,
+          [
+            141,
+            19,
+            0
+          ]
+        ]
+      ],
+      "supplied_score_preserved": 0,
+      "color": 1
+    },
+    {
+      "template": 43000,
+      "decoded": [
+        [
+          0,
+          [
+            11,
+            7,
+            0
+          ]
+        ],
+        [
+          1,
+          [
+            81,
+            9,
+            3
+          ]
+        ],
+        [
+          2,
+          [
+            11,
+            -3,
+            1
+          ]
+        ]
+      ],
+      "ui_calls": [
+        [
+          11,
+          7,
+          0,
+          0
+        ],
+        [
+          81,
+          9,
+          0,
+          0
+        ],
+        [
+          11,
+          -3,
+          0,
+          0
+        ]
+      ],
+      "prefix_maxrefinetime": 3,
+      "refine_cap_branches": [
+        "below_cap",
+        "at_cap",
+        "below_cap"
+      ],
+      "replacement": [
+        [
+          0,
+          [
+            141,
+            19,
+            0
+          ]
+        ]
+      ],
+      "supplied_score_preserved": 0,
+      "color": 1
+    },
+    {
+      "template": 44000,
+      "decoded": [
+        [
+          0,
+          [
+            11,
+            7,
+            0
+          ]
+        ],
+        [
+          1,
+          [
+            81,
+            9,
+            3
+          ]
+        ],
+        [
+          2,
+          [
+            11,
+            -3,
+            1
+          ]
+        ]
+      ],
+      "ui_calls": [
+        [
+          11,
+          7,
+          0,
+          0
+        ],
+        [
+          81,
+          9,
+          0,
+          0
+        ],
+        [
+          11,
+          -3,
+          0,
+          0
+        ]
+      ],
+      "prefix_maxrefinetime": 3,
+      "refine_cap_branches": [
+        "below_cap",
+        "at_cap",
+        "below_cap"
+      ],
+      "replacement": [
+        [
+          0,
+          [
+            141,
+            19,
+            0
+          ]
+        ]
+      ],
+      "supplied_score_preserved": 0,
+      "color": 1
+    },
+    {
+      "template": 45000,
+      "decoded": [
+        [
+          0,
+          [
+            11,
+            7,
+            0
+          ]
+        ],
+        [
+          1,
+          [
+            81,
+            9,
+            3
+          ]
+        ],
+        [
+          2,
+          [
+            11,
+            -3,
+            1
+          ]
+        ]
+      ],
+      "ui_calls": [
+        [
+          11,
+          7,
+          0,
+          0
+        ],
+        [
+          81,
+          9,
+          0,
+          0
+        ],
+        [
+          11,
+          -3,
+          0,
+          0
+        ]
+      ],
+      "prefix_maxrefinetime": 3,
+      "refine_cap_branches": [
+        "below_cap",
+        "at_cap",
+        "below_cap"
+      ],
+      "replacement": [
+        [
+          0,
+          [
+            141,
+            19,
+            0
+          ]
+        ]
+      ],
+      "supplied_score_preserved": 0,
+      "color": 1
+    },
+    {
+      "template": 46000,
+      "decoded": [
+        [
+          0,
+          [
+            11,
+            7,
+            0
+          ]
+        ],
+        [
+          1,
+          [
+            81,
+            9,
+            3
+          ]
+        ],
+        [
+          2,
+          [
+            11,
+            -3,
+            1
+          ]
+        ]
+      ],
+      "ui_calls": [
+        [
+          11,
+          7,
+          0,
+          0
+        ],
+        [
+          81,
+          9,
+          0,
+          0
+        ],
+        [
+          11,
+          -3,
+          0,
+          0
+        ]
+      ],
+      "prefix_maxrefinetime": 3,
+      "refine_cap_branches": [
+        "below_cap",
+        "at_cap",
+        "below_cap"
+      ],
+      "replacement": [
+        [
+          0,
+          [
+            141,
+            19,
+            0
+          ]
+        ]
+      ],
+      "supplied_score_preserved": 0,
+      "color": 1
+    }
+  ],
+  "four_triples_native_parser_acceptance_not_server_limit": [
+    [
+      11,
+      1,
+      0
+    ],
+    [
+      21,
+      2,
+      0
+    ],
+    [
+      31,
+      3,
+      0
+    ],
+    [
+      41,
+      4,
+      0
+    ]
+  ],
+  "extreme_wire_values_accepted_not_business_authorized": [
+    [
+      0,
+      -2147483648,
+      -1
+    ],
+    [
+      2147483647,
+      2147483647,
+      2147483647
+    ]
+  ],
+  "truncated_triple_rejected": true,
+  "description_selection_cases": [
+    {
+      "modifier": 11,
+      "value": 7,
+      "row_id": 10,
+      "field": "numpositivedes",
+      "text": "体质+$parameters$"
+    },
+    {
+      "modifier": 11,
+      "value": -7,
+      "row_id": 10,
+      "field": "numnegativedes",
+      "text": "体质-$parameters$"
+    },
+    {
+      "modifier": 12,
+      "value": 7,
+      "row_id": 10,
+      "field": "percentpositivedes",
+      "text": ""
+    },
+    {
+      "modifier": 81,
+      "value": 9,
+      "row_id": 80,
+      "field": "numpositivedes",
+      "text": "外功伤害+$parameters$"
+    },
+    {
+      "modifier": 81,
+      "value": -9,
+      "row_id": 80,
+      "field": "numnegativedes",
+      "text": "外功伤害-$parameters$"
+    },
+    {
+      "modifier": 82,
+      "value": 9,
+      "row_id": 80,
+      "field": "percentpositivedes",
+      "text": "外功伤害+$parameters$%"
+    },
+    {
+      "modifier": 141,
+      "value": 19,
+      "row_id": 140,
+      "field": "numpositivedes",
+      "text": "生命+$parameters$"
+    },
+    {
+      "modifier": 142,
+      "value": 19,
+      "row_id": 140,
+      "field": "percentpositivedes",
+      "text": "生　　命+$parameters$%"
+    },
+    {
+      "modifier": 811,
+      "value": 11,
+      "row_id": 810,
+      "field": "numpositivedes",
+      "text": "内功伤害+$parameters$"
+    },
+    {
+      "modifier": 812,
+      "value": 11,
+      "row_id": 810,
+      "field": "percentpositivedes",
+      "text": "内功伤害+$parameters$%"
+    }
+  ],
+  "parser_entry": "107cf80 constructor; complete107d960 through natural return107fd97",
+  "additional_wire": "BE32 signed count then sequential signed-i32 triples; no transmitted ordinal key",
+  "native_storage": "EquipObject+8c std::map<ordinal,three-i32>; ordinal from loop index, not modifier ID",
+  "ui_consumer": "1335e5b sends first/second triple to12fa810; 131b8ad uses third vs prefix.maxrefinetime",
+  "adapters": "existing original parser runtime/config adapters; UTF16 and table lookup for description selection; no host property/score/role calculation",
+  "not_verified": [
+    "generation distributions",
+    "role final attribute arithmetic",
+    "score calculation from properties",
+    "UI rendering",
+    "live server behavior"
+  ],
+  "production_changed": false,
+  "native_gui_verified": false
+}

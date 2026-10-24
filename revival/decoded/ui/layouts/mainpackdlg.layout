@@ -1,0 +1,248 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="MainPackDlg">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="SoundResource" Value="open.ogg" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,420},{0,110},{0,701},{0,510}}" />
+    <Property Name="CloseSoundResource" Value="close.ogg" />
+    <Window Type="TaharezLook/TabControl" Name="MainPackDlg/tabpanle">
+      <Property Name="TabHeight" Value="{0,18}" />
+      <Property Name="TabPanePosition" Value="Top" />
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,47},{0,261},{0,309}}" />
+      <Window Type="TaharezLook/ItemTable" Name="MainPackDlg/tabpanle/Table1">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="  一  " />
+        <Property Name="ColCount" Value="0" />
+        <Property Name="RowCount" Value="0" />
+        <Property Name="UnifiedAreaRect" Value="{{0.014537,0},{0.0149113,0},{0.01013,239.284},{0.0147302,238.118}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="MainPackDlg/Name">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,162},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,162},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,15},{0,12},{0,177},{0,39}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="MainPackDlg/Name/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="包裹栏" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="51" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,89},{0,1},{0,146},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="MainPackDlg/open">
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:MainControl image:OpenHover" />
+      <Property Name="NormalImage" Value="set:MainControl image:OpenNormal" />
+      <Property Name="PushedImage" Value="set:MainControl image:OpenPushed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,11},{0,39}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,11},{0,39}}" />
+      <Property Name="ClippedByParent" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,1},{0,159},{0,12},{0,198}}" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="MainPackDlg/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,335},{0,261},{0,383}}" />
+      <Window Type="TaharezLook/Button" Name="MainPackDlg/stallBtn">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="摆   摊" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{4.65661e-009,0},{0,-25},{-0.00823045,61},{0,0}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="MainPackDlg/protectMoney">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="密   锁" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{-0.00823045,124},{0,-25},{-0.0164609,185},{0,0}}" />
+      </Window>
+      <Window Type="TaharezLook/Button" Name="MainPackDlg/tidy">
+        <Property Name="Font" Value="simhei-12" />
+        <Property Name="Text" Value="整   理" />
+        <Property Name="Tooltip" Value="按shift+整理可按照战斗需要物品顺序进行整理" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="Menu_Magic10.ogg" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{-0.00823045,185},{0,-25},{-0.0164609,246},{0,0}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="MainPackDlg/Back1">
+        <Property Name="TextColours" Value="tl:FFDCF6CE tr:FFDCF6CE bl:FF10BBD3 br:FF10BBD3" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,123.678},{0,5},{0,236.678},{0,23}}" />
+        <Window Type="TaharezLook/StaticText" Name="MainPackDlg/yuanbao">
+          <Property Name="Font" Value="tahoma-10" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0,4.099},{0,1.37142},{0,90.099},{0,19.3714}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="MainPackDlg/yuanbao1">
+          <Property Name="Image" Value="set:MainControl image:yuanbao" />
+          <Property Name="Tooltip" Value="元宝，用于购买喇叭等元宝道具\n点击屏幕右下角“系统”按钮，查看获得元宝途径" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,16},{0,16}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,16},{0,16}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,93.192},{0,1.00575},{0,109.192},{0,17.0058}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="MainPackDlg/Back2">
+        <Property Name="TextColours" Value="tl:FFDCF6CE tr:FFDCF6CE bl:FF10BBD3 br:FF10BBD3" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,123.678},{0,24},{0,236.678},{0,42}}" />
+        <Window Type="TaharezLook/StaticText" Name="MainPackDlg/BindYuanbao">
+          <Property Name="Font" Value="tahoma-10" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0,3.099},{0,1},{0,89.099},{0,19}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="MainPackDlg/bangdingyuanbao1">
+          <Property Name="Image" Value="set:MainControl image:bangdingyuanbao" />
+          <Property Name="Tooltip" Value="绑定元宝" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,16},{0,16}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,16},{0,16}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,93},{0,2},{0,109},{0,18}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="MainPackDlg/Back3">
+        <Property Name="TextColours" Value="tl:FFDCF6CE tr:FFDCF6CE bl:FF10BBD3 br:FF10BBD3" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,5},{0,122},{0,23}}" />
+        <Window Type="TaharezLook/StaticText" Name="MainPackDlg/money">
+          <Property Name="Font" Value="tahoma-10" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0,6},{0,1},{0,90},{0,19}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="MainPackDlg/money1">
+          <Property Name="Image" Value="set:MainControl image:Xianjin" />
+          <Property Name="Tooltip" Value="银两" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,96},{0,0},{0,115},{0,19}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="MainPackDlg/Back4">
+        <Property Name="TextColours" Value="tl:FFDCF6CE tr:FFDCF6CE bl:FF10BBD3 br:FF10BBD3" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,6},{0,24},{0,122},{0,42}}" />
+        <Window Type="TaharezLook/StaticText" Name="MainPackDlg/reserve">
+          <Property Name="Font" Value="tahoma-10" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="HorzFormatting" Value="RightAligned" />
+          <Property Name="UnifiedAreaRect" Value="{{0,6},{0,0},{0,90},{0,18}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="MainPackDlg/yuanbao2">
+          <Property Name="Image" Value="set:MainControl image:Chubeijin" />
+          <Property Name="Tooltip" Value="绑银" />
+          <Property Name="AlwaysOnTop" Value="True" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,96},{0,0},{0,115},{0,19}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/Button" Name="MainPackDlg/repair">
+        <Property Name="Text" Value="修   理" />
+        <Property Name="Tooltip" Value="点击可随身修理装备" />
+        <Property Name="SizeType" Value="Auto" />
+        <Property Name="EnableSound" Value="True" />
+        <Property Name="SoundResource" Value="Button.ogg" />
+        <Property Name="ClippedByParent" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{-0.00823045,63},{0,-25},{-0.0164609,124},{0,0}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="MainPackDlg/firstpayButton">
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:MainControl24 image:firstpayHover" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="NormalImage" Value="set:MainControl24 image:firstpayNormal" />
+      <Property Name="PushedImage" Value="set:MainControl24 image:firstpayPushed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,37},{0,18}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,37},{0,18}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0.508897,0},{0.8975,0},{0.640569,0},{0.9425,0}}" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="MainPackDlg/button">
+      <Property Name="Tooltip" Value="点击后开启/关闭自动使用礼券" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="HoverImage" Value="set:MainControl39 image:diaohover" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="NormalImage" Value="set:MainControl39 image:diaonormal" />
+      <Property Name="PushedImage" Value="set:MainControl39 image:diaopushed" />
+      <Property Name="UnifiedAreaRect" Value="{{0.782918,0},{0.0975,0},{0.871886,0},{0.1575,0}}" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="MainPackDlg/button2">
+      <Property Name="Visible" Value="False" />
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:MainControl6 image:EggHover" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="NormalImage" Value="set:MainControl6 image:EggNormal" />
+      <Property Name="PushedImage" Value="set:MainControl6 image:EggPushed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,20},{0,20}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,20},{0,20}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0.875445,0},{0.1075,0},{0.946619,0},{0.1575,0}}" />
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="MainPackDlg/button3">
+      <Property Name="Tooltip" Value="点击自动开启似水流年礼券，再次点击停止开启。" />
+      <Property Name="Visible" Value="False" />
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:MainControl28 image:CardHover" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="NormalImage" Value="set:MainControl28 image:CardNormal" />
+      <Property Name="PushedImage" Value="set:MainControl28 image:CardPushed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,18},{0,18}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,18},{0,18}}" />
+      <Property Name="UnifiedAreaRect" Value="{{0.854093,0},{0.79,0},{0.918149,0},{0.835,0}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="MainPackDlg/tequan">
+      <Property Name="Text" Value="开心一夏特权活动：师门经验翻倍。" />
+      <Property Name="Visible" Value="False" />
+      <Property Name="HorzExtent" Value="208" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FFFFFF33 tr:FFFFFF33 bl:FFFFFF33 br:FFFFFF33" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,5},{0.05,365},{0.05,246},{0.05,387}}" />
+    </Window>
+  </Window>
+</GUILayout>

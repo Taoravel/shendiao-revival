@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-24",
+  "method_decisions": {
+    "diagnosing-bugs": "actual encrypted clear versus wall rejection feedback and independent NPC missing-batch fault",
+    "codebase-design": "one explicit planner/immutable command option; freeze injected maze and trusted state; leave shared integration to sole owner",
+    "tdd": "actual missing public planner keyword red then MoveCommand keyword red before implementation, final 7 green",
+    "research": "native current/history quantization and state consumers limit evidence; full catalog actual runtime/native comparison",
+    "writing-for-agents": "explicit handoff prerequisites, review snapshot and runtime red co-located",
+    "code-review": "two independent fixed axes; each 0; source/report hash verified"
+  },
+  "artifact_sha256": {
+    "world_movement.py": "34ad13f25e9a7ea412e0e885b07ea37714ac02ad4695e40d22f64c4388145f30",
+    "world_owner.py": "51cd7090cb8215231d3be9bafc68a170ced635bd339f68a291dc77f05057b438",
+    "verify_world_current_cell_collision.py": "921ec7eeaa20c384c7af95c45ee8612b75a40b228efd30d7445935c40bb16678",
+    "verify_world_resource_runtime.py": "c68ec897aca52aac46e4e556e72203b2c80ee9a579ef4020f9dd7c1d25b4526a",
+    "verify_world_encrypted_collision.py": "cead20ee167189dd0803e4cbc58792e8dc9abde9addd9fa914810b8eed50dd01",
+    "verify_world_runtime_collision_probe.py": "af74d92ddff5fbf424a6486b17078e43da6d177f31f7c54af0b7930e89d20137",
+    "evidence/WORLD_CURRENT_CELL_COLLISION_HANDOFF.md": "c117a000989bc09120a20681639e367cba5f9926076236be8a07bc2614bc17f6",
+    "evidence/WORLD_RESOURCE_RUNTIME_ACCEPTANCE.md": "74984c603c0b8452c9677267159df54bbc110678c44d4c057f18c6416c6160df",
+    "evidence/WORLD_FULL_RUNTIME_ENTITY_AUDIT.md": "4c8e68fbe585561a011c5c1e52abb31cb726c9580ccfe01f0e66f054b9ed84fc",
+    "evidence/WORLD_CURRENT_CELL_COLLISION_REVIEW.md": "5d698359f07ee1f8ba3a926bde9926700e8dfe37d5d1b13f8599f592a3ff8a15",
+    "evidence/WORLD_RESOURCE_RUNTIME_REVIEW.md": "b81ce28d7011bb4f7a5928383ee7dc84b165e60528053ebc248903351b65ebdb",
+    "evidence/world-current-cell-collision-candidate.patch": "1f525bfeb0cdf6e22f27fbe3f56d36fc96c53e08144d4f687dfbf2a62a022bd7",
+    "evidence/world-current-cell-collision-current-interface.json": "e27db804ef4cf44ebdd0b89a8721f7d525487f6bb2b33552972699cc296bab6e",
+    "evidence/world-first-test-readiness-20261024.json": "6225e0baeb31e39b24b8bbfe1835a1a3a26a446a7bae18143a16ad32a9a06bb1",
+    "evidence/WORLD_RUNTIME_HANDOFF.md": "58a1a318936bbfd0fe4c219a7ea9166b123b304fa48ac40da708c808f66275c0",
+    "evidence/WORLD_FULL_RECOVERY.md": "3545442021a7caedec7609e54bff91c36d2166a66a7083449d49a9641ada4cd9",
+    "evidence/world-current-cell-collision-verification.json": "49633b0494f83d75f59576b7d91a254f515024648130d58983451b1450ac5630",
+    "evidence/world-resource-runtime-verification.json": "8667345e554fb1042e4bf79098249db77ce02d20fd6292924c9a9a2191c22498",
+    "evidence/world-resource-runtime-fault.json": "76cc622f30676ee1cbd9eb05b7a4483dbac6b76d1787404557331c4a90539e80",
+    "evidence/world-encrypted-collision-verification.json": "f642a6c06955988c7674944b5dd8b44f265b85caf7ce79377e03c0ed8e4cf883",
+    "evidence/world-runtime-collision-parent-verification.json": "a38e4f5c80586aeaa67e3a397be4d340506412d9ffd7973397d8a18adc34317d"
+  },
+  "review_manifest_sha256": "aa770fb540acdcbbd8d24a74c52d9e9c8291d8b9d6dd64db5dfbc442f9c533c1",
+  "compiled_source_files": [
+    "world_movement.py",
+    "world_owner.py",
+    "verify_world_current_cell_collision.py",
+    "verify_world_resource_runtime.py",
+    "verify_world_encrypted_collision.py",
+    "verify_world_runtime_collision_probe.py"
+  ],
+  "source_reviewed_unchanged": true,
+  "full302_runtime_passed_on_frozen_prior_modules": true,
+  "current_runtime_collision_safety_passed": false,
+  "domain_current_cell_groups_passed": 7,
+  "first_manual_smoke_available_on_main_release": true,
+  "live_service_changed_by_world": false,
+  "native_gui_verified": false,
+  "complete": false,
+  "unverified": [
+    "runtime original-maze/trusted-state collision wiring",
+    "full302 on new opt-in fields",
+    "natural access and special portals",
+    "NPC hide/direction/special model full behavior",
+    "real client scene/movement/full newbie sequence",
+    "formal story battle and monster full restoration"
+  ]
+}

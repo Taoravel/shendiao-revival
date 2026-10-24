@@ -1,0 +1,52 @@
+{
+  "revision": "2026-10-23.task-pet-exp.1",
+  "provenance": "designed_using_client_and_historical_guide_evidence",
+  "scope": "fresh_nonrepeating_ordinary_task_completion_PetExpReward_only",
+  "research": "evidence/TASK_PET_EXPERIENCE_RESEARCH.md",
+  "source_field": "PetExpReward",
+  "amount": "preserve original nonnegative integer; explicit zero grants nothing; never split, multiply, convert to character XP or duplicate acceptable-task display",
+  "recipient": "one owned, unreleased, currently selected fighting pet, captured in the same role transaction as first fresh completion",
+  "selection_time": "before character EXP/level changes from this completion; freeze role level, pet id, growth version, qualification, amount and policy",
+  "source_status": "ordinary task recipient, time, qualification and level cap are designed; source amount and native keyed absolute refresh layout are client_verified",
+  "eligibility": {
+    "requires_selected_pet": true,
+    "requires_owned_active_instance": true,
+    "requires_explicit_ordinary_growth": true,
+    "requires_positive_hp": true,
+    "required_role_level": "original template uselevel; not takelevel",
+    "maximum_level_above_role": 5,
+    "loyalty_lifetime": "not additional task-XP conditions; this rule never changes care or resurrects a pet"
+  },
+  "leveling": {
+    "ordinary_cap": 150,
+    "award_cap": "min(150, captured_role_level + 5)",
+    "pet_at_award_cap": "eligible pet receives original XP but does not level beyond the cap; retain unspent XP",
+    "pet_above_award_cap": "no pet XP for this completion; no delevel or transfer to another pet",
+    "gaps_and_conflict": "client book36006 wording and 2012 guide conflict; exact comparisons above are explicitly designed, not a recovered original algorithm",
+    "maximum_stored_experience": 2147483647,
+    "overflow": "reject entire caller transaction without truncation or partial award",
+    "special_keys": "1001..1150 remain unmapped; never reinterpret them as ordinary levels"
+  },
+  "outcomes": {
+    "zero": "terminal zero receipt; no growth or version mutation",
+    "no_selected_pet": "terminal not_awarded receipt, original amount and reason retained; task may complete; acquiring a pet later cannot reclaim it",
+    "dead_or_under_uselevel_or_too_high": "terminal not_awarded receipt; keep exact reason, original amount and frozen recipient; other valid channels continue",
+    "unknown_existing_growth": "pending_explicit_pet_baseline_reconciliation; do not fabricate growth or redirect to another pet",
+    "legacy_completed_without_recipient": "pending_explicit_recipient_reconciliation; never choose the pet selected now for an old reward",
+    "later_missing_recipient": "keep original recipient and pending audit for explicit reconciliation; never silently reroute or repeat other paid channels"
+  },
+  "persistence": {
+    "owner": "role_id + login_epoch; bounded persistence worker",
+    "fresh_completion": "only active -> completed transition in current owner transaction may create recipient decision; retry reads original frozen decision",
+    "atomicity": "task state, frozen recipient decision, role XP, item/currency channels, pet growth and channel/common receipts share caller transaction",
+    "retry": "stable task instance + PetExpReward channel + frozen recipient; policy/amount/recipient conflict requires explicit migration",
+    "cyclic_task": "not covered by role_id+task_id; implement a unique cycle instance before enabling repeat rewards",
+    "missing_growth": "original decision remains frozen; explicit reconciliation may resolve missing baseline only with trusted evidence of original qualification"
+  },
+  "interfaces": {
+    "selected_snapshot": "Inventory.selected_fighting_pet(db) returns frozen PetState or None in existing caller transaction; no new connection or current-session object",
+    "capped_award": "Inventory.change_pet_growth(db, pet_id, stable_key, expected_version, 'experience_capped', (original_amount, award_cap)); cap belongs in fingerprint",
+    "display": "after commit, re-read original recipient current PetState and return full pet refresh plus SRefreshPetExp keyed absolute XP; never use a historical receipt as current state"
+  },
+  "not_in_scope": ["experience bags", "kite activity", "pet training under level 30", "battle EXP", "pet care death penalties", "real client GUI acceptance"]
+}

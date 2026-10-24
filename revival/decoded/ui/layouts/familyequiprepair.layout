@@ -1,0 +1,425 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="FamilyEquipRepair">
+    <Property Name="Font" Value="msyh-16" />
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.223125,0},{0,110},{0.223125,448},{0,497}}" />
+    <Property Name="EWSizingCursorImage" Value="" />
+    <Property Name="NSSizingCursorImage" Value="" />
+    <Property Name="NESWSizingCursorImage" Value="" />
+    <Property Name="NWSESizingCursorImage" Value="" />
+    <Window Type="TaharezLook/Button" Name="FamilyEquipRepair/OK">
+      <Property Name="Text" Value="修理" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,125.781},{0,350},{0,198.781},{0,372}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="FamilyEquipRepair/Cancel">
+      <Property Name="Text" Value="取消" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,252.192},{0,350},{0,325.192},{0,372}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="FamilyEquipRepair/title">
+      <Property Name="Image" Value="set:BaseControl image:3" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,134.915},{0,9.80007},{0,442.915},{0,36.8001}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="FamilyEquipRepair/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="家族装备修理" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="102" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFF9600 br:FFFF9600" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,70.5},{-0.0134529,0},{0,196.5},{0,26}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="FamilyEquipRepair/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0197769,0},{0.0829328,0},{0.98183,0},{0.914974,0}}" />
+      <Window Type="TaharezLook/StaticText" Name="FamilyEquipRepair/Tips">
+        <Property Name="Text" Value="待修理的装备" />
+        <Property Name="HorzExtent" Value="79" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,41},{0,16},{0,124},{0,38}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="FamilyEquipRepair/Tips2">
+        <Property Name="Text" Value="消耗现金" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,16},{0,270},{0,72},{0,290}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="FamilyEquipRepair/Tips21">
+        <Property Name="Text" Value="现有现金" />
+        <Property Name="HorzExtent" Value="52" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,16},{0,291},{0,72},{0,311}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="FamilyEquipRepair/Tips22">
+        <Property Name="Text" Value="消耗家族声望" />
+        <Property Name="HorzExtent" Value="78" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,228.144},{0,270},{0,310.144},{0,290}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="FamilyEquipRepair/Tips221">
+        <Property Name="Text" Value="现有家族声望" />
+        <Property Name="HorzExtent" Value="78" />
+        <Property Name="VertExtent" Value="15.6189" />
+        <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0,229.144},{0,291},{0,311.144},{0,311}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="DefaultBorderEnable" Value="True" />
+        <Property Name="DefaultColourEnable" Value="True" />
+      </Window>
+      <Window Type="TaharezLook/TabControl" Name="FamilyEquipRepair/Bag">
+        <Property Name="TabHeight" Value="{0,18}" />
+        <Property Name="TabPanePosition" Value="Top" />
+        <Property Name="UnifiedAreaRect" Value="{{0,151},{0,9},{0,418},{0,267}}" />
+        <Window Type="DefaultWindow" Name="FamilyEquipRepair/Bag/Tab 1">
+          <Property Name="Text" Value="装备" />
+          <Property Name="Visible" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{-0.00125468,0},{0,0},{0,259.635},{0,237}}" />
+          <Window Type="TaharezLook/CommonCaseFigure" Name="FamilyEquipRepair/Bag/Tab 1/Back">
+            <Property Name="UnifiedAreaRect" Value="{{0,2},{-0.00208901,0},{0,266},{1.01479,0}}" />
+            <Window Type="TaharezLook/StaticImage" Name="FamilyEquipRepair/spriteBack">
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,51.2448},{0,54.7935},{0,220.245},{0,210.794}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/ItemTable" Name="FamilyEquipRepair/loricae">
+              <Property Name="ColCount" Value="0" />
+              <Property Name="RowCount" Value="0" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="UnifiedAreaRect" Value="{{0,12.5528},{0,64.9174},{0,58.5528},{0,110.917}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemTable" Name="FamilyEquipRepair/arms">
+              <Property Name="ColCount" Value="0" />
+              <Property Name="RowCount" Value="0" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="UnifiedAreaRect" Value="{{0,12.5528},{0,113.917},{0,58.5528},{0,159.917}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemTable" Name="FamilyEquipRepair/tire">
+              <Property Name="ColCount" Value="0" />
+              <Property Name="RowCount" Value="0" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="UnifiedAreaRect" Value="{{0,207.77},{0,64.9174},{0,253.77},{0,110.917}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemTable" Name="FamilyEquipRepair/kitbag">
+              <Property Name="ColCount" Value="0" />
+              <Property Name="RowCount" Value="0" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="UnifiedAreaRect" Value="{{0,207.77},{0,113.917},{0,253.77},{0,159.917}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemTable" Name="FamilyEquipRepair/adorn">
+              <Property Name="ColCount" Value="0" />
+              <Property Name="RowCount" Value="0" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="UnifiedAreaRect" Value="{{0,141.413},{0,6.7523},{0,187.413},{0,52.7523}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemTable" Name="FamilyEquipRepair/cuff">
+              <Property Name="ColCount" Value="0" />
+              <Property Name="RowCount" Value="0" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="UnifiedAreaRect" Value="{{0,83.9588},{0,6.7523},{0,129.959},{0,52.7523}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemTable" Name="FamilyEquipRepair/boot">
+              <Property Name="ColCount" Value="0" />
+              <Property Name="RowCount" Value="0" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="UnifiedAreaRect" Value="{{0,142.413},{0,188.243},{0,188.413},{0,234.243}}" />
+            </Window>
+            <Window Type="TaharezLook/ItemTable" Name="FamilyEquipRepair/waistband">
+              <Property Name="ColCount" Value="0" />
+              <Property Name="RowCount" Value="0" />
+              <Property Name="AlwaysOnTop" Value="True" />
+              <Property Name="UnifiedAreaRect" Value="{{0,83.9588},{0,188.243},{0,129.959},{0,234.243}}" />
+            </Window>
+            <Window Type="TaharezLook/StaticImage" Name="FamilyEquipRepair/Bag/Tab 1/icon">
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,70.2374},{0,57.2868},{0,201.237},{0,184.287}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="FamilyEquipRepair/Bag/Tab 2">
+          <Property Name="Text" Value="包裹" />
+          <Property Name="Visible" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,-0.3375},{0,0.580662},{0,257.663},{0,231.581}}" />
+          <Window Type="TaharezLook/TabControl" Name="FamilyEquipRepair/Bag/Tab 2/bagall">
+            <Property Name="TabHeight" Value="{0,18}" />
+            <Property Name="ClippedByParent" Value="False" />
+            <Property Name="TabPanePosition" Value="Left" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,258},{0,238}}" />
+            <Window Type="DefaultWindow" Name="FamilyEquipRepair/Bag/Tab 2/bagall/Tab1">
+              <Property Name="Text" Value="一" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0,7.99719},{0.0154477,0},{0,238.997},{0,233.212}}" />
+              <Window Type="TaharezLook/ItemTable" Name="FamilyEquipRepair/Bag/Tab2/bag1/bag1">
+                <Property Name="ColCount" Value="5" />
+                <Property Name="RowCount" Value="5" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,2},{0,229},{0,234}}" />
+              </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="FamilyEquipRepair/Bag/Tab 2/bagall/Tab2">
+              <Property Name="Text" Value="二" />
+              <Property Name="Visible" Value="False" />
+              <Property Name="ClippedByParent" Value="False" />
+              <Property Name="UnifiedAreaRect" Value="{{0.0339236,0},{0,4},{0,237.549},{0,237}}" />
+              <Window Type="TaharezLook/ItemTable" Name="FamilyEquipRepair/Bag/Tab2/bag2/bag2">
+                <Property Name="ColCount" Value="5" />
+                <Property Name="RowCount" Value="5" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,2},{0,234},{0,234.413}}" />
+              </Window>
+            </Window>
+          </Window>
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="FamilyEquipRepair/CurrentFamilyContribution">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,312.144},{0,291},{0,417.144},{0,311}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="FamilyEquipRepair/CostFamilycontribution">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0,312.144},{0,270},{0,417.144},{0,290}}" />
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="FamilyEquipRepair/MoneyBack1">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0.167329,0},{0,270},{0.422549,0},{0,290}}" />
+        <Window Type="TaharezLook/StaticImage" Name="FamilyEquipRepair/MoneyBack1/Money1">
+          <Property Name="Image" Value="set:MainControl image:Xianjin" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0.400002},{0,0.2},{0,19.4},{0,19.2}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FamilyEquipRepair/Money">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.160185,0},{0.00191667,0},{0,93.8951},{0,19.9167}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticText" Name="FamilyEquipRepair/MoneyBack11">
+        <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FF42C8FF br:FF42C8FF" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="UnifiedAreaRect" Value="{{0.167329,0},{0,291},{0.422549,0},{0,311}}" />
+        <Window Type="TaharezLook/StaticImage" Name="FamilyEquipRepair/MoneyBack1/Money11">
+          <Property Name="Image" Value="set:MainControl image:Xianjin" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,0.400002},{0,0.2},{0,19.4},{0,19.2}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FamilyEquipRepair/CurrentMoney">
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.160129,0},{0,1.03833},{0,90.7235},{0,21.0383}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/StaticImage" Name="FamilyEquipRepair/Back/EquipBack">
+        <Property Name="Image" Value="set:MainControl3 image:LuckyWheelCellx" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,66},{0,66}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,66},{0,66}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.104228,0},{0.0981007,0},{0.25736,0},{0.30307,0}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Window Type="TaharezLook/ItemCell" Name="FamilyEquipRepair/RepairEquipment">
+          <Property Name="UnifiedAreaRect" Value="{{0,8.7356},{0,10},{0,54.7356},{0,56}}" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/CommonCase3" Name="FamilyEquipRepair/Back/WordBack">
+        <Property Name="UnifiedAreaRect" Value="{{0.0314762,0},{0.340558,0},{0.342381,0},{0.831241,0}}" />
+        <Window Type="TaharezLook/StaticText" Name="FamilyEquipRepair/Tips11">
+          <Property Name="Text">在家族修理装备，            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+需要消耗一定的家
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+族贡献度，修理成
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+功率比技能修理要
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+低
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</Property>
+          <Property Name="HorzExtent" Value="140" />
+          <Property Name="VertExtent" Value="78.0945" />
+          <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,14},{0,22},{0,123},{0,110}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/Figure1" Name="FamilyEquipRepair/Back/WordBack/Title">
+          <Property Name="ClippedByParent" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0.225673,0},{0,-15},{0.91224,0},{0,19}}" />
+          <Property Name="HorizontalAlignment" Value="Centre" />
+          <Window Type="TaharezLook/StaticText" Name="FamilyEquipRepair/Tips1">
+            <Property Name="Text" Value="说明" />
+            <Property Name="HorzExtent" Value="26" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,63},{0,7},{0,99},{0,29}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+            <Property Name="DefaultBorderEnable" Value="True" />
+            <Property Name="DefaultColourEnable" Value="True" />
+            <Property Name="HorizontalAlignment" Value="Centre" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,195 @@
+{
+  "source_status": "client_verified",
+  "passed": 9,
+  "cases": [
+    {
+      "server_ms": 999,
+      "calendar_seconds": 0,
+      "expiry_ms": 1000,
+      "icon_arguments": [
+        [
+          1610612737,
+          200484,
+          1000,
+          0
+        ],
+        [
+          1610612738,
+          200061,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "server_ms": 1000,
+      "calendar_seconds": 1,
+      "expiry_ms": 1000,
+      "icon_arguments": [
+        [
+          1610612737,
+          200484,
+          1000,
+          0
+        ],
+        [
+          1610612738,
+          200061,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "server_ms": 1001,
+      "calendar_seconds": 1,
+      "expiry_ms": 1000,
+      "icon_arguments": [
+        [
+          1610612737,
+          200534,
+          0,
+          0
+        ],
+        [
+          1610612738,
+          200061,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "server_ms": 1700000000122,
+      "calendar_seconds": 1700000000,
+      "expiry_ms": 1700000000123,
+      "icon_arguments": [
+        [
+          1610612737,
+          200484,
+          3487918203,
+          395
+        ],
+        [
+          1610612738,
+          200061,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "server_ms": 1700000000123,
+      "calendar_seconds": 1700000000,
+      "expiry_ms": 1700000000123,
+      "icon_arguments": [
+        [
+          1610612737,
+          200484,
+          3487918203,
+          395
+        ],
+        [
+          1610612738,
+          200061,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "server_ms": 1700000000124,
+      "calendar_seconds": 1700000000,
+      "expiry_ms": 1700000000123,
+      "icon_arguments": [
+        [
+          1610612737,
+          200534,
+          0,
+          0
+        ],
+        [
+          1610612738,
+          200061,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "server_ms": 32535215998999,
+      "calendar_seconds": 32535215998,
+      "expiry_ms": 32535215999000,
+      "icon_arguments": [
+        [
+          1610612737,
+          200484,
+          838731800,
+          7575
+        ],
+        [
+          1610612738,
+          200061,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "server_ms": 32535215999000,
+      "calendar_seconds": 32535215999,
+      "expiry_ms": 32535215999000,
+      "icon_arguments": [
+        [
+          1610612737,
+          200484,
+          838731800,
+          7575
+        ],
+        [
+          1610612738,
+          200061,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "server_ms": 32535215999001,
+      "calendar_seconds": 32535215999,
+      "expiry_ms": 32535215999000,
+      "icon_arguments": [
+        [
+          1610612737,
+          200534,
+          0,
+          0
+        ],
+        [
+          1610612738,
+          200061,
+          0,
+          0
+        ]
+      ]
+    }
+  ],
+  "import": [
+    {
+      "module": "x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.9680_none_d090cb7c44278b28",
+      "base": "0x71300000",
+      "function": "_localtime64_s",
+      "iat": "0x22448d4",
+      "target": "0x71351e8e"
+    }
+  ],
+  "clock_path": "SGameTime c0007 ctord53c70/decoderd53d00 ->81f570->81b3e0 stores singleton+28 then original signed64 divide1000 before _localtime64_s",
+  "skill_path": "Pet+c4 original codec ->11353c9..1135429 learned/expiry copy ->140dfb2..140e0ed original icon loop reads same clock",
+  "units": "Unix epoch milliseconds; calendar import accepts seconds since1970",
+  "reference": "https://learn.microsoft.com/en-us/cpp/c-runtime-library/reference/localtime-s-localtime32-s-localtime64-s",
+  "limits": [
+    "OS calendar call observed before its other UI side effects",
+    "No live client/server interaction",
+    "Client clock advancement between SGameTime packets not established here"
+  ]
+}

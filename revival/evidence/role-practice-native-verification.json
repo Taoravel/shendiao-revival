@@ -1,0 +1,22 @@
+{
+  "passed": [
+    "original seven-skill cash and pill buttons emit modes zero and one with full NPC context",
+    "original AssistSkill and SUpdateAssistSkill serialize skill/level/experience as three signed32 values",
+    "original personal request preserves NPC Q and five raw modes; cash/pill remain distinct from other modes",
+    "original service1023 passes NPC UI key through dialog initializer to both cash/pill request context",
+    "original SFactionPractice nonempty tree serializes all seven current open/closed settings",
+    "original current-dialog map consumer treats zero as closed and nonzero as open",
+    "original pill36747 differs from inscription61335; current layout explicitly defines twenty/thirty XP and no pill material cost",
+    "original current combat-practice progress bar queries current level plus one; server carry/consumption remains designed"
+  ],
+  "image_sha256": "2b49e95d27cbbec0d83a049b5495da4365b205d9a913582b1e6688df67468791",
+  "native_gui_verified": false,
+  "npc_context": {
+    "service": 1023,
+    "dispatch": "0x1639b1f",
+    "initializer": "0x14d86d0",
+    "context_offset": "+0x168",
+    "registration_type": 13
+  },
+  "scope": "original handlers/serializers only; button ID/window/network edges adapted; no server NPC authorization or live purchase"
+}

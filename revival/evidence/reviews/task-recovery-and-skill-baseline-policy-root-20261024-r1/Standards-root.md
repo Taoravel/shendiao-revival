@@ -1,0 +1,13 @@
+Standards：硬违规0；heuristic可行动发现0。
+
+方法：实际沿用code-review/codebase-design/domain-modeling；逐hunk审4新增文档，完整12种Fowler启发逐项判断。以producer已耐久但consumer未提交、换租约、来源漂移，以及已知/缺失/部分技能账本场景检验身份、事务Seam与术语。依据冻结AGENTS、ARCHITECTURE、DESIGN_AUTHORITY、GLOSSARY及accepted combat/first-skill合同；无Git/commit，不读另一轴结论。
+
+TASK_TERMINAL_RECOVERY_DECISION:5–13区分producer原件与consumer回执，原payload/epoch不可改；当前唯一租约的新公开恢复Interface重新核全admission、可信producer和完整业务source CAS，旧settle/ack不放宽。资源、Task奖励、唯一后继、consumer回执及outbox settled同事务；晚错保留pending，已settled只读当前。符合ARCHITECTURE单写者、旧回调失效、可靠幂等和跨owner消息规则；新租约不是替旧回调增加权限。11、15行要求局部冻结冲突命令、其他所有者推进，不授权全局锁或热I/O。
+
+baseline JSON:14–24与LOCAL_PROLOGUE_SKILL_BASELINE_DECISION:3–11把空map标为designed_local_prologue_baseline，禁止构造VerifiedOtherSkillBaseline冒充历史证据；当前角色creation/chapter/route、正式前驱胜利和教学active等共同授权，缺行本身不授权。已有完整map保留，部分/外来/矛盾来源拒绝；首次教学内插基线/唯一迁移回执、正常max授予、XP/Task/后继及完整替换快照预编码同事务。receipt优先重读当前，跨租约不重套空基线，不startup扫描或覆盖旧值。符合DESIGN_AUTHORITY来源/实现分层及原first-skill完整map语义。
+
+ADR区分耐久原结果与已结算回执并记录恢复协调代价；两项均为候选，未把实际角色资格或未实现能力称已可用。未见有实际后果的smell。
+
+审前后16输入及diff均匹配scope；recovery SHA=6a386fe4eb7e56a5931e1d2803d68356231f77eb57ac8a261976dea6c477500e；baseline=f0224cd71d73fef5f9d57b841562a72875cbc625b7cec4d37feac703bc7661f5；diff=8ccc470e4d0c9192f4839721c73977691dc373724875c627ce47e6a65ec02151。其余精确值见已实核scope。
+
+仅静态，未运行测试、服务、DB、socket、GUI或战斗；未证明跨epoch恢复实现、真人资格或并发屏障，不批准上线/后台迁移。只新增本报告。

@@ -1,0 +1,66 @@
+# NPC装备鉴定：模型与接线边界
+
+2026-10-24。恢复495查询先读NPC_IDENTIFICATION_QUERY_DECISION；恢复收费确认另读NPC_EQUIPMENT_IDENTIFICATION_DECISION及唯一政策design/npc-equipment-identification-v1.json。原字段来源与后续更正见EQUIPMENT_IDENTIFICATION_RESULT_SOURCE。查询及收费确定性子集领域均已固定审查；生产registry和共享入口尚未开放495，原随机附加属性仍未恢复。
+
+收费领域已完成固定审查，状态为`reviewed_domain_pending_shared`，准确输入见npc-equipment-identification-ready.json。资产正式R2三依赖已经核对，NPC四新增文件以真实空base固定，Standards硬规则/Fowler及Spec各0项。主窗口及两个独立审查者各在同一1284输入快照执行三个脚本并全部通过；不是整个Inventory功能或共享入口的发布许可。
+
+`npc_equipment_identification.query/confirm`真实只读查询后建立冻结服务会话，RoleViewBinding捕获地图所有者/成员/连接世代；对话300000ms独立于每次I/O期限。`settle`经公开资产CAS、独立现金purpose、领域/共同凭据及sole source同事务。实际13组结算、5种晚故障回滚及同失败ID成功、18项无效确认、55种坏政策检查通过；已付后实际move/后续钱包变化/公开消耗原物品仍只读当前，SQLite authorizer禁止写入时成功，不生成幽灵tips。收费原路由、清票、实际发送围栏及部署仍待main接线。
+
+资源接缝注意：`ResourceCaps`还包含来源版本；鉴定推进inventory_revision后应更新caps.source，不能将整个caps对象相等当成“数值上限不变”。已修正为严格比较HP/MP、数字caps与vitals version，同时用current_resource_profile校验新来源；没有治疗或资源迁移。RoleOwner仍须清除移动/其他菜单/战斗/传送/断线后的未付会话并保护实际发送，领域函数不能代替共享围栏。
+
+## main接线与完成条件
+
+1. 从实际在服BASE独立制作鉴定片。NPC四文件审查见reviews/npc-equipment-identification-20261024-r1/REVIEW.md；资产依赖按equipment-identification-assets-ready.json及EQUIPMENT_IDENTIFICATION_CAS_INTEGRATION.md。资产R2所用Inventory还含先前宠物石/进化增量；main只取本片已审差异，或对实际BASE完整闭包重新审查，不能整份覆盖后将其它功能视为已验。
+2. 启动先完成NPC/gameplay/inventory，再npc_identification_query.prepare；npc_equipment_identification.prepare要求accounts.currency_rules已经加载。当前npc_gameplay.prepare早于currency初始化，不能在该早期位置直接调用收费prepare。新建npc_equipment_identification_receipts属于启动DDL，热路径不建表；两种prepare均不自行开放registry。
+3. 原NPC10890菜单显式提供本地495；成功查询直接走原C04cc，不要求先行CNpcService495。实际RoleOwner先校验battle/transfer/intro等modal状态，再向所属MapOwner获取新NpcInteraction和完整RoleViewBinding。query在有界角色I/O调用，成功后仅服务器保存返回的ticket与稳定request_id；原C4276没有NPCkey/报价/重试ID。
+4. 确认调用confirm时使用当前位置、完整地图/成员/连接世代、新NPC证明和新的I/O期限；然后在同一当前角色租约I/O执行settle。移动、其他菜单、战斗、传送、断线及成员/连接替换清除未提交ticket。已付稳定ticket重试沿原身份返回当前状态；不得为每个相同线包重建收费身份。对话TTL与每次I/O deadline分开，进入存储和提交前均复核。
+5. 返回值为不可变逻辑消息，交真实连接所有者排队；实际发送时复核完整场景/地图所有者/成员/角色epoch/连接generation。领域中的Location/RoleViewBinding只是已受理快照，不替代之后实时校验，不持数据库事务等待其他Owner。
+6. 完成标准：原先verify_npc_identification_query_runtime.py菜单495真实红例在准确候选转绿；另以实际Peer执行原查询/收费确认、重复付款、modal/移动/换图/换连接清票及延迟实际发送围栏。独立冻结双轴、候选回归、唯一发布与发布后原生心跳/存档核验完成才更新deployed。GUI与完整随机鉴定单独验收。
+
+共享成员依赖实查：本次game_runtime仍未调用RoleScene/bind_role_view/RoleViewBinding，不能将领域测试的冻结binding当成实际共享已经建立。所属WorldDomain可经公开inspect_lifecycle(now_ms).owner_generation提供真实地图世代；稳定成员身份/版本须由实际join/leave/transfer/connection生命周期维护及复核。main据主策划批准的具体Seam接入并验证，不以位置version或常量1冒充membership_revision，也不因此整批激活未审的玩家AOI。此段是待接线的已知依赖，不修改固定NPC领域输入或ready。
+
+## 当前装备模型能证明什么
+
+当前equipment_detail.py的EquipmentDetail仅表示identified(0/1)、prefix_quality、score和唯一ID的base_properties tuple；条件/颜色在独立EquipmentCondition，绑定/数量/所在栏在ItemState。None仍是未知详情，不能用0冒充已知未鉴定。完整高级容器在当前干净编码器中明确为空；未知旧宝石、强化、附加效果不能被这份模型可靠揭示或自动置零。
+
+实际DetailRules.load的1038模板工厂全部初始identified1、prefix1、score0，并保存原模板base_properties；这证明新工厂不会自己产生未鉴定装备，不能推定已有角色未鉴定存量为零。可信initialize_equipment_detail允许初始化明确已知干净实例，禁止覆盖已有详情；构造器允许identified0，因此显式迁移可能保存已知未鉴定实例。NPC窗口没有读取真实玩家库存，当前存量需资产Owner另按权威库存核实。
+
+已审只读范围为当前已知identified状态。收费领域另按主策划授权实现可信explicit_known_clean_instance、identified0/prefix1/score0/原canonical base/color1的固定结果子集，由公开Inventory CAS只改0→1并原价现金结算，保持已有品质/属性/条件/绑定；其领域独立验收已通过，共享激活另验。准确资格及事务遵循单一收费政策。原随机附加属性不由flag推导。鉴定之后穿戴仍由角色实际装备policy及资格检查决定。
+
+Inventory.immutable_snapshot_transaction(db)在同一当前租约事务返回冻结InventorySnapshot及inventory_revision，包含当前自有ItemState/detail/condition。新495只读领域查询已按该Interface实现当前column1/期望revision/已知详情检查；RoleOwner的即时地图证明和最终投递围栏仍须共享接线。未知、他人、仓库、已穿实例不能以默认状态应答；当前没有网络路由或资产修改。
+
+本批模型实查原字节SHA与数量见npc-identification-domain-source-audit.json，范围是当前启动模型和原费用目录，不是存档迁移或真人库存审计。
+
+## 原费用已证与未证
+
+原cnpcidentifyneedmoneyconfig精确键为1、10、20、30、40、50、60、70、80、90、100、110、120、130、140、150。原getter到精确lookup及record+4读取已证；level51缺行实际拒绝，不能降档50。后续EQUIPMENT_IDENTIFICATION_RESULT_SOURCE以原字段读取/复制/包装刷新/getter六槽50级组合oracle，已将wrapper+0x28闭合至真实CItemAttr.level，字段不是needLevel。收费单一政策采用此level精确查表。
+
+来源订正：最初56例冻结报告/脚本metadata将特殊完整kind0x1c8/0x2c8/0x3c8覆盖条件写为“正数且≤1000”，该文字过强；后续原20例证明实际为“非零且signed≤1000”，所以-1也被原getter返回。原56例及四SHA仍保留历史，不冒称其覆盖此负边界。以新的来源报告为准；NPC服务器政策排除这些special kind并拒绝负level，其bean+d0真实生成来源和业务资格仍未知。
+
+## 已实现的纯协议Interface
+
+npc_identification_protocol.py仅表达原wire：decode_identification_query(body,*,max_items)返回冻结item_keys有序tuple、完整64位NPCkey及mode；encode_identification_states(npc_key,states,mode,*,max_items)保留有序(key,state)vector；decode_identification_request(body)保留三个signed32，字段为item_key/auxiliary_argument/mode。NPC确认实填(item_key,0,1)，原包没有NPCkey、column或报价。第二字段的通用业务含义未命名，不把另一路mode2赋予NPC。
+
+max_items由调用方显式给，协议Module不选择服务预算。查询wire保留负数/重复等原codec值，业务仍须验证；回复原codec要求key>0而不限制state/mode枚举，Module保持该契约。实际状态查询只能发送已知0/1，不从宽泛wire值推实际装备权限。请求/回复向量不是map，不能自动排序或去重。原三个缺入口红例保留，六组协议检查含原decode→同对象marshal独立oracle、空/127/128元素、64位高位及signed边界、截断/多余/预算和冻结/无I/O。
+
+原NPC10890装备鉴定师和1007原摆放是client_verified，原服务器NPC→495关联仍unknown；恢复服root已在design/npc-identification-query-v1.json显式采用designed关联，尚未进入生产registry。540是买符父菜单，不当鉴定授权。协议绿不给可信来源能力、不扣款或更新详情；付费结算、共享Peer、发布与GUI分别验收。
+
+本批原生研究56例已在研究者停写后由NPC主窗口原样独立复跑，四产物原字节SHA一致，见npc-identification-native-independent.json。纯协议两文件冻结审查见reviews/npc-identification-protocol-20261024/REVIEW.md，Standards及Spec分别0，两个独立审查者各核四SHA并执行六组原codec检查。准确输入和未激活状态见npc-identification-protocol-ready.json。
+
+## 只读查询实际领域接线
+
+先读NPC_IDENTIFICATION_QUERY_DECISION.md和唯一政策design/npc-identification-query-v1.json。npc_identification_query.prepare(accounts,*,path=None)在NPC/gameplay/inventory启动后冻结规则，验证原10890/map1007/p75坐标、495原标签和当前detail.1对象，挂accounts.npc_identification_query_rules。prepare不改npc_gameplay.services或任何registry。load_query_rules可显式接已有四份启动快照；128是中央规则，业务调用者不能另传预算绕过。
+
+plan_query(body,proof,current,inventory_revision,*,rules,now_ms,deadline_ms)直接接受实际c04cc、本次所属地图返回的NpcInteraction及current Location，不伪造或等待CNpcService495网络请求。冻结intent保存完整scope、期望资产revision、原有序key和期限；精确NPC/placement/map、active/epoch/version、完整地址、entity key每一位和mode1均复核。
+
+query_states(inventory,intent)在有界角色I/O中执行：当前租约连接设置query_only，开启只读事务，获取实际immutable_snapshot_transaction并比inventory_revision；逐项只接受自有carried量1、支持模板的已知EquipmentDetail，返回当前0/1。重复逐项保序计128预算；空同资格；编码和末次期限检查在读事务关闭前完成。没有表结构、详情、资产revision、source、钱包、凭据或资源写入，也没有c4276授权。
+
+main仍需接原NPC菜单/显式关联和c04cc路由，先执行真实RoleOwner战斗/transfer/intro等modal gate，再即时向所属MapOwner获取本次证明；最终逻辑回复必须在实际发送时复核完整场景/地图世代、成员/角色epoch和连接generation。领域所存Location是本次接入快照，不能冒充之后的实时世界查询，也不能让客户端自行提供proof。
+
+verify_npc_identification_query.py九组及48非法政策检查绿，实际临时库、真实NpcScene原摆放和当前租约Inventory；已知0为明确known-clean迁移fixture，未改真人存量。实际产出的回复经原decoder及10934a0状态consumer执行（owned lookup/UI opening是Adapter）。空/128重复、129/错误mode、地址/key/版本、未知/量/已穿/真实仓库/他人物品、新旧租约及期限均有反馈。所有查询和拒绝前后公开资产快照及全表内容不变；外部标准库序列化分配fault无回复，非自然有效输入产生的编码错误。最初已穿负例使用不兼容角色被原角色资格拒绝，随后只修fixture为兼容原角色并通过真实equip，未放宽生产门禁。
+
+固定两新增文件Standards/Spec分别0，独立审查者各核四SHA并执行九组；root政策另有自身固定审查。结果、13个关键输入前后SHA稳定及未激活范围见npc-identification-query-verification.json和npc-identification-query-ready.json，固定审查见reviews/npc-identification-query-20261024/REVIEW.md。该13项是本批关键输入范围，不是未来发布的完整依赖闭包。
+
+root另在准确workspace独立复跑九组/48非法配置，连同原image共14项输入前后稳定，证据root-npc-identification-query-20261024。本窗口随后新增后续共享目标verify_npc_identification_query_runtime.py：实际Peer认证和原10890拜访成功，但真实菜单缺495而红，npc-identification-query-runtime-baseline.json保留准确失败。完整checkpoint、发物及角色均为公开Interface的临时fixture，未注入query.prepare或替换dispatcher；该脚本不是前述固定领域两文件的一部分。main接菜单/原c04cc路由后应原样转绿，再补实际延迟回复与场景/租约围栏。
+
+方法：research沿原映像/原PFS与当前持久模型分别取证，限制fixture外推；tdd先缺协议入口再逐公开Interface转绿，收费另保留缺settle、空服务器ID、错误费用目录的真实红例；codebase-design把wire保真、NPC证明及资产权威分开，收费复用资产公开CAS并返回逻辑消息；code-review使用真实空base/冻结差异适配无Git环境，两轴独立复跑后分别聚合；writing-for-agents将启动顺序、资产差异选择及共享完成条件共置。产物为NPC四文件、固定审查与ready清单；验证范围见上方数字及精确报告，未验证范围为实际共享路由/清票/最终投递、部署、GUI和完整随机鉴定。未操作真人库、客户端或服务进程。

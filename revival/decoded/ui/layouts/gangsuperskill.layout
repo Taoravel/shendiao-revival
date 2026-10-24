@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="GangSuperSkill">
+    <Property Name="EnableSound" Value="True" />
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0,102.656},{0,110},{0,674.656},{0,494}}" />
+    <Window Type="TaharezLook/Button" Name="GangSuperSkill/OK">
+      <Property Name="Text" Value="开启修炼" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,101},{0,342},{0,221},{0,364}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GangSuperSkill/Recycle">
+      <Property Name="Text" Value="关闭修炼" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,225},{0,342},{0,345},{0,364}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="GangSuperSkill/Cancel">
+      <Property Name="Text" Value="取    消" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="Button.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,349},{0,342},{0,469},{0,364}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="GangSuperSkill/title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.498252,0},{0.0259769,0},{1.03671,0},{0.0962894,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="GangSuperSkill/title/name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="设置修炼技能" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="102" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFFFEAA9 tr:FFFFEAA9 bl:FFFF9600 br:FFFF9600" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0,71},{0,1},{0,194},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="GangSuperSkill/Tips">
+      <Property Name="Text" Value="帮派等级越高，能同时开启的修炼个数越多" />
+      <Property Name="HorzExtent" Value="247" />
+      <Property Name="VertExtent" Value="15.6189" />
+      <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0,22},{0,41},{0,299},{0,61}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="DefaultBorderEnable" Value="True" />
+      <Property Name="DefaultColourEnable" Value="True" />
+    </Window>
+    <Window Type="TaharezLook/MultiColumnList" Name="GangSuperSkill/SlectList">
+      <Property Name="UnifiedAreaRect" Value="{{0,16},{0,60},{0,553},{0,339}}" />
+      <Property Name="ColumnHeader" Value="text:技能名 width:{0.18,0} id:0" />
+      <Property Name="ColumnHeader" Value="text:                                       技能简介 width:{1,-98} id:1" />
+    </Window>
+  </Window>
+</GUILayout>

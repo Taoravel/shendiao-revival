@@ -1,0 +1,34 @@
+# NPC资源接线与新建授权门槛
+
+2026-10-23，原始集成窗口。本页保留本批接线决定与已完成Owner验收，修理及宠物恢复两门控现已按正式契约解除。下面的新建授权仍属下一批。本窗口不操作运行发布；当前发布以runtime/deployment.json为准，8724已是历史，后续NPC窗口依用户直接部署授权启用33072。自动资源迁移开关保持关闭。接NPC修理或宠物恢复前读[NPC_ASSET_RESOURCE_INTEGRATION.md](NPC_ASSET_RESOURCE_INTEGRATION.md)与[NPC_RESOURCE_SIGNATURES.md](NPC_RESOURCE_SIGNATURES.md)；共享已接消费者以[RESOURCE_SHARED_RUNTIME_INTEGRATION.md](RESOURCE_SHARED_RUNTIME_INTEGRATION.md)为准。
+
+## 已独立核对的交付
+
+本窗口实际执行verify_npc_repair_resources.py与verify_npc_asset_sources.py，均通过。前者覆盖fresh专用equipment_repair、paid保留后来50/30且不抽随机/收费、legacy已付之后迁移不追补资源过渡、实际float32晚期错误整笔回滚、新旧租约与缺hook/半规则拒绝。后者覆盖宠物kind2/3/4来源同步、人物70/40/version0不变、费用/宠物/来源/凭据同事务、实际晚期编码错误回滚及pending paid拒绝。原生消息编码确实执行，仍不是已迁移角色的真实shared分发证明。
+
+源码核对：npc_repairs.repair已在其外层同事务读取完整before并严格组合当前来源，fresh专用caps计划、old纯当前读，最后调用原三参数final precommit编码；不需要额外source-only回调。npc_recovery.settle的宠物分支已通过领域/common两凭据真实old标志调用统一source helper，并同事务编码当前人物profile。两个恢复入口在game_runtime已统一进入npc_recover_resources，当前剩余门控集中在runtime_storage。
+
+## 本批最小改动与验收
+
+原资源7文件冻结快照已由主策划独立Standards/Spec两轴0发现。随后怪物窗口依据用户例外授权加入wild；本窗口单独保存含wild准确基准evidence/reviews/shared-npc-resource-base-20261023T182320-ea5bbf4f，经编辑区交接后仅修改runtime_storage两函数：repair_role_equipment去掉已迁移临时拒绝，向npc_repairs.repair显式注入启动resource_rules/equipment_attribute_rules并保留纯final hook；npc_recover_resources去掉kind2/3/4临时拒绝，保留成对注入。game_runtime、wild、root数值Module和NPC所属事务未由本批改动；旧0发现不外推本批或wild。
+
+新增verify_resource_npc_care_runtime.py的repair/pet两独立分支先沿真实Peer请求得到空回复，准确因旧guard无法取得final map而红；两处最小改动后all分支绿。首次尝试的任务模块缺supports_npc_progress导入错误只记为并行中间态，不冒称care预期红。以下条件本批均通过：
+
+- .1当前已穿49009、显式L21/10HP/20MP/钱包与耐久fixture，经原NPC method2/column4修理返回唯一完整20map，实际condition和非零费用同事务；正常随机修理结果均按原规则验证，paid重试不再随机/扣钱/补来源，保留后来伤势，重连一致。
+- trainer10086以原CRecovery kinds2/3/4及CNpcService services10/11/12分别进入真实Owner；实际宠物资源/忠诚变化与非零费用/source/receipt一起提交，人物伤势和资源version不变。paid返回后来宠物状态；新ID同包受真实缺失量约束，不把新点击当重试。
+- 最终完整人物编码或bag/condition编码失败，真实资产、现金、source及所有共同/领域/资源凭据一并回滚；同失败ID之后可成功。pending source重放拒绝，旧租约回调拒绝，当前租约重新证明后读paid。已付旧合同修理迁移后重放沿NPC所属既有例补真实Owner分发。
+- 受影响legacy已装备NPC修理和旧宠物恢复必要回归保持绿。结果写独立Owner证据；GUI、真实网络断线、六槽HP增益和商业容量另验，不扩大上述fixture结论。
+
+实际证据resource-npc-care-runtime-verification.json：真实加密repair与宠物CRecovery kinds2/3/4、原CNpcService services10/11/12均返回唯一完整20map。repair先缺耐久10实际费20、人物10/20与版本保持；后来30/40不被已付重放覆盖。宠物后受伤不被旧paid再次治疗，寿命只由明确fixture defeat减少、恢复不改寿命。原final hook/growth_refresh注入末端失败时资产/费用/source/所有凭据回滚，同失败键之后成功。重连、新NPC证明paid及旧Owner拒绝通过；故意pending来源paid拒绝不修补；真实legacy已付修理后显式迁移，当前70/40/cash960保持且无追补equipment_repair。verify_npc_equipped_repair_runtime与verify_npc_pet_recovery_runtime必要回归绿。本批未执行移动或战斗。
+
+## 新建policy授权计划，暂不实施
+
+当前create_role只持久人物初始属性模板与创建来源；load_role兑换该模板后初始化章节和明确装备basis。这些字段不能自动成为新资源政策的激活标志。尤其历史new_restoration_role创建记录不能因为代码升级而被静默纳入新资源契约。
+
+主策划现已正式交付[ROLE_RESOURCE_CREATION_AUTHORIZATION.md](ROLE_RESOURCE_CREATION_AUTHORIZATION.md)与design/role-resource-creation-v1.json。下一步必须依该唯一政策实现，而不是从本计划自由发明字段。真实创建事务持久四policy、既有creation_id、真实account/role和实际原字符串模板指纹；只有测试显式开关之后新建且具有该记录的角色才可兑现。旧记录缺许可保持原契约，默认开关仍关。
+
+兑现顺序须在同一当前租约加载事务：核对创建授权→现有真实属性模板兑现→章节/装备basis→实际InventorySnapshot/current_equipment_totals→读取已知旧vitals→migrate_role_resources(origin=new_restoration_role,稳定创建键)→当前profile及原生预编码→提交。重复兑现核对同一政策/身份后仅严格当前读取，死亡不复活、伤势不重置；缺值或错政策明确拒绝。不会在普通login reader中以缺字段推定迁移。
+
+激活门槛仍包括修理/宠恢复完整shared验收、秘籍可信draw/time受理与其实际资产来源路径、全体可用资产消费者核对。当前使用.1十件师承武器范围；v2及新旧装备basis路由由root另批交付。以上完成、主策划验收新创建政策和故障恢复后才讨论开关与部署；本页不授权迁移现场角色。
+
+方法：codebase-design保留NPC事务与shared参数注入的Seam；diagnosing-bugs与tdd沿既定真实Owner/Peer Interface取得两个空回复红再最小接线绿，末端故障验证整笔回滚；writing-for-agents将当前已验分支和新创建门槛分开。产物为两函数增量、新Owner验证及本文，基准/交接可核对。未改真实存档、运行进程或配置开关。

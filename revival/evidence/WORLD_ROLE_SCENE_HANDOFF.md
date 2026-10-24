@@ -1,0 +1,46 @@
+# 真玩家同屏：地图实例投影接线
+
+2026-10-23。world_roles.RoleScene使用已原生核验的RoleBasic玩家集合，处理实例内加入、接近/远离、移动和离开。它是地图Owner内部的可变视野投影，不拥有租约、位置、数据库或连接。共享入口、当前监听与客户端均未修改。原布局/handler证据集中WORLD_ROLE_PROTOCOL.md。
+
+## 同登录往返同图的投递隔离：已修复
+
+verify_world_roles新增真实公共Seam反例：B在同一login_epoch下leave，再join同一个RoleScene，原来发给B的RoleDelivery又被delivery_is_current认作有效。address、Owner generation和epoch均没有改变，sequence还会从新成员起点重计。先实际运行新增断言报红；主集成解除部署冻结后完成以下修复，再运行当前全套通过。本Module仍未接共享运行时。
+
+每次成功join铸造独立membership_revision，存入RolePresence及RoleDelivery.recipient_membership_revision；move保持同一membership_revision，leave后再join生成新值。delivery_is_current同时核该值。没有使用每次移动都会变化的presence.revision代替，以保留当前成员关系的有序旧消息。相同join重试保留原presence，容量失败不更改成员关系或发消息。追加往返反例、移动中旧消息仍有效、重试不换成员标识均通过；4份实际玩家批次原decoder必要回归通过。该标识只在服务器逻辑信封中，不给原线包虚构新字段。
+
+部署冻结期间只登记事实和修复契约；冻结解除后仅修改自有world_roles.py及验证，未改共享入口、不可变发布副本或监听进程。
+
+## 启动与策略
+
+按MapAddress(map_id,instance_id,partition_id)建立独立RoleScene(address,catalog,*,radius,role_capacity,pair_capacity,batch_size)。所有参数显式提供：radius为逻辑像素圆形兴趣范围，pair_capacity为无向可见角色对数，batch_size限制每个原角色列表批次。生产范围/容量尚待主策划登记；验证的64像素、3–5角色、1–10角色对及批次1/2只是受控夹具，不是原服参数或生产建议。圆形筛选是可用实现选项，不宣称恢复原服务端AOI公式。
+
+空间桶边长等于radius，每次仅查本桶与相邻8桶，最后做距离平方判断；角色和可见对受显式容量限制，未压测商业容量。输入地图快照由启动预载，命令期不读文件或数据库。每个实例/分区在自己的执行者上顺序调用，不能将全部场景放在全服串行队列。
+
+## 命令与顺序
+
+启用地图权威与view的实例应统一使用MapOwner配套命令及出队入口，完整生命周期和失败语义见 [WORLD_MAP_VIEW_HANDOFF.md](WORLD_MAP_VIEW_HANDOFF.md)。直接先改MapOwner再独立调用本Module可能在view拒绝时留半状态；下文独立方法仍为投影内部行为参考，实际接线采用配套入口。
+
+1. RoleOwner提供冻结RoleBasic外观。packed_2c、扩展属性等未知值必须由已核验来源/明确政策提供，本Module不从school或形象猜值。shape可以使用已有原形象值；原codec/handler的转换见专题。位置必须是MapOwner已校验、处于active的完整Location，包含角色ID、当前epoch和版本，且与外观的ID/坐标相同。元数据、路径均要求tuple，octets要求bytes，避免把可变容器跨Owner传入。
+2. join(location,appearance)返回冻结RoleSceneChange(presence,deliveries)。新角色与范围内每位旧角色互相收到真实SAddUserScreen，只发玩家容器，NPC容器为空；不会给本人回显自己。精确相同重试返回原presence而不重复广播；替换登录必须先明确移除旧成员。
+3. move(expected_presence,new_location)只接已经验证的更新，不消费原始客户端移动。新位置同角色/epoch、版本递增。跨视野边缘对双方分别发入屏或移除，仍在范围的其他角色收到SRoleMove目的坐标通知；缓存外观位置同步更新，旧初始化path清空。SRoleStop在本映像为空处理器，故Module不发送它冒充精确停步完成。当前输出是接受位置的显示投影，不证明原客户端插值/速度或实时停步。
+4. join/move的容量及全部编码检查先完成，失败时本投影的成员、空间桶、可见对和序号都不变。运行时应在同一地图执行者上完成位置方案验证和视野预检，再无await地发布对应内存状态。不能先向客户端/数据库宣称位置成功，再忽略视野拒绝；若选择别的满载策略，须明确由接入方处理。
+5. leave(expected_presence)给仍在范围的其他角色发真实SRemoveUserScreen，清本投影与可见对；相同离开重试无消息。每次变更使用实例内单调revision，每次join另记稳定membership_revision，Owner重建另有generation。旧移除/移动快照不能误作用同键重入或重建实例；旧接收者投递也不能跨成员关系复活。
+6. 场景交接按既有地图协议：源角色已持久提交交接并最终离开后移除源投影，目标loading期间不加入活跃投影；目标ready后以新active Location加入。原电影临时换图不是服务器位置交接，另按新手章契约处理。
+
+## 投递契约与背压
+
+目标连接接收Module已提供world_role_delivery.RoleViewInbox，完整Interface、sequence准入、整批满载和发送前围栏条件见WORLD_ROLE_DELIVERY_HANDOFF.md。九组公共行为及实际入屏/移动/移除三条原decoder验证通过；尚未接ConnectionOwner，不能丢掉binding后只调用现有epoch发送路径就称接入完成。
+
+每条冻结RoleDelivery携带完整address、Owner generation、recipient_role_id/epoch、recipient_membership_revision、当前成员关系内按接收者单调sequence及tuple逻辑消息。Module不封外层密文、不持Session、不等待socket、不跨线程直接写连接。delivery_is_current只核本实例仍存在匹配接收者成员关系；它不是发送ACK、去重器、持久outbox或source消息有效性证明。
+
+接入方须把同一接收者的delivery按sequence顺序交给其连接Owner，在排队之前重验实际地图归属、epoch、membership_revision和当前connection generation。只能由可信新join安装新成员关系的sequence起点，不能让一条迟到消息自行重置游标。视野进入/移除不可仅丢弃后继续发移动：若目标队列满、序号断档或登录替换，应断开/重新建立完整场景，而非把join幂等重试当作已补发快照。慢连接处理与目标发送队列由共享运行时提供，不等待它阻塞地图。不同地图切换时先隔离源场景迟到投递；原消息无场景epoch，已经排队的字节仍依赖目标连接严格时序，不能宣称零歧义。
+
+## 验证与未完成
+
+verify_world_roles按公共join→move→leave三个切片及后续往返反例分别先失败再实现：相互入屏/精确半径边缘、不回显自己、进入/离开对双方更新、留在范围者原移动消息、旧版本/epoch/Owner拒绝、同模板不同实例隔离、同键重登、角色/可见对容量原子拒绝、原编码完整与无热路径I/O通过。追加同epoch往返同图、移动保持成员关系、相同join重试保留成员标识均通过，当前JSON已重新生成。模板只是已知原codec fixture元数据，未映射未知门派属性。
+
+verify_world_role_scene_native进一步直接解码RoleScene实际生成的四份批次：两份各2角色入屏、两份各2角色移除；原完整decoder消费全body，玩家count2、NPCcount0均正确。内层RoleBasicOctets另由原13项核验支持，不以这四例声称整个玩家创建/GPU执行。
+
+codebase-design将位置权威和视野投影分开，以冻结快照/逻辑投递作为Seam；tdd按三个实际行为逐步实现，容量和原批次为必要追加核验；writing-for-agents按启动、变更、交接、投递顺序给出完成条件。
+
+尚未接共享GameRuntime/连接投递、生产AOI策略、慢队列/多实例全栈并行、角色元数据动态刷新、NPC/怪物AOI、实际两客户端同屏或精确停步；没有部署、重启或修改真实角色。全量世界目标继续推进，不能把本Module通过称为多人功能已在线。

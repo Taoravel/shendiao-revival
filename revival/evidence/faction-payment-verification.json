@@ -1,0 +1,23 @@
+{
+  "passed": [
+    "real cash debit, immutable grant and recovery record commit atomically; retry creates/charges only once",
+    "large bound-silver balance cannot fund insufficient cash; missing profiles stay uninitialized",
+    "outer failure rolls back cash, currency receipt, grant, payment intent and other role writes together",
+    "post-consumption organization failure preserves debit until explicit revoke; refund once; late valid creation cannot commit after refund",
+    "restart/relogin enumerates old intent under new lease; stale funding/revoke/refund callbacks rejected",
+    "lost success reply resolves committed without refund; returned balances reflect newer debits",
+    "missing original wallet debit proof refuses refund; restoring the authoritative receipt permits one recovery",
+    "bounded pending-payment capacity rejects before another cash debit",
+    "inconsistent consumed grant without success receipt remains pending for reconciliation, never auto-refunded",
+    "eight actual commit/revoke races yield either one paid operation or one refund, never both",
+    "family and guild creation use configured cash purposes; family notice is excluded from new cash funding",
+    "role-key bounded I/O and mailboxes: another role wallet and organization read progress during controlled funding pause",
+    "actual organization runtime serializes cancelled-wait commit before revoke; terminal revoke blocks late commit and permits one role cash refund"
+  ],
+  "wallet_baselines": "explicit disposable test fixtures only",
+  "family_level": "level-3 fixture only",
+  "shared_native_runtime_integrated": false,
+  "native_gui_verified": false,
+  "live_store_changed": false,
+  "deployment": "single-database SQLite Adapter; cross-database saga not implemented"
+}

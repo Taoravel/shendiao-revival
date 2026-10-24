@@ -1,0 +1,23 @@
+# 帮派研究成长结算
+
+读取条件：实现帮派小时维护研究、投影研究列表或向本模块提交经验前。第21批只实现已明确参数下的帮派研究持久状态和可信结算Interface；原研究速度/阈值公式、建筑上限、正常维护生产者、NPC/GUI与启用另验。当前没有生产默认成长曲线，不把隔离测试数值当玩法设计。
+
+## 所有权与Interface
+
+沿既有OrganizationStore/OrganizationRuntime的organization键顺序执行。OrganizationStore构造可显式提供research_policy；其14种可研究技能必须与既有guild_research_skill_ids完全相同，每种包含完整正整数升级需求序列（索引0是0升1，长度为该技能上限）、版本与来源。只在此显式配置下的新建帮派事务初始化0级/0经验；未提供配置或已有未知旧档保持未知，不在启动或读取时回填。同版本但阈值/来源改变也必须拒绝旧状态，迁移单独授权。
+
+每条曲线最长155是designed本模块有界执行预算，参考本包学习知识说明范围，不冒称所有原技能的研究硬上限；没有把旧官网140或本包知识155自动作为生产研究cap。两构造默认research_policy=None，共用baseline不增加默认数值或改变开服政策。来源调查见GUILD_RESEARCH_GROWTH_SOURCES.md；其中候选建议尚未裁定，未被本模块作为默认曲线采用。
+
+ResearchAward(guild,request_id,experience,deadline_ms)为可信服务器命令：request_id必须是上游维护/其他已证明研究奖励事件的稳定唯一键，experience是上游依据原式或策划裁定计算的非负研究量。该Interface不接网络输入，不证明正常维护或奖励资格，不扣角色/帮派资产；调用方必须在对应源事务中调用guild_research.award，或先实现durable outbox/inbox及幂等消费，再通过组织所有者投递。OrganizationStore/Runtime公开方法用于同SQLite兼容调用与隔离验证；不因存在一个类就获得维护或NPC权限。
+
+当前研究选择沿既有guild_training保持。每个首次事件在组织事务内固定当时研究技能；同键同经验重放返回原结果，切换研究后不重分配旧事件，改经验冲突。0选择/0经验/已达上限记录不增长结果；有效经验逐级消费明确曲线，余数保留，达到上限后经验归0，多余经验登记丢弃，均为此模块明确的designed结算语义。研究等级、经验、组织revision与末尾事件凭据同事务；晚失败全部回滚。不同事件允许各自产生一次真实收益，不用线包相同冒充业务幂等键。
+
+冻结快照包含14种技能、当前选择、当前级/上限/经验/下一需求、来源与recipe。原GuildSkill五i32顺序已追0x14a3bbd..3c11的bean→cache复制及0x14e1920研究表格列1..4读取，对照gangskillsetting.layout列名。后两i32在客户端缓存转为符号扩展Q，不能因此把wire改为Q。native_skills只投影这14条已知状态，不填完整GuildDetails的其他未知字段、不发送面板。
+
+## 必要验证与未完成项
+
+沿既有公开Store/Runtime/native Seam验证：显式新建/未配置旧档；多级消费/余数与上限；更换研究后事件重放；末尾凭据失败回滚；重启/配方冲突；挂起帮派拒绝新奖励但既有结果可读；有界组织所有者重复/并发与另一组织独立推进；原字段消费及marshal。实际先红为Store显式recipe构造缺失、ResearchAward缺失、Runtime显式recipe构造缺失，再分别实现；其余为补充回归。夹具误用成员代次作family ID与超长家族名是验证装配修正，不计功能红灯。
+
+完成上述仅说明成长结算核心可用。当前不存在已批准的生产阈值/增量曲线；低储备基本维护不长研究、练功房研究力等原规则必须由后续真实维护/建筑Module负责。事件源证明、跨库outbox/inbox、成员授权面板、实际NPC注册、完整详情接线、游戏显示和商业容量仍未实现；全量goal保持active。
+
+方法：codebase-design把曲线、状态、进度与幂等结算集中研究Module，通过既有组织所有者Seam调用；tdd使用公开Interface及临时真实存储，曲线10/20/30仅隔离fixture；research核对官方端游/原客户端并在GUILD_RESEARCH_GROWTH_SOURCES.md保留未知；code-review完成时固定差异独立审查；writing-for-agents共置调用资格、来源与验收。

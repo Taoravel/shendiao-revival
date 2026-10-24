@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/SmallFrameWindow" Name="TemporaryPack">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.2725,0},{0.481667,0},{0,399},{0,469}}" />
+    <Window Type="TaharezLook/Button" Name="TemporaryPack/clearbtn">
+      <Property Name="Text" Value="清   空" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="EnableSound" Value="True" />
+      <Property Name="SoundResource" Value="click.ogg" />
+      <Property Name="UnifiedAreaRect" Value="{{0,68},{0,143},{0,136},{0,167}}" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="TemporaryPack/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0825139,0},{0.217465,0},{0.905718,0},{0.784132,0}}" />
+      <Window Type="TaharezLook/ItemTable" Name="TemporaryPack/table">
+        <Property Name="ColCount" Value="0" />
+        <Property Name="RowCount" Value="0" />
+        <Property Name="UnifiedAreaRect" Value="{{0,3},{0,4},{0,147},{0,99}}" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/ImageButton" Name="TemporaryPack/back/closebtn">
+      <Property Name="SizeType" Value="Image" />
+      <Property Name="HoverImage" Value="set:component image:CloseButtonHover" />
+      <Property Name="AlwaysOnTop" Value="True" />
+      <Property Name="NormalImage" Value="set:component image:CloseButtonNormal" />
+      <Property Name="PushedImage" Value="set:component image:CloseButtonPressed" />
+      <Property Name="UnifiedMaxSize" Value="{{0,19},{0,21}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,19},{0,21}}" />
+      <Property Name="UnifiedAreaRect" Value="{{3.69202,0},{0.0952699,0},{3.79699,0},{0.211937,0}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="TemporaryPack/title/name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="临时包裹栏" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="85" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.05,52.1},{0.05,1.15665},{0.05,156.1},{0.05,24.1566}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+  </Window>
+</GUILayout>

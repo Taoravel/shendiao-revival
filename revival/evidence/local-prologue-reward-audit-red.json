@@ -1,0 +1,22 @@
+{
+  "kind": "actual captured pre-fix runs, not new reruns",
+  "source": "revival\\evidence\\reviews\\local-prologue-first-skill-20261024-r1\\source",
+  "cases": [
+    {
+      "corruption": "delete task100105 character_exp receipt",
+      "actual_exit_code": 1,
+      "actual_failure": "AssertionError: Invalid local teaching compatibility accepted"
+    },
+    {
+      "corruption": "same receipt replaced by JSON null",
+      "test_only_selection": "Compile the same verifier body with only null corruption selected; no production patch",
+      "actual_exit_code": 1,
+      "actual_failure": "AssertionError: Invalid local teaching compatibility accepted"
+    }
+  ],
+  "post_fix_cases_refused": [
+    "missing",
+    "null"
+  ],
+  "live_server_changed": false
+}

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/SmallFrameWindow" Name="FastBuy">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.354375,0},{0.350833,0},{0.645625,0},{0.649166,0}}" />
+    <Window Type="TaharezLook/Button" Name="FastBuy/Sure">
+      <Property Name="Text" Value="确   定" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.160945,0},{0.783799,0},{0.160945,68},{0.783799,24}}" />
+    </Window>
+    <Window Type="TaharezLook/Button" Name="FastBuy/Cansel">
+      <Property Name="Text" Value="取   消" />
+      <Property Name="SizeType" Value="Auto" />
+      <Property Name="UnifiedAreaRect" Value="{{0.524679,0},{0.783799,0},{0.524679,68},{0.783799,24}}" />
+    </Window>
+    <Window Type="TaharezLook/StaticText" Name="FastBuy/Name">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="便捷购买" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="68" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.212446,0},{0.0474859,0},{0.843347,0},{0.5,-56.0014}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/CommonCaseFigure1" Name="FastBuy/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0.0686696,0},{0.230168,0},{0.918455,0},{0.760894,0}}" />
+      <Window Type="TaharezLook/StaticImage" Name="FastBuy/Item">
+        <Property Name="Image" Value="set:MainControl image:SellItem1Back" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{0,150},{0,53}}" />
+        <Property Name="UnifiedMinSize" Value="{{0,150},{0,53}}" />
+        <Property Name="ImageSizeEnable" Value="False" />
+        <Property Name="UnifiedAreaRect" Value="{{0.05,10.85},{0.05,2.7502},{0.05,160.85},{0.05,55.7502}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+        <Window Type="TaharezLook/ItemCell" Name="FastBuy/Item/Cell">
+          <Property Name="UnifiedAreaRect" Value="{{0,2},{0,2},{0,49.9998},{0,50}}" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FastBuy/Item/Name">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,53},{0,3},{0,146},{0,23.0001}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticText" Name="FastBuy/Item/Price">
+          <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+          <Property Name="BorderColour" Value="FF003454" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,76},{0,28},{0,145},{0,47.9992}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+        <Window Type="TaharezLook/StaticImage" Name="FastBuy/Item/xianjin">
+          <Property Name="Image" Value="set:MainControl image:Xianjin" />
+          <Property Name="FrameEnabled" Value="False" />
+          <Property Name="UnifiedMaxSize" Value="{{0,19},{0,19}}" />
+          <Property Name="UnifiedMinSize" Value="{{0,19},{0,19}}" />
+          <Property Name="ImageSizeEnable" Value="False" />
+          <Property Name="UnifiedAreaRect" Value="{{0,53},{0,29},{0,72},{0,48}}" />
+          <Property Name="BackgroundEnabled" Value="False" />
+        </Window>
+      </Window>
+      <Window Type="TaharezLook/RadioButton" Name="FastBuy/Yinliang">
+        <Property Name="Text" Value="银两购买" />
+        <Property Name="UnifiedAreaRect" Value="{{0,19.5},{0,66.5002},{0,99.5},{0,86.5002}}" />
+      </Window>
+      <Window Type="TaharezLook/RadioButton" Name="FastBuy/Yinliang1">
+        <Property Name="Text" Value="绑银购买" />
+        <Property Name="UnifiedAreaRect" Value="{{0,102.5},{0,66.5002},{0,182.14},{0,86.5002}}" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>

@@ -1,0 +1,1831 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="GangFightDlg">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.089375,0},{0.1125,0},{0.089375,657},{0.1125,463}}" />
+    <Window Type="TaharezLook/CommonCase" Name="GangFightDlg/Back">
+      <Property Name="UnifiedAreaRect" Value="{{0,18},{0,66},{0,635},{0,443}}" />
+      <Window Type="TaharezLook/CommonCase" Name="GangFightDlg/Back/Pattern">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{-0.00106104,0},{0,617},{-0.00106104,377}}" />
+        <Window Type="DefaultWindow" Name="GangFightDlg/Back/Pattern/Window1">
+          <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,612.41},{0,373}}" />
+          <Window Type="TaharezLook/MultiColumnList" Name="GangFight/Tab/Tab 1/GangList">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,610},{0,370}}" />
+            <Property Name="ColumnHeader" Value="text:序号 width:{0.12,0} id:0" />
+            <Property Name="ColumnHeader" Value="text:帮派编号 width:{0.15,0} id:1" />
+            <Property Name="ColumnHeader" Value="text:帮派名 width:{0.4,0} id:2" />
+            <Property Name="ColumnHeader" Value="text:花费帮派资金 width:{1,-408} id:3" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="GangFightDlg/Back/Pattern/Window2">
+          <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,612},{0,373}}" />
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/PreGameUSLeftID">
+            <Property Name="Text" Value="帮派编号" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,11},{0.00677519,0},{0,65},{0.0609757,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/PreGameUSLeftName">
+            <Property Name="Text" Value="帮派名称" />
+            <Property Name="HorzExtent" Value="53" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,80},{0.00677519,0},{0,153.637},{0.0609757,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/PreGameUSRightID">
+            <Property Name="Text" Value="帮派编号" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,535.5},{0.00677519,0},{0,589.073},{0.0609757,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/PreGameUSRightName">
+            <Property Name="Text" Value="帮派名称" />
+            <Property Name="HorzExtent" Value="53" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,429},{0.00677519,0},{0,502.637},{0.0609757,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/RadioButton" Name="GangFightDlg/Back/Pattern/Window2/One">
+            <Property Name="Text" Value="第一场" />
+            <Property Name="UnifiedAreaRect" Value="{{0,189},{0.00677519,0},{0,254.809},{0.0609757,0}}" />
+          </Window>
+          <Window Type="TaharezLook/RadioButton" Name="GangFightDlg/Back/Pattern/Window2/Two">
+            <Property Name="Text" Value="第二场" />
+            <Property Name="UnifiedAreaRect" Value="{{0,269},{0.00677519,0},{0,334.809},{0.0609757,0}}" />
+          </Window>
+          <Window Type="TaharezLook/RadioButton" Name="GangFightDlg/Back/Pattern/Window2/Three">
+            <Property Name="Text" Value="第三场" />
+            <Property Name="UnifiedAreaRect" Value="{{0,349},{0.00677519,0},{0,414.813},{0.0609757,0}}" />
+          </Window>
+          <Window Type="TaharezLook/CommonCaseFigure1" Name="GangFightDlg/Back/Pattern/Window2/Back">
+            <Property Name="UnifiedAreaRect" Value="{{0.00822374,0},{0.858537,0},{0.990132,0},{0.985908,0}}" />
+            <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/Text">
+              <Property Name="Font" Value="msyh-16" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="WordWrapCentred" />
+              <Property Name="VertFormatting" Value="TopAligned" />
+              <Property Name="UnifiedAreaRect" Value="{{0.0100503,0},{0.0851062,0},{0,594},{0,42.9999}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/LeftID1">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0164473,0},{0.0672086,0},{0.110197,0},{0.2,-29}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/LeftID2">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0164473,0},{0.2,-26},{0.110197,0},{0.332791,-54.9999}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/LeftID3">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0164473,0},{0.332791,-52},{0.110197,0},{0.465583,-81.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/LeftID4">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0164473,0},{0.465583,-78},{0.110197,0},{0.598374,-107}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/LeftID5">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0164473,0},{0.598374,-104},{0.110197,0},{0.731166,-133}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/LeftID6">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0164473,0},{0.731166,-130},{0.110197,0},{0.863957,-159}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/LeftID7">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0164473,0},{0.863957,-156},{0.110197,0},{0.996748,-185}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/LeftID8">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0164473,0},{0.996748,-182},{0.110197,0},{1.12954,-211}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/LeftID9">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0164473,0},{1.12954,-208},{0.110197,0},{1.26233,-237}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/LeftID10">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0164473,0},{1.26233,-234},{0.110197,0},{1.39512,-263}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/LeftID11">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0164473,0},{1.39512,-260},{0.110197,0},{1.52791,-289}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/LeftID12">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0164473,0},{1.52791,-286},{0.110197,0},{1.6607,-314.999}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/LeftName1">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.120477,0},{0.0672086,0},{0.276727,0},{0.2,-29}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/LeftName2">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.120477,0},{0.2,-26},{0.276727,0},{0.332791,-54.9999}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/LeftName3">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.120477,0},{0.332791,-52},{0.276727,0},{0.465583,-81.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/LeftName4">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.120477,0},{0.465583,-78},{0.276727,0},{0.598374,-107}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/LeftName5">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.120477,0},{0.598374,-104},{0.276727,0},{0.731166,-133}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/LeftName6">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.120477,0},{0.731166,-130},{0.276727,0},{0.863957,-159}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/LeftName7">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.120477,0},{0.863957,-156},{0.276727,0},{0.996748,-185}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/LeftName8">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.120477,0},{0.996748,-182},{0.276727,0},{1.12954,-211}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/LeftName9">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.120477,0},{1.12954,-208},{0.276727,0},{1.26233,-237}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/LeftName10">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.120477,0},{1.26233,-234},{0.276727,0},{1.39512,-263}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/LeftName11">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.120477,0},{1.39512,-260},{0.276727,0},{1.52791,-289}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/LeftName12">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.120477,0},{1.52791,-286},{0.276727,0},{1.6607,-314.999}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/RightID1">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.880346,0},{0.0672086,0},{0.974096,0},{0.251491,-48.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/RightID2">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.880346,0},{0.2,-26},{0.974096,0},{0.332791,-54.9999}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/RightID3">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.880346,0},{0.332791,-52},{0.974096,0},{0.465583,-81.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/RightID4">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.880346,0},{0.465583,-78},{0.974096,0},{0.598374,-107}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/RightID5">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.880346,0},{0.598374,-104},{0.974096,0},{0.731166,-133}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/RightID6">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.880346,0},{0.731166,-130},{0.974096,0},{0.863957,-159}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/RightID7">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.880346,0},{0.863957,-156},{0.974096,0},{0.996748,-185}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/RightID8">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.880346,0},{0.996748,-182},{0.974096,0},{1.12954,-211}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/RightID9">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.880346,0},{1.12954,-208},{0.974096,0},{1.26233,-237}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/RightID10">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.880346,0},{1.26233,-234},{0.974096,0},{1.39512,-263}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/RightID11">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.880346,0},{1.39512,-260},{0.974096,0},{1.52791,-289}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/RightID12">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.880346,0},{1.52791,-286},{0.974096,0},{1.6607,-314.999}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/RightName1">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.694902,0},{0.0672086,0},{0.851152,0},{0.24878,-46.9998}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/RightName2">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.694902,0},{0.2,-26},{0.851152,0},{0.332791,-54.9999}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/RightName3">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.694902,0},{0.332791,-52},{0.851152,0},{0.465583,-81.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/RightName4">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.694902,0},{0.465583,-78},{0.851152,0},{0.598374,-107}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/RightName5">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.694902,0},{0.598374,-104},{0.851152,0},{0.731166,-133}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/RightName6">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.694902,0},{0.731166,-130},{0.851152,0},{0.863957,-159}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/RightName7">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.694902,0},{0.863957,-156},{0.851152,0},{0.996748,-185}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/RightName8">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.694902,0},{0.996748,-182},{0.851152,0},{1.12954,-211}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/RightName9">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.694902,0},{1.12954,-208},{0.851152,0},{1.26233,-237}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/RightName10">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.694902,0},{1.26233,-234},{0.851152,0},{1.39512,-263}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/RightName11">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.694902,0},{1.39512,-260},{0.851152,0},{1.52791,-289}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/RightName12">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.694902,0},{1.52791,-286},{0.851152,0},{1.6607,-314.999}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/VS1">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Text" Value="VS" />
+            <Property Name="HorzExtent" Value="19" />
+            <Property Name="VertExtent" Value="18.75" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.47204,0},{0.0672086,0},{0.521382,0},{0.121409,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/VS2">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Text" Value="VS" />
+            <Property Name="HorzExtent" Value="19" />
+            <Property Name="VertExtent" Value="18.75" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.47204,0},{0.121409,3},{0.521382,0},{0.175609,3.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/VS3">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Text" Value="VS" />
+            <Property Name="HorzExtent" Value="19" />
+            <Property Name="VertExtent" Value="18.75" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.47204,0},{0.175609,6},{0.521382,0},{0.22981,5.99983}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/VS4">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Text" Value="VS" />
+            <Property Name="HorzExtent" Value="19" />
+            <Property Name="VertExtent" Value="18.75" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.47204,0},{0.22981,9},{0.521382,0},{0.28401,9.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/VS5">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Text" Value="VS" />
+            <Property Name="HorzExtent" Value="19" />
+            <Property Name="VertExtent" Value="18.75" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.473684,0},{0.28401,12},{0.523026,0},{0.338211,11.9998}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/VS6">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Text" Value="VS" />
+            <Property Name="HorzExtent" Value="19" />
+            <Property Name="VertExtent" Value="18.75" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.473684,0},{0.338211,15},{0.523026,0},{0.392411,15.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/VS7">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Text" Value="VS" />
+            <Property Name="HorzExtent" Value="19" />
+            <Property Name="VertExtent" Value="18.75" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.473684,0},{0.392411,18},{0.523026,0},{0.446611,18.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/VS8">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Text" Value="VS" />
+            <Property Name="HorzExtent" Value="19" />
+            <Property Name="VertExtent" Value="18.75" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.473684,0},{0.446611,21},{0.523026,0},{0.500811,21.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/VS9">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Text" Value="VS" />
+            <Property Name="HorzExtent" Value="19" />
+            <Property Name="VertExtent" Value="18.75" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.473684,0},{0.500811,24},{0.523026,0},{0.555011,24.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/VS10">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Text" Value="VS" />
+            <Property Name="HorzExtent" Value="19" />
+            <Property Name="VertExtent" Value="18.75" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.473684,0},{0.555011,27},{0.523026,0},{0.609211,27.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/VS11">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Text" Value="VS" />
+            <Property Name="HorzExtent" Value="19" />
+            <Property Name="VertExtent" Value="18.75" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.473684,0},{0.609211,30},{0.523026,0},{0.663411,30.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window2/VS12">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Text" Value="VS" />
+            <Property Name="HorzExtent" Value="19" />
+            <Property Name="VertExtent" Value="18.75" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.473684,0},{0.663411,33},{0.523026,0},{0.717611,33.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window2/LeftMark1">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.266448,0},{0.0650406,0},{0.251645,31},{0.0650406,22}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window2/LeftMark2">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.266448,0},{0.0650406,23},{0.251645,31},{0.0650406,45}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window2/LeftMark4">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.266448,0},{0.0650406,69},{0.251645,31},{0.0650406,91}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window2/LeftMark3">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.266448,0},{0.0650406,46},{0.251645,31},{0.0650406,68}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window2/LeftMark5">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.266448,0},{0.0650406,92},{0.251645,31},{0.0650406,114}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window2/LeftMark6">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.266448,0},{0.0650406,115},{0.251645,31},{0.0650406,137}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window2/LeftMark7">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.266448,0},{0.0650406,138},{0.251645,31},{0.0650406,160}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window2/LeftMark8">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.266448,0},{0.0650406,161},{0.251645,31},{0.0650406,183}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window2/LeftMark9">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.266448,0},{0.0650406,184},{0.251645,31},{0.0650406,206}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window2/LeftMark10">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.266448,0},{0.0650406,207},{0.251645,31},{0.0650406,229}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window2/LeftMark11">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.266448,0},{0.0650406,230},{0.251645,31},{0.0650406,252}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window2/LeftMark12">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.266448,0},{0.663411,33},{0.251645,31},{0.663411,55}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window2/RightMark1">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.841119,0},{0.0662601,0},{0.824671,32},{0.115041,4}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window2/RightMark2">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.841119,0},{0.0650406,23},{0.816448,37},{0.0650406,45}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window2/RightMark3">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.841119,0},{0.0650406,46},{0.816448,37},{0.0650406,68}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window2/RightMark4">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.841119,0},{0.0650406,69},{0.816448,37},{0.0650406,91}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window2/RightMark5">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.841119,0},{0.0650406,92},{0.816448,37},{0.0650406,114}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window2/RightMark6">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.841119,0},{0.0650406,115},{0.816448,37},{0.0650406,137}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window2/RightMark7">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.841119,0},{0.0650406,138},{0.816448,37},{0.0650406,160}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window2/RightMark8">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.841119,0},{0.0650406,161},{0.816448,37},{0.0650406,183}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window2/RightMark9">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.841119,0},{0.0650406,184},{0.816448,37},{0.0650406,206}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window2/RightMark10">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.841119,0},{0.0650406,207},{0.816448,37},{0.0650406,229}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window2/RightMark11">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.841119,0},{0.0650406,230},{0.816448,37},{0.0650406,252}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window2/RightMark12">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.841119,0},{0.663411,33},{0.816448,37},{0.663411,55}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="GangFightDlg/Back/Pattern/Window3">
+          <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,612},{0,373}}" />
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/PreGameUSLeftID">
+            <Property Name="Text" Value="预赛名次" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,11},{0,3},{0,65},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/PreGameUSLeftName">
+            <Property Name="Text" Value="帮派名称" />
+            <Property Name="HorzExtent" Value="53" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,80},{0,3},{0,153.637},{0.0542005,3.00002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/PreGameUSRightID">
+            <Property Name="Text" Value="预赛名次" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0,535.5},{0,3},{0,589.073},{0.0542005,3.00002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/PreGameUSRightName">
+            <Property Name="Text" Value="帮派名称" />
+            <Property Name="HorzExtent" Value="53" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,427},{0,3},{0,500.637},{0.0542005,3.00002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/RadioButton" Name="GangFightDlg/Back/Pattern/Window3/One">
+            <Property Name="Text" Value="1/4决赛" />
+            <Property Name="UnifiedAreaRect" Value="{{0,189},{0,3},{0,264.81},{0.0542005,3.00002}}" />
+          </Window>
+          <Window Type="TaharezLook/RadioButton" Name="GangFightDlg/Back/Pattern/Window3/Two">
+            <Property Name="Text" Value="半决赛" />
+            <Property Name="UnifiedAreaRect" Value="{{0,269},{0,3},{0,334.809},{0.0542005,3.00002}}" />
+          </Window>
+          <Window Type="TaharezLook/RadioButton" Name="GangFightDlg/Back/Pattern/Window3/Three">
+            <Property Name="Text" Value="决赛" />
+            <Property Name="UnifiedAreaRect" Value="{{0,349},{0,3},{0,414.813},{0.0542005,3.00002}}" />
+          </Window>
+          <Window Type="TaharezLook/CommonCase" Name="GangFightDlg/Back/Pattern/Window3/Text1">
+            <Property Name="UnifiedAreaRect" Value="{{-0.00082235,0},{0.47832,0},{0.990954,0},{0.613821,0}}" />
+            <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/Text1/Info">
+              <Property Name="Font" Value="msyh-16" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="WordWrapCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0.0114428,0},{0.14,0},{0.989884,0},{0.86,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/CommonCase" Name="GangFightDlg/Back/Pattern/Window3/Text2">
+            <Property Name="UnifiedAreaRect" Value="{{-0.00082235,0},{0.768293,-57},{0.990954,0},{0.768293,84}}" />
+            <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/Text2/Info">
+              <Property Name="Text">1、1/4决赛：预赛为第1、2名对阵第7、8名，预赛第3、4名对阵第5、6名；胜者确定为决赛1~4名，负者确定为决赛5~8名；
+2、半决赛：决赛1~4名随机两两配对，胜者为决赛1~2名，负者为决赛3~4名；决赛5~8名随机两两配对，胜者为决赛5~6名，负者为决赛7~8名；
+3、决赛：决赛1~2名争夺冠军；决赛3~4名争夺季军；决赛5~6名争夺第5；7~8名争夺第7。</Property>
+              <Property Name="HorzExtent" Value="589" />
+              <Property Name="VertExtent" Value="78.0945" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+              <Property Name="UnifiedAreaRect" Value="{{0.0131012,0},{0.205674,0},{0.991542,0},{0.0843374,112.241}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+            <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/Text2/Info1">
+              <Property Name="Font" Value="msyh-16" />
+              <Property Name="Text">决赛说明
+</Property>
+              <Property Name="HorzExtent" Value="64" />
+              <Property Name="VertExtent" Value="18.75" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="HorzCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0.0664179,0},{0.0358156,0},{0.189138,0},{0.085461,13}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+              <Property Name="HorizontalAlignment" Value="Centre" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/LeftID1">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0164473,0},{0.0672086,0},{0.110197,0},{0.2,-29}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/LeftID2">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0164473,0},{0.2,-26},{0.110197,0},{0.332791,-54.9999}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/LeftID3">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0164473,0},{0.332791,-52},{0.110197,0},{0.465583,-81.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/LeftID4">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0164473,0},{0.465583,-78},{0.110197,0},{0.598374,-107}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/LeftName4">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.120477,0},{0.465583,-78},{0.276727,0},{0.598374,-107}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/LeftName3">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.120477,0},{0.332791,-51},{0.276727,0},{0.465583,-80.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/LeftName2">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.120477,0},{0.2,-26},{0.276727,0},{0.332791,-54.9999}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/LeftName1">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.120477,0},{0.0672086,0},{0.276727,0},{0.2,-29}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/RightName4">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,419},{0.465583,-78},{0,514},{0.598374,-107}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/RightName3">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,419},{0.332791,-52},{0,514},{0.465583,-81.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/RightName2">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,419},{0.2,-26},{0,514},{0.332791,-54.9999}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/RightName1">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,419},{0.0672086,0},{0,514},{0.24878,-46.9998}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/RightID1">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.880346,0},{0.0672086,0},{0.974096,0},{0.251491,-48.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/RightID2">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.880346,0},{0.2,-26},{0.974096,0},{0.332791,-54.9999}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/RightID3">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.880346,0},{0.332791,-52},{0.974096,0},{0.465583,-81.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/RightID4">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.880346,0},{0.465583,-78},{0.974096,0},{0.598374,-107}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/VS1">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Text" Value="VS" />
+            <Property Name="HorzExtent" Value="19" />
+            <Property Name="VertExtent" Value="18.75" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.47204,0},{0.0672086,0},{0.521382,0},{0.121409,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/VS2">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Text" Value="VS" />
+            <Property Name="HorzExtent" Value="19" />
+            <Property Name="VertExtent" Value="18.75" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.47204,0},{0.121409,3},{0.521382,0},{0.175609,3.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/VS3">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Text" Value="VS" />
+            <Property Name="HorzExtent" Value="19" />
+            <Property Name="VertExtent" Value="18.75" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.47204,0},{0.175609,6},{0.521382,0},{0.22981,5.99983}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window3/VS4">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Text" Value="VS" />
+            <Property Name="HorzExtent" Value="19" />
+            <Property Name="VertExtent" Value="18.75" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.47204,0},{0.22981,9},{0.521382,0},{0.28401,9.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window3/RightMark4">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.841119,0},{0.0650406,69},{0.816448,37},{0.0650406,91}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window3/RightMark3">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.841119,0},{0.0650406,46},{0.816448,37},{0.0650406,68}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window3/RightMark2">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.841119,0},{0.0650406,23},{0.816448,37},{0.0650406,45}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window3/RightMark1">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.841119,0},{0.0662601,0},{0.824671,32},{0.115041,4}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window3/LeftMark4">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.269737,0},{0.0650406,69},{0.251645,33},{0.0650406,91}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window3/LeftMark3">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.269737,0},{0.0650406,46},{0.251645,33},{0.0650406,68}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window3/LeftMark2">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.269737,0},{0.0650406,23},{0.251645,33},{0.0650406,45}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window3/LeftMark1">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.269737,0},{0.0650406,0},{0.251645,33},{0.0650406,22}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="GangFightDlg/Back/Pattern/Window4">
+          <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,612},{0,373}}" />
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/PreGameUSLeftID">
+            <Property Name="Text" Value="帮派编号" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0175989,0},{0,3},{0.106415,0},{0,23}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/PreGameUSLeftName">
+            <Property Name="Text" Value="帮派名称" />
+            <Property Name="HorzExtent" Value="53" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.106942,14.6792},{0,3},{0.219233,20.0432},{0.0542005,3.00002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/PreGameUSRightID">
+            <Property Name="Text" Value="帮派编号" />
+            <Property Name="HorzExtent" Value="52" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.629286,152.667},{0,3},{0.711228,156.419},{0.0542005,3.00002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/PreGameUSRightName">
+            <Property Name="Text" Value="帮派名称" />
+            <Property Name="HorzExtent" Value="53" />
+            <Property Name="VertExtent" Value="15.6189" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.516995,114.367},{0,3},{0.629286,119.731},{0.0542005,3.00002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/RadioButton" Name="GangFightDlg/Back/Pattern/Window4/One">
+            <Property Name="Text" Value="第一场" />
+            <Property Name="UnifiedAreaRect" Value="{{0,189},{0,3},{0,254.81},{0.0542005,3.00002}}" />
+          </Window>
+          <Window Type="TaharezLook/RadioButton" Name="GangFightDlg/Back/Pattern/Window4/Two">
+            <Property Name="Text" Value="第二场" />
+            <Property Name="UnifiedAreaRect" Value="{{0,269},{0,3},{0,334.809},{0.0542005,3.00002}}" />
+          </Window>
+          <Window Type="TaharezLook/RadioButton" Name="GangFightDlg/Back/Pattern/Window4/Three">
+            <Property Name="Text" Value="第三场" />
+            <Property Name="UnifiedAreaRect" Value="{{0,349},{0,3},{0,414.813},{0.0542005,3.00002}}" />
+          </Window>
+          <Window Type="TaharezLook/CommonCase" Name="GangFightDlg/Back/Pattern/Window4/Text1">
+            <Property Name="UnifiedAreaRect" Value="{{-0.00082235,0},{0.685502,0},{0.990954,0},{0.821003,0}}" />
+            <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/Text1/Info">
+              <Property Name="Font" Value="msyh-16" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="WordWrapCentred" />
+              <Property Name="UnifiedAreaRect" Value="{{0.0114428,0},{0.14,0},{0.989884,0},{0.86,0}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/CommonCase" Name="GangFightDlg/Back/Pattern/Window4/Text2">
+            <Property Name="UnifiedAreaRect" Value="{{-0.00082235,0},{0.822494,0},{0.990954,0},{0.768293,85.0002}}" />
+            <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/Text2/Info">
+              <Property Name="Text">外围赛说明
+1、预赛的9~24名，在1~8名进行决赛的同时，也将举行外围赛；
+2、外围赛排出决赛的9~24名。</Property>
+              <Property Name="HorzExtent" Value="380" />
+              <Property Name="VertExtent" Value="46.8567" />
+              <Property Name="TextColours" Value="tl:FF6EE6FF tr:FF6EE6FF bl:FF6EE6FF br:FF6EE6FF" />
+              <Property Name="BorderColour" Value="FF003454" />
+              <Property Name="BorderEnable" Value="True" />
+              <Property Name="FrameEnabled" Value="False" />
+              <Property Name="HorzFormatting" Value="WordWrapLeftAligned" />
+              <Property Name="UnifiedAreaRect" Value="{{0.0131012,0},{0.0923076,0},{0.991542,0},{0.0843374,52.6026}}" />
+              <Property Name="BackgroundEnabled" Value="False" />
+            </Window>
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/LeftID1">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0164473,0},{0.0672086,0},{0.110197,0},{0.2,-29}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/LeftName1">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.120477,0},{0.0672086,0},{0.276727,0},{0.2,-29}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/LeftName2">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.120477,0},{0.2,-26},{0.276727,0},{0.332791,-54.9999}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/LeftName3">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.120477,0},{0.332791,-52},{0.276727,0},{0.465583,-81.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/LeftName4">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.120477,0},{0.465583,-78},{0.276727,0},{0.598374,-107}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/LeftName5">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.120477,0},{0.598374,-104},{0.276727,0},{0.731166,-133}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/LeftName6">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.120477,0},{0.731166,-130},{0.276727,0},{0.863957,-159}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/LeftName7">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.120477,0},{0.863957,-156},{0.276727,0},{0.996748,-185}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/LeftName8">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.120477,0},{0.996748,-182},{0.276727,0},{1.12954,-211}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/LeftID8">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0164473,0},{0.996748,-182},{0.110197,0},{1.12954,-211}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/LeftID7">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0164473,0},{0.863957,-156},{0.110197,0},{0.996748,-185}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/LeftID6">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0164473,0},{0.731166,-130},{0.110197,0},{0.863957,-159}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/LeftID5">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0164473,0},{0.598374,-104},{0.110197,0},{0.731166,-133}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/LeftID4">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0164473,0},{0.465583,-78},{0.110197,0},{0.598374,-107}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/LeftID3">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0164473,0},{0.332791,-52},{0.110197,0},{0.465583,-81.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/LeftID2">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0164473,0},{0.2,-26},{0.110197,0},{0.332791,-54.9999}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/RightName1">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,417},{0.0672086,0},{0,512},{0.24878,-46.9998}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/RightName2">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,417},{0.2,-26},{0,512},{0.332791,-54.9999}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/RightName3">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,417},{0.332791,-52},{0,512},{0.465583,-81.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/RightName4">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,417},{0.465583,-78},{0,512},{0.598374,-107}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/RightName5">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,417},{0.598374,-104},{0,512},{0.731166,-133}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/RightName6">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,417},{0.731166,-130},{0,512},{0.863957,-159}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/RightName7">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,417},{0.863957,-156},{0,512},{0.996748,-185}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/RightName8">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0,417},{0.996748,-182},{0,512},{1.12954,-211}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/RightID8">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.880346,0},{0.996748,-182},{0.974096,0},{1.12954,-211}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/RightID7">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.880346,0},{0.863957,-156},{0.974096,0},{0.996748,-185}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/RightID6">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.880346,0},{0.731166,-130},{0.974096,0},{0.863957,-159}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/RightID5">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.880346,0},{0.598374,-104},{0.974096,0},{0.731166,-133}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/RightID4">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.880346,0},{0.465583,-78},{0.974096,0},{0.598374,-107}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/RightID3">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.880346,0},{0.332791,-52},{0.974096,0},{0.465583,-81.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/RightID2">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.880346,0},{0.2,-26},{0.974096,0},{0.332791,-54.9999}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/RightID1">
+            <Property Name="TextColours" Value="tl:FFFFFFFF tr:FFFFFFFF bl:FFFFFFFF br:FFFFFFFF" />
+            <Property Name="BorderColour" Value="FF003454" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.880346,0},{0.0672086,0},{0.974096,0},{0.251491,-48.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/VS1">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Text" Value="VS" />
+            <Property Name="HorzExtent" Value="19" />
+            <Property Name="VertExtent" Value="18.75" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.47204,0},{0.0672086,0},{0.521382,0},{0.121409,0}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/VS2">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Text" Value="VS" />
+            <Property Name="HorzExtent" Value="19" />
+            <Property Name="VertExtent" Value="18.75" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.47204,0},{0.121409,3},{0.521382,0},{0.175609,3.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/VS3">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Text" Value="VS" />
+            <Property Name="HorzExtent" Value="19" />
+            <Property Name="VertExtent" Value="18.75" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.47204,0},{0.175609,6},{0.521382,0},{0.22981,5.99983}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/VS4">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Text" Value="VS" />
+            <Property Name="HorzExtent" Value="19" />
+            <Property Name="VertExtent" Value="18.75" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.47204,0},{0.22981,9},{0.521382,0},{0.28401,9.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/VS5">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Text" Value="VS" />
+            <Property Name="HorzExtent" Value="19" />
+            <Property Name="VertExtent" Value="18.75" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.473684,0},{0.28401,12},{0.523026,0},{0.338211,11.9998}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/VS6">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Text" Value="VS" />
+            <Property Name="HorzExtent" Value="19" />
+            <Property Name="VertExtent" Value="18.75" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.473684,0},{0.338211,15},{0.523026,0},{0.392411,15.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/VS7">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Text" Value="VS" />
+            <Property Name="HorzExtent" Value="19" />
+            <Property Name="VertExtent" Value="18.75" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.473684,0},{0.392411,18},{0.523026,0},{0.446611,18.0002}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Back/Pattern/Window4/VS8">
+            <Property Name="Font" Value="msyh-16" />
+            <Property Name="Text" Value="VS" />
+            <Property Name="HorzExtent" Value="19" />
+            <Property Name="VertExtent" Value="18.75" />
+            <Property Name="TextColours" Value="tl:FFF9C96D tr:FFF9C96D bl:FFF9C96D br:FFF9C96D" />
+            <Property Name="BorderColour" Value="FF220B01" />
+            <Property Name="BorderEnable" Value="True" />
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="HorzFormatting" Value="HorzCentred" />
+            <Property Name="UnifiedAreaRect" Value="{{0.473684,0},{0.996748,-182},{0.523026,0},{1.05095,-182.001}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window4/LeftMark1">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.269737,0},{0.0672086,0},{0.251645,33},{0.0672086,22}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window4/LeftMark2">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.269737,0},{0.0650406,23},{0.251645,33},{0.0650406,45}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window4/LeftMark3">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.269737,0},{0.0650406,46},{0.251645,33},{0.0650406,68}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window4/LeftMark4">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.269737,0},{0.0650406,69},{0.251645,33},{0.0650406,91}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window4/RightMark1">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.841119,0},{0.0662601,0},{0.824671,32},{0.115041,4}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window4/RightMark2">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.841119,0},{0.0650406,23},{0.816448,37},{0.0650406,45}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window4/RightMark3">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.841119,0},{0.0650406,46},{0.816448,37},{0.0650406,68}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window4/RightMark4">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.841119,0},{0.0650406,69},{0.816448,37},{0.0650406,91}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window4/RightMark5">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.841119,0},{0.0650406,92},{0.874013,2},{-0.0785903,167}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window4/RightMark6">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.841119,0},{-0.0785903,168},{0.813159,39},{-0.0785903,190}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window4/RightMark7">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.841119,0},{-0.0785903,191},{0.813159,39},{-0.0785903,213}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window4/RightMark8">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.841119,0},{-0.0785903,214},{0.813159,39},{-0.0785903,236}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window4/LeftMark5">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.269737,0},{0.0650406,92},{0.300987,3},{-0.135501,188}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window4/LeftMark6">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.269737,0},{-0.135501,189},{0.25,34},{-0.135501,211}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window4/LeftMark7">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.269737,0},{-0.135501,212},{0.25,34},{-0.135501,234}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+          <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Back/Pattern/Window4/LeftMark8">
+            <Property Name="FrameEnabled" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{0,25},{0,24}}" />
+            <Property Name="UnifiedMinSize" Value="{{0,25},{0,24}}" />
+            <Property Name="ImageSizeEnable" Value="False" />
+            <Property Name="UnifiedAreaRect" Value="{{0.269737,0},{-0.135501,235},{0.25,34},{-0.135501,257}}" />
+            <Property Name="BackgroundEnabled" Value="False" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="GangFightDlg/Back/Pattern/Window5">
+          <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,612},{0,373}}" />
+          <Window Type="TaharezLook/MultiColumnList" Name="GangFight/Tab/Tab 5/GangList5">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,610},{0,370}}" />
+            <Property Name="ColumnHeader" Value="text:排名 width:{0.11,0} id:0" />
+            <Property Name="ColumnHeader" Value="text:帮派名 width:{0.2,0} id:1" />
+            <Property Name="ColumnHeader" Value="text:帮派ID width:{0.11,0} id:2" />
+            <Property Name="ColumnHeader" Value="text:杀敌总次数 width:{0.14,0} id:3" />
+            <Property Name="ColumnHeader" Value="text:参战总人数 width:{0.14,0} id:4" />
+            <Property Name="ColumnHeader" Value="text:帮战总评分 width:{0.14,0} id:5" />
+            <Property Name="ColumnHeader" Value="text:总积分 width:{1,-512} id:6" />
+          </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="GangFightDlg/Back/Pattern/Window6">
+          <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,612},{0,373}}" />
+          <Window Type="TaharezLook/MultiColumnList" Name="GangFightDlg/Back/Pattern/Window6/List">
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,610},{0,370}}" />
+            <Property Name="ColumnHeader" Value="text:排名 width:{0.11,0} id:0" />
+            <Property Name="ColumnHeader" Value="text:帮派名 width:{0.2,0} id:1" />
+            <Property Name="ColumnHeader" Value="text:帮派ID width:{0.11,0} id:2" />
+            <Property Name="ColumnHeader" Value="text:杀敌总次数 width:{0.14,0} id:3" />
+            <Property Name="ColumnHeader" Value="text:参战总人数 width:{0.14,0} id:4" />
+            <Property Name="ColumnHeader" Value="text:帮战总评分 width:{0.14,0} id:5" />
+            <Property Name="ColumnHeader" Value="text:总积分 width:{1,-512} id:6" />
+          </Window>
+        </Window>
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/StaticImage" Name="GangFightDlg/Title">
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="UnifiedMaxSize" Value="{{0,308},{0,27}}" />
+      <Property Name="UnifiedMinSize" Value="{{0,308},{0,27}}" />
+      <Property Name="ImageSizeEnable" Value="False" />
+      <Property Name="UnifiedAreaRect" Value="{{0.453577,0},{0,10},{0.922374,0},{0.0799136,0}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+      <Window Type="TaharezLook/StaticText" Name="GangFightDlg/Title/Name">
+        <Property Name="Font" Value="hkhb-14" />
+        <Property Name="Text" Value="帮战查询" />
+        <Property Name="Title" Value="True" />
+        <Property Name="HorzExtent" Value="68" />
+        <Property Name="VertExtent" Value="17.3281" />
+        <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+        <Property Name="BorderColour" Value="FF003454" />
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="HorzFormatting" Value="HorzCentred" />
+        <Property Name="UnifiedAreaRect" Value="{{0.298701,0},{0,1},{0.948052,0},{0,24}}" />
+        <Property Name="BackgroundEnabled" Value="False" />
+        <Property Name="HorizontalAlignment" Value="Centre" />
+      </Window>
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="GangFightDlg/Num0">
+      <Property Name="Text" Value="竞标成功者名单" />
+      <Property Name="UnifiedAreaRect" Value="{{0,28},{0,44},{0,137},{0,66}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="GangFightDlg/Num1">
+      <Property Name="Text" Value="预赛赛程" />
+      <Property Name="UnifiedAreaRect" Value="{{0,137},{0,44},{0,208},{0,66}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="GangFightDlg/Num2">
+      <Property Name="Text" Value="决赛赛程" />
+      <Property Name="UnifiedAreaRect" Value="{{0,208},{0,44},{0,279},{0,66}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="GangFightDlg/Num3">
+      <Property Name="Text" Value="外围赛赛程" />
+      <Property Name="UnifiedAreaRect" Value="{{0,279},{0,44},{0,365},{0,66}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="GangFightDlg/Num4">
+      <Property Name="Text" Value="历史数据" />
+      <Property Name="UnifiedAreaRect" Value="{{0,365},{0,44},{0,436},{0,66}}" />
+    </Window>
+    <Window Type="TaharezLook/GroupButton" Name="GangFightDlg/Num5">
+      <Property Name="Text" Value="本届帮战数据" />
+      <Property Name="UnifiedAreaRect" Value="{{0,436},{0.05,21},{0,530},{0.05,43}}" />
+    </Window>
+  </Window>
+</GUILayout>

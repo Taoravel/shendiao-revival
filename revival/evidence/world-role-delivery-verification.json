@@ -1,0 +1,16 @@
+{
+  "passed": [
+    "actual reciprocal player entry reaches its bound target once",
+    "captured connection generation and same-epoch membership isolate stale envelopes",
+    "binding is rechecked before consumption; obsolete inbox cannot reopen",
+    "actual entry/movement retain sequence order, retries do not duplicate effects",
+    "sequence gap invalidates queued view; late missing message cannot revive it",
+    "packet/byte limits are atomic, exact fit accepted and freed on consumption",
+    "one slow target fails locally; another inbox continues",
+    "connection close discards pending view and permanently ends the inbox",
+    "loading membership, malformed sequence/packets and foreign routing rejected; no hot-path I/O"
+  ],
+  "shared_runtime_tested": false,
+  "gui_verified": false,
+  "live_server_changed": false
+}

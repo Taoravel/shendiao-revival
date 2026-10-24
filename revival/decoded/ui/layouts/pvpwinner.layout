@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<GUILayout>
+  <Window Type="TaharezLook/FrameWindow" Name="Pvpwinner">
+    <Property Name="RollUpEnabled" Value="True" />
+    <Property Name="SizingEnabled" Value="False" />
+    <Property Name="TitlebarEnabled" Value="True" />
+    <Property Name="UnifiedAreaRect" Value="{{0.15,0},{0.233333,0},{0.15,560},{0.233333,320}}" />
+    <Window Type="TaharezLook/StaticText" Name="Pvpwinner/title">
+      <Property Name="Font" Value="hkhb-14" />
+      <Property Name="Text" Value="这里是标题" />
+      <Property Name="Title" Value="True" />
+      <Property Name="HorzExtent" Value="86" />
+      <Property Name="VertExtent" Value="17.3281" />
+      <Property Name="TextColours" Value="tl:FFF4EDA7 tr:FFF4EDA7 bl:FF987117 br:FF987117" />
+      <Property Name="BorderColour" Value="FF003454" />
+      <Property Name="FrameEnabled" Value="False" />
+      <Property Name="HorzFormatting" Value="HorzCentred" />
+      <Property Name="UnifiedAreaRect" Value="{{0.1625,0},{0,13},{0.501786,0},{0,35}}" />
+      <Property Name="BackgroundEnabled" Value="False" />
+      <Property Name="HorizontalAlignment" Value="Centre" />
+    </Window>
+    <Window Type="TaharezLook/CommonCase" Name="Pvpwinner/main">
+      <Property Name="UnifiedAreaRect" Value="{{0.0285714,0},{0.134375,0},{0.0285714,525},{0.134375,259}}" />
+      <Window Type="TaharezLook/MultiColumnList" Name="Pvpwinner/main/list">
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,525},{0,259}}" />
+        <Property Name="ColumnHeader" Value="text:时   间 width:{0.18,0} id:0" />
+        <Property Name="ColumnHeader" Value="text:届   次 width:{0.18,0} id:1" />
+        <Property Name="ColumnHeader" Value="text:名   称 width:{0.28,0} id:2" />
+        <Property Name="ColumnHeader" Value="text:门   派 width:{0.18,0} id:3" />
+        <Property Name="ColumnHeader" Value="text:积   分 width:{1,-430} id:4" />
+      </Window>
+    </Window>
+  </Window>
+</GUILayout>
