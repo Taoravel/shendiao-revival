@@ -424,6 +424,24 @@ async def recovery_fault_isolation(path):
         assert len(pending)==1 and type(pending[0]) is GuildRecoveryProblem and pending[0].reservation==bad.request_id
         assert f.org.guild_maintenance_snapshot(guild).resources.amount==18
         assert any(v.get('event')=='guild_recovery_source_deferred' and v.get('reservation')==bad.request_id for v in events)
+        f.epochs[1]=epoch
+        with closing(f.accounts.connect()) as db,db:db.execute('UPDATE guild_member_state SET prestige=500 WHERE guild=? AND role_id=1 AND active=1',(guild,))
+        corrupt=replace(f.cmd(1,guild,'reserve_practice',(360001,0)),deadline_ms=f.now()+1000)
+        good=replace(f.cmd(1,guild,'reserve_practice',(360001,0)),deadline_ms=f.now()+1000)
+        f.org.execute(corrupt,f.now());f.org.execute(good,f.now())
+        with closing(f.accounts.connect()) as db,db:
+            row=db.execute('SELECT body FROM guild_practice_permits WHERE guild=? AND role_id=1 AND reservation=?',(guild,corrupt.request_id)).fetchone()
+            body=json.loads(row[0]);body['materials']=100
+            db.execute('UPDATE guild_practice_permits SET body=? WHERE guild=? AND role_id=1 AND reservation=?',
+                (json.dumps(body,sort_keys=True,separators=(',',':')),guild,corrupt.request_id))
+        found=f.org.pending_practices(1,epoch)
+        assert any(type(v) is GuildRecoveryProblem and v.reservation==corrupt.request_id for v in found),'Unverified practice refund source accepted'
+        f.reject(lambda:f.org.execute(f.cmd(1,guild,'resolve_practice',(corrupt.request_id,)),f.now()),'practice_permit_invalid')
+        await asyncio.sleep(1.05)
+        assert rt.social_runtime.organizations.guild.nudge_recovery(1,epoch)
+        await asyncio.wait_for(rt.social_runtime.organizations.guild.idle(),5)
+        assert f.org.guild_practice_permit(1,epoch,guild,good.request_id).status=='cancelled'
+        assert f.org.guild_practice_materials(guild).available==6
     finally:await rt.close()
 
 
@@ -448,7 +466,7 @@ def main():
         'leave and rejoin fences old learning holds, refunds archived prestige without crediting a new membership and retains current personal skills',
         'EXP spending preserves level/stat revision and invalidates stale complete growth proposals; orphan role parent proof cannot refund or charge twice',
         'historical learning replay rejects a missing current experience row instead of projecting a fabricated zero balance',
-        'one malformed learning proof remains held and reported while healthy learning and old practice sources recover; optional life display SQLite failure leaves login and seven practices intact'],
+        'malformed learning or tampered practice proofs remain held and reported while healthy sources recover without an inflated refund; optional life display SQLite failure leaves login and seven practices intact'],
         production_policy_configured=False,shared_entry_files_edited=False,native_gui_verified=False)
     write_json(OUT/'evidence/guild-member-learning-verification.json',result);print(json.dumps(result))
 

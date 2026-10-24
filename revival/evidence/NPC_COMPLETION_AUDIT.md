@@ -2,6 +2,10 @@
 
 新增记录按倒序排列；下方早期记录保留当时状态，最新接线以对应ready、实际发布验证和OS观察为准。
 
+2026-10-24 本人装备适配新增明确startup闭包RED：新无角色临时库首次正常prepare后公开创建Gem/score表，再由全新第二Python进程prepare，实际exit1为Warehouse metadata preservation required for inventory_equipment_gems；同脚本不加来源表的第二进程控制exit0。两次输入闭包不变，当前PVE的npc_depot/npc_gameplay与反馈上下文同SHA，见NPC_NATIVE_SCHEMA_INTEGRATION_GAP.md及npc-native-schema-reprepare各目录。未运行真正新PVE startup或真人库，现服未受该候选影响。root/main已收准确门槛；不取消未知FK保护、不仅改DDL顺序，待Asset实际元数据导出/保版本恢复与NPC仓库/出售缓存封装，不能用一次启动绿宣称完整闭包。旧d0领域11组/封签保持，总目标active。
+
+2026-10-24 只读回购query4候选完成封审：源码5b25096c，base准确发布5bf，真实shop2证明→同role/同NPC/TTL的真实sale缓存→c0434，capacity+1拒越界、未知钱包与畸形source拒；SQLite禁止查询DML/DDL，TTL只筛不删，原交易与新query共一个纯编码。公有13组和原加密Peer sale12组分别独立通过；父/Standards/Spec共6正向+6实际RED（缺query与坏JSON各3），每项12local/3083external保持，两轴硬/Fowler/Spec各0。封签npc-buyback-query-candidate-reviewed.json SHA c8d17206f27536e5124194f71e8f4029e59aede9c91a8295323f824505f918b0，见NPC_BUYBACK_QUERY_CANDIDATE.md及review。服务2准入/c0434选择仍待root采用，费用显示/扣款未修复且不自动套1.1，shared原请求/投递二检/GUI/发布仍待。已交root/main，不夹修理或已发P0。
+
 2026-10-24 当前运行源已更新为main发布的task-pve-20261024T053218Z。NPC本窗口独立只读核对实际127.0.0.1:28993监听、CIM命令行及五个相关源码哈希，PID37096且与该不可变manifest一致，见npc-post-pve-source-readback-20261024.json；未访问真实库、未操作真人或重启服务。当前npc_repairs仍3cc、npc_shop_sales仍5bf、Inventory为ad35、world_npcs177f、npc_lifecyclef5e；已审修理60820efa/d0及新回购query候选均未上线。main已收到以新实际release为基线准备NPC组合/接线/部署的交单。下方7456/023920属于上一发布及所属验证上下文，不再当当前进程。
 
 2026-10-24 NPC修理与资产原生输出组合R2已封审：候选60820efa显式注入Asset已审E9130e当前item_messages，事务内从当前owned实例输出已穿3/携带1；E648私有paid4 fingerprint与fresh1/3规则保留。新真实旧Owner凭据另进程新lease、当前损耗/脱装、真实socket缺score失败回滚与同ID补来源重试、已迁移L21唯一resource/source末尾编码失败回滚及HP10/MP20/version保持共11组，通过原codec和完整20属性。父/Standards/Spec各6正向+1真实E648缺接口RED，合计18正向/3RED，18local/6112external前后保持，硬标准/Fowler/Spec均0；生成器临时输出精确复现最终源码。ready为npc-repair-native-messages-ready.json SHA d0ce9f00b1eb134ebfda89e1901b87a9e7679254db8819814a2ffa1271f46bab，细节NPC_REPAIR_NATIVE_MESSAGES_CANDIDATE.md。全部Inventory/shared取023920原件，Asset仅5只读模块和5配置，不整并工作区Inventory；旧9e/9b05/761c封签和3cc正式模块未改。已按本人授权将完整就绪件交main/root在PVE之后统一接线发布；最终compat policy、shared真正注入/该provider加密投递、本人3其它路由、非空Gem完整人物source、部署/GUI仍待，回购价/query4不混本片。

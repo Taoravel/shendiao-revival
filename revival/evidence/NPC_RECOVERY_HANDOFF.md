@@ -1,5 +1,9 @@
 # NPC 恢复与实际接线
 
+激活Asset本人原生3及其Gem/score schema前，先读NPC_NATIVE_SCHEMA_INTEGRATION_GAP.md：新无角色临时库+新第二Python进程实际复现再次prepare被未知FK保护拒绝，不加这两表的控制正常。需实际来源保存/恢复闭包与再次启动验收，不能仅挪DDL顺序或白名单绕过。原d0只证明修理领域组合，未承诺此startup门槛已完成。
+
+只读回购query新所属封签为npc-buyback-query-candidate-reviewed.json（c8d17206），源码5b25096c，详读NPC_BUYBACK_QUERY_CANDIDATE.md；13组+原加密Peer12组、两轴0、6正向/6实际RED。root明确费用另裁不自动套1.1；只读准入提案、费用一致、shared与GUI/发布未完成，不造stock4。
+
 当前实际运行基线为task-pve-20261024T053218Z / PID37096，NPC独立只读OS+CIM+五源码对manifest的核对见npc-post-pve-source-readback-20261024.json。该服修理3cc、sale5bf仍旧片，未含下述R2；后续main需在此真实新基线上组合验证，不能把023920固定领域测试当新shared全链或GUI。旧7456状态为历史，真实库及真人未由本窗口访问。
 
 最新修理组合交单：`npc-repair-native-messages-ready.json`（d0ce9f00），所属R2源码60820efa + Asset已审E9130e；详读`NPC_REPAIR_NATIVE_MESSAGES_CANDIDATE.md`后由main接startup规则/schema、repair的equipment_messages、本人query3/登录重连等调用方路径。新provider同事务current3/1、真实来源编码失败回滚和L21单资源/HPMP组合已验；18正向/3实际RED、Standards/Fowler/Spec各0。尚未shared注入/发布/GUI，最终compat由root采用，PVE优先发布不夹本片。旧ready9e/9b05/761c不改。商店最新16链已确证query4为回购，普通购买本地模板；20原生报价/真实实扣差异另待root政策，不造stock4。

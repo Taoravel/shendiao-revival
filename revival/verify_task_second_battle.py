@@ -16,7 +16,7 @@ def refused(call):
     raise AssertionError('Invalid second-battle authority accepted')
 
 
-def check(store,first,proof,current,generation,map_generation,inventory):
+def check(store,first,proof,current,generation,map_generation,inventory,*,after_admission=None):
     from task_first_skill_proof import read_completed_first_skill_proof
     from task_second_battle import load_second_battle_rules,open_second_battle_transaction,admit_second_battle_transaction
     from task_battle import load_task_battle_resources
@@ -99,12 +99,14 @@ def check(store,first,proof,current,generation,map_generation,inventory):
         assert admit(ticket=current_menu.ticket,now=5001).replayed
         refused(opening)
         assert read_other_skills(db,1111,rid,epoch,first.skills)==higher
+        continuation={} if after_admission is None else after_admission(
+            db,store,rules,accepted,participant,inventory)
         db.rollback();assert snapshot(db)==before
     return dict(completed_teaching_readonly=True,original_second_battle_menu_readonly=True,
         exact43_routes_and_ten_tasks=True,unrelated_ai8027_task101004_refused=True,
         corrupt_teaching_and_unknown_skills_refused=True,changed_skill_or_map_generation_refused=True,
         high_skill_value_preserved_and_real_equipment_participant_bound=True,admission_idempotent_and_whole_outer_rollback=True,
-        second_battle_registry_is_contract_fixture=True,actual_ai8027_executed=False)
+        second_battle_registry_is_contract_fixture=True,actual_ai8027_executed=False,continuation=continuation)
 
 
 if __name__=='__main__':

@@ -27,6 +27,21 @@ class PetGrowth:
 
 
 @dataclass(frozen=True)
+class GrowthPlan:
+    version: int
+    level: int
+    experience: int
+    allocated: tuple
+
+    def __post_init__(self):
+        if (any(type(v) is not int for v in (self.version,self.level,self.experience))
+                or not 0<=self.version<2**63-1 or not 0<=self.level<=150 or not 0<=self.experience<=0x7fffffff
+                or type(self.allocated) is not tuple or len(self.allocated)!=5
+                or any(type(v) is not int or not 0<=v<=0x7fffffff for v in self.allocated)):
+            raise ValueError('Exact immutable resource-free pet growth plan required')
+
+
+@dataclass(frozen=True)
 class Attributes:
     five_stats: tuple
     potential: int
@@ -116,9 +131,14 @@ class GrowthRules:
         mp = min(new.max_mp,max(0,state.mp+new.max_mp-old.max_mp))
         return PetGrowth(state.version+1,level,experience,allocated,hp,mp)
 
-    def award(self, profile, state, amount, *, award_cap=None,bonus_potential=0):
-        if type(amount) is not int or amount < 0 or not 0 <= state.experience <= self.maximum_exp:
+    def plan_award(self, profile, state, amount, *, award_cap=None,bonus_potential=0):
+        """Original XP/points math only; no synthetic or adjusted HP/MP."""
+        if (type(profile) is not Profile or type(state) is not PetGrowth
+                or type(state.version) is not int or not 0<=state.version<2**63-2
+                or type(state.experience) is not int or type(amount) is not int or amount < 0
+                or not 0 <= state.experience <= self.maximum_exp):
             raise ValueError('Invalid pet experience award')
+        self.attributes(profile,state.level,state.allocated,bonus_potential=bonus_potential)
         cap=self.cap if award_cap is None else award_cap
         if type(cap) is not int or not self.initial_level<=state.level<=cap<=self.cap:
             raise ValueError('Pet level exceeds award cap or cap is invalid')
@@ -134,7 +154,12 @@ class GrowthRules:
                 break
             level += 1
             experience -= threshold
-        return self._change(profile,state,level,experience,state.allocated,bonus_potential=bonus_potential)
+        self.attributes(profile,level,state.allocated,bonus_potential=bonus_potential)
+        return GrowthPlan(state.version+1,level,experience,state.allocated)
+
+    def award(self, profile, state, amount, *, award_cap=None,bonus_potential=0):
+        planned=self.plan_award(profile,state,amount,award_cap=award_cap,bonus_potential=bonus_potential)
+        return self._change(profile,state,planned.level,planned.experience,planned.allocated,bonus_potential=bonus_potential)
 
     def allocate(self, profile, state, increments, *, bonus_potential=0):
         if type(increments) is not tuple or len(increments) != 5 or any(type(v) is not int or v < 0 for v in increments):

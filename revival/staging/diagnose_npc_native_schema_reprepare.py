@@ -25,7 +25,8 @@ def main():
     parser=argparse.ArgumentParser();parser.add_argument('--label',default='parent_baseline')
     parser.add_argument('--phase',choices=('parent','child'),default='parent')
     parser.add_argument('--database',type=Path);parser.add_argument('--report',type=Path)
-    parser.add_argument('--expect-blocker',action='store_true');args=parser.parse_args()
+    parser.add_argument('--expect-blocker',action='store_true')
+    parser.add_argument('--omit-native-schema',action='store_true');args=parser.parse_args()
     manifest=json.loads((CONTEXT.parent/'manifest.json').read_text(encoding='utf8'))
     def verify():
         for name,digest in manifest['files'].items():assert sha(CONTEXT/name)==digest,name
@@ -55,8 +56,10 @@ def main():
     assert not output.exists(),'Preserve previous observations';output.mkdir(parents=True)
     database=output/'disposable.sqlite3';store=AccountStore(database)
     runtime_storage.prepare(store)
-    with closing(store.connect()) as db,db:
-        db.execute('BEGIN IMMEDIATE');sockets.prepare(db);scores.prepare(db)
+    assert not store.roles(1111),'Diagnostic database must have no real or fixture roles'
+    if not args.omit_native_schema:
+        with closing(store.connect()) as db,db:
+            db.execute('BEGIN IMMEDIATE');sockets.prepare(db);scores.prepare(db)
     current_modules={}
     for name in ('npc_depot.py','npc_gameplay.py'):
         assert sha(PVE/'source'/name)==sha(CONTEXT/name),name
@@ -71,7 +74,8 @@ def main():
     verify()
     result=dict(observed_blocker=blocker,actual_second_process_exit_code=child.returncode,
         second_process=recorded,parent_process_id=__import__('os').getpid(),
-        original_prepare_passed=True,reviewed_native_source_tables_prepared=True,
+        original_prepare_passed=True,reviewed_native_source_tables_prepared=not args.omit_native_schema,
+        roles_in_disposable_database=0,
         source_context=str(CONTEXT),context_manifest_sha256=sha(CONTEXT.parent/'manifest.json'),
         current_PVE_identical_consumers_sha256=current_modules,
         actual_current_PVE_startup_executed=False,real_server_restart_claimed=False,
